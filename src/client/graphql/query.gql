@@ -1,0 +1,36 @@
+query SeasonSummary($year: String!) {
+  seasonSummary(year: $year) {
+    constructors {
+      constructor {
+        name
+        nationality
+      }
+      points
+      position
+    }
+    drivers {
+      driver {
+        forename
+        surname
+        nationality
+      }
+      points
+      position
+    }
+    races {
+      round
+      name
+      date
+      polePosition {
+        forename
+        surname
+        nationality
+      }
+      winner {
+        forename
+        surname
+        nationality
+      }
+    }
+  }
+}

@@ -13,7 +13,9 @@ const nodeExternals = require('webpack-node-externals');
 const PROD = process.env.NODE_ENV === 'production';
 
 console.log(
-  `${chalk.bold('Production mode:')} ${PROD ? chalk.bold.green('Yes') : chalk.bold.red('No')}`
+  `${chalk.bold('Production mode:')} ${
+    PROD ? chalk.bold.green('Yes') : chalk.bold.red('No')
+  }`
 );
 console.log(process.cwd());
 
@@ -43,12 +45,13 @@ const commonConfig = {
         exclude: [/node_modules/]
       },
       {
-        test: /\.gql$/,
-        use: [
-          {
-            loader: 'raw-loader'
-          }
-        ]
+        test: /\.(g|s)ql$/,
+        use: 'raw-loader'
+      },
+      {
+        test: /\.ya?ml$/,
+        type: 'json',
+        use: 'yaml-loader'
       }
     ]
   },
@@ -78,7 +81,9 @@ const clientConfig = {
   entry: './src/client/index.tsx',
   output: {
     filename: PROD ? 'assets/[name].[contenthash:6].js' : 'assets/[name].js',
-    chunkFilename: PROD ? 'assets/[name].[id].[contenthash:6].js' : 'assets/[name].[id].js',
+    chunkFilename: PROD
+      ? 'assets/[name].[id].[contenthash:6].js'
+      : 'assets/[name].[id].js',
     path: path.resolve(process.cwd(), './build/client'),
     publicPath: '/'
   },
@@ -98,7 +103,12 @@ const clientConfig = {
       showErrors: false
     }),
     new CopyWebpackPlugin({
-      patterns: []
+      patterns: [
+        {
+          from: 'src/client/common/images/*.png',
+          to: 'assets/[name].[ext]'
+        }
+      ]
     })
   ]
 };
@@ -107,23 +117,13 @@ if (!PROD) {
   clientConfig.devServer = {
     host: '0.0.0.0',
     contentBase: path.resolve(process.cwd(), 'build/client'),
-    port: 9000,
+    port: 4000,
     historyApiFallback: true,
-    https: {
-      key: fs.readFileSync(path.resolve(process.cwd(), 'certificates/localhost.key')),
-      cert: fs.readFileSync(path.resolve(process.cwd(), 'certificates/localhost.crt'))
-    },
     hot: true,
     proxy: {
       '/api': {
         target: 'http://localhost:3000',
         pathRewrite: { '^/api': '' },
-        changeOrigin: true
-        // logLevel: 'debug'
-      },
-      '/graphql': {
-        target: 'http://localhost:3000',
-        // pathRewrite: { '^/api': '' },
         changeOrigin: true
         // logLevel: 'debug'
       }
@@ -150,11 +150,7 @@ const serverConfig = {
       chunks: 'async'
     }
   },
-  plugins: [
-    // new CopyWebpackPlugin({
-    //   patterns: [{ from: 'src/images/favicon.ico', to: 'favicon.ico' }]
-    // })
-  ]
+  plugins: []
 };
 
 module.exports = [clientConfig, serverConfig];

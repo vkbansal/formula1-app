@@ -2,4 +2,146 @@ openapi: 3.0.3
 info:
   title: Formula 1 App
   version: 1.0.0
-paths: {}
+servers:
+  - url: http://localhost:3000/rest
+paths:
+  /seasons/{year}/summary:
+    get:
+      summary: Get season summary for given year
+      operationId: seasonSummary
+      parameters:
+        - name: year
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Season summary for given year
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SeasonSummary'
+components:
+  schemas:
+    SeasonSummary:
+      type: object
+      required:
+        - constructors
+        - drivers
+        - races
+      properties:
+        constructors:
+          type: array
+          items:
+            type: object
+            $ref: '#/components/schemas/ConstructorSeasonSummary'
+        drivers:
+          type: array
+          items:
+            type: object
+            $ref: '#/components/schemas/DriverSeasonSummary'
+        races:
+          type: array
+          items:
+            type: object
+            $ref: '#/components/schemas/RaceSummary'
+    ConstructorSeasonSummary:
+      type: object
+      required:
+        - constructor
+        - points
+        - position
+      properties:
+        constructor:
+          type: object
+          $ref: '#/components/schemas/Constructor'
+        points:
+          type: integer
+        position:
+          type: integer
+    DriverSeasonSummary:
+      type: object
+      required:
+        - driver
+        - points
+        - position
+      properties:
+        driver:
+          type: object
+          $ref: '#/components/schemas/Driver'
+        points:
+          type: integer
+        position:
+          type: integer
+    Constructor:
+      type: object
+      required:
+        - id
+        - ref
+        - name
+        - nationality
+        - url
+      properties:
+        id:
+          type: integer
+        ref:
+          type: string
+        name:
+          type: string
+        nationality:
+          type: string
+        url:
+          type: string
+    Driver:
+      type: object
+      required:
+        - id
+        - ref
+        - forename
+        - surname
+        - nationality
+        - url
+        - dob
+      properties:
+        id:
+          type: integer
+        ref:
+          type: string
+        number:
+          type: integer
+          nullable: true
+        code:
+          type: string
+          nullable: true
+        forename:
+          type: string
+        surname:
+          type: string
+        nationality:
+          type: string
+        dob:
+          type: string
+        url:
+          type: string
+    RaceSummary:
+      type: object
+      required:
+        - round
+        - name
+        - date
+        - polePosition
+        - winner
+      properties:
+        round:
+          type: integer
+        date:
+          type: string
+        name:
+          type: string
+        polePosition:
+          type: object
+          $ref: '#/components/schemas/Driver'
+        winner:
+          type: object
+          $ref: '#/components/schemas/Driver'

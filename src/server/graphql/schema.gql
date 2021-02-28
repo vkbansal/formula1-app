@@ -1,0 +1,46 @@
+type Query {
+  seasonSummary(year: String!): SeasonSummary!
+}
+
+type SeasonSummary {
+  constructors: [ConstructorSeasonSummary!]!
+  drivers: [DriverSeasonSummary!]!
+  races: [RaceSummary!]!
+}
+
+type ConstructorSeasonSummary {
+  constructor: Constructor!
+  points: Int!
+  position: Int!
+}
+
+type Constructor {
+  id: Int!
+  ref: String!
+  name: String!
+  nationality: String!
+  url: String!
+}
+
+type DriverSeasonSummary {
+  driver: Driver!
+  points: Int!
+  position: Int!
+}
+
+type Driver {
+  id: Int!
+  ref: String!
+  forename: String!
+  surname: String!
+  nationality: String!
+  url: String!
+}
+
+type RaceSummary {
+  round: Int!
+  date: String!
+  name: String!
+  polePosition: Driver!
+  winner: Driver!
+}

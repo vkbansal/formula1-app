@@ -10,19 +10,20 @@ extensions:
         plugins:
           - typescript
 
-      ./src/client/common/graphql-types.ts:
+      ./src/client/graphql/services.ts:
         plugins:
           - typescript
           - typescript-operations
-    config:
-      scalars:
-        Date: string
-      avoidOptionals:
-        field: true
-        inputValue: false
-        object: true
-        defaultValue: true
-      skipTypename: true
-      flattenGeneratedTypes: true
-      namingConvention:
-        enumValues: keep
+          - typescript-urql
+config:
+  scalars:
+    Date: string
+  avoidOptionals:
+    field: true
+    inputValue: false
+    object: true
+    defaultValue: true
+  skipTypename: true
+  flattenGeneratedTypes: true
+  namingConvention:
+    enumValues: keep
