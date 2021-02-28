@@ -113,24 +113,6 @@ const clientConfig = {
   ]
 };
 
-if (!PROD) {
-  clientConfig.devServer = {
-    host: '0.0.0.0',
-    contentBase: path.resolve(process.cwd(), 'build/client'),
-    port: 4000,
-    historyApiFallback: true,
-    hot: true,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        pathRewrite: { '^/api': '' },
-        changeOrigin: true
-        // logLevel: 'debug'
-      }
-    }
-  };
-}
-
 const serverConfig = {
   ...commonConfig,
   name: 'server',

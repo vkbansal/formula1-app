@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 import { mariadbPool } from './common/db';
 
 import restApp from './rest';
@@ -9,9 +10,15 @@ const PORT = 3000;
 const app = express();
 
 app.use(express.json());
+app.use(express.static(path.resolve(__dirname, '../client'), {}));
 
-app.use('/rest', restApp);
-app.use('/graphql', graphqlApp);
+app.use('/api/rest', restApp);
+app.use('/api/graphql', graphqlApp);
+
+// Handler for SPA behaviour
+app.get('*', (_req, res) => {
+  res.status(200).sendFile(path.resolve(__dirname, '../client/index.html'));
+});
 
 app.use((_req, res) => {
   res.status(404).send({
