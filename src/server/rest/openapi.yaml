@@ -1,14 +1,14 @@
-openapi: 3.0.3
+openapi: '3.0.2'
 info:
   title: Formula 1 App
-  version: 1.0.0
+  version: '1.0'
 servers:
-  - url: http://localhost:3000/rest
+  - url: http://localhost:3000/api/rest
 paths:
   /seasons/{year}/summary:
     get:
-      summary: Get season summary for given year
-      operationId: seasonSummary
+      summary: Get season summary for given year. Includes summary for constructors, drivers and races.
+      operationId: getSeasonSummary
       parameters:
         - name: year
           in: path
@@ -22,6 +22,50 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SeasonSummary'
+  /seasons/{year}/constructors/{constructorRef}/standings:
+    get:
+      summary: Get standings for a constructor in a particular season
+      operationId: getConstructorStandings
+      parameters:
+        - name: year
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: constructorRef
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Standings for a constructor in a particular season
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConstructorSeasonStandings'
+  /seasons/{year}/drivers/{driverRef}/standings:
+    get:
+      summary: Get standings for a driver in a particular season
+      operationId: getDriverStandings
+      parameters:
+        - name: year
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: driverRef
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Standings for a driver in a particular season
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DriverSeasonStandings'
 components:
   schemas:
     SeasonSummary:
@@ -45,7 +89,7 @@ components:
           type: array
           items:
             type: object
-            $ref: '#/components/schemas/RaceSummary'
+            $ref: '#/components/schemas/RaceSeasonSummary'
     ConstructorSeasonSummary:
       type: object
       required:
@@ -124,7 +168,7 @@ components:
           type: string
         url:
           type: string
-    RaceSummary:
+    RaceSeasonSummary:
       type: object
       required:
         - round
@@ -145,3 +189,60 @@ components:
         winner:
           type: object
           $ref: '#/components/schemas/Driver'
+    ConstructorSeasonStandings:
+      allOf:
+        - $ref: '#/components/schemas/Constructor'
+        - type: object
+          required: [standings]
+          properties:
+            standings:
+              type: array
+              items:
+                $ref: '#/components/schemas/RaceStanding'
+    DriverSeasonStandings:
+      allOf:
+        - $ref: '#/components/schemas/Driver'
+        - type: object
+          required: [standings]
+          properties:
+            standings:
+              type: array
+              items:
+                $ref: '#/components/schemas/RaceStanding'
+    RaceStanding:
+      type: object
+      required:
+        - round
+        - name
+        - date
+        - circuit
+        - city
+        - country
+        - racePosition
+        - cumulativePoints
+        - position
+        - points
+      properties:
+        round:
+          type: integer
+        name:
+          type: string
+        date:
+          type: string
+        circuit:
+          type: string
+        city:
+          type: string
+        country:
+          type: string
+        cumulativePoints:
+          type: integer
+        position:
+          type: integer
+          # nullable: true
+        points:
+          type: integer
+          # nullable: true
+        racePosition:
+          type: integer
+          # nullable: true

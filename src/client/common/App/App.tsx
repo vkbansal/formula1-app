@@ -72,7 +72,7 @@ function AppSwitch(): React.ReactElement {
     <Box color="white" display="flex" alignItems="center">
       <Text marginInlineEnd="2">Rest</Text>
       <UISwitch
-        colorScheme="green"
+        colorScheme="blue"
         isChecked={module === 'graphql'}
         onChange={handleChange}
       />
@@ -113,10 +113,10 @@ export function App(): React.ReactElement {
           <Route path="/" exact>
             <HomePage />
           </Route>
-          <Route path="/rest">
+          <Route path="/:module(rest)">
             <RestApp />
           </Route>
-          <Route path="/graphql">
+          <Route path="/:module(graphql)">
             <GraphQLApp />
           </Route>
         </Switch>

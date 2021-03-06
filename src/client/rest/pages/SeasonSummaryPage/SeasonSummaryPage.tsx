@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import { useSeasonSummary } from 'client/rest/services';
+import { useGetSeasonSummary } from 'client/rest/services';
 import {
   SeasonSummaryPage as View,
   SeasonSummaryPageProps
@@ -9,7 +9,7 @@ import {
 
 export function SeasonSummaryPage(): React.ReactElement {
   const { year } = useParams<{ year: string }>();
-  const { data } = useSeasonSummary({ year });
+  const { data } = useGetSeasonSummary({ year });
 
   const constructors = React.useMemo<
     SeasonSummaryPageProps['constructors']
@@ -19,6 +19,7 @@ export function SeasonSummaryPage(): React.ReactElement {
     return data.constructors.map(({ constructor, points, position }) => ({
       name: constructor.name,
       nationality: constructor.nationality,
+      ref: constructor.ref,
       position,
       points
     }));
@@ -30,6 +31,7 @@ export function SeasonSummaryPage(): React.ReactElement {
     return data.drivers.map(({ driver, points, position }) => ({
       name: `${driver.forename} ${driver.surname}`,
       nationality: driver.nationality,
+      ref: driver.ref,
       position,
       points
     }));
@@ -53,6 +55,7 @@ export function SeasonSummaryPage(): React.ReactElement {
 
   return (
     <View
+      module="rest"
       year={year}
       constructors={constructors}
       drivers={drivers}

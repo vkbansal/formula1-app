@@ -6,7 +6,7 @@ export const SPEC_VERSION = '1.0.0';
 export interface SeasonSummary {
   constructors: ConstructorSeasonSummary[];
   drivers: DriverSeasonSummary[];
-  races: RaceSummary[];
+  races: RaceSeasonSummary[];
 }
 
 export interface ConstructorSeasonSummary {
@@ -41,7 +41,7 @@ export interface Driver {
   url: string;
 }
 
-export interface RaceSummary {
+export interface RaceSeasonSummary {
   round: number;
   date: string;
   name: string;
@@ -49,38 +49,176 @@ export interface RaceSummary {
   winner: Driver;
 }
 
-export interface SeasonSummaryPathParams {
+export type ConstructorSeasonStandings = Constructor & {
+  standings: RaceStanding[];
+};
+
+export type DriverSeasonStandings = Driver & {
+  standings: RaceStanding[];
+};
+
+export interface RaceStanding {
+  round: number;
+  name: string;
+  date: string;
+  circuit: string;
+  city: string;
+  country: string;
+  cumulativePoints: number;
+  position: number;
+  points: number;
+}
+
+export interface GetSeasonSummaryPathParams {
   year: string;
 }
 
-export type SeasonSummaryProps = Omit<
-  GetProps<SeasonSummary, unknown, void, SeasonSummaryPathParams>,
+export type GetSeasonSummaryProps = Omit<
+  GetProps<SeasonSummary, unknown, void, GetSeasonSummaryPathParams>,
   'path'
 > &
-  SeasonSummaryPathParams;
+  GetSeasonSummaryPathParams;
 
 /**
- * Get season summary for given year
+ * Get season summary for given year. Includes summary for constructors, drivers and races.
  */
-export const SeasonSummary = ({ year, ...props }: SeasonSummaryProps) => (
-  <Get<SeasonSummary, unknown, void, SeasonSummaryPathParams>
+export const GetSeasonSummary = ({ year, ...props }: GetSeasonSummaryProps) => (
+  <Get<SeasonSummary, unknown, void, GetSeasonSummaryPathParams>
     path={`/seasons/${year}/summary`}
     {...props}
   />
 );
 
-export type UseSeasonSummaryProps = Omit<
-  UseGetProps<SeasonSummary, unknown, void, SeasonSummaryPathParams>,
+export type UseGetSeasonSummaryProps = Omit<
+  UseGetProps<SeasonSummary, unknown, void, GetSeasonSummaryPathParams>,
   'path'
 > &
-  SeasonSummaryPathParams;
+  GetSeasonSummaryPathParams;
 
 /**
- * Get season summary for given year
+ * Get season summary for given year. Includes summary for constructors, drivers and races.
  */
-export const useSeasonSummary = ({ year, ...props }: UseSeasonSummaryProps) =>
-  useGet<SeasonSummary, unknown, void, SeasonSummaryPathParams>(
-    (paramsInPath: SeasonSummaryPathParams) =>
+export const useGetSeasonSummary = ({
+  year,
+  ...props
+}: UseGetSeasonSummaryProps) =>
+  useGet<SeasonSummary, unknown, void, GetSeasonSummaryPathParams>(
+    (paramsInPath: GetSeasonSummaryPathParams) =>
       `/seasons/${paramsInPath.year}/summary`,
     { pathParams: { year }, ...props }
+  );
+
+export interface GetConstructorStandingsPathParams {
+  year: string;
+  constructorRef: string;
+}
+
+export type GetConstructorStandingsProps = Omit<
+  GetProps<
+    ConstructorSeasonStandings,
+    unknown,
+    void,
+    GetConstructorStandingsPathParams
+  >,
+  'path'
+> &
+  GetConstructorStandingsPathParams;
+
+/**
+ * Get standings for a constructor in a particular season
+ */
+export const GetConstructorStandings = ({
+  year,
+  constructorRef,
+  ...props
+}: GetConstructorStandingsProps) => (
+  <Get<
+    ConstructorSeasonStandings,
+    unknown,
+    void,
+    GetConstructorStandingsPathParams
+  >
+    path={`/seasons/${year}/constructors/${constructorRef}/standings`}
+    {...props}
+  />
+);
+
+export type UseGetConstructorStandingsProps = Omit<
+  UseGetProps<
+    ConstructorSeasonStandings,
+    unknown,
+    void,
+    GetConstructorStandingsPathParams
+  >,
+  'path'
+> &
+  GetConstructorStandingsPathParams;
+
+/**
+ * Get standings for a constructor in a particular season
+ */
+export const useGetConstructorStandings = ({
+  year,
+  constructorRef,
+  ...props
+}: UseGetConstructorStandingsProps) =>
+  useGet<
+    ConstructorSeasonStandings,
+    unknown,
+    void,
+    GetConstructorStandingsPathParams
+  >(
+    (paramsInPath: GetConstructorStandingsPathParams) =>
+      `/seasons/${paramsInPath.year}/constructors/${paramsInPath.constructorRef}/standings`,
+    { pathParams: { year, constructorRef }, ...props }
+  );
+
+export interface GetDriverStandingsPathParams {
+  year: string;
+  driverRef: string;
+}
+
+export type GetDriverStandingsProps = Omit<
+  GetProps<DriverSeasonStandings, unknown, void, GetDriverStandingsPathParams>,
+  'path'
+> &
+  GetDriverStandingsPathParams;
+
+/**
+ * Get standings for a driver in a particular season
+ */
+export const GetDriverStandings = ({
+  year,
+  driverRef,
+  ...props
+}: GetDriverStandingsProps) => (
+  <Get<DriverSeasonStandings, unknown, void, GetDriverStandingsPathParams>
+    path={`/seasons/${year}/drivers/${driverRef}/standings`}
+    {...props}
+  />
+);
+
+export type UseGetDriverStandingsProps = Omit<
+  UseGetProps<
+    DriverSeasonStandings,
+    unknown,
+    void,
+    GetDriverStandingsPathParams
+  >,
+  'path'
+> &
+  GetDriverStandingsPathParams;
+
+/**
+ * Get standings for a driver in a particular season
+ */
+export const useGetDriverStandings = ({
+  year,
+  driverRef,
+  ...props
+}: UseGetDriverStandingsProps) =>
+  useGet<DriverSeasonStandings, unknown, void, GetDriverStandingsPathParams>(
+    (paramsInPath: GetDriverStandingsPathParams) =>
+      `/seasons/${paramsInPath.year}/drivers/${paramsInPath.driverRef}/standings`,
+    { pathParams: { year, driverRef }, ...props }
   );

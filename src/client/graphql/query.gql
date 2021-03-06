@@ -4,6 +4,7 @@ query SeasonSummary($year: String!) {
       constructor {
         name
         nationality
+        ref
       }
       points
       position
@@ -13,6 +14,7 @@ query SeasonSummary($year: String!) {
         forename
         surname
         nationality
+        ref
       }
       points
       position

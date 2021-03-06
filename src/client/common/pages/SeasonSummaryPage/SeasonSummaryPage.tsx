@@ -15,24 +15,28 @@ import {
   Th,
   Select
 } from '@chakra-ui/react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import emojiFlags from 'emoji-flags';
+import { css } from '@emotion/css';
 
 const LIMIT = 2020;
 const START = 1950;
 
 export interface SeasonSummaryPageProps {
+  module: 'rest' | 'graphql';
   constructors: Array<{
     name: string;
     nationality: string;
     position: number;
     points: number;
+    ref: string;
   }>;
   drivers: Array<{
     name: string;
     nationality: string;
     position: number;
     points: number;
+    ref: string;
   }>;
   races: Array<{
     round: number;
@@ -52,10 +56,21 @@ export interface SeasonSummaryPageProps {
 
 const tabIds = ['constructor-standings', 'driver-standings', 'races'];
 
+const tableStyles = css`
+  & > tbody > tr > td > a {
+    display: block;
+    padding: 1rem 1.5rem;
+  }
+
+  & > tbody > tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+`;
+
 export function SeasonSummaryPage(
   props: SeasonSummaryPageProps
 ): React.ReactElement {
-  const { year, constructors, drivers, races } = props;
+  const { year, constructors, drivers, races, module } = props;
   const [tabIndex, setTabIndex] = React.useState(0);
   const history = useHistory();
   const location = useLocation();
@@ -69,7 +84,15 @@ export function SeasonSummaryPage(
   }, [location.hash]);
 
   function handleYearChange(e: React.ChangeEvent<HTMLSelectElement>): void {
-    history.push(`/rest/seasons/${e.target.value}/summary`);
+    history.push(`/${module}/seasons/${e.target.value}/summary`);
+  }
+
+  function getConstructorLink(ref: string): string {
+    return `/${module}/seasons/${year}/constructors/${ref}/standings`;
+  }
+
+  function getDriverLink(ref: string): string {
+    return `/${module}/seasons/${year}/drivers/${ref}/standings`;
   }
 
   return (
@@ -112,7 +135,7 @@ export function SeasonSummaryPage(
 
         <TabPanels>
           <TabPanel>
-            <Table key={year}>
+            <Table key={year} className={tableStyles}>
               <Thead>
                 <Tr>
                   <Th>Position</Th>
@@ -122,18 +145,24 @@ export function SeasonSummaryPage(
               </Thead>
               <Tbody>
                 {constructors.map(
-                  ({ name, points, position, nationality }, i) => (
+                  ({ name, points, position, nationality, ref }, i) => (
                     <Tr key={i}>
-                      <Td>{position}</Td>
-                      <Td>
-                        <Text as="span" marginInlineEnd="2">
-                          {name}
-                        </Text>
-                        <Text as="span" fontSize="xl">
-                          {emojiFlags[nationality]?.emoji}
-                        </Text>
+                      <Td padding="0">
+                        <Link to={getConstructorLink(ref)}>{position}</Link>
                       </Td>
-                      <Td>{points}</Td>
+                      <Td padding="0">
+                        <Link to={getConstructorLink(ref)}>
+                          <Text as="span" marginInlineEnd="2">
+                            {name}
+                          </Text>
+                          <Text as="span" fontSize="xl">
+                            {emojiFlags[nationality]?.emoji}
+                          </Text>
+                        </Link>
+                      </Td>
+                      <Td padding="0">
+                        <Link to={getConstructorLink(ref)}>{points}</Link>
+                      </Td>
                     </Tr>
                   )
                 )}
@@ -141,29 +170,37 @@ export function SeasonSummaryPage(
             </Table>
           </TabPanel>
           <TabPanel>
-            <Table key={year}>
+            <Table key={year} className={tableStyles}>
               <Thead>
                 <Tr>
-                  <Td>Position</Td>
-                  <Td>Name</Td>
-                  <Td>Points</Td>
+                  <Th>Position</Th>
+                  <Th>Name</Th>
+                  <Th>Points</Th>
                 </Tr>
               </Thead>
               <Tbody>
-                {drivers.map(({ name, points, position, nationality }, i) => (
-                  <Tr key={i}>
-                    <Td>{position}</Td>
-                    <Td>
-                      <Text as="span" marginInlineEnd="2">
-                        {name}
-                      </Text>
-                      <Text as="span" fontSize="xl">
-                        {emojiFlags[nationality]?.emoji}
-                      </Text>
-                    </Td>
-                    <Td>{points}</Td>
-                  </Tr>
-                ))}
+                {drivers.map(
+                  ({ name, points, position, nationality, ref }, i) => (
+                    <Tr key={i}>
+                      <Td padding="0">
+                        <Link to={getDriverLink(ref)}>{position}</Link>
+                      </Td>
+                      <Td padding="0">
+                        <Link to={getDriverLink(ref)}>
+                          <Text as="span" marginInlineEnd="2">
+                            {name}
+                          </Text>
+                          <Text as="span" fontSize="xl">
+                            {emojiFlags[nationality]?.emoji}
+                          </Text>
+                        </Link>
+                      </Td>
+                      <Td padding="0">
+                        <Link to={getDriverLink(ref)}>{points}</Link>
+                      </Td>
+                    </Tr>
+                  )
+                )}
               </Tbody>
             </Table>
           </TabPanel>

@@ -4,7 +4,7 @@ export const SPEC_VERSION = '1.0.0';
 export interface SeasonSummary {
   constructors: ConstructorSeasonSummary[];
   drivers: DriverSeasonSummary[];
-  races: RaceSummary[];
+  races: RaceSeasonSummary[];
 }
 
 export interface ConstructorSeasonSummary {
@@ -39,7 +39,7 @@ export interface Driver {
   url: string;
 }
 
-export interface RaceSummary {
+export interface RaceSeasonSummary {
   round: number;
   date: string;
   name: string;
@@ -47,6 +47,36 @@ export interface RaceSummary {
   winner: Driver;
 }
 
-export interface SeasonSummaryPathParams {
+export type ConstructorSeasonStandings = Constructor & {
+  standings: RaceStanding[];
+};
+
+export type DriverSeasonStandings = Driver & {
+  standings: RaceStanding[];
+};
+
+export interface RaceStanding {
+  round: number;
+  name: string;
+  date: string;
+  circuit: string;
+  city: string;
+  country: string;
+  cumulativePoints: number;
+  position: number;
+  points: number;
+}
+
+export interface GetSeasonSummaryPathParams {
   year: string;
+}
+
+export interface GetConstructorStandingsPathParams {
+  year: string;
+  constructorRef: string;
+}
+
+export interface GetDriverStandingsPathParams {
+  year: string;
+  driverRef: string;
 }

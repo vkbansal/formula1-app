@@ -20,13 +20,6 @@ app.get('*', (_req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, '../client/index.html'));
 });
 
-app.use((_req, res) => {
-  res.status(404).send({
-    status: 404,
-    message: 'Not Found'
-  });
-});
-
 app.use((err: any, _req: any, res: any, _next: any) => {
   res.status(err.status || 500).send({
     status: err.status || 500,

@@ -1,10 +1,9 @@
 import { Router } from 'express';
 import * as OpenApiValidator from 'express-openapi-validator';
-import { mariadbPool } from 'server/common/db';
-import seasonSummaryQuery from 'server/common/queries/ConstructorsSeasonSummary.sql';
-import driverSeasonSummaryQuery from 'server/common/queries/DriversSeasonSummary.sql';
-import racesSummaryQuery from 'server/common/queries/RacesSummary.sql';
+import type { RouteMetadata } from 'express-openapi-validator/dist/framework/openapi.spec.loader';
+import type { OpenAPIV3 } from 'express-openapi-validator/dist/framework/types';
 import spec from './openapi.yaml';
+import resolvers from './resolvers';
 
 const router = Router();
 
@@ -13,44 +12,39 @@ router.use(
     apiSpec: spec as any,
     validateApiSpec: true,
     validateRequests: true,
-    validateResponses: true
+    validateResponses: false,
+    operationHandlers: {
+      basePath: '',
+      resolver(
+        _handlersPath: string,
+        route: RouteMetadata,
+        apiDoc: OpenAPIV3.Document
+      ) {
+        const openapiRoute = route.openApiRoute.replace(
+          new RegExp(`^${route.basePath}`),
+          ''
+        );
+
+        const { operationId } = apiDoc.paths[openapiRoute][
+          route.method.toLowerCase()
+        ];
+
+        if (!operationId) {
+          throw new Error(
+            `"operationId" not defined for route "${openapiRoute}"`
+          );
+        }
+
+        if (!resolvers[operationId]) {
+          throw new Error(
+            `Could not find a resolver for "${operationId}" operationId`
+          );
+        }
+
+        return resolvers[operationId];
+      }
+    }
   })
 );
-
-router.get('/seasons/:year/summary', async (req, res) => {
-  const { year } = req.params;
-
-  const constructorsData: any[] = await mariadbPool.query(seasonSummaryQuery, [
-    year,
-    year
-  ]);
-  const driverData: any[] = await mariadbPool.query(driverSeasonSummaryQuery, [
-    year,
-    year
-  ]);
-  const racesData: any[] = await mariadbPool.query(
-    {
-      sql: racesSummaryQuery,
-      dateStrings: true
-    },
-    [year]
-  );
-
-  res.status(200).send({
-    constructors: constructorsData.map(({ constructor, ...rest }) => ({
-      constructor: JSON.parse(constructor),
-      ...rest
-    })),
-    drivers: driverData.map(({ driver, ...rest }) => ({
-      driver: JSON.parse(driver),
-      ...rest
-    })),
-    races: racesData.map(({ polePosition, winner, ...rest }) => ({
-      ...rest,
-      winner: JSON.parse(winner),
-      polePosition: JSON.parse(polePosition)
-    }))
-  });
-});
 
 export default router;

@@ -89,7 +89,7 @@ export type SeasonSummaryQuery = { __typename?: 'Query' } & {
       > & {
           constructor: { __typename?: 'Constructor' } & Pick<
             Constructor,
-            'name' | 'nationality'
+            'name' | 'nationality' | 'ref'
           >;
         }
     >;
@@ -100,7 +100,7 @@ export type SeasonSummaryQuery = { __typename?: 'Query' } & {
       > & {
           driver: { __typename?: 'Driver' } & Pick<
             Driver,
-            'forename' | 'surname' | 'nationality'
+            'forename' | 'surname' | 'nationality' | 'ref'
           >;
         }
     >;
@@ -129,6 +129,7 @@ export const SeasonSummaryDocument = gql`
         constructor {
           name
           nationality
+          ref
         }
         points
         position
@@ -138,6 +139,7 @@ export const SeasonSummaryDocument = gql`
           forename
           surname
           nationality
+          ref
         }
         points
         position
