@@ -8,4 +8,4 @@ npx prettier --write src/server/rest/types.tsx --loglevel=error
 
 # Generate GraphQL type for client and server
 npx graphql-codegen
-npx prettier --write src/client/graphql/services.ts src/server/graphql/types.ts
+npx prettier --write src/client/graphql/services.ts src/server/graphql/types.ts --loglevel=error

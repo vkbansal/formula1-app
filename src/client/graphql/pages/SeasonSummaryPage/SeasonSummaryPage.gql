@@ -1,4 +1,4 @@
-query SeasonSummary($year: String!) {
+query SeasonSummaryPage($year: String!) {
   seasonSummary(year: $year) {
     constructors {
       constructor {

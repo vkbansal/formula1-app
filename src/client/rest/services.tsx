@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Get, GetProps, useGet, UseGetProps } from 'restful-react';
-export const SPEC_VERSION = '1.0.0';
+export const SPEC_VERSION = '1.0';
 export interface SeasonSummary {
   constructors: ConstructorSeasonSummary[];
   drivers: DriverSeasonSummary[];
@@ -50,14 +50,14 @@ export interface RaceSeasonSummary {
 }
 
 export type ConstructorSeasonStandings = Constructor & {
-  standings: RaceStanding[];
+  standings: ConstructorRaceStanding[];
 };
 
 export type DriverSeasonStandings = Driver & {
-  standings: RaceStanding[];
+  standings: DriverRaceStanding[];
 };
 
-export interface RaceStanding {
+export interface ConstructorRaceStanding {
   round: number;
   name: string;
   date: string;
@@ -67,6 +67,19 @@ export interface RaceStanding {
   cumulativePoints: number;
   position: number;
   points: number;
+}
+
+export interface DriverRaceStanding {
+  round: number;
+  name: string;
+  date: string;
+  circuit: string;
+  city: string;
+  country: string;
+  cumulativePoints: number;
+  position: number | null;
+  points: number | null;
+  racePosition: number | null;
 }
 
 export interface GetSeasonSummaryPathParams {

@@ -1,0 +1,18 @@
+query DriverStandingsPage($year: String!, $ref: String!) {
+  driverStandings(year: $year, ref: $ref) {
+    id
+    ref
+    forename
+    surname
+    nationality
+    standings {
+      round
+      name
+      date
+      points
+      position
+      cumulativePoints
+      racePosition
+    }
+  }
+}

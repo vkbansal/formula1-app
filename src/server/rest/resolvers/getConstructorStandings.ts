@@ -1,9 +1,7 @@
 import type { Request, Response } from 'express';
-import { mariadbPool } from 'server/common/db';
 
 import type { GetConstructorStandingsPathParams } from 'server/rest/types';
-import constructorQuery from 'server/common/queries/Constructor.sql';
-import constructorStandingsQuery from 'server/common/queries/ConstructorStandings.sql';
+import resolvers from 'server/common/resolvers';
 
 export async function getConstructorStandings(
   req: Request<GetConstructorStandingsPathParams>,
@@ -11,17 +9,7 @@ export async function getConstructorStandings(
 ): Promise<unknown> {
   const { constructorRef, year } = req.params;
 
-  const [constructorData] = await mariadbPool.query(constructorQuery, [
-    constructorRef
-  ]);
+  const data = await resolvers.getConstructorStandings(constructorRef, year);
 
-  const standingsData = await mariadbPool.query(
-    { sql: constructorStandingsQuery, dateStrings: true },
-    [constructorRef, year]
-  );
-
-  return res.status(200).send({
-    ...constructorData,
-    standings: standingsData
-  });
+  return res.status(200).send(data);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import { useSeasonSummaryQuery } from 'client/graphql/services';
+import { useSeasonSummaryPageQuery } from 'client/graphql/services';
 import {
   SeasonSummaryPage as View,
   SeasonSummaryPageProps
@@ -9,7 +9,7 @@ import {
 
 export function SeasonSummaryPage(): React.ReactElement {
   const { year } = useParams<{ year: string }>();
-  const [{ data }] = useSeasonSummaryQuery({ variables: { year } });
+  const [{ data }] = useSeasonSummaryPageQuery({ variables: { year } });
 
   const constructors = React.useMemo<
     SeasonSummaryPageProps['constructors']

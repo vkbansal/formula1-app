@@ -24,6 +24,6 @@ export function ConstructorStandingsPage(): React.ReactElement {
       races={data.standings || []}
     />
   ) : (
-    <Spinner />
+    <Spinner size="xl" />
   );
 }

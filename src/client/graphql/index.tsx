@@ -25,7 +25,7 @@ export default function GraphQLApp(): React.ReactElement {
       >
         <ConstructorStandingsPage />
       </Route>
-      <Route path="/rest/seasons/:year/drivers/:driverRef/standings" exact>
+      <Route path="/graphql/seasons/:year/drivers/:driverRef/standings" exact>
         <DriverStandingsPage />
       </Route>
     </Provider>

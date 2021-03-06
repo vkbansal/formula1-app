@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Container,
   Text,
   Heading,
   Table,
@@ -32,7 +31,7 @@ export function ConstructorStandingsPage(
 ): React.ReactElement {
   const { name, nationality, year, races } = props;
   return (
-    <Container paddingBlockStart="4">
+    <React.Fragment>
       <Heading as="h1">
         <span>Constructor Standings - {name}</span>
         <Text as="span" marginInline="2">
@@ -90,6 +89,6 @@ export function ConstructorStandingsPage(
           })}
         </Tbody>
       </Table>
-    </Container>
+    </React.Fragment>
   );
 }

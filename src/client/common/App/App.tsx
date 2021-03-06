@@ -109,17 +109,19 @@ export function App(): React.ReactElement {
             </Route>
           </Box>
         </Container>
-        <Switch>
-          <Route path="/" exact>
-            <HomePage />
-          </Route>
-          <Route path="/:module(rest)">
-            <RestApp />
-          </Route>
-          <Route path="/:module(graphql)">
-            <GraphQLApp />
-          </Route>
-        </Switch>
+        <Container paddingBlock="4">
+          <Switch>
+            <Route path="/" exact>
+              <HomePage />
+            </Route>
+            <Route path="/:module(rest)">
+              <RestApp />
+            </Route>
+            <Route path="/:module(graphql)">
+              <GraphQLApp />
+            </Route>
+          </Switch>
+        </Container>
       </ChakraProvider>
     </Router>
   );

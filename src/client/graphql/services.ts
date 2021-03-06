@@ -21,10 +21,22 @@ export type Scalars = {
 export type Query = {
   __typename?: 'Query';
   seasonSummary: SeasonSummary;
+  constructorStandings: ConstructorSeasonStandings;
+  driverStandings: DriverSeasonStandings;
 };
 
 export type QuerySeasonSummaryArgs = {
   year: Scalars['String'];
+};
+
+export type QueryConstructorStandingsArgs = {
+  year: Scalars['String'];
+  ref: Scalars['String'];
+};
+
+export type QueryDriverStandingsArgs = {
+  year: Scalars['String'];
+  ref: Scalars['String'];
 };
 
 export type SeasonSummary = {
@@ -76,11 +88,103 @@ export type RaceSummary = {
   winner: Driver;
 };
 
-export type SeasonSummaryQueryVariables = Exact<{
+export type ConstructorRaceStanding = {
+  __typename?: 'ConstructorRaceStanding';
+  round: Scalars['Int'];
+  name: Scalars['String'];
+  date: Scalars['String'];
+  circuit: Scalars['String'];
+  city: Scalars['String'];
+  country: Scalars['String'];
+  cumulativePoints: Scalars['Int'];
+  position: Scalars['Int'];
+  points: Scalars['Int'];
+};
+
+export type DriverRaceStanding = {
+  __typename?: 'DriverRaceStanding';
+  round: Scalars['Int'];
+  name: Scalars['String'];
+  date: Scalars['String'];
+  circuit: Scalars['String'];
+  city: Scalars['String'];
+  country: Scalars['String'];
+  cumulativePoints: Scalars['Int'];
+  position?: Maybe<Scalars['Int']>;
+  points?: Maybe<Scalars['Int']>;
+  racePosition?: Maybe<Scalars['Int']>;
+};
+
+export type ConstructorSeasonStandings = {
+  __typename?: 'ConstructorSeasonStandings';
+  id: Scalars['Int'];
+  ref: Scalars['String'];
+  name: Scalars['String'];
+  nationality: Scalars['String'];
+  url: Scalars['String'];
+  standings: Array<ConstructorRaceStanding>;
+};
+
+export type DriverSeasonStandings = {
+  __typename?: 'DriverSeasonStandings';
+  id: Scalars['Int'];
+  ref: Scalars['String'];
+  forename: Scalars['String'];
+  surname: Scalars['String'];
+  nationality: Scalars['String'];
+  url: Scalars['String'];
+  standings: Array<DriverRaceStanding>;
+};
+
+export type ConstructorStandingsPageQueryVariables = Exact<{
+  year: Scalars['String'];
+  ref: Scalars['String'];
+}>;
+
+export type ConstructorStandingsPageQuery = { __typename?: 'Query' } & {
+  constructorStandings: { __typename?: 'ConstructorSeasonStandings' } & Pick<
+    ConstructorSeasonStandings,
+    'id' | 'ref' | 'name' | 'nationality'
+  > & {
+      standings: Array<
+        { __typename?: 'ConstructorRaceStanding' } & Pick<
+          ConstructorRaceStanding,
+          'round' | 'name' | 'date' | 'points' | 'position' | 'cumulativePoints'
+        >
+      >;
+    };
+};
+
+export type DriverStandingsPageQueryVariables = Exact<{
+  year: Scalars['String'];
+  ref: Scalars['String'];
+}>;
+
+export type DriverStandingsPageQuery = { __typename?: 'Query' } & {
+  driverStandings: { __typename?: 'DriverSeasonStandings' } & Pick<
+    DriverSeasonStandings,
+    'id' | 'ref' | 'forename' | 'surname' | 'nationality'
+  > & {
+      standings: Array<
+        { __typename?: 'DriverRaceStanding' } & Pick<
+          DriverRaceStanding,
+          | 'round'
+          | 'name'
+          | 'date'
+          | 'points'
+          | 'position'
+          | 'cumulativePoints'
+          | 'racePosition'
+        >
+      >;
+    };
+};
+
+export type SeasonSummaryPageQueryVariables = Exact<{
   year: Scalars['String'];
 }>;
 
-export type SeasonSummaryQuery = { __typename?: 'Query' } & {
+export type SeasonSummaryPageQuery = { __typename?: 'Query' } & {
   seasonSummary: { __typename?: 'SeasonSummary' } & {
     constructors: Array<
       { __typename?: 'ConstructorSeasonSummary' } & Pick<
@@ -122,8 +226,70 @@ export type SeasonSummaryQuery = { __typename?: 'Query' } & {
   };
 };
 
-export const SeasonSummaryDocument = gql`
-  query SeasonSummary($year: String!) {
+export const ConstructorStandingsPageDocument = gql`
+  query ConstructorStandingsPage($year: String!, $ref: String!) {
+    constructorStandings(year: $year, ref: $ref) {
+      id
+      ref
+      name
+      nationality
+      standings {
+        round
+        name
+        date
+        points
+        position
+        cumulativePoints
+      }
+    }
+  }
+`;
+
+export function useConstructorStandingsPageQuery(
+  options: Omit<
+    Urql.UseQueryArgs<ConstructorStandingsPageQueryVariables>,
+    'query'
+  > = {}
+) {
+  return Urql.useQuery<ConstructorStandingsPageQuery>({
+    query: ConstructorStandingsPageDocument,
+    ...options
+  });
+}
+export const DriverStandingsPageDocument = gql`
+  query DriverStandingsPage($year: String!, $ref: String!) {
+    driverStandings(year: $year, ref: $ref) {
+      id
+      ref
+      forename
+      surname
+      nationality
+      standings {
+        round
+        name
+        date
+        points
+        position
+        cumulativePoints
+        racePosition
+      }
+    }
+  }
+`;
+
+export function useDriverStandingsPageQuery(
+  options: Omit<
+    Urql.UseQueryArgs<DriverStandingsPageQueryVariables>,
+    'query'
+  > = {}
+) {
+  return Urql.useQuery<DriverStandingsPageQuery>({
+    query: DriverStandingsPageDocument,
+    ...options
+  });
+}
+export const SeasonSummaryPageDocument = gql`
+  query SeasonSummaryPage($year: String!) {
     seasonSummary(year: $year) {
       constructors {
         constructor {
@@ -163,11 +329,14 @@ export const SeasonSummaryDocument = gql`
   }
 `;
 
-export function useSeasonSummaryQuery(
-  options: Omit<Urql.UseQueryArgs<SeasonSummaryQueryVariables>, 'query'> = {}
+export function useSeasonSummaryPageQuery(
+  options: Omit<
+    Urql.UseQueryArgs<SeasonSummaryPageQueryVariables>,
+    'query'
+  > = {}
 ) {
-  return Urql.useQuery<SeasonSummaryQuery>({
-    query: SeasonSummaryDocument,
+  return Urql.useQuery<SeasonSummaryPageQuery>({
+    query: SeasonSummaryPageDocument,
     ...options
   });
 }

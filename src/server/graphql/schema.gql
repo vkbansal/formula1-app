@@ -1,5 +1,7 @@
 type Query {
   seasonSummary(year: String!): SeasonSummary!
+  constructorStandings(year: String!, ref: String!): ConstructorSeasonStandings!
+  driverStandings(year: String!, ref: String!): DriverSeasonStandings!
 }
 
 type SeasonSummary {
@@ -43,4 +45,48 @@ type RaceSummary {
   name: String!
   polePosition: Driver!
   winner: Driver!
+}
+
+type ConstructorRaceStanding {
+  round: Int!
+  name: String!
+  date: String!
+  circuit: String!
+  city: String!
+  country: String!
+  cumulativePoints: Int!
+  position: Int!
+  points: Int!
+}
+
+type DriverRaceStanding {
+  round: Int!
+  name: String!
+  date: String!
+  circuit: String!
+  city: String!
+  country: String!
+  cumulativePoints: Int!
+  position: Int
+  points: Int
+  racePosition: Int
+}
+
+type ConstructorSeasonStandings {
+  id: Int!
+  ref: String!
+  name: String!
+  nationality: String!
+  url: String!
+  standings: [ConstructorRaceStanding!]!
+}
+
+type DriverSeasonStandings {
+  id: Int!
+  ref: String!
+  forename: String!
+  surname: String!
+  nationality: String!
+  url: String!
+  standings: [DriverRaceStanding!]!
 }

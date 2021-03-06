@@ -18,10 +18,22 @@ export type Scalars = {
 export type Query = {
   __typename?: 'Query';
   seasonSummary: SeasonSummary;
+  constructorStandings: ConstructorSeasonStandings;
+  driverStandings: DriverSeasonStandings;
 };
 
 export type QuerySeasonSummaryArgs = {
   year: Scalars['String'];
+};
+
+export type QueryConstructorStandingsArgs = {
+  year: Scalars['String'];
+  ref: Scalars['String'];
+};
+
+export type QueryDriverStandingsArgs = {
+  year: Scalars['String'];
+  ref: Scalars['String'];
 };
 
 export type SeasonSummary = {
@@ -71,4 +83,52 @@ export type RaceSummary = {
   name: Scalars['String'];
   polePosition: Driver;
   winner: Driver;
+};
+
+export type ConstructorRaceStanding = {
+  __typename?: 'ConstructorRaceStanding';
+  round: Scalars['Int'];
+  name: Scalars['String'];
+  date: Scalars['String'];
+  circuit: Scalars['String'];
+  city: Scalars['String'];
+  country: Scalars['String'];
+  cumulativePoints: Scalars['Int'];
+  position: Scalars['Int'];
+  points: Scalars['Int'];
+};
+
+export type DriverRaceStanding = {
+  __typename?: 'DriverRaceStanding';
+  round: Scalars['Int'];
+  name: Scalars['String'];
+  date: Scalars['String'];
+  circuit: Scalars['String'];
+  city: Scalars['String'];
+  country: Scalars['String'];
+  cumulativePoints: Scalars['Int'];
+  position?: Maybe<Scalars['Int']>;
+  points?: Maybe<Scalars['Int']>;
+  racePosition?: Maybe<Scalars['Int']>;
+};
+
+export type ConstructorSeasonStandings = {
+  __typename?: 'ConstructorSeasonStandings';
+  id: Scalars['Int'];
+  ref: Scalars['String'];
+  name: Scalars['String'];
+  nationality: Scalars['String'];
+  url: Scalars['String'];
+  standings: Array<ConstructorRaceStanding>;
+};
+
+export type DriverSeasonStandings = {
+  __typename?: 'DriverSeasonStandings';
+  id: Scalars['Int'];
+  ref: Scalars['String'];
+  forename: Scalars['String'];
+  surname: Scalars['String'];
+  nationality: Scalars['String'];
+  url: Scalars['String'];
+  standings: Array<DriverRaceStanding>;
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Container,
   Text,
   Heading,
   Table,
@@ -11,6 +10,7 @@ import {
   Td
 } from '@chakra-ui/react';
 import emojiFlags from 'emoji-flags';
+import { formatPosition } from 'client/common/utils/formatters';
 
 export interface DriverStandingsPageProps {
   module: 'rest' | 'graphql';
@@ -33,7 +33,7 @@ export function DriverStandingsPage(
 ): React.ReactElement {
   const { name, nationality, year, races } = props;
   return (
-    <Container paddingBlock="4">
+    <React.Fragment>
       <Heading as="h1">
         <span>Driver Standings - {name}</span>
         <Text as="span" marginInline="2">
@@ -73,7 +73,7 @@ export function DriverStandingsPage(
                 <Td>{race.round}</Td>
                 <Td>{race.date}</Td>
                 <Td>{race.name}</Td>
-                <Td>{race.racePosition}</Td>
+                <Td>{formatPosition(race.racePosition)}</Td>
                 <Td>{race.points}</Td>
                 <Td>{race.cumulativePoints}</Td>
                 <Td>
@@ -93,6 +93,6 @@ export function DriverStandingsPage(
           })}
         </Tbody>
       </Table>
-    </Container>
+    </React.Fragment>
   );
 }

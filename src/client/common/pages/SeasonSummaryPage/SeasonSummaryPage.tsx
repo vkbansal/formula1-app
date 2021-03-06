@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Container,
   Tab,
   Tabs,
   TabList,
@@ -96,7 +95,7 @@ export function SeasonSummaryPage(
   }
 
   return (
-    <Container paddingBlockStart="4">
+    <React.Fragment>
       <Text
         as="div"
         fontSize="lg"
@@ -245,6 +244,6 @@ export function SeasonSummaryPage(
           </TabPanel>
         </TabPanels>
       </Tabs>
-    </Container>
+    </React.Fragment>
   );
 }

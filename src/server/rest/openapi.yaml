@@ -198,7 +198,7 @@ components:
             standings:
               type: array
               items:
-                $ref: '#/components/schemas/RaceStanding'
+                $ref: '#/components/schemas/ConstructorRaceStanding'
     DriverSeasonStandings:
       allOf:
         - $ref: '#/components/schemas/Driver'
@@ -208,8 +208,8 @@ components:
             standings:
               type: array
               items:
-                $ref: '#/components/schemas/RaceStanding'
-    RaceStanding:
+                $ref: '#/components/schemas/DriverRaceStanding'
+    ConstructorRaceStanding:
       type: object
       required:
         - round
@@ -218,7 +218,6 @@ components:
         - circuit
         - city
         - country
-        - racePosition
         - cumulativePoints
         - position
         - points
@@ -239,10 +238,42 @@ components:
           type: integer
         position:
           type: integer
-          # nullable: true
         points:
           type: integer
-          # nullable: true
+    DriverRaceStanding:
+      type: object
+      required:
+        - round
+        - name
+        - date
+        - circuit
+        - city
+        - country
+        - cumulativePoints
+        - position
+        - points
+        - racePosition
+      properties:
+        round:
+          type: integer
+        name:
+          type: string
+        date:
+          type: string
+        circuit:
+          type: string
+        city:
+          type: string
+        country:
+          type: string
+        cumulativePoints:
+          type: integer
+        position:
+          type: integer
+          nullable: true
+        points:
+          type: integer
+          nullable: true
         racePosition:
           type: integer
-          # nullable: true
+          nullable: true
