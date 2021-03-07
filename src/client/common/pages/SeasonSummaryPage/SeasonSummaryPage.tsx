@@ -12,14 +12,12 @@ import {
   Tr,
   Td,
   Th,
-  Select
+  Heading
 } from '@chakra-ui/react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import emojiFlags from 'emoji-flags';
 import { css } from '@emotion/css';
-
-const LIMIT = 2020;
-const START = 1950;
+import { YearSelect } from 'client/common/components/YearSelect/YearSelect';
 
 export interface SeasonSummaryPageProps {
   module: 'rest' | 'graphql';
@@ -96,35 +94,12 @@ export function SeasonSummaryPage(
 
   return (
     <React.Fragment>
-      <Text
-        as="div"
-        fontSize="lg"
-        fontWeight="bold"
-        textAlign="center"
-        marginBlockEnd="4"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-      >
-        <Text as="span" whiteSpace="nowrap" marginInlineEnd="2">
-          Summary for Season
+      <Heading as="h1" display="flex" alignItems="center" marginBlockEnd="8">
+        <Text as="span" whiteSpace="nowrap" marginInlineEnd="4">
+          Season Summary
         </Text>
-        <Select
-          display="inline"
-          width="auto"
-          fontWeight="bold"
-          value={year}
-          onChange={handleYearChange}
-        >
-          {Array.from({ length: LIMIT - START }, (_, i) => {
-            return (
-              <option key={LIMIT - i} value={LIMIT - i}>
-                {LIMIT - i}
-              </option>
-            );
-          })}
-        </Select>
-      </Text>
+        <YearSelect width="auto" value={year} onChange={handleYearChange} />
+      </Heading>
       <Tabs isFitted index={tabIndex} onChange={handleTabsChange}>
         <TabList>
           <Tab>Constructor Standings</Tab>
