@@ -8,7 +8,7 @@ export async function getDriverStandings(
   res: Response
 ): Promise<unknown> {
   const { driverRef, year } = req.params;
-  const data = resolvers.getDriverStandings(driverRef, year);
+  const data = await resolvers.getDriverStandings(driverRef, year);
 
   return res.status(200).send(data);
 }
