@@ -1,7 +1,7 @@
 export function formatPosition(position: number): string {
   if (typeof position !== 'number') {
     throw new TypeError(
-      `Expected type "number" but got "${typeof position}" instead.`
+      `Expected type "number" but got "${typeof position}"  instead. Given ${position}`
     );
   }
   switch (position) {

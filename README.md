@@ -23,7 +23,7 @@ A demo app for "Formula 1 world Championship (1950 - 2020)". Data is taken from 
 
 ## How to run the app locally?
 
-Please follow the the instructions in [development](#development) section below. May be I'll publish this as a docker image in future.
+Please follow the the instructions in [development](#development) section below.
 
 ## Development
 
@@ -50,15 +50,8 @@ A `docker-compose.yml` file is also provided, you can use that instead.
 
 1. Clone this repo `git clone git@github.com/vkbansal/formula1-app.git`.
 2. Change to the directory `cd formula1-app`
-3. Install the pacakges. `yarn`
+3. Install the pacakges using `yarn`
 4. Copy `example.env` file to `.env`. `cp example.env .env`
 5. The default values in `.env` file should work fine unless you have modified the docker command. If you have, then update the file accordingly.
-6. Start the Servers.
-   - Development Mode (You'll need to run the commands in 3 seperate tabs/windows):
-     - `yarn client`. This will start the client build in watch mode.
-     - `yarn server`. This will start the server build in watch mode.
-     - `yarn start`. This start the server at http://localhost:3000 in watch mode.
-   - Preview Mode (You can run these commands in a single tab/window):
-     - `yarn build`. This is will build both the client and server code.
-     - `yarn start`. This start the server at http://localhost:3000 in watch mode.
+6. Start the servers by running the command `yarn start`.
 7. Go to http://localhost:3000

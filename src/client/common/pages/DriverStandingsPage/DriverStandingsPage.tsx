@@ -21,8 +21,8 @@ export interface DriverStandingsPageProps {
     round: number;
     name: string;
     date: string;
-    points: number;
     cumulativePoints: number;
+    points: number;
     position: number;
     racePosition: number;
   }>;
