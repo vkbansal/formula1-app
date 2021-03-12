@@ -14,7 +14,7 @@ export default function GraphQLApp(): React.ReactElement {
   return (
     <Provider value={client}>
       <Route path="/graphql" exact>
-        <Redirect to="/rest/seasons/2020/summary" />
+        <Redirect to="/graphql/seasons/2020/summary" />
       </Route>
       <Route path="/graphql/seasons/:year/summary" exact>
         <SeasonSummaryPage />

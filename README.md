@@ -21,6 +21,8 @@ A demo app for "Formula 1 world Championship (1950 - 2020)". Data is taken from 
   - [OpenAPI (formerly known as Swagger)](https://swagger.io/docs/specification/about/)
   - [GraphQL](https://graphql.org/)
 
+> Disclaimer: The code for this app (specifically the server side code) is not meant to be used in production directly. You can use as a reference or a starting point but do not use it directly in production.
+
 ## How to run the app locally?
 
 Please follow the the instructions in [development](#development) section below.
