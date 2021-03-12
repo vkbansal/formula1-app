@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import cors from 'cors';
 import { mariadbPool } from './common/db';
 
 import restApp from './rest';
@@ -11,6 +12,11 @@ const app = express();
 
 app.use(express.json());
 app.use(express.static(path.resolve(__dirname, '../client'), {}));
+app.use(
+  cors({
+    origin: 'http://localhost:5000'
+  })
+);
 
 app.use('/api/rest', restApp);
 app.use('/api/graphql', graphqlApp);
