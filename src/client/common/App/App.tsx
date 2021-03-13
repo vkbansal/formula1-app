@@ -33,7 +33,6 @@ const link = css`
 
 const theme = extendTheme({
   config: {
-    initialColorMode: 'dark',
     useSystemColorMode: false
   },
   styles: {
@@ -69,7 +68,7 @@ function AppSwitch(): React.ReactElement {
   }
 
   return (
-    <Box color="white" display="flex" alignItems="center">
+    <Box color="GrayText" display="flex" alignItems="center">
       <Text marginInlineEnd="2">Rest</Text>
       <UISwitch
         colorScheme="blue"

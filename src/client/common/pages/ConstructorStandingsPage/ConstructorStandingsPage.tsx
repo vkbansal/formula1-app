@@ -32,20 +32,13 @@ export function ConstructorStandingsPage(
   const { name, nationality, year, races } = props;
   return (
     <React.Fragment>
-      <Heading as="h1">
-        <span>Constructor Standings - {name}</span>
+      <Heading as="h1" marginBlockEnd="6">
+        <span>
+          {year} Constructor Standings - {name}
+        </span>
         <Text as="span" marginInline="2">
           {emojiFlags[nationality]?.emoji}
         </Text>
-      </Heading>
-      <Heading
-        as="h2"
-        fontSize="1.5rem"
-        color="gray.500"
-        marginBlockStart="1"
-        marginBlockEnd="6"
-      >
-        Year: {year}
       </Heading>
       <Table>
         <Thead>
