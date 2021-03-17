@@ -13,7 +13,7 @@ const link = css`
   font-size: 2rem;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(229, 62, 62, 0.05);
   }
 `;
 

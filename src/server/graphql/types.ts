@@ -16,7 +16,6 @@ export type Scalars = {
 };
 
 export type Query = {
-  __typename?: 'Query';
   seasonSummary: SeasonSummary;
   constructorStandings: ConstructorSeasonStandings;
   driverStandings: DriverSeasonStandings;
@@ -37,21 +36,18 @@ export type QueryDriverStandingsArgs = {
 };
 
 export type SeasonSummary = {
-  __typename?: 'SeasonSummary';
   constructors: Array<ConstructorSeasonSummary>;
   drivers: Array<DriverSeasonSummary>;
   races: Array<RaceSummary>;
 };
 
 export type ConstructorSeasonSummary = {
-  __typename?: 'ConstructorSeasonSummary';
   constructor: Constructor;
   points: Scalars['Int'];
   position: Scalars['Int'];
 };
 
 export type Constructor = {
-  __typename?: 'Constructor';
   id: Scalars['Int'];
   ref: Scalars['String'];
   name: Scalars['String'];
@@ -60,14 +56,12 @@ export type Constructor = {
 };
 
 export type DriverSeasonSummary = {
-  __typename?: 'DriverSeasonSummary';
   driver: Driver;
   points: Scalars['Int'];
   position: Scalars['Int'];
 };
 
 export type Driver = {
-  __typename?: 'Driver';
   id: Scalars['Int'];
   ref: Scalars['String'];
   forename: Scalars['String'];
@@ -77,7 +71,6 @@ export type Driver = {
 };
 
 export type RaceSummary = {
-  __typename?: 'RaceSummary';
   round: Scalars['Int'];
   date: Scalars['String'];
   name: Scalars['String'];
@@ -86,7 +79,6 @@ export type RaceSummary = {
 };
 
 export type ConstructorRaceStanding = {
-  __typename?: 'ConstructorRaceStanding';
   round: Scalars['Int'];
   name: Scalars['String'];
   date: Scalars['String'];
@@ -99,7 +91,6 @@ export type ConstructorRaceStanding = {
 };
 
 export type DriverRaceStanding = {
-  __typename?: 'DriverRaceStanding';
   round: Scalars['Int'];
   name: Scalars['String'];
   date: Scalars['String'];
@@ -107,13 +98,12 @@ export type DriverRaceStanding = {
   city: Scalars['String'];
   country: Scalars['String'];
   cumulativePoints: Scalars['Int'];
-  position?: Maybe<Scalars['Int']>;
-  points?: Maybe<Scalars['Int']>;
-  racePosition?: Maybe<Scalars['Int']>;
+  position: Maybe<Scalars['Int']>;
+  points: Maybe<Scalars['Int']>;
+  racePosition: Maybe<Scalars['Int']>;
 };
 
 export type ConstructorSeasonStandings = {
-  __typename?: 'ConstructorSeasonStandings';
   id: Scalars['Int'];
   ref: Scalars['String'];
   name: Scalars['String'];
@@ -123,7 +113,6 @@ export type ConstructorSeasonStandings = {
 };
 
 export type DriverSeasonStandings = {
-  __typename?: 'DriverSeasonStandings';
   id: Scalars['Int'];
   ref: Scalars['String'];
   forename: Scalars['String'];

@@ -1,4 +1,3 @@
-import gql from 'graphql-tag';
 import * as Urql from 'urql';
 export type Maybe<T> = T | null;
 export type Exact<T extends { [key: string]: unknown }> = {
@@ -19,7 +18,6 @@ export type Scalars = {
 };
 
 export type Query = {
-  __typename?: 'Query';
   seasonSummary: SeasonSummary;
   constructorStandings: ConstructorSeasonStandings;
   driverStandings: DriverSeasonStandings;
@@ -40,21 +38,18 @@ export type QueryDriverStandingsArgs = {
 };
 
 export type SeasonSummary = {
-  __typename?: 'SeasonSummary';
   constructors: Array<ConstructorSeasonSummary>;
   drivers: Array<DriverSeasonSummary>;
   races: Array<RaceSummary>;
 };
 
 export type ConstructorSeasonSummary = {
-  __typename?: 'ConstructorSeasonSummary';
   constructor: Constructor;
   points: Scalars['Int'];
   position: Scalars['Int'];
 };
 
 export type Constructor = {
-  __typename?: 'Constructor';
   id: Scalars['Int'];
   ref: Scalars['String'];
   name: Scalars['String'];
@@ -63,14 +58,12 @@ export type Constructor = {
 };
 
 export type DriverSeasonSummary = {
-  __typename?: 'DriverSeasonSummary';
   driver: Driver;
   points: Scalars['Int'];
   position: Scalars['Int'];
 };
 
 export type Driver = {
-  __typename?: 'Driver';
   id: Scalars['Int'];
   ref: Scalars['String'];
   forename: Scalars['String'];
@@ -80,7 +73,6 @@ export type Driver = {
 };
 
 export type RaceSummary = {
-  __typename?: 'RaceSummary';
   round: Scalars['Int'];
   date: Scalars['String'];
   name: Scalars['String'];
@@ -89,7 +81,6 @@ export type RaceSummary = {
 };
 
 export type ConstructorRaceStanding = {
-  __typename?: 'ConstructorRaceStanding';
   round: Scalars['Int'];
   name: Scalars['String'];
   date: Scalars['String'];
@@ -102,7 +93,6 @@ export type ConstructorRaceStanding = {
 };
 
 export type DriverRaceStanding = {
-  __typename?: 'DriverRaceStanding';
   round: Scalars['Int'];
   name: Scalars['String'];
   date: Scalars['String'];
@@ -110,13 +100,12 @@ export type DriverRaceStanding = {
   city: Scalars['String'];
   country: Scalars['String'];
   cumulativePoints: Scalars['Int'];
-  position?: Maybe<Scalars['Int']>;
-  points?: Maybe<Scalars['Int']>;
-  racePosition?: Maybe<Scalars['Int']>;
+  position: Maybe<Scalars['Int']>;
+  points: Maybe<Scalars['Int']>;
+  racePosition: Maybe<Scalars['Int']>;
 };
 
 export type ConstructorSeasonStandings = {
-  __typename?: 'ConstructorSeasonStandings';
   id: Scalars['Int'];
   ref: Scalars['String'];
   name: Scalars['String'];
@@ -126,7 +115,6 @@ export type ConstructorSeasonStandings = {
 };
 
 export type DriverSeasonStandings = {
-  __typename?: 'DriverSeasonStandings';
   id: Scalars['Int'];
   ref: Scalars['String'];
   forename: Scalars['String'];
@@ -141,18 +129,18 @@ export type ConstructorStandingsPageQueryVariables = Exact<{
   ref: Scalars['String'];
 }>;
 
-export type ConstructorStandingsPageQuery = { __typename?: 'Query' } & {
-  constructorStandings: { __typename?: 'ConstructorSeasonStandings' } & Pick<
+export type ConstructorStandingsPageQuery = {
+  constructorStandings: Pick<
     ConstructorSeasonStandings,
     'id' | 'ref' | 'name' | 'nationality'
   > & {
-      standings: Array<
-        { __typename?: 'ConstructorRaceStanding' } & Pick<
-          ConstructorRaceStanding,
-          'round' | 'name' | 'date' | 'points' | 'position' | 'cumulativePoints'
-        >
-      >;
-    };
+    standings: Array<
+      Pick<
+        ConstructorRaceStanding,
+        'round' | 'name' | 'date' | 'points' | 'position' | 'cumulativePoints'
+      >
+    >;
+  };
 };
 
 export type DriverStandingsPageQueryVariables = Exact<{
@@ -160,90 +148,69 @@ export type DriverStandingsPageQueryVariables = Exact<{
   ref: Scalars['String'];
 }>;
 
-export type DriverStandingsPageQuery = { __typename?: 'Query' } & {
-  driverStandings: { __typename?: 'DriverSeasonStandings' } & Pick<
+export type DriverStandingsPageQuery = {
+  driverStandings: Pick<
     DriverSeasonStandings,
     'id' | 'ref' | 'forename' | 'surname' | 'nationality'
   > & {
-      standings: Array<
-        { __typename?: 'DriverRaceStanding' } & Pick<
-          DriverRaceStanding,
-          | 'round'
-          | 'name'
-          | 'date'
-          | 'points'
-          | 'position'
-          | 'cumulativePoints'
-          | 'racePosition'
-        >
-      >;
-    };
+    standings: Array<
+      Pick<
+        DriverRaceStanding,
+        | 'round'
+        | 'name'
+        | 'date'
+        | 'points'
+        | 'position'
+        | 'cumulativePoints'
+        | 'racePosition'
+      >
+    >;
+  };
 };
 
 export type SeasonSummaryPageQueryVariables = Exact<{
   year: Scalars['String'];
 }>;
 
-export type SeasonSummaryPageQuery = { __typename?: 'Query' } & {
-  seasonSummary: { __typename?: 'SeasonSummary' } & {
+export type SeasonSummaryPageQuery = {
+  seasonSummary: {
     constructors: Array<
-      { __typename?: 'ConstructorSeasonSummary' } & Pick<
-        ConstructorSeasonSummary,
-        'points' | 'position'
-      > & {
-          constructor: { __typename?: 'Constructor' } & Pick<
-            Constructor,
-            'name' | 'nationality' | 'ref'
-          >;
-        }
+      Pick<ConstructorSeasonSummary, 'points' | 'position'> & {
+        constructor: Pick<Constructor, 'name' | 'nationality' | 'ref'>;
+      }
     >;
     drivers: Array<
-      { __typename?: 'DriverSeasonSummary' } & Pick<
-        DriverSeasonSummary,
-        'points' | 'position'
-      > & {
-          driver: { __typename?: 'Driver' } & Pick<
-            Driver,
-            'forename' | 'surname' | 'nationality' | 'ref'
-          >;
-        }
+      Pick<DriverSeasonSummary, 'points' | 'position'> & {
+        driver: Pick<Driver, 'forename' | 'surname' | 'nationality' | 'ref'>;
+      }
     >;
     races: Array<
-      { __typename?: 'RaceSummary' } & Pick<
-        RaceSummary,
-        'round' | 'name' | 'date'
-      > & {
-          polePosition: { __typename?: 'Driver' } & Pick<
-            Driver,
-            'forename' | 'surname' | 'nationality'
-          >;
-          winner: { __typename?: 'Driver' } & Pick<
-            Driver,
-            'forename' | 'surname' | 'nationality'
-          >;
-        }
+      Pick<RaceSummary, 'round' | 'name' | 'date'> & {
+        polePosition: Pick<Driver, 'forename' | 'surname' | 'nationality'>;
+        winner: Pick<Driver, 'forename' | 'surname' | 'nationality'>;
+      }
     >;
   };
 };
 
-export const ConstructorStandingsPageDocument = gql`
-  query ConstructorStandingsPage($year: String!, $ref: String!) {
-    constructorStandings(year: $year, ref: $ref) {
-      id
-      ref
+export const ConstructorStandingsPageDocument = `
+    query ConstructorStandingsPage($year: String!, $ref: String!) {
+  constructorStandings(year: $year, ref: $ref) {
+    id
+    ref
+    name
+    nationality
+    standings {
+      round
       name
-      nationality
-      standings {
-        round
-        name
-        date
-        points
-        position
-        cumulativePoints
-      }
+      date
+      points
+      position
+      cumulativePoints
     }
   }
-`;
+}
+    `;
 
 export function useConstructorStandingsPageQuery(
   options: Omit<
@@ -256,26 +223,26 @@ export function useConstructorStandingsPageQuery(
     ...options
   });
 }
-export const DriverStandingsPageDocument = gql`
-  query DriverStandingsPage($year: String!, $ref: String!) {
-    driverStandings(year: $year, ref: $ref) {
-      id
-      ref
-      forename
-      surname
-      nationality
-      standings {
-        round
-        name
-        date
-        points
-        position
-        cumulativePoints
-        racePosition
-      }
+export const DriverStandingsPageDocument = `
+    query DriverStandingsPage($year: String!, $ref: String!) {
+  driverStandings(year: $year, ref: $ref) {
+    id
+    ref
+    forename
+    surname
+    nationality
+    standings {
+      round
+      name
+      date
+      points
+      position
+      cumulativePoints
+      racePosition
     }
   }
-`;
+}
+    `;
 
 export function useDriverStandingsPageQuery(
   options: Omit<
@@ -288,46 +255,46 @@ export function useDriverStandingsPageQuery(
     ...options
   });
 }
-export const SeasonSummaryPageDocument = gql`
-  query SeasonSummaryPage($year: String!) {
-    seasonSummary(year: $year) {
-      constructors {
-        constructor {
-          name
-          nationality
-          ref
-        }
-        points
-        position
-      }
-      drivers {
-        driver {
-          forename
-          surname
-          nationality
-          ref
-        }
-        points
-        position
-      }
-      races {
-        round
+export const SeasonSummaryPageDocument = `
+    query SeasonSummaryPage($year: String!) {
+  seasonSummary(year: $year) {
+    constructors {
+      constructor {
         name
-        date
-        polePosition {
-          forename
-          surname
-          nationality
-        }
-        winner {
-          forename
-          surname
-          nationality
-        }
+        nationality
+        ref
+      }
+      points
+      position
+    }
+    drivers {
+      driver {
+        forename
+        surname
+        nationality
+        ref
+      }
+      points
+      position
+    }
+    races {
+      round
+      name
+      date
+      polePosition {
+        forename
+        surname
+        nationality
+      }
+      winner {
+        forename
+        surname
+        nationality
       }
     }
   }
-`;
+}
+    `;
 
 export function useSeasonSummaryPageQuery(
   options: Omit<
