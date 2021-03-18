@@ -74,8 +74,8 @@ export type RaceSummary = {
   round: Scalars['Int'];
   date: Scalars['String'];
   name: Scalars['String'];
-  polePosition: Driver;
-  winner: Driver;
+  polePosition: Maybe<Driver>;
+  winner: Maybe<Driver>;
 };
 
 export type ConstructorRaceStanding = {

@@ -43,8 +43,8 @@ type RaceSummary {
   round: Int!
   date: String!
   name: String!
-  polePosition: Driver!
-  winner: Driver!
+  polePosition: Driver
+  winner: Driver
 }
 
 type ConstructorRaceStanding {

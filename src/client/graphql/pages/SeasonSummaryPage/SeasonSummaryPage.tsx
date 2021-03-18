@@ -45,14 +45,18 @@ export function SeasonSummaryPage(): React.ReactElement {
     return data.seasonSummary.races.map(
       ({ winner, polePosition, ...rest }) => ({
         ...rest,
-        polePosition: {
-          name: `${polePosition.forename} ${polePosition.surname}`,
-          nationality: polePosition.nationality
-        },
-        winner: {
-          name: `${winner.forename} ${winner.surname}`,
-          nationality: winner.nationality
-        }
+        polePosition: polePosition
+          ? {
+              name: `${polePosition.forename} ${polePosition.surname}`,
+              nationality: polePosition.nationality
+            }
+          : null,
+        winner: winner
+          ? {
+              name: `${winner.forename} ${winner.surname}`,
+              nationality: winner.nationality
+            }
+          : null
       })
     );
   }, [data]);

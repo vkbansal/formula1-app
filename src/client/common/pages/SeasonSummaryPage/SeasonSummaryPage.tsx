@@ -42,16 +42,16 @@ export interface SeasonSummaryPageProps {
     polePosition: {
       name: string;
       nationality: string;
-    };
+    } | null;
     winner: {
       name: string;
       nationality: string;
-    };
+    } | null;
   }>;
   year: string;
 }
 
-const tabIds = ['constructor-standings', 'driver-standings', 'races'];
+const tabIds = ['races', 'driver-standings', 'constructor-standings'];
 
 const tableStyles = css`
   & > tbody > tr > td > a {
@@ -102,44 +102,59 @@ export function SeasonSummaryPage(
       </Heading>
       <Tabs isFitted index={tabIndex} onChange={handleTabsChange}>
         <TabList>
-          <Tab>Constructor Standings</Tab>
-          <Tab>Driver Standings</Tab>
           <Tab>Races</Tab>
+          <Tab>Driver Standings</Tab>
+          <Tab>Constructor Standings</Tab>
         </TabList>
 
         <TabPanels>
           <TabPanel>
-            <Table key={year} className={tableStyles}>
+            <Table key={year}>
               <Thead>
                 <Tr>
-                  <Th>Position</Th>
-                  <Th>Name</Th>
-                  <Th>Points</Th>
+                  <Th>Round</Th>
+                  <Th>Track</Th>
+                  <Th>Date</Th>
+                  <Th>Pole Position</Th>
+                  <Th>Winnner</Th>
                 </Tr>
               </Thead>
               <Tbody>
-                {constructors.map(
-                  ({ name, points, position, nationality, ref }, i) => (
-                    <Tr key={i}>
-                      <Td padding="0">
-                        <Link to={getConstructorLink(ref)}>{position}</Link>
-                      </Td>
-                      <Td padding="0">
-                        <Link to={getConstructorLink(ref)}>
+                {races.map((row, i) => (
+                  <Tr key={i}>
+                    <Td>{row.round}</Td>
+                    <Td>{row.name}</Td>
+                    <Td>{row.date}</Td>
+                    <Td>
+                      {row.polePosition ? (
+                        <React.Fragment>
                           <Text as="span" marginInlineEnd="2">
-                            {name}
+                            {row.polePosition.name}
                           </Text>
                           <Text as="span" fontSize="xl">
-                            {emojiFlags[nationality]?.emoji}
+                            {emojiFlags[row.polePosition.nationality]?.emoji}
                           </Text>
-                        </Link>
-                      </Td>
-                      <Td padding="0">
-                        <Link to={getConstructorLink(ref)}>{points}</Link>
-                      </Td>
-                    </Tr>
-                  )
-                )}
+                        </React.Fragment>
+                      ) : (
+                        '-'
+                      )}
+                    </Td>
+                    <Td>
+                      {row.winner ? (
+                        <React.Fragment>
+                          <Text as="span" marginInlineEnd="2">
+                            {row.winner.name}
+                          </Text>
+                          <Text as="span" fontSize="xl">
+                            {emojiFlags[row.winner.nationality]?.emoji}
+                          </Text>
+                        </React.Fragment>
+                      ) : (
+                        '-'
+                      )}
+                    </Td>
+                  </Tr>
+                ))}
               </Tbody>
             </Table>
           </TabPanel>
@@ -179,41 +194,37 @@ export function SeasonSummaryPage(
             </Table>
           </TabPanel>
           <TabPanel>
-            <Table key={year}>
+            <Table key={year} className={tableStyles}>
               <Thead>
                 <Tr>
-                  <Th>Round</Th>
-                  <Th>Track</Th>
-                  <Th>Date</Th>
-                  <Th>Pole Position</Th>
-                  <Th>Winnner</Th>
+                  <Th>Position</Th>
+                  <Th>Name</Th>
+                  <Th>Points</Th>
                 </Tr>
               </Thead>
-
               <Tbody>
-                {races.map((row, i) => (
-                  <Tr key={i}>
-                    <Td>{row.round}</Td>
-                    <Td>{row.name}</Td>
-                    <Td>{row.date}</Td>
-                    <Td>
-                      <Text as="span" marginInlineEnd="2">
-                        {row.polePosition.name}
-                      </Text>
-                      <Text as="span" fontSize="xl">
-                        {emojiFlags[row.polePosition.nationality]?.emoji}
-                      </Text>
-                    </Td>
-                    <Td>
-                      <Text as="span" marginInlineEnd="2">
-                        {row.winner.name}
-                      </Text>
-                      <Text as="span" fontSize="xl">
-                        {emojiFlags[row.winner.nationality]?.emoji}
-                      </Text>
-                    </Td>
-                  </Tr>
-                ))}
+                {constructors.map(
+                  ({ name, points, position, nationality, ref }, i) => (
+                    <Tr key={i}>
+                      <Td padding="0">
+                        <Link to={getConstructorLink(ref)}>{position}</Link>
+                      </Td>
+                      <Td padding="0">
+                        <Link to={getConstructorLink(ref)}>
+                          <Text as="span" marginInlineEnd="2">
+                            {name}
+                          </Text>
+                          <Text as="span" fontSize="xl">
+                            {emojiFlags[nationality]?.emoji}
+                          </Text>
+                        </Link>
+                      </Td>
+                      <Td padding="0">
+                        <Link to={getConstructorLink(ref)}>{points}</Link>
+                      </Td>
+                    </Tr>
+                  )
+                )}
               </Tbody>
             </Table>
           </TabPanel>

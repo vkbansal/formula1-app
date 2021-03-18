@@ -76,8 +76,8 @@ export type RaceSummary = {
   round: Scalars['Int'];
   date: Scalars['String'];
   name: Scalars['String'];
-  polePosition: Driver;
-  winner: Driver;
+  polePosition: Maybe<Driver>;
+  winner: Maybe<Driver>;
 };
 
 export type ConstructorRaceStanding = {
@@ -186,8 +186,10 @@ export type SeasonSummaryPageQuery = {
     >;
     races: Array<
       Pick<RaceSummary, 'round' | 'name' | 'date'> & {
-        polePosition: Pick<Driver, 'forename' | 'surname' | 'nationality'>;
-        winner: Pick<Driver, 'forename' | 'surname' | 'nationality'>;
+        polePosition: Maybe<
+          Pick<Driver, 'forename' | 'surname' | 'nationality'>
+        >;
+        winner: Maybe<Pick<Driver, 'forename' | 'surname' | 'nationality'>>;
       }
     >;
   };

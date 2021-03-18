@@ -43,8 +43,8 @@ export interface RaceSeasonSummary {
   round: number;
   date: string;
   name: string;
-  polePosition: Driver;
-  winner: Driver;
+  polePosition?: Driver;
+  winner?: Driver;
 }
 
 export type ConstructorSeasonStandings = Constructor & {

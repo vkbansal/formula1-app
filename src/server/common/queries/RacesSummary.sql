@@ -14,7 +14,7 @@ SELECT
       'url', D.url
     ) FROM drivers AS D
     LEFT OUTER JOIN countries AS T on D.countryId = T.id
-    WHERE D.id = Q.driverId
+    WHERE D.id = (SELECT driverId FROM qualifying AS Q WHERE Q.raceId = R.id AND Q.position = 1 LIMIT 1)
   ) AS polePosition,
   (
     SELECT JSON_OBJECT(
@@ -28,10 +28,8 @@ SELECT
       'url', D.url
     ) FROM drivers AS D
     LEFT OUTER JOIN countries AS T on D.countryId = T.id
-    WHERE D.id = W.driverId
+    WHERE D.id = (SELECT driverId FROM results AS W WHERE W.raceId = R.id AND W.position = 1 LIMIT 1)
   ) AS winner
 FROM races AS R
-LEFT OUTER JOIN qualifying AS Q on Q.raceId = R.id
-LEFT OUTER JOIN results AS W on W.raceId = R.id
-WHERE R.year = ? AND Q.position = 1 AND W.position = 1
+WHERE R.year = ?
 ORDER BY R.round ASC
