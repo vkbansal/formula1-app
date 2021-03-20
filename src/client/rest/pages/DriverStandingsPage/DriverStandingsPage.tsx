@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Text } from '@chakra-ui/react';
-// import { DriverStandingsPage as View } from 'client/common/pages/DriverStandingsPage/DriverStandingsPage';
+import { Spinner } from '@chakra-ui/react';
+import { DriverStandingsPage as View } from 'client/common/pages/DriverStandingsPage/DriverStandingsPage';
+import { useGetDriverStandings } from 'client/rest/services';
 
 export function DriverStandingsPage(): React.ReactElement {
   const { driverRef, year } = useParams<{
@@ -9,22 +10,7 @@ export function DriverStandingsPage(): React.ReactElement {
     year: string;
   }>();
 
-  console.log({ driverRef, year });
-
-  return (
-    <React.Fragment>
-      <Text fontSize="3xl">TODO: Implement this on React-Day</Text>
-    </React.Fragment>
-  );
-}
-
-/**
-
-const { data, loading } = useGet(
-  `/seasons/${year}/drivers/${driverRef}/standings`
-);
-
-const { data, loading } = useGetDriverStandings({ driverRef, year });
+  const { data, loading } = useGetDriverStandings({ driverRef, year });
 
   return data && !loading ? (
     <View
@@ -37,5 +23,4 @@ const { data, loading } = useGetDriverStandings({ driverRef, year });
   ) : (
     <Spinner size="xl" />
   );
-
-*/
+}

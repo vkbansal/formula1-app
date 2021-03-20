@@ -22,9 +22,9 @@ export interface DriverStandingsPageProps {
     name: string;
     date: string;
     cumulativePoints: number;
-    points: number;
-    position: number;
-    racePosition: number;
+    points: number | null;
+    position: number | null;
+    racePosition: number | null;
   }>;
 }
 
@@ -57,16 +57,19 @@ export function DriverStandingsPage(
         <Tbody>
           {races.map((race, i) => {
             const prevPosition = races[i - 1]?.position;
-            const gain = prevPosition
-              ? Math.sign(prevPosition - race.position)
-              : 0;
+            const gain =
+              prevPosition && race.position
+                ? Math.sign(prevPosition - race.position)
+                : 0;
 
             return (
               <Tr key={race.round}>
                 <Td>{race.round}</Td>
                 <Td>{race.date}</Td>
                 <Td>{race.name}</Td>
-                <Td>{formatPosition(race.racePosition)}</Td>
+                <Td>
+                  {race.racePosition ? formatPosition(race.racePosition) : '-'}
+                </Td>
                 <Td>{race.points}</Td>
                 <Td>{race.cumulativePoints}</Td>
                 <Td>
