@@ -1,12 +1,15 @@
 version: '3.8'
 services:
   formula1-data:
-    image: mariadb:10.5
+    image: mongodb:5.0
     container_name: formula1-data
-    volumes:
-      - ./__data:/docker-entrypoint-initdb.d/
     ports:
-      - 3306:3306
+      - 27107:27107
     environment:
-      MYSQL_DATABASE: 'formula1'
-      MYSQL_ROOT_PASSWORD: 'admin'
+      MONGO_INITDB_DATABASE: 'formula1'
+  formula1-data-seed:
+    image: mongodb:5.0
+    container_name: formula1-data-seed
+    volumes:
+      - ./_data:/_data
+    command: /_data/import.sh
