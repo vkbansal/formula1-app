@@ -1,15 +1,17 @@
 version: '3.8'
 services:
   formula1-data:
-    image: mongodb:5.0
+    image: mongo:5.0
     container_name: formula1-data
     ports:
-      - 27107:27107
+      - '27017:27017'
     environment:
       MONGO_INITDB_DATABASE: 'formula1'
   formula1-data-seed:
-    image: mongodb:5.0
+    image: mongo:5.0
     container_name: formula1-data-seed
     volumes:
       - ./_data:/_data
+    depends_on:
+      - formula1-data
     command: /_data/import.sh

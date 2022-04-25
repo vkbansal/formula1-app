@@ -1,6 +1,12 @@
 #! /bin/bash
-mongoimport --host formula1-data \
+
+for file in /_data/*.csv
+do
+  collection="$(basename $file | cut -d '.' -f1)"
+  mongoimport --host formula1-data \
   --db formula1 \
-  --collection collection_name_here \
-  --type json \
-  --file /mongo-seed/file_name_here.json
+  --collection $collection \
+  --type csv \
+  --headerline \
+  --file $file
+done
