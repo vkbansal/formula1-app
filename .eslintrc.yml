@@ -1,16 +1,3 @@
----
-parser: '@typescript-eslint/parser'
-parserOptions:
-  ecmaVersion: 2020
-  sourceType: module
-  ecmaFeatures:
-    jsx: true
-    impliedStrict: true
-  project: ./tsconfig.json
-plugins:
-  - react
-  - '@typescript-eslint/eslint-plugin'
-  - react-hooks
 env:
   browser: true
   node: true
@@ -19,11 +6,6 @@ env:
   jest: true
 extends:
   - eslint:recommended
-  - plugin:react/recommended
-  - plugin:@typescript-eslint/recommended
-  # - plugin:import/errors
-  # - plugin:import/warnings
-  # - plugin:import/typescript
   - prettier
 settings:
   react:
@@ -32,48 +14,5 @@ settings:
     typescript:
       project: tsconfig.json
 rules:
-  # ESLint rules
-  no-shadow: 0
   no-new-object: 2
   no-lonely-if: 2
-
-  # react hooks plugin rules
-  react-hooks/rules-of-hooks: 2
-  react-hooks/exhaustive-deps: 1
-
-  # react plugin rules
-  react/prop-types: 1
-
-  # typescript plugin rules
-  '@typescript-eslint/no-use-before-define': 0
-  '@typescript-eslint/explicit-function-return-type':
-    - 1
-    - allowExpressions: true
-  no-unused-vars: 0
-  '@typescript-eslint/no-unused-vars':
-    - 2
-    - vars: all
-      args: after-used
-      ignoreRestSiblings: true
-      argsIgnorePattern: ^_
-
-  # import plugin rules
-  import/no-named-as-default-member: 0
-overrides:
-  - files:
-      - 'src/**/*.js'
-      - 'src/client/services.tsx'
-    rules:
-      '@typescript-eslint/explicit-function-return-type': 0
-      '@typescript-eslint/explicit-module-boundary-types': 0
-  - files:
-      - 'src/**/*.test.ts'
-      - 'src/**/*.test.tsx'
-    rules:
-      '@typescript-eslint/no-magic-numbers': 0
-      '@typescript-eslint/no-non-null-assertion': 0
-  - files:
-      - 'src/client/**/*.ts'
-      - 'src/client/**/*.tsx'
-    rules:
-      no-console: 2
