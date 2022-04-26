@@ -1,9 +1,7 @@
 env:
-  browser: true
   node: true
-  shared-node-browser: true
-  es6: true
   jest: true
+  es2022: true
 extends:
   - eslint:recommended
   - prettier
