@@ -12,3 +12,5 @@ module.exports = async () => {
 
   return client.db('formula1');
 };
+
+module.exports.client = client;
