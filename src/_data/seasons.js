@@ -1,9 +1,9 @@
-const getDB = require('../../db.js');
+const query = require('../_utils/query.js');
 
-module.exports = async () => {
-  const db = await getDB();
-  const collection = db.collection('seasons');
-  const data = await collection.find().sort({ year: 'asc' }).toArray();
+module.exports = async () =>
+  query('seasons', async (db) => {
+    const collection = db.collection('seasons');
+    const data = await collection.find().sort({ year: 'asc' }).toArray();
 
-  return data.map((row) => row.year);
-};
+    return data.map((row) => row.year);
+  });

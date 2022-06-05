@@ -1,32 +1,20 @@
 ---
 layout: main
-permalink: "seasons/{{season}}/"
-pagination:
-  data: seasons
-  size: 1
-  alias: season
 ---
+<nav class="breadcrumbs">
+  <a href="/">🏠</a>
+  <span>Seasons</span>
+</nav>
 
-<h1>Formula 1 Champioship - {{season}}</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Round<th/>
-      <th>Name<th/>
-      <th>Date (YYYY-MM-DD)<th/>
-    </tr>
-  </thead>
-  <tbody>
-  {% for race in seasonData.races %}
-    <tr>
-      <td>{{race.round}}<td/>
-      <td>{{race.name}}<td/>
-      <td>{{race.date}}<td/>
-    </tr>
+<div class="seasons-grid">
+  {% for season in (seasons | reverse) %}
+  <div class="season-card">
+    <h2>{{season}}</h2>
+    <ul>
+      <li><a href="/seasons/{{season}}/races/">Races</a></li>
+      <li><a href="/seasons/{{season}}/driver-standings/" disabled>Drivers Championship Standings</a></li>
+      <li><a href="/seasons/{{season}}/constructors-standings/" disabled>Constructors Championship Standings</a></li>
+    </ul>
+  </div>
   {% endfor %}
-  </tbody>
-</table>
-
-<ul>
-
-</ul>
+</div>

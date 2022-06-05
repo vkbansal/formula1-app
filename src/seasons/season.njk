@@ -1,0 +1,19 @@
+---
+layout: main
+permalink: "seasons/{{season}}/"
+pagination:
+  data: seasons
+  size: 1
+  alias: season
+---
+<nav class="breadcrumbs">
+  <a href="/">🏠</a>
+  <a href="/seasons/">Seasons</a>
+  <span>{{season}}</span>
+</nav>
+
+<div class="season-grid">
+  <a href="/seasons/{{season}}/races/">Races</a>
+  <a href="/seasons/{{season}}/driver-standings/" disabled>Drivers Championship Standings</a>
+  <a href="/seasons/{{season}}/constructors-standings/" disabled>Constructors Championship Standings</a>
+</div>

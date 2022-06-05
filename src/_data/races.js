@@ -1,12 +1,12 @@
-const getDB = require('../../db.js');
+const query = require('../_utils/query');
 
-module.exports = async () => {
-  const db = await getDB();
-  const collection = db.collection('races');
-  const data = await collection
-    .find({})
-    .sort({ year: 'asc', round: 'asc' })
-    .toArray();
+module.exports = async () =>
+  query('races-all', async (db) => {
+    const collection = db.collection('races');
+    const data = await collection
+      .find({})
+      .sort({ year: 'asc', round: 'asc' })
+      .toArray();
 
-  return data;
-};
+    return data;
+  });

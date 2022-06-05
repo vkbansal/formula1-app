@@ -1,0 +1,21 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+
+  &.table-fixed {
+    table-layout: fixed;
+  }
+
+  thead tr th,
+  tbody tr td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  thead tr th {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    opacity: 0.5;
+  }
+}
