@@ -2,4 +2,5 @@
 @use './base';
 @use './tables';
 @use './breadcrumbs';
-@use './pages/index';
+@use './pages/index' as pages;
+@use './utils/index' as utils;

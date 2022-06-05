@@ -19,6 +19,8 @@ pagination:
       <th>Round</th>
       <th>Name</th>
       <th>Held on</th>
+      <th>Winner</th>
+      <th>Circuit</th>
     </tr>
   </thead>
   <tbody>
@@ -26,9 +28,18 @@ pagination:
     <tr>
       <td>{{race.round}}</td>
       <td>
-        <a href="/seasons/{{season}}/round-{{race.round}}">{{race.name}}</a>
+        <a href="/seasons/{{season}}/races/race-{{race.round | padLeft(2, '0')}}/">{{race.name}}</a>
       </td>
       <td>{{race.date | humanDate}}</td>
+      <td>
+        {% if race.winner_driver %}
+        <span data-nationality="{{race.winner_driver.nationality | snakeCase}}">
+          {{race.winner_driver.forename}} {{race.winner_driver.surname}}
+        </span>
+        <span>({{race.winner_constructor.name}})</span>
+        {% endif %}
+      </td>
+      <td>{{race.circuit.name}}, {{race.circuit.location}}, {{race.circuit.country}}</td>
     </tr>
   {% endfor %}
   </tbody>
