@@ -11,7 +11,7 @@ services:
     image: mongo:5.0
     container_name: formula1-data-seed
     volumes:
-      - ./_data:/_data
+      - ./docker:/opt/docker
     depends_on:
       - formula1-data
-    command: /_data/import.sh
+    command: /opt/docker/import.sh
