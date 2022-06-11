@@ -1,0 +1,180 @@
+---
+import MainLayout from 'layouts/main.astro';
+import WorldMap from 'components/world-map.astro';
+import { query } from 'utils/db'
+
+export const title = 'Home'
+
+const numOfSeasons = await query('numOfSeasons', async (db) => {
+  return db.collection('seasons').countDocuments()
+})
+
+const numOfDrivers = await query('numOfDrivers', async (db) => {
+  const drivers = await db.collection('drivers').countDocuments()
+  const nationalities = await db.collection('drivers').distinct('nationality')
+
+  return { drivers, nationalities: nationalities.length }
+}, { skipCache: true })
+
+const numOfConstructors = await query('numOfConstructors', async (db) => {
+  return db.collection('constructors').countDocuments()
+})
+
+const numberOfCircuits = await query('numOfCountries', async (db) => {
+  const circuits = await db.collection('circuits').countDocuments()
+  const countries = await db.collection('circuits').distinct('country')
+
+  return { circuits,  countries: countries.length}
+})
+
+const racesByCountry = await query('racesByCountry', async (db) => {
+  const data = await db.collection('results').aggregate([
+    { $group: { _id: "$raceId" } },
+    { $lookup: { from: "races", localField: "_id", foreignField: "raceId", as: "races" } },
+    { $match: { 'races.0': { $exists: true } } },
+    { $project: { race: { $arrayElemAt: ['$races', 0] } } },
+    { $lookup: { from: "circuits", localField: "race.circuitId", foreignField: "circuitId", as: "circuits" } },
+    { $project: { race: 1, circuit: { $arrayElemAt: ['$circuits', 0] } } },
+    { $group: { _id: "$circuit.country", count: { $sum: 1 } } },
+    { $project: { country: "$_id", count: 1, _id: 0 } },
+    { $sort: { count: -1 } }
+  ]).toArray()
+
+  return {
+    data,
+    indexMap:  data.reduce((p, c, i) => ({...p, [c.country]: i}), {})
+  }
+})
+---
+<style lang="scss">
+.wrapper {
+  padding-top: 0;
+}
+
+.world-map-container {
+  margin: -1rem 0 2rem 0;
+  padding: 4rem 0;
+}
+
+.world-map-wrapper {
+  position: relative;
+  width: 100%;
+  border: 1px solid transparent;
+  max-height: calc(100vh - var(--header-height));
+
+  & > svg {
+    width: 100%;
+
+    & path {
+      fill: white;
+      transform-origin: center center;
+    }
+  }
+
+  #world-map-tooltip {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 0.5rem solid transparent;
+    border-top-color: var(--black);
+    filter: drop-shadow(0 2px 4px #888);
+
+    &::before {
+      content: attr(data-text);
+      display: block;
+      position: absolute;
+      padding: 1rem;
+      bottom: 100%;
+      left: 0;
+      background-color: var(--black);
+      border-radius: 0.5rem;
+      white-space: nowrap;
+      transform: translate(-50%, -0.5rem);
+    }
+  }
+}
+
+.stats {
+  font-size: 3rem;
+  text-align: center;
+
+  & > p {
+    margin-bottom: 1em;
+  }
+}
+
+.number {
+  color: var(--f1-red);
+  font-size: 1.5em;
+}
+</style>
+<MainLayout title="Home | F1 Statistics">
+  <div class="world-map-container">
+    <div class="world-map-wrapper">
+      <WorldMap/>
+      <div id="world-map-tooltip"></div>
+    </div>
+  </div>
+  <div class="stats">
+    <p><span class="number">{numOfSeasons}</span> Seasons</p>
+    <p><span class="number">{numOfDrivers.drivers}</span> Drivers from <span class="number">{numOfDrivers.nationalities}</span> Nationalities</p>
+    <p><span class="number">{numOfConstructors}</span> Constructors</p>
+    <p><span class="number">{numberOfCircuits.circuits}</span> Circuits across <span class="number">{numberOfCircuits.countries}</span> Countries</p>
+  </div>
+</MainLayout>
+<script type="module" define:vars={{ racesByCountry }}>
+  const MAX = racesByCountry.data[0].count
+  const MIN = racesByCountry.data[racesByCountry.data.length - 1].count
+
+  const svg = document.getElementById('world-map');
+  const tooltip = document.getElementById('world-map-tooltip')
+  let tooltipTimer = null
+
+  svg.addEventListener('mouseover', (e) => {
+    if (e.target.tagName === 'path') {
+      if (tooltipTimer) {
+        window.clearTimeout(tooltipTimer);
+      }
+      const box = e.target.getBBox();
+      const country = e.target.getAttribute('name');
+      const index = racesByCountry.indexMap[country];
+      const count = typeof index === 'number' ? racesByCountry.data[index].count : 0;
+      const svgScale = svg.clientWidth / 2000
+
+      tooltip.setAttribute('data-text', `${country}: ${count} races till date`);
+      tooltip.style.transform = `translate(${(box.x + (box.width / 2)) * svgScale}px, ${(box.y + (box.height / 2)) * svgScale}px)`;
+      tooltip.style.display = 'block';
+    }
+  });
+
+  svg.addEventListener('mouseout', (e) => {
+    if (tooltipTimer) {
+      window.clearTimeout(tooltipTimer);
+    }
+    tooltipTimer = window.setTimeout(() => {
+      tooltip.style.display = 'none'
+    }, 200)
+  });
+
+  racesByCountry.data.forEach(({ country, count }) => {
+    if (country === 'Korea') {
+      country = 'South Korea'
+    }
+
+    const elems = svg.querySelectorAll(`path[name="${country}"]`);
+
+    if (elems.length === 0) {
+      console.log(`Could not locate "${country}" in the svg map`);
+      return
+    }
+
+    const lightness = 100 - ((count - MIN) * 44 / (MAX - MIN));
+
+    elems.forEach((elem) => {
+      elem.setAttribute('fill', `hsla(2deg, 100%, ${lightness.toFixed(0)}%, 1)`)
+    })
+  });
+</script>

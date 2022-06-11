@@ -1,0 +1,50 @@
+---
+export interface BreadcrumdLink {
+  text: string
+  href: string
+}
+
+export interface Props {
+  links: BreadcrumdLink[]
+}
+
+const { links } = Astro.props as Props
+const lastLink = links.at(-1)
+const restLinks = links.slice(0, links.length - 1)
+---
+<style lang="scss">
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  & > a,
+  & span:last-child {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+
+  & > a {
+    opacity: 0.75;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      display: inline-block;
+      content: '/';
+      padding: 0 0.5rem;
+    }
+  }
+}
+</style>
+
+<nav class="breadcrumbs">
+  <a href="/">🏠</a>
+  {restLinks.map(link => (
+    <a href={link.href}>{link.text}</a>
+  ))}
+  {lastLink ? <span>{lastLink.text}</span>: null}
+</nav>

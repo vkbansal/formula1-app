@@ -1,3 +1,11 @@
+---
+export interface Props {
+  nationality: string
+}
+
+const { nationality } = Astro.props as Props
+---
+<style lang="scss">
 $flags: (
   american: 🇺🇸,
   american_italian: 🇺🇸,
@@ -44,10 +52,12 @@ $flags: (
 );
 
 @each $key, $value in $flags {
-  [data-nationality='#{$key}']::before {
+  .#{$key}::before {
     content: '#{$value}';
     font-size: 1.5em;
     margin-right: 0.35rem;
     line-height: 2px;
   }
 }
+</style>
+<span class={nationality.toLowerCase()} />
