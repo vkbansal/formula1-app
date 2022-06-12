@@ -58,3 +58,5 @@ export async function query<T = unknown>(
 
   return data;
 }
+
+export { type MongoDb };

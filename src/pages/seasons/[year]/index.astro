@@ -1,0 +1,124 @@
+---
+import MainLayout from 'layouts/main.astro';
+import Breadcrumbs from 'components/breadcrumbs.astro';
+import seasonsQuery from 'queries/seasons'
+import seasonsDataQuery from 'queries/seasonData'
+
+
+export async function getStaticPaths() {
+  const seasons = await seasonsQuery()
+
+  return seasons.map((year) => ({ params: { year: year.toString() }}))
+}
+
+const { year } = Astro.params as { year: string }
+const { races, drivers } = await seasonsDataQuery(year.toString())
+const colors = ['#4dc9f6',
+  '#f67019',
+  '#f53794',
+  '#537bc4',
+  '#acc236',
+  '#166a8f',
+  '#00a950',
+  '#58595b',
+  '#8549ba']
+const race_names = races.map((race: any) => race.name)
+const driver_standings = drivers.map((driver: any, i: number) => {
+
+  return {
+    label: `${driver.forename} ${driver.surname}`,
+    backgroundColor: colors[i % (colors.length - 1)],
+    borderColor: colors[i % (colors.length - 1)],
+    data: races.map((race: any) => {
+      const result =  race.driver_standings.find((standing: any) => standing.driverId === driver.driverId)
+
+      return result ? result.position : null
+    })
+  }
+})
+
+---
+<style lang="scss">
+
+</style>
+<MainLayout title={`Races | ${year} Season`}>
+  <div>
+    <Breadcrumbs links={[
+      { text: 'Seasons', href: '/seasons' },
+      { text: `${year}`, href: '' },
+    ]} />
+    <h1 id="home">{year} Season</h1>
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <details>
+      <summary>
+        <h2 id="races">Races</h2>
+      </summary>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Round</th>
+            <th>Name</th>
+            <th>Held on</th>
+            <th>Winner</th>
+            <th>Circuit</th>
+          </tr>
+        </thead>
+        <tbody>
+        {races.map((race: any) => (
+          <tr>
+            <td>{race.round}</td>
+            <td>
+              <a href={`/seasons/${year}/race-${race.round.toString().padStart(2, '0')}/`}>{race.name}</a>
+            </td>
+            <td>{race.date}</td>
+            <td>
+              {race.winner_driver ? (
+                <Fragment>
+                  <span data-nationality={race.winner_driver.nationality}>
+                    {race.winner_driver.forename} {race.winner_driver.surname}
+                  </span>
+                  <span>({race.winner_constructor.name})</span>
+                  </Fragment>
+              ) : null}
+            </td>
+            <td>{race.circuit.name}, {race.circuit.location}, {race.circuit.country}</td>
+          </tr>
+        ))}
+        </tbody>
+      </table>
+    </details>
+
+  </div>
+</MainLayout>
+<script type="module" src="https://unpkg.com/chart.js@3.8.0/dist/chart.min.js"></script>
+<script type="module" define:vars={{ driver_standings, race_names }}>
+  const ctx = document.getElementById('myChart');
+  const tick_values = driver_standings.map(driver => ({
+    name: driver.label,
+    position: driver.data.find(i => i !== null )
+  })).reduce((p, c) => ({ ...p, [c.position]: c.name }), {});
+  console.log('tick_values', tick_values);
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: { labels: race_names, datasets: driver_standings },
+    options: {
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+              display: false
+            },
+            y: {
+              max: driver_standings.length,
+              min: 1,
+              reverse: true,
+              offset: true,
+              text: driver_standings.map(d => d.label),
+              ticks: { count: driver_standings.length, callback: (value, index, ticks)  => {
+                return tick_values[value]
+              } }
+            }
+        }
+    }
+});
+</script>
