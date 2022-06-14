@@ -1,9 +1,25 @@
 import { query, type MongoDb } from 'utils/db';
+import type {
+  Driver,
+  Constructor,
+  Race,
+  Circuit,
+  DriverStanding,
+  ConstructorStanding
+} from 'utils/types';
 
-function racesQuery(db: MongoDb, year: string): Promise<any[]> {
+export interface RaceData extends Race {
+  winner_driver: Driver;
+  winner_constructor: Constructor;
+  circuit: Circuit;
+  driver_standings: DriverStanding[];
+  constructor_standings: ConstructorStanding[];
+}
+
+function racesQuery(db: MongoDb, year: string): Promise<RaceData[]> {
   return db
     .collection('races')
-    .aggregate([
+    .aggregate<RaceData>([
       { $match: { year: parseInt(year, 10) } },
       { $sort: { round: 1 } },
       {
@@ -159,10 +175,10 @@ function racesQuery(db: MongoDb, year: string): Promise<any[]> {
     .toArray();
 }
 
-function driversQuery(db: MongoDb, year: string): Promise<any[]> {
+function driversQuery(db: MongoDb, year: string): Promise<Driver[]> {
   return db
     .collection('races')
-    .aggregate([
+    .aggregate<Driver>([
       { $match: { year: parseInt(year, 10) } },
       {
         $lookup: {
@@ -190,16 +206,54 @@ function driversQuery(db: MongoDb, year: string): Promise<any[]> {
     .toArray();
 }
 
-function getSeasonsData(year: string): Promise<any> {
+function constructorsQuery(db: MongoDb, year: string): Promise<Constructor[]> {
+  return db
+    .collection('races')
+    .aggregate<Constructor>([
+      { $match: { year: parseInt(year, 10) } },
+      {
+        $lookup: {
+          from: 'constructor_results',
+          localField: 'raceId',
+          foreignField: 'raceId',
+          as: 'results',
+          pipeline: [{ $sort: { position: 1 } }]
+        }
+      },
+      { $unwind: '$results' },
+      { $group: { _id: '$results.constructorId' } },
+      {
+        $lookup: {
+          from: 'constructors',
+          localField: '_id',
+          foreignField: 'constructorId',
+          as: 'constructor'
+        }
+      },
+      { $project: { constructor: { $arrayElemAt: ['$constructor', 0] } } },
+      { $replaceRoot: { newRoot: '$constructor' } },
+      { $sort: { name: 1 } }
+    ])
+    .toArray();
+}
+
+export interface SeasonData {
+  races: RaceData[];
+  drivers: Driver[];
+  constructors: Constructor[];
+}
+
+function getSeasonsData(year: string): Promise<SeasonData> {
   return query(
     `seasonData-${year}`,
     async (db) => {
       const races = await racesQuery(db, year);
       const drivers = await driversQuery(db, year);
+      const constructors = await constructorsQuery(db, year);
 
-      return { races, drivers };
+      return { races, drivers, constructors };
     },
-    { skipCache: true }
+    { skipCache: false }
   );
 }
 export default getSeasonsData;

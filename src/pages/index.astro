@@ -1,50 +1,11 @@
 ---
 import MainLayout from 'layouts/main.astro';
 import WorldMap from 'components/world-map.astro';
-import { query } from 'utils/db'
+import numOfEntitiesQuery from 'queries/numOfEntities';
+import racesByCountryQuery from 'queries/racesByCountry'
 
-export const title = 'Home'
-
-const numOfSeasons = await query('numOfSeasons', async (db) => {
-  return db.collection('seasons').countDocuments()
-})
-
-const numOfDrivers = await query('numOfDrivers', async (db) => {
-  const drivers = await db.collection('drivers').countDocuments()
-  const nationalities = await db.collection('drivers').distinct('nationality')
-
-  return { drivers, nationalities: nationalities.length }
-}, { skipCache: true })
-
-const numOfConstructors = await query('numOfConstructors', async (db) => {
-  return db.collection('constructors').countDocuments()
-})
-
-const numberOfCircuits = await query('numOfCountries', async (db) => {
-  const circuits = await db.collection('circuits').countDocuments()
-  const countries = await db.collection('circuits').distinct('country')
-
-  return { circuits,  countries: countries.length}
-})
-
-const racesByCountry = await query('racesByCountry', async (db) => {
-  const data = await db.collection('results').aggregate([
-    { $group: { _id: "$raceId" } },
-    { $lookup: { from: "races", localField: "_id", foreignField: "raceId", as: "races" } },
-    { $match: { 'races.0': { $exists: true } } },
-    { $project: { race: { $arrayElemAt: ['$races', 0] } } },
-    { $lookup: { from: "circuits", localField: "race.circuitId", foreignField: "circuitId", as: "circuits" } },
-    { $project: { race: 1, circuit: { $arrayElemAt: ['$circuits', 0] } } },
-    { $group: { _id: "$circuit.country", count: { $sum: 1 } } },
-    { $project: { country: "$_id", count: 1, _id: 0 } },
-    { $sort: { count: -1 } }
-  ]).toArray()
-
-  return {
-    data,
-    indexMap:  data.reduce((p, c, i) => ({...p, [c.country]: i}), {})
-  }
-})
+const numOfEntities = await numOfEntitiesQuery()
+const racesByCountry = await racesByCountryQuery()
 ---
 <style lang="scss">
 .wrapper {
@@ -119,10 +80,10 @@ const racesByCountry = await query('racesByCountry', async (db) => {
     </div>
   </div>
   <div class="stats">
-    <p><span class="number">{numOfSeasons}</span> Seasons</p>
-    <p><span class="number">{numOfDrivers.drivers}</span> Drivers from <span class="number">{numOfDrivers.nationalities}</span> Nationalities</p>
-    <p><span class="number">{numOfConstructors}</span> Constructors</p>
-    <p><span class="number">{numberOfCircuits.circuits}</span> Circuits across <span class="number">{numberOfCircuits.countries}</span> Countries</p>
+    <p><span class="number">{numOfEntities.seasons}</span> Seasons</p>
+    <p><span class="number">{numOfEntities.drivers}</span> Drivers from <span class="number">{numOfEntities.driver_nationalities}</span> Nationalities</p>
+    <p><span class="number">{numOfEntities.constructors}</span> Constructors</p>
+    <p><span class="number">{numOfEntities.circuits}</span> Circuits across <span class="number">{numOfEntities.circuit_countries}</span> Countries</p>
   </div>
 </MainLayout>
 <script type="module" define:vars={{ racesByCountry }}>
