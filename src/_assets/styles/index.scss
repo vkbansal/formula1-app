@@ -1,4 +1,5 @@
 @use '../../../node_modules/normalize.css/normalize.css';
 @use './bootstrap';
 @use './main-layout';
-@use './pages/index';
+@use './components/index' as components;
+@use './pages/index' as pages;

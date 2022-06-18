@@ -171,6 +171,15 @@ function constructorsQuery(db, year) {
       },
       { $project: { constructor: { $arrayElemAt: ['$constructor', 0] } } },
       { $replaceRoot: { newRoot: '$constructor' } },
+      {
+        $project: {
+          _id: 0,
+          constructorId: 1,
+          constructorRef: 1,
+          name: 1,
+          nationality: 1
+        }
+      },
       { $sort: { name: 1 } }
     ])
     .toArray();

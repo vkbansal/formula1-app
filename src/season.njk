@@ -3,7 +3,7 @@ pagination:
   data: seasons
   size: 1
   alias: year
-permalink: '/seasons/{{year}}/'
+permalink: 'seasons/{{year}}/'
 activeNav: seasons
 eleventyComputed:
   title: '{{year}} Season'
@@ -11,11 +11,14 @@ eleventyComputed:
 {% extends './_layouts/main.njk' %}
 
 {% block content %}
-<h1 id="home">{year} Season</h1>
+<h1 id="home">{{year}} Season</h1>
 <h2>Driver Standings</h2>
 <canvas id="driver-standings" width="400" height="400"></canvas>
 <h2>Constructor Standings</h2>
 <canvas id="constructor-standings" width="400" height="400"></canvas>
+<pre style="white-space: normal">
+{{pageData | dump }}
+</pre>
 {% endblock %}
 
 {% block bodyend %}
