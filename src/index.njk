@@ -1,0 +1,26 @@
+---
+title: Home
+---
+{% extends './_layouts/main.njk' %}
+
+{% block content %}
+<div class="world-map-container">
+  <div class="world-map-wrapper">
+    {% include "./images/world.svg" %}
+    <div id="world-map-tooltip"></div>
+  </div>
+</div>
+<div class="stats">
+  <p><span class="number">{{numOfEntities.seasons}}</span> Seasons</p>
+  <p><span class="number">{{numOfEntities.drivers}}</span> Drivers from <span class="number">{{numOfEntities.driver_nationalities}}</span> Nationalities</p>
+  <p><span class="number">{{numOfEntities.constructors}}</span> Constructors</p>
+  <p><span class="number">{{numOfEntities.circuits}}</span> Circuits across <span class="number">{{numOfEntities.circuit_countries}}</span> Countries</p>
+</div>
+{% endblock %}
+
+{% block bodyend %}
+<script type="text/javascript">
+  const racesByCountry = {{ racesByCountry | dump | safe }};
+</script>
+<script type="text/javascript" src="/assets/homepage.js"></script>
+{% endblock %}

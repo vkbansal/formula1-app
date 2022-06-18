@@ -1,11 +1,11 @@
 ---
+export interface Props {
+  links: BreadcrumdLink[]
+}
+
 export interface BreadcrumdLink {
   text: string
   href: string
-}
-
-export interface Props {
-  links: BreadcrumdLink[]
 }
 
 const { links } = Astro.props as Props

@@ -3,38 +3,34 @@
   "version": "1.0.0",
   "description": "An app for Formula 1 world Championship related statistics",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "lint": "eslint --ext .ts --ext .tsx src",
     "fmt": "prettier --write 'src/**/*.{ts,tsx,scss}'",
     "clean": "rm -rf dist",
     "prestart": "yarn run clean",
-    "start": "astro dev",
+    "start": "concurrently 'npm:start:*'",
+    "start:css": "sass --watch src/_assets/styles/index.scss public/styles.css",
+    "start:server": "npx @11ty/eleventy --serve",
     "prebuild": "yarn run clean",
-    "build": "astro build",
-    "preview": "astro preview",
-    "watch-site": "npx @11ty/eleventy --watch --serve --port=3000",
-    "watch-scss": "sass --watch src/_styles/main.scss public/styles.css"
+    "build": "NODE_ENV=production npx @11ty/eleventy"
   },
-  "author": "",
+  "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
   "license": "MIT",
   "dependencies": {
-    "astro": "^1.0.0-beta.42",
+    "@11ty/eleventy": "^1.0.1",
     "change-case": "^4.1.2",
+    "concurrently": "^7.2.2",
     "date-fns": "^2.28.0",
+    "globby": "^13.1.2",
     "ioredis": "^5.0.6",
-    "mongodb": "^4.6.0",
+    "js-yaml": "^4.1.0",
+    "mongodb": "^4.7.0",
     "normalize.css": "^8.0.1",
-    "sass": "^1.52.2",
-    "typescript": "^4.7.3"
+    "sass": "^1.52.3"
   },
   "devDependencies": {
-    "@types/chart.js": "^2.9.37",
-    "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "@typescript-eslint/parser": "^5.27.1",
-    "concurrently": "^7.2.1",
-    "eslint": "^8.17.0",
+    "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
-    "prettier": "^2.6.2"
+    "prettier": "^2.7.1"
   }
 }

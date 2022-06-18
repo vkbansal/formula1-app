@@ -1,0 +1,23 @@
+---
+pagination:
+  data: seasons
+  size: 1
+  alias: year
+permalink: '/seasons/{{year}}/'
+activeNav: seasons
+eleventyComputed:
+  title: '{{year}} Season'
+---
+{% extends './_layouts/main.njk' %}
+
+{% block content %}
+<h1 id="home">{year} Season</h1>
+<h2>Driver Standings</h2>
+<canvas id="driver-standings" width="400" height="400"></canvas>
+<h2>Constructor Standings</h2>
+<canvas id="constructor-standings" width="400" height="400"></canvas>
+{% endblock %}
+
+{% block bodyend %}
+<script type="text/javascript" src="https://unpkg.com/chart.js@3.8.0/dist/chart.min.js"></script>
+{% endblock %}
