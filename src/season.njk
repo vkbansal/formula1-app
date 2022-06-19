@@ -20,16 +20,61 @@ chartTabs:
 {% extends './_layouts/main.njk' %}
 
 {% block content %}
-<h1 id="home">{{year}} Season</h1>
-<div class="tabs" x-data="{ activeTab:  0 }">
+<div class="season-header">
+  <h1 id="home">{{year}} Season</h1>
+  <nav class="season-pagination">
+    {% if pagination.href.previous %}
+    <a href="{{pagination.href.previous}}">&larr; {{year - 1}}</a>
+    {% endif %}
+    {% if pagination.href.next %}
+    <a href="{{pagination.href.next}}">{{year + 1}} &rarr;</a>
+    {% endif %}
+  </nav>
+</div>
+<div class="tabs season-tabs" x-data="{ activeTab: 0 }">
   <div class="tab-list" role="tablist">
+    <div class="tab"  @click="activeTab = 0" :class="{ 'tab-active': activeTab === 0 }">Races</div>
     {% for tab in chartTabs %}
-    <div class="tab"  @click="activeTab = {{loop.index0}}" :class="{ 'tab-active': activeTab === {{loop.index0}} }">{{tab.label}}</div>
+    <div class="tab"  @click="activeTab = {{loop.index}}" :class="{ 'tab-active': activeTab === {{loop.index}} }">{{tab.label}}</div>
     {% endfor %}
   </div>
+  <div class="tab-panel" :class="{ 'tab-active': activeTab === 0 }">
+    <table class="table">
+      <thead>
+        <th>Round</th>
+        <th>Race</th>
+        <th>Circuit</th>
+        <th>Date</th>
+        <th>Winner</th>
+      </thead>
+      <tbody>
+        {% for race in pageData.races %}
+        {% set winner_driver = pageData.drivers[pageData.drivers_index_map[race.winner.driverId]] %}
+        {% set winner_constructor = pageData.constructors[pageData.constructors_index_map[race.winner.constructorId]] %}
+        <tr>
+          <td>{{race.round}}</td>
+          <td>{{race.name}}</td>
+          <td>{{race.circuit.name}} <span class="circuit-location-cell">{{race.circuit.location}}, {{race.circuit.country}}</span></td>
+          <td>{{race.date | humanDate}}</td>
+          <td>
+            {% if winner_driver %}
+            <span class="nationality {{winner_driver.nationality | lower}}"/>
+            <span>{{winner_driver.name}}</span>
+            {% endif %}
+            {% if winner_constructor %}
+            <span>({{winner_constructor.name}})<span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
   {% for tab in chartTabs %}
-  <div class="tab-panel" :class="{ 'tab-active': activeTab === {{loop.index0}} }">
-    <canvas id="{{tab.id}}" width="400" height="400"></canvas>
+  <div class="tab-panel" :class="{ 'tab-active': activeTab === {{loop.index}} }">
+    <div class="season-graph">
+      <canvas  id="{{tab.id}}" width="400" height="400"></canvas>
+    </div>
   </div>
   {% endfor %}
 </div>
@@ -37,6 +82,8 @@ chartTabs:
 
 {% block bodyend %}
 <script type="text/javascript" src="https://unpkg.com/chart.js@3.8.0/dist/chart.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/chartjs-plugin-crosshair@1.2.0/dist/chartjs-plugin-crosshair.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/chartjs-plugin-autocolors@0.0.6/dist/chartjs-plugin-autocolors.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
 <script type="text/javascript">
   const race_names =  {{pageData.race_names | dump | safe}}

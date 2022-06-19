@@ -2,7 +2,7 @@ export async function query(db) {
   const data = await db
     .collection('seasons')
     .find({})
-    .sort('year', -1)
+    .sort('year', 1)
     .toArray();
 
   return {
