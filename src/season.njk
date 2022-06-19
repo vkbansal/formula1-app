@@ -7,20 +7,43 @@ permalink: 'seasons/{{year}}/'
 activeNav: seasons
 eleventyComputed:
   title: '{{year}} Season'
+chartTabs:
+  - label: Driver Standings
+    id: driver-standings
+  - label: Driver Points
+    id: driver-points
+  - label: Constructor Standings
+    id: constructor-standings
+  - label: Constructor Points
+    id: constructor-points
 ---
 {% extends './_layouts/main.njk' %}
 
 {% block content %}
 <h1 id="home">{{year}} Season</h1>
-<h2>Driver Standings</h2>
-<canvas id="driver-standings" width="400" height="400"></canvas>
-<h2>Constructor Standings</h2>
-<canvas id="constructor-standings" width="400" height="400"></canvas>
-<pre style="white-space: normal">
-{{pageData | dump }}
-</pre>
+<div class="tabs" x-data="{ activeTab:  0 }">
+  <div class="tab-list" role="tablist">
+    {% for tab in chartTabs %}
+    <div class="tab"  @click="activeTab = {{loop.index0}}" :class="{ 'tab-active': activeTab === {{loop.index0}} }">{{tab.label}}</div>
+    {% endfor %}
+  </div>
+  {% for tab in chartTabs %}
+  <div class="tab-panel" :class="{ 'tab-active': activeTab === {{loop.index0}} }">
+    <canvas id="{{tab.id}}" width="400" height="400"></canvas>
+  </div>
+  {% endfor %}
+</div>
 {% endblock %}
 
 {% block bodyend %}
 <script type="text/javascript" src="https://unpkg.com/chart.js@3.8.0/dist/chart.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+<script type="text/javascript">
+  const race_names =  {{pageData.race_names | dump | safe}}
+  const driver_standings = {{pageData.driver_standings | dump | safe}};
+  const driver_points = {{pageData.driver_points | dump | safe}};
+  const constructor_standings = {{pageData.constructor_standings | dump | safe}};
+  const constructor_points = {{pageData.constructor_points | dump | safe}};
+</script>
+<script  type="text/javascript" src="/assets/season.js"></script>
 {% endblock %}

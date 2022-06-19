@@ -1,4 +1,7 @@
-/* global driver_standings, constructor_standings, race_names, Chart */
+/* global driver_standings, constructor_standings, driver_points, constructor_points, race_names, Chart */
+Chart.defaults.color = 'white';
+Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.25)';
+
 const driver_standings_tick_values = driver_standings
   .map((driver) => ({
     name: driver.label,
@@ -13,8 +16,6 @@ const constructor_standings_tick_values = constructor_standings
   }))
   .reduce((p, c) => ({ ...p, [c.position]: c.name }), {});
 
-Chart.defaults.color = 'white';
-
 // Driver Standings Chart
 new Chart(document.getElementById('driver-standings'), {
   type: 'line',
@@ -27,18 +28,32 @@ new Chart(document.getElementById('driver-standings'), {
       }
     },
     scales: {
-      x: { display: false },
+      x: { display: true, grid: { display: true } },
       y: {
         max: driver_standings.length,
         min: 1,
         reverse: true,
         offset: true,
+        grid: { display: false },
         text: driver_standings.map((d) => d.label),
         ticks: {
           count: driver_standings.length,
           callback: (value) => driver_standings_tick_values[value]
         }
       }
+    }
+  }
+});
+
+// Driver Points Chart
+new Chart(document.getElementById('driver-points'), {
+  type: 'line',
+  data: { labels: race_names, datasets: driver_points },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { display: true, ticks: { display: true } },
+      y: { min: 0, ticks: { display: true } }
     }
   }
 });
@@ -50,12 +65,13 @@ new Chart(document.getElementById('constructor-standings'), {
   options: {
     plugins: { legend: { display: false } },
     scales: {
-      x: { display: false },
+      x: { display: true, grid: { display: true } },
       y: {
         max: constructor_standings.length,
         min: 1,
         reverse: true,
         offset: true,
+        grid: { display: false },
         text: constructor_standings.map((d) => d.label),
         ticks: {
           count: constructor_standings.length,
@@ -98,6 +114,19 @@ new Chart(document.getElementById('constructor-standings'), {
       }
     }
   ]
+});
+
+// Contructors Points Chart
+new Chart(document.getElementById('constructor-points'), {
+  type: 'line',
+  data: { labels: race_names, datasets: constructor_points },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { display: true, ticks: { display: true } },
+      y: { min: 0, ticks: { display: true } }
+    }
+  }
 });
 // https://codepen.io/kurkle/pen/KKVgQXV
 // https://gist.github.com/x8BitRain/670e5e1dc3f12619be4a1a96ff6dc8de

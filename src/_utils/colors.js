@@ -1,4 +1,4 @@
-export function getRandomColors(n: number): string[] {
+module.exports.getRandomColors = function getRandomColors(n) {
   const step = Math.floor(360 / (n - 1));
 
   return Array.from(
@@ -10,4 +10,4 @@ export function getRandomColors(n: number): string[] {
         `${Math.round(70 + Math.random() * 10)}%`
       ].join(',')})`
   );
-}
+};
