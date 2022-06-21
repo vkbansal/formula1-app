@@ -19,14 +19,22 @@
           <span>Statistics</span>
         </a>
         <nav class="main-nav">
-          <a href="/seasons"  class="'active': path.startsWith('/seasons')">Seasons</a>
-          <a href="/constructors" disabled  class="'active': path.startsWith('/constructors')">Constructors</a>
-          <a href="/drivers" disabled  class="active': path.startsWith('/drivers')">Drivers</a>
-          <a href="/circuits" disabled  class="'active': path.startsWith('/circuits')">Circuits</a>
-          <a href="/about" class="'active': path.startsWith('/about')}}">About</a>
+          <a href="/seasons"  class="{{ "active" if pageId | startsWith("season") }}">Seasons</a>
+          {# <a href="/constructors" disabled  class="'active': path.startsWith('/constructors')">Constructors</a> #}
+          {# <a href="/drivers" disabled  class="active': path.startsWith('/drivers')">Drivers</a> #}
+          {# <a href="/circuits" disabled  class="'active': path.startsWith('/circuits')">Circuits</a> #}
+          <a href="/about" class="{{ "active" if padeId == "about" }}">About</a>
         </nav>
       </div>
     </header>
+    {% if pageId != "home" %}
+    <div class="container breadcrumbs-container">
+      <div class="breadcrumbs">
+        <a href="/">🏠</a>
+        {% block breadcrumbs %}{% endblock %}
+      </div>
+    </div>
+    {% endif %}
     <div class="container content-wrapper">
       {{ content | safe }}
       {% block content %}{% endblock %}
@@ -37,6 +45,15 @@
         <p>Data Source: <a href="http://ergast.com/mrd/" target="_blank">Ergast developer API</a></p>
       </div>
     </footer>
-    {% block bodyend %}{% endblock %}
+    {% block beforescripts %}{% endblock %}
+    {% if alpinejs === true %}
+    <script type="text/javascript" src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+    {% endif %}
+    {% if chartjs === true %}
+    <script type="text/javascript" src="https://unpkg.com/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/chartjs-plugin-crosshair@1.2.0/dist/chartjs-plugin-crosshair.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/chartjs-plugin-autocolors@0.0.6/dist/chartjs-plugin-autocolors.min.js"></script>
+    {% endif %}
+    {% block afterscripts %}{% endblock %}
   </body>
 </html>

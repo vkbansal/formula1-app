@@ -1,13 +1,21 @@
 ---
 title: Seasons
-activeNav: seasons
+pageId: 'seasons'
 ---
 {% extends './_layouts/main.njk' %}
 
+{% block breadcrumbs %}
+<span>Seasons</span>
+{% endblock %}
+
 {% block content %}
 <section class="seasons-grid">
-  {% for season in seasons %}
+  {% set extraBoxes = seasons.lnegth % 7  %}
+  {% for season in seasons | reverse %}
     <h2 class="season-card"><a href="/seasons/{{season}}/">{{season}}</a></h2>
+  {% endfor %}
+  {% for i in range(0, (seasons.length % 7) + 1) %}
+    <div class="season-card"></div>
   {% endfor %}
 </section>
 {% endblock%}

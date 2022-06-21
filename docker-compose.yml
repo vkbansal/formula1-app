@@ -15,8 +15,3 @@ services:
     depends_on:
       - formula1-data
     command: /opt/docker/import.sh
-  formula1-redis:
-    image: redis:7
-    container_name: formula1-redis
-    ports:
-      - 6379:6379

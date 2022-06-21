@@ -7,7 +7,10 @@ module.exports = {
     pageData: async (opts) => {
       const { year } = opts;
 
-      const file = path.resolve(process.cwd(), `datastore/season/${year}.yaml`);
+      const file = path.resolve(
+        process.cwd(),
+        `datastore/seasons/${year}.yaml`
+      );
       const contents = await fs.promises.readFile(file, 'utf8');
       const { races, drivers, constructors } = yaml.load(contents);
       const race_names = races.map((race) => race.name);

@@ -1,5 +1,6 @@
 ---
 title: Home
+pageId: home
 ---
 {% extends './_layouts/main.njk' %}
 
@@ -18,9 +19,12 @@ title: Home
 </div>
 {% endblock %}
 
-{% block bodyend %}
+{% block beforescripts %}
 <script type="text/javascript">
   const racesByCountry = {{ racesByCountry | dump | safe }};
 </script>
+{% endblock %}
+
+{% block afterscripts %}
 <script type="text/javascript" src="/assets/homepage.js"></script>
 {% endblock %}

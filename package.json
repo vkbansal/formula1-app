@@ -12,7 +12,8 @@
     "start:css": "sass --watch src/_assets/styles/index.scss public/styles.css",
     "start:server": "npx @11ty/eleventy --serve",
     "prebuild": "yarn run clean",
-    "build": "NODE_ENV=production npx @11ty/eleventy"
+    "build": "NODE_ENV=production npx @11ty/eleventy",
+    "datagen": "rm -rf datastore && node ./datagen/index.mjs"
   },
   "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
   "license": "MIT",
@@ -22,7 +23,6 @@
     "concurrently": "^7.2.2",
     "date-fns": "^2.28.0",
     "globby": "^13.1.2",
-    "ioredis": "^5.0.6",
     "js-yaml": "^4.1.0",
     "mongodb": "^4.7.0",
     "normalize.css": "^8.0.1",

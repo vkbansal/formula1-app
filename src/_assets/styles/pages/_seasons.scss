@@ -1,27 +1,41 @@
 .seasons-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  column-gap: 1rem;
-  row-gap: 1rem;
+  grid-template-columns: repeat(7, 1fr);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--divider);
 
   .season-card {
-    background: var(--f1-red);
-    border-radius: 0.5rem;
     margin: 0;
     font-size: 2rem;
-    text-align: center;
-    transform-origin: center center;
-    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
 
     & > a {
-      display: block;
+      display: flex;
       text-decoration: none;
-      padding: 2rem;
-      aspect-ratio: 3 / 1;
+      align-items: center;
+      justify-content: center;
+      transform-origin: center center;
+      transition: transform 0.2s ease-in-out;
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        transform: scale(1.35);
+      }
     }
 
-    &:hover {
-      transform: scale(1.075);
+    &:nth-child(2n) {
+      background: var(--black);
+    }
+
+    &:nth-child(2n + 1) {
+      background: white;
+
+      & > a {
+        color: var(--black);
+      }
     }
   }
 }

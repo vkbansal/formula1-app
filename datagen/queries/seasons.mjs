@@ -7,6 +7,6 @@ export async function query(db) {
 
   return {
     data: data.map((row) => row.year),
-    path: 'seasons.yaml'
+    path: 'seasons/index.yaml'
   };
 }

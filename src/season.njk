@@ -4,7 +4,9 @@ pagination:
   size: 1
   alias: year
 permalink: 'seasons/{{year}}/'
-activeNav: seasons
+pageId: 'season'
+aplinejs: true
+chartjs: true
 eleventyComputed:
   title: '{{year}} Season'
 chartTabs:
@@ -18,6 +20,11 @@ chartTabs:
     id: constructor-points
 ---
 {% extends './_layouts/main.njk' %}
+
+{% block breadcrumbs %}
+<a href="/seasons">Seasons</a>
+<span>{{year}}</span>
+{% endblock %}
 
 {% block content %}
 <div class="season-header">
@@ -80,11 +87,7 @@ chartTabs:
 </div>
 {% endblock %}
 
-{% block bodyend %}
-<script type="text/javascript" src="https://unpkg.com/chart.js@3.8.0/dist/chart.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/chartjs-plugin-crosshair@1.2.0/dist/chartjs-plugin-crosshair.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/chartjs-plugin-autocolors@0.0.6/dist/chartjs-plugin-autocolors.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+{% block beforescripts %}
 <script type="text/javascript">
   const race_names =  {{pageData.race_names | dump | safe}}
   const driver_standings = {{pageData.driver_standings | dump | safe}};
@@ -92,5 +95,8 @@ chartTabs:
   const constructor_standings = {{pageData.constructor_standings | dump | safe}};
   const constructor_points = {{pageData.constructor_points | dump | safe}};
 </script>
+{% endblock %}
+
+{% block afterscripts %}
 <script  type="text/javascript" src="/assets/season.js"></script>
 {% endblock %}

@@ -1099,13 +1099,140 @@ races:
     round: 9
     name: Canadian Grand Prix
     date: '2022-06-19'
+    winner:
+      driverId: 830
+      constructorId: 9
     circuit:
       circuitRef: villeneuve
       name: Circuit Gilles Villeneuve
       location: Montreal
       country: Canada
-    driver_standings: []
-    constructor_standings: []
+    driver_standings:
+      - driverId: 830
+        points: 175
+        position: 1
+        wins: 6
+      - driverId: 815
+        points: 129
+        position: 2
+        wins: 1
+      - driverId: 844
+        points: 126
+        position: 3
+        wins: 2
+      - driverId: 847
+        points: 111
+        position: 4
+        wins: 0
+      - driverId: 832
+        points: 102
+        position: 5
+        wins: 0
+      - driverId: 1
+        points: 77
+        position: 6
+        wins: 0
+      - driverId: 846
+        points: 50
+        position: 7
+        wins: 0
+      - driverId: 822
+        points: 44
+        position: 8
+        wins: 0
+      - driverId: 839
+        points: 39
+        position: 9
+        wins: 0
+      - driverId: 4
+        points: 22
+        position: 10
+        wins: 0
+      - driverId: 842
+        points: 16
+        position: 11
+        wins: 0
+      - driverId: 825
+        points: 15
+        position: 12
+        wins: 0
+      - driverId: 817
+        points: 15
+        position: 13
+        wins: 0
+      - driverId: 20
+        points: 13
+        position: 14
+        wins: 0
+      - driverId: 852
+        points: 11
+        position: 15
+        wins: 0
+      - driverId: 855
+        points: 3
+        position: 16
+        wins: 0
+      - driverId: 848
+        points: 3
+        position: 17
+        wins: 0
+      - driverId: 840
+        points: 3
+        position: 18
+        wins: 0
+      - driverId: 854
+        points: 0
+        position: 19
+        wins: 0
+      - driverId: 807
+        points: 0
+        position: 20
+        wins: 0
+      - driverId: 849
+        points: 0
+        position: 21
+        wins: 0
+    constructor_standings:
+      - constructorId: 9
+        points: 304
+        position: 1
+        wins: 7
+      - constructorId: 6
+        points: 228
+        position: 2
+        wins: 2
+      - constructorId: 131
+        points: 188
+        position: 3
+        wins: 0
+      - constructorId: 1
+        points: 65
+        position: 4
+        wins: 0
+      - constructorId: 214
+        points: 61
+        position: 5
+        wins: 0
+      - constructorId: 51
+        points: 47
+        position: 6
+        wins: 0
+      - constructorId: 213
+        points: 27
+        position: 7
+        wins: 0
+      - constructorId: 117
+        points: 16
+        position: 8
+        wins: 0
+      - constructorId: 210
+        points: 15
+        position: 9
+        wins: 0
+      - constructorId: 3
+        points: 3
+        position: 10
+        wins: 0
   - raceId: 1083
     round: 10
     name: British Grand Prix

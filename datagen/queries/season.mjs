@@ -199,7 +199,7 @@ export async function query(db) {
 
     return {
       data: { races, drivers, constructors },
-      path: `season/${year}.yaml`
+      path: `seasons/${year}.yaml`
     };
   });
 

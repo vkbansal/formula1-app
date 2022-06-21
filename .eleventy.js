@@ -15,11 +15,15 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addNunjucksFilter('padLeft', function (value, ...args) {
-    return value.toString().padStart(...args);
+    return (value || '').toString().padStart(...args);
   });
 
   eleventyConfig.addNunjucksFilter('snakeCase', function (value) {
     return snakeCase(value || '');
+  });
+
+  eleventyConfig.addNunjucksFilter('startsWith', function (value, txt) {
+    return (value || '').toString().startsWith(txt);
   });
 
   return {
