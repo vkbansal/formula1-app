@@ -1,0 +1,68 @@
+---
+title: Constructors
+pageId: 'constructors'
+alpinejs: true
+tableColumns:
+  - id: name
+    label: Name
+  - id: wins
+    label: Wins
+---
+{% extends './_layouts/main.njk' %}
+
+{% block breadcrumbs %}
+<span>Constructors</span>
+{% endblock %}
+
+{% block content %}
+<div class="constructors-page">
+  {% set columns = ['name', 'wins'] %}
+  <table class="table" x-data="constructorsData">
+    <thead>
+      <tr>
+        {% for column in tableColumns %}
+        <th @click="sort('{{column.id}}')" :data-sort="sortCol === '{{column.id}}' ? (sortAsc ? 'asc' : 'desc') : ''">{{column.label}}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      <template x-for="row in data">
+        <tr>
+          {% for column in tableColumns %}
+          <td x-text="row.{{column.id}}"></td>
+          {% endfor %}
+        <tr>
+      </template>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% block beforescripts %}
+<script>
+   document.addEventListener('alpine:init', () => {
+    Alpine.data('constructorsData', () => ({
+      data:  [{name: "McLaren", wins: 10}, { name: "Ferrari", wins: 100 }],
+      sortCol: null,
+      sortAsc: false,
+      sort(col) {
+        if (this.sortCol === col) {
+          this.sortAsc = !this.sortAsc;
+        }
+        this.sortCol = col;
+        this.data.sort((a, b) => {
+          if (a[col] < b[col]) {
+            return this.sortAsc ? 1 : -1
+          }
+
+          if (a[col] > b[col]) {
+            return this.sortAsc ? -1 : 1
+          }
+
+          return 0
+        })
+      }
+    }))
+  })
+</script>
+{% endblock %}
