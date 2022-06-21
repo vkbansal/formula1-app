@@ -20,7 +20,7 @@
         </a>
         <nav class="main-nav">
           <a href="/seasons"  class="{{ "active" if pageId | startsWith("season") }}">Seasons</a>
-          {# <a href="/constructors" disabled  class="'active': path.startsWith('/constructors')">Constructors</a> #}
+          <a href="/constructors"  class="{{ "active" if pageId | startsWith("constructors") }}">Constructors</a>
           {# <a href="/drivers" disabled  class="active': path.startsWith('/drivers')">Drivers</a> #}
           {# <a href="/circuits" disabled  class="'active': path.startsWith('/circuits')">Circuits</a> #}
           <a href="/about" class="{{ "active" if padeId == "about" }}">About</a>

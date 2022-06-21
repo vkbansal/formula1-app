@@ -13,7 +13,7 @@
     "start:server": "npx @11ty/eleventy --serve",
     "prebuild": "yarn run clean",
     "build": "NODE_ENV=production npx @11ty/eleventy",
-    "datagen": "rm -rf datastore && node ./datagen/index.mjs"
+    "datagen": "node ./datagen/index.mjs"
   },
   "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
   "license": "MIT",

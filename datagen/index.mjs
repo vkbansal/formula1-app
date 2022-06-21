@@ -7,11 +7,16 @@ import yaml from 'js-yaml';
 
 const mongo_client = new MongoClient('mongodb://localhost:27017');
 
+const argv = process.argv.slice(2);
+
 await mongo_client.connect();
 
 const db = mongo_client.db('formula1');
 
-const queries = await globby(['datagen/queries/*.mjs']);
+const queries =
+  argv.length > 0
+    ? argv.map((r) => `datagen/queries/${r}.mjs`)
+    : await globby(['datagen/queries/*.mjs']);
 
 async function writeData({ data, path: filepath }) {
   const finalPath = path.resolve('datastore', filepath);
