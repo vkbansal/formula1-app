@@ -4,7 +4,11 @@ export async function query(db) {
   const driver_nationalities = await db
     .collection('drivers')
     .distinct('nationality');
+  const races = await db.collection('races').countDocuments();
   const constructors = await db.collection('constructors').countDocuments();
+  const constructor_nationalities = await db
+    .collection('constructors')
+    .distinct('nationality');
   const circuits = await db.collection('circuits').countDocuments();
   const circuit_countries = await db.collection('circuits').distinct('country');
   const racesByCountry = await db
@@ -43,8 +47,10 @@ export async function query(db) {
         drivers,
         driver_nationalities: driver_nationalities.length,
         constructors,
+        constructor_nationalities: constructor_nationalities.length,
         circuits,
-        circuit_countries: circuit_countries.length
+        circuit_countries: circuit_countries.length,
+        races
       },
       racesByCountry: {
         data: racesByCountry,

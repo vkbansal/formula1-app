@@ -1,0 +1,90 @@
+---
+title: Drivers
+pageId: 'drivers'
+alpinejs: true
+---
+{% extends './_layouts/main.njk' %}
+
+{% block breadcrumbs %}
+<span>Drivers</span>
+{% endblock %}
+
+{% block content %}
+<div class="drivers-page">
+  {% set columns = ['name', 'wins'] %}
+  <table class="table" x-data="driversData">
+    <thead>
+      <tr>
+        <th @click="sort('name')">
+          <span>Driver</span>
+          <span :data-sort="sortCol === 'name' ? (sortAsc ? 'asc' : 'desc') : ''"/>
+        </th>
+        <th @click="sort('nationality')">
+          <span>Nationality</span>
+          <span :data-sort="sortCol === 'nationality' ? (sortAsc ? 'asc' : 'desc') : ''"/>
+        </th>
+        <th @click="sort('total_races')">
+          <span>Total Races</span>
+          <span :data-sort="sortCol === 'total_races' ? (sortAsc ? 'asc' : 'desc') : ''"/>
+        </th>
+        <th @click="sort('race_wins')">
+          <span>Race Wins</span>
+          <span :data-sort="sortCol === 'race_wins' ? (sortAsc ? 'asc' : 'desc') : ''"/>
+        </th>
+        <th @click="sort('podiums')">
+          <span>Podiums</span>
+          <span :data-sort="sortCol === 'podiums' ? (sortAsc ? 'asc' : 'desc') : ''"/>
+        </th>
+        <th @click="sort('win_pct')">
+          <span>Win%</span>
+          <span :data-sort="sortCol === 'win_pct' ? (sortAsc ? 'asc' : 'desc') : ''"/>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <template x-for="row in data">
+        <tr>
+          <td x-text="row.name"></td>
+          <td>
+            <span class="nationality" :class="row.nationality.replace(/\s/g, '_').toLowerCase()"></span>
+            <span x-text="row.nationality"></span>
+          </td>
+          <td x-text="row.total_races"></td>
+          <td x-text="row.race_wins"></td>
+          <td x-text="row.podiums"></td>
+          <td x-text="row.win_pct.toFixed(2) + '%'"></td>
+        <tr>
+      </template>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% block beforescripts %}
+<script>
+   document.addEventListener('alpine:init', () => {
+    Alpine.data('driversData', () => ({
+      data:  {{drivers | dump | safe}},
+      sortCol: null,
+      sortAsc: false,
+      sort(col) {
+        if (this.sortCol === col) {
+          this.sortAsc = !this.sortAsc;
+        }
+        this.sortCol = col;
+        this.data.sort((a, b) => {
+          if (a[col] < b[col]) {
+            return this.sortAsc ? 1 : -1
+          }
+
+          if (a[col] > b[col]) {
+            return this.sortAsc ? -1 : 1
+          }
+
+          return 0
+        })
+      }
+    }))
+  })
+</script>
+{% endblock %}

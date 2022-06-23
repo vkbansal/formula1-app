@@ -21,7 +21,7 @@
         <nav class="main-nav">
           <a href="/seasons"  class="{{ "active" if pageId | startsWith("season") }}">Seasons</a>
           <a href="/constructors"  class="{{ "active" if pageId | startsWith("constructors") }}">Constructors</a>
-          {# <a href="/drivers" disabled  class="active': path.startsWith('/drivers')">Drivers</a> #}
+          <a href="/drivers" class="{{ "active" if pageId | startsWith("drivers") }}">Drivers</a>
           {# <a href="/circuits" disabled  class="'active': path.startsWith('/circuits')">Circuits</a> #}
           <a href="/about" class="{{ "active" if padeId == "about" }}">About</a>
         </nav>
@@ -41,8 +41,7 @@
     </div>
     <footer class="main-footer">
       <div class="container">
-        <p>Made with ❤️ by <a href="https://vkbansal.me/">Vivek Kumar Bansal</a></p><br/>
-        <p>Data Source: <a href="http://ergast.com/mrd/" target="_blank">Ergast developer API</a></p>
+        <p>Made with ❤️ by <a href="https://vkbansal.me/">Vivek Kumar Bansal</a></p>
       </div>
     </footer>
     {% block beforescripts %}{% endblock %}
