@@ -6,9 +6,6 @@ const yaml = require('js-yaml');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
-  eleventyConfig.addWatchTarget('_assets/styles/**/*.scss');
-  eleventyConfig.addPassthroughCopy('_public');
-  eleventyConfig.addPassthroughCopy({ 'src/_assets/scripts': 'assets' });
 
   eleventyConfig.addNunjucksFilter('humanDate', function (value) {
     return dateFns.format(dateFns.parseISO(value), 'do LLL yyyy');
