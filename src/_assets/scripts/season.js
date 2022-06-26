@@ -1,4 +1,4 @@
-/* global driver_standings, constructor_standings, driver_points, constructor_points, race_names, Chart */
+/* global driversData, constructorsData, raceNames, Chart */
 Chart.defaults.color = 'white';
 Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.25)';
 Chart.defaults.plugins.tooltip = {
@@ -46,38 +46,43 @@ const formatOrdinals = (n) => `${n}${suffixes.get(pr.select(n))}`;
 
 function getTickValues(data) {
   return data
-    .map((r) => ({ name: r.label, position: r.data.find((i) => i !== null) }))
-    .reduce((p, c) => ({ ...p, [c.position]: c.name }), {});
+    .map((r) => ({ name: r.label, ps: r.data.find((i) => i !== null).ps }))
+    .reduce((p, c) => ({ ...p, [c.ps]: c.name }), {});
 }
 
-const driver_standings_tick_values = getTickValues(driver_standings);
-const constructor_standings_tick_values = getTickValues(constructor_standings);
+const driverStandingsTickValues = getTickValues(driversData);
+const constructorStandingsTickValues = getTickValues(constructorsData);
 
 // Driver Standings Chart
 new Chart(document.getElementById('driver-standings'), {
   type: 'line',
-  data: { labels: race_names, datasets: driver_standings },
+  data: {
+    labels: raceNames,
+    datasets: driversData
+  },
   options: {
+    parsing: { yAxisKey: 'ps', xAxisKey: 'ps' },
     plugins: {
       tooltip: {
-        itemSort: (a, b) => a.raw - b.raw,
+        itemSort: (a, b) => a.raw.ps - b.raw.ps,
         callbacks: {
-          label: (item) => ` ${item.dataset.label}: ${formatOrdinals(item.raw)}`
+          label: (item) =>
+            `${item.dataset.label}: ${formatOrdinals(item.raw.ps)}`
         }
       }
     },
     scales: {
       x: { display: true, grid: { display: true } },
       y: {
-        max: driver_standings.length,
+        max: driversData.length,
         min: 1,
         reverse: true,
         offset: true,
         grid: { display: false },
-        text: driver_standings.map((d) => d.label),
+        text: driversData.map((d) => d.label),
         ticks: {
-          count: driver_standings.length,
-          callback: (value) => driver_standings_tick_values[value]
+          count: driversData.length,
+          callback: (value) => driverStandingsTickValues[value]
         }
       }
     }
@@ -87,9 +92,18 @@ new Chart(document.getElementById('driver-standings'), {
 // Driver Points Chart
 new Chart(document.getElementById('driver-points'), {
   type: 'line',
-  data: { labels: race_names, datasets: driver_points },
+  data: { labels: raceNames, datasets: driversData },
   options: {
-    plugins: { tooltip: { itemSort: (a, b) => b.raw - a.raw } },
+    parsing: { yAxisKey: 'pt', xAxisKey: 'pt' },
+    plugins: {
+      tooltip: {
+        itemSort: (a, b) => b.raw.pt - a.raw.pt,
+        callbacks: {
+          label: (item) =>
+            `${item.dataset.label}: ${item.raw.pt} (Wins: ${item.raw.w})`
+        }
+      }
+    },
     scales: {
       x: { display: true, ticks: { display: true } },
       y: { min: 0, ticks: { display: true } }
@@ -100,28 +114,30 @@ new Chart(document.getElementById('driver-points'), {
 // Constructors Standings Chart
 new Chart(document.getElementById('constructor-standings'), {
   type: 'line',
-  data: { labels: race_names, datasets: constructor_standings },
+  data: { labels: raceNames, datasets: constructorsData },
   options: {
+    parsing: { yAxisKey: 'ps', xAxisKey: 'ps' },
     plugins: {
       tooltip: {
-        itemSort: (a, b) => a.raw - b.raw,
+        itemSort: (a, b) => a.raw.ps - b.raw.ps,
         callbacks: {
-          label: (item) => ` ${item.dataset.label}: ${formatOrdinals(item.raw)}`
+          label: (item) =>
+            `${item.dataset.label}: ${formatOrdinals(item.raw.ps)}`
         }
       }
     },
     scales: {
       x: { display: true, grid: { display: true } },
       y: {
-        max: constructor_standings.length,
+        max: constructorsData.length,
         min: 1,
         reverse: true,
         offset: true,
         grid: { display: false },
-        text: constructor_standings.map((d) => d.label),
+        text: constructorsData.map((d) => d.label),
         ticks: {
-          count: constructor_standings.length,
-          callback: (value) => constructor_standings_tick_values[value]
+          count: constructorsData.length,
+          callback: (value) => constructorStandingsTickValues[value]
         }
       }
     }
@@ -131,10 +147,17 @@ new Chart(document.getElementById('constructor-standings'), {
 // Contructors Points Chart
 new Chart(document.getElementById('constructor-points'), {
   type: 'line',
-  data: { labels: race_names, datasets: constructor_points },
+  data: { labels: raceNames, datasets: constructorsData },
   options: {
+    parsing: { yAxisKey: 'pt', xAxisKey: 'pt' },
     plugins: {
-      tooltip: { itemSort: (a, b) => b.raw - a.raw }
+      tooltip: {
+        itemSort: (a, b) => b.raw.pt - a.raw.pt,
+        callbacks: {
+          label: (item) =>
+            `${item.dataset.label}: ${item.raw.pt} (Wins: ${item.raw.w})`
+        }
+      }
     },
     scales: {
       x: { display: true, ticks: { display: true } },

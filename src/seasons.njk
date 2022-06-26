@@ -1,6 +1,5 @@
 ---
 title: Seasons
-pageId: 'seasons'
 ---
 {% extends './_layouts/main.njk' %}
 
@@ -9,6 +8,8 @@ pageId: 'seasons'
 {% endblock %}
 
 {% block content %}
+<h1>Formula 1 Seasons</h1>
+<br/>
 <section class="seasons-grid">
   {% set extraBoxes = seasons.lnegth % 7  %}
   {% for season in seasons | reverse %}

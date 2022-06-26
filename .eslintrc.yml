@@ -13,8 +13,12 @@ extends:
 rules:
   no-new-object: 2
   no-lonely-if: 2
+  camelcase: 2
+  no-console: 2
 
 overrides:
   - files: src/_assets/scripts/*.js
     env:
       browser: true
+    rules:
+      no-console: 0

@@ -1,10 +1,10 @@
-const fs = require('node:fs');
 const path = require('node:path');
-const yaml = require('js-yaml');
+const loadYamlFromDir = require('./_utils/loadYamlFromDir');
 
 module.exports = async () => {
-  const file = path.resolve(process.cwd(), `datastore/constructors/index.yaml`);
-  const contents = await fs.promises.readFile(file, 'utf8');
+  const constructors = loadYamlFromDir(
+    path.resolve(__dirname, `../data/constructors`)
+  );
 
-  return { constructors: yaml.load(contents) };
+  return { constructors: Object.values(constructors) };
 };

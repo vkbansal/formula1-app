@@ -1,21 +1,18 @@
 ---
 title: Home
-pageId: home
+chartjs: true
 ---
 {% extends './_layouts/main.njk' %}
 
 {% block content %}
 <div class="world-map-container">
-  <div class="world-map-wrapper">
-    {% include "./images/world.svg" %}
-    <div id="world-map-tooltip"></div>
-  </div>
+  <canvas id="world-map"></canvas>
 </div>
 <div class="stats">
   <p><span class="number">{{numOfEntities.seasons}}</span> Seasons</p>
-  <p><span class="number">{{numOfEntities.drivers}}</span> Drivers from <span class="number">{{numOfEntities.driver_nationalities}}</span> Nationalities</p>
+  <p><span class="number">{{numOfEntities.drivers}}</span> Drivers from <span class="number">{{numOfEntities.driverNationalities}}</span> Nationalities</p>
   <p><span class="number">{{numOfEntities.constructors}}</span> Constructors</p>
-  <p><span class="number">{{numOfEntities.circuits}}</span> Circuits across <span class="number">{{numOfEntities.circuit_countries}}</span> Countries</p>
+  <p><span class="number">{{numOfEntities.circuits}}</span> Circuits across <span class="number">{{numOfEntities.circuitCountries}}</span> Countries</p>
 </div>
 {% endblock %}
 
@@ -26,5 +23,6 @@ pageId: home
 {% endblock %}
 
 {% block afterscripts %}
+<script type="text/javascript" src="https://unpkg.com/chartjs-chart-geo@3.8.0/build/index.umd.min.js"></script>
 <script type="text/javascript" src="{{assets['_assets/scripts/homepage.js']}}"></script>
 {% endblock %}

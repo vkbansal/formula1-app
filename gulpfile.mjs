@@ -1,9 +1,9 @@
 import { Transform } from 'node:stream';
+import path from 'node:path';
 import gulp from 'gulp';
 import merge from 'merge-stream';
 import Vinyl from 'vinyl';
 import { gulpIf, gulpSass, gulpFilesHash } from '@vkbansal/gulp-plugins';
-import path from 'node:path';
 
 const HASH_LOCATION = '../../src/_data/assets.json';
 const SRC_PATH = path.join(process.cwd(), 'src');
@@ -65,7 +65,8 @@ export function build(cb) {
               path.relative(SRC_PATH, key),
               `/assets/${value}`
             ]);
-            return Object.fromEntries(processed);
+
+            return JSON.stringify(Object.fromEntries(processed), null, 2);
           }
         }),
         gulpAssestMap()

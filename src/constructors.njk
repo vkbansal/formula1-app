@@ -1,18 +1,5 @@
 ---
 title: Constructors
-pageId: 'constructors'
-alpinejs: true
-tableColumns:
-  - id: name
-    label: Name
-  - id: total_races
-    label: Total Races
-  - id: race_wins
-    label: Race Wins
-  - id: podiums
-    label: Podiums
-  - id: win_pct
-    label: Win%
 ---
 {% extends './_layouts/main.njk' %}
 
@@ -22,16 +9,49 @@ tableColumns:
 
 {% block content %}
 <div class="constructors-page">
-  {% set columns = ['name', 'wins'] %}
-  <table class="table" x-data="constructorsData">
+  <h1>Constructors</h1>
+  <p>There have been {{constructors.length}} constructors till date, who have participated in the championships</p>
+  <br/>
+  <hr class="m-0"/>
+  <table class="table table-fixed table-sticky-header table-sortable" x-data="tableData">
     <thead>
       <tr>
-        <th @click="sort('name')" :data-sort="sortCol === 'name' ? (sortAsc ? 'asc' : 'desc') : ''">Constructor</th>
-        <th @click="sort('nationality')" :data-sort="sortCol === 'nationality' ? (sortAsc ? 'asc' : 'desc') : ''">Nationality</th>
-        <th @click="sort('total_races')" :data-sort="sortCol === 'total_races' ? (sortAsc ? 'asc' : 'desc') : ''">Total Races</th>
-        <th @click="sort('race_wins')" :data-sort="sortCol === 'race_wins' ? (sortAsc ? 'asc' : 'desc') : ''">Race Wins</th>
-        <th @click="sort('podiums')" :data-sort="sortCol === 'podiums' ? (sortAsc ? 'asc' : 'desc') : ''">Podiums</th>
-        <th @click="sort('win_pct')" :data-sort="sortCol === 'win_pct' ? (sortAsc ? 'asc' : 'desc') : ''">Win%</th>
+        <th :aria-sort="sortCol === 'name' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+          <button class="sort-btn" @click="sort('name')">
+            <span>Constructor</span>
+            <span aria-hidden="true" class="sort-indicator"/>
+          </button>
+        </th>
+        <th :aria-sort="sortCol === 'nationality' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+          <button class="sort-btn" @click="sort('nationality')">
+            <span>Nationality</span>
+            <span aria-hidden="true" class="sort-indicator"/>
+          </button>
+        </th>
+        <th :aria-sort="sortCol === 'totalRaces' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+          <button class="sort-btn" @click="sort('totalRaces')">
+            <span>Total Races</span>
+            <span aria-hidden="true" class="sort-indicator"/>
+          </button>
+        </th>
+        <th :aria-sort="sortCol === 'raceWins' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+          <button class="sort-btn" @click="sort('raceWins')">
+            <span>Race Wins</span>
+            <span aria-hidden="true" class="sort-indicator"/>
+          </button>
+        </th>
+        <th :aria-sort="sortCol === 'podiums' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+          <button class="sort-btn" @click="sort('podiums')">
+            <span>Podiums</span>
+            <span aria-hidden="true" class="sort-indicator"/>
+          </button>
+        </th>
+        <th :aria-sort="sortCol === 'winPct' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+          <button class="sort-btn" @click="sort('winPct')">
+            <span>Win%</span>
+            <span aria-hidden="true" class="sort-indicator"/>
+          </button>
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -42,10 +62,10 @@ tableColumns:
             <span class="nationality" :class="row.nationality.replace(/\s/g, '_').toLowerCase()"></span>
             <span x-text="row.nationality"></span>
           </td>
-          <td x-text="row.total_races"></td>
-          <td x-text="row.race_wins"></td>
+          <td x-text="row.totalRaces"></td>
+          <td x-text="row.raceWins"></td>
           <td x-text="row.podiums"></td>
-          <td x-text="row.win_pct.toFixed(2) + '%'"></td>
+          <td x-text="row.winPct.toFixed(2) + '%'"></td>
         <tr>
       </template>
     </tbody>
@@ -55,29 +75,7 @@ tableColumns:
 
 {% block beforescripts %}
 <script>
-   document.addEventListener('alpine:init', () => {
-    Alpine.data('constructorsData', () => ({
-      data:  {{constructors | dump | safe}},
-      sortCol: null,
-      sortAsc: false,
-      sort(col) {
-        if (this.sortCol === col) {
-          this.sortAsc = !this.sortAsc;
-        }
-        this.sortCol = col;
-        this.data.sort((a, b) => {
-          if (a[col] < b[col]) {
-            return this.sortAsc ? 1 : -1
-          }
-
-          if (a[col] > b[col]) {
-            return this.sortAsc ? -1 : 1
-          }
-
-          return 0
-        })
-      }
-    }))
-  })
+  const tableData =  {{constructors | dump | safe}};
 </script>
+<script type="text/javascript" src="{{assets['_assets/scripts/sortable-table.js']}}" ></script>
 {% endblock %}

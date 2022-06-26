@@ -1,10 +1,17 @@
-const fs = require('node:fs');
 const path = require('node:path');
-const yaml = require('js-yaml');
+const loadYamlFromDir = require('./_utils/loadYamlFromDir');
 
 module.exports = async () => {
-  const file = path.resolve(process.cwd(), `datastore/drivers/index.yaml`);
-  const contents = await fs.promises.readFile(file, 'utf8');
+  const drivers = loadYamlFromDir(path.resolve(__dirname, `../data/drivers`));
+  const data = Object.values(drivers);
+  const mostRaceWins = data.reduce(
+    (a, b) => (a.raceWins > b.raceWins ? a : b),
+    data[0]
+  );
+  const mostTotalRaces = data.reduce(
+    (a, b) => (a.totalRaces > b.totalRaces ? a : b),
+    data[0]
+  );
 
-  return { drivers: yaml.load(contents) };
+  return { drivers: data, mostRaceWins, mostTotalRaces };
 };

@@ -9,6 +9,8 @@ html {
 :root {
   --f1-red: #e10600;
   --black: #1f1f27;
+  --text-1: rgba(255, 255, 255, 1);
+  --text-2: rgba(255, 255, 255, 0.5);
   --divider: rgba(255, 255, 255, 0.25);
   --header-height: 65px;
 }
@@ -61,4 +63,27 @@ details {
 .container {
   max-width: 1240px;
   margin: 0 auto;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.last-updated {
+  font-size: 0.75rem;
+  color: var(--text-2);
+}
+
+h1,
+h2 {
+  margin: 0 0 1rem 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--divider);
+}
+
+.m-0 {
+  margin: 0 !important;
 }
