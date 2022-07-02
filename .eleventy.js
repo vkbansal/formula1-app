@@ -2,8 +2,11 @@ const path = require('node:path');
 const fs = require('node:fs');
 const dateFns = require('date-fns');
 const { snakeCase } = require('change-case');
+const yaml = require('js-yaml');
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
+
   eleventyConfig.addNunjucksFilter('humanDate', function (value) {
     return dateFns.format(dateFns.parseISO(value), 'do LLL yyyy');
   });

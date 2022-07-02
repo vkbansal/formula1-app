@@ -17,8 +17,8 @@ rules:
   no-console: 2
 
 overrides:
-  - files: src/_assets/scripts/*.js
+  - files: src/_assets/scripts/**/*.js
     env:
       browser: true
     rules:
-      no-console: 0
+      no-console: 2
