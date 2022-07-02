@@ -1,0 +1,97 @@
+---
+pagination:
+  data: seasons
+  size: 1
+  alias: year
+permalink: 'seasons/{{year}}/'
+chartjs: true
+eleventyComputed:
+  title: '{{year}} Season'
+chartTabs:
+  - label: Driver Standings
+    id: driver-standings
+  - label: Driver Points
+    id: driver-points
+  - label: Constructor Standings
+    id: constructor-standings
+  - label: Constructor Points
+    id: constructor-points
+---
+{% extends '../_layouts/main.njk' %}
+
+{% block breadcrumbs %}
+<a href="/seasons">Seasons</a>
+<span>{{year}}</span>
+{% endblock %}
+
+{% block content %}
+<div class="season-header">
+  <h1>{{year}} Season</h1>
+  <nav class="season-pagination">
+    {% if pagination.href.previous %}
+    <a href="{{pagination.href.previous}}">&larr; {{year - 1}}</a>
+    {% endif %}
+    {% if pagination.href.next %}
+    <a href="{{pagination.href.next}}">{{year + 1}} &rarr;</a>
+    {% endif %}
+  </nav>
+</div>
+<div class="tabs season-tabs" x-data="{ activeTab: 2 }">
+  <div class="tab-list" role="tablist">
+    <div role="tab" class="tab"  @click="activeTab = 0" :class="{ 'tab-active': activeTab === 0 }">Races</div>
+    <div role="tab" class="tab"  @click="activeTab = 1" :class="{ 'tab-active': activeTab === 1 }">Driver Standings</div>
+    <div role="tab" class="tab"  @click="activeTab = 2" :class="{ 'tab-active': activeTab === 2 }">Driver Points</div>
+    <div role="tab" class="tab"  @click="activeTab = 3" :class="{ 'tab-active': activeTab === 3 }">Constructor Standings</div>
+    <div role="tab" class="tab"  @click="activeTab = 4" :class="{ 'tab-active': activeTab === 4 }">Constructor Points</div>
+  </div>
+  <div class="tab-panel" :class="{ 'tab-active': activeTab === 0 }">
+    {% include './races-table.njk' %}
+  </div>
+  <div class="tab-panel" :class="{ 'tab-active': activeTab === 1 }">
+    <div class="season-graph">
+      <svg class="standings-chart" id="driver-standings"></svg>
+    </div>
+  </div>
+  <div class="tab-panel" :class="{ 'tab-active': activeTab === 2 }">
+    <div class="season-graph">
+      <svg class="points-chart" id="driver-points"></svg>
+      <div class="tooltip" id="driver-points-tooltip" role="tooltip">
+        <div class="tooltip-content">
+          No data available
+        </div>
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-panel" :class="{ 'tab-active': activeTab === 3 }">
+    <div class="season-graph">
+      <svg class="standings-chart" id="constructor-standings"></svg>
+    </div>
+  </div>
+  <div class="tab-panel" :class="{ 'tab-active': activeTab === 4 }">
+    <div class="season-graph">
+      <svg class="points-chart" id="constructor-points"></svg>
+      <div class="tooltip" id="constructor-points-tooltip" role="tooltip">
+        <div class="tooltip-content">
+          No data available
+        </div>
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block beforescripts %}
+<script type="text/javascript">
+  const raceNames =  {{pageData.raceNames | dump | safe}};
+  const driversData = {{pageData.driversData | dump | safe}};
+  const constructorsData = {{pageData.constructorsData | dump | safe}};
+</script>
+{% endblock %}
+
+{% block afterscripts %}
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+<script  type="text/javascript" src="{{assets['_assets/scripts/season.js']}}"></script>
+{% endblock %}

@@ -1,8 +1,10 @@
 const path = require('node:path');
-const loadYamlFromDir = require('./_utils/loadYamlFromDir');
+const loadJsonFromDir = require('./_utils/loadJsonFromDir');
 
 module.exports = async () => {
-  const drivers = loadYamlFromDir(path.resolve(__dirname, `../data/drivers`));
+  const drivers = await loadJsonFromDir(
+    path.resolve(__dirname, `../data/drivers`)
+  );
   const data = Object.values(drivers);
   const mostRaceWins = data.reduce(
     (a, b) => (a.raceWins > b.raceWins ? a : b),

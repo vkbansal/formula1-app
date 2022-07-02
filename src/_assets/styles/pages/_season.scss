@@ -2,15 +2,66 @@
   margin: 1rem;
   position: relative;
 
-  .reset-zoom {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: var(--f1-red);
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
+  .standings-chart {
+    $fade-opacity: 0.2;
+
+    @mixin transitions {
+      transition: opacity 0.3s ease-out;
+    }
+
+    .tick-y {
+      @include transitions;
+      opacity: 1;
+
+      &.tick-fade {
+        opacity: $fade-opacity;
+      }
+    }
+
+    .line-group {
+      cursor: pointer;
+
+      & > .label {
+        opacity: 0;
+        @include transitions;
+      }
+
+      & > .line,
+      & > .point {
+        opacity: 1;
+        @include transitions;
+      }
+
+      &.line-group-focus {
+        & > .label {
+          opacity: 1;
+        }
+      }
+
+      &.line-group-fade {
+        & > .line,
+        & > .point {
+          opacity: $fade-opacity;
+        }
+      }
+    }
+  }
+
+  .points-chart {
+    & + .tooltip .tooltip-content {
+      .points-tooltip {
+        display: grid;
+        grid-template-columns: 1rem 180px 50px;
+        gap: 0 0.5rem;
+      }
+
+      .color {
+        width: 1rem;
+        height: 1rem;
+        background-color: currentColor;
+        border-radius: 0.2rem;
+      }
+    }
   }
 }
 

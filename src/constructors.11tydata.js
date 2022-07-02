@@ -1,8 +1,8 @@
 const path = require('node:path');
-const loadYamlFromDir = require('./_utils/loadYamlFromDir');
+const loadJsonFromDir = require('./_utils/loadJsonFromDir');
 
 module.exports = async () => {
-  const constructors = loadYamlFromDir(
+  const constructors = await loadJsonFromDir(
     path.resolve(__dirname, `../data/constructors`)
   );
 

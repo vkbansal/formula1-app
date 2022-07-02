@@ -1,0 +1,30 @@
+ <table class="table">
+  <thead>
+    <th>Round</th>
+    <th>Race</th>
+    <th>Circuit</th>
+    <th>Date</th>
+    <th>Winner</th>
+  </thead>
+  <tbody>
+    {% for race in pageData.races %}
+    {% set winnerDriver = pageData.drivers[race.winnerDriver] %}
+    {% set winnerConstructor = pageData.constructors[race.winnerConstructor] %}
+    <tr>
+      <td>{{race.round}}</td>
+      <td>{{race.name}}</td>
+      <td>{{race.circuit.name}} <span class="circuit-location-cell">{{race.circuit.location}}, {{race.circuit.country}}</span></td>
+      <td>{{race.date | humanDate}}</td>
+      <td>
+        {% if winnerDriver %}
+        <span class="nationality {{winnerDriver.nationality | lower}}"/>
+        <span>{{winnerDriver.name}}</span>
+        {% endif %}
+        {% if winnerConstructor %}
+        <span>({{winnerConstructor.name}})<span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

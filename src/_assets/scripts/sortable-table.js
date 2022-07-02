@@ -8,12 +8,22 @@ document.addEventListener('alpine:init', () => {
     return data;
   }
 
-  Alpine.data('tableData', () => ({
+  Alpine.data('tableData', (initSortCol = null, initSortAsc = false) => ({
     data: tableData,
-    sortCol: null,
-    sortAsc: false,
-    sort(col) {
-      this.sortAsc = this.sortCol === col ? !this.sortAsc : true;
+    sortCol: initSortCol,
+    sortAsc: initSortAsc,
+    init() {
+      if (initSortCol) {
+        this.sort(initSortCol, initSortAsc);
+      }
+    },
+    sort(col, sortAsc) {
+      if (typeof sortAsc === 'boolean') {
+        this.sortAsc = sortAsc;
+      } else {
+        this.sortAsc = this.sortCol === col ? !this.sortAsc : true;
+      }
+
       this.sortCol = col;
       this.data.sort((a, b) => {
         if (normalize(a[col]) < normalize(b[col])) {

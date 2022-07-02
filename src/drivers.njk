@@ -18,7 +18,7 @@ title: Drivers
   </ul>
   <br/>
   <hr class="m-0"/>
-  <table class="table table-fixed table-sticky-header table-sortable" x-data="tableData">
+  <table class="table table-fixed table-sticky-header table-sortable" x-data="tableData('raceWins')">
     <thead>
       <tr>
         <th :aria-sort="sortCol === 'name' ? (sortAsc ? 'ascending' : 'descending') : undefined">
@@ -60,7 +60,7 @@ title: Drivers
       </tr>
     </thead>
     <tbody>
-      <template x-for="row in data" :key="row.driverId">
+      <template x-for="row in data" :key="row.driverRef">
         <tr>
           <td x-text="row.name"></td>
           <td>
@@ -70,7 +70,7 @@ title: Drivers
           <td x-text="row.totalRaces"></td>
           <td x-text="row.raceWins"></td>
           <td x-text="row.podiums"></td>
-          <td x-text="row.winPct.toFixed(2) + '%'"></td>
+          {# <td x-text="row.winPct.toFixed(2) + '%'"></td> #}
         <tr>
       </template>
     </tbody>
