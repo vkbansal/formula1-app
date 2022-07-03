@@ -24,7 +24,7 @@ for (const [_input, _output] of Object.entries(assets)) {
       await $`npx sass --no-source-map ${input} ${output}`;
       break;
     case '.js':
-      await $`npx esbuild ${input}  --bundle --minify --target=esnext --outfile=${output}`;
+      await $`npx esbuild ${input} --bundle --minify --target=esnext --outfile=${output}`;
       break;
   }
 

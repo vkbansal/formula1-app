@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{assets['_assets/styles/styles.css']}}">
+    <link rel="stylesheet" href="{{assets['_assets/styles/styles.scss']}}">
     {% block head %}{% endblock %}
   </head>
   <body>
@@ -51,10 +51,6 @@
     </footer>
     {% block beforescripts %}{% endblock %}
     <script type="text/javascript" src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
-    {% if chartjs === true %}
-    <script type="text/javascript" src="https://unpkg.com/chart.js@3.8.0/dist/chart.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/chartjs-plugin-autocolors@0.0.6/dist/chartjs-plugin-autocolors.min.js"></script>
-    {% endif %}
     {% block afterscripts %}{% endblock %}
   </body>
 </html>

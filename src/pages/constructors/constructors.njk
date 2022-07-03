@@ -1,21 +1,17 @@
 ---
-title: Drivers
+title: Constructors
+permalink: 'constructors/'
 ---
-{% extends './_layouts/main.njk' %}
+{% extends '../../_layouts/main.njk' %}
 
 {% block breadcrumbs %}
-<span>Drivers</span>
+<span>Constructors</span>
 {% endblock %}
 
 {% block content %}
-<div class="drivers-page">
-  <h1>Drivers</h1>
-  <p>There have been {{drivers.length}} drivers till date, who have participated in the championships.</p>
-  <p>Amongst them:</p>
-  <ul>
-    <li><p>{{mostRaceWins.name}} has the most race wins at {{mostRaceWins.raceWins}}.</p></li>
-    <li><p>{{mostTotalRaces.name}} has taken part in most number of races at {{mostTotalRaces.totalRaces}}.</p></li>
-  </ul>
+<div class="constructors-page">
+  <h1>Constructors</h1>
+  <p>There have been {{constructors.length}} constructors till date, who have participated in the championships</p>
   <br/>
   <hr class="m-0"/>
   <table class="table table-fixed table-sticky-header table-sortable" x-data="tableData('raceWins')">
@@ -23,7 +19,7 @@ title: Drivers
       <tr>
         <th :aria-sort="sortCol === 'name' ? (sortAsc ? 'ascending' : 'descending') : undefined">
           <button class="sort-btn" @click="sort('name')">
-            <span>Driver</span>
+            <span>Constructor</span>
             <span aria-hidden="true" class="sort-indicator"/>
           </button>
         </th>
@@ -60,7 +56,7 @@ title: Drivers
       </tr>
     </thead>
     <tbody>
-      <template x-for="row in data" :key="row.driverRef">
+      <template x-for="row in data">
         <tr>
           <td x-text="row.name"></td>
           <td>
@@ -80,7 +76,7 @@ title: Drivers
 
 {% block beforescripts %}
 <script>
-  const tableData =  {{drivers | dump | safe}};
+  const tableData =  {{constructors | dump | safe}};
 </script>
 <script type="text/javascript" src="{{assets['_assets/scripts/sortable-table.js']}}" ></script>
 {% endblock %}

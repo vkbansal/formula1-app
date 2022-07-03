@@ -1,6 +1,6 @@
 /* global driversData, constructorsData, raceNames, d3, Popper */
-import colors from '../common/colors';
-import { formatOrdinals } from '../common/utils';
+import colors from '../../../common-client/colors';
+import { formatOrdinals } from '../../../common-client/helpers';
 
 function drawPointsChart(id, chartData) {
   const margin = { top: 30, right: 30, bottom: 100, left: 100 };

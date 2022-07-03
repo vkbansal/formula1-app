@@ -1,8 +1,8 @@
 /* global driversData, constructorsData, raceNames, d3 */
-import colors from '../common/colors';
-import { formatOrdinals } from '../common/utils';
+import colors from '../../../common-client/colors';
+import { formatOrdinals } from '../../../common-client/helpers';
 
-function drawStandingsChart(id, chartData) {
+function drawPositionsChart(id, chartData) {
   const margin = { top: 30, right: 30, bottom: 100, left: 100 };
   const totalWidth = 900;
   const totalHeight = chartData.length * 45;
@@ -256,5 +256,5 @@ function drawStandingsChart(id, chartData) {
   }
 }
 
-drawStandingsChart('#driver-standings', driversData);
-drawStandingsChart('#constructor-standings', constructorsData);
+drawPositionsChart('#driver-positions', driversData);
+drawPositionsChart('#constructor-positions', constructorsData);

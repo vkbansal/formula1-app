@@ -1,7 +1,7 @@
 const path = require('node:path');
 
-const loadJsonFromDir = require('../_utils/loadJsonFromDir');
-const { pick, mapKeys } = require('../_utils/objectHelpers');
+const loadJsonFromDir = require('../../_utils/loadJsonFromDir');
+const { pick, mapKeys } = require('../../_utils/objectHelpers');
 
 const shortKeysMap = {
   position: 'ps',
@@ -18,22 +18,22 @@ module.exports = {
         constructors: seasonConstructors = [],
         drivers: seasonDrivers = []
       } = await loadJsonFromDir(
-        path.resolve(__dirname, `../../data/seasons/${year}`)
+        path.resolve(process.cwd(), `data/seasons/${year}`)
       );
 
       const races = await loadJsonFromDir(
-        path.resolve(__dirname, `../../data/seasons/${year}/races`)
+        path.resolve(process.cwd(), `data/seasons/${year}/races`)
       );
 
       const racesArr = Object.values(races).sort((a, b) => a.round - b.round);
 
       const constructors = await loadJsonFromDir(
-        path.resolve(__dirname, `../../data/constructors`),
+        path.resolve(process.cwd(), `data/constructors`),
         seasonConstructors.map(({ constructorRef }) => constructorRef)
       );
 
       const drivers = await loadJsonFromDir(
-        path.resolve(__dirname, `../../data/drivers`),
+        path.resolve(process.cwd(), `data/drivers`),
         seasonDrivers.map(({ driverRef }) => driverRef)
       );
 

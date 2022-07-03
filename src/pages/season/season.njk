@@ -7,17 +7,8 @@ permalink: 'seasons/{{year}}/'
 chartjs: true
 eleventyComputed:
   title: '{{year}} Season'
-chartTabs:
-  - label: Driver Standings
-    id: driver-standings
-  - label: Driver Points
-    id: driver-points
-  - label: Constructor Standings
-    id: constructor-standings
-  - label: Constructor Points
-    id: constructor-points
 ---
-{% extends '../_layouts/main.njk' %}
+{% extends '../../_layouts/main.njk' %}
 
 {% block breadcrumbs %}
 <a href="/seasons">Seasons</a>
@@ -36,12 +27,12 @@ chartTabs:
     {% endif %}
   </nav>
 </div>
-<div class="tabs season-tabs" x-data="{ activeTab: 2 }">
+<div class="tabs season-tabs" x-data="{ activeTab: 1 }">
   <div class="tab-list" role="tablist">
     <div role="tab" class="tab"  @click="activeTab = 0" :class="{ 'tab-active': activeTab === 0 }">Races</div>
-    <div role="tab" class="tab"  @click="activeTab = 1" :class="{ 'tab-active': activeTab === 1 }">Driver Standings</div>
+    <div role="tab" class="tab"  @click="activeTab = 1" :class="{ 'tab-active': activeTab === 1 }">Driver Positions</div>
     <div role="tab" class="tab"  @click="activeTab = 2" :class="{ 'tab-active': activeTab === 2 }">Driver Points</div>
-    <div role="tab" class="tab"  @click="activeTab = 3" :class="{ 'tab-active': activeTab === 3 }">Constructor Standings</div>
+    <div role="tab" class="tab"  @click="activeTab = 3" :class="{ 'tab-active': activeTab === 3 }">Constructor Positions</div>
     <div role="tab" class="tab"  @click="activeTab = 4" :class="{ 'tab-active': activeTab === 4 }">Constructor Points</div>
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 0 }">
@@ -49,7 +40,7 @@ chartTabs:
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 1 }">
     <div class="season-graph">
-      <svg class="standings-chart" id="driver-standings"></svg>
+      <svg class="positions-chart" id="driver-positions"></svg>
     </div>
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 2 }">
@@ -65,7 +56,7 @@ chartTabs:
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 3 }">
     <div class="season-graph">
-      <svg class="standings-chart" id="constructor-standings"></svg>
+      <svg class="positions-chart" id="constructor-positions"></svg>
     </div>
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 4 }">

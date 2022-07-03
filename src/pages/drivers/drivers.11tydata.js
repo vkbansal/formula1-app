@@ -1,9 +1,9 @@
 const path = require('node:path');
-const loadJsonFromDir = require('./_utils/loadJsonFromDir');
+const loadJsonFromDir = require('../../_utils/loadJsonFromDir');
 
 module.exports = async () => {
   const drivers = await loadJsonFromDir(
-    path.resolve(__dirname, `../data/drivers`)
+    path.resolve(process.cwd(), `data/drivers`)
   );
   const data = Object.values(drivers);
   const mostRaceWins = data.reduce(
