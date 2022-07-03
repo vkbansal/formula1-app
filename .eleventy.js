@@ -4,13 +4,6 @@ const dateFns = require('date-fns');
 const { snakeCase } = require('change-case');
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addDataExtension('list.txt', (contents) => {
-    return contents.split('\n').reduce((prev, curr) => {
-      const [key, value] = curr.split['='];
-      return { ...prev, [key.trim()]: value.trim() };
-    }, {});
-  });
-
   eleventyConfig.addNunjucksFilter('humanDate', function (value) {
     return dateFns.format(dateFns.parseISO(value), 'do LLL yyyy');
   });

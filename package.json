@@ -6,13 +6,8 @@
   "scripts": {
     "lint": "eslint --ext .ts --ext .tsx src",
     "fmt": "prettier --write 'src/**/*.{ts,tsx,scss}'",
-    "clean": "rm -rf public",
-    "prestart": "yarn run clean",
-    "start": "concurrently 'npm:start:*'",
-    "start:assets": "gulp watch",
-    "start:server": "npx @11ty/eleventy --serve",
-    "prebuild": "yarn run clean",
-    "build": "NODE_ENV=production gulp build && npx @11ty/eleventy",
+    "start": "node scripts/watch.mjs",
+    "build": "node scripts/build.mjs",
     "datagen": "node ./scripts/datagen/index.mjs generate"
   },
   "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
@@ -24,7 +19,8 @@
     "esbuild": "^0.14.48",
     "globby": "^13.1.2",
     "normalize.css": "^8.0.1",
-    "sass": "^1.53.0"
+    "sass": "^1.53.0",
+    "zx": "^7.0.7"
   },
   "devDependencies": {
     "@types/d3": "^7.4.0",
