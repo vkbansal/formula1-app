@@ -228,23 +228,32 @@ function drawPointsChart(id, chartData) {
         const driverResults = chartData
           .map((c, i) => ({
             label: c.label,
-            result: c.data[raceNum] ? c.data[raceNum].ps : TEMP_RANK,
+            points: c.data[raceNum] ? c.data[raceNum].ps : TEMP_RANK,
+            wins: c.data[raceNum] ? c.data[raceNum].w : 0,
             color: colors[i]
           }))
-          .sort((a, b) => a.result - b.result);
-        const hasResults = driverResults.some((c) => c.result < TEMP_RANK);
+          .sort((a, b) => a.points - b.points);
+        const hasResults = driverResults.some((c) => c.points < TEMP_RANK);
 
         tooltipContent.innerHTML = hasResults
           ? [
-              '<div class="points-tooltip">',
+              `<div class="points-tooltip" style="columns:${Math.ceil(
+                chartData.length / 30
+              )};">`,
               ...driverResults.map((c) => {
                 const content =
-                  c.result === TEMP_RANK ? 'N/A' : formatOrdinals(c.result);
+                  c.points === TEMP_RANK
+                    ? 'N/A'
+                    : `${formatOrdinals(c.points)} (${c.wins} Win${
+                        c.wins === '1' ? '' : 's'
+                      })`;
 
                 return [
+                  `<div class="points-row">`,
                   `<div class="color" style="color:${c.color};"></div>`,
                   `<div>${c.label}</div>`,
-                  `<div>${content}</div>`
+                  `<div>${content}</div>`,
+                  `</div>`
                 ].join('\n');
               }),
               '</div>'

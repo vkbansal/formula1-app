@@ -21,7 +21,7 @@ for (const [_input, _output] of Object.entries(assets)) {
 
   switch (path.extname(_input)) {
     case '.scss':
-      await $`npx sass --no-source-map ${input} ${output}`;
+      await $`npx sass --no-source-map --style=compressed ${input} ${output}`;
       break;
     case '.js':
       await $`npx esbuild ${input} --bundle --minify --target=esnext --outfile=${output}`;

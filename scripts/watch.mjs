@@ -13,6 +13,9 @@ const assets = JSON.parse(fs.readFileSync(ASSETS_FILE, 'utf8'));
 const CSS_INPUT = 'styles/styles.scss';
 const JS_INPUT = 'pages/season/season.client.js';
 
+await $`rm -rf ${OUT_DIR}`;
+await $`mkdir -p ${OUT_DIR}/assets`;
+
 for (const [_input, _output] of Object.entries(assets)) {
   const input = path.normalize(path.join(SRC_DIR, _input));
   const output = path.normalize(path.join(OUT_DIR, _output));

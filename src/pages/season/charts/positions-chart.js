@@ -2,13 +2,16 @@
 import colors from '../../../common-client/colors';
 import { formatOrdinals } from '../../../common-client/helpers';
 
-function drawPositionsChart(id, chartData) {
-  const margin = { top: 30, right: 30, bottom: 100, left: 100 };
+function drawPositionsChart(id, data) {
+  const chartData = data.slice(0).map((r, i) => ({ ...r, color: colors[i] }));
+  const margin = { top: 30, right: 220, bottom: 100, left: 40 };
   const totalWidth = 900;
-  const totalHeight = chartData.length * 45;
+  const totalHeight = chartData.length * 35;
   const width = totalWidth - margin.left - margin.right;
   const height = totalHeight - margin.top - margin.bottom;
   const STROKE_WIDTH = 3;
+  const DOT_RADIUS = 4;
+  const LEGEND_ICON_WIDTH = 20;
 
   const svg = d3.select(id);
 
@@ -20,10 +23,11 @@ function drawPositionsChart(id, chartData) {
   const xScale = d3.scalePoint(xDomain, [0, width]);
   const yScale = d3.scalePoint(yDomain, [0, height]);
 
-  /* render bottom axis */
+  /** BOTTOM AXIS *************************************************************/
   const bottomAxis = d3.axisBottom(xScale).ticks(raceNames.length);
   svg
     .append('g')
+    .attr('class', 'bottom-axis')
     .attr('transform', `translate(${margin.left}, ${height + margin.top})`)
     .call(bottomAxis)
     .selectAll('.tick')
@@ -35,41 +39,36 @@ function drawPositionsChart(id, chartData) {
         .text(raceNames[d]);
     });
 
-  /* render left axis */
-  const leftAxis = d3.axisLeft(yScale).ticks(chartData.length);
+  /** LEFT AXIS ***************************************************************/
+  const leftAxis = d3
+    .axisLeft(yScale)
+    .ticks(chartData.length)
+    .tickFormat(function (d) {
+      return formatOrdinals(d);
+    });
   svg
     .append('g')
+    .attr('class', 'left-axis')
     .attr('transform', `translate(${margin.left}, ${margin.top})`)
-    .call(leftAxis)
-    .selectAll('.tick')
-    .each(function (data) {
-      this.classList.add('tick-y');
-      d3.select(this)
-        .attr('data-y', data - 1)
-        .select('text')
-        .text(chartData[data - 1].label);
-    })
-    .on('mouseenter', function () {
-      const that = this;
-      const dataY = that.getAttribute('data-y');
-      svg.selectAll('.line-group').each(function () {
-        if (dataY !== this.getAttribute('data-y')) {
-          this.classList.add('line-group-fade');
-        } else {
-          this.classList.add('line-group-focus');
-        }
-      });
-      svg.selectAll('.tick-y').each(function () {
-        if (this !== that) {
-          this.classList.add('tick-fade');
-        }
-      });
-    })
-    .on('mouseleave', mouseLeaveFromLine);
+    .call(leftAxis);
 
-  /* render grid lines axis */
+  /** RIGHT AXIS **************************************************************/
+  const rightAxis = d3
+    .axisRight(yScale)
+    .ticks(chartData.length)
+    .tickFormat(function (d) {
+      return formatOrdinals(d);
+    });
   svg
     .append('g')
+    .attr('class', 'right-axis')
+    .attr('transform', `translate(${margin.left + width}, ${margin.top})`)
+    .call(rightAxis);
+
+  /** GRIDS *******************************************************************/
+  svg
+    .append('g')
+    .attr('class', 'grid')
     .attr('transform', `translate(${margin.left}, ${margin.top})`)
     .selectAll('.grid-line')
     .data(chartData)
@@ -90,20 +89,64 @@ function drawPositionsChart(id, chartData) {
       return yScale(i + 1);
     });
 
-  /* render right axis */
-  const rightAxis = d3
-    .axisRight(yScale)
-    .ticks(chartData.length)
-    .tickFormat(function (d) {
-      return formatOrdinals(d);
-    });
+  /** LEGEND ******************************************************************/
   svg
     .append('g')
-    .attr('transform', `translate(${margin.left + width}, ${margin.top})`)
-    .call(rightAxis)
-    .selectAll('.tick');
+    .attr('class', 'legend')
+    .attr('font-size', '10')
+    .attr('transform', `translate(${margin.left + width + 50}, ${margin.top})`)
+    .selectAll('.legend-row')
+    .data(chartData)
+    .enter()
+    .append('g')
+    .attr('class', 'legend-row')
+    .each(function (d, i) {
+      const g = d3.select(this);
 
-  /* render data axis */
+      g.attr('transform', `translate(0, ${i * 25})`).attr('data-y', i);
+
+      g.append('line')
+        .attr('fill', 'none')
+        .attr('stroke-width', STROKE_WIDTH)
+        .attr('stroke', d.color)
+        .attr('stroke-linejoin', 'round')
+        .attr('stroke-linecap', 'round')
+        .attr('x1', '0')
+        .attr('y1', '0')
+        .attr('x2', LEGEND_ICON_WIDTH)
+        .attr('y2', '0');
+
+      g.append('circle')
+        .attr('cx', LEGEND_ICON_WIDTH / 2)
+        .attr('cy', '0')
+        .attr('r', DOT_RADIUS)
+        .attr('fill', d.color);
+
+      g.append('text')
+        .attr('fill', 'currentColor')
+        .attr('x', LEGEND_ICON_WIDTH + 10)
+        .attr('y', 4)
+        .text(d.label);
+    })
+    .on('mouseenter', function () {
+      const that = this;
+      const dataY = that.getAttribute('data-y');
+      svg.selectAll('.line-group').each(function () {
+        if (dataY !== this.getAttribute('data-y')) {
+          this.classList.add('line-group-fade');
+        } else {
+          this.classList.add('line-group-focus');
+        }
+      });
+      svg.selectAll('.legend-row').each(function () {
+        if (that !== this) {
+          this.classList.add('legend-row-fade');
+        }
+      });
+    })
+    .on('mouseleave', mouseLeaveFromLine);
+
+  /** DATA ********************************************************************/
   svg
     .append('g')
     .attr('transform', `translate(${margin.left}, ${margin.top})`)
@@ -115,10 +158,9 @@ function drawPositionsChart(id, chartData) {
     .attr('data-y', function (d, y) {
       return y;
     })
-    .attr('font-size', '12')
-    .each(function (d, i) {
-      const filteredData = d.data
-        .map((e, j) => (e ? { ...e, x: j } : e))
+    .each(function (d1) {
+      const filteredData = d1.data
+        .map((e, x) => (e ? { ...e, x } : e))
         .filter(Boolean);
 
       const g = d3.select(this);
@@ -127,23 +169,22 @@ function drawPositionsChart(id, chartData) {
       points
         .append('circle')
         .attr('class', 'point')
-        .attr('r', STROKE_WIDTH + 1)
+        .attr('r', DOT_RADIUS)
         .attr('stroke', 'none')
         .attr('style', 'pointer-events: none;')
-        .attr('fill', function () {
-          return colors[i];
+        .attr('fill', d1.color)
+        .attr('cx', function (d2) {
+          return xScale(d2.x);
         })
-        .attr('cx', function (d) {
-          return xScale(d.x);
-        })
-        .attr('cy', function (d) {
-          return yScale(d.ps);
+        .attr('cy', function (d2) {
+          return yScale(d2.ps);
         });
 
       points
         .append('text')
         .attr('class', 'label')
         .attr('fill', 'currentColor')
+        .attr('font-size', '10')
         .attr('x', function (d) {
           return xScale(d.x);
         })
@@ -211,7 +252,7 @@ function drawPositionsChart(id, chartData) {
         .attr('stroke-linejoin', 'round')
         .attr('stroke-linecap', 'round')
         .attr('stroke', function () {
-          return colors[i];
+          return d1.color;
         })
         .attr(
           'd',
@@ -235,9 +276,9 @@ function drawPositionsChart(id, chartData) {
           this.classList.add('line-group-focus');
         }
       });
-      svg.selectAll('.tick-y').each(function () {
+      svg.selectAll('.legend-row').each(function () {
         if (dataY !== this.getAttribute('data-y')) {
-          this.classList.add('tick-fade');
+          this.classList.add('legend-row-fade');
         }
       });
     })
@@ -250,8 +291,8 @@ function drawPositionsChart(id, chartData) {
     svg.selectAll('.line-group-focus').each(function () {
       this.classList.remove('line-group-focus');
     });
-    svg.selectAll('.tick-fade').each(function () {
-      this.classList.remove('tick-fade');
+    svg.selectAll('.legend-row-fade').each(function () {
+      this.classList.remove('legend-row-fade');
     });
   }
 }

@@ -7,6 +7,7 @@ parserOptions:
 env:
   node: true
   es6: true
+  browser: true
 extends:
   - eslint:recommended
   - prettier
@@ -15,10 +16,3 @@ rules:
   no-lonely-if: 2
   camelcase: 2
   no-console: 2
-
-overrides:
-  - files: src/_assets/scripts/**/*.js
-    env:
-      browser: true
-    rules:
-      no-console: 2

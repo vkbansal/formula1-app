@@ -3,17 +3,18 @@
   position: relative;
 
   .positions-chart {
-    $fade-opacity: 0.2;
+    $fade-opacity: 0.1;
 
     @mixin transitions {
       transition: opacity 0.3s ease-out;
     }
 
-    .tick-y {
+    .legend-row {
       @include transitions;
+      cursor: pointer;
       opacity: 1;
 
-      &.tick-fade {
+      &.legend-row-fade {
         opacity: $fade-opacity;
       }
     }
@@ -49,9 +50,19 @@
 
   .points-chart {
     & + .tooltip .tooltip-content {
+      overflow: hidden;
+      max-height: 80vh;
+      min-height: 300px;
+
       .points-tooltip {
+        height: 100%;
+        columns: auto;
+      }
+
+      .points-row {
         display: grid;
-        grid-template-columns: 1rem 180px 50px;
+        grid-template-columns: 1rem 180px 100px;
+        grid-template-rows: auto;
         gap: 0 0.5rem;
       }
 
