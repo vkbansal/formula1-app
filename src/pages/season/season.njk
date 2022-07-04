@@ -39,14 +39,14 @@ eleventyComputed:
     {% include 'races-table.njk' %}
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 1 }">
-    <div class="season-graph">
-      <svg class="positions-chart" id="driver-positions"></svg>
+    <div class="{{css.seasonGraph}}">
+      <svg class="{{css.positionsChart}}" id="driver-positions"></svg>
     </div>
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 2 }">
-    <div class="season-graph">
-      <svg class="points-chart" id="driver-points"></svg>
-      <div class="tooltip" id="driver-points-tooltip" role="tooltip">
+    <div class="{{css.seasonGraph}}">
+      <svg class="{{css.pointsChart}}" id="driver-points"></svg>
+      <div class="tooltip {{css.pointsTooltip}}" id="driver-points-tooltip" role="tooltip">
         <div class="tooltip-content">
           No data available
         </div>
@@ -55,14 +55,14 @@ eleventyComputed:
     </div>
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 3 }">
-    <div class="season-graph">
-      <svg class="positions-chart" id="constructor-positions"></svg>
+    <div class="{{css.seasonGraph}}">
+      <svg class="{{css.positionsChart}}" id="constructor-positions"></svg>
     </div>
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 4 }">
-    <div class="season-graph">
-      <svg class="points-chart" id="constructor-points"></svg>
-      <div class="tooltip" id="constructor-points-tooltip" role="tooltip">
+    <div class="{{css.seasonGraph}}">
+      <svg class="{{css.pointsChart}}" id="constructor-points"></svg>
+      <div class="tooltip {{css.pointsTooltip}}" id="constructor-points-tooltip" role="tooltip">
         <div class="tooltip-content">
           No data available
         </div>
