@@ -1,12 +1,14 @@
 /* eslint-disable no-console */
 import fs from 'node:fs';
 import path from 'node:path';
-import { pathToFileURL, fileURLToPath } from 'node:url';
 
 import yargs from 'yargs/yargs';
 import { hideBin } from 'yargs/helpers';
 import esbuild from 'esbuild';
-import sass from 'sass';
+import postcss from 'postcss';
+import cssNested from 'postcss-nested';
+import cssImports from 'postcss-import';
+import cssModules from 'postcss-modules';
 
 const ASSETS_FILE = 'src/_data/assets.json';
 const assets = JSON.parse(fs.readFileSync(ASSETS_FILE, 'utf8'));
@@ -14,31 +16,51 @@ const assets = JSON.parse(fs.readFileSync(ASSETS_FILE, 'utf8'));
 /**
  * @type {import('esbuild').Plugin}
  */
-const sassPlugin = {
-  name: 'sass',
+const postCSSPlugin = {
+  name: 'postcss-plugin',
   setup(build) {
-    build.onLoad({ filter: /\.scss/ }, async (onLoadArgs) => {
-      const sassObj = await sass.compile(onLoadArgs.path, {
-        importers: [
-          {
-            findFileUrl(url) {
-              if (!url.startsWith('~')) {
-                return null;
-              }
+    build.onLoad({ filter: /\.css/ }, async (onLoadArgs) => {
+      const css = await fs.promises.readFile(onLoadArgs.path, 'utf8');
+      const result = await postcss([
+        cssImports({
+          plugins: [
+            cssNested(),
+            cssModules({
+              generateScopedName: '[name]__[local]___[hash:base64:5]',
+              scopeBehaviour: 'local',
+              globalModulePaths: [/src\/styles/, /node_modules/],
+              localsConvention: 'camelCaseOnly',
+              getJSON(cssFileName, json) {
+                if (!json || Object.keys(json).length === 0) {
+                  return;
+                }
 
-              return new URL(
-                url.substring(1),
-                pathToFileURL('./node_modules/')
-              );
-            }
-          }
-        ]
-      });
+                const jsonFile = cssFileName.replace(
+                  path.extname(cssFileName),
+                  '.json'
+                );
+
+                fs.writeFileSync(
+                  jsonFile,
+                  JSON.stringify({ css: json }, null, 2),
+                  'utf8'
+                );
+              }
+            })
+          ]
+        })
+      ]).process(css, { from: onLoadArgs.path });
 
       return {
-        contents: sassObj.css,
+        contents: result.css,
         loader: 'css',
-        watchFiles: sassObj.loadedUrls.map((url) => fileURLToPath(url))
+        watchFiles: [
+          ...new Set(
+            result.messages
+              .filter((m) => m.type === 'dependency')
+              .flatMap((m) => [m.file, m.parent])
+          )
+        ]
       };
     });
   }
@@ -95,10 +117,12 @@ yargs(hideBin(process.argv))
           loader: {
             '.scss': 'css'
           },
-          plugins: [sassPlugin]
+          plugins: [postCSSPlugin]
         })
         .then(() => {
-          console.log('watching files....');
+          if (watch) {
+            console.log('watching files....');
+          }
         });
     }
   )

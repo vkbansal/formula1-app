@@ -21,7 +21,10 @@
     "esbuild": "^0.14.48",
     "globby": "^13.1.2",
     "normalize.css": "^8.0.1",
-    "sass": "^1.53.0",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0",
+    "postcss-modules": "^4.3.1",
+    "postcss-nested": "^5.0.6",
     "zx": "^7.0.7"
   },
   "devDependencies": {

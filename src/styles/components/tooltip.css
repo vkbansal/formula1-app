@@ -1,20 +1,18 @@
-@use 'sass:math';
-
 .tooltip {
-  $tooltip-arrow-size: 1rem;
+  --tooltip-arrow-size: 1rem;
   visibility: hidden;
   z-index: 20;
 
-  .tooltip-content {
+  & .tooltip-content {
     padding: 1rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 0.5rem;
     font-size: 0.85rem;
     line-height: 1.5;
   }
 
-  .tooltip-arrow {
+  & .tooltip-arrow {
     visibility: hidden;
     &,
     &::before {
@@ -28,7 +26,7 @@
     &::before {
       content: '';
       visibility: hidden;
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.5);
       transform: rotate(45deg);
     }
   }
@@ -42,18 +40,18 @@
   }
 
   &[data-popper-placement^='top'] > .tooltip-arrow {
-    bottom: -1 * math.div($tooltip-arrow-size, 2);
+    bottom: calc(-1 * calc(var(--tooltip-arrow-size) / 2));
   }
 
   &[data-popper-placement^='bottom'] > .tooltip-arrow {
-    top: -1 * math.div($tooltip-arrow-size, 2);
+    top: calc(-1 * calc(var(--tooltip-arrow-size) / 2));
   }
 
   &[data-popper-placement^='left'] > .tooltip-arrow {
-    right: -1 * math.div($tooltip-arrow-size, 2);
+    right: calc(-1 * calc(var(--tooltip-arrow-size) / 2));
   }
 
   &[data-popper-placement^='right'] > .tooltip-arrow {
-    left: -1 * math.div($tooltip-arrow-size, 2);
+    left: calc(-1 * calc(var(--tooltip-arrow-size) / 2));
   }
 }

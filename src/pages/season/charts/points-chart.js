@@ -226,33 +226,39 @@ function drawPointsChart(id, chartData) {
         prevClosest = closest;
         const raceNum = xTicks.indexOf(closest);
         const driverResults = chartData
-          .map((c, i) => ({
-            label: c.label,
-            points: c.data[raceNum] ? c.data[raceNum].ps : TEMP_RANK,
-            wins: c.data[raceNum] ? c.data[raceNum].w : 0,
-            color: colors[i]
-          }))
-          .sort((a, b) => a.points - b.points);
-        const hasResults = driverResults.some((c) => c.points < TEMP_RANK);
+          .map((c) => {
+            const d = c.data[raceNum];
+            return {
+              ...c,
+              data: d || { ps: TEMP_RANK, pt: 0, w: 0 }
+            };
+          })
+          .sort((a, b) => a.data.ps - b.data.ps);
+
+        const hasResults = driverResults.some((c) => c.data.ps < TEMP_RANK);
 
         tooltipContent.innerHTML = hasResults
           ? [
               `<div class="points-tooltip" style="columns:${Math.ceil(
                 chartData.length / 30
               )};">`,
-              ...driverResults.map((c) => {
+              ...driverResults.map((c, i) => {
                 const content =
-                  c.points === TEMP_RANK
+                  c.ps === TEMP_RANK
                     ? 'N/A'
-                    : `${formatOrdinals(c.points)} (${c.wins} Win${
-                        c.wins === '1' ? '' : 's'
-                      })`;
+                    : [
+                        `<div>${c.data.pt}</div>`,
+                        `<div>${formatOrdinals(c.data.ps)}</div>`,
+                        `<div>(${c.data.w} Win${
+                          c.data.w === '1' ? '' : 's'
+                        })</div>`
+                      ].join('');
 
                 return [
                   `<div class="points-row">`,
-                  `<div class="color" style="color:${c.color};"></div>`,
+                  `<div class="color" style="color:${colors[i]};"></div>`,
                   `<div>${c.label}</div>`,
-                  `<div>${content}</div>`,
+                  content,
                   `</div>`
                 ].join('\n');
               }),
@@ -270,7 +276,6 @@ function drawPointsChart(id, chartData) {
       popper.update();
     });
 
-  const wrapper = svg.node().parentNode;
   const tooltip = document.querySelector(`${id}-tooltip`);
   const tooltipContent = tooltip.querySelector('.tooltip-content');
 
@@ -287,11 +292,11 @@ function drawPointsChart(id, chartData) {
 
   const virtualElement = {
     getBoundingClientRect: generateGetBoundingClientRect(),
-    contextElement: wrapper
+    contextElement: document.body
   };
 
   const popper = Popper.createPopper(virtualElement, tooltip, {
-    placement: 'right',
+    placement: 'top',
     strategy: 'fixed',
     modifiers: [
       {
