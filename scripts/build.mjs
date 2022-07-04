@@ -6,27 +6,17 @@ import crypto from 'node:crypto';
 import 'zx/globals';
 
 const OUT_DIR = 'public';
-const SRC_DIR = 'src';
 const ASSETS_FILE = 'src/_data/assets.json';
 const assets = JSON.parse(fs.readFileSync(ASSETS_FILE, 'utf8'));
 
 await $`rm -rf ${OUT_DIR}`;
 await $`mkdir -p ${OUT_DIR}/assets`;
+await $`node scripts/esbuild.mjs`;
 
 const hashesMap = {};
 
 for (const [_input, _output] of Object.entries(assets)) {
-  const input = path.normalize(path.join(SRC_DIR, _input));
   const output = path.normalize(path.join(OUT_DIR, _output));
-
-  switch (path.extname(_input)) {
-    case '.scss':
-      await $`npx sass --no-source-map --style=compressed ${input} ${output}`;
-      break;
-    case '.js':
-      await $`npx esbuild ${input} --bundle --minify --target=esnext --outfile=${output}`;
-      break;
-  }
 
   const fileBuffer = fs.readFileSync(output);
   const hash = crypto
@@ -45,4 +35,6 @@ for (const [_input, _output] of Object.entries(assets)) {
 
 fs.writeFileSync(ASSETS_FILE, JSON.stringify(hashesMap, null, 2), 'utf8');
 
-// await $`npx @11ty/eleventy`;
+await $`npx @11ty/eleventy`;
+
+process.exit(0);

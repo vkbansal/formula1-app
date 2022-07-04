@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint --ext .ts --ext .tsx src",
     "fmt": "prettier --write 'src/**/*.{ts,tsx,scss}'",
-    "start": "node scripts/watch.mjs",
+    "start": "concurrently npm:start:*",
+    "start:assets": "node scripts/esbuild.mjs --watch",
+    "start:11ty": "npx @11ty/eleventy --serve --incremental",
     "build": "node scripts/build.mjs",
     "datagen": "node ./scripts/datagen/index.mjs generate"
   },
