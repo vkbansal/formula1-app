@@ -10,7 +10,8 @@
     "start": "concurrently npm:start:*",
     "start:assets": "node scripts/esbuild.mjs --watch",
     "start:11ty": "npx @11ty/eleventy --serve --incremental",
-    "build": "node scripts/build.mjs",
+    "prebuild": "rm -rf public",
+    "build": "NODE_ENV=production node scripts/esbuild.mjs",
     "datagen": "node ./scripts/datagen/index.mjs generate"
   },
   "author": "Vivek Kumar Bansal <contact@vkbansal.me>",

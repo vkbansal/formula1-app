@@ -36,7 +36,7 @@ eleventyComputed:
     <div role="tab" class="tab"  @click="activeTab = 4" :class="{ 'tab-active': activeTab === 4 }">Constructor Points</div>
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 0 }">
-    {% include 'races-table.njk' %}
+    {% include './_races-table.njk' %}
   </div>
   <div class="tab-panel" :class="{ 'tab-active': activeTab === 1 }">
     <div class="{{css.seasonGraph}}">

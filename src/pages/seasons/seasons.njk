@@ -11,13 +11,13 @@ permalink: 'seasons/'
 {% block content %}
 <h1>Formula 1 Seasons</h1>
 <br/>
-<section class="seasons-grid">
+<section class="{{css.seasonsGrid}}">
   {% set extraBoxes = seasons.lnegth % 7  %}
   {% for season in seasons | reverse %}
-    <h2 class="season-card"><a href="/seasons/{{season}}/">{{season}}</a></h2>
+    <h2 class="{{css.seasonCard}}"><a href="/seasons/{{season}}/">{{season}}</a></h2>
   {% endfor %}
   {% for i in range(0, (seasons.length % 7) + 1) %}
-    <div class="season-card"></div>
+    <div class="{{css.seasonCard}}"></div>
   {% endfor %}
 </section>
 {% endblock%}

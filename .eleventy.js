@@ -4,6 +4,10 @@ const dateFns = require('date-fns');
 const { snakeCase } = require('change-case');
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.setBrowserSyncConfig({
+    files: ['public/**/*']
+  });
+
   eleventyConfig.addNunjucksFilter('humanDate', function (value) {
     return dateFns.format(dateFns.parseISO(value), 'do LLL yyyy');
   });

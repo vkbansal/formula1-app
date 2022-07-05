@@ -2,8 +2,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import yargs from 'yargs/yargs';
-import { hideBin } from 'yargs/helpers';
 import esbuild from 'esbuild';
 import postcss from 'postcss';
 import cssNested from 'postcss-nested';
@@ -11,7 +9,17 @@ import cssImports from 'postcss-import';
 import cssModules from 'postcss-modules';
 
 const ASSETS_FILE = 'src/_data/assets.json';
-const assets = JSON.parse(fs.readFileSync(ASSETS_FILE, 'utf8'));
+
+const watch = process.argv.includes('--watch');
+const PROD = process.env.NODE_ENV === 'production';
+
+const entryPoints = [
+  'src/styles/styles.css',
+  'src/pages/home/home.client.js',
+  'src/pages/season/season.client.js',
+  'src/pages/drivers/drivers.client.js',
+  'src/pages/constructors/constructors.client.js'
+];
 
 /**
  * @type {import('esbuild').Plugin}
@@ -66,65 +74,41 @@ const postCSSPlugin = {
   }
 };
 
-export default async function () {}
-
-yargs(hideBin(process.argv))
-  .version(false)
-  .scriptName('mariadb-datagen')
-  .usage('$0 [args]')
-  .command(
-    '$0',
-    'Run esbuild',
-    (y) => {
-      y.option('watch', {
-        description: 'Run in watch mode',
-        demandOption: false,
-        boolean: true,
-        default: false
-      }).option('minify', {
-        description: 'Minify output',
-        demandOption: false,
-        boolean: true,
-        default: false
-      });
-    },
-    async ({ watch, minify }) => {
-      return esbuild
-        .build({
-          entryPoints: Object.fromEntries(
-            Object.entries(assets).map(([key, value]) => [
-              path.normalize(
-                path.join('public', value.replace(path.extname(value), ''))
-              ),
-              path.normalize(path.join('src', key))
-            ])
-          ),
-          bundle: true,
-          target: 'esnext',
-          outdir: '.',
-          watch: watch
-            ? {
-                onRebuild(error) {
-                  if (error) {
-                    console.error('watch build failed:', error);
-                  } else {
-                    console.log('[WATCH] build succeeded');
-                  }
-                }
-              }
-            : undefined,
-          minify,
-          loader: {
-            '.scss': 'css'
-          },
-          plugins: [postCSSPlugin]
-        })
-        .then(() => {
-          if (watch) {
-            console.log('watching files....');
+const result = await esbuild.build({
+  entryPoints,
+  bundle: true,
+  target: 'esnext',
+  outdir: 'public/assets',
+  entryNames: PROD ? '[name].[hash]' : '[name]',
+  watch: watch
+    ? {
+        onRebuild(error) {
+          if (error) {
+            console.error('watch build failed:', error);
+          } else {
+            console.log('[WATCH] build succeeded');
           }
-        });
-    }
-  )
-  .help()
-  .demandCommand().argv;
+        }
+      }
+    : undefined,
+  minify: PROD,
+  metafile: true,
+  plugins: [postCSSPlugin]
+});
+
+if (result.metafile) {
+  const assets = Object.entries(result.metafile.outputs).reduce(
+    (obj, [output, input]) => ({
+      ...obj,
+      [path.relative('src', input.entryPoint)]:
+        '/' + path.relative('public', output)
+    }),
+    {}
+  );
+
+  await fs.promises.writeFile(
+    ASSETS_FILE,
+    JSON.stringify(assets, null, 2),
+    'utf8'
+  );
+}
