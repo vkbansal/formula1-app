@@ -3,24 +3,45 @@
 
 	& .section {
 		padding: 4rem 0;
+		font-size: 1.75rem;
+		color: var(--text-2);
+		line-height: 5;
+	}
+
+	& .fact,
+	a.link {
+		font-family: var(--font-family-oswald);
+		line-height: 1;
+		font-weight: 700;
+		display: inline-block;
+		white-space: nowrap;
+		color: white;
+	}
+
+	& .fact {
+		font-size: 2.5rem;
 	}
 
 	a.link {
-		display: inline-block;
-		font-size: 5rem;
-		font-family: var(--font-family-oswald);
 		text-decoration: none;
 		transition: color 0.3s ease-out;
 		position: relative;
+		font-size: 5rem;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 110%;
+			left: 0;
+			width: 100%;
+			background-color: currentColor;
+			line-height: 1;
+			height: 0.3rem;
+			border-radius: 0.15rem;
+		}
 
 		&:hover {
 			color: var(--f1-red);
 		}
-	}
-
-	& .fact {
-		font-size: 1.75rem;
-		color: var(--text-2);
-		line-height: 5;
 	}
 }

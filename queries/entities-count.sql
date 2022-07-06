@@ -9,5 +9,5 @@ SELECT
   (SELECT COUNT(DISTINCT `nationality`) FROM `constructors`) AS `constructorNationalities`,
   (SELECT COUNT(*) FROM `circuits`) AS `circuits`,
   (SELECT COUNT(DISTINCT `country`) FROM `circuits`) AS `circuitCountries`,
-  (SELECT COUNT(*) FROM `races`) AS `races`;
+  (SELECT COUNT(DISTINCT `raceId`) FROM `results`) AS `races`;
 -- main:query:end

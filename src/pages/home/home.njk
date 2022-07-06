@@ -6,40 +6,38 @@ permalink: '/'
 
 {% block content %}
 <div class="{{css.stats}}">
-  <section class={{css.section}}>
-    <span class={{css.fact}}>There have been</span>
-    &nbsp;
-    <a class={{css.link}} href="/seasons">{{numOfEntities.seasons}} Seasons</a>
-    &nbsp;
-    <span class={{css.fact}}>of <strong>Formula 1 World Championships</strong> till date.</span>
-    &nbsp;
-    <a class={{css.link}} href="/drivers">{{numOfEntities.drivers}} Drivers</a>
-    &nbsp;
-    <span class={{css.fact}}>have participated from</span>
-    &nbsp;
-    <a class={{css.link}} href="/constructors">{{numOfEntities.constructors}} Constructors</a>
-    &nbsp;
-    <span class={{css.fact}}>and have raced in</span>
-    &nbsp;
-    <a class={{css.link}} href="/circuits">{{numOfEntities.races}} Grand Prix</a>
-    &nbsp;
-    <span class={{css.fact}}>on</span>
-    &nbsp;
-    <a class={{css.link}} href="/circuits">{{numOfEntities.circuits}} Circuits</a>
-    &nbsp;
-    <span class={{css.fact}}>across</span>
-    &nbsp;
-    <a class={{css.link}} href="/nations">{{numOfEntities.circuitCountries}} Nations</a>
-    &nbsp;
-    <span class={{css.fact}}>.</span>
-  </section>
-  {# As of the 2022 British Grand Prix, a total of 1,067 Formula One World Championship races have been held in 34 countries.[b][10][20] Over 72 seasons, there have been 34 participants from 15 different nationalities who have won the World Drivers' Championship, with Lewis Hamilton and Michael Schumacher tied for the record for the highest number of titles won with seven. Over 64 seasons, 15 teams representing 5 individual nations that have claimed the World Constructors' Championship, with Ferrari winning more titles than any other squad with 16.  #}
+	<section class={{css.section}}>
+			A total of&nbsp;<a class={{css.link}} href="/seasons">{{numOfEntities.seasons - 1}} Seasons</a>
+		&nbsp;of&nbsp;&nbsp;<span class={{css.fact}}>The Formula 1 World Championships</span> have been held till date.
+		&nbsp;
+		<a class={{css.link}} href="/drivers">{{numOfEntities.drivers}} Drivers</a>
+		&nbsp;from&nbsp;
+		<span class={{css.fact}}>{{numOfEntities.driverNationalities}} countries</span>
+		&nbsp;and&nbsp;
+		<a class={{css.link}} href="/constructors">{{numOfEntities.constructors}} Constructors</a>
+		&nbsp;from&nbsp;
+		<span class={{css.fact}}>{{numOfEntities.constructorNationalities}} countries</span>
+		&nbsp;have participated in <span class={{css.fact}}>{{numOfEntities.races}} Grand Prix</span>
+		&nbsp;races on&nbsp;
+		<span class={{css.fact}}>{{numOfEntities.circuits}} Circuits</span>
+		&nbsp;across&nbsp;
+		<span class={{css.fact}}>{{numOfEntities.circuitCountries}} Nations</span>
+		&nbsp;.
+
+		{#
+		<br/>representing<br/>
+		&nbsp;from&nbsp;
+		#}
+
+
+		{# <a class={{css.link}} href="/circuits">{{numOfEntities.circuits}} Circuits</a> #}
+	</section>
 </div>
 {% endblock %}
 
 {% block beforescripts %}
 <script type="text/javascript">
-  const racesByCountry = {{ racesByCountry | dump | safe }};
+	const racesByCountry = {{ racesByCountry | dump | safe }};
 </script>
 {% endblock %}
 

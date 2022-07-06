@@ -9,7 +9,7 @@
     "prestart": "rm -rf public",
     "start": "concurrently npm:start:*",
     "start:assets": "node scripts/esbuild.mjs --watch",
-    "start:11ty": "npx @11ty/eleventy --serve --incremental",
+    "start:11ty": "npx @11ty/eleventy --serve",
     "prebuild": "rm -rf public",
     "build": "NODE_ENV=production node scripts/esbuild.mjs",
     "datagen": "node ./scripts/datagen/index.mjs generate"
