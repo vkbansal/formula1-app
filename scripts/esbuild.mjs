@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+import { globby } from 'globby';
 import esbuild from 'esbuild';
 import postcss from 'postcss';
 import cssNested from 'postcss-nested';
@@ -12,14 +13,12 @@ const ASSETS_FILE = 'src/_data/assets.json';
 
 const watch = process.argv.includes('--watch');
 const PROD = process.env.NODE_ENV === 'production';
+const jsFiles = await globby(['src/**/*.client.js']);
 
-const entryPoints = [
-  'src/styles/styles.css',
-  'src/pages/home/home.client.js',
-  'src/pages/season/season.client.js',
-  'src/pages/drivers/drivers.client.js',
-  'src/pages/constructors/constructors.client.js'
-];
+const entryPoints = ['src/styles/styles.css', ...jsFiles];
+
+console.log('Build the following files');
+console.log(entryPoints.join('\n'));
 
 /**
  * @type {import('esbuild').Plugin}
@@ -86,7 +85,10 @@ const result = await esbuild.build({
           if (error) {
             console.error('watch build failed:', error);
           } else {
-            console.log('[WATCH] build succeeded');
+            console.log(
+              '[WATCH] build succeeded at ',
+              new Date().toLocaleString()
+            );
           }
         }
       }

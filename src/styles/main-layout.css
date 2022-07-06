@@ -1,63 +1,76 @@
 .main-header {
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--divider);
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--divider);
+	height: var(--header-height);
 
-  & > .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+	& > .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
 
-  & .logo {
-    display: block;
-    font-size: 2.5rem;
-    text-decoration: none;
+	& .logo {
+		display: block;
+		font-size: 2.5rem;
+		text-decoration: none;
+		font-family: var(--font-family-oswald);
+		font-weight: 500;
 
-    & span:first-child {
-      color: var(--f1-red);
-      font-weight: bold;
-    }
-  }
+		& span:first-child {
+			color: var(--f1-red);
+			font-weight: 700;
+		}
+	}
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
-  column-gap: 1.5rem;
+	display: flex;
+	align-items: center;
+	column-gap: 1.5rem;
 
-  & > a {
-    text-decoration: none;
-    font-weight: bold;
-    transform-origin: center center;
-    transition: 0.2s ease-in-out;
+	& > a {
+		text-decoration: none;
+		font-weight: bold;
+		transform-origin: center center;
+		transition: 0.2s ease-in-out;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+		&:hover {
+			transform: scale(1.1);
+		}
 
-    &.active {
-      color: var(--f1-red);
-      transform: scale(1.1);
-    }
-  }
+		&.active {
+			color: var(--f1-red);
+			transform: scale(1.1);
+		}
+	}
 }
 
 .content-wrapper {
-  flex: 1 1 auto;
-  padding: 1rem 0;
-  width: 100%;
+	padding: 1rem 0;
+	width: 100%;
+	min-height: calc(100vh - var(--header-height) - var(--footer-height));
+
+	@media screen and (max-width: 1239px) {
+		padding: 1rem;
+	}
 }
 
 .main-footer {
-  padding: 1rem 0;
-  width: 100%;
-  border-top: 1px solid var(--divider);
-  margin-top: 1rem;
-  font-size: 0.75rem;
+	padding: 1rem 0;
+	width: 100%;
+	border-top: 1px solid var(--divider);
+	height: var(--footer-height);
 
-  & > .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+	& > .container {
+		font-size: 0.75rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	p {
+		margin: 0;
+	}
 }

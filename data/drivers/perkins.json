@@ -1,9 +1,25 @@
 {
+  "driverid": 256,
   "driverRef": "perkins",
   "name": "Larry Perkins",
   "dob": "1950-03-18",
   "nationality": "Australian",
   "totalRaces": 15,
   "raceWins": 0,
-  "podiums": 0
+  "podiums": 0,
+  "winPct": 0,
+  "championshipStandings": [
+    {
+      "year": 1974,
+      "position": 61
+    },
+    {
+      "year": 1976,
+      "position": 24
+    },
+    {
+      "year": 1977,
+      "position": 38
+    }
+  ]
 }

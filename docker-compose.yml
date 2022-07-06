@@ -9,4 +9,4 @@ services:
       MARIADB_DATABASE: f1db
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: yes
     volumes:
-      - './temp:/docker-entrypoint-initdb.d'
+      - './initdb.d:/docker-entrypoint-initdb.d'

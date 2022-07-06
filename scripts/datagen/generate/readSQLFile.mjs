@@ -5,12 +5,20 @@ import * as p2r from 'path-to-regexp';
 import yaml from 'js-yaml';
 import slugify from 'slugify';
 
-import {
-  PATH_REGEX,
-  META_REGEX,
-  getQueryDelimiterRegex,
-  replaceExtension
-} from './utils.mjs';
+const PATH_REGEX = /^--\s*path\s*:\s*(.+)$/m;
+const META_REGEX = /^--\s*meta\s*:\s*(.+)$/m;
+const QUERY_REGEX =
+  /^--\s+([a-z0-9A-Z]+):query:start((?:.|\n)+?)--\s+\1:query:end$/gm;
+
+/**
+ * Replaces the current file extension with given extension
+ * @param {String} filePath
+ * @param {String} ext
+ * @returns {String}
+ */
+function replaceExtension(filePath, ext) {
+  return filePath.replace(path.extname(filePath), ext);
+}
 
 /**
  * Read SQL File and process the metadata
@@ -38,13 +46,26 @@ export async function readSQLFile(filePath) {
     isPathParameterized = keys.length > 0;
   }
 
-  const mainQueryMatch = sqlFile.match(getQueryDelimiterRegex('main'));
+  const queryMatches = sqlFile.matchAll(QUERY_REGEX);
+  const queries = [...queryMatches].reduce(
+    (obj, match) => ({ ...obj, [match[1]]: match[2].trim() }),
+    {}
+  );
 
-  if (!mainQueryMatch) {
+  if (!queries.main) {
     throw new Error(
       [
         'Could not find the main query.',
         'Please make sure that it is present and is properly delimited using "-- main:query:start" and "-- main:query:end"'
+      ].join('\n')
+    );
+  }
+
+  if (isPathParameterized && !queries.params) {
+    throw new Error(
+      [
+        'Path is parameterized but, could not find the params the query.',
+        'Please make sure that it is present and is properly delimited using "-- params:query:start" and "-- params:query:end"'
       ].join('\n')
     );
   }
@@ -56,31 +77,13 @@ export async function readSQLFile(filePath) {
     meta = yaml.load(metaMatch[1]);
   }
 
-  let paramsQuery;
-
-  if (isPathParameterized) {
-    const paramsQueryMatch = sqlFile.match(getQueryDelimiterRegex('params'));
-
-    if (!paramsQueryMatch) {
-      throw new Error(
-        [
-          'Path is parameterized but, could not find the params the query.',
-          'Please make sure that it is present and is properly delimited using "-- params:query:start" and "-- params:query:end"'
-        ].join('\n')
-      );
-    }
-
-    paramsQuery = paramsQueryMatch[1].trim();
-  }
-
   return {
     getOutputPath: isPathParameterized
       ? p2r.compile(outputPath, {
           encode: (str) => slugify(str, { lower: true })
         })
       : () => outputPath,
-    paramsQuery,
-    mainQuery: mainQueryMatch[1].trim(),
+    queries,
     meta
   };
 }

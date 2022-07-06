@@ -5,14 +5,35 @@ permalink: '/'
 {% extends '../../_layouts/main.njk' %}
 
 {% block content %}
-<div class="world-map-container">
-  <canvas id="world-map"></canvas>
-</div>
-<div class="stats">
-  <p><span class="number">{{numOfEntities.seasons}}</span> Seasons</p>
-  <p><span class="number">{{numOfEntities.drivers}}</span> Drivers from <span class="number">{{numOfEntities.driverNationalities}}</span> Nationalities</p>
-  <p><span class="number">{{numOfEntities.constructors}}</span> Constructors</p>
-  <p><span class="number">{{numOfEntities.circuits}}</span> Circuits across <span class="number">{{numOfEntities.circuitCountries}}</span> Countries</p>
+<div class="{{css.stats}}">
+  <section class={{css.section}}>
+    <span class={{css.fact}}>There have been</span>
+    &nbsp;
+    <a class={{css.link}} href="/seasons">{{numOfEntities.seasons}} Seasons</a>
+    &nbsp;
+    <span class={{css.fact}}>of <strong>Formula 1 World Championships</strong> till date.</span>
+    &nbsp;
+    <a class={{css.link}} href="/drivers">{{numOfEntities.drivers}} Drivers</a>
+    &nbsp;
+    <span class={{css.fact}}>have participated from</span>
+    &nbsp;
+    <a class={{css.link}} href="/constructors">{{numOfEntities.constructors}} Constructors</a>
+    &nbsp;
+    <span class={{css.fact}}>and have raced in</span>
+    &nbsp;
+    <a class={{css.link}} href="/circuits">{{numOfEntities.races}} Grand Prix</a>
+    &nbsp;
+    <span class={{css.fact}}>on</span>
+    &nbsp;
+    <a class={{css.link}} href="/circuits">{{numOfEntities.circuits}} Circuits</a>
+    &nbsp;
+    <span class={{css.fact}}>across</span>
+    &nbsp;
+    <a class={{css.link}} href="/nations">{{numOfEntities.circuitCountries}} Nations</a>
+    &nbsp;
+    <span class={{css.fact}}>.</span>
+  </section>
+  {# As of the 2022 British Grand Prix, a total of 1,067 Formula One World Championship races have been held in 34 countries.[b][10][20] Over 72 seasons, there have been 34 participants from 15 different nationalities who have won the World Drivers' Championship, with Lewis Hamilton and Michael Schumacher tied for the record for the highest number of titles won with seven. Over 64 seasons, 15 teams representing 5 individual nations that have claimed the World Constructors' Championship, with Ferrari winning more titles than any other squad with 16.  #}
 </div>
 {% endblock %}
 

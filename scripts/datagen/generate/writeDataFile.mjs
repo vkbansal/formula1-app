@@ -4,24 +4,17 @@ import path from 'node:path';
 import chalk from 'chalk';
 
 export async function writeDataFile(options) {
-  const { data, /*inputPath,*/ outDir, outputPath, spinner } = options;
-  const finalPath = path.resolve(outDir, outputPath);
-  const dir = path.dirname(finalPath);
+	const { data, /*inputPath,*/ outDir, outputPath, spinner } = options;
+	const finalPath = path.resolve(outDir, outputPath);
+	const dir = path.dirname(finalPath);
 
-  // const { processData } = await importIfExists(`${inputPath}.mjs`);
+	spinner.text = chalk.cyan(`Writing: ${outputPath}`);
 
-  // if (typeof processData === 'function') {
-  //   console.log(chalk.cyan(`INFO: Processing data using: ${inputPath}.mjs`));
-  //   data = processData(data);
-  // }
+	if (!fs.existsSync(dir)) {
+		await fs.promises.mkdir(dir, { recursive: true });
+	}
 
-  spinner.text = chalk.cyan(`Writing: ${outputPath}`);
+	await fs.promises.writeFile(finalPath, JSON.stringify(data, null, 2), 'utf8');
 
-  if (!fs.existsSync(dir)) {
-    await fs.promises.mkdir(dir, { recursive: true });
-  }
-
-  await fs.promises.writeFile(finalPath, JSON.stringify(data, null, 2), 'utf8');
-
-  spinner.text = chalk.green(`Done writing: ${outputPath}`);
+	spinner.text = chalk.green(`Done writing: ${outputPath}`);
 }

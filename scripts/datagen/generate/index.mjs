@@ -2,6 +2,7 @@ import mariadb from 'mariadb';
 import { globby } from 'globby';
 import ora from 'ora';
 import chalk from 'chalk';
+import yaml from 'js-yaml';
 
 import { readSQLFile } from './readSQLFile.mjs';
 import { writeDataFile } from './writeDataFile.mjs';
@@ -9,60 +10,61 @@ import { writeDataFile } from './writeDataFile.mjs';
 const spinner = ora('Generating data').start();
 
 export default async function generate({ input, output }) {
-  const connection = await mariadb.createConnection({
-    host: 'localhost',
-    user: 'root',
-    database: 'f1db',
-    bigIntAsNumber: true,
-    dateStrings: true
-  });
+	const connection = await mariadb.createConnection({
+		host: 'localhost',
+		user: 'root',
+		database: 'f1db',
+		bigIntAsNumber: true,
+		dateStrings: true
+	});
 
-  const filePaths = await globby(input);
+	const filePaths = await globby(input);
 
-  // loop over all the sql files
-  for (const filePath of filePaths) {
-    const {
-      paramsQuery,
-      mainQuery,
-      meta: metadata,
-      getOutputPath
-    } = await readSQLFile(filePath);
+	// loop over all the sql files
+	for (const filePath of filePaths) {
+		const {
+			queries,
+			meta: metadata,
+			getOutputPath
+		} = await readSQLFile(filePath);
 
-    let params = [];
+		let params = [];
 
-    if (paramsQuery) {
-      params = await connection.query(paramsQuery);
-    } else {
-      // for non parameterized queries just populate an empty object
-      params.push({});
-    }
+		if (queries.params) {
+			params = await connection.query(queries.params);
+		} else {
+			// for non parameterized queries just make the array length as 1
+			params.push(null);
+		}
 
-    // now that parameters are collected, run the main query
-    for (const param of params) {
-      spinner.text = chalk.cyan(
-        `Executing main query from ${filePath} with params: ${JSON.stringify(
-          param
-        )}`
-      );
+		// now that parameters are collected, run the main query
+		for (const param of params) {
+			let text = `Executing main query from ${filePath}`;
 
-      const data = await connection.query(
-        { namedPlaceholders: true, sql: mainQuery },
-        param
-      );
+			if (param) {
+				text += `\nwith the following params:\n${yaml.dump(param)}`;
+			}
 
-      const outputPath = getOutputPath(param);
+			spinner.text = chalk.cyan(text);
 
-      await writeDataFile({
-        data: metadata.pickFirst === true ? data[0] : data,
-        inputPath: filePath,
-        outputPath,
-        spinner,
-        outDir: output
-      });
-    }
-  }
+			const data = await connection.query(
+				{ namedPlaceholders: true, sql: queries.main },
+				param
+			);
 
-  spinner.stop();
+			const outputPath = getOutputPath(param);
 
-  return connection.end();
+			await writeDataFile({
+				data: metadata.pickFirst === true ? data[0] : data,
+				inputPath: filePath,
+				outputPath,
+				spinner,
+				outDir: output
+			});
+		}
+	}
+
+	spinner.stop();
+
+	return connection.end();
 }

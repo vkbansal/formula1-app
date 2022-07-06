@@ -1,9 +1,21 @@
 {
+  "driverid": 399,
   "driverRef": "taylor",
   "name": "John Taylor",
   "dob": "1933-03-23",
   "nationality": "British",
   "totalRaces": 5,
   "raceWins": 0,
-  "podiums": 0
+  "podiums": 0,
+  "winPct": 0,
+  "championshipStandings": [
+    {
+      "year": 1964,
+      "position": 30
+    },
+    {
+      "year": 1966,
+      "position": 20
+    }
+  ]
 }
