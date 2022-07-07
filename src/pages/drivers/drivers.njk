@@ -3,92 +3,68 @@ title: Drivers
 permalink: 'drivers/'
 ---
 {% extends '../../_layouts/main.njk' %}
+{% import 'table.njk' as table %}
 
 {% block breadcrumbs %}
 <span>Drivers</span>
 {% endblock %}
 
 {% block content %}
-<div class="drivers-page">
-	<h1>Drivers</h1>
-	<p>There have been {{drivers.length}} drivers till date, who have participated in the championships.</p>
-	<p>Amongst them:</p>
-	<ul>
-		<li><p>{{mostRaceWins.name}} has the most race wins at {{mostRaceWins.raceWins}}.</p></li>
-		<li><p>{{mostTotalRaces.name}} has taken part in most number of races at {{mostTotalRaces.totalRaces}}.</p></li>
-	</ul>
-	<br/>
-	<hr class="m-0"/>
-	<table class="table table-sticky-header table-sortable" x-data="tableData('raceWins')">
-		<thead>
+<h1>Drivers</h1>
+<p>There have been {{drivers.length}} drivers till date, who have participated in Formula 1 World Championship.</p>
+<hr class="m-0"/>
+
+<table class="table table-sticky-header table-sortable {{css.driversTable}}" x-data="tableData">
+	<thead>
+		<tr>
+			<td colspan="7">
+			<div class={{css.driversFilter}}>
+				<div class={{css.filterGroups}}>
+					<a href="#" @click="changeGroup()" :class="{ active: selectedGroup === null }">Current Grid ({{metadata.currentSeason}})</a>
+				</div>
+				<div class={{css.filterGroups}}>
+					{% for char in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' %}
+					<a href="#{{char}}" @click="changeGroup('{{char}}')" :disabled="!groupedData['{{char}}']"  :class="{ active: selectedGroup === '{{char}}' }">{{char}}</a>
+					{% endfor %}
+				</div>
+			</div>
+			</td>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			{{table.sortableHeader('name', 'Driver')}}
+			{{table.sortableHeader('nationality', 'Nationality')}}
+			{{table.sortableHeader('totalRaces', 'Total Races')}}
+			{{table.sortableHeader('raceWins', 'Race Wins')}}
+			{{table.sortableHeader('podiums', 'Podiums')}}
+			{{table.sortableHeader('winPct', 'Race Win%')}}
+			{{table.sortableHeader('championshipWins', 'Championships Won')}}
+		</tr>
+	</thead>
+	<tbody>
+		<template x-for="row in data" :key="row.driverRef">
 			<tr>
-				<th :aria-sort="sortCol === 'name' ? (sortAsc ? 'ascending' : 'descending') : undefined">
-					<button class="sort-btn" @click="sort('name')">
-						<span>Driver</span>
-						<span aria-hidden="true" class="sort-indicator"/>
-					</button>
-				</th>
-				<th :aria-sort="sortCol === 'nationality' ? (sortAsc ? 'ascending' : 'descending') : undefined">
-					<button class="sort-btn" @click="sort('nationality')">
-						<span>Nationality</span>
-						<span aria-hidden="true" class="sort-indicator"/>
-					</button>
-				</th>
-				<th :aria-sort="sortCol === 'totalRaces' ? (sortAsc ? 'ascending' : 'descending') : undefined">
-					<button class="sort-btn" @click="sort('totalRaces')">
-						<span>Total Races</span>
-						<span aria-hidden="true" class="sort-indicator"/>
-					</button>
-				</th>
-				<th :aria-sort="sortCol === 'raceWins' ? (sortAsc ? 'ascending' : 'descending') : undefined">
-					<button class="sort-btn" @click="sort('raceWins')">
-						<span>Race Wins</span>
-						<span aria-hidden="true" class="sort-indicator"/>
-					</button>
-				</th>
-				<th :aria-sort="sortCol === 'podiums' ? (sortAsc ? 'ascending' : 'descending') : undefined">
-					<button class="sort-btn" @click="sort('podiums')">
-						<span>Podiums</span>
-						<span aria-hidden="true" class="sort-indicator"/>
-					</button>
-				</th>
-				<th :aria-sort="sortCol === 'winPct' ? (sortAsc ? 'ascending' : 'descending') : undefined">
-					<button class="sort-btn" @click="sort('winPct')">
-						<span>Race Win%</span>
-						<span aria-hidden="true" class="sort-indicator"/>
-					</button>
-				</th>
-				<th :aria-sort="sortCol === 'championshipWins' ? (sortAsc ? 'ascending' : 'descending') : undefined">
-					<button class="sort-btn" @click="sort('championshipWins')">
-						<span>Championships Won</span>
-						<span aria-hidden="true" class="sort-indicator"/>
-					</button>
-				</th>
-			</tr>
-		</thead>
-		<tbody>
-			<template x-for="row in data" :key="row.driverRef">
-				<tr>
-					<td x-text="row.name"></td>
-					<td>
-						<span class="nationality" :class="row.nationality.replace(/\s/g, '_').toLowerCase()"></span>
-						<span x-text="row.nationality"></span>
-					</td>
-					<td class="text-right" x-text="row.totalRaces"></td>
-					<td class="text-right" x-text="row.raceWins"></td>
-					<td class="text-right" x-text="row.podiums"></td>
-					<td class="text-right" x-text="row.winPct.toFixed(2) + '%'"></td>
-					<td class="text-right" x-text="row.championshipWins"></td>
-				<tr>
-			</template>
-		</tbody>
-	</table>
-</div>
+				<td x-text="row.name"></td>
+				<td>
+					<span class="nationality" :class="row.nationality.replace(/\s/g, '_').toLowerCase()"></span>
+					<span x-text="row.nationality"></span>
+				</td>
+				<td class="text-right" x-text="row.totalRaces"></td>
+				<td class="text-right" x-text="row.raceWins"></td>
+				<td class="text-right" x-text="row.podiums"></td>
+				<td class="text-right" x-text="row.winPct.toFixed(2) + '%'"></td>
+				<td class="text-right" x-text="row.championshipWins"></td>
+			<tr>
+		</template>
+	</tbody>
+</table>
 {% endblock %}
 
 {% block beforescripts %}
 <script>
-	const tableData =  {{drivers | dump | safe}};
+	const tableData =  {{drivers | omit('driverId', 'dob', 'championshipStandings') | dump | safe}};
+	const currentDrivers = {{currentDrivers | dump | safe}};
 </script>
 <script type="text/javascript" src="{{assets['pages/drivers/drivers.client.js']}}" ></script>
 {% endblock %}

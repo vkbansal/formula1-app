@@ -7,10 +7,13 @@
 	}
 
 	&.table-sticky-header {
-		& thead tr {
+		& thead {
 			position: sticky;
 			top: 0;
-			background-color: var(--black);
+
+			& tr {
+				background-color: var(--black);
+			}
 		}
 	}
 
@@ -38,7 +41,6 @@
 		text-transform: uppercase;
 		font-size: 0.85rem;
 		color: var(--text-2);
-		text-align: center;
 	}
 
 	&.table-sortable {
