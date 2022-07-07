@@ -16,9 +16,9 @@ eleventyComputed:
 {% endblock %}
 
 {% block content %}
-<div class="season-header">
-  <h1>{{year}} Season</h1>
-  <nav class="season-pagination">
+<div class="{{css.seasonHeader}}">
+  <h1>{{year}} Season {{"(Current Season)" if metadata.currentSeason == year }}</h1>
+  <nav class="{{css.seasonPagination}}">
     {% if pagination.href.previous %}
     <a href="{{pagination.href.previous}}">&larr; {{year - 1}}</a>
     {% endif %}
@@ -27,7 +27,7 @@ eleventyComputed:
     {% endif %}
   </nav>
 </div>
-<div class="tabs season-tabs" x-data="{ activeTab: 1 }">
+<div class="tabs {{css.seasonTabs}}" x-data="{ activeTab: 0 }">
   <div class="tab-list" role="tablist">
     <div role="tab" class="tab"  @click="activeTab = 0" :class="{ 'tab-active': activeTab === 0 }">Races</div>
     <div role="tab" class="tab"  @click="activeTab = 1" :class="{ 'tab-active': activeTab === 1 }">Driver Positions</div>

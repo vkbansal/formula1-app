@@ -11,10 +11,11 @@ permalink: 'seasons/'
 {% block content %}
 <h1>Formula 1 Seasons</h1>
 <br/>
+<p class="text-2">* - Current Season</p>
 <section class="{{css.seasonsGrid}}">
   {% set extraBoxes = seasons.lnegth % 7  %}
   {% for season in seasons | reverse %}
-    <h2 class="{{css.seasonCard}}"><a href="/seasons/{{season}}/">{{season}}</a></h2>
+    <h2 class="{{css.seasonCard}}"><a href="/seasons/{{season}}/">{{season}}{{"*" if metadata.currentSeason == season }}</a></h2>
   {% endfor %}
   {% for i in range(0, (seasons.length % 7) + 1) %}
     <div class="{{css.seasonCard}}"></div>

@@ -13,7 +13,7 @@
     <tr>
       <td>{{race.round}}</td>
       <td>{{race.name}}</td>
-      <td>{{race.circuit.name}} <span class="circuit-location-cell">{{race.circuit.location}}, {{race.circuit.country}}</span></td>
+      <td>{{race.circuit.name}} <span class="{{css.circuitLocationCell}}">{{race.circuit.location}}, {{race.circuit.country}}</span></td>
       <td>{{race.date | humanDate}}</td>
       <td>
         {% if winnerDriver %}
