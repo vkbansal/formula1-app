@@ -11,7 +11,7 @@
     "start:assets": "node scripts/esbuild.mjs --watch",
     "start:11ty": "npx @11ty/eleventy --serve",
     "prebuild": "rm -rf public",
-    "build": "NODE_ENV=production node scripts/esbuild.mjs",
+    "build": "NODE_ENV=production node scripts/esbuild.mjs && npx @11ty/eleventy",
     "datagen": "node ./scripts/datagen/index.mjs generate"
   },
   "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
