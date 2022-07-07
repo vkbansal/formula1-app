@@ -38,6 +38,7 @@
 		text-transform: uppercase;
 		font-size: 0.85rem;
 		color: var(--text-2);
+		text-align: center;
 	}
 
 	&.table-sortable {
@@ -47,15 +48,13 @@
 
 		& .sort-btn {
 			position: relative;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
 			cursor: pointer;
 			background: transparent;
 			border: none;
 			width: 100%;
 			color: currentColor;
 			padding: 1rem 2rem 1rem 1rem;
+			text-align: center;
 
 			& > .sort-indicator {
 				position: absolute;
