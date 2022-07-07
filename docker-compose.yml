@@ -1,17 +1,12 @@
 version: '3.8'
 services:
   formula1-data:
-    image: mongo:5.0
+    image: mariadb:10.8
     container_name: formula1-data
     ports:
-      - '27017:27017'
+      - '3306:3306'
     environment:
-      MONGO_INITDB_DATABASE: 'formula1'
-  formula1-data-seed:
-    image: mongo:5.0
-    container_name: formula1-data-seed
+      MARIADB_DATABASE: f1db
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: yes
     volumes:
-      - ./docker:/opt/docker
-    depends_on:
-      - formula1-data
-    command: /opt/docker/import.sh
+      - './initdb.d:/docker-entrypoint-initdb.d'

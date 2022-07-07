@@ -1,0 +1,47 @@
+---
+title: Home
+permalink: '/'
+---
+{% extends '../../_layouts/main.njk' %}
+
+{% block content %}
+<div class="{{css.stats}}">
+	<section class={{css.section}}>
+		A total of&nbsp;
+		<a class={{css.link}} href="/seasons">{{numOfEntities.seasons - 1}} Seasons</a>
+		&nbsp;of&nbsp;&nbsp;<span class={{css.fact}}>The Formula 1 World Championships</span>
+		&nbsp;have been held till date.&nbsp;
+		<a class={{css.link}} href="/drivers">{{numOfEntities.drivers}} Drivers</a>
+		&nbsp;from&nbsp;
+		<span class={{css.fact}}>{{numOfEntities.driverNationalities}} countries</span>
+		&nbsp;and&nbsp;
+		<a class={{css.link}} href="/constructors">{{numOfEntities.constructors}} Constructors</a>
+		&nbsp;from&nbsp;
+		<span class={{css.fact}}>{{numOfEntities.constructorNationalities}} countries</span>
+		&nbsp;have participated in <span class={{css.fact}}>{{numOfEntities.races}} Grand Prix</span>
+		&nbsp;races on&nbsp;
+		<span class={{css.fact}}>{{numOfEntities.circuits}} Circuits</span>
+		&nbsp;across&nbsp;
+		<span class={{css.fact}}>{{numOfEntities.circuitCountries}} Nations</span>
+		&nbsp;.
+
+		{#
+		<br/>representing<br/>
+		&nbsp;from&nbsp;
+		#}
+
+
+		{# <a class={{css.link}} href="/circuits">{{numOfEntities.circuits}} Circuits</a> #}
+	</section>
+</div>
+{% endblock %}
+
+{% block beforescripts %}
+<script type="text/javascript">
+	const racesByCountry = {{ racesByCountry | dump | safe }};
+</script>
+{% endblock %}
+
+{% block afterscripts %}
+<script type="text/javascript" src="{{assets['pages/home/home.client.js']}}"></script>
+{% endblock %}

@@ -1,0 +1,33 @@
+.breadcrumbs-container {
+  width: 100%;
+  margin: 1rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+
+  & > a,
+  & span:last-child {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+
+  & > a {
+    opacity: 0.75;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      display: inline-block;
+      content: '/';
+      padding: 0 0.5rem;
+    }
+  }
+}

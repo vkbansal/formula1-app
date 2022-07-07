@@ -1,0 +1,36 @@
+.stats {
+	margin: -1rem 0;
+
+	& .section {
+		padding: 4rem 0;
+		font-size: 1.75rem;
+		color: var(--text-2);
+		line-height: 8rem;
+	}
+
+	& .fact,
+	a.link {
+		font-family: var(--font-family-oswald);
+		font-weight: 700;
+		display: inline-block;
+		white-space: nowrap;
+		color: white;
+	}
+
+	& .fact {
+		font-size: 3rem;
+	}
+
+	a.link {
+		text-decoration: underline;
+		text-decoration-style: dashed;
+		text-decoration-thickness: 10%;
+		transition: color 0.3s ease-out;
+		position: relative;
+		font-size: 5rem;
+
+		&:hover {
+			color: var(--f1-red);
+		}
+	}
+}

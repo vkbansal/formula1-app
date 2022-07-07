@@ -1,0 +1,89 @@
+---
+title: Constructors
+permalink: 'constructors/'
+---
+{% extends '../../_layouts/main.njk' %}
+
+{% block breadcrumbs %}
+<span>Constructors</span>
+{% endblock %}
+
+{% block content %}
+<div class={{css.constructorsPage}}>
+	<h1>Constructors</h1>
+	<p>There have been {{constructors.length}} constructors till date, who have participated in the championships</p>
+	<br/>
+	<hr class="m-0"/>
+	<table class="table table-sticky-header table-sortable" x-data="tableData('raceWins')">
+		<thead>
+			<tr>
+				<th :aria-sort="sortCol === 'name' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+					<button class="sort-btn" @click="sort('name')">
+						<span>Constructor</span>
+						<span aria-hidden="true" class="sort-indicator"/>
+					</button>
+				</th>
+				<th :aria-sort="sortCol === 'nationality' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+					<button class="sort-btn" @click="sort('nationality')">
+						<span>Nationality</span>
+						<span aria-hidden="true" class="sort-indicator"/>
+					</button>
+				</th>
+				<th :aria-sort="sortCol === 'totalRaces' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+					<button class="sort-btn" @click="sort('totalRaces')">
+						<span>Total Races</span>
+						<span aria-hidden="true" class="sort-indicator"/>
+					</button>
+				</th>
+				<th :aria-sort="sortCol === 'raceWins' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+					<button class="sort-btn" @click="sort('raceWins')">
+						<span>Race Wins</span>
+						<span aria-hidden="true" class="sort-indicator"/>
+					</button>
+				</th>
+				<th :aria-sort="sortCol === 'podiums' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+					<button class="sort-btn" @click="sort('podiums')">
+						<span>Podiums</span>
+						<span aria-hidden="true" class="sort-indicator"/>
+					</button>
+				</th>
+				<th :aria-sort="sortCol === 'winPct' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+					<button class="sort-btn" @click="sort('winPct')">
+						<span>Race Win%</span>
+						<span aria-hidden="true" class="sort-indicator"/>
+					</button>
+				</th>
+				<th :aria-sort="sortCol === 'championshipWins' ? (sortAsc ? 'ascending' : 'descending') : undefined">
+					<button class="sort-btn" @click="sort('championshipWins')">
+						<span>Championships Won</span>
+						<span aria-hidden="true" class="sort-indicator"/>
+					</button>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<template x-for="row in data">
+				<tr>
+					<td x-text="row.name"></td>
+					<td>
+						<span class="nationality" :class="row.nationality.replace(/\s/g, '_').toLowerCase()"></span>
+						<span x-text="row.nationality"></span>
+					</td>
+					<td class="text-right" x-text="row.totalRaces"></td>
+					<td class="text-right" x-text="row.raceWins"></td>
+					<td class="text-right" x-text="row.podiums"></td>
+					<td class="text-right" x-text="row.winPct.toFixed(2) + '%'"></td>
+					<td class="text-right" x-text="row.championshipWins"></td>
+				<tr>
+			</template>
+		</tbody>
+	</table>
+</div>
+{% endblock %}
+
+{% block beforescripts %}
+<script>
+	const tableData =  {{constructors | dump | safe}};
+</script>
+<script type="text/javascript" src="{{assets['pages/constructors/constructors.client.js']}}" ></script>
+{% endblock %}

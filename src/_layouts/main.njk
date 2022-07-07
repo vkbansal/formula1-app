@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{assets['_assets/styles/styles.css']}}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{assets['styles/styles.css']}}">
     {% block head %}{% endblock %}
   </head>
   <body>
@@ -18,16 +18,18 @@
           <span>F1</span>
           <span>Statistics</span>
         </a>
+        {% if page.url != "/" %}
         <nav class="main-nav">
-          <a href="/seasons"  class="{{ "active" if pageId | startsWith("season") }}">Seasons</a>
-          <a href="/constructors"  class="{{ "active" if pageId | startsWith("constructors") }}">Constructors</a>
-          <a href="/drivers" class="{{ "active" if pageId | startsWith("drivers") }}">Drivers</a>
+          <a href="/seasons"  class="{{ "active" if page.url | startsWith("/season") }}">Seasons</a>
+          <a href="/constructors"  class="{{ "active" if page.url | startsWith("/constructors") }}">Constructors</a>
+          <a href="/drivers" class="{{ "active" if page.url | startsWith("/drivers") }}">Drivers</a>
           {# <a href="/circuits" disabled  class="'active': path.startsWith('/circuits')">Circuits</a> #}
-          <a href="/about" class="{{ "active" if padeId == "about" }}">About</a>
+          <a href="/about" class="{{ "active" if page.url | startsWith("/about") }}">About</a>
         </nav>
+        {% endif %}
       </div>
     </header>
-    {% if pageId != "home" %}
+    {% if page.url != "/" %}
     <div class="container breadcrumbs-container">
       <div class="breadcrumbs">
         <a href="/">🏠</a>
@@ -42,17 +44,15 @@
     <footer class="main-footer">
       <div class="container">
         <p>Made with ❤️ by <a href="https://vkbansal.me/">Vivek Kumar Bansal</a></p>
+        <div class="last-updated" x-data="{buildTime: new Date({{buildTime}})}">
+          <span>Last updated at:&nbsp;</span>
+          <span x-text="buildTime.toLocaleString()"></span>
+          <span>(Local Time)</span>
+        </div>
       </div>
     </footer>
     {% block beforescripts %}{% endblock %}
-    {% if alpinejs === true %}
     <script type="text/javascript" src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
-    {% endif %}
-    {% if chartjs === true %}
-    <script type="text/javascript" src="https://unpkg.com/chart.js@3.8.0/dist/chart.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/chartjs-plugin-crosshair@1.2.0/dist/chartjs-plugin-crosshair.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/chartjs-plugin-autocolors@0.0.6/dist/chartjs-plugin-autocolors.min.js"></script>
-    {% endif %}
     {% block afterscripts %}{% endblock %}
   </body>
 </html>
