@@ -24,93 +24,91 @@ console.log(entryPoints.join('\n'));
  * @type {import('esbuild').Plugin}
  */
 const postCSSPlugin = {
-  name: 'postcss-plugin',
-  setup(build) {
-    build.onLoad({ filter: /\.css/ }, async (onLoadArgs) => {
-      const css = await fs.promises.readFile(onLoadArgs.path, 'utf8');
-      const result = await postcss([
-        cssImports({
-          plugins: [
-            cssNested(),
-            cssModules({
-              generateScopedName: '[name]__[local]___[hash:base64:5]',
-              scopeBehaviour: 'local',
-              globalModulePaths: [/src\/styles/, /node_modules/],
-              localsConvention: 'camelCaseOnly',
-              getJSON(cssFileName, json) {
-                if (!json || Object.keys(json).length === 0) {
-                  return;
-                }
+	name: 'postcss-plugin',
+	setup(build) {
+		build.onLoad({ filter: /\.css/ }, async (onLoadArgs) => {
+			const css = await fs.promises.readFile(onLoadArgs.path, 'utf8');
+			const result = await postcss([
+				cssImports({
+					plugins: [
+						cssNested(),
+						cssModules({
+							generateScopedName: '[name]__[local]___[hash:base64:5]',
+							scopeBehaviour: 'local',
+							globalModulePaths: [/src\/styles/, /node_modules/],
+							localsConvention: 'camelCaseOnly',
+							getJSON(cssFileName, json) {
+								if (!json || Object.keys(json).length === 0) {
+									return;
+								}
 
-                const jsonFile = cssFileName.replace(
-                  path.extname(cssFileName),
-                  '.json'
-                );
+								const jsonFile = cssFileName.replace(
+									path.extname(cssFileName),
+									'.json'
+								);
 
-                fs.writeFileSync(
-                  jsonFile,
-                  JSON.stringify({ css: json }, null, 2),
-                  'utf8'
-                );
-              }
-            })
-          ]
-        })
-      ]).process(css, { from: onLoadArgs.path });
+								fs.writeFileSync(
+									jsonFile,
+									JSON.stringify({ css: json }, null, 2),
+									'utf8'
+								);
+							}
+						})
+					]
+				})
+			]).process(css, { from: onLoadArgs.path });
 
-      return {
-        contents: result.css,
-        loader: 'css',
-        watchFiles: [
-          ...new Set(
-            result.messages
-              .filter((m) => m.type === 'dependency')
-              .flatMap((m) => [m.file, m.parent])
-          )
-        ]
-      };
-    });
-  }
+			return {
+				contents: result.css,
+				loader: 'css',
+				watchFiles: [
+					...new Set(
+						result.messages
+							.filter((m) => m.type === 'dependency')
+							.flatMap((m) => [m.file, m.parent])
+					)
+				]
+			};
+		});
+	}
 };
 
 const result = await esbuild.build({
-  entryPoints,
-  bundle: true,
-  target: 'esnext',
-  outdir: 'public/assets',
-  entryNames: PROD ? '[name].[hash]' : '[name]',
-  watch: watch
-    ? {
-        onRebuild(error) {
-          if (error) {
-            console.error('watch build failed:', error);
-          } else {
-            console.log(
-              '[WATCH] build succeeded at ',
-              new Date().toLocaleString()
-            );
-          }
-        }
-      }
-    : undefined,
-  minify: PROD,
-  metafile: true,
-  plugins: [postCSSPlugin]
+	entryPoints,
+	bundle: true,
+	target: 'esnext',
+	outdir: 'public/assets',
+	entryNames: PROD ? '[name].[hash]' : '[name]',
+	watch: watch
+		? {
+				onRebuild(error) {
+					if (error) {
+						console.error('watch build failed:', error);
+					} else {
+						console.log(
+							'[WATCH] build succeeded at ',
+							new Date().toLocaleString()
+						);
+					}
+				}
+		  }
+		: undefined,
+	minify: PROD,
+	metafile: true,
+	plugins: [postCSSPlugin]
 });
 
 if (result.metafile) {
-  const assets = Object.entries(result.metafile.outputs).reduce(
-    (obj, [output, input]) => ({
-      ...obj,
-      [path.relative('src', input.entryPoint)]:
-        '/' + path.relative('public', output)
-    }),
-    {}
-  );
+	const assets = Object.entries(result.metafile.outputs)
+		.map(([output, input]) => [
+			path.relative('src', input.entryPoint),
+			'/' + path.relative('public', output)
+		])
+		.sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
 
-  await fs.promises.writeFile(
-    ASSETS_FILE,
-    JSON.stringify(assets, null, 2),
-    'utf8'
-  );
+	await fs.promises.writeFile(
+		ASSETS_FILE,
+		JSON.stringify(Object.fromEntries(assets), null, 2),
+		'utf8'
+	);
 }
