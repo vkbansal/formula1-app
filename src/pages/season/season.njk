@@ -16,61 +16,7 @@ eleventyComputed:
 {% endblock %}
 
 {% block content %}
-<div class="{{css.seasonHeader}}">
-  <h1>{{year}} Season {{"(Current Season)" if metadata.currentSeason == year }}</h1>
-  <nav class="{{css.seasonPagination}}">
-    {% if pagination.href.previous %}
-    <a href="{{pagination.href.previous}}">&larr; {{year - 1}}</a>
-    {% endif %}
-    {% if pagination.href.next %}
-    <a href="{{pagination.href.next}}">{{year + 1}} &rarr;</a>
-    {% endif %}
-  </nav>
-</div>
-<div class="tabs {{css.seasonTabs}}" x-data="{ activeTab: 0 }">
-  <div class="tab-list" role="tablist">
-    <div role="tab" class="tab"  @click="activeTab = 0" :class="{ 'tab-active': activeTab === 0 }">Races</div>
-    <div role="tab" class="tab"  @click="activeTab = 1" :class="{ 'tab-active': activeTab === 1 }">Driver Positions</div>
-    <div role="tab" class="tab"  @click="activeTab = 2" :class="{ 'tab-active': activeTab === 2 }">Driver Points</div>
-    <div role="tab" class="tab"  @click="activeTab = 3" :class="{ 'tab-active': activeTab === 3 }">Constructor Positions</div>
-    <div role="tab" class="tab"  @click="activeTab = 4" :class="{ 'tab-active': activeTab === 4 }">Constructor Points</div>
-  </div>
-  <div class="tab-panel" :class="{ 'tab-active': activeTab === 0 }">
-    {% include './_races-table.njk' %}
-  </div>
-  <div class="tab-panel" :class="{ 'tab-active': activeTab === 1 }">
-    <div class="{{css.seasonGraph}}">
-      <svg class="{{css.positionsChart}}" id="driver-positions"></svg>
-    </div>
-  </div>
-  <div class="tab-panel" :class="{ 'tab-active': activeTab === 2 }">
-    <div class="{{css.seasonGraph}}">
-      <svg class="{{css.pointsChart}}" id="driver-points"></svg>
-      <div class="tooltip {{css.pointsTooltip}}" id="driver-points-tooltip" role="tooltip">
-        <div class="tooltip-content">
-          No data available
-        </div>
-        <div class="tooltip-arrow" data-popper-arrow></div>
-      </div>
-    </div>
-  </div>
-  <div class="tab-panel" :class="{ 'tab-active': activeTab === 3 }">
-    <div class="{{css.seasonGraph}}">
-      <svg class="{{css.positionsChart}}" id="constructor-positions"></svg>
-    </div>
-  </div>
-  <div class="tab-panel" :class="{ 'tab-active': activeTab === 4 }">
-    <div class="{{css.seasonGraph}}">
-      <svg class="{{css.pointsChart}}" id="constructor-points"></svg>
-      <div class="tooltip {{css.pointsTooltip}}" id="constructor-points-tooltip" role="tooltip">
-        <div class="tooltip-content">
-          No data available
-        </div>
-        <div class="tooltip-arrow" data-popper-arrow></div>
-      </div>
-    </div>
-  </div>
-</div>
+
 {% endblock %}
 
 {% block beforescripts %}

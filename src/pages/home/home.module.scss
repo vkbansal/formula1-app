@@ -9,7 +9,7 @@
 	}
 
 	& .fact,
-	a.link {
+	& a.link {
 		font-family: var(--font-family-oswald);
 		font-weight: 700;
 		display: inline-block;
@@ -21,7 +21,7 @@
 		font-size: 3rem;
 	}
 
-	a.link {
+	& a.link {
 		text-decoration: underline;
 		text-decoration-style: dashed;
 		text-decoration-thickness: 10%;

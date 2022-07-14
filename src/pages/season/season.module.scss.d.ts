@@ -1,0 +1,2 @@
+declare const css: Record<'seasonTabs' | 'circuitLocationCell' | 'tabPanel' | 'seasonHeader' | 'seasonPagination' | 'seasonGraph' | 'positionsChart' | 'pointsTooltip' | 'pointsChart', string>;
+export default css;

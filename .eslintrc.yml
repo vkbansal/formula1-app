@@ -1,9 +1,15 @@
 root: true
+parser: '@typescript-eslint/parser'
+root: true
 parserOptions:
-  ecmaVersion: 2022
+  ecmaVersion: 2020
   sourceType: module
   ecmaFeatures:
+    jsx: true
     impliedStrict: true
+  project: ./tsconfig.json
+plugins:
+  - '@typescript-eslint/eslint-plugin'
 env:
   node: true
   es6: true
@@ -11,6 +17,7 @@ env:
 extends:
   - eslint:recommended
   - prettier
+  - plugin:@typescript-eslint/recommended
 rules:
   no-new-object: 2
   no-lonely-if: 2

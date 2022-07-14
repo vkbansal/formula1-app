@@ -93,11 +93,22 @@
 			columns: auto;
 		}
 
+		& :global(.race-name) {
+			font-weight: 600;
+			text-align: center;
+			font-size: 1.2rem;
+			margin-bottom: 0.5rem;
+		}
+
 		& :global(.points-row) {
 			display: grid;
-			grid-template-columns: 1rem 180px 3ch 5ch 9ch;
+			grid-template-columns: 1rem var(--longest-name) 6ch 8ch 4ch;
 			grid-template-rows: auto;
 			gap: 0 0.5rem;
+
+			&:global(.points-header) {
+				font-weight: bold;
+			}
 		}
 
 		& :global(.color) {

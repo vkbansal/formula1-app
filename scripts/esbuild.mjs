@@ -8,6 +8,7 @@ import postcss from 'postcss';
 import cssNested from 'postcss-nested';
 import cssImports from 'postcss-import';
 import cssModules from 'postcss-modules';
+import stringify from 'fast-json-stable-stringify';
 
 const ASSETS_FILE = 'src/_data/assets.json';
 
@@ -49,7 +50,7 @@ const postCSSPlugin = {
 
 								fs.writeFileSync(
 									jsonFile,
-									JSON.stringify({ css: json }, null, 2),
+									stringify({ css: json }, null, 2),
 									'utf8'
 								);
 							}
@@ -99,16 +100,16 @@ const result = await esbuild.build({
 });
 
 if (result.metafile) {
-	const assets = Object.entries(result.metafile.outputs)
-		.map(([output, input]) => [
+	const assets = Object.entries(result.metafile.outputs).map(
+		([output, input]) => [
 			path.relative('src', input.entryPoint),
 			'/' + path.relative('public', output)
-		])
-		.sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+		]
+	);
 
 	await fs.promises.writeFile(
 		ASSETS_FILE,
-		JSON.stringify(Object.fromEntries(assets), null, 2),
+		stringify(Object.fromEntries(assets), null, 2),
 		'utf8'
 	);
 }

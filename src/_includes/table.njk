@@ -1,8 +1,0 @@
-{% macro sortableHeader(column, label) %}
-	<th :aria-sort="sortCol === '{{column}}' ? (sortAsc ? 'ascending' : 'descending') : undefined">
-		<button class="sort-btn" @click="sort('{{column}}')">
-			<span>{{label}}</span>
-			<span aria-hidden="true" class="sort-indicator"/>
-		</button>
-	</th>
-{% endmacro %}

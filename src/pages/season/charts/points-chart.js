@@ -1,20 +1,48 @@
-/* global driversData, constructorsData, raceNames, d3, Popper */
+/* global raceNames, d3, Popper */
 import colors from '../../../common-client/colors';
 import { formatOrdinals } from '../../../common-client/helpers';
 
-function drawPointsChart(id, chartData) {
+const TEMP_RANK = 9999;
+
+function getTooltipRowContent(row) {
+	const color = `<div class="color" style="color:${row.color};"></div>`;
+	const label = `<div>${row.label}</div>`;
+
+	if (row.data.ps === TEMP_RANK) {
+		return `
+		<div class="points-row">
+			${color}
+			${label}
+			<div>N/A</div>
+			<div>N/A</div>
+			<div>N/A</div>
+		</div>`;
+	}
+
+	return `
+	<div class="points-row">
+		${color}
+		${label}
+		<div class="text-right">${row.data.pt}</div>
+		<div class="text-right">${formatOrdinals(row.data.ps)}</div>
+		<div class="text-right">${row.data.w}</div>
+	</div>`;
+}
+
+export function drawPointsChart({ target: id, chartData, alpine }) {
 	const margin = { top: 30, right: 30, bottom: 100, left: 100 };
 	const totalWidth = 900;
 	const totalHeight = 900;
 	const width = totalWidth - margin.left - margin.right;
 	const height = totalHeight - margin.top - margin.bottom;
+	const longestName = Math.max(...chartData.map((d) => d.label.length));
 	const STROKE_WIDTH = 4;
 	const DOT_RADIUS = 5;
 	const LEGEND_ICON_WIDTH = 20;
-
-	const svg = d3.select(id);
-
-	svg.attr('viewBox', `0 0 ${totalWidth} ${totalHeight}`);
+	const chartDataWithColors = chartData.map((d, i) => ({
+		...d,
+		color: colors[i]
+	}));
 
 	const xDomain = raceNames.map((_, i) => i);
 	const yMax = Math.max(
@@ -27,6 +55,9 @@ function drawPointsChart(id, chartData) {
 	const xScale = d3.scalePoint(xDomain, [0, width]);
 	const yScale = d3.scaleLinear([0, yDomain], [height, 0]);
 
+	const svg = d3.select(id);
+
+	svg.attr('viewBox', `0 0 ${totalWidth} ${totalHeight}`);
 	/** BOTTOM AXIS *************************************************************/
 	const bottomAxis = d3.axisBottom(xScale).ticks(raceNames.length);
 	svg
@@ -48,24 +79,6 @@ function drawPointsChart(id, chartData) {
 		.append('g')
 		.attr('transform', `translate(${margin.left}, ${margin.top})`)
 		.call(leftAxis);
-	// .selectAll('.tick')
-	// .on('mouseenter', function () {
-	//   const that = this;
-	//   const dataY = that.getAttribute('data-y');
-	//   svg.selectAll('.line-group').each(function () {
-	//     if (dataY !== this.getAttribute('data-y')) {
-	//       this.classList.add('line-group-fade');
-	//     } else {
-	//       this.classList.add('line-group-focus');
-	//     }
-	//   });
-	//   svg.selectAll('.tick-y').each(function () {
-	//     if (this !== that) {
-	//       this.classList.add('tick-fade');
-	//     }
-	//   });
-	// });
-	// .on('mouseleave', mouseLeaveFromLine);
 
 	/** GRIDS *******************************************************************/
 	const gridG = svg
@@ -120,14 +133,14 @@ function drawPointsChart(id, chartData) {
 		.append('g')
 		.attr('transform', `translate(${margin.left}, ${margin.top})`)
 		.selectAll('.line')
-		.data(chartData)
+		.data(chartDataWithColors)
 		.enter()
 		.append('g')
 		.attr('class', 'line-group')
 		.attr('data-y', function (d, y) {
 			return y;
 		})
-		.each(function (d, i) {
+		.each(function (d) {
 			const filteredData = d.data
 				.map((e, j) => (e ? { ...e, x: j } : e))
 				.filter(Boolean);
@@ -141,14 +154,12 @@ function drawPointsChart(id, chartData) {
 				.attr('r', STROKE_WIDTH + 1)
 				.attr('stroke', 'none')
 				.attr('style', 'pointer-events: none;')
-				.attr('fill', function () {
-					return colors[i];
+				.attr('fill', d.color)
+				.attr('cx', function (a) {
+					return xScale(a.x);
 				})
-				.attr('cx', function (d) {
-					return xScale(d.x);
-				})
-				.attr('cy', function (d) {
-					return yScale(d.pt);
+				.attr('cy', function (a) {
+					return yScale(a.pt);
 				});
 
 			g.append('path')
@@ -157,25 +168,22 @@ function drawPointsChart(id, chartData) {
 				.attr('stroke-width', STROKE_WIDTH)
 				.attr('stroke-linejoin', 'round')
 				.attr('stroke-linecap', 'round')
-				.attr('stroke', function () {
-					return colors[i];
-				})
+				.attr('stroke', d.color)
 				.attr(
 					'd',
 					d3
 						.line()
-						.x(function (d) {
-							return xScale(d.x);
+						.x(function (a) {
+							return xScale(a.x);
 						})
-						.y(function (d) {
-							return yScale(d.pt);
+						.y(function (a) {
+							return yScale(a.pt);
 						})(filteredData)
 				);
 		});
 
 	let prevClosest = 0;
 	const MOUSE_OFFSET = 20;
-	const TEMP_RANK = 9999;
 
 	const mouseG = svg
 		.append('g')
@@ -227,7 +235,8 @@ function drawPointsChart(id, chartData) {
 			if (prevClosest !== closest) {
 				prevClosest = closest;
 				const raceNum = xTicks.indexOf(closest);
-				const driverResults = chartData
+				const columns = Math.ceil(chartDataWithColors.length / 30);
+				const driverResults = chartDataWithColors
 					.map((c) => {
 						const d = c.data[raceNum];
 						return {
@@ -239,34 +248,23 @@ function drawPointsChart(id, chartData) {
 
 				const hasResults = driverResults.some((c) => c.data.ps < TEMP_RANK);
 
-				tooltipContent.innerHTML = hasResults
-					? [
-							`<div class="points-tooltip" style="columns:${Math.ceil(
-								chartData.length / 30
-							)};">`,
-							...driverResults.map((c, i) => {
-								const content =
-									c.ps === TEMP_RANK
-										? 'N/A'
-										: [
-												`<div>${c.data.pt}</div>`,
-												`<div>${formatOrdinals(c.data.ps)}</div>`,
-												`<div>(${c.data.w} Win${
-													c.data.w === '1' ? '' : 's'
-												})</div>`
-										  ].join('');
+				alpine.updateData({ hasResults });
 
-								return [
-									`<div class="points-row">`,
-									`<div class="color" style="color:${colors[i]};"></div>`,
-									`<div>${c.label}</div>`,
-									content,
-									`</div>`
-								].join('\n');
-							}),
-							'</div>'
-					  ].join('\n')
-					: 'No data available';
+				// tooltipContent.innerHTML = hasResults
+				// 	? [
+				// 			`<div class="points-tooltip" style="columns:${columns};--longest-name:${longestName}ch;">`,
+				// 			`<div class="race-name">${raceNames[raceNum]}</div>`,
+				// 			`<div class="points-row points-header">`,
+				// 			`<div></div>`,
+				// 			`<div>${label}</div>`,
+				// 			`<div class="text-right">Points</div>`,
+				// 			`<div class="text-right">Position</div>`,
+				// 			`<div class="text-right">Wins</div>`,
+				// 			`</div>`,
+				// 			...driverResults.map((c) => getTooltipRowContent(c)),
+				// 			'</div>'
+				// 	  ].join('\n')
+				// 	: 'No data available';
 
 				svg.select('.mouse-line').attr('x1', closest).attr('x2', closest);
 			}
@@ -279,7 +277,7 @@ function drawPointsChart(id, chartData) {
 		});
 
 	const tooltip = document.querySelector(`${id}-tooltip`);
-	const tooltipContent = tooltip.querySelector('.tooltip-content');
+	// const tooltipContent = tooltip.querySelector('.tooltip-content');
 
 	function generateGetBoundingClientRect(x = 0, y = 0) {
 		return () => ({
@@ -316,6 +314,3 @@ function drawPointsChart(id, chartData) {
 		]
 	});
 }
-
-drawPointsChart('#driver-points', driversData);
-drawPointsChart('#constructor-points', constructorsData);

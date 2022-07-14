@@ -2,48 +2,27 @@ const path = require('node:path');
 const fs = require('node:fs');
 const dateFns = require('date-fns');
 const { snakeCase } = require('change-case');
-const { pick, omit } = require('./src/_utils/objectHelpers');
+const eleventyPreact = require('./scripts/11ty-preact');
+const eleventyTSData = require('./scripts/11ty-ts-data');
+const eleventyESBuild = require('./scripts/11ty-esbuild');
 
+const ALL_CSS = new Map();
+
+/**
+ *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
+ *  @returns {ReturnType<import("@11ty/eleventy/src/defaultConfig")>}
+ */
 module.exports = (eleventyConfig) => {
-	eleventyConfig.addNunjucksFilter('humanDate', function (value) {
-		return dateFns.format(dateFns.parseISO(value), 'do LLL yyyy');
-	});
-
-	eleventyConfig.addNunjucksFilter('pick', function (value, ...keysToOmit) {
-		if (Array.isArray(value)) {
-			return value.map((row) => pick(row, keysToOmit));
-		}
-
-		return pick(value, keysToOmit);
-	});
-
-	eleventyConfig.addNunjucksFilter('omit', function (value, ...keysToOmit) {
-		if (Array.isArray(value)) {
-			return value.map((row) => omit(row, keysToOmit));
-		}
-
-		return omit(value, keysToOmit);
-	});
-
-	eleventyConfig.addNunjucksFilter('padLeft', function (value, ...args) {
-		return (value || '').toString().padStart(...args);
-	});
-
-	eleventyConfig.addNunjucksFilter('snakeCase', function (value) {
-		return snakeCase(value || '');
-	});
-
-	eleventyConfig.addNunjucksFilter('startsWith', function (value, txt) {
-		return (value || '').toString().startsWith(txt);
-	});
+	eleventyPreact(eleventyConfig, ALL_CSS);
+	eleventyTSData(eleventyConfig);
+	eleventyESBuild(eleventyConfig);
 
 	return {
 		dir: {
-			input: 'src',
+			input: 'src/pages',
 			output: 'public',
-			layouts: '_layouts',
-			templateFormats: ['njk', 'md', '11ty.js'],
-			markdownTemplateEngine: 'nunjucks'
+			data: '../11ty-global-data',
+			layouts: '../layouts'
 		}
 	};
 };

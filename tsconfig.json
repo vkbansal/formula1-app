@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"target": "ESNext",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact"
+	}
+}
