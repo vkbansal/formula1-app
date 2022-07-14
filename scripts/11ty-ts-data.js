@@ -1,7 +1,8 @@
-const vm = require('node:vm');
-
+const _eval = require('eval');
 const esbuild = require('esbuild');
 const builtinModules = require('builtin-modules');
+
+const { vmContext } = require('./utils');
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addDataExtension('ts', {
@@ -18,22 +19,19 @@ module.exports = function (eleventyConfig) {
 
 			const jsFile = result.outputFiles[0];
 
-			const evaledModule = vm.runInContext(
-				jsFile.text,
-				vm.createContext({ module, require, process })
-			);
+			const evaledModule = _eval(jsFile.text, true);
 
-			let data = {};
+			let __data = {};
 
 			if (typeof evaledModule.default === 'function') {
-				data = await evaledModule.default();
+				__data = await evaledModule.default();
 			} else {
-				data = evaledModule.default ?? {};
+				__data = evaledModule.default ?? {};
 			}
 
 			// console.log('data2', data);
 
-			return data;
+			return __data;
 		},
 		read: false
 	});

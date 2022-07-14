@@ -1,14 +1,16 @@
 const vm = require('node:vm');
 // const fs = require('node:fs');
 const path = require('node:path');
+const _eval = require('eval');
 
 const builtinModules = require('builtin-modules');
 const { h, Fragment } = require('preact');
 const esbuild = require('esbuild');
 const preactRender = require('preact-render-to-string');
-const { isPlainObject } = require('../utils');
+const { isPlainObject, vmContext } = require('../utils');
 
 const postCSSPlugin = require('./esbuild-postcss-plugin');
+const prod = process.env.NODE_ENV === 'production';
 
 module.exports = (eleventyConfig, ALL_CSS) => {
 	async function buildAndEvalFile(inputPath) {
@@ -26,15 +28,13 @@ module.exports = (eleventyConfig, ALL_CSS) => {
 			jsxFragment: 'Fragment',
 			external: ['node:*', ...builtinModules],
 			write: false,
+			minify: prod,
 			plugins: [postCSSPlugin(ALL_CSS)]
 		});
 
 		const jsFile = result.outputFiles[0];
 
-		const evaledModule = vm.runInContext(
-			jsFile.text,
-			vm.createContext({ module, require, h, Fragment, process, console })
-		);
+		const evaledModule = _eval(jsFile.text, { h, Fragment }, true);
 
 		return evaledModule;
 	}
@@ -43,6 +43,7 @@ module.exports = (eleventyConfig, ALL_CSS) => {
 		compile: async function (_inputContent, inputPath) {
 			const evaledModule = await buildAndEvalFile(inputPath);
 			const that = this;
+			// console.log('that', that.config.javascriptFunctions);
 
 			return async function (data) {
 				const newData = { ...data };
@@ -72,14 +73,14 @@ module.exports = (eleventyConfig, ALL_CSS) => {
 				}
 
 				const html = preactRender(
-					evaledModule.render.call(that, newData),
-					{},
+					h(evaledModule.render, newData),
+					{ filters: that.config.javascriptFunctions },
 					{
 						pretty: true
 					}
 				);
 
-				return html;
+				return `<!DOCTYPE html>\n${html}`;
 			};
 		},
 		getData: ['data'],
@@ -90,8 +91,6 @@ module.exports = (eleventyConfig, ALL_CSS) => {
 			if (typeof evaledModule.getData === 'function') {
 				data = await evaledModule.getData();
 			}
-
-			data.layout = 'index.njk';
 
 			return { data };
 		},

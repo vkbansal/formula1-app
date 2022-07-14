@@ -14,8 +14,10 @@ const ALL_CSS = new Map();
  */
 module.exports = (eleventyConfig) => {
 	eleventyPreact(eleventyConfig, ALL_CSS);
+	eleventyESBuild(eleventyConfig, ALL_CSS);
 	eleventyTSData(eleventyConfig);
-	eleventyESBuild(eleventyConfig);
+
+	eleventyConfig.ignores.add('*.d.ts');
 
 	return {
 		dir: {

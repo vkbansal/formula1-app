@@ -32,11 +32,12 @@ export async function getData() {
 export interface RenderProps extends Data {}
 
 export function render(props: RenderProps) {
-	console.log('props', props);
-	const { numOfEntities = {} } = props;
+	const { numOfEntities } = props;
+	console.log('home', props);
+
 	return (
-		<MainLayout>
-			<div class="{css.stats}">
+		<MainLayout title="Home">
+			<div class={css.stats}>
 				<section class={css.section}>
 					A total of&nbsp;
 					<a class={css.link} href="/seasons">
