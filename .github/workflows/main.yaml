@@ -1,0 +1,73 @@
+name: Publish on Netlify
+on:
+  push:
+    branches:
+      - main
+jobs:
+  eslint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Lint
+        run: |
+          yarn
+          npx eslint 'src/**/*.{ts,tsx}' 'scripts/**/*.{js,mjs}'
+  typecheck:
+    name: TypeCheck
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Type Check
+        run: |
+          yarn
+          npx tsc --noEmit
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Prettier
+        run: |
+          yarn
+          npx prettier --check 'src/**/*.{ts,tsx}' 'scripts/**/*.{js,mjs}'
+  publish:
+    name: Publish
+    needs:
+      - eslint
+      - typecheck
+      - prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Publish
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=site --functions=functions
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
