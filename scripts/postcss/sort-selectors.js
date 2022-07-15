@@ -34,7 +34,7 @@ function compareRange(r1, r2) {
 const MAX = Number.POSITIVE_INFINITY;
 const DEFAULT_RANGE = {
 	max: [0, 0, 0, 0],
-	min: [MAX, MAX, MAX, MAX]
+	min: [MAX, MAX, MAX, MAX],
 };
 
 function reduceRange(prev, current) {
@@ -106,6 +106,6 @@ function sortScope(scope) {
 
 module.exports = () => ({
 	postcssPlugin: 'sort-selectors',
-	Once: sortScope
+	Once: sortScope,
 });
 module.exports.postcss = true;

@@ -15,7 +15,7 @@ export default async function generate({ input, output }) {
 		user: 'root',
 		database: 'f1db',
 		bigIntAsNumber: true,
-		dateStrings: true
+		dateStrings: true,
 	});
 
 	const filePaths = await globby(input);
@@ -25,7 +25,7 @@ export default async function generate({ input, output }) {
 		const {
 			queries,
 			meta: metadata,
-			getOutputPath
+			getOutputPath,
 		} = await readSQLFile(filePath);
 
 		let params = [];
@@ -49,7 +49,7 @@ export default async function generate({ input, output }) {
 
 			const data = await connection.query(
 				{ namedPlaceholders: true, sql: queries.main },
-				param
+				param,
 			);
 
 			const outputPath = getOutputPath(param);
@@ -59,7 +59,7 @@ export default async function generate({ input, output }) {
 				inputPath: filePath,
 				outputPath,
 				spinner,
-				outDir: output
+				outDir: output,
 			});
 		}
 	}

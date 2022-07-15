@@ -20,7 +20,7 @@ jobs:
       - name: Lint
         run: |
           yarn
-          npx eslint 'src/**/*.{ts,tsx}' 'scripts/**/*.{js,mjs}'
+          yarn lint
   typecheck:
     name: TypeCheck
     runs-on: ubuntu-latest
@@ -50,4 +50,4 @@ jobs:
       - name: Prettier
         run: |
           yarn
-          npx prettier --check 'src/**/*.{ts,tsx}' 'scripts/**/*.{js,mjs}'
+          yarn fmt:check

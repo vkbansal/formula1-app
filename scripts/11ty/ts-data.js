@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
 				target: 'es2020',
 				external: ['node:*', ...builtinModules],
 				bundle: true,
-				write: false
+				write: false,
 			});
 
 			const jsFile = result.outputFiles[0];
@@ -31,6 +31,6 @@ module.exports = function (eleventyConfig) {
 
 			return __data;
 		},
-		read: false
+		read: false,
 	});
 };

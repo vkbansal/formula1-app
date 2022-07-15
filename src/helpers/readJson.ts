@@ -11,14 +11,15 @@ export async function readJson<T = unknown>(filepath: string): Promise<T> {
 
 export async function loadJsonFromDir<T = unknown, U = string>(
 	folder: string,
-	pick: string[] = []
+	pick: string[] = [],
 ): Promise<U extends string ? Record<U, T> : T> {
 	const files =
 		pick.length > 0
 			? pick.map((file) => `${folder}/${file}.json`)
 			: await globby([`${folder}/*.json`]);
 
-	const data = {};
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	const data: any = {};
 
 	for (const file of files) {
 		const key = path.basename(file).replace(path.extname(file), '');
@@ -27,5 +28,5 @@ export async function loadJsonFromDir<T = unknown, U = string>(
 		data[key] = value;
 	}
 
-	return data as any;
+	return data;
 }

@@ -1,12 +1,11 @@
-import { h } from 'preact';
+import { h, type VNode } from 'preact';
 import cx from 'classnames';
-import { css } from '@emotion/css';
 
 export interface NationalityProps {
 	nationality: string;
 }
 
-export function Nationality(props: NationalityProps) {
+export function Nationality(props: NationalityProps): VNode {
 	return (
 		<span
 			class={cx(

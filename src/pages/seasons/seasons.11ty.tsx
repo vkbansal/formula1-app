@@ -1,20 +1,20 @@
-import { h } from 'preact';
+import { h, type VNode } from 'preact';
 
 import { BreadCrumbs } from 'components/BreadCrumbs';
 import { MainLayout } from 'layouts/MainLayout';
-import type { CommonData } from 'types/11ty';
+import type { CommonData, CommonTemplateConfig } from 'types/11ty';
 
 import * as css from './seasons.styles';
 
-export function getData() {
+export function getData(): CommonTemplateConfig {
 	return {
-		permalink: 'seasons/'
+		permalink: 'seasons/',
 	};
 }
 
 export type RenderProps = CommonData;
 
-export function render(props: RenderProps) {
+export function render(props: RenderProps): VNode {
 	const { seasons, metadata } = props;
 	const extraBoxes = Array.from({ length: (seasons.length % 7) + 1 });
 	const reverseSeasons = [...seasons].reverse();

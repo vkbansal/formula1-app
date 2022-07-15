@@ -8,6 +8,7 @@ import { Header } from 'components/Header';
 import { Footer } from 'components/Footer';
 
 declare module 'preact/src/jsx' {
+	// eslint-disable-next-line @typescript-eslint/no-namespace
 	namespace JSXInternal {
 		interface HTMLAttributes {
 			charset?: string;
@@ -30,9 +31,7 @@ export interface MainLayoutProps {
 	title: string;
 }
 
-export function MainLayout(
-	props: RenderableProps<MainLayoutProps>,
-): VNode<any> {
+export function MainLayout(props: RenderableProps<MainLayoutProps>): VNode {
 	const { title } = props;
 
 	return (

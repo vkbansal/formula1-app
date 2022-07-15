@@ -1,5 +1,5 @@
-import { F1Metadata } from '11ty-global-data/metadata';
-import { Seasons } from '11ty-global-data/seasons';
+import type { F1Metadata } from '11ty-global-data/metadata';
+import type { Seasons } from '11ty-global-data/seasons';
 
 export interface F1RaceByCountry {
 	country: string;

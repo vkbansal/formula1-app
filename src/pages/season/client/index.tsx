@@ -54,4 +54,8 @@ const tabs: Tab[] = [
 	{ id: 'cs', title: 'Constructor Standings', content: <div /> },
 ];
 
-render(<Tabs tabs={tabs} />, document.getElementById('tabs-target'));
+const target = document.getElementById('tabs-target');
+
+if (target) {
+	render(<Tabs tabs={tabs} />, target);
+}

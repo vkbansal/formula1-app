@@ -1,13 +1,15 @@
-import { MainLayout } from 'layouts/MainLayout';
-import { h } from 'preact';
+import { h, type VNode } from 'preact';
 
-export function getData() {
+import { MainLayout } from 'layouts/MainLayout';
+import type { CommonTemplateConfig } from 'types/11ty';
+
+export function getData(): CommonTemplateConfig {
 	return {
 		permalink: 'about/',
 	};
 }
 
-export function render() {
+export function render(): VNode {
 	return (
 		<MainLayout title="about">
 			<h1>About</h1>

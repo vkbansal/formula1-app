@@ -5,7 +5,7 @@ parserOptions:
   ecmaFeatures:
     jsx: true
     impliedStrict: true
-  project: ../tsconfig.json
+  project: tsconfig.json
 plugins:
   - '@typescript-eslint/eslint-plugin'
 env:
