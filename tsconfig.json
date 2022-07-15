@@ -4,7 +4,9 @@
 		"target": "ESNext",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
-		"jsx": "react-jsx",
-		"jsxImportSource": "preact"
-	}
+		"jsx": "react",
+		"jsxFactory": "h",
+		"jsxFragmentFactory": "Fragment"
+	},
+	"include": ["./src"]
 }

@@ -2,8 +2,6 @@ const _eval = require('eval');
 const esbuild = require('esbuild');
 const builtinModules = require('builtin-modules');
 
-const { vmContext } = require('./utils');
-
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addDataExtension('ts', {
 		parser: async (file) => {

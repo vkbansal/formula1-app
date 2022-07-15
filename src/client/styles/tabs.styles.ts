@@ -1,3 +1,6 @@
+import { injectGlobal } from '@emotion/css';
+
+injectGlobal`
 .tabs {
   & .tab-list {
     display: flex;
@@ -28,3 +31,4 @@
     }
   }
 }
+`;

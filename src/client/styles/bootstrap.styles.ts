@@ -1,3 +1,6 @@
+import { injectGlobal } from '@emotion/css';
+
+injectGlobal`
 html {
 	& *,
 	& *::after,
@@ -16,13 +19,13 @@ html {
 	--footer-height: 80px;
 	--font-family-oswald: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
 }
-
 body {
 	font-family: 'Noto Sans', Verdana, Geneva, Tahoma, sans-serif;
 	background-color: var(--black);
 	color: whitesmoke;
 	font-size: 16px;
 	min-height: 100vh;
+	margin: 0;
 }
 
 p {
@@ -96,3 +99,4 @@ hr {
 .m-0 {
 	margin: 0 !important;
 }
+`;

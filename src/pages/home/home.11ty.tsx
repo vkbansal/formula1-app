@@ -1,43 +1,44 @@
+import { h, type VNode } from 'preact';
+
 import { MainLayout } from 'layouts/MainLayout';
 import { readJson } from 'helpers/readJson';
 import type { F1RaceByCountry } from 'types/data';
+import type { CommonData, CommonTemplateConfig } from 'types/11ty';
 
-import css from './home.module.scss';
+import * as css from './home.styles';
 
 export interface Data {
 	numOfEntities: Record<string, number>;
 	racesByCountry: Record<string, number>;
 }
 
-export async function getData() {
+export async function getData(): Promise<Data & CommonTemplateConfig> {
 	const numOfEntities = await readJson<Record<string, number>>(
-		'data/entities-count.json'
+		'data/entities-count.json',
 	);
 
 	const racesByCountry = await readJson<F1RaceByCountry[]>(
-		'data/races-by-country.json'
+		'data/races-by-country.json',
 	);
 
 	return {
-		title: 'Home',
 		permalink: '/',
 		numOfEntities,
 		racesByCountry: racesByCountry.reduce<Record<string, number>>(
 			(p, c) => ({ ...p, [c.country]: c.count }),
-			{}
-		)
+			{},
+		),
 	};
 }
 
-export interface RenderProps extends Data {}
+export type RenderProps = Data & CommonData;
 
-export function render(props: RenderProps) {
+export function render(props: RenderProps): VNode {
 	const { numOfEntities } = props;
-	console.log('home', props);
 
 	return (
 		<MainLayout title="Home">
-			<div class={css.stats}>
+			<div class={css.wrapper}>
 				<section class={css.section}>
 					A total of&nbsp;
 					<a class={css.link} href="/seasons">

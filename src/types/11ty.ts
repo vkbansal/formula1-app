@@ -1,4 +1,5 @@
-import { F1GlobalData } from './data';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import type { F1GlobalData } from './data';
 
 export interface Pagination<T> {
 	items: T[];
@@ -51,10 +52,41 @@ export interface Page {
 	outputPath: string;
 }
 
-export interface CommonData<P = unknown> extends F1GlobalData {
+export type EleventyComputedFn<
+	T extends CommonData<any> = CommonData<any>,
+	U = unknown,
+> = (data: T) => Promise<U>;
+
+export type EleventyComputed = EleventyComputedFn;
+
+export interface CommonData<P = never> extends F1GlobalData {
 	eleventy: EleventyData;
 	pkg: Record<string, any>;
 	page: Page;
 	collections: { all: any[][] };
-	pagination: P extends unknown ? never : Pagination<P>;
+	pagination: P extends never ? never : Pagination<P>;
+}
+
+export interface CommonTemplateConfig<
+	T extends CommonData<any> = CommonData<any>,
+	U = unknown,
+> {
+	permalink: string | ((data: T) => string);
+	pagination?: {
+		data: string;
+		size: number;
+		alias?: string;
+	};
+	eleventyComputed?: EleventyComputedFn<T, U>;
+}
+
+export interface Context {
+	filters: {
+		assets(input: string, name?: string): string;
+	};
+	eleventy: CommonData;
+}
+
+export interface PreactThis {
+	context: Context;
 }
