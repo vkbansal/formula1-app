@@ -1,6 +1,6 @@
-import { h, type VNode } from 'preact';
+import { Fragment, h, type VNode } from 'preact';
 import { useRef, useMemo, useState, useCallback } from 'preact/hooks';
-import { scalePoint, scaleLinear } from 'd3-scale';
+import { scaleLinear, scaleBand } from 'd3-scale';
 
 import { Table, type TableColumn } from 'client/components/Table';
 import { formatOrdinals } from 'helpers/utils';
@@ -53,10 +53,9 @@ export function PointsChart(props: PointsChartData): VNode {
 	const { data, races, limitX, legendLabel } = props;
 	const svgRef = useRef<SVGSVGElement | null>(null);
 	const rectRef = useRef<SVGRectElement | null>(null);
-	const [mouseLineX, setMouseLineX] = useState(0);
+	const [activeColumn, setActiveColumn] = useState(-1);
 	const [activeRace, setActiveRace] = useState(limitX);
 	// const [selectedPoint, setSelectedPoint] = useState(-1);
-	const [showMouseLine, setShowMouseLine] = useState(false);
 
 	const yMaxValue = useMemo(
 		() =>
@@ -69,7 +68,10 @@ export function PointsChart(props: PointsChartData): VNode {
 			),
 		[data],
 	);
-	const yMax = useMemo(() => Math.ceil(yMaxValue / 10) * 10, [yMaxValue]);
+	const yMax = useMemo(
+		() => Math.ceil(yMaxValue / Y_STEP) * Y_STEP,
+		[yMaxValue],
+	);
 	const xDomain = useMemo(() => races.map((_, i) => i), [races]);
 	const yDomain = useMemo(() => {
 		const values: number[] = [];
@@ -83,17 +85,16 @@ export function PointsChart(props: PointsChartData): VNode {
 
 		return values;
 	}, [yMax]);
-	const xScale = useMemo(
-		() => scalePoint(xDomain, [0, CHART_WIDTH]),
-		[xDomain],
-	);
+	const xScale = useMemo(() => scaleBand(xDomain, [0, CHART_WIDTH]), [xDomain]);
+	const xStep = xScale.step();
 	const yScale = useMemo(
 		() => scaleLinear([0, yMax], [CHART_HEIGHT, 0]),
 		[yMax],
 	);
 	const xTicks = useMemo(
-		() => xDomain.map((d) => xScale(d)) as number[],
-		[xDomain],
+		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+		() => xDomain.map((d) => xScale(d)! + xStep / 2) as number[],
+		[xDomain, xStep],
 	);
 	const yTicks = useMemo(() => yDomain.map((d) => yScale(d)), [yDomain]);
 	const legendsData = useMemo(() => {
@@ -119,13 +120,9 @@ export function PointsChart(props: PointsChartData): VNode {
 	);
 
 	const handleMouseOut = useCallback(() => {
-		setShowMouseLine(false);
+		setActiveColumn(-1);
 		setActiveRace(limitX);
 	}, [limitX]);
-
-	const handleMouseEnter = useCallback(() => {
-		setShowMouseLine(true);
-	}, []);
 
 	const handleMouseMove = useCallback(
 		(e: MouseEvent): void => {
@@ -150,9 +147,10 @@ export function PointsChart(props: PointsChartData): VNode {
 				const closest = xTicks.reduce((prev, curr) => {
 					return Math.abs(curr - x) < Math.abs(prev - x) ? curr : prev;
 				});
+				const index = xTicks.indexOf(closest);
 
-				setMouseLineX(closest);
-				setActiveRace(Math.min(xTicks.indexOf(closest), limitX));
+				setActiveColumn(index);
+				setActiveRace(Math.min(index, limitX));
 			});
 		},
 		[limitX, xTicks],
@@ -167,21 +165,32 @@ export function PointsChart(props: PointsChartData): VNode {
 					font-size="9"
 					text-anchor="end"
 				>
-					{xTicks.map((x, i) => (
-						<g class="tick tick-x" transform={`translate(${x}, 0)`}>
-							<line
-								fill="none"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-								stroke="currentColor"
-								stoke-width="1"
-								y2="6"
-							/>
-							<text y="16" fill="currentColor" dx="-3" transform="rotate(-36)">
-								{races[i]}
-							</text>
-						</g>
-					))}
+					{xTicks.map((x, i) => {
+						return (
+							<g class="tick tick-x" key={i} transform={`translate(${x}, 0)`}>
+								<line
+									fill="none"
+									stroke-linejoin="round"
+									stroke-linecap="round"
+									stroke="currentColor"
+									stoke-width="1"
+									x1="0"
+									x2="0"
+									y1="0"
+									y2="6"
+								/>
+								<text
+									x="0"
+									y="16"
+									fill="currentColor"
+									dx="-3"
+									transform="rotate(-36)"
+								>
+									{races[i]}
+								</text>
+							</g>
+						);
+					})}
 					<line
 						fill="none"
 						stroke-linejoin="round"
@@ -224,21 +233,35 @@ export function PointsChart(props: PointsChartData): VNode {
 					/>
 				</g>
 				<g class="grid" transform={`translate(${MARGIN.left}, ${MARGIN.top})`}>
-					{xTicks.map((x) => (
-						<line
-							class="grid-line-x"
-							fill="none"
-							stroke-linejoin="round"
-							stroke-linecap="round"
-							stroke="currentColor"
-							stoke-width="1"
-							style="opacity: 0.2"
-							x1={x}
-							y1="0"
-							x2={x}
-							y2={CHART_HEIGHT}
-						/>
-					))}
+					{xTicks.map((xTick, i) => {
+						const x = xTick - xStep / 2;
+						return (
+							<Fragment>
+								<rect
+									fill="currentColor"
+									style={`opacity: ${activeColumn === i ? 0.2 : 0} `}
+									class="grid-bar-x"
+									x={x}
+									y="0"
+									width={xStep}
+									height={CHART_HEIGHT}
+								/>
+								<line
+									class="grid-line-x"
+									fill="none"
+									stroke-linejoin="round"
+									stroke-linecap="round"
+									stroke="currentColor"
+									stoke-width="1"
+									style="opacity: 0.2"
+									x1={x + xStep}
+									y1="0"
+									x2={x + xStep}
+									y2={CHART_HEIGHT}
+								/>
+							</Fragment>
+						);
+					})}
 					{yTicks.map((y) => (
 						<line
 							class="grid-line-y"
@@ -311,15 +334,6 @@ export function PointsChart(props: PointsChartData): VNode {
 					class="mouse-over-effects"
 					transform={`translate(${MARGIN.left}, ${MARGIN.top})`}
 				>
-					<line
-						class="mouse-line"
-						stroke="currentColor"
-						x1={mouseLineX.toFixed(2)}
-						x2={mouseLineX.toFixed(2)}
-						y1="0"
-						y2={CHART_HEIGHT}
-						style={`opacity:${showMouseLine ? '1' : '0'}`}
-					/>
 					<rect
 						ref={rectRef}
 						width={CHART_WIDTH + MOUSE_OFFSET}
@@ -327,7 +341,6 @@ export function PointsChart(props: PointsChartData): VNode {
 						transform={`translate(-${MOUSE_OFFSET / 2}, 0)`}
 						fill="none"
 						pointer-events="all"
-						onMouseEnter={handleMouseEnter}
 						onMouseOut={handleMouseOut}
 						onMouseMove={handleMouseMove}
 					/>
