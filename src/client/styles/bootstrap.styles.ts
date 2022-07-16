@@ -64,12 +64,8 @@ details {
 }
 
 .container {
-	max-width: 1240px;
 	margin: 0 auto;
-
-	@media screen and (max-width: 1239px) {
-		padding: 0 1rem;
-	}
+	padding: 0 2rem;
 }
 
 .text-right {

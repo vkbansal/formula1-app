@@ -15,6 +15,7 @@ export interface TableProps<T> {
 	sortable?: boolean;
 	fixedLayout?: boolean;
 	stickyHeader?: boolean;
+	small?: boolean;
 }
 
 export function Table<T>(props: TableProps<T>): VNode {
@@ -24,6 +25,7 @@ export function Table<T>(props: TableProps<T>): VNode {
 		sortable,
 		fixedLayout,
 		stickyHeader,
+		small,
 		rowId: _getRowId,
 	} = props;
 
@@ -50,12 +52,17 @@ export function Table<T>(props: TableProps<T>): VNode {
 		// sorting logic
 	}, [sortAsc, setSortCol]);
 
+	useEffect(() => {
+		setSortedData(data);
+	}, [data]);
+
 	return (
 		<table
 			class={cx('table', {
 				'table-fixed': fixedLayout,
 				'table-sortable': sortable,
 				'table-sticky-header': stickyHeader,
+				'table-sm': small,
 			})}
 		>
 			<thead>

@@ -28,27 +28,27 @@ injectGlobal`
 
 	& thead tr th,
 	& tbody tr td {
-		padding: 1rem;
+		padding: 1em;
 		text-align: left;
 
 		&:first-child {
-			padding-left: 2rem;
+			padding-left: 2em;
 		}
 
 		&:last-child {
-			padding-right: 2rem;
+			padding-right: 2em;
 		}
 	}
 
 	& thead tr th {
 		text-transform: uppercase;
-		font-size: 0.85rem;
+		font-size: 0.85em;
 		color: var(--text-2);
 	}
 
 	&.table-sortable {
 		& tbody tr td {
-			padding-right: 2rem;
+			padding-right: 2em;
 		}
 
 		& .sort-btn {
@@ -58,17 +58,17 @@ injectGlobal`
 			border: none;
 			width: 100%;
 			color: currentColor;
-			padding: 1rem 2rem 1rem 1rem;
+			padding: 1em 2em 1em 1em;
 			text-align: center;
 
 			& > .sort-indicator {
 				position: absolute;
-				right: 1rem;
+				right: 1em;
 				top: 50%;
 				transform: translateY(-50%);
 				display: inline-block;
-				width: 1rem;
-				height: 1rem;
+				width: 1em;
+				height: 1em;
 
 				&::before,
 				&::after {
@@ -78,7 +78,7 @@ injectGlobal`
 					right: 0;
 					width: 0;
 					height: 0;
-					border: 0.35rem solid transparent;
+					border: 0.35em solid transparent;
 					transition: border-color 0.3s ease-in-out;
 				}
 
@@ -111,14 +111,28 @@ injectGlobal`
 			text-align: left;
 
 			&:first-child > .sort-btn {
-				padding-left: 2rem;
+				padding-left: 2em;
 			}
 
 			&:last-child > .sort-btn {
-				padding-right: 2rem;
+				padding-right: 2em;
 			}
 		}
 	}
-}
 
-`;
+	&.table-sm {
+		& thead tr th,
+		& tbody tr td {
+			padding: 0.25em 0.5em;
+			text-align: left;
+
+			&:first-child {
+				padding-left: 1em;
+			}
+
+			&:last-child {
+				padding-right: 1em;
+			}
+		}
+	}
+}`;

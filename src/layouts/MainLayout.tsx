@@ -18,7 +18,7 @@ declare module 'preact/src/jsx' {
 }
 
 const contentWrapper = css`
-	padding: 1rem 0;
+	padding-block: 1rem;
 	width: 100%;
 	min-height: calc(100vh - var(--header-height) - var(--footer-height));
 

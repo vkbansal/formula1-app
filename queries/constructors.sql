@@ -8,12 +8,8 @@ SELECT `constructorRef` FROM `constructors`;
 SELECT
 	`T`.*
 ,	CAST(
-		CASE
-			WHEN `T`.`totalRaces` = 0
-			THEN 0
-			ELSE `T`.`raceWins` * 100 / `T`.`totalRaces`
-		END
-	AS FLOAT) AS winPct
+		IF(`T`.`totalRaces` = 0, 0, `T`.`raceWins` * 100 / `T`.`totalRaces`) AS FLOAT
+	) AS winPct
 ,	JSON_ARRAYAGG(
 		JSON_OBJECT(
 			'year', `DC`.`year`,
@@ -27,8 +23,8 @@ FROM (
 	, `C`.`name` AS `name`
 	,	`C`.`nationality`
 	,	COUNT(DISTINCT `R`.`raceId`) AS `totalRaces`
-	,	CAST(SUM(CASE WHEN `R`.`position` = 1 THEN 1 ELSE 0 END) AS INT) AS `raceWins`
-	,	CAST(SUM(CASE WHEN `R`.`position` <= 3 THEN 1 ELSE 0 END) AS INT) AS `podiums`
+	,	CAST(SUM(IF(`R`.`position` = 1, 1, 0)) AS INT) AS `raceWins`
+	,	CAST(SUM(IF(`R`.`position` <= 3, 1, 0)) AS INT) AS `podiums`
 	FROM `constructors` AS `C`
 	LEFT OUTER JOIN `results` AS `R` USING (`constructorId`)
 	WHERE `C`.`constructorRef` = :constructorRef

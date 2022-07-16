@@ -13,5 +13,5 @@ ON `RE`.`raceId` = `DR`.`raceId`
 LEFT OUTER JOIN `drivers` AS `D`
 ON `D`.`driverId` = `RE`.`driverId`
 WHERE `DR`.`year` = :year
-ORDER BY `D`.`driverRef` ASC;
+ORDER BY `D`.`forename` ASC;
 -- main:query:end

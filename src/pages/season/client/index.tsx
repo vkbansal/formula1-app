@@ -4,12 +4,15 @@ import { Tabs, type Tab } from 'client/components/Tabs';
 import { Table, type TableColumn } from 'client/components/Table';
 import { Nationality } from 'client/components/Nationality';
 
-import type { TableData } from '../season.11ty';
+import type { ChartData, TableData } from '../season.11ty';
+import { PointsChart } from './PointsChart';
 
-declare global {
-	const racesData: TableData[];
-}
+declare const racesData: TableData[];
+declare const driversData: ChartData[];
+declare const constructorsData: ChartData[];
+declare const lastestRoundWithResults: number;
 
+const races = racesData.map((r) => r.name);
 const tableColums: TableColumn<TableData>[] = [
 	{ id: 'round', title: 'Round', data: 'round' },
 	{ id: 'race', title: 'Race', data: 'name' },
@@ -50,12 +53,34 @@ const tabs: Tab[] = [
 		title: 'Races',
 		content: <Table data={racesData} columns={tableColums} rowId="raceId" />,
 	},
-	{ id: 'ds', title: 'Driver Standings', content: <div /> },
-	{ id: 'cs', title: 'Constructor Standings', content: <div /> },
+	{
+		id: 'ds',
+		title: 'Driver Standings',
+		content: (
+			<PointsChart
+				data={driversData}
+				races={races}
+				limitX={lastestRoundWithResults - 1}
+				legendLabel="Driver"
+			/>
+		),
+	},
+	{
+		id: 'cs',
+		title: 'Constructor Standings',
+		content: (
+			<PointsChart
+				data={constructorsData}
+				races={races}
+				limitX={lastestRoundWithResults - 1}
+				legendLabel="Constructor"
+			/>
+		),
+	},
 ];
 
 const target = document.getElementById('tabs-target');
 
 if (target) {
-	render(<Tabs tabs={tabs} />, target);
+	render(<Tabs defaultActiveTab="ds" tabs={tabs} />, target);
 }

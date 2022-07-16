@@ -32,6 +32,7 @@ export interface ChartPoint {
 }
 
 export interface ChartData {
+	id: string;
 	label: string;
 	color: string;
 	data: Array<null | ChartPoint>;
@@ -46,6 +47,7 @@ export interface TableData
 }
 
 export interface ComputedData {
+	lastestRoundWithResults: number;
 	racesData: TableData[];
 	driversData: ChartData[];
 	constructorsData: ChartData[];
@@ -92,6 +94,7 @@ export async function getData(): Promise<
 
 			const driversData: ChartData[] = driversArr.map((d, i) => {
 				return {
+					id: d.driverRef,
 					label: d.name,
 					color: colors[i],
 					data: racesArr.map<ChartPoint | null>((r) => {
@@ -110,6 +113,7 @@ export async function getData(): Promise<
 
 			const constructorsData: ChartData[] = constructorsArr.map((c, i) => {
 				return {
+					id: c.constructorRef,
 					label: c.name,
 					color: colors[i],
 					data: racesArr.map((r) => {
@@ -150,7 +154,17 @@ export async function getData(): Promise<
 				};
 			});
 
+			let lastestRoundWithResults = racesArr.findIndex(
+				(r) => r.driverStandings.length === 0,
+			);
+
+			// final race of the season
+			if (lastestRoundWithResults === -1) {
+				lastestRoundWithResults = racesArr.length;
+			}
+
 			return {
+				lastestRoundWithResults,
 				racesData: racesData,
 				driversData,
 				constructorsData,
@@ -169,6 +183,7 @@ export function render(this: PreactThis, props: RenderProps): VNode {
 		driversData,
 		racesData: races,
 		constructorsData,
+		lastestRoundWithResults,
 	} = props;
 	return (
 		<MainLayout title={`${year} Season`}>
@@ -198,6 +213,9 @@ export function render(this: PreactThis, props: RenderProps): VNode {
 				type="text/javascript"
 				dangerouslySetInnerHTML={{
 					__html: [
+						`const lastestRoundWithResults=${JSON.stringify(
+							lastestRoundWithResults,
+						)}`,
 						`const driversData=${JSON.stringify(driversData)}`,
 						`const racesData=${JSON.stringify(races)}`,
 						`const constructorsData=${JSON.stringify(constructorsData)}`,

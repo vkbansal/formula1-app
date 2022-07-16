@@ -28,8 +28,8 @@ FROM (
 	,	`D`.`dob`
 	,	`D`.`nationality`
 	,	COUNT(*) AS `totalRaces`
-	,	CAST(SUM(CASE WHEN `RE`.`position` = 1 THEN 1 ELSE 0 END) AS INT) AS `raceWins`
-	,	CAST(SUM(CASE WHEN `RE`.`position` <= 3 THEN 1 ELSE 0 END) AS INT) AS `podiums`
+	,	CAST(SUM(IF(`RE`.`position` = 1, 1, 0)) AS INT) AS `raceWins`
+	,	CAST(SUM(IF(`RE`.`position` <= 3, 1, 0)) AS INT) AS `podiums`
 	FROM `drivers` AS `D`
 	LEFT OUTER JOIN `results` AS `RE` USING (`driverId`)
 	WHERE `D`.`driverRef` = :driverRef
