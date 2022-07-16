@@ -19,22 +19,22 @@ const getLegendColumns = (label: string): TableColumn<LegendsData>[] => [
 	{
 		id: 'ps',
 		title: 'Position',
-		data: (d) => formatOrdinals(d.data.ps),
+		data: (d) => formatOrdinals(d.ps),
 	},
 	{
 		id: 'd',
 		title: label,
-		data: (d) => d.label,
+		data: (d) => <span style={{ '--legend-color': d.color }}>{d.label}</span>,
 	},
 	{
 		id: 'pt',
 		title: 'Points',
-		data: (d) => d.data.pt,
+		data: 'pt',
 	},
 	{
 		id: 'w',
 		title: 'Wins',
-		data: (d) => d.data.w,
+		data: 'w',
 	},
 ];
 
@@ -45,8 +45,8 @@ export interface PointsChartData {
 	legendLabel: string;
 }
 
-export interface LegendsData extends Omit<ChartData, 'data'> {
-	data: ChartPoint;
+export interface LegendsData extends Omit<ChartData, 'data'>, ChartPoint {
+	gain: number | null;
 }
 
 export function PointsChart(props: PointsChartData): VNode {
@@ -105,13 +105,17 @@ export function PointsChart(props: PointsChartData): VNode {
 		return data
 			.map<LegendsData>((row) => {
 				const race = row.data[activeRace];
+				const prevRace = row.data[activeRace - 1];
 
 				return {
-					...row,
-					data: race || { ps: Infinity, pt: 0, w: 0 },
+					id: row.id,
+					label: row.label,
+					color: row.color,
+					...(race || { ps: Infinity, pt: 0, w: 0 }),
+					gain: prevRace && race ? prevRace.ps - race.ps : null,
 				};
 			})
-			.sort((a, b) => a.data.ps - b.data.ps);
+			.sort((a, b) => a.ps - b.ps);
 	}, [activeRace, data]);
 
 	const legendColumns = useMemo(
