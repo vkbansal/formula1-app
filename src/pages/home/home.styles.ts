@@ -17,7 +17,7 @@ export const fact = css`
 	font-weight: 700;
 	display: inline-block;
 	white-space: nowrap;
-	color: white;
+	color: var(--text-1);
 `;
 
 export const link = css`
@@ -25,7 +25,6 @@ export const link = css`
 	font-weight: 700;
 	display: inline-block;
 	white-space: nowrap;
-	color: white;
 	text-decoration: underline;
 	text-decoration-style: dashed;
 	text-decoration-thickness: 10%;

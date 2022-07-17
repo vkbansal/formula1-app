@@ -48,7 +48,7 @@ export function BreadCrumbs(props: BreadCrumbProps): VNode {
 			<div class={breadcrumbs}>
 				<a href="/">🏠</a>
 				{restLinks.map((link) => (
-					<a href={link.label}>{link.label}</a>
+					<a href={link.href}>{link.label}</a>
 				))}
 				{lastLink ? <span>{lastLink.label}</span> : null}
 			</div>

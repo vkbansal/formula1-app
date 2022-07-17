@@ -56,6 +56,84 @@ const navLinkActive = css`
 	transform: scale(1.1);
 `;
 
+const SWITCH_WIDTH = `2.75rem`;
+const SWITCH_HEIGHT = `1.25rem`;
+const TOGGLE_SCALE = 0.8;
+const TOGGLE_SIZE = `calc(${SWITCH_HEIGHT} * ${TOGGLE_SCALE})`;
+const DELTA = `calc(calc(${SWITCH_HEIGHT} - ${TOGGLE_SIZE}) / 2)`;
+const INNER_WIDTH = `calc(${SWITCH_WIDTH} - calc(${DELTA} * 2))`;
+
+const themeToggle = css`
+	display: inline-flex;
+	align-items: center;
+	height: ${SWITCH_HEIGHT};
+	width: ${SWITCH_WIDTH};
+	border-radius: ${SWITCH_HEIGHT};
+	background: var(--black);
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 0 1px var(--text-2);
+	cursor: pointer;
+
+	& > input {
+		opacity: 0;
+		clip-path: circle(0, 0);
+		width: 0;
+		height: 0;
+		margin: 0;
+	}
+
+	& > span {
+		position: absolute;
+		display: inline-block;
+		height: ${TOGGLE_SIZE};
+		width: ${TOGGLE_SIZE};
+		background: white;
+		border-radius: 50%;
+		left: 0;
+		top: 0;
+		transition: transform 0.3s ease-in-out;
+		transform: translate(${DELTA}, ${DELTA});
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			display: inline-flex;
+			align-items: center;
+			height: ${TOGGLE_SIZE};
+			width: ${INNER_WIDTH};
+			border-radius: ${TOGGLE_SIZE};
+			line-height: 100%;
+		}
+
+		&::after {
+			content: '☀️';
+			text-align: right;
+			font-size: 0.8em;
+			left: 0;
+			justify-content: flex-end;
+			transform: translate(-3%, -5%);
+		}
+
+		&::before {
+			content: '🌙';
+			font-size: 0.7em;
+			right: 0;
+			justify-content: flex-start;
+			transform: translate(3%, -5%);
+		}
+	}
+
+	& input:checked + span {
+		transform: translate(
+			calc(${SWITCH_WIDTH} - ${TOGGLE_SIZE} - ${DELTA}),
+			${DELTA}
+		);
+	}
+`;
+
 export function Header(this: PreactThis): VNode {
 	const url = this.context.eleventy.page.url;
 
@@ -97,6 +175,10 @@ export function Header(this: PreactThis): VNode {
 					>
 						About
 					</a>
+					<label for="theme-toggle" class={themeToggle} title="Theme">
+						<input id="theme-toggle" type="checkbox" />
+						<span />
+					</label>
 				</nav>
 			</div>
 		</header>

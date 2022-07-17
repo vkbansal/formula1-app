@@ -5,7 +5,7 @@ const cssnano = require('cssnano');
 const preset = require('cssnano-preset-default');
 
 module.exports = async (css) => {
-	const cssString = css.join('\n');
+	const cssString = [...new Set(css)].join('\n');
 
 	const result = await postcss([cssnano({ preset })]).process(cssString, {
 		from: undefined,

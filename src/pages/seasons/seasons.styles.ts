@@ -30,15 +30,13 @@ export const seasonCard = css`
 		}
 	}
 
-	&:nth-child(2n) {
-		background: var(--black);
+	&:nth-child(2n) > a {
+		background: var(--white);
+		color: var(--black);
 	}
 
-	&:nth-child(2n + 1) {
-		background: white;
-
-		& > a {
-			color: var(--black);
-		}
+	&:nth-child(2n + 1) > a {
+		background: var(--black);
+		color: var(--white);
 	}
 `;

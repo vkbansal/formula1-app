@@ -7,22 +7,34 @@ html {
 	& *::before {
 		box-sizing: border-box;
 	}
-}
 
-:root {
 	--f1-red: #e10600;
 	--black: #1f1f27;
-	--text-1: rgba(255, 255, 255, 1);
-	--text-2: rgba(255, 255, 255, 0.5);
-	--divider: rgba(255, 255, 255, 0.25);
+	--white: #f5f5f5;
 	--header-height: 80px;
 	--footer-height: 80px;
 	--font-family-oswald: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+
+
+	&[data-theme="dark"] {
+		--text-1: var(--white);
+		--text-2: rgba(255, 255, 255, 0.5);
+		--divider: rgba(255, 255, 255, 0.25);
+		--bg: var(--black);
+	}
+
+	&[data-theme="light"] {
+		--text-1: var(--black);
+		--text-2: rgba(0, 0, 0, 0.5);
+		--divider: rgba(0, 0, 0, 0.25);
+		--bg: var(--white);
+	}
 }
+
 body {
 	font-family: 'Noto Sans', Verdana, Geneva, Tahoma, sans-serif;
-	background-color: var(--black);
-	color: whitesmoke;
+	background-color: var(--bg);
+	color: var(--text-1);
 	font-size: 16px;
 	min-height: 100vh;
 	margin: 0;
@@ -34,7 +46,7 @@ p {
 }
 
 a {
-	color: whitesmoke;
+	color: var(--text-1);
 
 	&[disabled] {
 		opacity: 0.5;
@@ -43,29 +55,13 @@ a {
 	}
 }
 
-details {
-	margin: 1rem 0;
-	border: 1px solid var(--divider);
-	border-radius: 0.5rem;
-
-	& > summary {
-		cursor: pointer;
-		padding: 1rem;
-
-		& > * {
-			display: inline-block;
-			margin: 0;
-
-			&:first-child {
-				margin-left: 0.5rem;
-			}
-		}
-	}
-}
-
 .container {
 	margin: 0 auto;
-	padding: 0 2rem;
+	max-width: 1920px;
+
+	@media screen and (max-width: 1920px) {
+		padding: 0 2rem;
+	}
 }
 
 .text-right {

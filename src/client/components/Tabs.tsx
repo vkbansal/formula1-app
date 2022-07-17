@@ -6,37 +6,44 @@ export interface Tab {
 	id: string;
 	title: ComponentChildren;
 	content: ComponentChildren;
+	panelClass?: string;
+	tabClass?: string;
 }
 
 export interface TabsProps {
 	tabs: Tab[];
-	defaultActiveTab?: string;
+	defaultActiveTab?: number;
+	class?: string;
 }
 
 export function Tabs(props: TabsProps): VNode {
-	const [activeTab, setActiveTab] = useState(
-		props.defaultActiveTab || props.tabs[0].id,
-	);
+	const [activeTab, setActiveTab] = useState(props.defaultActiveTab ?? 0);
 
 	return (
-		<div class="tabs">
+		<div class={cx('tabs', props.class)}>
 			<div class="tab-list" role="tablist">
-				{props.tabs.map((tab) => (
+				{props.tabs.map((tab, i) => (
 					<div
 						key={tab.id}
 						role="tab"
-						class={cx('tab', { 'tab-active': activeTab === tab.id })}
-						onClick={(): void => setActiveTab(tab.id)}
+						class={cx('tab', { 'tab-active': activeTab === i }, tab.tabClass)}
+						onClick={(): void => setActiveTab(i)}
 					>
 						{tab.title}
 					</div>
 				))}
 			</div>
-			{props.tabs.map((tab) => (
+			{props.tabs.map((tab, i) => (
 				<div
 					key={tab.id}
 					role="tab-panel"
-					class={cx('tab-panel', { 'tab-active': activeTab === tab.id })}
+					class={cx(
+						'tab-panel',
+						{
+							'tab-active': activeTab === i,
+						},
+						tab.panelClass,
+					)}
 				>
 					{tab.content}
 				</div>

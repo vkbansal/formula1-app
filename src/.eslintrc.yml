@@ -43,4 +43,10 @@ overrides:
         - 2
         - paths:
             - name: '@emotion/css'
+          patterns:
+            - group:
+                - '*11ty'
+                - '*11tydata'
+                - '*styles'
+              allowTypeImports: true
       '@typescript-eslint/triple-slash-reference': 0

@@ -4,8 +4,8 @@ import { Tabs, type Tab } from 'client/components/Tabs';
 import { Table, type TableColumn } from 'client/components/Table';
 import { Nationality } from 'client/components/Nationality';
 
-import type { ChartData, TableData } from '../season.11ty';
-import { PointsChart } from './PointsChart';
+import type { ChartData, TableData } from 'pages/season/season.11ty';
+import { PointsChart } from './PointsChart/PointsChart';
 
 declare const racesData: TableData[];
 declare const driversData: ChartData[];
@@ -52,6 +52,7 @@ const tabs: Tab[] = [
 		id: 'r',
 		title: 'Races',
 		content: <Table data={racesData} columns={tableColums} rowId="raceId" />,
+		panelClass: 'races-table-tab',
 	},
 	{
 		id: 'ds',
@@ -82,5 +83,5 @@ const tabs: Tab[] = [
 const target = document.getElementById('tabs-target');
 
 if (target) {
-	render(<Tabs defaultActiveTab="ds" tabs={tabs} />, target);
+	render(<Tabs tabs={tabs} />, target);
 }

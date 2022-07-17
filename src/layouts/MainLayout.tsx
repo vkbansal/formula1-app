@@ -17,6 +17,28 @@ declare module 'preact/src/jsx' {
 	}
 }
 
+const THEME_SCRIPT = `
+(() => {
+  try {
+    const mql = window.matchMedia('(prefers-color-scheme: dark)');
+		const themeToggle = document.getElementById('theme-toggle');
+    const themeFromStorage = localStorage.getItem('theme');
+		const appliedTheme = themeFromStorage || (mql.matches ? 'dark' : 'light');
+    console.log('appliedTheme', appliedTheme);
+    document.body.parentElement.dataset.theme = appliedTheme;
+		console.log('themeToggle', themeToggle);
+
+    if (themeToggle) {
+      themeToggle.checked = (appliedTheme === 'dark');
+      themeToggle.addEventListener('change', (e) => {
+        const theme = e.target.checked ? 'dark' : 'light';
+        localStorage.setItem('theme', theme);
+        document.body.parentElement.dataset.theme = theme;
+      });
+		}
+  } catch (e) {}
+})();`;
+
 const contentWrapper = css`
 	padding-block: 1rem;
 	width: 100%;
@@ -53,6 +75,10 @@ export function MainLayout(props: RenderableProps<MainLayoutProps>): VNode {
 				<Header />
 				<div class={cx('container', contentWrapper)}>{props.children}</div>
 				<Footer />
+				<script
+					type="text/javascript"
+					dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }}
+				/>
 			</body>
 		</html>
 	);
