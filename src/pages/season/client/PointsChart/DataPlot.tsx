@@ -20,7 +20,7 @@ export function DataPlot(props: DataPlotProps): VNode {
 						if (curr) {
 							acc.push({
 								x: xTicks[i].toFixed(2),
-								y: yScale(curr.pt).toFixed(2),
+								y: yScale(curr.points).toFixed(2),
 							});
 						}
 

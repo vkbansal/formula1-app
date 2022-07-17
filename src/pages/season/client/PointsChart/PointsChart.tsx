@@ -36,7 +36,7 @@ export function PointsChart(props: PointsChartData): VNode {
 			Math.max(
 				...data.map((d) =>
 					Math.max(
-						...(d.data.filter(Boolean) as ChartPoint[]).map((r) => r.pt),
+						...(d.data.filter(Boolean) as ChartPoint[]).map((r) => r.points),
 					),
 				),
 			),

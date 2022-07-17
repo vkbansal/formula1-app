@@ -68,6 +68,10 @@ a {
 	text-align: right !important;
 }
 
+.text-center {
+	text-align: center !important;
+}
+
 .text-2 {
 	color: var(--text-2) !important;
 }

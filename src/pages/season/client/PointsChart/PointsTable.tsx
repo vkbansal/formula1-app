@@ -11,7 +11,9 @@ const getLegendColumns = (label: string): TableColumn<LegendsData>[] => [
 		title: 'Position',
 		data: (d) => (
 			<div class="points-legend-position">
-				<span>{d.ps === Infinity ? '-' : formatOrdinals(d.ps)}</span>
+				<span>
+					{d.position === Infinity ? '-' : formatOrdinals(d.position)}
+				</span>
 				{d.gain ? (
 					<span data-gain={d.gain / Math.abs(d.gain)}>{Math.abs(d.gain)}</span>
 				) : null}
@@ -30,12 +32,12 @@ const getLegendColumns = (label: string): TableColumn<LegendsData>[] => [
 	{
 		id: 'pt',
 		title: 'Points',
-		data: 'pt',
+		data: 'points',
 	},
 	{
 		id: 'w',
 		title: 'Wins',
-		data: 'w',
+		data: 'wins',
 	},
 ];
 
@@ -65,11 +67,11 @@ export function PointsTable(props: PointsTableProps): VNode {
 					id: row.id,
 					label: row.label,
 					color: row.color,
-					...(race || { ps: Infinity, pt: 0, w: 0 }),
-					gain: prevRace && race ? prevRace.ps - race.ps : null,
+					...(race || { position: Infinity, points: 0, wins: 0 }),
+					gain: prevRace && race ? prevRace.position - race.position : null,
 				};
 			})
-			.sort((a, b) => a.ps - b.ps);
+			.sort((a, b) => a.position - b.position);
 	}, [activeRace, data]);
 
 	const legendColumns = useMemo(

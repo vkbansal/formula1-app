@@ -1,8 +1,7 @@
 import { h, type VNode } from 'preact';
 import { parseISO as parseISODate, format as formatDate } from 'date-fns';
 
-import type { Seasons } from '11ty-global-data/seasons';
-import { mapKeys, pick } from 'helpers/objectHelpers';
+import { pick } from 'helpers/objectHelpers';
 import { loadJsonFromDir } from 'helpers/readJson';
 import { MainLayout } from 'layouts/MainLayout';
 
@@ -10,6 +9,7 @@ import type { CommonData, CommonTemplateConfig, PreactThis } from 'types/11ty';
 import type {
 	F1Constructor,
 	F1Driver,
+	F1DriverStanding,
 	F1Race,
 	F1SeasonConstructor,
 	F1SeasonDriver,
@@ -19,17 +19,7 @@ import colors from 'helpers/colors';
 import * as css from './season.styles';
 import { BreadCrumbs } from 'components/BreadCrumbs';
 
-const shortKeysMap = {
-	position: 'ps',
-	points: 'pt',
-	wins: 'w',
-};
-
-export interface ChartPoint {
-	ps: number;
-	pt: number;
-	w: number;
-}
+export type ChartPoint = Omit<F1DriverStanding, 'driverRef'>;
 
 export interface ChartData {
 	id: string;
@@ -53,12 +43,12 @@ export interface ComputedData {
 	constructorsData: ChartData[];
 }
 
-export interface Data extends CommonData<Seasons[number]> {
+export interface ExtraPageData {
 	year: number;
 }
 
 export async function getData(): Promise<
-	CommonTemplateConfig<Data, ComputedData>
+	CommonTemplateConfig<ExtraPageData, ComputedData>
 > {
 	return {
 		pagination: {
@@ -66,8 +56,8 @@ export async function getData(): Promise<
 			size: 1,
 			alias: 'year',
 		},
-		permalink: (opts: Data): string => `/seasons/${opts.year}/`,
-		eleventyComputed: async (opts: Data): Promise<ComputedData> => {
+		permalink: (opts): string => `/seasons/${opts.year}/`,
+		eleventyComputed: async (opts): Promise<ComputedData> => {
 			const { year } = opts;
 			const {
 				constructors: seasonConstructors = [],
@@ -101,12 +91,7 @@ export async function getData(): Promise<
 						const result = r.driverStandings.find(
 							(s) => s.driverRef === d.driverRef,
 						);
-						return result
-							? mapKeys<ChartPoint>(
-									pick(result, ['position', 'points', 'wins']),
-									(key) => shortKeysMap[key],
-							  )
-							: null;
+						return result ? pick(result, ['position', 'points', 'wins']) : null;
 					}),
 				};
 			});
@@ -120,12 +105,7 @@ export async function getData(): Promise<
 						const result = r.constructorStandings.find(
 							(s) => s.constructorRef === c.constructorRef,
 						);
-						return result
-							? mapKeys<ChartPoint>(
-									pick(result, ['position', 'points', 'wins']),
-									(key) => shortKeysMap[key],
-							  )
-							: null;
+						return result ? pick(result, ['position', 'points', 'wins']) : null;
 					}),
 				};
 			});
@@ -173,7 +153,7 @@ export async function getData(): Promise<
 	};
 }
 
-export type RenderProps = Data & ComputedData;
+export type RenderProps = ExtraPageData & CommonData<number> & ComputedData;
 
 export function render(this: PreactThis, props: RenderProps): VNode {
 	const {

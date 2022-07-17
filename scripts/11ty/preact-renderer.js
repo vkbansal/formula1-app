@@ -90,7 +90,7 @@ module.exports = (eleventyConfig, window) => {
 			};
 		},
 		getData: ['data'],
-		getInstanceFromInputPath: async (inputPath) => {
+		async getInstanceFromInputPath(inputPath) {
 			const evaledModule = await buildAndEvalFile(inputPath);
 			let data = {};
 

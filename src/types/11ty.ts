@@ -53,9 +53,9 @@ export interface Page {
 }
 
 export type EleventyComputedFn<
-	T extends CommonData<any> = CommonData<any>,
-	U = unknown,
-> = (data: T) => Promise<U>;
+	ExtraPageData = unknown,
+	ComputedData = unknown,
+> = (data: CommonData<any> & ExtraPageData) => Promise<ComputedData>;
 
 export type EleventyComputed = EleventyComputedFn;
 
@@ -67,18 +67,19 @@ export interface CommonData<P = never> extends F1GlobalData {
 	pagination: P extends never ? never : Pagination<P>;
 }
 
-export interface CommonTemplateConfig<
-	T extends CommonData<any> = CommonData<any>,
-	U = unknown,
-> {
-	permalink: string | ((data: T) => string);
-	pagination?: {
-		data: string;
-		size: number;
-		alias?: string;
-	};
-	eleventyComputed?: EleventyComputedFn<T, U>;
-}
+export type CommonTemplateConfig<ExtraPageData = never, ComputedData = never> =
+	| {
+			permalink: string | ((data: CommonData<any> & ExtraPageData) => string);
+			pagination?: {
+				data: string;
+				size: number;
+				alias?: string;
+			};
+	  }
+	| ExtraPageData
+	| (ComputedData extends never
+			? never
+			: { eleventyComputed: EleventyComputedFn<ExtraPageData, ComputedData> });
 
 export interface Context {
 	filters: {

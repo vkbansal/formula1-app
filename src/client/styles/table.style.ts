@@ -59,7 +59,7 @@ injectGlobal`
 			width: 100%;
 			color: currentColor;
 			padding: 1em 2em 1em 1em;
-			text-align: center;
+			text-align: left;
 
 			& > .sort-indicator {
 				position: absolute;
@@ -99,11 +99,11 @@ injectGlobal`
 		}
 
 		& th[aria-sort='ascending'] .sort-indicator::before {
-			border-bottom-color: white;
+			border-bottom-color: var(--text-1);
 		}
 
 		& th[aria-sort='descending'] .sort-indicator::after {
-			border-top-color: white;
+			border-top-color: var(--text-1);
 		}
 
 		& thead tr th {
