@@ -37,7 +37,7 @@ export async function getData(): Promise<
 	const allDrivers = Object.values(allDriversData)
 		.map<DriverData>(toDriverData)
 		.reduce<Record<string, DriverData[]>>((acc, curr) => {
-			const key = curr.name.normalize('NFD').toLowerCase().charAt(0);
+			const key = curr.name.normalize('NFD').toUpperCase().charAt(0);
 
 			if (!Array.isArray(acc[key])) {
 				acc[key] = [];

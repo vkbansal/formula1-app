@@ -31,7 +31,7 @@ export interface BaseTableProps<T> {
 	rowId: keyof T | ((row: T) => string);
 	sortable?: boolean;
 	fixedLayout?: boolean;
-	stickyHeader?: boolean;
+	stickyHeader?: boolean | string;
 	small?: boolean;
 }
 
@@ -127,7 +127,11 @@ export function Table<T>(props: TableProps<T> | SortableTableProps<T>): VNode {
 				'table-sm': small,
 			})}
 		>
-			<thead>
+			<thead
+				style={
+					typeof stickyHeader === 'string' ? { top: stickyHeader } : undefined
+				}
+			>
 				<tr>
 					{columns.map((col) => {
 						return (

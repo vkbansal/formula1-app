@@ -10,7 +10,7 @@ export function Nationality(props: NationalityProps): VNode {
 		<span
 			class={cx(
 				'nationality',
-				props.nationality.normalize('NFD').toLowerCase(),
+				props.nationality.normalize('NFD').toLowerCase().replace(/\s/g, '_'),
 			)}
 		/>
 	);

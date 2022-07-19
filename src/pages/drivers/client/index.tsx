@@ -2,9 +2,11 @@ import { Fragment, h, render, type VNode } from 'preact';
 import type { DriverData } from 'pages/drivers/drivers.11ty';
 import { Table, type SortableTableColumn } from 'client/components/Table';
 import { Nationality } from 'client/components/Nationality';
+import { CharNav } from 'client/components/CharNav';
+import { useState } from 'preact/hooks';
 
-// declare const currentSeason: number;
-// declare const allDrivers: Record<'string', DriverData[]>;
+declare const currentSeason: number;
+declare const allDrivers: Record<string, DriverData[]>;
 declare const currentDrivers: DriverData[];
 
 const columns: SortableTableColumn<DriverData>[] = [
@@ -52,11 +54,20 @@ const columns: SortableTableColumn<DriverData>[] = [
 ];
 
 function DriversData(): VNode {
+	const [active, setActive] = useState('');
+	let data = currentDrivers;
+
+	if (active in allDrivers) {
+		data = allDrivers[active];
+	}
+
 	return (
 		<Fragment>
+			<CharNav currentSeason={currentSeason} onCharChange={setActive} />
 			<Table
+				stickyHeader="2.5rem"
 				sortable
-				data={currentDrivers}
+				data={data}
 				columns={columns}
 				rowId="driverRef"
 			/>

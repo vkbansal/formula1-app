@@ -3,7 +3,7 @@ import { injectGlobal } from '@emotion/css';
 injectGlobal`
 .nationality {
 	&::before {
-		content: '#{$value}';
+		content: '';
 		font-size: 1.5em;
 		margin-right: 0.35rem;
 		line-height: 2px;
