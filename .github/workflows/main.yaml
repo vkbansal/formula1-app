@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Lint
         run: |
           yarn
@@ -29,7 +29,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Type Check
         run: |
           yarn
@@ -44,7 +44,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Prettier
         run: |
           yarn
@@ -63,7 +63,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Publish
         uses: netlify/actions/cli@master
         with:
