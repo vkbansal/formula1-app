@@ -1,48 +1,35 @@
 ---
+import f1Logo from 'images/f1-logo.svg';
+
 const url = Astro.canonicalURL.pathname;
 ---
 
 <header class='main'>
 	<div class='container'>
 		<a href='/' class='logo'>
-			<span>F1</span>
+			<img src={f1Logo} width='120' height='30' alt='Formula 1 Logo' />
 			<span>Statistics</span>
 		</a>
 		<nav class='nav'>
 			<a
 				href='/seasons'
-				class:list={[
-					'nav-link',
-					{ 'nav-link-active': url.startsWith('/seasons/') },
-				]}
+				class:list={['nav-link', { 'nav-link-active': url.startsWith('/seasons/') }]}
 			>
 				Seasons
 			</a>
 			<a
 				href='/constructors'
-				class:list={[
-					'nav-link',
-					{ 'nav-link-active': url.startsWith('/constructors/') },
-				]}
+				class:list={['nav-link', { 'nav-link-active': url.startsWith('/constructors/') }]}
 			>
 				Constructors
 			</a>
 			<a
 				href='/drivers'
-				class:list={[
-					'nav-link',
-					{ 'nav-link-active': url.startsWith('/drivers/') },
-				]}
+				class:list={['nav-link', { 'nav-link-active': url.startsWith('/drivers/') }]}
 			>
 				Drivers
 			</a>
-			<a
-				href='/about'
-				class:list={[
-					'nav-link',
-					{ 'nav-link-active': url.startsWith('/about/') },
-				]}
-			>
+			<a href='/about' class:list={['nav-link', { 'nav-link-active': url.startsWith('/about/') }]}>
 				About
 			</a>
 			<label for='theme-toggle' class='theme-toggle' title='Theme'>
@@ -70,14 +57,16 @@ const url = Astro.canonicalURL.pathname;
 
 	.logo {
 		display: block;
-		font-size: 2.5rem;
+		font-size: 2rem;
 		text-decoration: none;
 		font-family: var(--font-family);
-		font-weight: 500;
+		font-weight: 400;
 
 		& span:first-child {
 			color: var(--f1-red);
 			font-weight: 700;
+			font-size: 2.5rem;
+			margin-right: -0.5rem;
 		}
 	}
 
@@ -89,24 +78,32 @@ const url = Astro.canonicalURL.pathname;
 	}
 
 	.nav-link {
+		display: inline-block;
 		text-decoration: none;
-		font-weight: bold;
-		transform-origin: center center;
-		transition: 0.2s ease-in-out;
+		font-weight: 500;
+		position: relative;
 
-		&:hover {
-			transform: scale(1.1);
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 100%;
+			left: 0;
+			height: 0.2em;
+			width: 100%;
+			background-color: var(--f1-red);
+			transition: transform 0.2s ease-in-out;
+			transform-origin: left center;
+			transform: scaleX(0);
 		}
 
-		&.active {
-			color: var(--f1-red);
-			transform: scale(1.1);
+		&:hover::after {
+			transform: scaleX(1);
 		}
 	}
 
-	.nav-link-active {
-		color: var(--f1-red);
-		transform: scale(1.1);
+	.nav-link-active::after {
+		transform: scaleX(1);
 	}
 
 	$switch_width: 2.75rem;
@@ -125,7 +122,7 @@ const url = Astro.canonicalURL.pathname;
 		background: var(--black);
 		position: relative;
 		overflow: hidden;
-		box-shadow: 0 0 0 1px var(--text-2);
+		box-shadow: 0 0 0 1px var(--border);
 		cursor: pointer;
 
 		& > input {
@@ -141,7 +138,7 @@ const url = Astro.canonicalURL.pathname;
 			display: inline-block;
 			height: $toggle_size;
 			width: $toggle_size;
-			background: white;
+			background: var(--white);
 			border-radius: 50%;
 			left: 0;
 			top: 0;
@@ -167,7 +164,7 @@ const url = Astro.canonicalURL.pathname;
 				font-size: 0.8em;
 				left: 0;
 				justify-content: flex-end;
-				transform: translate(-3%, -5%);
+				transform: translate(-10%, 0%);
 			}
 
 			&::before {
@@ -175,7 +172,7 @@ const url = Astro.canonicalURL.pathname;
 				font-size: 0.7em;
 				right: 0;
 				justify-content: flex-start;
-				transform: translate(3%, -5%);
+				transform: translate(10%, 0%);
 			}
 		}
 

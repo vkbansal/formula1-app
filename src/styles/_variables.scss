@@ -7,12 +7,7 @@
 	--black: #1f1f27;
 	--header-height: 4.5rem;
 	--footer-height: 3rem;
-	--gradient-primary: linear-gradient(
-		to bottom right,
-		var(--primary-main),
-		var(--primary-dark)
-	);
-	--f1-red: #e10600;
+	--f1-red: #ee0000;
 }
 
 /*=====================================================
@@ -26,8 +21,6 @@
 	--gray-lighter: #f9f9f9;
 	--border: #dadce5;
 	--border-light: var(--gray-light);
-	--shadow-opacity: 0.2;
-	--shadow: 0 10px 10px rgba(0, 0, 0, var(--shadow-opacity));
 }
 
 /*=====================================================
@@ -39,10 +32,8 @@
 	--text-light: #b2b2b3;
 	--gray-light: #454854;
 	--gray-lighter: #303340;
-	--border: #35394b;
+	--border: #474747;
 	--border-light: var(--gray-light);
-	--shadow-opacity: 0.2;
-	--shadow: 0 10px 10px rgba(0, 0, 0, var(--shadow-opacity));
 }
 
 :root {

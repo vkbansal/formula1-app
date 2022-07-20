@@ -31,38 +31,41 @@ const { title } = Astro.props;
 			<slot></slot>
 		</div>
 		<Footer />
-		<style lang='scss'>
-			.content-wrapper {
-				width: 100%;
-				min-height: calc(100vh - var(--header-height) - var(--footer-height));
-				border: 1px solid transparent;
-			}
-		</style>
-
-		<script define:vars={{ buildTime }}>
-			try {
-				// theme handling
-				const mql = window.matchMedia('(prefers-color-scheme: dark)');
-				const themeToggle = document.getElementById('theme-toggle');
-				const themeFromStorage = localStorage.getItem('theme');
-				const appliedTheme =
-					themeFromStorage || (mql.matches ? 'dark' : 'light');
-				document.body.parentElement.dataset.theme = appliedTheme;
-
-				if (themeToggle) {
-					themeToggle.checked = appliedTheme === 'dark';
-					themeToggle.addEventListener('change', function () {
-						const theme = this.checked ? 'dark' : 'light';
-						localStorage.setItem('theme', theme);
-						document.body.parentElement.dataset.theme = theme;
-					});
-				}
-
-				// build time handling
-				document.getElementById('last-updated').innerHTML = new Date(
-					buildTime,
-				).toLocaleString();
-			} catch (e) {}
-		</script>
 	</body>
 </html>
+
+
+<style lang='scss'>
+	.content-wrapper {
+		width: 100%;
+		min-height: calc(100vh - var(--header-height) - var(--footer-height));
+		border: 1px solid transparent;
+		position: relative;
+	}
+</style>
+
+<script define:vars={{ buildTime }}>
+	try {
+		// theme handling
+		const mql = window.matchMedia('(prefers-color-scheme: dark)');
+		const themeToggle = document.getElementById('theme-toggle');
+		const themeFromStorage = localStorage.getItem('theme');
+		const appliedTheme =
+			themeFromStorage || (mql.matches ? 'dark' : 'light');
+		document.body.parentElement.dataset.theme = appliedTheme;
+
+		if (themeToggle) {
+			themeToggle.checked = appliedTheme === 'dark';
+			themeToggle.addEventListener('change', function () {
+				const theme = this.checked ? 'dark' : 'light';
+				localStorage.setItem('theme', theme);
+				document.body.parentElement.dataset.theme = theme;
+			});
+		}
+
+		// build time handling
+		document.getElementById('last-updated').innerHTML = new Date(
+			buildTime,
+		).toLocaleString();
+	} catch (e) {}
+</script>

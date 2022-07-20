@@ -1,79 +1,130 @@
 ---
 import MainLayout from 'layouts/MainLayout.astro';
 import getData from 'queries/entities-count.sql';
+import f1Logo from 'images/f1-logo.svg';
 
 const [numOfEntities] = await getData();
 ---
 
 <MainLayout title='Home'>
 	<div class='wrapper'>
-		<section class='section'>
-			A total of&nbsp;
-			<a class='link' href='/seasons'>
-				{numOfEntities.seasons - 1} Seasons
-			</a>
-			&nbsp;of&nbsp;&nbsp;
-			<span class='fact'>The Formula 1 World Championships</span>
-			&nbsp;have been held till date.&nbsp;
-			<a class='link' href='/drivers'>
-				{numOfEntities.drivers} Drivers
-			</a>
-			&nbsp;from&nbsp;
-			<span class='fact'>
-				{numOfEntities.driverNationalities} countries
-			</span>
-			&nbsp;and&nbsp;
-			<a class='link' href='/constructors'>
-				{numOfEntities.constructors} Constructors
-			</a>
-			&nbsp;from&nbsp;
-			<span class='fact'>
-				{numOfEntities.constructorNationalities} countries
-			</span>
-			&nbsp;have participated in&nbsp;
-			<span class='fact'>{numOfEntities.races} Grand Prix</span>
-			&nbsp;races on&nbsp;
-			<span class='fact'>{numOfEntities.circuits} Circuits</span>
-			&nbsp;across&nbsp;
-			<span class='fact'>{numOfEntities.circuitCountries} Nations</span>
-			&nbsp;.
-		</section>
+		<div>
+			Till date, there have been <span class='facts-typing fact'><span id='facts'></span></span>
+			<br /> in the
+			<span class='fact'> <img src={f1Logo} height='40' /> World Championships</span>
+		</div>
 	</div>
 </MainLayout>
+
+<script define:vars={{ numOfEntities }}>
+	(() => {
+		const facts = document.getElementById('facts');
+		const linesToType = [
+			`${numOfEntities.seasons - 1} Seasons`,
+			`${numOfEntities.drivers} Drivers`,
+			`${numOfEntities.constructors} Constructors`,
+			`${numOfEntities.races} Grand prix races`,
+		];
+
+		let currentLine = 0;
+		let eraseLine = false;
+		facts.innerHTML = '';
+
+		function type() {
+			if (!facts) return;
+
+			const lineToType = linesToType[currentLine];
+			const typedLine = facts.innerHTML;
+			let update = facts.innerHTML;
+			let timeout = 100;
+
+			// check is erase flag is true
+			if (eraseLine) {
+				// remove a char from end
+				update = typedLine.slice(0, -1);
+
+				// if erase is complete, reset the erase flag
+				if (update === '') {
+					eraseLine = false;
+				}
+			} else {
+				let charToType = linesToType[currentLine].charAt(typedLine.length);
+				update = typedLine + charToType;
+
+				// if the line is complete, increase the delay before start erasing
+				if (update === lineToType) {
+					eraseLine = true;
+					currentLine = (currentLine + 1) % linesToType.length;
+					timeout = 2000;
+				}
+			}
+
+			facts.innerHTML = update;
+			window.setTimeout(type, timeout);
+		}
+
+		type();
+	})();
+</script>
 
 <style lang='scss'>
 	.wrapper {
 		margin: -1rem 0;
+		display: flex;
+		font-size: 3rem;
+		line-height: 2;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
 	}
 
-	.section {
-		padding: 4rem 0;
-		font-size: 1.75rem;
-		color: var(--text-2);
-		line-height: 8rem;
+	.facts-typing {
+		display: inline-block;
+		width: 16ch;
+		text-align: left;
+
+		& > span {
+			display: inline-block;
+
+			&::after {
+				content: '';
+				display: inline-block;
+				width: 0.15rem;
+				height: 1.3em;
+				animation: blink 1s infinite;
+				background: currentColor;
+				transform: translate(100%, 20%);
+			}
+		}
 	}
 
 	.fact {
-		font-size: 3rem;
 		font-weight: 700;
 		display: inline-block;
 		white-space: nowrap;
-		color: var(--text-1);
+		line-height: inherit;
+		font-size: 1.1em;
 	}
 
-	.link {
-		font-weight: 700;
-		display: inline-block;
-		white-space: nowrap;
-		text-decoration: underline;
-		text-decoration-style: dashed;
-		text-decoration-thickness: 10%;
-		transition: color 0.3s ease-out;
-		position: relative;
-		font-size: 5rem;
-
-		&:hover {
-			color: var(--f1-red);
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		49% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		99% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
 		}
 	}
 </style>

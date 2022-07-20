@@ -18,6 +18,7 @@ body {
 	line-height: 1.5;
 	color: var(--text-main);
 	background-color: var(--body-bg);
+	transition: background-color 0.2s ease-out, color 0.2s ease-out;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	height: 100%;
@@ -149,4 +150,13 @@ ul {
 	@media screen and (max-width: 1900px) {
 		padding: 0 2rem;
 	}
+}
+
+.text-f1 {
+	color: var(--f1-red);
+}
+
+.text-2,
+.text-light {
+	color: var(--text-light);
 }

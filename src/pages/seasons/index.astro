@@ -10,19 +10,22 @@ seasons.reverse();
 ---
 
 <MainLayout title='Home'>
-	<h1>Formula 1 Seasons</h1>
-	<p>* - Current Season</p>
+	<h1>All Seasons</h1>
+	<p class='text-light'>* - Current Season</p>
 	<section class='seasons-grid'>
 		{seasons.map(({ year: season }) => (
 			<div class="season-card">
-				<a href={`/seasons/${season}/`}>
+				<a
+					href={`/seasons/${season}/`}
+					class:list={{ 'current-season': metadata.currentSeason === season }}
+				>
 					{season}
-					{metadata.currentSeason === season ? '*' : ''}
 				</a>
 			</div>
 		))}
 		{extraBoxes.map(() => <div class="season-card" />)}
 	</section>
+	<br />
 </MainLayout>
 
 <style lang='scss' define:vars={{ 'grid-width': gridWidth }}>
@@ -42,6 +45,7 @@ seasons.reverse();
 
 		& > a {
 			font-size: 2.25rem;
+			font-weight: 700;
 			display: flex;
 			text-decoration: none;
 			align-items: center;
@@ -53,6 +57,10 @@ seasons.reverse();
 
 			&:hover {
 				transform: scale(1.35);
+			}
+
+			&.current-season::after {
+				content: '*';
 			}
 		}
 
