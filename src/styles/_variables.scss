@@ -1,0 +1,56 @@
+:root {
+	--font-family: 'Work Sans', sans-serif;
+}
+
+@mixin common-vars {
+	--white: #ffffff;
+	--black: #1f1f27;
+	--header-height: 4.5rem;
+	--footer-height: 3rem;
+	--gradient-primary: linear-gradient(
+		to bottom right,
+		var(--primary-main),
+		var(--primary-dark)
+	);
+	--f1-red: #e10600;
+}
+
+/*=====================================================
+	light theme colors
+=====================================================*/
+@mixin theme-light {
+	--body-bg: #ffffff;
+	--text-main: #161f38;
+	--text-light: #575861;
+	--gray-light: #efefef;
+	--gray-lighter: #f9f9f9;
+	--border: #dadce5;
+	--border-light: var(--gray-light);
+	--shadow-opacity: 0.2;
+	--shadow: 0 10px 10px rgba(0, 0, 0, var(--shadow-opacity));
+}
+
+/*=====================================================
+	dark theme colors
+=====================================================*/
+@mixin theme-dark {
+	--body-bg: #1f1f27;
+	--text-main: #f9f9fa;
+	--text-light: #b2b2b3;
+	--gray-light: #454854;
+	--gray-lighter: #303340;
+	--border: #35394b;
+	--border-light: var(--gray-light);
+	--shadow-opacity: 0.2;
+	--shadow: 0 10px 10px rgba(0, 0, 0, var(--shadow-opacity));
+}
+
+:root {
+	@include common-vars;
+	@include theme-light;
+}
+
+[data-theme='dark'] {
+	@include common-vars;
+	@include theme-dark;
+}

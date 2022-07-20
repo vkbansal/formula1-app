@@ -1,0 +1,79 @@
+---
+import MainLayout from 'layouts/MainLayout.astro';
+import getData from 'queries/entities-count.sql';
+
+const [numOfEntities] = await getData();
+---
+
+<MainLayout title='Home'>
+	<div class='wrapper'>
+		<section class='section'>
+			A total of&nbsp;
+			<a class='link' href='/seasons'>
+				{numOfEntities.seasons - 1} Seasons
+			</a>
+			&nbsp;of&nbsp;&nbsp;
+			<span class='fact'>The Formula 1 World Championships</span>
+			&nbsp;have been held till date.&nbsp;
+			<a class='link' href='/drivers'>
+				{numOfEntities.drivers} Drivers
+			</a>
+			&nbsp;from&nbsp;
+			<span class='fact'>
+				{numOfEntities.driverNationalities} countries
+			</span>
+			&nbsp;and&nbsp;
+			<a class='link' href='/constructors'>
+				{numOfEntities.constructors} Constructors
+			</a>
+			&nbsp;from&nbsp;
+			<span class='fact'>
+				{numOfEntities.constructorNationalities} countries
+			</span>
+			&nbsp;have participated in&nbsp;
+			<span class='fact'>{numOfEntities.races} Grand Prix</span>
+			&nbsp;races on&nbsp;
+			<span class='fact'>{numOfEntities.circuits} Circuits</span>
+			&nbsp;across&nbsp;
+			<span class='fact'>{numOfEntities.circuitCountries} Nations</span>
+			&nbsp;.
+		</section>
+	</div>
+</MainLayout>
+
+<style lang='scss'>
+	.wrapper {
+		margin: -1rem 0;
+	}
+
+	.section {
+		padding: 4rem 0;
+		font-size: 1.75rem;
+		color: var(--text-2);
+		line-height: 8rem;
+	}
+
+	.fact {
+		font-size: 3rem;
+		font-weight: 700;
+		display: inline-block;
+		white-space: nowrap;
+		color: var(--text-1);
+	}
+
+	.link {
+		font-weight: 700;
+		display: inline-block;
+		white-space: nowrap;
+		text-decoration: underline;
+		text-decoration-style: dashed;
+		text-decoration-thickness: 10%;
+		transition: color 0.3s ease-out;
+		position: relative;
+		font-size: 5rem;
+
+		&:hover {
+			color: var(--f1-red);
+		}
+	}
+</style>
