@@ -22,7 +22,61 @@ declare module 'data/metadata.yaml' {
 }
 
 declare module 'data/seasons/*.yaml' {
-	const data: number[];
+	export interface DriverStanding {
+		driverRef: string;
+		position: number;
+		points: number;
+		wins: number;
+	}
+
+	export interface ConstructorStanding {
+		constructorRef: string;
+		position: number;
+		points: number;
+		wins: number;
+	}
+
+	export interface Podium {
+		constructorRef: string;
+		driverRef: string;
+		position: number;
+	}
+
+	export interface Round {
+		raceId: number;
+		year: number;
+		round: number;
+		name: string;
+		date: string;
+		circuit: {
+			name: string;
+			location: string;
+			country: string;
+		};
+		podium: Podium[];
+		driverStandings: DriverStanding[];
+		constructorStandings: ConstructorStanding[];
+	}
+
+	export interface Driver {
+		driverRef: string;
+		name: string;
+		nationality: string;
+	}
+
+	export interface Constructor {
+		constructorRef: string;
+		name: string;
+		nationality: string;
+	}
+
+	export interface Season {
+		rounds: Round[];
+		drivers: Driver[];
+		constructors: Constructor[];
+	}
+
+	const data: Season;
 	export default data;
 }
 
@@ -32,6 +86,6 @@ declare module 'data/seasons.yaml' {
 }
 
 declare module '*.yaml' {
-	const data: Record<string, any>;
+	const data: Record<string, unknown>;
 	export default data;
 }

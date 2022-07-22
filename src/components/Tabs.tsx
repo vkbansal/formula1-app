@@ -1,53 +1,61 @@
-import { h, type VNode, type ComponentChildren } from 'preact';
+import { h, type VNode, type ComponentChildren, toChildArray, type RenderableProps } from 'preact';
 import { useState } from 'preact/hooks';
 import cx from 'classnames';
 
-export interface Tab {
+export interface TabPanelProps {
 	id: string;
 	title: ComponentChildren;
-	content: ComponentChildren;
-	panelClass?: string;
-	tabClass?: string;
+	class?: string;
+	titleClass?: string;
 }
 
 export interface TabsProps {
-	tabs: Tab[];
 	defaultActiveTab?: number;
 	class?: string;
+	children: VNode<TabPanelProps> | VNode<TabPanelProps>[];
 }
 
 export function Tabs(props: TabsProps): VNode {
 	const [activeTab, setActiveTab] = useState(props.defaultActiveTab ?? 0);
+	const tabs = toChildArray(props.children).filter(
+		(c) => (c as VNode<TabPanelProps>).type == TabsPanel,
+	) as VNode<TabPanelProps>[];
 
 	return (
 		<div class={cx('tabs', props.class)}>
 			<div class="tab-list" role="tablist">
-				{props.tabs.map((tab, i) => (
+				{tabs.map((tab, i) => (
 					<div
-						key={tab.id}
+						key={tab.props.id}
 						role="tab"
-						class={cx('tab', { 'tab-active': activeTab === i }, tab.tabClass)}
+						class={cx('tab', { 'tab-active': activeTab === i }, tab.props.titleClass)}
 						onClick={(): void => setActiveTab(i)}
 					>
-						{tab.title}
+						{tab.props.title}
 					</div>
 				))}
 			</div>
-			{props.tabs.map((tab, i) => (
+			{tabs.map((tab, i) => (
 				<div
-					key={tab.id}
+					key={tab.props.id}
 					role="tabpanel"
 					class={cx(
 						'tab-panel',
 						{
 							'tab-active': activeTab === i,
 						},
-						tab.panelClass,
+						tab.props.class,
 					)}
 				>
-					{tab.content}
+					{tab.props.children}
 				</div>
 			))}
 		</div>
 	);
 }
+
+function TabsPanel(props: RenderableProps<TabPanelProps>): VNode {
+	return <div>{props.children}</div>;
+}
+
+Tabs.Panel = TabsPanel;

@@ -1,0 +1,113 @@
+---
+import MainLayout from 'layouts/MainLayout.astro';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+
+import seasons from 'data/seasons.yaml';
+import metadata from 'data/metadata.yaml';
+import type { Season } from 'data/seasons/1950.yaml';
+import { SeasonsClient } from 'client/seaons/seasons';
+import colors from 'helpers/colors';
+
+export async function getStaticPaths() {
+	return seasons.map((year) => ({ params: { year: year.toString() } }));
+}
+
+const { year: yearStr } = Astro.params;
+const year = parseInt(yearStr as string, 10);
+const {
+	default: { rounds, drivers, constructors },
+} = (await import(`../../data/seasons/${yearStr}.yaml`)) as { default: Season };
+const driverColors = drivers.reduce((p, c, i) => {
+	p[`drivers-color-${c.driverRef}`] = colors[i];
+	return p;
+}, {} as Record<string, string>);
+
+const constructorsColors = constructors.reduce((p, c, i) => {
+	p[`constructors-color-${c.constructorRef}`] = colors[i];
+	return p;
+}, {} as Record<string, string>);
+---
+
+<MainLayout title='Home'>
+	<Breadcrumbs
+		links={[
+			{ label: 'Seasons', href: '/seasons/' },
+			{ label: `${year} Season`, href: '' },
+		]}
+	/>
+	<div>
+		<h1>
+			{year} Season {metadata.currentSeason === year ? '(Current Season)' : ''}
+		</h1>
+	</div>
+	<div class='season-tabs'>
+		<SeasonsClient rounds={rounds} drivers={drivers} constructors={constructors} client:load />
+	</div>
+</MainLayout>
+
+<style lang='scss' define:vars={{ ...driverColors, ...constructorsColors }}>
+	.season-tabs {
+		margin: 0 0 2rem 0;
+
+		// & .tab-panel.races-table-tab {
+		// 	padding: 1rem 0 3rem 0;
+		// }
+
+		// & .tab-panel {
+		// 	padding: 0 2rem 2rem 2rem;
+		// }
+
+		& .line-group {
+			cursor: pointer;
+
+			& > circle:hover {
+				fill: white;
+			}
+		}
+
+		& :global(.points-chart) {
+			display: grid;
+			grid-template-columns: 4fr minmax(400px, 1fr);
+		}
+
+		& :global(.points-legend) {
+			padding-top: 2rem;
+		}
+
+		& .points-legend-position {
+			display: grid;
+			grid-template-columns: 4ch 1fr;
+			column-gap: 0.5em;
+
+			& > span[data-gain] {
+				font-size: 0.875em;
+				opacity: 0.7;
+			}
+
+			& > span[data-gain='1']::before {
+				content: '▲';
+				color: green;
+			}
+
+			& > span[data-gain='-1']::before {
+				content: '▼';
+				color: red;
+			}
+		}
+
+		& .points-legend-label {
+			display: flex;
+			align-items: center;
+
+			&::before {
+				content: '';
+				display: block;
+				width: 1em;
+				height: 1em;
+				border-radius: 2px;
+				background-color: var(--legend-color);
+				margin-right: 0.5em;
+			}
+		}
+	}
+</style>

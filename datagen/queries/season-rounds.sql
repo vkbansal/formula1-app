@@ -6,8 +6,18 @@ SELECT
 	`T2`.`date`,
 	`T2`.`time`,
 	`T2`.`circuit`,
-	`D`.`driverRef` AS `winnerDriver`,
-	`C`.`constructorRef` AS `winnerConstructor`,
+	IF(
+		COUNT(`D`.`driverRef`) = 0,
+		JSON_ARRAY(),
+		JSON_ARRAYAGG(
+			JSON_OBJECT(
+				'driverRef', `D`.`driverRef`,
+				'constructorRef', `C`.`constructorRef`,
+				'position', `R`.`position`
+			) ORDER BY `R`.`position` ASC
+		)
+	)
+	AS `podium`,
 	`T2`.`driverStandings`,
 	`T2`.`constructorStandings`
 FROM (
@@ -48,7 +58,7 @@ FROM (
 			`R`.`year`,
 			`R`.`round`,
 			`R`.`name`,
-			`R`.`date`,
+			DATE_FORMAT(`R`.`date`, '%D %b %Y') AS `date`,
 			`R`.`time`,
 			`R`.`circuitId`,
 			IF(
@@ -76,7 +86,8 @@ FROM (
 LEFT OUTER JOIN `results` AS `R`
 ON
 	`R`.`raceId` = `T2`.`raceId` AND
-	`R`.`position` = 1
+	`R`.`position` <= 3
 LEFT OUTER JOIN `drivers` AS `D` USING (`driverId`)
 LEFT OUTER JOIN `constructors` AS `C` USING (`constructorId`)
+GROUP BY `T2`.`raceId`
 ORDER BY `T2`.`round` ASC

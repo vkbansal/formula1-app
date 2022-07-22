@@ -15,11 +15,7 @@ module.exports = {
 		es6: true,
 		browser: true,
 	},
-	extends: [
-		'eslint:recommended',
-		'prettier',
-		'plugin:@typescript-eslint/recommended',
-	],
+	extends: ['eslint:recommended', 'prettier', 'plugin:@typescript-eslint/recommended'],
 	rules: {
 		'no-new-object': 2,
 		'no-lonely-if': 2,
@@ -35,7 +31,12 @@ module.exports = {
 				ignoreRestSiblings: true,
 			},
 		],
-		'@typescript-eslint/explicit-function-return-type': 2,
+		'@typescript-eslint/explicit-function-return-type': [
+			2,
+			{
+				allowHigherOrderFunctions: true,
+			},
+		],
 		'@typescript-eslint/consistent-type-imports': [
 			2,
 			{
