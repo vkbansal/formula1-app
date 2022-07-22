@@ -10,8 +10,3 @@ services:
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: yes
     volumes:
       - './initdb.d:/docker-entrypoint-initdb.d'
-  formula1-redis:
-    image: redis:7.0
-    container_name: formula1-redis
-    ports:
-      - '6379:6379'

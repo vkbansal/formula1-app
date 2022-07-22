@@ -36,7 +36,7 @@ export function Tabs(props: TabsProps): VNode {
 			{props.tabs.map((tab, i) => (
 				<div
 					key={tab.id}
-					role="tab-panel"
+					role="tabpanel"
 					class={cx(
 						'tab-panel',
 						{

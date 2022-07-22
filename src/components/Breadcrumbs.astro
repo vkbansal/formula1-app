@@ -1,0 +1,56 @@
+---
+export interface Link {
+	label: string;
+	href: string;
+}
+
+export interface Props {
+	links: Link[];
+}
+
+const { links } = Astro.props as Props;
+const restLinks = links.slice(0, links.length - 1);
+const lastLink = links.at(-1);
+---
+
+<div class='breadcrumbs'>
+	<a class='home-link' href='/'>🏠</a>
+	{restLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+	{lastLink ? <span>{lastLink.label}</span> : null}
+</div>
+
+<style lang='scss'>
+	.breadcrumbs {
+		margin: 1rem auto;
+
+		& > a,
+		& span:last-child {
+			display: inline-block;
+			font-size: 0.85rem;
+			text-decoration: none;
+		}
+
+		& > a {
+			opacity: 0.75;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+			&::after {
+				display: inline-block;
+				content: '/';
+				padding: 0 0.25rem;
+			}
+		}
+
+		& span:last-child {
+			color: var(--f1-red);
+			font-weight: 500;
+		}
+
+		& .home-link::after {
+			padding: 0 0.25rem 0 0.5rem;
+		}
+	}
+</style>

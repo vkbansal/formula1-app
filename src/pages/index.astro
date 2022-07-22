@@ -1,9 +1,7 @@
 ---
 import MainLayout from 'layouts/MainLayout.astro';
-import getData from 'queries/entities-count.sql';
+import numOfEntities from 'data/homepage.yaml';
 import f1Logo from 'images/f1-logo.svg';
-
-const [numOfEntities] = await getData();
 ---
 
 <MainLayout title='Home'>

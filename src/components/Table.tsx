@@ -48,7 +48,7 @@ export interface SortableTableProps<T> extends BaseTableProps<T> {
 export function Table<T>(props: TableProps<T> | SortableTableProps<T>): VNode {
 	const {
 		columns,
-		data,
+		data = [],
 		sortable,
 		fixedLayout,
 		stickyHeader,
@@ -63,8 +63,7 @@ export function Table<T>(props: TableProps<T> | SortableTableProps<T>): VNode {
 	const getRowId =
 		typeof _getRowId === 'function'
 			? _getRowId
-			: (row: T): ComponentChildren =>
-					row[_getRowId] as unknown as ComponentChildren;
+			: (row: T): ComponentChildren => row[_getRowId] as unknown as ComponentChildren;
 
 	function handleSort(colToSort: SortableTableColumn<T>): void {
 		if (!colToSort) {
@@ -127,31 +126,19 @@ export function Table<T>(props: TableProps<T> | SortableTableProps<T>): VNode {
 				'table-sm': small,
 			})}
 		>
-			<thead
-				style={
-					typeof stickyHeader === 'string' ? { top: stickyHeader } : undefined
-				}
-			>
+			<thead style={typeof stickyHeader === 'string' ? { top: stickyHeader } : undefined}>
 				<tr>
 					{columns.map((col) => {
 						return (
 							<th
 								key={col.id}
-								aria-sort={
-									sortCol === col.id
-										? sortAsc
-											? 'ascending'
-											: 'descending'
-										: undefined
-								}
+								aria-sort={sortCol === col.id ? (sortAsc ? 'ascending' : 'descending') : undefined}
 							>
 								{sortable ? (
 									<button
 										type="button"
 										class="sort-btn"
-										onClick={(): void =>
-											handleSort(col as SortableTableColumn<T>)
-										}
+										onClick={(): void => handleSort(col as SortableTableColumn<T>)}
 									>
 										<span>{col.title}</span>
 										<span aria-hidden="true" class="sort-indicator" />
@@ -170,10 +157,7 @@ export function Table<T>(props: TableProps<T> | SortableTableProps<T>): VNode {
 					return (
 						<tr key={rowId}>
 							{columns.map((col) => {
-								const data =
-									typeof col.data === 'function'
-										? col.data(row)
-										: row[col.data];
+								const data = typeof col.data === 'function' ? col.data(row) : row[col.data];
 
 								return (
 									<td

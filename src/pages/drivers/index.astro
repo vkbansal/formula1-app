@@ -1,0 +1,9 @@
+---
+import MainLayout from 'layouts/MainLayout.astro';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+---
+
+<MainLayout title='Home'>
+	<Breadcrumbs links={[{ label: 'Drivers', href: '/drivers/' }]} />
+	<h1>Drivers</h1>
+</MainLayout>

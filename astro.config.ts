@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
+import { load } from 'js-yaml';
 
-import sqlPlugin from './scripts/vite-sql-plugin.mjs';
+const YAML_FILE_REGEX = /\.ya?ml$/;
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +11,18 @@ export default defineConfig({
 	publicDir: './src/static',
 	integrations: [preact()],
 	vite: {
-		plugins: [sqlPlugin()],
+		plugins: [
+			{
+				name: 'yaml-plugin',
+				transform(src, id) {
+					if (YAML_FILE_REGEX.test(id)) {
+						return {
+							code: `export default ${JSON.stringify(load(src))}`,
+							map: null,
+						};
+					}
+				},
+			},
+		],
 	},
 });

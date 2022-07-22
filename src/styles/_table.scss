@@ -1,0 +1,151 @@
+.table {
+	border-collapse: collapse;
+	width: 100%;
+
+	&.table-fixed {
+		table-layout: fixed;
+	}
+
+	&.table-sticky-header {
+		& thead {
+			position: sticky;
+			top: 0;
+
+			& tr {
+				background-color: var(--bg);
+			}
+		}
+	}
+
+	& thead tr,
+	& tbody tr {
+		border-bottom: 1px solid transparent;
+		box-shadow: 0px 1px 0px var(--divider);
+	}
+
+	& thead tr th,
+	& tbody tr td {
+		padding: 1em;
+		text-align: left;
+
+		&:first-child {
+			padding-left: 2em;
+		}
+
+		&:last-child {
+			padding-right: 2em;
+		}
+	}
+
+	& thead tr th {
+		text-transform: uppercase;
+		font-size: 0.85em;
+		color: var(--text-2);
+	}
+
+	&.table-sortable {
+		& tbody tr td {
+			padding-right: 2em;
+		}
+
+		& .sort-btn {
+			position: relative;
+			cursor: pointer;
+			background: transparent;
+			border: none;
+			width: 100%;
+			color: currentColor;
+			padding: 1em 2em 1em 1em;
+			text-align: left;
+
+			& > .sort-indicator {
+				position: absolute;
+				right: 1em;
+				top: 50%;
+				transform: translateY(-50%);
+				display: inline-block;
+				width: 1em;
+				height: 1em;
+
+				&::before,
+				&::after {
+					content: '';
+					display: block;
+					position: absolute;
+					right: 0;
+					width: 0;
+					height: 0;
+					border: 0.35em solid transparent;
+					transition: border-color 0.3s ease-in-out;
+				}
+
+				&::before {
+					top: 0;
+					right: 0;
+					transform: translateY(-50%);
+					border-bottom-color: var(--divider);
+					opacity: 1;
+				}
+
+				&::after {
+					bottom: 0;
+					right: 0;
+					transform: translateY(50%);
+					border-top-color: var(--divider);
+					opacity: 1;
+				}
+			}
+		}
+
+		& th[aria-sort='ascending'] {
+			& .sort-indicator::before {
+				border-bottom-color: var(--text-1);
+				transform: translateY(-25%) scale(1.4);
+			}
+
+			& .sort-indicator::after {
+				opacity: 0;
+			}
+		}
+
+		& th[aria-sort='descending'] {
+			& .sort-indicator::before {
+				opacity: 0;
+			}
+
+			& .sort-indicator::after {
+				transform: translateY(0%) scale(1.4);
+				border-top-color: var(--text-1);
+			}
+		}
+
+		& thead tr th {
+			padding: 0;
+			text-align: left;
+
+			&:first-child > .sort-btn {
+				padding-left: 2em;
+			}
+
+			&:last-child > .sort-btn {
+				padding-right: 2em;
+			}
+		}
+	}
+
+	&.table-sm {
+		& thead tr th,
+		& tbody tr td {
+			padding: 0.25em 0.5em;
+			text-align: left;
+
+			&:first-child {
+				padding-left: 1em;
+			}
+
+			&:last-child {
+				padding-right: 1em;
+			}
+		}
+	}
+}

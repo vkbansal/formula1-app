@@ -1,0 +1,3184 @@
+# This file is auto-generated, please DO NOT MODIFY it directly
+rounds:
+  - raceId: 1052
+    year: 2021
+    round: 1
+    name: Bahrain Grand Prix
+    date: '2021-03-28'
+    time: '15:00:00'
+    circuit:
+      name: Bahrain International Circuit
+      location: Sakhir
+      country: Bahrain
+    driverStandings:
+      - driverRef: hamilton
+        position: 1
+        points: 25
+        wins: 1
+      - driverRef: max_verstappen
+        position: 2
+        points: 18
+        wins: 0
+      - driverRef: bottas
+        position: 3
+        points: 16
+        wins: 0
+      - driverRef: norris
+        position: 4
+        points: 12
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 10
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 8
+        wins: 0
+      - driverRef: ricciardo
+        position: 7
+        points: 6
+        wins: 0
+      - driverRef: sainz
+        position: 8
+        points: 4
+        wins: 0
+      - driverRef: tsunoda
+        position: 9
+        points: 2
+        wins: 0
+      - driverRef: stroll
+        position: 10
+        points: 1
+        wins: 0
+      - driverRef: raikkonen
+        position: 11
+        points: 0
+        wins: 0
+      - driverRef: giovinazzi
+        position: 12
+        points: 0
+        wins: 0
+      - driverRef: ocon
+        position: 13
+        points: 0
+        wins: 0
+      - driverRef: russell
+        position: 14
+        points: 0
+        wins: 0
+      - driverRef: vettel
+        position: 15
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 16
+        points: 0
+        wins: 0
+      - driverRef: gasly
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: alonso
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 41
+        wins: 1
+      - constructorRef: red_bull
+        position: 2
+        points: 28
+        wins: 0
+      - constructorRef: mclaren
+        position: 3
+        points: 18
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 12
+        wins: 0
+      - constructorRef: alphatauri
+        position: 5
+        points: 2
+        wins: 0
+      - constructorRef: aston_martin
+        position: 6
+        points: 1
+        wins: 0
+      - constructorRef: alfa
+        position: 7
+        points: 0
+        wins: 0
+      - constructorRef: alpine
+        position: 8
+        points: 0
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - raceId: 1053
+    year: 2021
+    round: 2
+    name: Emilia Romagna Grand Prix
+    date: '2021-04-18'
+    time: '13:00:00'
+    circuit:
+      name: Autodromo Enzo e Dino Ferrari
+      location: Imola
+      country: Italy
+    driverStandings:
+      - driverRef: hamilton
+        position: 1
+        points: 44
+        wins: 1
+      - driverRef: max_verstappen
+        position: 2
+        points: 43
+        wins: 1
+      - driverRef: norris
+        position: 3
+        points: 27
+        wins: 0
+      - driverRef: leclerc
+        position: 4
+        points: 20
+        wins: 0
+      - driverRef: bottas
+        position: 5
+        points: 16
+        wins: 0
+      - driverRef: sainz
+        position: 6
+        points: 14
+        wins: 0
+      - driverRef: ricciardo
+        position: 7
+        points: 14
+        wins: 0
+      - driverRef: perez
+        position: 8
+        points: 10
+        wins: 0
+      - driverRef: gasly
+        position: 9
+        points: 6
+        wins: 0
+      - driverRef: stroll
+        position: 10
+        points: 5
+        wins: 0
+      - driverRef: tsunoda
+        position: 11
+        points: 2
+        wins: 0
+      - driverRef: ocon
+        position: 12
+        points: 2
+        wins: 0
+      - driverRef: alonso
+        position: 13
+        points: 1
+        wins: 0
+      - driverRef: raikkonen
+        position: 14
+        points: 0
+        wins: 0
+      - driverRef: giovinazzi
+        position: 15
+        points: 0
+        wins: 0
+      - driverRef: russell
+        position: 16
+        points: 0
+        wins: 0
+      - driverRef: vettel
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 60
+        wins: 1
+      - constructorRef: red_bull
+        position: 2
+        points: 53
+        wins: 1
+      - constructorRef: mclaren
+        position: 3
+        points: 41
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 34
+        wins: 0
+      - constructorRef: alphatauri
+        position: 5
+        points: 8
+        wins: 0
+      - constructorRef: aston_martin
+        position: 6
+        points: 5
+        wins: 0
+      - constructorRef: alpine
+        position: 7
+        points: 3
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 0
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1054
+    year: 2021
+    round: 3
+    name: Portuguese Grand Prix
+    date: '2021-05-02'
+    time: '14:00:00'
+    circuit:
+      name: Autódromo Internacional do Algarve
+      location: Portimão
+      country: Portugal
+    driverStandings:
+      - driverRef: hamilton
+        position: 1
+        points: 69
+        wins: 2
+      - driverRef: max_verstappen
+        position: 2
+        points: 61
+        wins: 1
+      - driverRef: norris
+        position: 3
+        points: 37
+        wins: 0
+      - driverRef: bottas
+        position: 4
+        points: 32
+        wins: 0
+      - driverRef: leclerc
+        position: 5
+        points: 28
+        wins: 0
+      - driverRef: perez
+        position: 6
+        points: 22
+        wins: 0
+      - driverRef: ricciardo
+        position: 7
+        points: 16
+        wins: 0
+      - driverRef: sainz
+        position: 8
+        points: 14
+        wins: 0
+      - driverRef: ocon
+        position: 9
+        points: 8
+        wins: 0
+      - driverRef: gasly
+        position: 10
+        points: 7
+        wins: 0
+      - driverRef: stroll
+        position: 11
+        points: 5
+        wins: 0
+      - driverRef: alonso
+        position: 12
+        points: 5
+        wins: 0
+      - driverRef: tsunoda
+        position: 13
+        points: 2
+        wins: 0
+      - driverRef: raikkonen
+        position: 14
+        points: 0
+        wins: 0
+      - driverRef: giovinazzi
+        position: 15
+        points: 0
+        wins: 0
+      - driverRef: vettel
+        position: 16
+        points: 0
+        wins: 0
+      - driverRef: russell
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 101
+        wins: 2
+      - constructorRef: red_bull
+        position: 2
+        points: 83
+        wins: 1
+      - constructorRef: mclaren
+        position: 3
+        points: 53
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 42
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 13
+        wins: 0
+      - constructorRef: alphatauri
+        position: 6
+        points: 9
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 5
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 0
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - raceId: 1055
+    year: 2021
+    round: 4
+    name: Spanish Grand Prix
+    date: '2021-05-09'
+    time: '13:00:00'
+    circuit:
+      name: Circuit de Barcelona-Catalunya
+      location: Montmeló
+      country: Spain
+    driverStandings:
+      - driverRef: hamilton
+        position: 1
+        points: 94
+        wins: 3
+      - driverRef: max_verstappen
+        position: 2
+        points: 80
+        wins: 1
+      - driverRef: bottas
+        position: 3
+        points: 47
+        wins: 0
+      - driverRef: norris
+        position: 4
+        points: 41
+        wins: 0
+      - driverRef: leclerc
+        position: 5
+        points: 40
+        wins: 0
+      - driverRef: perez
+        position: 6
+        points: 32
+        wins: 0
+      - driverRef: ricciardo
+        position: 7
+        points: 24
+        wins: 0
+      - driverRef: sainz
+        position: 8
+        points: 20
+        wins: 0
+      - driverRef: ocon
+        position: 9
+        points: 10
+        wins: 0
+      - driverRef: gasly
+        position: 10
+        points: 8
+        wins: 0
+      - driverRef: stroll
+        position: 11
+        points: 5
+        wins: 0
+      - driverRef: alonso
+        position: 12
+        points: 5
+        wins: 0
+      - driverRef: tsunoda
+        position: 13
+        points: 2
+        wins: 0
+      - driverRef: raikkonen
+        position: 14
+        points: 0
+        wins: 0
+      - driverRef: giovinazzi
+        position: 15
+        points: 0
+        wins: 0
+      - driverRef: vettel
+        position: 16
+        points: 0
+        wins: 0
+      - driverRef: russell
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 141
+        wins: 3
+      - constructorRef: red_bull
+        position: 2
+        points: 112
+        wins: 1
+      - constructorRef: mclaren
+        position: 3
+        points: 65
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 60
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 15
+        wins: 0
+      - constructorRef: alphatauri
+        position: 6
+        points: 10
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 5
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 0
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - raceId: 1056
+    year: 2021
+    round: 5
+    name: Monaco Grand Prix
+    date: '2021-05-23'
+    time: '13:00:00'
+    circuit:
+      name: Circuit de Monaco
+      location: Monte-Carlo
+      country: Monaco
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 105
+        wins: 2
+      - driverRef: hamilton
+        position: 2
+        points: 101
+        wins: 3
+      - driverRef: norris
+        position: 3
+        points: 56
+        wins: 0
+      - driverRef: bottas
+        position: 4
+        points: 47
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 44
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 40
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 38
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 24
+        wins: 0
+      - driverRef: gasly
+        position: 9
+        points: 16
+        wins: 0
+      - driverRef: ocon
+        position: 10
+        points: 12
+        wins: 0
+      - driverRef: vettel
+        position: 11
+        points: 10
+        wins: 0
+      - driverRef: stroll
+        position: 12
+        points: 9
+        wins: 0
+      - driverRef: alonso
+        position: 13
+        points: 5
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 2
+        wins: 0
+      - driverRef: giovinazzi
+        position: 15
+        points: 1
+        wins: 0
+      - driverRef: raikkonen
+        position: 16
+        points: 0
+        wins: 0
+      - driverRef: russell
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 149
+        wins: 2
+      - constructorRef: mercedes
+        position: 2
+        points: 148
+        wins: 3
+      - constructorRef: mclaren
+        position: 3
+        points: 80
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 78
+        wins: 0
+      - constructorRef: aston_martin
+        position: 5
+        points: 19
+        wins: 0
+      - constructorRef: alphatauri
+        position: 6
+        points: 18
+        wins: 0
+      - constructorRef: alpine
+        position: 7
+        points: 17
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 1
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1057
+    year: 2021
+    round: 6
+    name: Azerbaijan Grand Prix
+    date: '2021-06-06'
+    time: '12:00:00'
+    circuit:
+      name: Baku City Circuit
+      location: Baku
+      country: Azerbaijan
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 105
+        wins: 2
+      - driverRef: hamilton
+        position: 2
+        points: 101
+        wins: 3
+      - driverRef: perez
+        position: 3
+        points: 69
+        wins: 1
+      - driverRef: norris
+        position: 4
+        points: 66
+        wins: 0
+      - driverRef: leclerc
+        position: 5
+        points: 52
+        wins: 0
+      - driverRef: bottas
+        position: 6
+        points: 47
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 42
+        wins: 0
+      - driverRef: gasly
+        position: 8
+        points: 31
+        wins: 0
+      - driverRef: vettel
+        position: 9
+        points: 28
+        wins: 0
+      - driverRef: ricciardo
+        position: 10
+        points: 26
+        wins: 0
+      - driverRef: alonso
+        position: 11
+        points: 13
+        wins: 0
+      - driverRef: ocon
+        position: 12
+        points: 12
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 9
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 8
+        wins: 0
+      - driverRef: raikkonen
+        position: 15
+        points: 1
+        wins: 0
+      - driverRef: giovinazzi
+        position: 16
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: russell
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 174
+        wins: 3
+      - constructorRef: mercedes
+        position: 2
+        points: 148
+        wins: 3
+      - constructorRef: ferrari
+        position: 3
+        points: 94
+        wins: 0
+      - constructorRef: mclaren
+        position: 4
+        points: 92
+        wins: 0
+      - constructorRef: alphatauri
+        position: 5
+        points: 39
+        wins: 0
+      - constructorRef: aston_martin
+        position: 6
+        points: 37
+        wins: 0
+      - constructorRef: alpine
+        position: 7
+        points: 25
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 2
+        wins: 0
+      - constructorRef: haas
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: williams
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: perez
+        name: Sergio Pérez
+        nationality: Mexican
+  - raceId: 1059
+    year: 2021
+    round: 7
+    name: French Grand Prix
+    date: '2021-06-20'
+    time: '13:00:00'
+    circuit:
+      name: Circuit Paul Ricard
+      location: Le Castellet
+      country: France
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 131
+        wins: 3
+      - driverRef: hamilton
+        position: 2
+        points: 119
+        wins: 3
+      - driverRef: perez
+        position: 3
+        points: 84
+        wins: 1
+      - driverRef: norris
+        position: 4
+        points: 76
+        wins: 0
+      - driverRef: bottas
+        position: 5
+        points: 59
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 52
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 42
+        wins: 0
+      - driverRef: gasly
+        position: 8
+        points: 37
+        wins: 0
+      - driverRef: ricciardo
+        position: 9
+        points: 34
+        wins: 0
+      - driverRef: vettel
+        position: 10
+        points: 30
+        wins: 0
+      - driverRef: alonso
+        position: 11
+        points: 17
+        wins: 0
+      - driverRef: ocon
+        position: 12
+        points: 12
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 10
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 8
+        wins: 0
+      - driverRef: raikkonen
+        position: 15
+        points: 1
+        wins: 0
+      - driverRef: giovinazzi
+        position: 16
+        points: 1
+        wins: 0
+      - driverRef: russell
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 215
+        wins: 4
+      - constructorRef: mercedes
+        position: 2
+        points: 178
+        wins: 3
+      - constructorRef: mclaren
+        position: 3
+        points: 110
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 94
+        wins: 0
+      - constructorRef: alphatauri
+        position: 5
+        points: 45
+        wins: 0
+      - constructorRef: aston_martin
+        position: 6
+        points: 40
+        wins: 0
+      - constructorRef: alpine
+        position: 7
+        points: 29
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 2
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1058
+    year: 2021
+    round: 8
+    name: Styrian Grand Prix
+    date: '2021-06-27'
+    time: '13:00:00'
+    circuit:
+      name: Red Bull Ring
+      location: Spielberg
+      country: Austria
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 156
+        wins: 4
+      - driverRef: hamilton
+        position: 2
+        points: 138
+        wins: 3
+      - driverRef: perez
+        position: 3
+        points: 96
+        wins: 1
+      - driverRef: norris
+        position: 4
+        points: 86
+        wins: 0
+      - driverRef: bottas
+        position: 5
+        points: 74
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 58
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 50
+        wins: 0
+      - driverRef: gasly
+        position: 8
+        points: 37
+        wins: 0
+      - driverRef: ricciardo
+        position: 9
+        points: 34
+        wins: 0
+      - driverRef: vettel
+        position: 10
+        points: 30
+        wins: 0
+      - driverRef: alonso
+        position: 11
+        points: 19
+        wins: 0
+      - driverRef: stroll
+        position: 12
+        points: 14
+        wins: 0
+      - driverRef: ocon
+        position: 13
+        points: 12
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 9
+        wins: 0
+      - driverRef: raikkonen
+        position: 15
+        points: 1
+        wins: 0
+      - driverRef: giovinazzi
+        position: 16
+        points: 1
+        wins: 0
+      - driverRef: russell
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 252
+        wins: 5
+      - constructorRef: mercedes
+        position: 2
+        points: 212
+        wins: 3
+      - constructorRef: mclaren
+        position: 3
+        points: 120
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 108
+        wins: 0
+      - constructorRef: alphatauri
+        position: 5
+        points: 46
+        wins: 0
+      - constructorRef: aston_martin
+        position: 6
+        points: 44
+        wins: 0
+      - constructorRef: alpine
+        position: 7
+        points: 31
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 2
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1060
+    year: 2021
+    round: 9
+    name: Austrian Grand Prix
+    date: '2021-07-04'
+    time: '13:00:00'
+    circuit:
+      name: Red Bull Ring
+      location: Spielberg
+      country: Austria
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 182
+        wins: 5
+      - driverRef: hamilton
+        position: 2
+        points: 150
+        wins: 3
+      - driverRef: perez
+        position: 3
+        points: 104
+        wins: 1
+      - driverRef: norris
+        position: 4
+        points: 101
+        wins: 0
+      - driverRef: bottas
+        position: 5
+        points: 92
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 62
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 60
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 40
+        wins: 0
+      - driverRef: gasly
+        position: 9
+        points: 39
+        wins: 0
+      - driverRef: vettel
+        position: 10
+        points: 30
+        wins: 0
+      - driverRef: alonso
+        position: 11
+        points: 20
+        wins: 0
+      - driverRef: stroll
+        position: 12
+        points: 14
+        wins: 0
+      - driverRef: ocon
+        position: 13
+        points: 12
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 9
+        wins: 0
+      - driverRef: raikkonen
+        position: 15
+        points: 1
+        wins: 0
+      - driverRef: giovinazzi
+        position: 16
+        points: 1
+        wins: 0
+      - driverRef: russell
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 286
+        wins: 6
+      - constructorRef: mercedes
+        position: 2
+        points: 242
+        wins: 3
+      - constructorRef: mclaren
+        position: 3
+        points: 141
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 122
+        wins: 0
+      - constructorRef: alphatauri
+        position: 5
+        points: 48
+        wins: 0
+      - constructorRef: aston_martin
+        position: 6
+        points: 44
+        wins: 0
+      - constructorRef: alpine
+        position: 7
+        points: 32
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 2
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1061
+    year: 2021
+    round: 10
+    name: British Grand Prix
+    date: '2021-07-18'
+    time: '14:00:00'
+    circuit:
+      name: Silverstone Circuit
+      location: Silverstone
+      country: UK
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 185
+        wins: 5
+      - driverRef: hamilton
+        position: 2
+        points: 177
+        wins: 4
+      - driverRef: norris
+        position: 3
+        points: 113
+        wins: 0
+      - driverRef: bottas
+        position: 4
+        points: 108
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 104
+        wins: 1
+      - driverRef: leclerc
+        position: 6
+        points: 80
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 68
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 50
+        wins: 0
+      - driverRef: gasly
+        position: 9
+        points: 39
+        wins: 0
+      - driverRef: vettel
+        position: 10
+        points: 30
+        wins: 0
+      - driverRef: alonso
+        position: 11
+        points: 26
+        wins: 0
+      - driverRef: stroll
+        position: 12
+        points: 18
+        wins: 0
+      - driverRef: ocon
+        position: 13
+        points: 14
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 10
+        wins: 0
+      - driverRef: raikkonen
+        position: 15
+        points: 1
+        wins: 0
+      - driverRef: giovinazzi
+        position: 16
+        points: 1
+        wins: 0
+      - driverRef: russell
+        position: 17
+        points: 0
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 18
+        points: 0
+        wins: 0
+      - driverRef: latifi
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 289
+        wins: 6
+      - constructorRef: mercedes
+        position: 2
+        points: 285
+        wins: 4
+      - constructorRef: mclaren
+        position: 3
+        points: 163
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 148
+        wins: 0
+      - constructorRef: alphatauri
+        position: 5
+        points: 49
+        wins: 0
+      - constructorRef: aston_martin
+        position: 6
+        points: 48
+        wins: 0
+      - constructorRef: alpine
+        position: 7
+        points: 40
+        wins: 0
+      - constructorRef: alfa
+        position: 8
+        points: 2
+        wins: 0
+      - constructorRef: williams
+        position: 9
+        points: 0
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - raceId: 1062
+    year: 2021
+    round: 11
+    name: Hungarian Grand Prix
+    date: '2021-08-01'
+    time: '13:00:00'
+    circuit:
+      name: Hungaroring
+      location: Budapest
+      country: Hungary
+    driverStandings:
+      - driverRef: hamilton
+        position: 1
+        points: 195
+        wins: 4
+      - driverRef: max_verstappen
+        position: 2
+        points: 187
+        wins: 5
+      - driverRef: norris
+        position: 3
+        points: 113
+        wins: 0
+      - driverRef: bottas
+        position: 4
+        points: 108
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 104
+        wins: 1
+      - driverRef: sainz
+        position: 6
+        points: 83
+        wins: 0
+      - driverRef: leclerc
+        position: 7
+        points: 80
+        wins: 0
+      - driverRef: gasly
+        position: 8
+        points: 50
+        wins: 0
+      - driverRef: ricciardo
+        position: 9
+        points: 50
+        wins: 0
+      - driverRef: ocon
+        position: 10
+        points: 39
+        wins: 1
+      - driverRef: alonso
+        position: 11
+        points: 38
+        wins: 0
+      - driverRef: vettel
+        position: 12
+        points: 30
+        wins: 0
+      - driverRef: tsunoda
+        position: 13
+        points: 18
+        wins: 0
+      - driverRef: stroll
+        position: 14
+        points: 18
+        wins: 0
+      - driverRef: latifi
+        position: 15
+        points: 6
+        wins: 0
+      - driverRef: russell
+        position: 16
+        points: 4
+        wins: 0
+      - driverRef: raikkonen
+        position: 17
+        points: 2
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 303
+        wins: 4
+      - constructorRef: red_bull
+        position: 2
+        points: 291
+        wins: 6
+      - constructorRef: ferrari
+        position: 3
+        points: 163
+        wins: 0
+      - constructorRef: mclaren
+        position: 4
+        points: 163
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 77
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 68
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 48
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 10
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 3
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: ocon
+        name: Esteban Ocon
+        nationality: French
+  - raceId: 1063
+    year: 2021
+    round: 12
+    name: Belgian Grand Prix
+    date: '2021-08-29'
+    time: '13:00:00'
+    circuit:
+      name: Circuit de Spa-Francorchamps
+      location: Spa
+      country: Belgium
+    driverStandings:
+      - driverRef: hamilton
+        position: 1
+        points: 202.5
+        wins: 4
+      - driverRef: max_verstappen
+        position: 2
+        points: 199.5
+        wins: 6
+      - driverRef: norris
+        position: 3
+        points: 113
+        wins: 0
+      - driverRef: bottas
+        position: 4
+        points: 108
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 104
+        wins: 1
+      - driverRef: sainz
+        position: 6
+        points: 83.5
+        wins: 0
+      - driverRef: leclerc
+        position: 7
+        points: 82
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 56
+        wins: 0
+      - driverRef: gasly
+        position: 9
+        points: 54
+        wins: 0
+      - driverRef: ocon
+        position: 10
+        points: 42
+        wins: 1
+      - driverRef: alonso
+        position: 11
+        points: 38
+        wins: 0
+      - driverRef: vettel
+        position: 12
+        points: 35
+        wins: 0
+      - driverRef: tsunoda
+        position: 13
+        points: 18
+        wins: 0
+      - driverRef: stroll
+        position: 14
+        points: 18
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 13
+        wins: 0
+      - driverRef: latifi
+        position: 16
+        points: 7
+        wins: 0
+      - driverRef: raikkonen
+        position: 17
+        points: 2
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 20
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 310.5
+        wins: 4
+      - constructorRef: red_bull
+        position: 2
+        points: 303.5
+        wins: 7
+      - constructorRef: mclaren
+        position: 3
+        points: 169
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 165.5
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 80
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 72
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 53
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 20
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 3
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1064
+    year: 2021
+    round: 13
+    name: Dutch Grand Prix
+    date: '2021-09-05'
+    time: '13:00:00'
+    circuit:
+      name: Circuit Park Zandvoort
+      location: Zandvoort
+      country: Netherlands
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 224.5
+        wins: 7
+      - driverRef: hamilton
+        position: 2
+        points: 221.5
+        wins: 4
+      - driverRef: bottas
+        position: 3
+        points: 123
+        wins: 0
+      - driverRef: norris
+        position: 4
+        points: 114
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 108
+        wins: 1
+      - driverRef: leclerc
+        position: 6
+        points: 92
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 89.5
+        wins: 0
+      - driverRef: gasly
+        position: 8
+        points: 66
+        wins: 0
+      - driverRef: ricciardo
+        position: 9
+        points: 56
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 46
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 44
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 35
+        wins: 0
+      - driverRef: tsunoda
+        position: 13
+        points: 18
+        wins: 0
+      - driverRef: stroll
+        position: 14
+        points: 18
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 13
+        wins: 0
+      - driverRef: latifi
+        position: 16
+        points: 7
+        wins: 0
+      - driverRef: raikkonen
+        position: 17
+        points: 2
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 344.5
+        wins: 4
+      - constructorRef: red_bull
+        position: 2
+        points: 332.5
+        wins: 8
+      - constructorRef: ferrari
+        position: 3
+        points: 181.5
+        wins: 0
+      - constructorRef: mclaren
+        position: 4
+        points: 170
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 90
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 84
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 53
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 20
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 3
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1065
+    year: 2021
+    round: 14
+    name: Italian Grand Prix
+    date: '2021-09-12'
+    time: '13:00:00'
+    circuit:
+      name: Autodromo Nazionale di Monza
+      location: Monza
+      country: Italy
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 226.5
+        wins: 7
+      - driverRef: hamilton
+        position: 2
+        points: 221.5
+        wins: 4
+      - driverRef: bottas
+        position: 3
+        points: 141
+        wins: 0
+      - driverRef: norris
+        position: 4
+        points: 132
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 118
+        wins: 1
+      - driverRef: leclerc
+        position: 6
+        points: 104
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 97.5
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 83
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 66
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 50
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 45
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 35
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 24
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 18
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 15
+        wins: 0
+      - driverRef: latifi
+        position: 16
+        points: 7
+        wins: 0
+      - driverRef: raikkonen
+        position: 17
+        points: 2
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 362.5
+        wins: 4
+      - constructorRef: red_bull
+        position: 2
+        points: 344.5
+        wins: 8
+      - constructorRef: mclaren
+        position: 3
+        points: 215
+        wins: 1
+      - constructorRef: ferrari
+        position: 4
+        points: 201.5
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 95
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 84
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 59
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 22
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 3
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: ricciardo
+        name: Daniel Ricciardo
+        nationality: Australian
+  - raceId: 1066
+    year: 2021
+    round: 15
+    name: Russian Grand Prix
+    date: '2021-09-26'
+    time: '12:00:00'
+    circuit:
+      name: Sochi Autodrom
+      location: Sochi
+      country: Russia
+    driverStandings:
+      - driverRef: hamilton
+        position: 1
+        points: 246.5
+        wins: 5
+      - driverRef: max_verstappen
+        position: 2
+        points: 244.5
+        wins: 7
+      - driverRef: bottas
+        position: 3
+        points: 151
+        wins: 0
+      - driverRef: norris
+        position: 4
+        points: 139
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 120
+        wins: 1
+      - driverRef: sainz
+        position: 6
+        points: 112.5
+        wins: 0
+      - driverRef: leclerc
+        position: 7
+        points: 104
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 95
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 66
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 58
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 45
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 35
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 24
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 18
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 16
+        wins: 0
+      - driverRef: latifi
+        position: 16
+        points: 7
+        wins: 0
+      - driverRef: raikkonen
+        position: 17
+        points: 6
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 397.5
+        wins: 5
+      - constructorRef: red_bull
+        position: 2
+        points: 364.5
+        wins: 8
+      - constructorRef: mclaren
+        position: 3
+        points: 234
+        wins: 1
+      - constructorRef: ferrari
+        position: 4
+        points: 216.5
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 103
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 84
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 59
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 23
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 7
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - raceId: 1067
+    year: 2021
+    round: 16
+    name: Turkish Grand Prix
+    date: '2021-10-10'
+    time: '12:00:00'
+    circuit:
+      name: Istanbul Park
+      location: Istanbul
+      country: Turkey
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 262.5
+        wins: 7
+      - driverRef: hamilton
+        position: 2
+        points: 256.5
+        wins: 5
+      - driverRef: bottas
+        position: 3
+        points: 177
+        wins: 1
+      - driverRef: norris
+        position: 4
+        points: 145
+        wins: 0
+      - driverRef: perez
+        position: 5
+        points: 135
+        wins: 1
+      - driverRef: sainz
+        position: 6
+        points: 116.5
+        wins: 0
+      - driverRef: leclerc
+        position: 7
+        points: 116
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 95
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 74
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 58
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 46
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 35
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 26
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 18
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 16
+        wins: 0
+      - driverRef: latifi
+        position: 16
+        points: 7
+        wins: 0
+      - driverRef: raikkonen
+        position: 17
+        points: 6
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 433.5
+        wins: 6
+      - constructorRef: red_bull
+        position: 2
+        points: 397.5
+        wins: 8
+      - constructorRef: mclaren
+        position: 3
+        points: 240
+        wins: 1
+      - constructorRef: ferrari
+        position: 4
+        points: 232.5
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 104
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 92
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 61
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 23
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 7
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: bottas
+        name: Valtteri Bottas
+        nationality: Finnish
+  - raceId: 1069
+    year: 2021
+    round: 17
+    name: United States Grand Prix
+    date: '2021-10-24'
+    time: '19:00:00'
+    circuit:
+      name: Circuit of the Americas
+      location: Austin
+      country: USA
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 287.5
+        wins: 8
+      - driverRef: hamilton
+        position: 2
+        points: 275.5
+        wins: 5
+      - driverRef: bottas
+        position: 3
+        points: 185
+        wins: 1
+      - driverRef: perez
+        position: 4
+        points: 150
+        wins: 1
+      - driverRef: norris
+        position: 5
+        points: 149
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 128
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 122.5
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 105
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 74
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 58
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 46
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 36
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 26
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 20
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 16
+        wins: 0
+      - driverRef: latifi
+        position: 16
+        points: 7
+        wins: 0
+      - driverRef: raikkonen
+        position: 17
+        points: 6
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 460.5
+        wins: 6
+      - constructorRef: red_bull
+        position: 2
+        points: 437.5
+        wins: 9
+      - constructorRef: mclaren
+        position: 3
+        points: 254
+        wins: 1
+      - constructorRef: ferrari
+        position: 4
+        points: 250.5
+        wins: 0
+      - constructorRef: alpine
+        position: 5
+        points: 104
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 94
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 62
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 23
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 7
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1070
+    year: 2021
+    round: 18
+    name: Mexico City Grand Prix
+    date: '2021-11-07'
+    time: '19:00:00'
+    circuit:
+      name: Autódromo Hermanos Rodríguez
+      location: Mexico City
+      country: Mexico
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 312.5
+        wins: 9
+      - driverRef: hamilton
+        position: 2
+        points: 293.5
+        wins: 5
+      - driverRef: bottas
+        position: 3
+        points: 185
+        wins: 1
+      - driverRef: perez
+        position: 4
+        points: 165
+        wins: 1
+      - driverRef: norris
+        position: 5
+        points: 150
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 138
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 130.5
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 105
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 86
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 60
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 46
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 42
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 26
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 20
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 16
+        wins: 0
+      - driverRef: raikkonen
+        position: 16
+        points: 10
+        wins: 0
+      - driverRef: latifi
+        position: 17
+        points: 7
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 478.5
+        wins: 6
+      - constructorRef: red_bull
+        position: 2
+        points: 477.5
+        wins: 10
+      - constructorRef: ferrari
+        position: 3
+        points: 268.5
+        wins: 0
+      - constructorRef: mclaren
+        position: 4
+        points: 255
+        wins: 1
+      - constructorRef: alpine
+        position: 5
+        points: 106
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 106
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 68
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 23
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 11
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+  - raceId: 1071
+    year: 2021
+    round: 19
+    name: São Paulo Grand Prix
+    date: '2021-11-14'
+    time: '17:00:00'
+    circuit:
+      name: Autódromo José Carlos Pace
+      location: São Paulo
+      country: Brazil
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 332.5
+        wins: 9
+      - driverRef: hamilton
+        position: 2
+        points: 318.5
+        wins: 6
+      - driverRef: bottas
+        position: 3
+        points: 203
+        wins: 1
+      - driverRef: perez
+        position: 4
+        points: 178
+        wins: 1
+      - driverRef: norris
+        position: 5
+        points: 151
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 148
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 139.5
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 105
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 92
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 62
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 50
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 42
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 26
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 20
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 16
+        wins: 0
+      - driverRef: raikkonen
+        position: 16
+        points: 10
+        wins: 0
+      - driverRef: latifi
+        position: 17
+        points: 7
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 521.5
+        wins: 7
+      - constructorRef: red_bull
+        position: 2
+        points: 510.5
+        wins: 10
+      - constructorRef: ferrari
+        position: 3
+        points: 287.5
+        wins: 0
+      - constructorRef: mclaren
+        position: 4
+        points: 256
+        wins: 1
+      - constructorRef: alpine
+        position: 5
+        points: 112
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 112
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 68
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 23
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 11
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - raceId: 1051
+    year: 2021
+    round: 20
+    name: Qatar Grand Prix
+    date: '2021-11-21'
+    time: '14:00:00'
+    circuit:
+      name: Losail International Circuit
+      location: Al Daayen
+      country: Qatar
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 351.5
+        wins: 9
+      - driverRef: hamilton
+        position: 2
+        points: 343.5
+        wins: 7
+      - driverRef: bottas
+        position: 3
+        points: 203
+        wins: 1
+      - driverRef: perez
+        position: 4
+        points: 190
+        wins: 1
+      - driverRef: norris
+        position: 5
+        points: 153
+        wins: 0
+      - driverRef: leclerc
+        position: 6
+        points: 152
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 145.5
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 105
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 92
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 77
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 60
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 43
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 34
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 20
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 16
+        wins: 0
+      - driverRef: raikkonen
+        position: 16
+        points: 10
+        wins: 0
+      - driverRef: latifi
+        position: 17
+        points: 7
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 1
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 546.5
+        wins: 8
+      - constructorRef: red_bull
+        position: 2
+        points: 541.5
+        wins: 10
+      - constructorRef: ferrari
+        position: 3
+        points: 297.5
+        wins: 0
+      - constructorRef: mclaren
+        position: 4
+        points: 258
+        wins: 1
+      - constructorRef: alpine
+        position: 5
+        points: 137
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 112
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 77
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 23
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 11
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - raceId: 1072
+    year: 2021
+    round: 21
+    name: Saudi Arabian Grand Prix
+    date: '2021-12-05'
+    time: '17:30:00'
+    circuit:
+      name: Jeddah Corniche Circuit
+      location: Jeddah
+      country: Saudi Arabia
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 369.5
+        wins: 9
+      - driverRef: hamilton
+        position: 2
+        points: 369.5
+        wins: 8
+      - driverRef: bottas
+        position: 3
+        points: 218
+        wins: 1
+      - driverRef: perez
+        position: 4
+        points: 190
+        wins: 1
+      - driverRef: leclerc
+        position: 5
+        points: 158
+        wins: 0
+      - driverRef: norris
+        position: 6
+        points: 154
+        wins: 0
+      - driverRef: sainz
+        position: 7
+        points: 149.5
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 115
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 100
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 77
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 72
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 43
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 34
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 20
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 16
+        wins: 0
+      - driverRef: raikkonen
+        position: 16
+        points: 10
+        wins: 0
+      - driverRef: latifi
+        position: 17
+        points: 7
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 3
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 587.5
+        wins: 9
+      - constructorRef: red_bull
+        position: 2
+        points: 559.5
+        wins: 10
+      - constructorRef: ferrari
+        position: 3
+        points: 307.5
+        wins: 0
+      - constructorRef: mclaren
+        position: 4
+        points: 269
+        wins: 1
+      - constructorRef: alpine
+        position: 5
+        points: 149
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 120
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 77
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 23
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 13
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - raceId: 1073
+    year: 2021
+    round: 22
+    name: Abu Dhabi Grand Prix
+    date: '2021-12-12'
+    time: '13:00:00'
+    circuit:
+      name: Yas Marina Circuit
+      location: Abu Dhabi
+      country: UAE
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 395.5
+        wins: 10
+      - driverRef: hamilton
+        position: 2
+        points: 387.5
+        wins: 8
+      - driverRef: bottas
+        position: 3
+        points: 226
+        wins: 1
+      - driverRef: perez
+        position: 4
+        points: 190
+        wins: 1
+      - driverRef: sainz
+        position: 5
+        points: 164.5
+        wins: 0
+      - driverRef: norris
+        position: 6
+        points: 160
+        wins: 0
+      - driverRef: leclerc
+        position: 7
+        points: 159
+        wins: 0
+      - driverRef: ricciardo
+        position: 8
+        points: 115
+        wins: 1
+      - driverRef: gasly
+        position: 9
+        points: 110
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 81
+        wins: 0
+      - driverRef: ocon
+        position: 11
+        points: 74
+        wins: 1
+      - driverRef: vettel
+        position: 12
+        points: 43
+        wins: 0
+      - driverRef: stroll
+        position: 13
+        points: 34
+        wins: 0
+      - driverRef: tsunoda
+        position: 14
+        points: 32
+        wins: 0
+      - driverRef: russell
+        position: 15
+        points: 16
+        wins: 0
+      - driverRef: raikkonen
+        position: 16
+        points: 10
+        wins: 0
+      - driverRef: latifi
+        position: 17
+        points: 7
+        wins: 0
+      - driverRef: giovinazzi
+        position: 18
+        points: 3
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 19
+        points: 0
+        wins: 0
+      - driverRef: kubica
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: mazepin
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: mercedes
+        position: 1
+        points: 613.5
+        wins: 9
+      - constructorRef: red_bull
+        position: 2
+        points: 585.5
+        wins: 11
+      - constructorRef: ferrari
+        position: 3
+        points: 323.5
+        wins: 0
+      - constructorRef: mclaren
+        position: 4
+        points: 275
+        wins: 1
+      - constructorRef: alpine
+        position: 5
+        points: 155
+        wins: 1
+      - constructorRef: alphatauri
+        position: 6
+        points: 142
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 77
+        wins: 0
+      - constructorRef: williams
+        position: 8
+        points: 23
+        wins: 0
+      - constructorRef: alfa
+        position: 9
+        points: 13
+        wins: 0
+      - constructorRef: haas
+        position: 10
+        points: 0
+        wins: 0
+    winner:
+      driver:
+        driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+drivers:
+  - driverRef: giovinazzi
+    name: Antonio Giovinazzi
+    nationality: Italian
+  - driverRef: sainz
+    name: Carlos Sainz
+    nationality: Spanish
+  - driverRef: leclerc
+    name: Charles Leclerc
+    nationality: Monegasque
+  - driverRef: ricciardo
+    name: Daniel Ricciardo
+    nationality: Australian
+  - driverRef: ocon
+    name: Esteban Ocon
+    nationality: French
+  - driverRef: alonso
+    name: Fernando Alonso
+    nationality: Spanish
+  - driverRef: russell
+    name: George Russell
+    nationality: British
+  - driverRef: raikkonen
+    name: Kimi Räikkönen
+    nationality: Finnish
+  - driverRef: stroll
+    name: Lance Stroll
+    nationality: Canadian
+  - driverRef: norris
+    name: Lando Norris
+    nationality: British
+  - driverRef: hamilton
+    name: Lewis Hamilton
+    nationality: British
+  - driverRef: max_verstappen
+    name: Max Verstappen
+    nationality: Dutch
+  - driverRef: mick_schumacher
+    name: Mick Schumacher
+    nationality: German
+  - driverRef: latifi
+    name: Nicholas Latifi
+    nationality: Canadian
+  - driverRef: mazepin
+    name: Nikita Mazepin
+    nationality: Russian
+  - driverRef: gasly
+    name: Pierre Gasly
+    nationality: French
+  - driverRef: kubica
+    name: Robert Kubica
+    nationality: Polish
+  - driverRef: vettel
+    name: Sebastian Vettel
+    nationality: German
+  - driverRef: perez
+    name: Sergio Pérez
+    nationality: Mexican
+  - driverRef: bottas
+    name: Valtteri Bottas
+    nationality: Finnish
+  - driverRef: tsunoda
+    name: Yuki Tsunoda
+    nationality: Japanese
+constructors:
+  - driverRef: giovinazzi
+    name: Antonio Giovinazzi
+    nationality: Italian
+  - driverRef: sainz
+    name: Carlos Sainz
+    nationality: Spanish
+  - driverRef: leclerc
+    name: Charles Leclerc
+    nationality: Monegasque
+  - driverRef: ricciardo
+    name: Daniel Ricciardo
+    nationality: Australian
+  - driverRef: ocon
+    name: Esteban Ocon
+    nationality: French
+  - driverRef: alonso
+    name: Fernando Alonso
+    nationality: Spanish
+  - driverRef: russell
+    name: George Russell
+    nationality: British
+  - driverRef: raikkonen
+    name: Kimi Räikkönen
+    nationality: Finnish
+  - driverRef: stroll
+    name: Lance Stroll
+    nationality: Canadian
+  - driverRef: norris
+    name: Lando Norris
+    nationality: British
+  - driverRef: hamilton
+    name: Lewis Hamilton
+    nationality: British
+  - driverRef: max_verstappen
+    name: Max Verstappen
+    nationality: Dutch
+  - driverRef: mick_schumacher
+    name: Mick Schumacher
+    nationality: German
+  - driverRef: latifi
+    name: Nicholas Latifi
+    nationality: Canadian
+  - driverRef: mazepin
+    name: Nikita Mazepin
+    nationality: Russian
+  - driverRef: gasly
+    name: Pierre Gasly
+    nationality: French
+  - driverRef: kubica
+    name: Robert Kubica
+    nationality: Polish
+  - driverRef: vettel
+    name: Sebastian Vettel
+    nationality: German
+  - driverRef: perez
+    name: Sergio Pérez
+    nationality: Mexican
+  - driverRef: bottas
+    name: Valtteri Bottas
+    nationality: Finnish
+  - driverRef: tsunoda
+    name: Yuki Tsunoda
+    nationality: Japanese

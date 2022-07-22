@@ -1,23 +1,24 @@
 ---
 import MainLayout from 'layouts/MainLayout.astro';
-import getSeasons from 'queries/seasons.sql';
-import metadata from 'data/metadata';
+import seasons from 'data/seasons.yaml';
+import metadata from 'data/metadata.yaml';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
 
-const gridWidth = 7;
-const seasons = await getSeasons();
-const extraBoxes = Array.from({ length: (seasons.length % gridWidth) + 1 });
+const gridWidth = 9;
+const extraBoxes = Array.from({ length: gridWidth - (seasons.length % gridWidth) });
 seasons.reverse();
 ---
 
 <MainLayout title='Home'>
+	<Breadcrumbs links={[{ label: 'Seasons', href: '/seasons/' }]} />
 	<h1>All Seasons</h1>
 	<p class='text-light'>* - Current Season</p>
 	<section class='seasons-grid'>
-		{seasons.map(({ year: season }) => (
+		{seasons.map((season) => (
 			<div class="season-card">
 				<a
 					href={`/seasons/${season}/`}
-					class:list={{ 'current-season': metadata.currentSeason === season }}
+					class:list={['h2', { 'current-season': metadata.currentSeason === season }]}
 				>
 					{season}
 				</a>
@@ -44,7 +45,6 @@ seasons.reverse();
 		aspect-ratio: 1 / 1;
 
 		& > a {
-			font-size: 2.25rem;
 			font-weight: 700;
 			display: flex;
 			text-decoration: none;
