@@ -1,4 +1,5 @@
 @use '../../node_modules/normalize.css/normalize.css';
+@use './colors';
 
 html {
 	box-sizing: border-box;
@@ -118,21 +119,6 @@ table {
 	font-size: 1rem;
 }
 
-table,
-th,
-td {
-	border: 1px solid var(--border);
-}
-
-th {
-	color: var(--text-main);
-}
-
-th,
-td {
-	padding: 8px 16px;
-}
-
 dd,
 dt {
 	line-height: 24px;
@@ -164,6 +150,10 @@ ul {
 .text-lighter {
 	color: var(--text-light);
 	opacity: 0.75;
+}
+
+.text-right {
+	text-align: right !important;
 }
 
 .text-scale-10 {
@@ -200,4 +190,24 @@ ul {
 
 .text-scale-90 {
 	font-size: 0.9em;
+}
+
+.gain-up {
+	color: green;
+}
+
+.gain-down {
+	color: red;
+}
+
+@each $key, $value in colors.$neutral {
+	.text-gray-#{$key} {
+		color: $value;
+	}
+}
+
+@each $key, $value in colors.$red {
+	.text-red-#{$key} {
+		color: $value;
+	}
 }

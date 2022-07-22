@@ -18,28 +18,28 @@ const {
 	default: { rounds, drivers, constructors },
 } = (await import(`../../data/seasons/${yearStr}.yaml`)) as { default: Season };
 const driverColors = drivers.reduce((p, c, i) => {
-	p[`drivers-color-${c.driverRef}`] = colors[i];
+	p[`chart-color-${c.driverRef}`] = colors[i];
 	return p;
 }, {} as Record<string, string>);
 
 const constructorsColors = constructors.reduce((p, c, i) => {
-	p[`constructors-color-${c.constructorRef}`] = colors[i];
+	p[`chart-color-${c.constructorRef}`] = colors[i];
 	return p;
 }, {} as Record<string, string>);
 ---
 
 <MainLayout title='Home'>
-	<Breadcrumbs
-		links={[
-			{ label: 'Seasons', href: '/seasons/' },
-			{ label: `${year} Season`, href: '' },
-		]}
-	/>
-	<div>
-		<h1>
-			{year} Season {metadata.currentSeason === year ? '(Current Season)' : ''}
-		</h1>
+	<div class=''>
+		<Breadcrumbs
+			links={[
+				{ label: 'Seasons', href: '/seasons/' },
+				{ label: `${year} Season`, href: '' },
+			]}
+		/>
 	</div>
+	<h1>
+		{year} Season {metadata.currentSeason === year ? '(Current Season)' : ''}
+	</h1>
 	<div class='season-tabs'>
 		<SeasonsClient rounds={rounds} drivers={drivers} constructors={constructors} client:load />
 	</div>
@@ -49,13 +49,9 @@ const constructorsColors = constructors.reduce((p, c, i) => {
 	.season-tabs {
 		margin: 0 0 2rem 0;
 
-		// & .tab-panel.races-table-tab {
-		// 	padding: 1rem 0 3rem 0;
-		// }
-
-		// & .tab-panel {
-		// 	padding: 0 2rem 2rem 2rem;
-		// }
+		& :global(.races-table-panel) {
+			padding: 1rem 0 3rem 0;
+		}
 
 		& .line-group {
 			cursor: pointer;
@@ -67,46 +63,79 @@ const constructorsColors = constructors.reduce((p, c, i) => {
 
 		& :global(.points-chart) {
 			display: grid;
-			grid-template-columns: 4fr minmax(400px, 1fr);
+			grid-template-columns: 4fr minmax(500px, 1fr);
 		}
 
 		& :global(.points-legend) {
 			padding-top: 2rem;
 		}
 
-		& .points-legend-position {
-			display: grid;
-			grid-template-columns: 4ch 1fr;
-			column-gap: 0.5em;
+		& :global(.points-legend-position) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			white-space: nowrap;
 
-			& > span[data-gain] {
+			& > :global(.points-legend-position-gain) {
 				font-size: 0.875em;
-				opacity: 0.7;
 			}
 
-			& > span[data-gain='1']::before {
-				content: '▲';
-				color: green;
+			& :global(.gain-up) {
+				display: inline-block;
+				transform: translateY(5%);
+				margin-right: 0.1rem;
 			}
 
-			& > span[data-gain='-1']::before {
-				content: '▼';
-				color: red;
+			& :global(.gain-down) {
+				display: inline-block;
+				transform: translateY(5%);
+				margin-right: 0.1rem;
 			}
 		}
 
-		& .points-legend-label {
+		& :global(.points-legend-label) {
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
+			white-space: nowrap;
 
-			&::before {
-				content: '';
-				display: block;
-				width: 1em;
-				height: 1em;
-				border-radius: 2px;
-				background-color: var(--legend-color);
-				margin-right: 0.5em;
+			& :global(.points-legend-label-color) {
+				display: flex;
+				align-items: center;
+
+				&::before {
+					content: '';
+					display: inline-block;
+					width: 1em;
+					height: 1em;
+					border-radius: 2px;
+					margin-right: 0.5em;
+					background-color: var(--legend-color);
+				}
+			}
+
+			& :global(.trophy) {
+				display: inline-block;
+				width: 1rem;
+				height: 1rem;
+				margin-left: 0.5rem;
+
+				&.trophy-1 {
+					color: gold;
+				}
+
+				&.trophy-2 {
+					color: silver;
+				}
+
+				&.trophy-3 {
+					color: #cd7f32;
+				}
+
+				& svg {
+					width: 1rem;
+					height: 1rem;
+				}
 			}
 		}
 	}

@@ -6,6 +6,8 @@ import { Table } from 'components/Table';
 import { Nationality } from 'components/Nationality';
 import type { Round, Driver, Constructor } from 'data/seasons/1950.yaml';
 import { PointsChart } from './PointsChart/PointsChart';
+import { useMemo } from 'preact/hooks';
+import type { ChartData, ChartPoint } from './PointsChart/common';
 
 function CircuitCell(props: Round): VNode {
 	return (
@@ -45,10 +47,66 @@ export interface ClientProps {
 
 export function SeasonsClient(props: ClientProps): VNode {
 	const { rounds, drivers, constructors } = props;
+	const driversChartData = useMemo((): ChartData[] => {
+		return drivers.map((driver) => {
+			const data = rounds.map((round): ChartPoint | null => {
+				const result = round.driverStandings.find((d) => d.driverRef === driver.driverRef);
+				const podium = round.podium.find((d) => d.driverRef === driver.driverRef);
+
+				return result
+					? {
+							points: result.points,
+							position: result.position,
+							wins: result.wins,
+							podium: podium ? podium.position : null,
+					  }
+					: null;
+			});
+
+			return {
+				id: driver.driverRef,
+				label: driver.name,
+				data,
+			};
+		});
+	}, [rounds, drivers]);
+
+	const constructorsChartData = useMemo((): ChartData[] => {
+		return constructors.map((constructor_) => {
+			const data = rounds.map((round): ChartPoint | null => {
+				const result = round.constructorStandings.find(
+					(c) => c.constructorRef === constructor_.constructorRef,
+				);
+				const podium = round.podium.find((c) => c.driverRef === constructor_.constructorRef);
+
+				return result
+					? {
+							points: result.points,
+							position: result.position,
+							wins: result.wins,
+							podium: podium ? podium.position : null,
+					  }
+					: null;
+			});
+
+			return {
+				id: constructor_.constructorRef,
+				label: constructor_.name,
+				data,
+			};
+		});
+	}, [rounds, constructors]);
+
+	const lastCompletedRound = useMemo(() => {
+		const lastRoundWithNoPodiums = rounds.findIndex((round) => round.podium.length === 0) - 1;
+		return lastRoundWithNoPodiums > -1 ? lastRoundWithNoPodiums : rounds.length;
+	}, [rounds]);
+
+	const chartLabels = useMemo(() => rounds.map((r) => r.name), [rounds]);
 
 	return (
 		<Tabs defaultActiveTab={1}>
-			<Tabs.Panel id="r" title="Races">
+			<Tabs.Panel id="r" title="Races" class="races-table-panel">
 				<Table data={rounds} rowId="raceId">
 					<Table.Column<Round> id="round" title="Round" render="round" />
 					<Table.Column<Round> id="race" title="Race" render="name" />
@@ -63,10 +121,20 @@ export function SeasonsClient(props: ClientProps): VNode {
 				</Table>
 			</Tabs.Panel>
 			<Tabs.Panel id="ds" title="Driver Standings">
-				<PointsChart {...props} type="drivers" />
+				<PointsChart
+					data={driversChartData}
+					lastCompletedRound={lastCompletedRound}
+					labels={chartLabels}
+					legendLabel="Driver"
+				/>
 			</Tabs.Panel>
 			<Tabs.Panel id="cs" title="Constructor Standings">
-				<PointsChart {...props} type="constructors" />
+				<PointsChart
+					data={constructorsChartData}
+					lastCompletedRound={lastCompletedRound}
+					labels={chartLabels}
+					legendLabel="Constructor"
+				/>
 			</Tabs.Panel>
 		</Tabs>
 	);

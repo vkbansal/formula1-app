@@ -1,15 +1,14 @@
 import { h, type VNode } from 'preact';
-import type { Band } from 'helpers/chartUtils';
-import type { Round } from 'data/seasons/foo.yaml';
+import type { ScaleBand } from 'helpers/chartUtils';
 import { CHART_HEIGHT, CHART_WIDTH, MARGIN } from './common';
 
 export interface XAxisProps {
-	xTicks: Band[];
-	rounds: Round[];
+	scale: ScaleBand<string>;
+	labels: string[];
 }
 
 export function XAxis(props: XAxisProps): VNode {
-	const { rounds, xTicks } = props;
+	const { labels, scale } = props;
 
 	return (
 		<g
@@ -18,9 +17,10 @@ export function XAxis(props: XAxisProps): VNode {
 			font-size="9"
 			text-anchor="end"
 		>
-			{xTicks.map((x, i) => {
+			{labels.map((label, i) => {
+				const band = scale(label);
 				return (
-					<g class="tick tick-x" key={i} transform={`translate(${x.start}, 0)`}>
+					<g class="tick tick-x" key={i} transform={`translate(${band.mid}, 0)`}>
 						<line
 							fill="none"
 							stroke-linejoin="round"
@@ -33,7 +33,7 @@ export function XAxis(props: XAxisProps): VNode {
 							y2="6"
 						/>
 						<text x="0" y="16" fill="currentColor" dx="-3" transform="rotate(-36)">
-							{rounds[i].name}
+							{label}
 						</text>
 					</g>
 				);

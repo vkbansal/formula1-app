@@ -1,44 +1,13 @@
 import { h, type VNode } from 'preact';
 import { useMemo } from 'preact/hooks';
 
-// import type { ChartData, ChartPoint } from 'pages/season/season.11ty';
-import { Table, type TableColumnProps } from 'components/Table';
+import trophySvg from 'images/trophy.svg?raw';
+import { Table } from 'components/Table';
 import { formatOrdinals } from 'helpers/utils';
-
-const getLegendColumns = (label: string): TableColumnProps<LegendsData>[] => [
-	{
-		id: 'ps',
-		title: 'Position',
-		data: (d) => (
-			<div class="points-legend-position">
-				<span>{d.position === Infinity ? '-' : formatOrdinals(d.position)}</span>
-				{d.gain ? <span data-gain={d.gain / Math.abs(d.gain)}>{Math.abs(d.gain)}</span> : null}
-			</div>
-		),
-	},
-	{
-		id: 'd',
-		title: label,
-		data: (d) => (
-			<div class="points-legend-label" style={{ '--legend-color': d.color }}>
-				{d.label}
-			</div>
-		),
-	},
-	{
-		id: 'pt',
-		title: 'Points',
-		data: 'points',
-	},
-	{
-		id: 'w',
-		title: 'Wins',
-		data: 'wins',
-	},
-];
+import type { ChartData, ChartPoint } from './common';
 
 export interface LegendsData extends Omit<ChartData, 'data'>, ChartPoint {
-	gain: number | null;
+	gain: number;
 }
 
 export interface PointsTableProps {
@@ -46,6 +15,70 @@ export interface PointsTableProps {
 	data: ChartData[];
 	activeRace: number;
 }
+
+function PositionCell(props: LegendsData): VNode {
+	return (
+		<div class="points-legend-position">
+			<span>{props.position === Infinity ? '-' : formatOrdinals(props.position)}</span>
+			{props.gain !== 0 ? (
+				<span class="points-legend-position-gain">
+					{props.gain / Math.abs(props.gain) === 1 ? (
+						<span class="gain-up">▲</span>
+					) : (
+						<span class="gain-down">▼</span>
+					)}
+					<span>{Math.abs(props.gain)}</span>
+				</span>
+			) : null}
+		</div>
+	);
+}
+
+function LabelCell(props: LegendsData): VNode {
+	return (
+		<div class="points-legend-label">
+			<span
+				class="points-legend-label-color"
+				style={{ '--legend-color': `var(--chart-color-${props.id})` }}
+			>
+				{props.label}
+			</span>
+			{props.podium ? (
+				<span
+					class={`trophy trophy-${props.podium}`}
+					dangerouslySetInnerHTML={{ __html: trophySvg }}
+				/>
+			) : null}
+		</div>
+	);
+}
+
+// const getLegendColumns = (label: string): TableColumnProps<LegendsData>[] => [
+// 	{
+// 		id: 'ps',
+// 		title: 'Position',
+// 		data: (d) => (
+//
+// 		),
+// 	},
+// 	{
+// 		id: 'd',
+// 		title: label,
+// 		data: (d) => (
+
+// 		),
+// 	},
+// 	{
+// 		id: 'pt',
+// 		title: 'Points',
+// 		data: 'points',
+// 	},
+// 	{
+// 		id: 'w',
+// 		title: 'Wins',
+// 		data: 'wins',
+// 	},
+// ];
 
 export function PointsTable(props: PointsTableProps): VNode {
 	const { legendLabel, data, activeRace } = props;
@@ -62,15 +95,19 @@ export function PointsTable(props: PointsTableProps): VNode {
 				return {
 					id: row.id,
 					label: row.label,
-					color: row.color,
-					...(race || { position: Infinity, points: 0, wins: 0 }),
-					gain: prevRace && race ? prevRace.position - race.position : null,
+					...(race || { position: Infinity, points: 0, wins: 0, podium: null }),
+					gain: prevRace && race ? prevRace.position - race.position : 0,
 				};
 			})
 			.sort((a, b) => a.position - b.position);
 	}, [activeRace, data]);
 
-	const legendColumns = useMemo(() => getLegendColumns(legendLabel), [legendLabel]);
-
-	return <Table data={legendsData} columns={legendColumns} rowId="id" small />;
+	return (
+		<Table data={legendsData} rowId="id" small>
+			<Table.Column<LegendsData> id="ps" title="Position" render={PositionCell} />
+			<Table.Column<LegendsData> id="d" title={legendLabel} render={LabelCell} />
+			<Table.Column<LegendsData> id="pt" title="Points" render="points" align="right" />
+			<Table.Column<LegendsData> id="pt" title="Wins" render="wins" align="right" />
+		</Table>
+	);
 }

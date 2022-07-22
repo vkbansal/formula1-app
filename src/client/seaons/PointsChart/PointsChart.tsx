@@ -1,10 +1,11 @@
 import { h, type VNode } from 'preact';
 import { useRef, useMemo, useState, useCallback } from 'preact/hooks';
 import { scaleLinear, scaleBand } from 'helpers/chartUtils';
-import type { Season, Round, DriverStanding, ConstructorStanding } from 'data/seasons/foo.yaml';
 
 import { PointsTable } from './PointsTable';
 import {
+	type ChartPoint,
+	type ChartData,
 	CHART_HEIGHT,
 	CHART_WIDTH,
 	MARGIN,
@@ -15,35 +16,34 @@ import {
 } from './common';
 import { XAxis, YAxis } from './Axes';
 import { Grid } from './Grid';
-import { DataPlot, type ChartType } from './DataPlot';
+import { DataPlot } from './DataPlot';
 
-type Point = DriverStanding & ConstructorStanding;
-
-export interface PointsChartProps extends Season {
-	type: ChartType;
+export interface PointsChartProps {
+	data: ChartData[];
+	lastCompletedRound: number;
+	labels: string[];
+	legendLabel: string;
 }
 
 export function PointsChart(props: PointsChartProps): VNode {
-	const { rounds, type } = props;
-	const dataKey: keyof Round = type === 'drivers' ? 'driverStandings' : 'constructorStandings';
-	const limitX = useMemo(() => {
-		const lastRoundWithNoPodiums = rounds.findIndex((round) => round.podium.length === 0);
-		return lastRoundWithNoPodiums > -1 ? lastRoundWithNoPodiums : rounds.length;
-	}, [rounds]);
+	const { data, lastCompletedRound, labels, legendLabel } = props;
 	const svgRef = useRef<SVGSVGElement | null>(null);
 	const rectRef = useRef<SVGRectElement | null>(null);
 	const [activeColumn, setActiveColumn] = useState(-1);
-	const [activeRace, setActiveRace] = useState(limitX);
-
+	const [activeRace, setActiveRace] = useState(lastCompletedRound);
 	const yMaxValue = useMemo(
 		() =>
 			Math.max(
-				...rounds.flatMap((d) => (d[dataKey] as Point[]).filter(Boolean).map((r) => r.points)),
+				...data.flatMap((d) => (d.data.filter(Boolean) as ChartPoint[]).map((r) => r.points)),
 			),
-		[rounds],
+		[data],
 	);
-	const yMax = useMemo(() => Math.ceil(yMaxValue / Y_STEP) * Y_STEP, [yMaxValue]);
-	const xDomain = useMemo(() => rounds.map((_, i) => i), [rounds]);
+	const yMax = useMemo(() => {
+		const max = Math.ceil(yMaxValue / Y_STEP) * Y_STEP;
+		const remainder = (max - yMaxValue) % Y_STEP;
+
+		return remainder < Y_STEP / 2 ? max + Y_STEP : max;
+	}, [yMaxValue]);
 	const yDomain = useMemo(() => {
 		const values: number[] = [];
 
@@ -56,7 +56,7 @@ export function PointsChart(props: PointsChartProps): VNode {
 
 		return values;
 	}, [yMax]);
-	const xScale = useMemo(() => scaleBand(xDomain, [0, CHART_WIDTH]), [xDomain]);
+	const xScale = useMemo(() => scaleBand(labels, [0, CHART_WIDTH]), [labels]);
 	const yScale = useMemo(() => scaleLinear([0, yMax], [CHART_HEIGHT, 0]), [yMax]);
 	const yTicks = useMemo(() => yDomain.map((d) => yScale(d)), [yDomain]);
 
@@ -80,27 +80,22 @@ export function PointsChart(props: PointsChartProps): VNode {
 					return;
 				}
 
-				const closestIndex = xScale.ticks.findIndex((tick) => tick.start < x && x <= tick.end);
+				const closestIndex = xScale.ticks().findIndex((tick) => tick.start < x && x <= tick.end);
 
 				setActiveColumn(closestIndex);
-				setActiveRace(Math.min(closestIndex, limitX));
+				setActiveRace(Math.min(closestIndex, lastCompletedRound));
 			});
 		},
-		[limitX, xScale],
+		[lastCompletedRound, xScale],
 	);
 
 	return (
 		<div class="points-chart">
 			<svg ref={svgRef} viewBox={`0 0 ${TOTAL_WIDTH} ${TOTAL_HEIGHT}`}>
-				<XAxis xTicks={xScale.ticks} rounds={rounds} />
+				<XAxis scale={xScale} labels={labels} />
 				<YAxis yTicks={yTicks} yDomain={yDomain} />
-				<Grid
-					xTicks={xScale.ticks}
-					yTicks={yTicks}
-					xStep={xScale.step}
-					activeColumn={activeColumn}
-				/>
-				<DataPlot {...props} xTicks={xScale.ticks} yScale={yScale} />
+				<Grid xScale={xScale} yTicks={yTicks} activeColumn={activeColumn} />
+				<DataPlot data={data} xScale={xScale} yScale={yScale} />
 				<g class="mouse-over-effects" transform={`translate(${MARGIN.left}, ${MARGIN.top})`}>
 					<rect
 						ref={rectRef}
@@ -116,9 +111,9 @@ export function PointsChart(props: PointsChartProps): VNode {
 			</svg>
 			<div class="points-legend">
 				<div class="h4">
-					Round {activeRace + 1}: {rounds[activeRace].name}
+					Round {activeRace + 1}: {labels[activeRace]}
 				</div>
-				{/* <PointsTable legendLabel={legendLabel} data={data} activeRace={activeRace} /> */}
+				<PointsTable legendLabel={legendLabel} data={data} activeRace={activeRace} />
 			</div>
 		</div>
 	);

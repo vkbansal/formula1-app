@@ -1,57 +1,27 @@
 import { h, type VNode } from 'preact';
-import { useMemo } from 'preact/hooks';
 
-import type {
-	Season,
-	Driver,
-	Constructor,
-	DriverStanding,
-	ConstructorStanding,
-} from 'data/seasons/foo.yaml';
-import type { Band, ScaleLinear } from 'helpers/chartUtils';
-import { MARGIN, STROKE_WIDTH } from './common';
+import type { ScaleBand, ScaleLinear } from 'helpers/chartUtils';
+import { type ChartData, MARGIN, STROKE_WIDTH } from './common';
 
 export type ChartType = 'drivers' | 'constructors';
 
-export interface ChartData {
-	ref: string;
-	data: Array<{ position: number; points: number; wins: number } | null>;
-}
-
-export interface DataPlotProps extends Season {
-	type: ChartType;
-	xTicks: Band[];
+export interface DataPlotProps {
+	data: ChartData[];
+	xScale: ScaleBand<string>;
 	yScale: ScaleLinear;
 }
 
 export function DataPlot(props: DataPlotProps): VNode {
-	const { rounds, drivers, constructors, type, xTicks, yScale } = props;
-
-	const chartData = useMemo(() => {
-		function mapper(row: Driver | Constructor): ChartData {
-			const refKey = type === 'drivers' ? 'driverRef' : 'constructorRef';
-			const ref = (row as any)[refKey];
-			const data = rounds.map((round): ChartData['data'][number] => {
-				const source: Array<DriverStanding | ConstructorStanding> =
-					type === 'drivers' ? round.driverStandings : round.constructorStandings;
-				const result = source.find((d) => (d as any)[refKey] === ref);
-
-				return result || null;
-			});
-
-			return { ref, data };
-		}
-
-		return type === 'drivers' ? drivers.map(mapper) : constructors.map(mapper);
-	}, [rounds, drivers, constructors, type]);
+	const { data, xScale, yScale } = props;
+	const xTicks = xScale.ticks();
 
 	return (
-		<g transform={`translate(${MARGIN.left}, ${MARGIN.top})`}>
-			{chartData.map((row, i) => {
+		<g class="data" transform={`translate(${MARGIN.left}, ${MARGIN.top})`}>
+			{data.map((row, i) => {
 				const points = row.data.reduce<Array<{ x: string; y: string }>>((acc, curr, i) => {
 					if (curr) {
 						acc.push({
-							x: xTicks[i].start.toFixed(2),
+							x: xTicks[i].mid.toFixed(2),
 							y: yScale(curr.points).toFixed(2),
 						});
 					}
@@ -63,7 +33,7 @@ export function DataPlot(props: DataPlotProps): VNode {
 					(acc, curr, i) => (i === 0 ? `M${curr.x},${curr.y}` : `${acc} L${curr.x},${curr.y}`),
 					'',
 				);
-				const color = `var(--${type}-color-${row.ref})`;
+				const color = `var(--chart-color-${row.id})`;
 
 				return (
 					<g

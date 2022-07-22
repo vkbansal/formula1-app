@@ -1,21 +1,20 @@
 import { h, Fragment, type VNode } from 'preact';
-import type { Band } from 'helpers/chartUtils';
+import type { ScaleBand } from 'helpers/chartUtils';
 
 import { CHART_HEIGHT, CHART_WIDTH, MARGIN } from './common';
 
 export interface GridProps {
-	xTicks: Band[];
+	xScale: ScaleBand<string>;
 	yTicks: number[];
-	xStep: number;
 	activeColumn: number;
 }
 
 export function Grid(props: GridProps): VNode {
-	const { xTicks, yTicks, xStep, activeColumn } = props;
+	const { xScale, yTicks, activeColumn } = props;
 
 	return (
 		<g class="grid" transform={`translate(${MARGIN.left}, ${MARGIN.top})`}>
-			{xTicks.map((xTick, i) => {
+			{xScale.ticks().map((xTick, i) => {
 				return (
 					<Fragment>
 						<rect
@@ -24,7 +23,7 @@ export function Grid(props: GridProps): VNode {
 							class="grid-bar-x"
 							x={xTick.start}
 							y="0"
-							width={xStep}
+							width={xScale.step()}
 							height={CHART_HEIGHT}
 						/>
 						<line

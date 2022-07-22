@@ -131,10 +131,14 @@ export function Table<T>(props: TableProps<T>): VNode {
 		>
 			<thead style={typeof stickyHeader === 'string' ? { top: stickyHeader } : undefined}>
 				<tr>
-					{children.map((col) => {
+					{children.map((col, i) => {
 						return (
 							<th
-								key={col.props.id}
+								key={`${col.props.id}_${i}`}
+								class={cx({
+									'text-right': col.props.align === 'right',
+									'text-center': col.props.align === 'center',
+								})}
 								aria-sort={
 									sortCol === col.props.id ? (sortAsc ? 'ascending' : 'descending') : undefined
 								}
@@ -157,11 +161,12 @@ export function Table<T>(props: TableProps<T>): VNode {
 				</tr>
 			</thead>
 			<tbody>
-				{sortedData.map((row) => {
+				{sortedData.map((row, i) => {
 					const rowId = getRowId(row);
+
 					return (
-						<tr key={rowId}>
-							{children.map((col) => {
+						<tr key={`${rowId}_${i}`}>
+							{children.map((col, j) => {
 								const rowChild =
 									typeof col.props.render === 'function'
 										? h(col.props.render, {
@@ -172,7 +177,7 @@ export function Table<T>(props: TableProps<T>): VNode {
 
 								return (
 									<td
-										key={`${rowId}_${col.props.id}`}
+										key={`${rowId}_${col.props.id}_${i}_${j}`}
 										class={cx({
 											'text-right': col.props.align === 'right',
 											'text-center': col.props.align === 'center',

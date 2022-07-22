@@ -6,3 +6,16 @@ export const CHART_HEIGHT = TOTAL_HEIGHT - MARGIN.top - MARGIN.bottom;
 export const STROKE_WIDTH = 3;
 export const Y_STEP = 20;
 export const MOUSE_OFFSET = 20;
+
+export interface ChartPoint {
+	position: number;
+	points: number;
+	wins: number;
+	podium: number | null;
+}
+
+export interface ChartData {
+	label: string;
+	id: string;
+	data: Array<ChartPoint | null>;
+}
