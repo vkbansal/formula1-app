@@ -15,6 +15,11 @@ jobs:
         with:
           node-version: '16'
           cache: 'pnpm'
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          run_install: |
+            - args: [--frozen-lockfile]
       - name: Lint
         run: |
           yarn
@@ -30,6 +35,11 @@ jobs:
         with:
           node-version: '16'
           cache: 'pnpm'
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          run_install: |
+            - args: [--frozen-lockfile]
       - name: Type Check
         run: |
           yarn
@@ -45,6 +55,11 @@ jobs:
         with:
           node-version: '16'
           cache: 'pnpm'
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          run_install: |
+            - args: [--frozen-lockfile]
       - name: Prettier
         run: |
           yarn
