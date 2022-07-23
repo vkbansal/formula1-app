@@ -5,6 +5,7 @@
 		"module": "ESNext",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
+		"skipLibCheck": true,
 		"jsx": "react",
 		"jsxFactory": "h",
 		"types": ["astro/client", "vite/client"],
