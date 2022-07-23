@@ -13,6 +13,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
+          version: '7.5.2'
           run_install: |
             - args: [--frozen-lockfile]
       - name: Setup Node
@@ -33,12 +34,13 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
+          node-version: '16'
           run_install: |
             - args: [--frozen-lockfile]
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          version: '7.5.2'
           cache: 'pnpm'
       - name: Type Check
         run: |
@@ -53,6 +55,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
+          version: '7.5.2'
           run_install: |
             - args: [--frozen-lockfile]
       - name: Setup Node
@@ -77,6 +80,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
+          version: '7.5.2'
           run_install: |
             - args: [--frozen-lockfile]
       - name: Setup Node
