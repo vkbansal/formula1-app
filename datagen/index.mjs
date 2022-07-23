@@ -1,6 +1,8 @@
 import mariadb from 'mariadb';
 
 import { executeQueryFromFile, writeDataFile } from './helpers.mjs';
+import { constructors } from './constructors.mjs';
+import { drivers } from './drivers.mjs';
 import { homePage } from './homepage.mjs';
 import { seasons } from './seasons.mjs';
 
@@ -20,5 +22,7 @@ await writeDataFile(
 );
 await homePage(db);
 await seasons(db, seasonsData);
+await drivers(db);
+await constructors(db);
 
 process.exit(0);

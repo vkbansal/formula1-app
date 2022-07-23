@@ -13,6 +13,39 @@ declare module 'data/homepage.yaml' {
 	export default data;
 }
 
+declare module 'data/drivers.yaml' {
+	export interface Driver {
+		driverRef: string;
+		name: string;
+		dob: string;
+		nationality: string;
+		totalRaces: number;
+		raceWins: number;
+		podiums: number;
+		winPct: number;
+		championshipStandings: Array<{ year: number; position: number }>;
+	}
+
+	const data: Driver[];
+	export default data;
+}
+
+declare module 'data/constructors.yaml' {
+	export interface Constructor {
+		constructorRef: string;
+		name: string;
+		nationality: string;
+		totalRaces: number;
+		raceWins: number;
+		podiums: number;
+		winPct: number;
+		championshipStandings: Array<{ year: number; position: number }>;
+	}
+
+	const data: Constructor[];
+	export default data;
+}
+
 declare module 'data/metadata.yaml' {
 	export interface Data {
 		currentSeason: number;
