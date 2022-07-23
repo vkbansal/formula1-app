@@ -4,9 +4,10 @@
   "description": "An app for Formula 1 world Championship related statistics",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint 'src/**/*.{ts,tsx}' 'scripts/**/*.{js,mjs}'",
-    "fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}' 'scripts/**/*.{js,mjs}'",
-    "fmt:check": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx}' 'scripts/**/*.{js,mjs}'",
+    "lint": "eslint 'src/**/*.{ts,tsx}' 'datagen/**/*.{js,mjs}'",
+    "fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}' 'datagen/**/*.{js,mjs}'",
+    "fmt:check": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx}' 'datagen/**/*.{js,mjs}'",
+		"typecheck": "astro check && tsc --noEmit",
     "dev": "astro dev",
     "data": "wget http://ergast.com/downloads/f1db.sql.gz -O initdb.d/f1db.sql.gz",
     "prebuild": "rm -rf public",

@@ -21,10 +21,7 @@ export function mapKeys<T = unknown, U = unknown, V extends keyof U = never>(
 	fn: (key: V, value: U[V], o: U) => string,
 ): T {
 	return Object.fromEntries(
-		Object.entries(obj).map(([key, value]) => [
-			fn(key as V, value, obj),
-			value,
-		]),
+		Object.entries(obj).map(([key, value]) => [fn(key as V, value, obj), value]),
 	) as T;
 }
 
@@ -33,9 +30,6 @@ export function mapValues<T, U extends keyof T, V>(
 	fn: (key: U, value: T[U], o: T) => V,
 ): Record<U, V> {
 	return Object.fromEntries(
-		Object.entries(obj).map(([key, value]) => [
-			key as U,
-			fn(key as U, value, obj),
-		]),
+		Object.entries(obj).map(([key, value]) => [key as U, fn(key as U, value, obj)]),
 	) as Record<U, V>;
 }

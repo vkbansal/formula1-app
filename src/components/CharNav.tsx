@@ -40,10 +40,7 @@ export function CharNav(props: CharNavProps): VNode {
 		const dx = linkRect.left - parentRect.left;
 		const scale = linkRect.width / 100;
 
-		ref.current.setAttribute(
-			'style',
-			`transform: translateX(${dx}px) scaleX(${scale})`,
-		);
+		ref.current.setAttribute('style', `transform: translateX(${dx}px) scaleX(${scale})`);
 	}, []);
 
 	useEffect(() => {
