@@ -11,7 +11,7 @@ export interface ChartPoint {
 	position: number;
 	points: number;
 	wins: number;
-	podium: number | null;
+	podium: number[];
 }
 
 export interface ChartData {

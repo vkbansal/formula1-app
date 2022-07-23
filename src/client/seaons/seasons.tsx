@@ -51,14 +51,16 @@ export function SeasonsClient(props: ClientProps): VNode {
 		return drivers.map((driver) => {
 			const data = rounds.map((round): ChartPoint | null => {
 				const result = round.driverStandings.find((d) => d.driverRef === driver.driverRef);
-				const podium = round.podium.find((d) => d.driverRef === driver.driverRef);
+				const podium = round.podium
+					.filter((p) => p.driverRef === driver.driverRef)
+					.map((p) => p.position);
 
 				return result
 					? {
 							points: result.points,
 							position: result.position,
 							wins: result.wins,
-							podium: podium ? podium.position : null,
+							podium: podium,
 					  }
 					: null;
 			});
@@ -77,14 +79,16 @@ export function SeasonsClient(props: ClientProps): VNode {
 				const result = round.constructorStandings.find(
 					(c) => c.constructorRef === constructor_.constructorRef,
 				);
-				const podium = round.podium.find((c) => c.driverRef === constructor_.constructorRef);
+				const podium = round.podium
+					.filter((p) => p.constructorRef === constructor_.constructorRef)
+					.map((p) => p.position);
 
 				return result
 					? {
 							points: result.points,
 							position: result.position,
 							wins: result.wins,
-							podium: podium ? podium.position : null,
+							podium: podium,
 					  }
 					: null;
 			});
@@ -105,7 +109,7 @@ export function SeasonsClient(props: ClientProps): VNode {
 	const chartLabels = useMemo(() => rounds.map((r) => r.name), [rounds]);
 
 	return (
-		<Tabs defaultActiveTab={1}>
+		<Tabs>
 			<Tabs.Panel id="r" title="Races" class="races-table-panel">
 				<Table data={rounds} rowId="raceId">
 					<Table.Column<Round> id="round" title="Round" render="round" />

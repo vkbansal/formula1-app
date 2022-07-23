@@ -43,12 +43,15 @@ function LabelCell(props: LegendsData): VNode {
 			>
 				{props.label}
 			</span>
-			{props.podium ? (
-				<span
-					class={`trophy trophy-${props.podium}`}
-					dangerouslySetInnerHTML={{ __html: trophySvg }}
-				/>
-			) : null}
+			<div>
+				{props.podium.map((i) => (
+					<span
+						key={i}
+						class={`trophy trophy-${i}`}
+						dangerouslySetInnerHTML={{ __html: trophySvg }}
+					/>
+				))}
+			</div>
 		</div>
 	);
 }
@@ -68,7 +71,7 @@ export function PointsTable(props: PointsTableProps): VNode {
 				return {
 					id: row.id,
 					label: row.label,
-					...(race || { position: Infinity, points: 0, wins: 0, podium: null }),
+					...(race || { position: Infinity, points: 0, wins: 0, podium: [] }),
 					gain: prevRace && race ? prevRace.position - race.position : 0,
 				};
 			})

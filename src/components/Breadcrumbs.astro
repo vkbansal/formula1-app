@@ -1,4 +1,6 @@
 ---
+import homeIcon from 'images/home.svg?raw';
+
 export interface Link {
 	label: string;
 	href: string;
@@ -14,8 +16,12 @@ const lastLink = links.at(-1);
 ---
 
 <div class='breadcrumbs'>
-	<a class='home-link' href='/'>🏠</a>
-	{restLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+	<a class='home-link' title='home' href='/' set:html={homeIcon}></a>
+	{restLinks.map((link) => (
+		<a href={link.href} title={link.label}>
+			{link.label.trim()}
+		</a>
+	))}
 	{lastLink ? <span>{lastLink.label}</span> : null}
 </div>
 
@@ -31,16 +37,13 @@ const lastLink = links.at(-1);
 		}
 
 		& > a {
-			color: var(--text-lighter);
-
-			&:hover {
-				text-decoration: underline;
-			}
+			color: var(--red-600);
 
 			&::after {
 				display: inline-block;
 				content: '/';
 				padding: 0 0.25rem;
+				color: var(--text-main);
 			}
 		}
 
@@ -49,8 +52,22 @@ const lastLink = links.at(-1);
 			font-weight: 500;
 		}
 
-		& .home-link::after {
-			padding: 0 0.25rem 0 0.5rem;
+		& .home-link {
+			display: inline-flex;
+			align-items: center;
+
+			& > :global(svg) {
+				width: 0.75rem;
+				height: 0.75rem;
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			&::after {
+				padding: 0 0.25rem 0 0.5rem;
+			}
 		}
 	}
 </style>
