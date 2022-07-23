@@ -10,6 +10,8 @@ jobs:
     name: ESLint
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@master
       - name: Setup
         uses: './.github/workflows/setup-node.yaml'
       - name: Lint
@@ -20,6 +22,8 @@ jobs:
     name: TypeCheck
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@master
       - name: Setup
         uses: './.github/workflows/setup-node.yaml'
       - name: Type Check
@@ -30,6 +34,8 @@ jobs:
     name: Prettier
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@master
       - name: Setup
         uses: './.github/workflows/setup-node.yaml'
       - name: Prettier
