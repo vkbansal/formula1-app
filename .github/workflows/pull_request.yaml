@@ -12,16 +12,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'pnpm'
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           run_install: |
             - args: [--frozen-lockfile]
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'pnpm'
       - name: Lint
         run: |
           yarn
@@ -32,16 +32,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'pnpm'
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           run_install: |
             - args: [--frozen-lockfile]
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'pnpm'
       - name: Type Check
         run: |
           yarn
@@ -52,16 +52,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'pnpm'
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           run_install: |
             - args: [--frozen-lockfile]
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'pnpm'
       - name: Prettier
         run: |
           yarn
