@@ -10,13 +10,8 @@ jobs:
     name: ESLint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'pnpm'
+      - name: Setup
+        uses: './.github/workflows/setup-node.yaml'
       - name: Lint
         run: |
           yarn
@@ -25,13 +20,8 @@ jobs:
     name: TypeCheck
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'pnpm'
+      - name: Setup
+        uses: './.github/workflows/setup-node.yaml'
       - name: Type Check
         run: |
           yarn
@@ -40,13 +30,8 @@ jobs:
     name: Prettier
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'pnpm'
+      - name: Setup
+        uses: './.github/workflows/setup-node.yaml'
       - name: Prettier
         run: |
           yarn
