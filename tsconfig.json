@@ -7,7 +7,7 @@
 		"esModuleInterop": true,
 		"jsx": "react",
 		"jsxFactory": "h",
-		"types": ["astro/client"],
+		"types": ["astro/client", "vite/client"],
 		"jsxFragmentFactory": "Fragment",
 		"strict": true
 	},

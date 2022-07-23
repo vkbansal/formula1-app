@@ -7,7 +7,7 @@
     "lint": "eslint 'src/**/*.{ts,tsx}' 'datagen/**/*.{js,mjs}'",
     "fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}' 'datagen/**/*.{js,mjs}'",
     "fmt:check": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx}' 'datagen/**/*.{js,mjs}'",
-		"typecheck": "astro check && tsc --noEmit",
+    "typecheck": "astro check && tsc --noEmit",
     "dev": "astro dev",
     "data": "wget http://ergast.com/downloads/f1db.sql.gz -O initdb.d/f1db.sql.gz",
     "prebuild": "rm -rf public",
@@ -38,6 +38,7 @@
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.1.2",
     "sass": "^1.54.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vite": "^3.0.2"
   }
 }
