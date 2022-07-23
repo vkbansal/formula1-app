@@ -1,0 +1,84 @@
+---
+import MainLayout from 'layouts/MainLayout.astro';
+import seasons from 'data/seasons.yaml';
+import metadata from 'data/metadata.yaml';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+
+const gridWidth = 9;
+const extraBoxes = Array.from({ length: gridWidth - (seasons.length % gridWidth) });
+seasons.reverse();
+---
+
+<MainLayout title='Home'>
+	<Breadcrumbs links={[{ label: 'Seasons', href: '/seasons/' }]} />
+	<h1>All Seasons</h1>
+	<p class='text-light'>* - Current Season</p>
+	<section class='seasons-grid'>
+		{seasons.map((season) => (
+			<div class="season-card">
+				<a
+					href={`/seasons/${season}/`}
+					class:list={['h2', { 'current-season': metadata.currentSeason === season }]}
+				>
+					{season}
+				</a>
+			</div>
+		))}
+		{extraBoxes.map(() => <div class="season-card" />)}
+	</section>
+	<br />
+</MainLayout>
+
+<style lang='scss' define:vars={{ 'grid-width': gridWidth }}>
+	.seasons-grid {
+		display: grid;
+		grid-template-columns: repeat(var(--grid-width), 1fr);
+		border-radius: 1rem;
+		overflow: hidden;
+		border: 1px solid var(--border);
+		margin-bottom: 2rem;
+	}
+
+	.season-card {
+		margin: 0;
+		overflow: hidden;
+		aspect-ratio: 1 / 1;
+
+		& > a {
+			font-weight: 700;
+			display: flex;
+			text-decoration: none;
+			align-items: center;
+			justify-content: center;
+			transform-origin: center center;
+			transition: transform 0.3s ease-out;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+
+			&:hover {
+				transform: scale(1.35);
+			}
+
+			&.current-season::after {
+				content: '*';
+			}
+		}
+
+		&:nth-child(2n) {
+			background: var(--white);
+
+			& > a {
+				color: var(--black);
+			}
+		}
+
+		&:nth-child(2n + 1) {
+			background: var(--black);
+
+			& > a {
+				color: var(--white);
+			}
+		}
+	}
+</style>

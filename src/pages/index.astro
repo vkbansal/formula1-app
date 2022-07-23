@@ -1,0 +1,131 @@
+---
+import MainLayout from 'layouts/MainLayout.astro';
+import numOfEntities from 'data/homepage.yaml';
+import f1Logo from 'images/f1-logo.svg';
+---
+
+<MainLayout title='Home'>
+	<div class='wrapper'>
+		<div>
+			Till date, there have been <span class='facts-typing fact'><span id='facts'></span></span>
+			<br /> in
+			<span class='fact'>The <img src={f1Logo} height='40' /> World Championships</span>
+			<br /> which started in <span class='fact'>1950!</span>
+		</div>
+	</div>
+</MainLayout>
+
+<script define:vars={{ numOfEntities }}>
+	(() => {
+		const facts = document.getElementById('facts');
+		const linesToType = [
+			`${numOfEntities.seasons - 1} Seasons`,
+			`${numOfEntities.drivers} Drivers`,
+			`${numOfEntities.constructors} Constructors`,
+			`${numOfEntities.races} Grand prix races`,
+			`${numOfEntities.driverChampions} Driver Champions`,
+			`${numOfEntities.constructorChampions} Constructor Champions`,
+		];
+
+		let currentLine = 0;
+		let eraseLine = false;
+		facts.innerHTML = '';
+
+		function type() {
+			if (!facts) return;
+
+			const lineToType = linesToType[currentLine];
+			const typedLine = facts.innerHTML;
+			let update = facts.innerHTML;
+			let timeout = 100;
+
+			// check is erase flag is true
+			if (eraseLine) {
+				// remove a char from end
+				update = typedLine.slice(0, -1);
+
+				// if erase is complete, reset the erase flag
+				if (update === '') {
+					eraseLine = false;
+				}
+			} else {
+				let charToType = linesToType[currentLine].charAt(typedLine.length);
+				update = typedLine + charToType;
+
+				// if the line is complete, increase the delay before start erasing
+				if (update === lineToType) {
+					eraseLine = true;
+					currentLine = (currentLine + 1) % linesToType.length;
+					timeout = 2000;
+				}
+			}
+
+			facts.innerHTML = update;
+			window.setTimeout(type, timeout);
+		}
+
+		type();
+	})();
+</script>
+
+<style lang='scss'>
+	.wrapper {
+		margin: -1rem 0;
+		display: flex;
+		font-size: 3rem;
+		line-height: 2;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	.facts-typing {
+		display: inline-block;
+		width: 16ch;
+		text-align: left;
+
+		& > span {
+			display: inline-block;
+
+			&::after {
+				content: '';
+				display: inline-block;
+				width: 0.15rem;
+				height: 1.3em;
+				animation: blink 1s infinite;
+				background: currentColor;
+				transform: translate(100%, 20%);
+			}
+		}
+	}
+
+	.fact {
+		font-weight: 700;
+		display: inline-block;
+		white-space: nowrap;
+		line-height: inherit;
+		font-size: 1.1em;
+	}
+
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		49% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		99% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+</style>

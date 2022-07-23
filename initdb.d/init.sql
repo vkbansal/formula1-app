@@ -1,38 +1,57 @@
 USE f1db;
 
-CREATE TABLE `driverChampionships` AS (
-	SELECT
-		`FR`.`year` AS `year`,
-		`R`.`raceId` AS `raceId`,
-		`DS`.`driverId` AS `driverId`,
-		`DS`.`position` AS `position`
-	FROM (
-		SELECT
-			MAX(`R`.`round`) AS `round`,
-			`R`.`year` AS `year`
-		FROM `races` AS `R`
-		GROUP BY `R`.`year`
-	) AS `FR`
-	LEFT OUTER JOIN `races` AS `R` USING (`round`, `year`)
-	LEFT OUTER JOIN `driverStandings` AS DS USING (`raceId`)
-);
+CREATE TABLE `driverChampionships` (
+	`driverChampionshipId` int(11) NOT NULL AUTO_INCREMENT,
+  `year` int(11) NOT NULL DEFAULT 0,
+  `raceId` int(11) DEFAULT 0,
+  `driverId` int(11) DEFAULT 0,
+  `position` int(11) DEFAULT NULL,
+	PRIMARY KEY (`driverChampionshipId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `constructorChampionships` AS (
+INSERT INTO `driverChampionships`
+(`year`, `raceId`, `driverId`, `position`)
+SELECT
+	`FR`.`year` AS `year`,
+	`R`.`raceId` AS `raceId`,
+	`DS`.`driverId` AS `driverId`,
+	`DS`.`position` AS `position`
+FROM (
 	SELECT
-		`FR`.`year` AS `year`,
-		`R`.`raceId` AS `raceId`,
-		`CS`.`constructorId` AS `constructorId`,
-		`CS`.`position` AS `position`
-	FROM (
-		SELECT
-			MAX(`R`.`round`) AS `round`,
-			`R`.`year` AS `year`
-		FROM `races` AS `R`
-		GROUP BY `R`.`year`
-	) AS `FR`
-	LEFT OUTER JOIN `races` AS `R` USING (`round`, `year`)
-	LEFT OUTER JOIN `constructorStandings` AS CS USING (`raceId`)
-);
+		MAX(`R`.`round`) AS `round`,
+		`R`.`year` AS `year`
+	FROM `races` AS `R`
+	GROUP BY `R`.`year`
+) AS `FR`
+LEFT OUTER JOIN `races` AS `R` USING (`round`, `year`)
+LEFT OUTER JOIN `driverStandings` AS DS USING (`raceId`)
+;
+
+CREATE TABLE `constructorChampionships` (
+	`constructorChampionshipId` int(11) NOT NULL AUTO_INCREMENT,
+  `year` int(11) NOT NULL DEFAULT 0,
+  `raceId` int(11) DEFAULT 0,
+  `constructorId` int(11) DEFAULT 0,
+  `position` int(11) DEFAULT NULL,
+	PRIMARY KEY (`constructorChampionshipId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `constructorChampionships`
+(`year`, `raceId`, `constructorId`, `position`)
+SELECT
+	`FR`.`year` AS `year`,
+	`R`.`raceId` AS `raceId`,
+	`CS`.`constructorId` AS `constructorId`,
+	`CS`.`position` AS `position`
+FROM (
+	SELECT
+		MAX(`R`.`round`) AS `round`,
+		`R`.`year` AS `year`
+	FROM `races` AS `R`
+	GROUP BY `R`.`year`
+) AS `FR`
+LEFT OUTER JOIN `races` AS `R` USING (`round`, `year`)
+LEFT OUTER JOIN `constructorStandings` AS CS USING (`raceId`);
 
 ALTER TABLE `circuits` ENGINE=InnoDB;
 ALTER TABLE `constructorResults` ENGINE=InnoDB;
