@@ -40,7 +40,7 @@ h6,
 	color: var(--text-main);
 	font-weight: 600;
 	line-height: 1.2;
-	margin-bottom: 1rem;
+	margin: 1rem 0;
 }
 h1,
 .h1 {
@@ -138,18 +138,12 @@ ul {
 	}
 }
 
-.text-f1 {
-	color: var(--f1-red);
-}
-
-.text-2,
 .text-light {
 	color: var(--text-light);
 }
 
 .text-lighter {
-	color: var(--text-light);
-	opacity: 0.75;
+	color: var(--text-lighter);
 }
 
 .text-right {

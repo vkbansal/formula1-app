@@ -11,16 +11,16 @@
 		cursor: pointer;
 		border: 1px solid transparent;
 		border-radius: 0.5rem 0.5rem 0 0;
-		border-color: var(--f1-red) var(--f1-red) var(--border) var(--f1-red);
+		border-color: var(--red-600) var(--red-600) var(--border) var(--red-600);
+		background-color: var(--red-600);
 		text-align: center;
-		background-color: var(--f1-red);
 		color: white;
 		text-transform: uppercase;
 		z-index: 0;
 		transform: translateY(1px);
 
 		&.tab-active {
-			background-color: var(--body-bg);
+			background-color: var(--gray-100);
 			color: var(--text-main);
 			font-weight: bold;
 			z-index: 2;
@@ -34,11 +34,24 @@
 		display: none;
 		border: 1px solid var(--border);
 		border-radius: 0.5rem;
-		background-color: var(--body-bg);
+		background-color: var(--gray-100);
 		z-index: 2;
 
 		&.tab-active {
 			display: block;
+		}
+	}
+}
+
+html[data-theme='dark'] {
+	.tabs {
+		& .tab {
+			&.tab-active {
+				background-color: var(--gray-800);
+			}
+		}
+		& .tab-panel {
+			background-color: var(--gray-800);
 		}
 	}
 }

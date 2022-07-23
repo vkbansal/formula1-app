@@ -22,12 +22,12 @@ function PositionCell(props: LegendsData): VNode {
 			<span>{props.position === Infinity ? '-' : formatOrdinals(props.position)}</span>
 			{props.gain !== 0 ? (
 				<span class="points-legend-position-gain">
+					<span>{Math.abs(props.gain)}</span>
 					{props.gain / Math.abs(props.gain) === 1 ? (
 						<span class="gain-up">▲</span>
 					) : (
 						<span class="gain-down">▼</span>
 					)}
-					<span>{Math.abs(props.gain)}</span>
 				</span>
 			) : null}
 		</div>
@@ -52,33 +52,6 @@ function LabelCell(props: LegendsData): VNode {
 		</div>
 	);
 }
-
-// const getLegendColumns = (label: string): TableColumnProps<LegendsData>[] => [
-// 	{
-// 		id: 'ps',
-// 		title: 'Position',
-// 		data: (d) => (
-//
-// 		),
-// 	},
-// 	{
-// 		id: 'd',
-// 		title: label,
-// 		data: (d) => (
-
-// 		),
-// 	},
-// 	{
-// 		id: 'pt',
-// 		title: 'Points',
-// 		data: 'points',
-// 	},
-// 	{
-// 		id: 'w',
-// 		title: 'Wins',
-// 		data: 'wins',
-// 	},
-// ];
 
 export function PointsTable(props: PointsTableProps): VNode {
 	const { legendLabel, data, activeRace } = props;

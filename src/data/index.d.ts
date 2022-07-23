@@ -5,6 +5,8 @@ declare module 'data/homepage.yaml' {
 		constructors: number;
 		circuits: number;
 		races: number;
+		driverChampions: number;
+		constructorsChampions: number;
 	}
 
 	const data: Data;

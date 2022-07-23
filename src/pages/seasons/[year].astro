@@ -26,16 +26,22 @@ const constructorsColors = constructors.reduce((p, c, i) => {
 	p[`chart-color-${c.constructorRef}`] = colors[i];
 	return p;
 }, {} as Record<string, string>);
+const hasPrev = seasons[0] < year;
+const hasNext = seasons[seasons.length - 1] > year;
 ---
 
 <MainLayout title='Home'>
-	<div class=''>
+	<div class='seasons-header'>
 		<Breadcrumbs
 			links={[
 				{ label: 'Seasons', href: '/seasons/' },
 				{ label: `${year} Season`, href: '' },
 			]}
 		/>
+		<nav class='season-pagination'>
+			{hasPrev ? <a href={`/seasons/${year - 1}`}>&larr; {year - 1}</a> : null}
+			{hasNext ? <a href={`/seasons/${year + 1}`}>{year + 1} &rarr;</a> : null}
+		</nav>
 	</div>
 	<h1>
 		{year} Season {metadata.currentSeason === year ? '(Current Season)' : ''}
@@ -46,6 +52,23 @@ const constructorsColors = constructors.reduce((p, c, i) => {
 </MainLayout>
 
 <style lang='scss' define:vars={{ ...driverColors, ...constructorsColors }}>
+	.seasons-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.season-pagination {
+		font-size: 0.85rem;
+		display: flex;
+		gap: 1rem;
+
+		a {
+			color: var(--text-lighter);
+			text-decoration: none;
+		}
+	}
+
 	.season-tabs {
 		margin: 0 0 2rem 0;
 
@@ -83,13 +106,13 @@ const constructorsColors = constructors.reduce((p, c, i) => {
 			& :global(.gain-up) {
 				display: inline-block;
 				transform: translateY(5%);
-				margin-right: 0.1rem;
+				margin-left: 0.1rem;
 			}
 
 			& :global(.gain-down) {
 				display: inline-block;
 				transform: translateY(5%);
-				margin-right: 0.1rem;
+				margin-left: 0.1rem;
 			}
 		}
 

@@ -9,14 +9,9 @@
 	--black: #{map-get(colors.$neutral, '900')};
 	--header-height: 4.5rem;
 	--footer-height: 4rem;
-	--f1-red: #{map-get(colors.$red, '600')};
 
 	@each $key, $value in colors.$red {
 		--red-#{$key}: #{$value};
-	}
-
-	@each $key, $value in colors.$neutral {
-		--gray-#{$key}: #{$value};
 	}
 }
 
@@ -24,24 +19,28 @@
 	light theme colors
 =====================================================*/
 @mixin theme-light {
-	--body-bg: #{map-get(colors.$neutral, '100')};
-	--text-main: #{map-get(colors.$neutral, '900')};
-	--text-light: #{map-get(colors.$neutral, '700')};
-	--text-lighter: #{map-get(colors.$neutral, '500')};
-	--border: #{map-get(colors.$neutral, '300')};
-	--border-light: var(--gray-light);
+	@each $key, $value in colors.$neutral {
+		--gray-#{$key}: #{$value};
+	}
+	--body-bg: var(--gray-100);
+	--text-main: var(--gray-900);
+	--text-light: var(--gray-700);
+	--text-lighter: var(--gray-500);
+	--border: var(--gray-300);
 }
 
 /*=====================================================
 	dark theme colors
 =====================================================*/
 @mixin theme-dark {
-	--body-bg: #{map-get(colors.$gray, '900')};
-	--text-main: #{map-get(colors.$neutral, '100')};
-	--text-light: #{map-get(colors.$neutral, '300')};
-	--text-lighter: #{map-get(colors.$neutral, '500')};
-	--border: #{map-get(colors.$gray, '700')};
-	--border-light: var(--gray-light);
+	@each $key, $value in colors.$gray {
+		--gray-#{$key}: #{$value};
+	}
+	--body-bg: var(--gray-900);
+	--text-main: var(--gray-100);
+	--text-light: var(--gray-300);
+	--text-lighter: var(--gray-400);
+	--border: var(--gray-700);
 }
 
 :root {

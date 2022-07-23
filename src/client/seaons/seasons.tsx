@@ -99,7 +99,7 @@ export function SeasonsClient(props: ClientProps): VNode {
 
 	const lastCompletedRound = useMemo(() => {
 		const lastRoundWithNoPodiums = rounds.findIndex((round) => round.podium.length === 0) - 1;
-		return lastRoundWithNoPodiums > -1 ? lastRoundWithNoPodiums : rounds.length;
+		return lastRoundWithNoPodiums > -1 ? lastRoundWithNoPodiums : rounds.length - 1;
 	}, [rounds]);
 
 	const chartLabels = useMemo(() => rounds.map((r) => r.name), [rounds]);

@@ -59,22 +59,13 @@ const url = Astro.canonicalURL.pathname;
 		display: block;
 		font-size: 2rem;
 		text-decoration: none;
-		font-family: var(--font-family);
 		font-weight: 400;
-
-		& span:first-child {
-			color: var(--f1-red);
-			font-weight: 700;
-			font-size: 2.5rem;
-			margin-right: -0.5rem;
-		}
 	}
 
 	.nav {
 		display: flex;
 		align-items: center;
 		column-gap: 1.5rem;
-		font-family: var(--font-family-oswald);
 	}
 
 	.nav-link {
@@ -91,7 +82,7 @@ const url = Astro.canonicalURL.pathname;
 			left: 0;
 			height: 0.2em;
 			width: 100%;
-			background-color: var(--f1-red);
+			background-color: var(--red-600);
 			transition: transform 0.2s ease-in-out;
 			transform-origin: left center;
 			transform: scaleX(0);
