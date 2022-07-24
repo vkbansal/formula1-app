@@ -1608,9 +1608,142 @@ rounds:
       name: Circuit Paul Ricard
       location: Le Castellet
       country: France
-    podium: []
-    driverStandings: []
-    constructorStandings: []
+    podium:
+      - driverRef: max_verstappen
+        constructorRef: red_bull
+        position: 1
+      - driverRef: hamilton
+        constructorRef: mercedes
+        position: 2
+      - driverRef: russell
+        constructorRef: mercedes
+        position: 3
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 233
+        wins: 7
+      - driverRef: leclerc
+        position: 2
+        points: 170
+        wins: 3
+      - driverRef: perez
+        position: 3
+        points: 163
+        wins: 1
+      - driverRef: sainz
+        position: 4
+        points: 144
+        wins: 1
+      - driverRef: russell
+        position: 5
+        points: 143
+        wins: 0
+      - driverRef: hamilton
+        position: 6
+        points: 127
+        wins: 0
+      - driverRef: norris
+        position: 7
+        points: 70
+        wins: 0
+      - driverRef: ocon
+        position: 8
+        points: 56
+        wins: 0
+      - driverRef: bottas
+        position: 9
+        points: 46
+        wins: 0
+      - driverRef: alonso
+        position: 10
+        points: 37
+        wins: 0
+      - driverRef: kevin_magnussen
+        position: 11
+        points: 22
+        wins: 0
+      - driverRef: ricciardo
+        position: 12
+        points: 19
+        wins: 0
+      - driverRef: gasly
+        position: 13
+        points: 16
+        wins: 0
+      - driverRef: vettel
+        position: 14
+        points: 15
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 15
+        points: 12
+        wins: 0
+      - driverRef: tsunoda
+        position: 16
+        points: 11
+        wins: 0
+      - driverRef: zhou
+        position: 17
+        points: 5
+        wins: 0
+      - driverRef: stroll
+        position: 18
+        points: 4
+        wins: 0
+      - driverRef: albon
+        position: 19
+        points: 3
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: hulkenberg
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 396
+        wins: 8
+      - constructorRef: ferrari
+        position: 2
+        points: 314
+        wins: 4
+      - constructorRef: mercedes
+        position: 3
+        points: 270
+        wins: 0
+      - constructorRef: alpine
+        position: 4
+        points: 93
+        wins: 0
+      - constructorRef: mclaren
+        position: 5
+        points: 89
+        wins: 0
+      - constructorRef: alfa
+        position: 6
+        points: 51
+        wins: 0
+      - constructorRef: haas
+        position: 7
+        points: 34
+        wins: 0
+      - constructorRef: alphatauri
+        position: 8
+        points: 27
+        wins: 0
+      - constructorRef: aston_martin
+        position: 9
+        points: 19
+        wins: 0
+      - constructorRef: williams
+        position: 10
+        points: 3
+        wins: 0
   - raceId: 1086
     year: 2022
     round: 13

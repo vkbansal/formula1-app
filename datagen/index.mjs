@@ -10,9 +10,9 @@ await datagen.writeDataFile(
 	'seasons.yaml',
 	seasonsData.map(({ year }) => year),
 );
-// await datagen.homePage();
-// await datagen.seasons(seasonsData);
+await datagen.homePage();
+await datagen.seasons(seasonsData);
 await datagen.drivers();
-// await datagen.constructors();
+await datagen.constructors();
 
 process.exit(0);
