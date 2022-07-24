@@ -4,38 +4,15 @@ import { useState, useEffect } from 'preact/hooks';
 import cx from 'classnames';
 import { normalize } from 'helpers/utils';
 
-export interface BaseTableColumnProps<T, U = never> {
+export interface TableColumnProps<T, U = never> {
 	id: string;
 	title: ComponentChildren;
 	align?: 'left' | 'right' | 'center';
 	render: keyof T | FunctionComponent<U extends never ? T : T & U>;
-	sortable?: boolean;
+	sortBy?: keyof T;
+	sorter?(a: T, b: T, sortAsc: boolean): number;
 	extraProps?: U;
 }
-
-export interface SimpleTableColumnProps<T, U = never> extends BaseTableColumnProps<T, U> {
-	sortable?: false;
-}
-
-export interface SimpleSortableTableColumnProps<T, U = never> extends BaseTableColumnProps<T, U> {
-	sortable: true;
-	data: keyof T;
-}
-
-export interface SortableTableColumnWithSorterProps<T, U = never>
-	extends BaseTableColumnProps<T, U> {
-	sortable: true;
-	data: (row: T) => string | number;
-	sorter: keyof T | ((a: T, b: T) => 1 | -1 | 0);
-}
-
-export type SortableTableColumnProps<T, U = never> =
-	| SimpleSortableTableColumnProps<T, U>
-	| SortableTableColumnWithSorterProps<T, U>;
-
-export type TableColumnProps<T, U = never> =
-	| SimpleTableColumnProps<T, U>
-	| SortableTableColumnProps<T, U>;
 
 export interface TableProps<T> {
 	data: T[];
@@ -69,7 +46,7 @@ export function Table<T>(props: TableProps<T>): VNode {
 			? _getRowId
 			: (row: T): ComponentChildren => row[_getRowId] as unknown as ComponentChildren;
 
-	function handleSort(colToSort: SortableTableColumnProps<T>): void {
+	function handleSort(colToSort: TableColumnProps<T>): void {
 		if (!colToSort) {
 			return;
 		}
@@ -90,9 +67,7 @@ export function Table<T>(props: TableProps<T>): VNode {
 		}
 
 		const sorter =
-			typeof (colToSort.props as SortableTableColumnProps<T>).data === 'string'
-				? (colToSort.props as SimpleSortableTableColumnProps<T>).data
-				: (colToSort.props as SortableTableColumnWithSorterProps<T>).sorter;
+			typeof colToSort.props.sortBy === 'string' ? colToSort.props.sortBy : colToSort.props.sorter;
 
 		const copy = data.slice(0);
 
@@ -109,7 +84,7 @@ export function Table<T>(props: TableProps<T>): VNode {
 				return 0;
 			});
 		} else if (typeof sorter === 'function') {
-			copy.sort(sorter);
+			copy.sort((a, b) => sorter(a, b, sortAsc));
 		}
 
 		setSortedData(copy);
@@ -132,10 +107,12 @@ export function Table<T>(props: TableProps<T>): VNode {
 			<thead style={typeof stickyHeader === 'string' ? { top: stickyHeader } : undefined}>
 				<tr>
 					{children.map((col, i) => {
+						const enableSort = !!(col.props.sortBy || col.props.sorter);
 						return (
 							<th
 								key={`${col.props.id}_${i}`}
 								class={cx({
+									'sortable-column': enableSort,
 									'text-right': col.props.align === 'right',
 									'text-center': col.props.align === 'center',
 								})}
@@ -143,11 +120,11 @@ export function Table<T>(props: TableProps<T>): VNode {
 									sortCol === col.props.id ? (sortAsc ? 'ascending' : 'descending') : undefined
 								}
 							>
-								{col.props.sortable ? (
+								{enableSort ? (
 									<button
 										type="button"
 										class="sort-btn"
-										onClick={(): void => handleSort(col.props as SortableTableColumnProps<T>)}
+										onClick={(): void => handleSort(col.props)}
 									>
 										<span>{col.props.title}</span>
 										<span aria-hidden="true" class="sort-indicator" />

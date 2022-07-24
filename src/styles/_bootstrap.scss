@@ -19,7 +19,6 @@ body {
 	line-height: 1.5;
 	color: var(--text-main);
 	background-color: var(--body-bg);
-	transition: background-color 0.2s ease-out, color 0.2s ease-out;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	height: 100%;
@@ -103,6 +102,40 @@ h6,
 
 a {
 	color: var(--text-main);
+
+	&[disabled] {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+
+	&.nav-link {
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 500;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 100%;
+			left: 0;
+			height: 0.2em;
+			width: 100%;
+			background-color: var(--red-600);
+			transition: transform 0.2s ease-in-out;
+			transform-origin: left center;
+			transform: scaleX(0);
+		}
+
+		&:hover::after {
+			transform: scaleX(1);
+		}
+
+		&.nav-link-active::after {
+			transform: scaleX(1);
+		}
+	}
 }
 
 hr {
@@ -204,4 +237,9 @@ ul {
 	.text-red-#{$key} {
 		color: $value;
 	}
+}
+
+.flex-center-y {
+	display: flex;
+	align-items: center;
 }

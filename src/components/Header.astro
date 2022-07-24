@@ -4,43 +4,43 @@ import f1Logo from 'images/f1-logo.svg';
 const url = Astro.canonicalURL.pathname;
 ---
 
-<header class='main'>
-	<div class='container'>
-		<a href='/' class='logo'>
-			<img src={f1Logo} width='120' height='30' alt='Formula 1 Logo' />
-			<span>Statistics <span class='text-scale-50 text-lighter'>(Beta)</span></span>
+<header class="main">
+	<div class="container">
+		<a href="/" class="logo">
+			<img src={f1Logo} width="120" height="30" alt="Formula 1 Logo" />
+			<span>Statistics <span class="text-scale-50 text-lighter">(Beta)</span></span>
 		</a>
-		<nav class='nav'>
+		<nav class="nav">
 			<a
-				href='/seasons'
+				href="/seasons"
 				class:list={['nav-link', { 'nav-link-active': url.startsWith('/seasons/') }]}
 			>
 				Seasons
 			</a>
 			<a
-				href='/constructors'
+				href="/constructors"
 				class:list={['nav-link', { 'nav-link-active': url.startsWith('/constructors/') }]}
 			>
 				Constructors
 			</a>
 			<a
-				href='/drivers'
+				href="/drivers"
 				class:list={['nav-link', { 'nav-link-active': url.startsWith('/drivers/') }]}
 			>
 				Drivers
 			</a>
-			<a href='/about' class:list={['nav-link', { 'nav-link-active': url.startsWith('/about/') }]}>
+			<a href="/about" class:list={['nav-link', { 'nav-link-active': url.startsWith('/about/') }]}>
 				About
 			</a>
-			<label for='theme-toggle' class='theme-toggle' title='Theme'>
-				<input id='theme-toggle' type='checkbox' />
+			<label for="theme-toggle" class="theme-toggle" title="Theme">
+				<input id="theme-toggle" type="checkbox" />
 				<span></span>
 			</label>
 		</nav>
 	</div>
 </header>
 
-<style lang='scss'>
+<style lang="scss">
 	@use 'sass:math';
 
 	.main {
@@ -66,35 +66,6 @@ const url = Astro.canonicalURL.pathname;
 		display: flex;
 		align-items: center;
 		column-gap: 1.5rem;
-	}
-
-	.nav-link {
-		display: inline-block;
-		text-decoration: none;
-		font-weight: 500;
-		position: relative;
-
-		&::after {
-			content: '';
-			position: absolute;
-			display: block;
-			top: 100%;
-			left: 0;
-			height: 0.2em;
-			width: 100%;
-			background-color: var(--red-600);
-			transition: transform 0.2s ease-in-out;
-			transform-origin: left center;
-			transform: scaleX(0);
-		}
-
-		&:hover::after {
-			transform: scaleX(1);
-		}
-	}
-
-	.nav-link-active::after {
-		transform: scaleX(1);
 	}
 
 	$switch_width: 2.75rem;

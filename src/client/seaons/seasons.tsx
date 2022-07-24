@@ -1,4 +1,3 @@
-import 'preact/debug';
 import { h, Fragment, type VNode } from 'preact';
 
 import { Tabs } from 'components/Tabs';

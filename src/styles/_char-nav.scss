@@ -1,12 +1,12 @@
 .char-nav {
 	display: flex;
-	height: 2.5rem;
+	height: var(--char-nav-height, 2.5rem);
 	align-items: center;
 	justify-content: space-evenly;
 	position: sticky;
 	top: 0;
-	background-color: var(--bg);
-	box-shadow: 0 1px 0 var(--divider);
+	background-color: var(--body-bg);
+	box-shadow: 0 1px 0 var(--border);
 	z-index: 2;
 
 	.char-nav-highlight {
@@ -30,7 +30,8 @@
 
 	a {
 		display: block;
-		padding: 0.5rem;
+		padding: 0.5rem 0.5rem 0;
+		margin-bottom: 0.5rem;
 		z-index: 1;
 		text-decoration: none;
 	}

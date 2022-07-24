@@ -23,6 +23,16 @@ module.exports = {
 		'no-console': 2,
 		'no-restricted-imports': 0,
 		'no-unused-vars': 0,
+		'@typescript-eslint/no-restricted-imports': [
+			2,
+			{
+				paths: [
+					{
+						name: 'preact/debug',
+					},
+				],
+			},
+		],
 		'@typescript-eslint/no-unused-vars': [
 			2,
 			{
