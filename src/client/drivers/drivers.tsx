@@ -1,4 +1,3 @@
-import 'preact/debug';
 import { h, type VNode } from 'preact';
 import { useMemo } from 'preact/hooks';
 import type { Driver } from 'data/drivers.yaml';
