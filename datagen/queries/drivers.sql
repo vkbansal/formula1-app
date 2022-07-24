@@ -1,38 +1,48 @@
 SELECT
-	`T`.`driverRef`,
-	`T`.`name`,
-	`T`.`dob`,
-	`T`.`nationality`,
-	`T`.`raceWins`,
-	`T`.`totalRaces`,
-	`T`.`podiums`,
-	CAST(
-		IF(`T`.`totalRaces` = 0, 0, `T`.`raceWins` * 100 / `T`.`totalRaces`) AS FLOAT
-	) AS `winPct`,
+	`D`.`driverId`,
+	`D`.`driverRef`,
+	CONCAT(`D`.`forename`, " ",`D`.`surname`) AS `name`,
+	`D`.`dob`,
+	`D`.`nationality`,
+	`R`.`totalRaces`,
+	`R`.`raceWins`,
+	`R`.`podiums`,
+	IF(`L`.`totalLaps` IS NULL, 0, `L`.`totalLaps`) AS `totalLaps`,
+	IF(`L`.`lapsLead` IS NULL, 0, `L`.`lapsLead`) AS `lapsLead`,
+	`DC`.`championshipStandings`
+FROM `drivers` AS `D`
+LEFT OUTER JOIN (
+	SELECT
+		`driverId`,
+		COUNT(DISTINCT `raceId`) AS `totalRaces`,
+		CAST(SUM(IF(`position` = 1, 1, 0)) AS INT) AS `raceWins`,
+		CAST(SUM(IF(`position` <= 3, 1, 0)) AS INT) AS `podiums`
+	FROM `results`
+	GROUP BY `driverId`
+) AS `R` USING (`driverId`)
+LEFT OUTER JOIN (
+	SELECT
+	`driverId`,
 	IF(
-		COUNT(`DC`.`year`) = 0,
+		COUNT(`year`) = 0,
 		JSON_ARRAY(),
 		JSON_ARRAYAGG(
 			JSON_OBJECT(
-				'year', `DC`.`year`,
-				'position', `DC`.`position`
-			) ORDER BY `DC`.`year` ASC
+				'year', `year`,
+				'position', `position`
+			) ORDER BY `year` ASC
 		)
 	) AS `championshipStandings`
-FROM (
+	FROM `driverChampionships`
+	GROUP BY `driverId`
+) AS `DC` USING (`driverId`)
+LEFT OUTER JOIN (
 	SELECT
-		`D`.`driverId`,
-		`D`.`driverRef`,
-		CONCAT(`D`.`forename`, " ",`D`.`surname`) AS `name`,
-		`D`.`dob`,
-		`D`.`nationality`,
-		COUNT(*) AS `totalRaces`,
-		CAST(SUM(IF(`RE`.`position` = 1, 1, 0)) AS INT) AS `raceWins`,
-		CAST(SUM(IF(`RE`.`position` <= 3, 1, 0)) AS INT) AS `podiums`
-	FROM `drivers` AS `D`
-	LEFT OUTER JOIN `results` AS `RE` USING (`driverId`)
-	GROUP BY `D`.`driverId`
-) AS T
-LEFT OUTER JOIN `driverChampionships` AS `DC` USING (`driverId`)
-GROUP BY `T`.`driverId`
-ORDER BY `T`.`name`
+	`driverId`,
+	COUNT(*) AS `totalLaps`,
+	CAST(SUM(IF(`position` = 1, 1, 0)) AS INT) AS `lapsLead`
+	FROM `lapTimes`
+	GROUP BY `driverId`
+) AS `L` USING (`driverId`)
+GROUP BY `D`.`driverId`
+ORDER BY `name` ASC

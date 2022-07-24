@@ -1,28 +1,18 @@
-import mariadb from 'mariadb';
+import { Datagen } from './Datagen.mjs';
 
-import { executeQueryFromFile, writeDataFile } from './helpers.mjs';
-import { constructors } from './constructors.mjs';
-import { drivers } from './drivers.mjs';
-import { homePage } from './homepage.mjs';
-import { seasons } from './seasons.mjs';
+const datagen = new Datagen();
 
-const db = await mariadb.createConnection({
-	host: 'localhost',
-	user: 'root',
-	database: 'f1db',
-	bigIntAsNumber: true,
-	dateStrings: true,
-});
+await datagen.init();
 
-const seasonsData = await executeQueryFromFile(db, 'seasons.sql');
+const seasonsData = await datagen.executeQueryFromFile('seasons.sql');
 
-await writeDataFile(
+await datagen.writeDataFile(
 	'seasons.yaml',
 	seasonsData.map(({ year }) => year),
 );
-await homePage(db);
-await seasons(db, seasonsData);
-await drivers(db);
-await constructors(db);
+// await datagen.homePage();
+// await datagen.seasons(seasonsData);
+await datagen.drivers();
+// await datagen.constructors();
 
 process.exit(0);
