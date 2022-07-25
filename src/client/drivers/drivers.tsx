@@ -23,9 +23,57 @@ function championshipSorter(a: Driver, b: Driver, sortAsc: boolean): number {
 }
 
 function ChampionshipCell(props: Driver): VNode {
-	const won = (props.championshipStandings || []).filter((c) => c.position === 1);
+	const standings = props.championshipStandings || [];
+	const won = standings.filter((c) => c.position === 1).map((c) => c.year);
 
-	return <span>{won.length}</span>;
+	return won.length > 0 ? (
+		<details>
+			<summary>{won.length}</summary>
+			{won.join(', ')}
+		</details>
+	) : (
+		<span>0</span>
+	);
+}
+
+function TotalLapsCell(props: Driver): VNode {
+	return <span>{typeof props.totalLaps === 'number' ? props.totalLaps : 'n/a'}</span>;
+}
+
+function LapsLeadCell(props: Driver): VNode {
+	return <span>{typeof props.lapsLead === 'number' ? props.lapsLead : 'n/a'}</span>;
+}
+
+function totalLapsSorter(a: Driver, b: Driver, sortAsc: boolean): number {
+	if (typeof a.totalLaps === 'number' && typeof b.totalLaps === 'number') {
+		return sortAsc ? a.totalLaps - b.totalLaps : b.totalLaps - a.totalLaps;
+	}
+
+	if (typeof a.totalLaps === 'number' && b.totalLaps === null) {
+		return -1;
+	}
+
+	if (typeof b.totalLaps === 'number' && a.totalLaps === null) {
+		return 1;
+	}
+
+	return 0;
+}
+
+function lapsLeadSorter(a: Driver, b: Driver, sortAsc: boolean): number {
+	if (typeof a.lapsLead === 'number' && typeof b.lapsLead === 'number') {
+		return sortAsc ? a.lapsLead - b.lapsLead : b.lapsLead - a.lapsLead;
+	}
+
+	if (typeof a.lapsLead === 'number' && b.lapsLead === null) {
+		return -1;
+	}
+
+	if (typeof b.lapsLead === 'number' && a.lapsLead === null) {
+		return 1;
+	}
+
+	return 0;
 }
 
 export interface DriversProps {
@@ -86,7 +134,7 @@ export function Drivers(props: DriversProps): VNode {
 				active={hash.slice(0, 1)}
 				disabledChars={disabledChars}
 			/>
-			<Table data={tableData} rowId="driverRef" stickyHeader="var(--char-nav-height)">
+			<Table data={tableData} rowId="driverRef" stickyHeader="var(--char-nav-height)" fixedLayout>
 				<Table.Column<Driver> id="name" title="Driver" render="name" sortBy="name" />
 				<Table.Column<Driver>
 					id="country"
@@ -111,16 +159,16 @@ export function Drivers(props: DriversProps): VNode {
 				<Table.Column<Driver>
 					id="total-laps"
 					title="Total Laps"
-					render="totalLaps"
+					render={TotalLapsCell}
 					align="right"
-					sortBy="totalLaps"
+					sorter={totalLapsSorter}
 				/>
 				<Table.Column<Driver>
 					id="laps-lead"
 					title="Laps Lead"
-					render="lapsLead"
+					render={LapsLeadCell}
 					align="right"
-					sortBy="lapsLead"
+					sorter={lapsLeadSorter}
 				/>
 				<Table.Column
 					id="championships"

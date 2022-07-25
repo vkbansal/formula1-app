@@ -26,6 +26,7 @@
 	& tbody tr td {
 		padding: 1em;
 		text-align: left;
+		vertical-align: baseline;
 
 		&:first-child {
 			padding-left: 2em;

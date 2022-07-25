@@ -17,6 +17,7 @@ const currentDrivers = currentSeasonDrivers.map((d) => d.driverRef);
 <MainLayout title="Home">
 	<Breadcrumbs links={[{ label: 'Drivers', href: '/drivers/' }]} />
 	<h1>Drivers</h1>
+	<p>Note: Lap time data is available from the 1996 season onwards.</p>
 	<Drivers
 		drivers={allDrivers}
 		currentSeason={metadata.currentSeason}

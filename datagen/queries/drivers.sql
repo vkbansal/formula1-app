@@ -7,8 +7,8 @@ SELECT
 	`R`.`totalRaces`,
 	`R`.`raceWins`,
 	`R`.`podiums`,
-	IF(`L`.`totalLaps` IS NULL, 0, `L`.`totalLaps`) AS `totalLaps`,
-	IF(`L`.`lapsLead` IS NULL, 0, `L`.`lapsLead`) AS `lapsLead`,
+	`L`.`totalLaps`,
+	`L`.`lapsLead`,
 	`DC`.`championshipStandings`
 FROM `drivers` AS `D`
 LEFT OUTER JOIN (

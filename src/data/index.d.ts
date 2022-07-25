@@ -22,8 +22,8 @@ declare module 'data/drivers.yaml' {
 		totalRaces: number;
 		raceWins: number;
 		podiums: number;
-		totalLaps: number;
-		lapsLead: number;
+		totalLaps: number | null;
+		lapsLead: number | null;
 		championshipStandings: Array<{ year: number; position: number }>;
 	}
 
