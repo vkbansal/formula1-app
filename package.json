@@ -12,7 +12,8 @@
     "data": "wget http://ergast.com/downloads/f1db.sql.gz -O initdb.d/f1db.sql.gz",
     "prebuild": "rm -rf public",
     "build": "NODE_ENV=production astro build",
-    "datagen": "node ./scripts/datagen/index.mjs generate"
+    "datagen": "node ./scripts/datagen/index.mjs generate",
+    "prepare": "husky install"
   },
   "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
   "license": "MIT",
@@ -30,6 +31,7 @@
     "eslint-config-prettier": "^8.5.0",
     "fast-json-stable-stringify": "^2.1.0",
     "globby": "^13.1.2",
+    "husky": "^8.0.1",
     "js-yaml": "^4.1.0",
     "mariadb": "^3.0.0",
     "normalize.css": "^8.0.1",
