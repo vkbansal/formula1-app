@@ -30,15 +30,15 @@ const hasPrev = seasons[0] < year;
 const hasNext = seasons[seasons.length - 1] > year;
 ---
 
-<MainLayout title='Home'>
-	<div class='seasons-header'>
+<MainLayout title="Home">
+	<div class="seasons-header">
 		<Breadcrumbs
 			links={[
 				{ label: 'Seasons', href: '/seasons/' },
 				{ label: `${year} Season`, href: '' },
 			]}
 		/>
-		<nav class='season-pagination'>
+		<nav class="season-pagination">
 			{hasPrev ? <a href={`/seasons/${year - 1}`}>&larr; {year - 1}</a> : null}
 			{hasNext ? <a href={`/seasons/${year + 1}`}>{year + 1} &rarr;</a> : null}
 		</nav>
@@ -46,12 +46,12 @@ const hasNext = seasons[seasons.length - 1] > year;
 	<h1>
 		{year} Season {metadata.currentSeason === year ? '(Current Season)' : ''}
 	</h1>
-	<div class='season-tabs'>
+	<div class="season-tabs">
 		<SeasonsClient rounds={rounds} drivers={drivers} constructors={constructors} client:load />
 	</div>
 </MainLayout>
 
-<style lang='scss' define:vars={{ ...driverColors, ...constructorsColors }}>
+<style lang="scss" define:vars={{ ...driverColors, ...constructorsColors }}>
 	.seasons-header {
 		display: flex;
 		align-items: center;

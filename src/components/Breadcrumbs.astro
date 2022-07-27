@@ -15,8 +15,8 @@ const restLinks = links.slice(0, links.length - 1);
 const lastLink = links.at(-1);
 ---
 
-<div class='breadcrumbs'>
-	<a class='home-link' title='home' href='/' set:html={homeIcon}></a>
+<div class="breadcrumbs">
+	<a class="home-link" title="home" href="/" set:html={homeIcon}></a>
 	{restLinks.map((link) => (
 		<a href={link.href} title={link.label}>
 			{link.label.trim()}
@@ -25,7 +25,7 @@ const lastLink = links.at(-1);
 	{lastLink ? <span>{lastLink.label}</span> : null}
 </div>
 
-<style lang='scss'>
+<style lang="scss">
 	.breadcrumbs {
 		margin: 1rem 0;
 

@@ -9,11 +9,11 @@ const extraBoxes = Array.from({ length: gridWidth - (seasons.length % gridWidth)
 seasons.reverse();
 ---
 
-<MainLayout title='Home'>
+<MainLayout title="Home">
 	<Breadcrumbs links={[{ label: 'Seasons', href: '/seasons/' }]} />
 	<h1>All Seasons</h1>
-	<p class='text-light'>* - Current Season</p>
-	<section class='seasons-grid'>
+	<p class="text-light">* - Current Season</p>
+	<section class="seasons-grid">
 		{seasons.map((season) => (
 			<div class="season-card">
 				<a
@@ -29,7 +29,7 @@ seasons.reverse();
 	<br />
 </MainLayout>
 
-<style lang='scss' define:vars={{ 'grid-width': gridWidth }}>
+<style lang="scss" define:vars={{ 'grid-width': gridWidth }}>
 	.seasons-grid {
 		display: grid;
 		grid-template-columns: repeat(var(--grid-width), 1fr);

@@ -19,7 +19,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: '7.5.2'
+          version: '7.6.0'
           run_install: false
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -49,7 +49,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: '7.5.2'
+          version: '7.6.0'
           run_install: false
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -79,7 +79,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: '7.5.2'
+          version: '7.6.0'
           run_install: false
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -95,4 +95,4 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Prettier
-        run: pnpm run fmt:check
+        run: pnpm run fmtc
