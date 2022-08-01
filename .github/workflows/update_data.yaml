@@ -1,0 +1,11 @@
+on: workflow_dispatch
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Codebase
+        uses: './.github/setup-codebase.yaml'
+      - name: Update data
+        run: |
+          DATA=$(curl http://ergast.com/api/f1/current/last/results.json)
