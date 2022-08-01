@@ -1,11 +1,35 @@
+name: Update data
 on: workflow_dispatch
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Codebase
-        uses: './.github/setup-codebase.yaml'
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: '7.8.0'
+          run_install: false
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install dependencies
+        run: pnpm install
       - name: Update data
         run: |
-          DATA=$(curl http://ergast.com/api/f1/current/last/results.json)
+          set -e
+          pnpm run get-data
