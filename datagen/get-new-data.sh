@@ -7,7 +7,7 @@ CURRENT_ROUND="$(cat datagen/metadata.json | jq -r .latest.round)"
 
 echo "Latest data is for: $(echo $DATA | jq -r '.MRData.RaceTable.Races[0].raceName') $LATEST_SEASON"
 
-if [[ $CURRENT_SEASON -eq $LATEST_SEASON ]] && [[ $CURRENT_ROUND -eq $LATEST_ROUND ]]; then
+if [ "$CURRENT_SEASON" = "$LATEST_SEASON" ] && [ "$CURRENT_ROUND" = "$LATEST_ROUND" ]; then
 	echo "No new data found!"
 else
 	echo "New data exists"

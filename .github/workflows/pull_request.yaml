@@ -5,9 +5,6 @@ on:
       - opened
       - reopened
       - synchronize
-defaults:
-  run:
-    shell: zsh {0}
 jobs:
   eslint:
     name: ESLint
