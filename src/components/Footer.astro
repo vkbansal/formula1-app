@@ -15,19 +15,25 @@
 </footer>
 
 <style lang="scss">
+	@use '../styles/breakpoints' as bp;
+
 	.main {
 		padding: 1rem 0;
 		width: 100%;
 		border-top: 1px solid var(--border);
 		color: var(--text-lighter);
-		height: var(--footer-height);
 
 		& > .container {
 			font-size: 0.75rem;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			height: 100%;
+
+			@media screen and (max-width: bp.$md) {
+				flex-direction: column;
+				gap: 0.5rem;
+				align-items: flex-start;
+			}
 		}
 
 		p {

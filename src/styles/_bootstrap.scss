@@ -4,8 +4,6 @@
 html {
 	box-sizing: border-box;
 	font-size: 100%;
-	height: 100%;
-	width: 100%;
 }
 
 *,
@@ -21,9 +19,11 @@ body {
 	background-color: var(--body-bg);
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	height: 100%;
-	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
+
 h1,
 h2,
 h3,

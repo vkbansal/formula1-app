@@ -5,12 +5,25 @@ const url = Astro.url.pathname;
 ---
 
 <header class="main">
-	<div class="container">
-		<a href="/" class="logo">
-			<img src={f1Logo} width="120" height="30" alt="Formula 1 Logo" />
-			<span>Statistics <span class="text-scale-50 text-lighter">(Beta)</span></span>
-		</a>
-		<nav class="nav">
+	<nav class="container navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a href="/" class="logo">
+				<img src={f1Logo} alt="Formula 1 Logo" />
+				<span>Statistics <span class="text-scale-50 text-lighter">(Beta)</span></span>
+			</a>
+			<a
+				role="button"
+				class="navbar-burger"
+				aria-label="menu"
+				aria-expanded="false"
+				id="navbar-burger"
+			>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<nav class="nav-menu" id="nav-menu">
 			<a
 				href="/seasons"
 				class:list={['nav-link', { 'nav-link-active': url.startsWith('/seasons/') }]}
@@ -37,35 +50,155 @@ const url = Astro.url.pathname;
 				<span></span>
 			</label>
 		</nav>
-	</div>
+	</nav>
 </header>
-
+<script>
+	const burger = document.getElementById('navbar-burger');
+	const menu = document.getElementById('nav-menu');
+	if (burger && menu) {
+		burger.addEventListener('click', (e) => {
+			burger.classList.toggle('is-active');
+			menu.classList.toggle('is-active');
+			// TODO: handle aria changes
+		});
+	}
+</script>
 <style lang="scss">
 	@use 'sass:math';
+	@use '../styles/breakpoints' as bp;
 
 	.main {
 		border-bottom: 1px solid var(--border);
-		height: var(--header-height);
 
-		& > :global(.container) {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			height: 100%;
+		@media screen and (min-width: bp.$lg) {
+			// height: var(--header-height);
 		}
 	}
 
-	.logo {
-		display: block;
-		font-size: 2rem;
-		text-decoration: none;
-		font-weight: 400;
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		padding: 1rem;
+
+		@media screen and (max-width: bp.$lg) {
+			flex-direction: column;
+		}
+
+		.navbar-brand {
+			display: flex;
+			align-items: center;
+
+			@media screen and (max-width: bp.$lg) {
+				width: 100%;
+				justify-content: space-between;
+			}
+		}
+
+		.logo {
+			display: block;
+			font-size: 2rem;
+			text-decoration: none;
+			font-weight: 400;
+
+			& > img {
+				height: 1em;
+			}
+
+			@media screen and (max-width: bp.$md) {
+				font-size: 1.5rem;
+			}
+
+			@media screen and (max-width: bp.$sm) {
+				font-size: 1.25rem;
+			}
+		}
 	}
 
-	.nav {
+	.navbar-burger {
+		$bar-height: 0.25rem;
+		$burger-size: 1.5rem;
+		$delta: ($burger-size * math.div(math.sqrt(2) - 1, 2));
+		display: none;
+		width: $burger-size;
+		height: $burger-size;
+		padding: 0;
+		cursor: pointer;
+		position: relative;
+		margin-right: 0.5rem;
+		transition: transform 0.3s ease-out;
+
+		@media screen and (max-width: bp.$lg) {
+			display: block;
+		}
+
+		& > span {
+			display: block;
+			height: $bar-height;
+			border-radius: $bar-height;
+			width: $burger-size;
+			background: var(--text-light);
+			position: absolute;
+			left: 0;
+			opacity: 1;
+			transform-origin: left center;
+			transition: transform 0.3s ease-out;
+			margin: 0;
+
+			&:nth-child(1) {
+				top: 0;
+			}
+
+			&:nth-child(2) {
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			&:nth-child(3) {
+				bottom: 0;
+			}
+		}
+
+		&.is-active {
+			transform: rotate(180deg);
+
+			& > span {
+				&:nth-child(1) {
+					transform: translateY(-1 * math.div($bar-height, 2)) rotate(45deg) translateX($delta);
+				}
+
+				&:nth-child(2) {
+					opacity: 0;
+				}
+
+				&:nth-child(3) {
+					transform: translateY(math.div($bar-height, 2)) rotate(-45deg) translateX($delta);
+				}
+			}
+		}
+	}
+
+	.nav-menu {
 		display: flex;
 		align-items: center;
 		column-gap: 1.5rem;
+
+		@media screen and (max-width: bp.$lg) {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			display: none;
+
+			& > a {
+				text-align: center;
+				padding: 1rem;
+			}
+		}
+
+		&:global(.is-active) {
+			display: grid;
+		}
 	}
 
 	$switch_width: 2.75rem;
