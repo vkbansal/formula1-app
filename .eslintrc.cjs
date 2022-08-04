@@ -54,4 +54,20 @@ module.exports = {
 			},
 		],
 	},
+	overrides: [
+		{
+			files: ['*.astro'],
+			parser: 'astro-eslint-parser',
+			globals: {
+				Astro: true,
+				Fragment: true,
+			},
+			parserOptions: {
+				parser: '@typescript-eslint/parser',
+				extraFileExtensions: ['.astro'],
+				project: null,
+			},
+			rules: {},
+		},
+	],
 };

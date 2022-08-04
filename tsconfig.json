@@ -1,16 +1,19 @@
 {
 	"compilerOptions": {
-		"baseUrl": "./src",
+		"baseUrl": "src",
 		"target": "ESNext",
 		"module": "ESNext",
-		"moduleResolution": "node",
+		"strict": true,
+		"isolatedModules": true,
 		"esModuleInterop": true,
+		"moduleResolution": "Node",
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true,
 		"skipLibCheck": true,
+		"types": ["astro/client"],
 		"jsx": "react",
 		"jsxFactory": "h",
-		"types": ["astro/client"],
-		"jsxFragmentFactory": "Fragment",
-		"strict": true
+		"jsxFragmentFactory": "Fragment"
 	},
-	"include": ["./src"]
+	"include": ["src"]
 }
