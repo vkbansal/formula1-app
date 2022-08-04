@@ -5,6 +5,9 @@ on:
       - main
     paths:
       - 'src/**/*.*'
+      - pnpm-lock.yaml
+      - netlify.toml
+      - .github/workflows/main.yaml
 jobs:
   eslint:
     name: ESLint
@@ -133,7 +136,7 @@ jobs:
       - name: Publish
         uses: netlify/actions/cli@master
         with:
-          args: deploy --prod
+          args: deploy --prod --dir=public
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
