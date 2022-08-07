@@ -7,15 +7,16 @@ import { loadData } from 'helpers/data';
 import colors from 'helpers/colors';
 
 export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
-	const seasons = await loadData('seasons');
+	const seasonsForPagination = await loadData('seasons');
 
-	return seasons.map((year) => ({ params: { year: year.toString() } }));
+	return seasonsForPagination.map((year) => ({ params: { year: year.toString() } }));
 }
 
 const { year: yearStr } = Astro.params;
 const year = parseInt(yearStr as string, 10);
 const { rounds, drivers, constructors } = await loadData(`seasons/${yearStr}`);
 const metadata = await loadData('metadata');
+const seasons = await loadData('seasons');
 const driverColors = drivers.reduce((p, c, i) => {
 	p[`chart-color-${c.driverRef}`] = colors[i];
 	return p;
