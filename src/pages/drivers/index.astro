@@ -1,0 +1,29 @@
+---
+import MainLayout from 'layouts/MainLayout.astro';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+import { Drivers } from 'client/drivers/drivers';
+import { loadData } from 'helpers/data';
+
+const metadata = await loadData('metadata');
+const allDrivers = await loadData('drivers');
+const { drivers: currentSeasonDrivers } = await loadData(`seasons/${metadata.currentSeason}`);
+const currentDrivers = currentSeasonDrivers.map((d) => d.driverRef);
+---
+
+<MainLayout title="Home">
+	<Breadcrumbs links={[{ label: 'Drivers', href: '/drivers/' }]} />
+	<h1>Drivers</h1>
+	<p>Note: Lap time data is available from the 1996 season onwards.</p>
+	<Drivers
+		drivers={allDrivers}
+		currentSeason={metadata.currentSeason}
+		currentDrivers={currentDrivers}
+		client:load
+	/>
+</MainLayout>
+
+<style lang="scss">
+	:global(.drivers-data) {
+		--char-nav-height: 3rem;
+	}
+</style>

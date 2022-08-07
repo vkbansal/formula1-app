@@ -2,12 +2,11 @@
 import type { GetStaticPathsItem } from 'astro';
 import MainLayout from 'layouts/MainLayout.astro';
 import Breadcrumbs from 'components/Breadcrumbs.astro';
-
-import seasons from 'data/seasons.yaml';
-import metadata from 'data/metadata.yaml';
-import type { Season } from 'data/seasons/1950.yaml';
 import { SeasonsClient } from 'client/seaons/seasons';
+import { loadData } from 'helpers/data';
 import colors from 'helpers/colors';
+
+const seasons = await loadData('seasons');
 
 export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
 	return seasons.map((year) => ({ params: { year: year.toString() } }));
@@ -15,9 +14,8 @@ export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
 
 const { year: yearStr } = Astro.params;
 const year = parseInt(yearStr as string, 10);
-const {
-	default: { rounds, drivers, constructors },
-} = (await import(`../../data/seasons/${yearStr}.yaml`)) as { default: Season };
+const { rounds, drivers, constructors } = await loadData(`seasons/${yearStr}`);
+const metadata = await loadData('metadata');
 const driverColors = drivers.reduce((p, c, i) => {
 	p[`chart-color-${c.driverRef}`] = colors[i];
 	return p;

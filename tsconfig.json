@@ -10,10 +10,10 @@
 		"allowSyntheticDefaultImports": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
-		"types": ["astro/client"],
+		"types": ["astro/client", "@types/node"],
 		"jsx": "react",
 		"jsxFactory": "h",
 		"jsxFragmentFactory": "Fragment"
 	},
-	"include": ["src"]
+	"include": ["src", "astro.config.ts"]
 }

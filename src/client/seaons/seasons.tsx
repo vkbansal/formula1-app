@@ -3,7 +3,7 @@ import { h, Fragment, type VNode } from 'preact';
 import { Tabs } from 'components/Tabs';
 import { Table } from 'components/Table';
 import { Nationality } from 'components/Nationality';
-import type { Round, Driver, Constructor } from 'data/seasons/1950.yaml';
+import type { Round, SeasonDriver, SeasonConstructor } from 'helpers/data';
 import { PointsChart } from './PointsChart/PointsChart';
 import { useMemo } from 'preact/hooks';
 import type { ChartData, ChartPoint } from './PointsChart/common';
@@ -40,8 +40,8 @@ function WinnerCell(props: Round & Omit<ClientProps, 'rounds'>): VNode | null {
 
 export interface ClientProps {
 	rounds: Round[];
-	drivers: Driver[];
-	constructors: Constructor[];
+	drivers: SeasonDriver[];
+	constructors: SeasonConstructor[];
 }
 
 export function SeasonsClient(props: ClientProps): VNode {

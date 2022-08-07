@@ -1,6 +1,6 @@
 import { h, type VNode } from 'preact';
 import { useMemo } from 'preact/hooks';
-import type { Driver } from 'data/drivers.yaml';
+import type { Driver } from 'helpers/data';
 import { CharNav, CHARS } from 'components/CharNav';
 import { useHashChange } from 'client/hooks/useHashChange';
 import { Table } from 'components/Table';

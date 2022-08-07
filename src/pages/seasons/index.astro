@@ -1,8 +1,10 @@
 ---
 import MainLayout from 'layouts/MainLayout.astro';
-import seasons from 'data/seasons.yaml';
-import metadata from 'data/metadata.yaml';
 import Breadcrumbs from 'components/Breadcrumbs.astro';
+import { loadData } from 'helpers/data';
+
+const seasons = await loadData('seasons');
+const metadata = await loadData('metadata');
 
 const gridWidth = 9;
 const extraBoxes = Array.from({ length: gridWidth - (seasons.length % gridWidth) });

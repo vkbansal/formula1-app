@@ -1,23 +1,18 @@
-export interface F1RaceByCountry {
-	country: string;
-	count: number;
+import fs from 'node:fs/promises';
+import { load } from 'js-yaml';
+import { globby } from 'globby';
+
+export interface HomePage {
+	seasons: number;
+	drivers: number;
+	constructors: number;
+	circuits: number;
+	races: number;
+	driverChampions: number;
+	constructorsChampions: number;
 }
 
-export interface F1SeasonDriver {
-	driverRef: string;
-}
-
-export interface F1SeasonConstructor {
-	constructorRef: string;
-}
-
-export interface F1ChampionshipStanding {
-	year: number;
-	position: number;
-}
-
-export interface F1Driver {
-	driverId: number;
+export interface Driver {
 	driverRef: string;
 	name: string;
 	dob: string;
@@ -25,12 +20,12 @@ export interface F1Driver {
 	totalRaces: number;
 	raceWins: number;
 	podiums: number;
-	winPct: number;
-	championshipStandings: F1ChampionshipStanding[];
+	totalLaps: number | null;
+	lapsLead: number | null;
+	championshipStandings: Array<{ year: number; position: number }>;
 }
 
-export interface F1Constructor {
-	constructorId: number;
+export interface Constructor {
 	constructorRef: string;
 	name: string;
 	nationality: string;
@@ -38,39 +33,90 @@ export interface F1Constructor {
 	raceWins: number;
 	podiums: number;
 	winPct: number;
-	championshipStandings: F1ChampionshipStanding[];
+	championshipStandings: Array<{ year: number; position: number }>;
 }
 
-export interface F1DriverStanding {
+export interface Metadata {
+	currentSeason: number;
+	noContructorChampionships: number[];
+}
+
+export interface DriverStanding {
 	driverRef: string;
 	position: number;
 	points: number;
 	wins: number;
 }
 
-export interface F1ConstructorStanding {
+export interface ConstructorStanding {
 	constructorRef: string;
 	position: number;
 	points: number;
 	wins: number;
 }
 
-export interface F1Circuit {
-	name: string;
-	location: string;
-	country: string;
+export interface Podium {
+	constructorRef: string;
+	driverRef: string;
+	position: number;
 }
 
-export interface F1Race {
+export interface Round {
 	raceId: number;
 	year: number;
 	round: number;
 	name: string;
 	date: string;
-	time: string | null;
-	circuit: F1Circuit;
-	winnerDriver: string;
-	winnerConstructor: string;
-	driverStandings: F1DriverStanding[];
-	constructorStandings: F1ConstructorStanding[];
+	circuit: {
+		name: string;
+		location: string;
+		country: string;
+	};
+	podium: Podium[];
+	driverStandings: DriverStanding[];
+	constructorStandings: ConstructorStanding[];
+}
+
+export interface SeasonDriver {
+	driverRef: string;
+	name: string;
+	nationality: string;
+}
+
+export interface SeasonConstructor {
+	constructorRef: string;
+	name: string;
+	nationality: string;
+}
+
+export interface Season {
+	rounds: Round[];
+	drivers: SeasonDriver[];
+	constructors: SeasonConstructor[];
+}
+
+export interface DataMap {
+	homepage: HomePage;
+	metadata: Metadata;
+	seasons: number[];
+	drivers: Driver[];
+	[key: `drivers/${string}`]: Driver;
+	[key: `seasons/${number | string}`]: Season;
+}
+
+export async function loadData<T extends keyof DataMap>(key: T): Promise<DataMap[T]> {
+	if (key === 'drivers') {
+		const files = await globby(`src/data/${key}/*.yaml`);
+
+		const dataPromises = files.map(async (yamlFile) => {
+			const yamlData = await fs.readFile(yamlFile, 'utf8');
+			return load(yamlData);
+		});
+
+		return Promise.all(dataPromises) as unknown as DataMap[T];
+	}
+
+	const yamlData = await fs.readFile(`src/data/${key}.yaml`, 'utf8');
+
+	return load(yamlData) as DataMap[T];
 }

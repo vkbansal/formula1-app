@@ -56,12 +56,16 @@ export class Datagen {
 	async drivers() {
 		const data = await this.executeQueryFromFile('drivers.sql');
 
-		return this.writeDataFile('drivers.yaml', data);
+		for (const row of data) {
+			await this.writeDataFile(`drivers/${row.driverRef}.yaml`, row);
+		}
 	}
 
 	async constructors() {
 		const data = await this.executeQueryFromFile('constructors.sql');
 
-		return this.writeDataFile('constructors.yaml', data);
+		for (const row of data) {
+			await this.writeDataFile(`constructors/${row.constructorRef}.yaml`, row);
+		}
 	}
 }
