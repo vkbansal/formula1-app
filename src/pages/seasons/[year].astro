@@ -6,9 +6,9 @@ import { SeasonsClient } from 'client/seaons/seasons';
 import { loadData } from 'helpers/data';
 import colors from 'helpers/colors';
 
-const seasons = await loadData('seasons');
-
 export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
+	const seasons = await loadData('seasons');
+
 	return seasons.map((year) => ({ params: { year: year.toString() } }));
 }
 
