@@ -18,17 +18,17 @@
     "build": "NODE_ENV=production astro build"
   },
   "dependencies": {
-    "@astrojs/preact": "^0.5.2",
+    "@astrojs/preact": "^1.0.1",
     "@types/js-yaml": "^4.0.5",
-    "@types/node": "^18.6.5",
-    "astro": "1.0.0-rc.8",
+    "@types/node": "^18.7.1",
+    "astro": "1.0.2",
     "change-case": "^4.1.2",
     "classnames": "^2.3.1",
     "date-fns": "^2.29.1",
     "globby": "^13.1.2",
     "js-yaml": "^4.1.0",
     "normalize.css": "^8.0.1",
-    "preact": "^10.10.1",
+    "preact": "^10.10.2",
     "preact-render-to-string": "^5.2.1",
     "sass": "^1.54.3",
     "typescript": "^4.7.4"
@@ -38,10 +38,10 @@
     "@typescript-eslint/parser": "^5.33.0",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-astro": "^0.16.0",
+    "eslint-plugin-astro": "^0.17.1",
     "husky": "^8.0.1",
     "mariadb": "^3.0.1",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.4.1"
+    "prettier-plugin-astro": "^0.5.0"
   }
 }
