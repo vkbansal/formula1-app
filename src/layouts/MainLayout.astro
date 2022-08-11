@@ -37,6 +37,26 @@ const { title, class: className } = Astro.props as Props;
 			<slot/>
 		</div>
 		<Footer />
+		<script>
+			try {
+				const time = new Date();
+				fetch('/.netlify/functions/user', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({
+						host: window.location.host,
+						page: window.location.pathname,
+						time: {
+							time: time.toISOString(),
+							tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+							offset: time.getTimezoneOffset(),
+						},
+					}),
+				});
+			} catch (_) {
+				//
+			}
+		</script>
 	</body>
 </html>
 

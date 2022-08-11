@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@astrojs/preact": "^1.0.1",
+    "@netlify/functions": "^1.0.0",
     "@types/js-yaml": "^4.0.5",
     "@types/node": "^18.7.1",
     "astro": "1.0.2",
@@ -27,6 +28,7 @@
     "date-fns": "^2.29.1",
     "globby": "^13.1.2",
     "js-yaml": "^4.1.0",
+    "mongodb": "^4.8.1",
     "normalize.css": "^8.0.1",
     "preact": "^10.10.2",
     "preact-render-to-string": "^5.2.1",

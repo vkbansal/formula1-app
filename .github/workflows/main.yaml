@@ -2,7 +2,7 @@ name: Publish on Netlify
 on:
   push:
     branches:
-      - main
+      - main-foo
     paths:
       - 'src/**/*.*'
       - pnpm-lock.yaml

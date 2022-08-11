@@ -39,6 +39,7 @@ module.exports = {
 				vars: 'all',
 				args: 'after-used',
 				ignoreRestSiblings: true,
+				argsIgnorePattern: '^_',
 			},
 		],
 		'@typescript-eslint/explicit-function-return-type': [
