@@ -42,16 +42,18 @@ const { title, class: className } = Astro.props as Props;
 				const time = new Date();
 				fetch('/.netlify/functions/user', {
 					method: 'POST',
-					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify({
-						host: window.location.host,
-						page: window.location.pathname,
-						time: {
-							time: time.toISOString(),
-							tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
-							offset: time.getTimezoneOffset(),
-						},
-					}),
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({
+							h: window.location.host,
+							p: window.location.pathname,
+							u: navigator.userAgent,
+							r: document.referrer,
+							d: time.toISOString(),
+							t: Intl.DateTimeFormat().resolvedOptions().timeZone,
+							o: time.getTimezoneOffset(),
+							vw: window.innerWidth,
+							vh: window.innerHeight,
+						}),
 				});
 			} catch (_) {
 				//

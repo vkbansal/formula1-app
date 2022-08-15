@@ -28,9 +28,17 @@ const handler: Handler = async (event, _context) => {
 		const body = JSON.parse(event.body);
 
 		await collection.insertOne({
-			site: body.host,
-			page: body.page || 'unknown',
-			time: body.time,
+			site: body.h,
+			page: body.p || 'unknown',
+			date: new Date(body.d),
+			ua: body.u || null,
+			referrer: body.r || null,
+			timezone: body.t,
+			timeOffset: body.o,
+			viewport: {
+				width: body.vw,
+				height: body.vh,
+			},
 		});
 
 		return { statusCode: 200, body: JSON.stringify({ message: 'OK' }) };
