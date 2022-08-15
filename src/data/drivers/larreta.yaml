@@ -4,6 +4,7 @@ driverRef: larreta
 name: Alberto Rodriguez Larreta
 dob: '1934-01-14'
 nationality: Argentine
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1960
     position: 38
+seasons:
+  - year: 1960
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Team Lotus
+        position: 9
+        points: 0

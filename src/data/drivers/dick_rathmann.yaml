@@ -4,6 +4,7 @@ driverRef: dick_rathmann
 name: Dick Rathmann
 dob: '1924-01-06'
 nationality: American
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -20,3 +21,39 @@ championshipStandings:
     position: 61
   - year: 1960
     position: 74
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: null
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 5
+        points: 2
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: null
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: null
+        points: 0
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: 31
+        points: 0

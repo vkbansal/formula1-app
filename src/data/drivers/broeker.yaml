@@ -4,6 +4,7 @@ driverRef: broeker
 name: Peter Broeker
 dob: '1926-05-15'
 nationality: Canadian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1963
     position: 20
+seasons:
+  - year: 1963
+    results:
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Stebro
+        position: 7
+        points: 0

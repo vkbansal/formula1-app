@@ -4,6 +4,7 @@ driverRef: pilette
 name: Teddy Pilette
 dob: '1942-07-26'
 nationality: Belgian
+hasImage: true
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -14,3 +15,28 @@ championshipStandings:
     position: 45
   - year: 1977
     position: 52
+seasons:
+  - year: 1974
+    results:
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Brabham
+        position: 17
+        points: 0
+  - year: 1977
+    results:
+      - round: 11
+        roundName: German Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: BRM
+        position: null
+        points: 0

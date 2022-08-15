@@ -4,6 +4,7 @@ driverRef: milhoux
 name: André Milhoux
 dob: '1928-12-09'
 nationality: Belgian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1956
     position: 53
+seasons:
+  - year: 1956
+    results:
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0

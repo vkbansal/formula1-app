@@ -4,6 +4,7 @@ driverRef: marimon
 name: Onofre Marimón
 dob: '1923-12-19'
 nationality: Argentine
+hasImage: true
 totalRaces: 12
 raceWins: 0
 podiums: 2
@@ -16,3 +17,70 @@ championshipStandings:
     position: 11
   - year: 1954
     position: 13
+seasons:
+  - year: 1951
+    results:
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 4
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: 9
+        points: 0
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 8
+        roundName: Swiss Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 4.14
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0

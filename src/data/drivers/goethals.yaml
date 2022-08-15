@@ -4,6 +4,7 @@ driverRef: goethals
 name: Christian Goethals
 dob: '1928-08-04'
 nationality: Belgian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1958
     position: 56
+seasons:
+  - year: 1958
+    results:
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Cooper
+        position: null
+        points: 0

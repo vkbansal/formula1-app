@@ -4,6 +4,7 @@ driverRef: blanchard
 name: Harry Blanchard
 dob: '1929-06-13'
 nationality: American
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1959
     position: 26
+seasons:
+  - year: 1959
+    results:
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Porsche
+        position: 7
+        points: 0

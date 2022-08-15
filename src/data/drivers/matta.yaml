@@ -4,6 +4,7 @@ driverRef: matta
 name: Cristiano da Matta
 dob: '1973-09-19'
 nationality: Brazilian
+hasImage: true
 totalRaces: 28
 raceWins: 0
 podiums: 0
@@ -14,3 +15,148 @@ championshipStandings:
     position: 13
   - year: 2004
     position: 17
+seasons:
+  - year: 2003
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 2
+        roundName: Malaysian Grand Prix
+        constructor: Toyota
+        position: 11
+        points: 0
+      - round: 3
+        roundName: Brazilian Grand Prix
+        constructor: Toyota
+        position: 10
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Toyota
+        position: 12
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Toyota
+        position: 6
+        points: 3
+      - round: 6
+        roundName: Austrian Grand Prix
+        constructor: Toyota
+        position: 10
+        points: 0
+      - round: 7
+        roundName: Monaco Grand Prix
+        constructor: Toyota
+        position: 9
+        points: 0
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: Toyota
+        position: 11
+        points: 0
+      - round: 9
+        roundName: European Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 10
+        roundName: French Grand Prix
+        constructor: Toyota
+        position: 11
+        points: 0
+      - round: 11
+        roundName: British Grand Prix
+        constructor: Toyota
+        position: 7
+        points: 2
+      - round: 12
+        roundName: German Grand Prix
+        constructor: Toyota
+        position: 6
+        points: 3
+      - round: 13
+        roundName: Hungarian Grand Prix
+        constructor: Toyota
+        position: 11
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Toyota
+        position: 9
+        points: 0
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: Toyota
+        position: 7
+        points: 2
+  - year: 2004
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Toyota
+        position: 12
+        points: 0
+      - round: 2
+        roundName: Malaysian Grand Prix
+        constructor: Toyota
+        position: 9
+        points: 0
+      - round: 3
+        roundName: Bahrain Grand Prix
+        constructor: Toyota
+        position: 10
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Toyota
+        position: 13
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Toyota
+        position: 6
+        points: 3
+      - round: 7
+        roundName: European Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 10
+        roundName: French Grand Prix
+        constructor: Toyota
+        position: 14
+        points: 0
+      - round: 11
+        roundName: British Grand Prix
+        constructor: Toyota
+        position: 13
+        points: 0
+      - round: 12
+        roundName: German Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0

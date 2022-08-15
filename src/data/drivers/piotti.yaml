@@ -4,6 +4,7 @@ driverRef: piotti
 name: Luigi Piotti
 dob: '1913-10-27'
 nationality: Italian
+hasImage: false
 totalRaces: 9
 raceWins: 0
 podiums: 0
@@ -18,3 +19,57 @@ championshipStandings:
     position: 36
   - year: 1958
     position: 75
+seasons:
+  - year: 1955
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Arzani-Volpini
+        position: null
+        points: 0
+  - year: 1956
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 6
+        points: 0
+  - year: 1957
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 10
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: Pescara Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1958
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: OSCA
+        position: null
+        points: 0

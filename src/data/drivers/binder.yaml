@@ -4,6 +4,7 @@ driverRef: binder
 name: Hans Binder
 dob: '1948-06-12'
 nationality: Austrian
+hasImage: true
 totalRaces: 15
 raceWins: 0
 podiums: 0
@@ -16,3 +17,85 @@ championshipStandings:
     position: 28
   - year: 1978
     position: 45
+seasons:
+  - year: 1976
+    results:
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: Wolf
+        position: null
+        points: 0
+  - year: 1977
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Surtees
+        position: 11
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Surtees
+        position: 11
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Surtees
+        position: 9
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Penske
+        position: 12
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: Penske
+        position: 8
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Penske
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Surtees
+        position: 11
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+  - year: 1978
+    results:
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: ATS
+        position: null
+        points: 0

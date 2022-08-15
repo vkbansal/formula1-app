@@ -4,6 +4,7 @@ driverRef: ruby
 name: Lloyd Ruby
 dob: '1928-01-12'
 nationality: American
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 31
   - year: 1961
     position: 39
+seasons:
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: 7
+        points: 0
+  - year: 1961
+    results:
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0

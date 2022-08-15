@@ -4,6 +4,7 @@ driverRef: laurent
 name: Roger Laurent
 dob: '1913-02-21'
 nationality: Belgian
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 23
+seasons:
+  - year: 1952
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: HWM
+        position: 12
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 0

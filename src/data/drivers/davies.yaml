@@ -4,6 +4,7 @@ driverRef: davies
 name: Jimmy Davies
 dob: '1929-08-08'
 nationality: American
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 1
@@ -20,3 +21,44 @@ championshipStandings:
     position: 44
   - year: 1955
     position: 12
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Ewing
+        position: 17
+        points: 0
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Pawl
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 10
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 11
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 3
+        points: 4

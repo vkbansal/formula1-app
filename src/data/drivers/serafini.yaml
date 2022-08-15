@@ -4,6 +4,7 @@ driverRef: serafini
 name: Dorino Serafini
 dob: '1909-07-22'
 nationality: Italian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 1
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1950
     position: 13
+seasons:
+  - year: 1950
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 3

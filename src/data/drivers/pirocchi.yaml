@@ -4,6 +4,7 @@ driverRef: pirocchi
 name: Renato Pirocchi
 dob: '1933-03-26'
 nationality: Italian
+hasImage: true
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1961
     position: 32
+seasons:
+  - year: 1961
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Cooper-Maserati
+        position: 12
+        points: 0

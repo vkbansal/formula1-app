@@ -4,6 +4,7 @@ driverRef: hahne
 name: Hubert Hahne
 dob: '1935-03-28'
 nationality: German
+hasImage: true
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 27
   - year: 1970
     position: 41
+seasons:
+  - year: 1967
+    results:
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+  - year: 1968
+    results:
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Lola
+        position: 10
+        points: 0
+  - year: 1970
+    results:
+      - round: 8
+        roundName: German Grand Prix
+        constructor: March
+        position: null
+        points: 0

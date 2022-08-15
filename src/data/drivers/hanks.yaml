@@ -4,6 +4,7 @@ driverRef: hanks
 name: Sam Hanks
 dob: '1914-07-13'
 nationality: American
+hasImage: false
 totalRaces: 8
 raceWins: 1
 podiums: 4
@@ -26,3 +27,65 @@ championshipStandings:
     position: 8
   - year: 1957
     position: 8
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 3
+        points: 4
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 3
+        points: 2
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 11
+        points: 0
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 2
+        points: 6
+  - year: 1957
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Epperly
+        position: 1
+        points: 8

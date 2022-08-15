@@ -4,6 +4,7 @@ driverRef: desire_wilson
 name: Desiré Wilson
 dob: '1953-11-26'
 nationality: South African
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1980
     position: 40
+seasons:
+  - year: 1980
+    results:
+      - round: 8
+        roundName: British Grand Prix
+        constructor: Williams
+        position: null
+        points: 0

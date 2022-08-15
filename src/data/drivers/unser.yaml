@@ -4,6 +4,7 @@ driverRef: unser
 name: Bobby Unser
 dob: '1934-02-20'
 nationality: American
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1968
     position: 36
+seasons:
+  - year: 1968
+    results:
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: BRM
+        position: null
+        points: 0

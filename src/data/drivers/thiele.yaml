@@ -4,6 +4,7 @@ driverRef: thiele
 name: Alfonso Thiele
 dob: '1920-04-05'
 nationality: American-Italian
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 80
   - year: 1961
     position: 60
+seasons:
+  - year: 1960
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+  - year: 1961
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0

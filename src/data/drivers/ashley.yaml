@@ -4,6 +4,7 @@ driverRef: ashley
 name: Ian Ashley
 dob: '1947-10-26'
 nationality: British
+hasImage: true
 totalRaces: 11
 raceWins: 0
 podiums: 0
@@ -18,3 +19,67 @@ championshipStandings:
     position: 44
   - year: 1977
     position: 42
+seasons:
+  - year: 1974
+    results:
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Token
+        position: 14
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Token
+        position: null
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+  - year: 1975
+    results:
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+  - year: 1976
+    results:
+      - round: 1
+        roundName: Brazilian Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+  - year: 1977
+    results:
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Hesketh
+        position: null
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: Hesketh
+        position: null
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Hesketh
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Hesketh
+        position: 17
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: Hesketh
+        position: null
+        points: 0

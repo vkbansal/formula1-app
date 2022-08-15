@@ -4,6 +4,7 @@ driverRef: gavin
 name: Johnny Servoz-Gavin
 dob: '1942-01-18'
 nationality: French
+hasImage: false
 totalRaces: 12
 raceWins: 0
 podiums: 1
@@ -18,3 +19,72 @@ championshipStandings:
     position: 18
   - year: 1970
     position: 21
+seasons:
+  - year: 1967
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Matra
+        position: null
+        points: 0
+  - year: 1968
+    results:
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: Matra-Ford
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Matra-Ford
+        position: 2
+        points: 6
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: Matra-Ford
+        position: null
+        points: 0
+      - round: 12
+        roundName: Mexican Grand Prix
+        constructor: Matra-Ford
+        position: null
+        points: 0
+  - year: 1969
+    results:
+      - round: 9
+        roundName: Canadian Grand Prix
+        constructor: Matra-Ford
+        position: 6
+        points: 1
+      - round: 10
+        roundName: United States Grand Prix
+        constructor: Matra-Ford
+        position: null
+        points: 0
+      - round: 11
+        roundName: Mexican Grand Prix
+        constructor: Matra-Ford
+        position: 8
+        points: 0
+  - year: 1970
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 2
+        roundName: Spanish Grand Prix
+        constructor: March
+        position: 5
+        points: 2
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: March
+        position: null
+        points: 0

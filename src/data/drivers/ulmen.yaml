@@ -4,6 +4,7 @@ driverRef: ulmen
 name: Toni Ulmen
 dob: '1906-01-25'
 nationality: German
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 38
+seasons:
+  - year: 1952
+    results:
+      - round: 1
+        roundName: Swiss Grand Prix
+        constructor: Veritas
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Veritas
+        position: 8
+        points: 0

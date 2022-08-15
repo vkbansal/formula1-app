@@ -4,6 +4,7 @@ driverRef: bleekemolen
 name: Michael Bleekemolen
 dob: '1949-10-02'
 nationality: Dutch
+hasImage: true
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -14,3 +15,33 @@ championshipStandings:
     position: 58
   - year: 1978
     position: 35
+seasons:
+  - year: 1977
+    results:
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: March
+        position: null
+        points: 0
+  - year: 1978
+    results:
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: ATS
+        position: null
+        points: 0

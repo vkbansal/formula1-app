@@ -4,6 +4,7 @@ driverRef: marko
 name: Helmut Marko
 dob: '1943-04-27'
 nationality: Austrian
+hasImage: true
 totalRaces: 9
 raceWins: 0
 podiums: 0
@@ -14,3 +15,53 @@ championshipStandings:
     position: 29
   - year: 1972
     position: 25
+seasons:
+  - year: 1971
+    results:
+      - round: 8
+        roundName: Austrian Grand Prix
+        constructor: BRM
+        position: 11
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: BRM
+        position: 12
+        points: 0
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: BRM
+        position: 13
+        points: 0
+  - year: 1972
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: BRM
+        position: 10
+        points: 0
+      - round: 2
+        roundName: South African Grand Prix
+        constructor: BRM
+        position: 14
+        points: 0
+      - round: 4
+        roundName: Monaco Grand Prix
+        constructor: BRM
+        position: 8
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: BRM
+        position: 10
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: BRM
+        position: null
+        points: 0

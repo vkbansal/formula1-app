@@ -4,6 +4,7 @@ driverRef: schoeller
 name: Rudolf Schoeller
 dob: '1902-04-27'
 nationality: Swiss
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 86
+seasons:
+  - year: 1952
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: hall
 name: Jim Hall
 dob: '1935-07-23'
 nationality: American
+hasImage: true
 totalRaces: 12
 raceWins: 0
 podiums: 0
@@ -18,3 +19,72 @@ championshipStandings:
     position: 47
   - year: 1963
     position: 13
+seasons:
+  - year: 1960
+    results:
+      - round: 10
+        roundName: United States Grand Prix
+        constructor: Team Lotus
+        position: 7
+        points: 0
+  - year: 1961
+    results:
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+  - year: 1962
+    results:
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+  - year: 1963
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 2
+        roundName: Belgian Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-BRM
+        position: 11
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lotus-BRM
+        position: 6
+        points: 1
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Lotus-BRM
+        position: 5
+        points: 2
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-BRM
+        position: 10
+        points: 0
+      - round: 9
+        roundName: Mexican Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0

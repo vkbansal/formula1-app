@@ -4,6 +4,7 @@ driverRef: zonta
 name: Ricardo Zonta
 dob: '1976-03-23'
 nationality: Brazilian
+hasImage: true
 totalRaces: 38
 raceWins: 0
 podiums: 0
@@ -20,3 +21,204 @@ championshipStandings:
     position: 22
   - year: 2005
     position: 26
+seasons:
+  - year: 1999
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 6
+        roundName: Canadian Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 7
+        roundName: French Grand Prix
+        constructor: BAR
+        position: 9
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: BAR
+        position: 15
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 11
+        roundName: Hungarian Grand Prix
+        constructor: BAR
+        position: 13
+        points: 0
+      - round: 12
+        roundName: Belgian Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 14
+        roundName: European Grand Prix
+        constructor: BAR
+        position: 8
+        points: 0
+      - round: 15
+        roundName: Malaysian Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: BAR
+        position: 12
+        points: 0
+  - year: 2000
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: BAR
+        position: 6
+        points: 1
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: BAR
+        position: 9
+        points: 0
+      - round: 3
+        roundName: San Marino Grand Prix
+        constructor: BAR
+        position: 12
+        points: 0
+      - round: 4
+        roundName: British Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: BAR
+        position: 8
+        points: 0
+      - round: 6
+        roundName: European Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 7
+        roundName: Monaco Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: BAR
+        position: 8
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 10
+        roundName: Austrian Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+      - round: 12
+        roundName: Hungarian Grand Prix
+        constructor: BAR
+        position: 14
+        points: 0
+      - round: 13
+        roundName: Belgian Grand Prix
+        constructor: BAR
+        position: 12
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: BAR
+        position: 6
+        points: 1
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: BAR
+        position: 6
+        points: 1
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: BAR
+        position: 9
+        points: 0
+      - round: 17
+        roundName: Malaysian Grand Prix
+        constructor: BAR
+        position: null
+        points: 0
+  - year: 2001
+    results:
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: Jordan
+        position: 7
+        points: 0
+      - round: 12
+        roundName: German Grand Prix
+        constructor: Jordan
+        position: null
+        points: 0
+  - year: 2004
+    results:
+      - round: 13
+        roundName: Hungarian Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 14
+        roundName: Belgian Grand Prix
+        constructor: Toyota
+        position: 10
+        points: 0
+      - round: 15
+        roundName: Italian Grand Prix
+        constructor: Toyota
+        position: 11
+        points: 0
+      - round: 16
+        roundName: Chinese Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0
+      - round: 18
+        roundName: Brazilian Grand Prix
+        constructor: Toyota
+        position: 13
+        points: 0
+  - year: 2005
+    results:
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Toyota
+        position: null
+        points: 0

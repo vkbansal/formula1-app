@@ -4,6 +4,7 @@ driverRef: mcdowell
 name: Johnny McDowell
 dob: '1915-01-29'
 nationality: American
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 83
   - year: 1952
     position: 72
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 18
+        points: 0
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 21
+        points: 0

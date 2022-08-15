@@ -4,6 +4,7 @@ driverRef: pesenti_rossi
 name: Alessandro Pesenti-Rossi
 dob: '1942-08-31'
 nationality: Italian
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -12,3 +13,26 @@ lapsLead: null
 championshipStandings:
   - year: 1976
     position: 32
+seasons:
+  - year: 1976
+    results:
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Tyrrell
+        position: 14
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Tyrrell
+        position: 11
+        points: 0
+      - round: 12
+        roundName: Dutch Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Tyrrell
+        position: 18
+        points: 0

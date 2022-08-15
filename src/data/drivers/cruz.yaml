@@ -4,6 +4,7 @@ driverRef: cruz
 name: Adolfo Cruz
 dob: '1923-06-28'
 nationality: Argentine
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1953
     position: 78
+seasons:
+  - year: 1953
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Cooper
+        position: null
+        points: 0

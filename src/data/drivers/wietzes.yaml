@@ -4,6 +4,7 @@ driverRef: wietzes
 name: Eppie Wietzes
 dob: '1938-05-28'
 nationality: Canadian
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,18 @@ lapsLead: null
 championshipStandings:
   - year: 1974
     position: 56
+seasons:
+  - year: 1967
+    results:
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+  - year: 1974
+    results:
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0

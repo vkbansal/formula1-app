@@ -4,6 +4,7 @@ driverRef: aitken
 name: Jack Aitken
 dob: '1995-09-23'
 nationality: British
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: 0
 championshipStandings:
   - year: 2020
     position: 22
+seasons:
+  - year: 2020
+    results:
+      - round: 16
+        roundName: Sakhir Grand Prix
+        constructor: Williams
+        position: 16
+        points: 0

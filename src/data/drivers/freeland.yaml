@@ -4,6 +4,7 @@ driverRef: freeland
 name: Don Freeland
 dob: '1925-03-25'
 nationality: American
+hasImage: false
 totalRaces: 8
 raceWins: 0
 podiums: 1
@@ -26,3 +27,60 @@ championshipStandings:
     position: 66
   - year: 1960
     position: 65
+seasons:
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Phillips
+        position: 7
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Phillips
+        position: null
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Phillips
+        position: 3
+        points: 4
+  - year: 1957
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 17
+        points: 0
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Phillips
+        position: 7
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 22
+        points: 0

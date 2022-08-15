@@ -4,6 +4,7 @@ driverRef: cogan
 name: Kevin Cogan
 dob: '1956-03-31'
 nationality: American
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 41
   - year: 1981
     position: 36
+seasons:
+  - year: 1980
+    results:
+      - round: 13
+        roundName: Canadian Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+  - year: 1981
+    results:
+      - round: 1
+        roundName: United States Grand Prix West
+        constructor: Tyrrell
+        position: null
+        points: 0

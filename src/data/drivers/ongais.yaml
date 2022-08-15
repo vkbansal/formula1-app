@@ -4,6 +4,7 @@ driverRef: ongais
 name: Danny Ongais
 dob: '1942-05-21'
 nationality: American
+hasImage: true
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -14,3 +15,38 @@ championshipStandings:
     position: 26
   - year: 1978
     position: 36
+seasons:
+  - year: 1977
+    results:
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Penske
+        position: null
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: Penske
+        position: 7
+        points: 0
+  - year: 1978
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0

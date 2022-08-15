@@ -4,6 +4,7 @@ driverRef: chandhok
 name: Karun Chandhok
 dob: '1984-01-19'
 nationality: Indian
+hasImage: true
 totalRaces: 11
 raceWins: 0
 podiums: 0
@@ -14,3 +15,63 @@ championshipStandings:
     position: 22
   - year: 2011
     position: 28
+seasons:
+  - year: 2010
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: HRT
+        position: null
+        points: 0
+      - round: 2
+        roundName: Australian Grand Prix
+        constructor: HRT
+        position: 14
+        points: 0
+      - round: 3
+        roundName: Malaysian Grand Prix
+        constructor: HRT
+        position: 15
+        points: 0
+      - round: 4
+        roundName: Chinese Grand Prix
+        constructor: HRT
+        position: 17
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: HRT
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: HRT
+        position: 14
+        points: 0
+      - round: 7
+        roundName: Turkish Grand Prix
+        constructor: HRT
+        position: 20
+        points: 0
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: HRT
+        position: 18
+        points: 0
+      - round: 9
+        roundName: European Grand Prix
+        constructor: HRT
+        position: 18
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: HRT
+        position: 19
+        points: 0
+  - year: 2011
+    results:
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Lotus
+        position: 20
+        points: 0

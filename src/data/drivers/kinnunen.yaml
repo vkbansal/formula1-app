@@ -4,6 +4,7 @@ driverRef: kinnunen
 name: Leo Kinnunen
 dob: '1943-08-05'
 nationality: Finnish
+hasImage: true
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -12,3 +13,36 @@ lapsLead: null
 championshipStandings:
   - year: 1974
     position: 51
+seasons:
+  - year: 1974
+    results:
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0

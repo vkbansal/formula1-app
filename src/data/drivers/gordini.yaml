@@ -4,6 +4,7 @@ driverRef: gordini
 name: Aldo Gordini
 dob: '1921-05-20'
 nationality: French
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1951
     position: 51
+seasons:
+  - year: 1951
+    results:
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Simca
+        position: null
+        points: 0

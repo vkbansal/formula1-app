@@ -4,9 +4,18 @@ driverRef: sarrazin
 name: Stéphane Sarrazin
 dob: '1975-11-02'
 nationality: French
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
 totalLaps: 31
 lapsLead: 0
 championshipStandings: null
+seasons:
+  - year: 1999
+    results:
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0

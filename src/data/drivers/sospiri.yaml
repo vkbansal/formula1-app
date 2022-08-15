@@ -4,9 +4,18 @@ driverRef: sospiri
 name: Vincenzo Sospiri
 dob: '1966-10-07'
 nationality: Italian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
 totalLaps: null
 lapsLead: null
 championshipStandings: null
+seasons:
+  - year: 1997
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Lola
+        position: null
+        points: 0

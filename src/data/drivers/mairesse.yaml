@@ -4,6 +4,7 @@ driverRef: mairesse
 name: Willy Mairesse
 dob: '1928-10-01'
 nationality: Belgian
+hasImage: true
 totalRaces: 12
 raceWins: 0
 podiums: 1
@@ -18,3 +19,72 @@ championshipStandings:
     position: 14
   - year: 1963
     position: 36
+seasons:
+  - year: 1960
+    results:
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 4
+  - year: 1961
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1962
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: 7
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 3
+  - year: 1963
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 2
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0

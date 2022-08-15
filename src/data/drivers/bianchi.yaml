@@ -4,6 +4,7 @@ driverRef: bianchi
 name: Lucien Bianchi
 dob: '1934-11-10'
 nationality: Belgian
+hasImage: true
 totalRaces: 19
 raceWins: 0
 podiums: 1
@@ -24,3 +25,113 @@ championshipStandings:
     position: 28
   - year: 1968
     position: 17
+seasons:
+  - year: 1959
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+  - year: 1960
+    results:
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Cooper-Climax
+        position: 6
+        points: 1
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+  - year: 1961
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Emeryson
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+  - year: 1962
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Climax
+        position: 9
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: ENB
+        position: 16
+        points: 0
+  - year: 1963
+    results:
+      - round: 2
+        roundName: Belgian Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+  - year: 1965
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: BRM
+        position: 12
+        points: 0
+  - year: 1968
+    results:
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: Cooper-BRM
+        position: 3
+        points: 4
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Cooper-BRM
+        position: 6
+        points: 1
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 12
+        roundName: Mexican Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0

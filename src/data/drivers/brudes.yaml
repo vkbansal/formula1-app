@@ -4,6 +4,7 @@ driverRef: brudes
 name: Adolf Brudes
 dob: '1899-10-15'
 nationality: German
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 76
+seasons:
+  - year: 1952
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Veritas
+        position: null
+        points: 0

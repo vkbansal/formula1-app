@@ -4,6 +4,7 @@ driverRef: castellotti
 name: Eugenio Castellotti
 dob: '1930-10-10'
 nationality: Italian
+hasImage: true
 totalRaces: 14
 raceWins: 0
 podiums: 3
@@ -16,3 +17,95 @@ championshipStandings:
     position: 6
   - year: 1957
     position: 53
+seasons:
+  - year: 1955
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Lancia
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Lancia
+        position: 2
+        points: 6
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Lancia
+        position: null
+        points: 0
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: 5
+        points: 2
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 0
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 4
+  - year: 1956
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 1.5
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: 10
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 8
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1957
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0

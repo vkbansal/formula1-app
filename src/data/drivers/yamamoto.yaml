@@ -4,6 +4,7 @@ driverRef: yamamoto
 name: Sakon Yamamoto
 dob: '1982-07-09'
 nationality: Japanese
+hasImage: true
 totalRaces: 21
 raceWins: 0
 podiums: 0
@@ -16,3 +17,115 @@ championshipStandings:
     position: 24
   - year: 2010
     position: 26
+seasons:
+  - year: 2006
+    results:
+      - round: 12
+        roundName: German Grand Prix
+        constructor: Super Aguri
+        position: null
+        points: 0
+      - round: 13
+        roundName: Hungarian Grand Prix
+        constructor: Super Aguri
+        position: null
+        points: 0
+      - round: 14
+        roundName: Turkish Grand Prix
+        constructor: Super Aguri
+        position: null
+        points: 0
+      - round: 15
+        roundName: Italian Grand Prix
+        constructor: Super Aguri
+        position: null
+        points: 0
+      - round: 16
+        roundName: Chinese Grand Prix
+        constructor: Super Aguri
+        position: 16
+        points: 0
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Super Aguri
+        position: 17
+        points: 0
+      - round: 18
+        roundName: Brazilian Grand Prix
+        constructor: Super Aguri
+        position: 16
+        points: 0
+  - year: 2007
+    results:
+      - round: 11
+        roundName: Hungarian Grand Prix
+        constructor: Spyker
+        position: null
+        points: 0
+      - round: 12
+        roundName: Turkish Grand Prix
+        constructor: Spyker
+        position: 20
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Spyker
+        position: 20
+        points: 0
+      - round: 14
+        roundName: Belgian Grand Prix
+        constructor: Spyker
+        position: 17
+        points: 0
+      - round: 15
+        roundName: Japanese Grand Prix
+        constructor: Spyker
+        position: 12
+        points: 0
+      - round: 16
+        roundName: Chinese Grand Prix
+        constructor: Spyker
+        position: 17
+        points: 0
+      - round: 17
+        roundName: Brazilian Grand Prix
+        constructor: Spyker
+        position: null
+        points: 0
+  - year: 2010
+    results:
+      - round: 10
+        roundName: British Grand Prix
+        constructor: HRT
+        position: 20
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: HRT
+        position: null
+        points: 0
+      - round: 12
+        roundName: Hungarian Grand Prix
+        constructor: HRT
+        position: 19
+        points: 0
+      - round: 13
+        roundName: Belgian Grand Prix
+        constructor: HRT
+        position: 20
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: HRT
+        position: 19
+        points: 0
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: HRT
+        position: 16
+        points: 0
+      - round: 17
+        roundName: Korean Grand Prix
+        constructor: HRT
+        position: 15
+        points: 0

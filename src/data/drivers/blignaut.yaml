@@ -4,6 +4,7 @@ driverRef: blignaut
 name: Alex Blignaut
 dob: '1932-11-30'
 nationality: South African
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1965
     position: 54
+seasons:
+  - year: 1965
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0

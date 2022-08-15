@@ -4,6 +4,7 @@ driverRef: moss
 name: Stirling Moss
 dob: '1929-09-17'
 nationality: British
+hasImage: true
 totalRaces: 67
 raceWins: 16
 podiums: 24
@@ -32,3 +33,391 @@ championshipStandings:
     position: 3
   - year: 1961
     position: 3
+seasons:
+  - year: 1951
+    results:
+      - round: 1
+        roundName: Swiss Grand Prix
+        constructor: HWM
+        position: 8
+        points: 0
+  - year: 1952
+    results:
+      - round: 1
+        roundName: Swiss Grand Prix
+        constructor: HWM
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: ERA
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: ERA
+        position: null
+        points: 0
+      - round: 7
+        roundName: Dutch Grand Prix
+        constructor: ERA
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: Connaught
+        position: 9
+        points: 0
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Cooper
+        position: null
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Cooper
+        position: 6
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Cooper
+        position: 13
+        points: 0
+  - year: 1954
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 4
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: Swiss Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 10
+        points: 0
+      - round: 9
+        roundName: Spanish Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Mercedes
+        position: 4
+        points: 1
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Mercedes
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Mercedes
+        position: 9
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Mercedes
+        position: 2
+        points: 6
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Mercedes
+        position: 2
+        points: 6
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Mercedes
+        position: 1
+        points: 9
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Mercedes
+        position: null
+        points: 1
+  - year: 1956
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: 1
+        points: 8
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 3
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: 5
+        points: 1
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 1
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: 2
+        points: 6
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 1
+        points: 9
+  - year: 1957
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 8
+        points: 1
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Vanwall
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Vanwall
+        position: 1
+        points: 5
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Vanwall
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Vanwall
+        position: 5
+        points: 2
+      - round: 7
+        roundName: Pescara Grand Prix
+        constructor: Vanwall
+        position: 1
+        points: 9
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Vanwall
+        position: 1
+        points: 8
+  - year: 1958
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Cooper
+        position: 1
+        points: 8
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Vanwall
+        position: null
+        points: 0
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: Vanwall
+        position: 1
+        points: 9
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Vanwall
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Vanwall
+        position: 2
+        points: 6
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Vanwall
+        position: null
+        points: 0
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Vanwall
+        position: null
+        points: 1
+      - round: 9
+        roundName: Portuguese Grand Prix
+        constructor: Vanwall
+        position: 1
+        points: 8
+      - round: 10
+        roundName: Italian Grand Prix
+        constructor: Vanwall
+        position: null
+        points: 0
+      - round: 11
+        roundName: Moroccan Grand Prix
+        constructor: Vanwall
+        position: 1
+        points: 9
+  - year: 1959
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 1
+      - round: 4
+        roundName: French Grand Prix
+        constructor: BRM
+        position: null
+        points: 1
+      - round: 5
+        roundName: British Grand Prix
+        constructor: BRM
+        position: 2
+        points: 6.5
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+      - round: 7
+        roundName: Portuguese Grand Prix
+        constructor: Cooper-Climax
+        position: 1
+        points: 9
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Cooper-Climax
+        position: 1
+        points: 8
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+  - year: 1960
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Cooper-Climax
+        position: 3
+        points: 0
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Team Lotus
+        position: 1
+        points: 8
+      - round: 4
+        roundName: Dutch Grand Prix
+        constructor: Team Lotus
+        position: 4
+        points: 3
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Team Lotus
+        position: null
+        points: 0
+      - round: 8
+        roundName: Portuguese Grand Prix
+        constructor: Team Lotus
+        position: null
+        points: 0
+      - round: 10
+        roundName: United States Grand Prix
+        constructor: Team Lotus
+        position: 1
+        points: 8
+  - year: 1961
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Lotus-Climax
+        position: 1
+        points: 9
+      - round: 2
+        roundName: Dutch Grand Prix
+        constructor: Lotus-Climax
+        position: 4
+        points: 3
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Climax
+        position: 8
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Ferguson
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Lotus-Climax
+        position: 1
+        points: 9
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0

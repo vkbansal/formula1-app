@@ -4,6 +4,7 @@ driverRef: mantovani
 name: Sergio Mantovani
 dob: '1929-05-22'
 nationality: Italian
+hasImage: true
 totalRaces: 8
 raceWins: 0
 podiums: 0
@@ -16,3 +17,55 @@ championshipStandings:
     position: 16
   - year: 1955
     position: 31
+seasons:
+  - year: 1953
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 7
+        points: 0
+  - year: 1954
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: 7
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: 5
+        points: 2
+      - round: 7
+        roundName: Swiss Grand Prix
+        constructor: Maserati
+        position: 5
+        points: 2
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 9
+        points: 0
+      - round: 9
+        roundName: Spanish Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 7
+        points: 0
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0

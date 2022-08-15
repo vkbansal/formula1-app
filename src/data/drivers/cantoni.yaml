@@ -4,6 +4,7 @@ driverRef: cantoni
 name: Eitel Cantoni
 dob: '1906-10-04'
 nationality: Uruguayan
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -12,3 +13,21 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 51
+seasons:
+  - year: 1952
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 11
+        points: 0

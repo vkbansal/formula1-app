@@ -4,6 +4,7 @@ driverRef: stuppacher
 name: Otto Stuppacher
 dob: '1947-03-03'
 nationality: Austrian
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -12,3 +13,21 @@ lapsLead: null
 championshipStandings:
   - year: 1976
     position: 48
+seasons:
+  - year: 1976
+    results:
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0

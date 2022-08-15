@@ -4,6 +4,7 @@ driverRef: bartels
 name: Michael Bartels
 dob: '1968-03-08'
 nationality: German
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -12,3 +13,26 @@ lapsLead: null
 championshipStandings:
   - year: 1991
     position: 39
+seasons:
+  - year: 1991
+    results:
+      - round: 9
+        roundName: German Grand Prix
+        constructor: Team Lotus
+        position: null
+        points: 0
+      - round: 10
+        roundName: Hungarian Grand Prix
+        constructor: Team Lotus
+        position: null
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Team Lotus
+        position: null
+        points: 0
+      - round: 14
+        roundName: Spanish Grand Prix
+        constructor: Team Lotus
+        position: null
+        points: 0

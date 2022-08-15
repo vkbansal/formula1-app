@@ -4,6 +4,7 @@ driverRef: rollinson
 name: Alan Rollinson
 dob: '1943-05-15'
 nationality: British
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1965
     position: 43
+seasons:
+  - year: 1965
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper-Ford
+        position: null
+        points: 0

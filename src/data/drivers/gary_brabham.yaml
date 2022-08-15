@@ -4,6 +4,7 @@ driverRef: gary_brabham
 name: Gary Brabham
 dob: '1961-03-29'
 nationality: Australian
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1990
     position: 40
+seasons:
+  - year: 1990
+    results:
+      - round: 1
+        roundName: United States Grand Prix
+        constructor: Life
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Life
+        position: null
+        points: 0

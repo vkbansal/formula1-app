@@ -4,6 +4,7 @@ driverRef: dusio
 name: Piero Dusio
 dob: '1899-10-13'
 nationality: Italian
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 105
+seasons:
+  - year: 1952
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Cisitalia
+        position: null
+        points: 0

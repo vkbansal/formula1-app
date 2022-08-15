@@ -4,6 +4,7 @@ driverRef: cordts
 name: John Cordts
 dob: '1935-07-23'
 nationality: Canadian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1969
     position: 29
+seasons:
+  - year: 1969
+    results:
+      - round: 9
+        roundName: Canadian Grand Prix
+        constructor: Brabham-Climax
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: reventlow
 name: Lance Reventlow
 dob: '1936-02-24'
 nationality: American
+hasImage: true
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -12,3 +13,26 @@ lapsLead: null
 championshipStandings:
   - year: 1960
     position: 85
+seasons:
+  - year: 1960
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Scarab
+        position: null
+        points: 0
+      - round: 4
+        roundName: Dutch Grand Prix
+        constructor: Scarab
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Scarab
+        position: null
+        points: 0
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: elford
 name: Vic Elford
 dob: '1935-06-10'
 nationality: British
+hasImage: true
 totalRaces: 13
 raceWins: 0
 podiums: 0
@@ -16,3 +17,75 @@ championshipStandings:
     position: 14
   - year: 1971
     position: 31
+seasons:
+  - year: 1968
+    results:
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Cooper-BRM
+        position: 4
+        points: 3
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: Cooper-BRM
+        position: 5
+        points: 2
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+      - round: 12
+        roundName: Mexican Grand Prix
+        constructor: Cooper-BRM
+        position: 8
+        points: 0
+  - year: 1969
+    results:
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: Cooper-Maserati
+        position: 7
+        points: 0
+      - round: 4
+        roundName: Dutch Grand Prix
+        constructor: McLaren-Ford
+        position: 10
+        points: 0
+      - round: 5
+        roundName: French Grand Prix
+        constructor: McLaren-Ford
+        position: 5
+        points: 2
+      - round: 6
+        roundName: British Grand Prix
+        constructor: McLaren-Ford
+        position: 6
+        points: 1
+      - round: 7
+        roundName: German Grand Prix
+        constructor: McLaren-Ford
+        position: null
+        points: 0
+  - year: 1971
+    results:
+      - round: 7
+        roundName: German Grand Prix
+        constructor: BRM
+        position: 11
+        points: 0

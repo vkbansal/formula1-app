@@ -4,6 +4,7 @@ driverRef: griffith
 name: Cliff Griffith
 dob: '1916-02-06'
 nationality: American
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 44
   - year: 1956
     position: 40
+seasons:
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 9
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Stevens
+        position: 10
+        points: 0

@@ -4,6 +4,7 @@ driverRef: templeman
 name: Shorty Templeman
 dob: '1919-08-12'
 nationality: American
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 64
   - year: 1960
     position: 60
+seasons:
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Trevis
+        position: null
+        points: 0
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 17
+        points: 0

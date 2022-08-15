@@ -4,6 +4,7 @@ driverRef: andre_pilette
 name: André Pilette
 dob: '1918-10-06'
 nationality: Belgian
+hasImage: false
 totalRaces: 15
 raceWins: 0
 podiums: 0
@@ -24,3 +25,93 @@ championshipStandings:
     position: 53
   - year: 1964
     position: 32
+seasons:
+  - year: 1951
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Talbot-Lago
+        position: 6
+        points: 0
+  - year: 1953
+    results:
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Connaught
+        position: 11
+        points: 0
+  - year: 1954
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Gordini
+        position: 5
+        points: 2
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Gordini
+        position: 9
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0
+  - year: 1956
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Gordini
+        position: 6
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 0
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Gordini
+        position: 11
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0
+  - year: 1961
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Emeryson
+        position: null
+        points: 0
+  - year: 1963
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+  - year: 1964
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Scirocco
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Scirocco
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Scirocco
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: bussinello
 name: Roberto Bussinello
 dob: '1927-10-04'
 nationality: Italian
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -16,3 +17,30 @@ championshipStandings:
     position: 54
   - year: 1965
     position: 30
+seasons:
+  - year: 1961
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: De Tomaso-Alfa Romeo
+        position: null
+        points: 0
+  - year: 1962
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: De Tomaso-Alfa Romeo
+        position: null
+        points: 0
+  - year: 1965
+    results:
+      - round: 7
+        roundName: German Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: BRM
+        position: 13
+        points: 0

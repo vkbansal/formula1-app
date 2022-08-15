@@ -4,6 +4,7 @@ driverRef: wunderink
 name: Roelof Wunderink
 dob: '1948-12-12'
 nationality: Dutch
+hasImage: true
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -12,3 +13,36 @@ lapsLead: null
 championshipStandings:
   - year: 1975
     position: 45
+seasons:
+  - year: 1975
+    results:
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 14
+        roundName: United States Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0

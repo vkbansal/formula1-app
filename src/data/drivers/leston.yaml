@@ -4,6 +4,7 @@ driverRef: leston
 name: Les Leston
 dob: '1920-12-16'
 nationality: British
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -14,3 +15,23 @@ championshipStandings:
     position: 71
   - year: 1957
     position: 56
+seasons:
+  - year: 1956
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0
+  - year: 1957
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Cooper
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: BRM
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: murray
 name: David Murray
 dob: '1909-12-28'
 nationality: British
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -16,3 +17,30 @@ championshipStandings:
     position: 60
   - year: 1952
     position: 99
+seasons:
+  - year: 1950
+    results:
+      - round: 1
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper
+        position: null
+        points: 0

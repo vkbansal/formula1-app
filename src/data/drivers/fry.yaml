@@ -4,6 +4,7 @@ driverRef: fry
 name: Joe Fry
 dob: '1915-10-26'
 nationality: British
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1950
     position: 40
+seasons:
+  - year: 1950
+    results:
+      - round: 1
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: 10
+        points: 0

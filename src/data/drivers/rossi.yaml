@@ -4,6 +4,7 @@ driverRef: rossi
 name: Alexander Rossi
 dob: '1991-09-25'
 nationality: American
+hasImage: true
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -12,3 +13,31 @@ lapsLead: 0
 championshipStandings:
   - year: 2015
     position: 20
+seasons:
+  - year: 2015
+    results:
+      - round: 13
+        roundName: Singapore Grand Prix
+        constructor: Manor Marussia
+        position: 14
+        points: 0
+      - round: 14
+        roundName: Japanese Grand Prix
+        constructor: Manor Marussia
+        position: 18
+        points: 0
+      - round: 16
+        roundName: United States Grand Prix
+        constructor: Manor Marussia
+        position: 12
+        points: 0
+      - round: 17
+        roundName: Mexican Grand Prix
+        constructor: Manor Marussia
+        position: 15
+        points: 0
+      - round: 18
+        roundName: Brazilian Grand Prix
+        constructor: Manor Marussia
+        position: 18
+        points: 0

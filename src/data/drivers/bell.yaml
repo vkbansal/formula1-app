@@ -4,6 +4,7 @@ driverRef: bell
 name: Derek Bell
 dob: '1941-10-31'
 nationality: British
+hasImage: true
 totalRaces: 14
 raceWins: 0
 podiums: 0
@@ -22,3 +23,86 @@ championshipStandings:
     position: 42
   - year: 1974
     position: 35
+seasons:
+  - year: 1968
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1969
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: McLaren-Ford
+        position: null
+        points: 0
+  - year: 1970
+    results:
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 12
+        roundName: United States Grand Prix
+        constructor: Surtees
+        position: 6
+        points: 1
+  - year: 1971
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+  - year: 1972
+    results:
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Tecno
+        position: null
+        points: 0
+      - round: 10
+        roundName: Italian Grand Prix
+        constructor: Tecno
+        position: null
+        points: 0
+      - round: 12
+        roundName: United States Grand Prix
+        constructor: Tecno
+        position: null
+        points: 0
+  - year: 1974
+    results:
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Surtees
+        position: 11
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0

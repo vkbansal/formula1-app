@@ -4,6 +4,7 @@ driverRef: lawrence
 name: Chris Lawrence
 dob: '1933-07-27'
 nationality: British
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1966
     position: 26
+seasons:
+  - year: 1966
+    results:
+      - round: 4
+        roundName: British Grand Prix
+        constructor: Cooper-Ferrari
+        position: 11
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Cooper-Ferrari
+        position: null
+        points: 0

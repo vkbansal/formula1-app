@@ -4,6 +4,7 @@ driverRef: redman
 name: Brian Redman
 dob: '1937-03-09'
 nationality: British
+hasImage: true
 totalRaces: 13
 raceWins: 0
 podiums: 1
@@ -20,3 +21,81 @@ championshipStandings:
     position: 14
   - year: 1974
     position: 24
+seasons:
+  - year: 1968
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 2
+        roundName: Spanish Grand Prix
+        constructor: Cooper-BRM
+        position: 3
+        points: 4
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Cooper-BRM
+        position: null
+        points: 0
+  - year: 1970
+    results:
+      - round: 8
+        roundName: German Grand Prix
+        constructor: De Tomaso
+        position: null
+        points: 0
+  - year: 1971
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Surtees
+        position: 7
+        points: 0
+  - year: 1972
+    results:
+      - round: 4
+        roundName: Monaco Grand Prix
+        constructor: McLaren
+        position: 5
+        points: 2
+      - round: 6
+        roundName: French Grand Prix
+        constructor: McLaren
+        position: 9
+        points: 0
+      - round: 8
+        roundName: German Grand Prix
+        constructor: McLaren
+        position: 5
+        points: 2
+      - round: 12
+        roundName: United States Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+  - year: 1973
+    results:
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+  - year: 1974
+    results:
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Shadow
+        position: 7
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Shadow
+        position: 18
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0

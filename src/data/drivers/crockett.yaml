@@ -4,6 +4,7 @@ driverRef: crockett
 name: Larry Crockett
 dob: '1926-10-23'
 nationality: American
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1954
     position: 40
+seasons:
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 9
+        points: 0

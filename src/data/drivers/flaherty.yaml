@@ -4,6 +4,7 @@ driverRef: flaherty
 name: Pat Flaherty
 dob: '1926-01-06'
 nationality: American
+hasImage: true
 totalRaces: 6
 raceWins: 1
 podiums: 1
@@ -22,3 +23,46 @@ championshipStandings:
     position: 5
   - year: 1959
     position: 59
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 10
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 10
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: 1
+        points: 8
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: null
+        points: 0

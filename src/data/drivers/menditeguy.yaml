@@ -4,6 +4,7 @@ driverRef: menditeguy
 name: Carlos Menditeguy
 dob: '1914-08-10'
 nationality: Argentine
+hasImage: true
 totalRaces: 11
 raceWins: 0
 podiums: 1
@@ -24,3 +25,78 @@ championshipStandings:
     position: 31
   - year: 1960
     position: 22
+seasons:
+  - year: 1953
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 5
+        points: 2
+  - year: 1956
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1957
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 4
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1958
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 7
+        points: 0
+  - year: 1960
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Cooper-Maserati
+        position: 4
+        points: 3

@@ -4,6 +4,7 @@ driverRef: hutchison
 name: Gus Hutchison
 dob: '1937-04-26'
 nationality: American
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1970
     position: 38
+seasons:
+  - year: 1970
+    results:
+      - round: 12
+        roundName: United States Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0

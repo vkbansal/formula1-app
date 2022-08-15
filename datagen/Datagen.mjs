@@ -1,10 +1,15 @@
-import fs from 'node:fs/promises';
+import fs from 'node:fs';
+import fsp from 'node:fs/promises';
 import path from 'node:path';
 
 import { dump } from 'js-yaml';
 import mariadb from 'mariadb';
 
 export class Datagen {
+	constructor(spinner) {
+		this.spinner = spinner;
+	}
+
 	async init() {
 		this.db = await mariadb.createConnection({
 			host: 'localhost',
@@ -16,8 +21,11 @@ export class Datagen {
 	}
 
 	async executeQueryFromFile(filepath, params = {}) {
-		const sql = await fs.readFile(path.resolve(process.cwd(), 'datagen/queries', filepath), 'utf8');
-		console.log(`executing query from ${filepath} with params ${JSON.stringify(params)}`);
+		const sql = await fsp.readFile(
+			path.resolve(process.cwd(), 'datagen/queries', filepath),
+			'utf8',
+		);
+		this.spinner.text = `executing query from ${filepath} with params => ${dump(params)}`;
 		const data = await this.db.query(
 			{ sql, namedPlaceholders: true, bigIntAsNumber: true },
 			params,
@@ -28,8 +36,8 @@ export class Datagen {
 
 	async writeDataFile(filepath, data) {
 		const finalPath = path.resolve(process.cwd(), 'src/data', filepath);
-		await fs.mkdir(path.dirname(finalPath), { recursive: true });
-		return fs.writeFile(
+		await fsp.mkdir(path.dirname(finalPath), { recursive: true });
+		return fsp.writeFile(
 			finalPath,
 			'# This file is auto-generated, please DO NOT MODIFY it directly\n' +
 				dump(data, { noRefs: true }),
@@ -39,17 +47,25 @@ export class Datagen {
 
 	async homePage() {
 		const [data] = await this.executeQueryFromFile('entities-count.sql');
+		this.totalNumOfQueries += 1;
 
 		return this.writeDataFile('homepage.yaml', data);
 	}
 
-	async seasons(params = []) {
-		for (const row of params) {
+	async seasons() {
+		const data = await this.executeQueryFromFile('seasons.sql');
+
+		for (const row of data) {
 			const rounds = await this.executeQueryFromFile('season-rounds.sql', row);
 			const drivers = await this.executeQueryFromFile('season-drivers.sql', row);
 			const constructors = await this.executeQueryFromFile('season-constructors.sql', row);
 
-			await this.writeDataFile(`seasons/${row.year}.yaml`, { rounds, drivers, constructors });
+			await this.writeDataFile(`seasons/${row.year}.yaml`, {
+				...row,
+				rounds,
+				drivers,
+				constructors,
+			});
 		}
 	}
 
@@ -57,6 +73,11 @@ export class Datagen {
 		const data = await this.executeQueryFromFile('drivers.sql');
 
 		for (const row of data) {
+			row.hasImage = fs.existsSync(`src/images/drivers/${row.driverRef}.webp`);
+
+			const seasonData = await this.executeQueryFromFile('driver-seasons.sql', row);
+			row.seasons = seasonData;
+
 			await this.writeDataFile(`drivers/${row.driverRef}.yaml`, row);
 		}
 	}

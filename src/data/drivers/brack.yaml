@@ -4,6 +4,7 @@ driverRef: brack
 name: Bill Brack
 dob: '1935-12-26'
 nationality: Canadian
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 22
   - year: 1972
     position: 41
+seasons:
+  - year: 1968
+    results:
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+  - year: 1969
+    results:
+      - round: 9
+        roundName: Canadian Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+  - year: 1972
+    results:
+      - round: 11
+        roundName: Canadian Grand Prix
+        constructor: BRM
+        position: null
+        points: 0

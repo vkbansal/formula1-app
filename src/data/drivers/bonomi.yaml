@@ -4,6 +4,7 @@ driverRef: bonomi
 name: Roberto Bonomi
 dob: '1919-09-30'
 nationality: Argentine
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1960
     position: 48
+seasons:
+  - year: 1960
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Cooper-Maserati
+        position: 11
+        points: 0

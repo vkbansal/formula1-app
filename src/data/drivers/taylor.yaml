@@ -4,6 +4,7 @@ driverRef: taylor
 name: John Taylor
 dob: '1933-03-23'
 nationality: British
+hasImage: true
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -14,3 +15,33 @@ championshipStandings:
     position: 30
   - year: 1966
     position: 20
+seasons:
+  - year: 1964
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper-Climax
+        position: 14
+        points: 0
+  - year: 1966
+    results:
+      - round: 3
+        roundName: French Grand Prix
+        constructor: Brabham-BRM
+        position: 6
+        points: 1
+      - round: 4
+        roundName: British Grand Prix
+        constructor: Brabham-BRM
+        position: 8
+        points: 0
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Brabham-BRM
+        position: 8
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0

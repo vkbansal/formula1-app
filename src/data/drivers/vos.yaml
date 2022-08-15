@@ -4,6 +4,7 @@ driverRef: vos
 name: Ernie de Vos
 dob: '1941-07-01'
 nationality: Dutch
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1963
     position: 54
+seasons:
+  - year: 1963
+    results:
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Stebro
+        position: null
+        points: 0

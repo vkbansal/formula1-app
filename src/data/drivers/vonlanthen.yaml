@@ -4,6 +4,7 @@ driverRef: vonlanthen
 name: Jo Vonlanthen
 dob: '1942-05-31'
 nationality: Swiss
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1975
     position: 49
+seasons:
+  - year: 1975
+    results:
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Williams
+        position: null
+        points: 0

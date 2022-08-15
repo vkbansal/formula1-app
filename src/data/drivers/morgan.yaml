@@ -4,6 +4,7 @@ driverRef: morgan
 name: Dave Morgan
 dob: '1944-08-07'
 nationality: British
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1975
     position: 43
+seasons:
+  - year: 1975
+    results:
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: 18
+        points: 0

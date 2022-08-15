@@ -4,6 +4,7 @@ driverRef: larson
 name: Jud Larson
 dob: '1923-01-21'
 nationality: American
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 34
   - year: 1959
     position: 82
+seasons:
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: 8
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0

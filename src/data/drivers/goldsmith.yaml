@@ -4,6 +4,7 @@ driverRef: goldsmith
 name: Paul Goldsmith
 dob: '1925-10-02'
 nationality: American
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 1
@@ -16,3 +17,25 @@ championshipStandings:
     position: 19
   - year: 1960
     position: 17
+seasons:
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Epperly
+        position: 5
+        points: 2
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Epperly
+        position: 3
+        points: 4

@@ -4,6 +4,7 @@ driverRef: londono
 name: Ricardo Londoño
 dob: '1949-08-08'
 nationality: Colombian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1981
     position: 39
+seasons:
+  - year: 1981
+    results:
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0

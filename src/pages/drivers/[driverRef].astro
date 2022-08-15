@@ -1,0 +1,133 @@
+---
+import fs from 'node:fs';
+import type { GetStaticPathsItem } from 'astro';
+import { parseISO, format } from 'date-fns';
+
+import MainLayout from 'layouts/MainLayout.astro';
+import { type Driver, loadData } from 'helpers/data';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+import { Nationality } from 'components/Nationality';
+
+// const metadata = await loadData('metadata');
+
+export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
+	const allDrivers = await loadData('drivers');
+
+	return allDrivers.map((driver) => ({
+		params: { driverRef: driver.driverRef },
+		props: { driver },
+	}));
+}
+
+const { driver } = Astro.props as { driver: Driver };
+
+let profilePicture: string | null = null;
+
+if (fs.existsSync(`src/images/drivers/${driver.driverRef}.webp`)) {
+	profilePicture = (await import(`../../images/drivers/${driver.driverRef}.webp`)).default;
+}
+
+const dob = format(parseISO(driver.dob), 'do MMM yyy');
+const winPct = `${
+	driver.totalRaces > 0 ? ((driver.raceWins * 100) / driver.totalRaces).toFixed(2) : '0.00'
+}%`;
+const lapsLeadPct = `${
+	typeof driver.totalLaps === 'number' && typeof driver.lapsLead === 'number'
+		? driver.totalLaps > 0
+			? ((driver.lapsLead * 100) / driver.totalLaps).toFixed(2)
+			: '0.00'
+		: ''
+}%`;
+const wonChampionships = driver.championshipStandings
+	.filter((c) => c.position === 1)
+	.map((c) => c.year);
+---
+
+<MainLayout title={`${driver.name}`}>
+	<div class="driver-page">
+		<Breadcrumbs
+			links={[
+				{ label: 'Drivers', href: '/drivers/' },
+				{ label: driver.name, href: '' },
+			]}
+		/>
+		<h1>{driver.name}</h1>
+		<div class="driver-info">
+			<div>
+				{profilePicture ? <img class="profile-pic" src={profilePicture} alt={driver.name} /> : null}
+			</div>
+			<table class="table table-sm">
+				<tbody>
+					<tr>
+						<th>Name</th>
+						<td>{driver.name}</td>
+					</tr>
+					<tr>
+						<th>Date of Birth</th>
+						<td>{dob}</td>
+					</tr>
+					<tr>
+						<th>Natioanality</th>
+						<td>
+							<span>{driver.nationality}</span>
+							<Nationality nationality={driver.nationality} />
+						</td>
+					</tr>
+					<tr>
+						<th>Total Races</th>
+						<td>{driver.totalRaces}</td>
+					</tr>
+					<tr>
+						<th>Races Won</th>
+						<td>{driver.raceWins} ({winPct})</td>
+					</tr>
+					<tr>
+						<th>Podiums</th>
+						<td>{driver.podiums}</td>
+					</tr>
+					<tr>
+						<th>Total Laps</th>
+						<td>{driver.totalLaps}</td>
+					</tr>
+					<tr>
+						<th>Laps Lead</th>
+						<td>
+							{typeof driver.lapsLead === 'number' ? `${driver.lapsLead} (${lapsLeadPct})` : 'N/A'}
+						</td>
+					</tr>
+					<tr>
+						<th>World Championships Won</th>
+						<td>
+							<span>{wonChampionships.length}</span>
+							{wonChampionships.length > 0 ? <span>({wonChampionships.join(', ')})</span> : null}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</MainLayout>
+
+<style lang="scss">
+	.driver-page {
+		margin-bottom: 4rem;
+
+		.profile-pic {
+			display: inline-block;
+			height: 500px;
+			border-radius: 1rem;
+			border: 2px solid var(--red-600);
+		}
+
+		.driver-info {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			gap: 1rem;
+		}
+
+		.table {
+			width: max-content;
+			border-top: 1px solid var(--border);
+		}
+	}
+</style>

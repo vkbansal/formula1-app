@@ -4,6 +4,7 @@ driverRef: follmer
 name: George Follmer
 dob: '1934-01-27'
 nationality: American
+hasImage: true
 totalRaces: 12
 raceWins: 0
 podiums: 1
@@ -12,3 +13,66 @@ lapsLead: null
 championshipStandings:
   - year: 1973
     position: 13
+seasons:
+  - year: 1973
+    results:
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Shadow
+        position: 6
+        points: 1
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Shadow
+        position: 3
+        points: 4
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Shadow
+        position: 14
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 10
+        roundName: Dutch Grand Prix
+        constructor: Shadow
+        position: 10
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Shadow
+        position: 10
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Shadow
+        position: 17
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Shadow
+        position: 14
+        points: 0

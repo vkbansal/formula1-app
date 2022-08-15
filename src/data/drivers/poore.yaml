@@ -4,6 +4,7 @@ driverRef: poore
 name: Dennis Poore
 dob: '1916-08-19'
 nationality: British
+hasImage: true
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 14
+seasons:
+  - year: 1952
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: 4
+        points: 3
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Connaught
+        position: 12
+        points: 0

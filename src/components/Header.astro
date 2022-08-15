@@ -11,17 +11,23 @@ const url = Astro.url.pathname;
 				<img src={f1Logo} alt="Formula 1 Logo" />
 				<span>Statistics <span class="text-scale-50 text-lighter">(Beta)</span></span>
 			</a>
-			<a
-				role="button"
-				class="navbar-burger"
-				aria-label="menu"
-				aria-expanded="false"
-				id="navbar-burger"
-			>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-			</a>
+			<div class="navbar-rhs">
+				<label for="theme-toggle" class="theme-toggle" title="Theme">
+					<input id="theme-toggle" type="checkbox" />
+					<span></span>
+				</label>
+				<a
+					role="button"
+					class="navbar-burger"
+					aria-label="menu"
+					aria-expanded="false"
+					id="navbar-burger"
+				>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
 		</div>
 		<nav class="nav-menu" id="nav-menu">
 			<a
@@ -45,10 +51,6 @@ const url = Astro.url.pathname;
 			<a href="/about" class:list={['nav-link', { 'nav-link-active': url.startsWith('/about/') }]}>
 				About
 			</a>
-			<label for="theme-toggle" class="theme-toggle" title="Theme">
-				<input id="theme-toggle" type="checkbox" />
-				<span></span>
-			</label>
 		</nav>
 	</nav>
 </header>
@@ -81,6 +83,7 @@ const url = Astro.url.pathname;
 		justify-content: space-between;
 		height: 100%;
 		padding: 1rem;
+		gap: 1rem;
 
 		@media screen and (max-width: bp.$lg) {
 			flex-direction: column;
@@ -89,6 +92,8 @@ const url = Astro.url.pathname;
 		.navbar-brand {
 			display: flex;
 			align-items: center;
+			flex: 1 0 auto;
+			justify-content: space-between;
 
 			@media screen and (max-width: bp.$lg) {
 				width: 100%;
@@ -108,11 +113,26 @@ const url = Astro.url.pathname;
 
 			@media screen and (max-width: bp.$md) {
 				font-size: 1.5rem;
+				& > img {
+					height: 0.75em;
+				}
 			}
 
 			@media screen and (max-width: bp.$sm) {
 				font-size: 1.25rem;
 			}
+
+			@media screen and (max-width: 350px) {
+				& > span {
+					display: none;
+				}
+			}
+		}
+
+		.navbar-rhs {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
 		}
 	}
 
@@ -186,9 +206,10 @@ const url = Astro.url.pathname;
 
 		@media screen and (max-width: bp.$lg) {
 			width: 100%;
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
 			display: none;
+			border-top: 1px solid var(--border);
+			padding-top: 1rem;
+			margin-top: 1rem;
 
 			& > a {
 				text-align: center;
@@ -197,7 +218,7 @@ const url = Astro.url.pathname;
 		}
 
 		&:global(.is-active) {
-			display: grid;
+			display: flex;
 		}
 	}
 

@@ -4,6 +4,7 @@ driverRef: hesnault
 name: François Hesnault
 dob: '1956-12-30'
 nationality: French
+hasImage: false
 totalRaces: 20
 raceWins: 0
 podiums: 0
@@ -14,3 +15,108 @@ championshipStandings:
     position: 23
   - year: 1985
     position: 36
+seasons:
+  - year: 1984
+    results:
+      - round: 1
+        roundName: Brazilian Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 2
+        roundName: South African Grand Prix
+        constructor: Ligier
+        position: 10
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 8
+        roundName: Detroit Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 9
+        roundName: Dallas Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Ligier
+        position: 8
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Ligier
+        position: 8
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: Ligier
+        position: 7
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 15
+        roundName: European Grand Prix
+        constructor: Ligier
+        position: 10
+        points: 0
+      - round: 16
+        roundName: Portuguese Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+  - year: 1985
+    results:
+      - round: 1
+        roundName: Brazilian Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 2
+        roundName: Portuguese Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 3
+        roundName: San Marino Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 4
+        roundName: Monaco Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 9
+        roundName: German Grand Prix
+        constructor: Renault
+        position: null
+        points: 0

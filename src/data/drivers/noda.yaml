@@ -4,6 +4,7 @@ driverRef: noda
 name: Hideki Noda
 dob: '1969-03-07'
 nationality: Japanese
+hasImage: true
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -12,3 +13,21 @@ lapsLead: null
 championshipStandings:
   - year: 1994
     position: 44
+seasons:
+  - year: 1994
+    results:
+      - round: 14
+        roundName: European Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 15
+        roundName: Japanese Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 16
+        roundName: Australian Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0

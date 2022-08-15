@@ -4,6 +4,7 @@ SELECT
 	CONCAT(`D`.`forename`, " ",`D`.`surname`) AS `name`,
 	`D`.`dob`,
 	`D`.`nationality`,
+	false as `hasImage`,
 	`R`.`totalRaces`,
 	`R`.`raceWins`,
 	`R`.`podiums`,

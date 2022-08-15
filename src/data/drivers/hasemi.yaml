@@ -4,6 +4,7 @@ driverRef: hasemi
 name: Masahiro Hasemi
 dob: '1945-11-13'
 nationality: Japanese
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1976
     position: 34
+seasons:
+  - year: 1976
+    results:
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: Kojima
+        position: 11
+        points: 0

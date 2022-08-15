@@ -4,6 +4,7 @@ driverRef: serrurier
 name: Doug Serrurier
 dob: '1920-12-09'
 nationality: South African
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 28
   - year: 1965
     position: 46
+seasons:
+  - year: 1962
+    results:
+      - round: 9
+        roundName: South African Grand Prix
+        constructor: LDS
+        position: null
+        points: 0
+  - year: 1963
+    results:
+      - round: 10
+        roundName: South African Grand Prix
+        constructor: LDS
+        position: 11
+        points: 0
+  - year: 1965
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: LDS-Climax
+        position: null
+        points: 0

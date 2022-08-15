@@ -4,6 +4,7 @@ driverRef: brown
 name: Warwick Brown
 dob: '1949-12-24'
 nationality: Australian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1976
     position: 38
+seasons:
+  - year: 1976
+    results:
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Wolf
+        position: 14
+        points: 0

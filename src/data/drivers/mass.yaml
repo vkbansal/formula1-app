@@ -4,6 +4,7 @@ driverRef: mass
 name: Jochen Mass
 dob: '1946-09-30'
 nationality: German
+hasImage: true
 totalRaces: 114
 raceWins: 1
 podiums: 8
@@ -28,3 +29,592 @@ championshipStandings:
     position: 17
   - year: 1982
     position: 28
+seasons:
+  - year: 1973
+    results:
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Surtees
+        position: 7
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+  - year: 1974
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Surtees
+        position: 17
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 8
+        roundName: Dutch Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: 14
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: McLaren
+        position: 16
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: McLaren
+        position: 7
+        points: 0
+  - year: 1975
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: McLaren
+        position: 14
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: McLaren
+        position: 3
+        points: 4
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: McLaren
+        position: 6
+        points: 1
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: McLaren
+        position: 1
+        points: 4.5
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: McLaren
+        position: 6
+        points: 1
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 8
+        roundName: Dutch Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: McLaren
+        position: 3
+        points: 4
+      - round: 10
+        roundName: British Grand Prix
+        constructor: McLaren
+        position: 7
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: McLaren
+        position: 4
+        points: 1.5
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 14
+        roundName: United States Grand Prix
+        constructor: McLaren
+        position: 3
+        points: 4
+  - year: 1976
+    results:
+      - round: 1
+        roundName: Brazilian Grand Prix
+        constructor: McLaren
+        position: 6
+        points: 1
+      - round: 2
+        roundName: South African Grand Prix
+        constructor: McLaren
+        position: 3
+        points: 4
+      - round: 3
+        roundName: United States Grand Prix West
+        constructor: McLaren
+        position: 5
+        points: 2
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: McLaren
+        position: 6
+        points: 1
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: McLaren
+        position: 5
+        points: 2
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: McLaren
+        position: 11
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: McLaren
+        position: 15
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: McLaren
+        position: 3
+        points: 4
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: McLaren
+        position: 7
+        points: 0
+      - round: 12
+        roundName: Dutch Grand Prix
+        constructor: McLaren
+        position: 9
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: McLaren
+        position: 5
+        points: 2
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: McLaren
+        position: 4
+        points: 3
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+  - year: 1977
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: McLaren
+        position: 5
+        points: 2
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: McLaren
+        position: 4
+        points: 3
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: McLaren
+        position: 4
+        points: 3
+      - round: 7
+        roundName: Belgian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 8
+        roundName: Swedish Grand Prix
+        constructor: McLaren
+        position: 2
+        points: 6
+      - round: 9
+        roundName: French Grand Prix
+        constructor: McLaren
+        position: 9
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: McLaren
+        position: 4
+        points: 3
+      - round: 11
+        roundName: German Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: McLaren
+        position: 6
+        points: 1
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: McLaren
+        position: 4
+        points: 3
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: McLaren
+        position: 3
+        points: 4
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+  - year: 1978
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: ATS
+        position: 11
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: ATS
+        position: 7
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: ATS
+        position: 11
+        points: 0
+      - round: 7
+        roundName: Spanish Grand Prix
+        constructor: ATS
+        position: 9
+        points: 0
+      - round: 8
+        roundName: Swedish Grand Prix
+        constructor: ATS
+        position: 13
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: ATS
+        position: 13
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+  - year: 1979
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Arrows
+        position: 8
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Arrows
+        position: 7
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Arrows
+        position: 12
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Arrows
+        position: 9
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Arrows
+        position: 8
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 7
+        roundName: Monaco Grand Prix
+        constructor: Arrows
+        position: 6
+        points: 1
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Arrows
+        position: 15
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Arrows
+        position: 6
+        points: 1
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 12
+        roundName: Dutch Grand Prix
+        constructor: Arrows
+        position: 6
+        points: 1
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+  - year: 1980
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Arrows
+        position: 10
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Arrows
+        position: 6
+        points: 1
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Arrows
+        position: 7
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Arrows
+        position: 4
+        points: 3
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Arrows
+        position: 10
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: Arrows
+        position: 13
+        points: 0
+      - round: 9
+        roundName: German Grand Prix
+        constructor: Arrows
+        position: 8
+        points: 0
+      - round: 10
+        roundName: Austrian Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 11
+        roundName: Dutch Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 13
+        roundName: Canadian Grand Prix
+        constructor: Arrows
+        position: 11
+        points: 0
+      - round: 14
+        roundName: United States Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+  - year: 1982
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: March
+        position: 12
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: March
+        position: 8
+        points: 0
+      - round: 3
+        roundName: United States Grand Prix West
+        constructor: March
+        position: 8
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 7
+        roundName: Detroit Grand Prix
+        constructor: March
+        position: 7
+        points: 0
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: March
+        position: 11
+        points: 0
+      - round: 9
+        roundName: Dutch Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: March
+        position: 10
+        points: 0
+      - round: 11
+        roundName: French Grand Prix
+        constructor: March
+        position: null
+        points: 0

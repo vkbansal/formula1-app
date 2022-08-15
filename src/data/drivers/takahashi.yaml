@@ -4,6 +4,7 @@ driverRef: takahashi
 name: Kunimitsu Takahashi
 dob: '1940-01-29'
 nationality: Japanese
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1977
     position: 32
+seasons:
+  - year: 1977
+    results:
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Tyrrell
+        position: 9
+        points: 0

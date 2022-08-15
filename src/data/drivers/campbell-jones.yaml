@@ -4,6 +4,7 @@ driverRef: campbell-jones
 name: John Campbell-Jones
 dob: '1930-01-21'
 nationality: British
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -16,3 +17,35 @@ championshipStandings:
     position: 32
   - year: 1963
     position: 32
+seasons:
+  - year: 1961
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+  - year: 1962
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Climax
+        position: 11
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Emeryson
+        position: null
+        points: 0
+  - year: 1963
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lola
+        position: 13
+        points: 0

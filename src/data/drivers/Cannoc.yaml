@@ -4,6 +4,7 @@ driverRef: Cannoc
 name: John Cannon
 dob: '1933-06-21'
 nationality: Canadian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1971
     position: 33
+seasons:
+  - year: 1971
+    results:
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: BRM
+        position: 14
+        points: 0

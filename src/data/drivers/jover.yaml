@@ -4,6 +4,7 @@ driverRef: jover
 name: Juan Jover
 dob: '1903-11-23'
 nationality: Spanish
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1951
     position: 65
+seasons:
+  - year: 1951
+    results:
+      - round: 8
+        roundName: Spanish Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0

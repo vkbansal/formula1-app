@@ -4,6 +4,7 @@ driverRef: lunger
 name: Brett Lunger
 dob: '1945-11-14'
 nationality: American
+hasImage: false
 totalRaces: 42
 raceWins: 0
 podiums: 0
@@ -18,3 +19,222 @@ championshipStandings:
     position: 29
   - year: 1978
     position: 22
+seasons:
+  - year: 1975
+    results:
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Hesketh
+        position: 13
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Hesketh
+        position: 10
+        points: 0
+      - round: 14
+        roundName: United States Grand Prix
+        constructor: Hesketh
+        position: null
+        points: 0
+  - year: 1976
+    results:
+      - round: 2
+        roundName: South African Grand Prix
+        constructor: Surtees
+        position: 11
+        points: 0
+      - round: 3
+        roundName: United States Grand Prix West
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Surtees
+        position: 15
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Surtees
+        position: 16
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Surtees
+        position: 10
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Surtees
+        position: 14
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Surtees
+        position: 15
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Surtees
+        position: 11
+        points: 0
+  - year: 1977
+    results:
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: March
+        position: 14
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: March
+        position: null
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: March
+        position: 10
+        points: 0
+      - round: 8
+        roundName: Swedish Grand Prix
+        constructor: McLaren
+        position: 11
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: McLaren
+        position: 13
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: McLaren
+        position: 10
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: McLaren
+        position: 9
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: McLaren
+        position: 10
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: McLaren
+        position: 11
+        points: 0
+  - year: 1978
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: McLaren
+        position: 13
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: McLaren
+        position: 11
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: McLaren
+        position: 7
+        points: 0
+      - round: 7
+        roundName: Spanish Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 8
+        roundName: Swedish Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: McLaren
+        position: 8
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: McLaren
+        position: 8
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Ensign
+        position: 13
+        points: 0

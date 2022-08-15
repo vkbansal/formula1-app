@@ -4,6 +4,7 @@ driverRef: daywalt
 name: Jimmy Daywalt
 dob: '1924-08-28'
 nationality: American
+hasImage: false
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -22,3 +23,51 @@ championshipStandings:
     position: 71
   - year: 1959
     position: 45
+seasons:
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 6
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Nichels
+        position: null
+        points: 0
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 9
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1957
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 14
+        points: 0

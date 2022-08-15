@@ -4,6 +4,7 @@ driverRef: pretorius
 name: Jackie Pretorius
 dob: '1934-11-22'
 nationality: South African
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -18,3 +19,32 @@ championshipStandings:
     position: 46
   - year: 1973
     position: 37
+seasons:
+  - year: 1965
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: LDS-Alfa Romeo
+        position: null
+        points: 0
+  - year: 1968
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Brabham-Climax
+        position: null
+        points: 0
+  - year: 1971
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+  - year: 1973
+    results:
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Iso Marlboro
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: sirotkin
 name: Sergey Sirotkin
 dob: '1995-08-27'
 nationality: Russian
+hasImage: true
 totalRaces: 21
 raceWins: 0
 podiums: 0
@@ -12,3 +13,111 @@ lapsLead: 0
 championshipStandings:
   - year: 2018
     position: 20
+seasons:
+  - year: 2018
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 2
+        roundName: Bahrain Grand Prix
+        constructor: Williams
+        position: 15
+        points: 0
+      - round: 3
+        roundName: Chinese Grand Prix
+        constructor: Williams
+        position: 15
+        points: 0
+      - round: 4
+        roundName: Azerbaijan Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Williams
+        position: 16
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Williams
+        position: 17
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Williams
+        position: 15
+        points: 0
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: Williams
+        position: 13
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 12
+        roundName: Hungarian Grand Prix
+        constructor: Williams
+        position: 16
+        points: 0
+      - round: 13
+        roundName: Belgian Grand Prix
+        constructor: Williams
+        position: 12
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Williams
+        position: 11
+        points: 1
+      - round: 15
+        roundName: Singapore Grand Prix
+        constructor: Williams
+        position: 19
+        points: 0
+      - round: 16
+        roundName: Russian Grand Prix
+        constructor: Williams
+        position: 18
+        points: 0
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Williams
+        position: 16
+        points: 0
+      - round: 18
+        roundName: United States Grand Prix
+        constructor: Williams
+        position: 13
+        points: 0
+      - round: 19
+        roundName: Mexican Grand Prix
+        constructor: Williams
+        position: 13
+        points: 0
+      - round: 20
+        roundName: Brazilian Grand Prix
+        constructor: Williams
+        position: 16
+        points: 0
+      - round: 21
+        roundName: Abu Dhabi Grand Prix
+        constructor: Williams
+        position: 15
+        points: 0

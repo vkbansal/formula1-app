@@ -4,6 +4,7 @@ driverRef: clapham
 name: David Clapham
 dob: '1931-05-18'
 nationality: South African
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1965
     position: 53
+seasons:
+  - year: 1965
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0

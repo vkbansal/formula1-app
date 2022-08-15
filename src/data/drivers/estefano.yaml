@@ -4,6 +4,7 @@ driverRef: estefano
 name: Nasif Estéfano
 dob: '1932-11-18'
 nationality: Argentine
+hasImage: true
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -16,3 +17,35 @@ championshipStandings:
     position: 59
   - year: 1963
     position: 52
+seasons:
+  - year: 1960
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 14
+        points: 0
+  - year: 1962
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: De Tomaso
+        position: null
+        points: 0
+  - year: 1963
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: De Tomaso
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: De Tomaso
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: De Tomaso
+        position: null
+        points: 0

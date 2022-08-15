@@ -4,6 +4,7 @@ driverRef: magnussen
 name: Jan Magnussen
 dob: '1973-07-04'
 nationality: Danish
+hasImage: true
 totalRaces: 25
 raceWins: 0
 podiums: 0
@@ -16,3 +17,135 @@ championshipStandings:
     position: 20
   - year: 1998
     position: 17
+seasons:
+  - year: 1995
+    results:
+      - round: 15
+        roundName: Pacific Grand Prix
+        constructor: McLaren
+        position: 10
+        points: 0
+  - year: 1997
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 3
+        roundName: Argentine Grand Prix
+        constructor: Stewart
+        position: 10
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: Stewart
+        position: 7
+        points: 0
+      - round: 6
+        roundName: Spanish Grand Prix
+        constructor: Stewart
+        position: 13
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 11
+        roundName: Hungarian Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 12
+        roundName: Belgian Grand Prix
+        constructor: Stewart
+        position: 12
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 14
+        roundName: Austrian Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 15
+        roundName: Luxembourg Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 17
+        roundName: European Grand Prix
+        constructor: Stewart
+        position: 9
+        points: 0
+  - year: 1998
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Stewart
+        position: 10
+        points: 0
+      - round: 3
+        roundName: Argentine Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Stewart
+        position: 12
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Stewart
+        position: null
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Stewart
+        position: 6
+        points: 1

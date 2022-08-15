@@ -4,6 +4,7 @@ driverRef: schlesser
 name: Jean-Louis Schlesser
 dob: '1948-09-12'
 nationality: French
+hasImage: true
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 35
   - year: 1988
     position: 30
+seasons:
+  - year: 1983
+    results:
+      - round: 3
+        roundName: French Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+  - year: 1988
+    results:
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Williams
+        position: 11
+        points: 0

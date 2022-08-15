@@ -4,6 +4,7 @@ driverRef: bettenhausen
 name: Tony Bettenhausen
 dob: '1916-09-12'
 nationality: American
+hasImage: false
 totalRaces: 11
 raceWins: 0
 podiums: 1
@@ -32,3 +33,91 @@ championshipStandings:
     position: 16
   - year: 1960
     position: 66
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 5
+        points: 1
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Deidt
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Deidt
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Deidt
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: 9
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 15
+        points: 0
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 2
+        points: 3
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1957
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 15
+        points: 0
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Epperly
+        position: 4
+        points: 4
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Epperly
+        position: 4
+        points: 3
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: 23
+        points: 0

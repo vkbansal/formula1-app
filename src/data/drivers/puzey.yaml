@@ -4,6 +4,7 @@ driverRef: puzey
 name: Clive Puzey
 dob: '1941-07-11'
 nationality: Rhodesian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1965
     position: 49
+seasons:
+  - year: 1965
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0

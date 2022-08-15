@@ -4,6 +4,7 @@ driverRef: hart
 name: Brian Hart
 dob: '1936-09-07'
 nationality: British
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1967
     position: 35
+seasons:
+  - year: 1967
+    results:
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Protos
+        position: null
+        points: 0

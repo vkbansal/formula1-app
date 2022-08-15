@@ -4,6 +4,7 @@ driverRef: wacker
 name: Fred Wacker
 dob: '1918-07-10'
 nationality: American
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -14,3 +15,23 @@ championshipStandings:
     position: 44
   - year: 1954
     position: 29
+seasons:
+  - year: 1953
+    results:
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Gordini
+        position: 9
+        points: 0
+  - year: 1954
+    results:
+      - round: 7
+        roundName: Swiss Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Gordini
+        position: 6
+        points: 0

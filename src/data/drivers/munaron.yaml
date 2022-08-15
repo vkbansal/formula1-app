@@ -4,6 +4,7 @@ driverRef: munaron
 name: Gino Munaron
 dob: '1928-04-02'
 nationality: Italian
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -12,3 +13,26 @@ lapsLead: null
 championshipStandings:
   - year: 1960
     position: 52
+seasons:
+  - year: 1960
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 13
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Cooper-Castellotti
+        position: null
+        points: 0
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Cooper-Castellotti
+        position: 15
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Cooper-Castellotti
+        position: null
+        points: 0

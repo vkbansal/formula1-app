@@ -4,6 +4,7 @@ driverRef: neve
 name: Patrick Nève
 dob: '1949-10-13'
 nationality: Belgian
+hasImage: true
 totalRaces: 13
 raceWins: 0
 podiums: 0
@@ -14,3 +15,73 @@ championshipStandings:
     position: 40
   - year: 1977
     position: 23
+seasons:
+  - year: 1976
+    results:
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Brabham-Ford
+        position: null
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Ensign
+        position: 18
+        points: 0
+  - year: 1977
+    results:
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: March
+        position: 12
+        points: 0
+      - round: 7
+        roundName: Belgian Grand Prix
+        constructor: March
+        position: 10
+        points: 0
+      - round: 8
+        roundName: Swedish Grand Prix
+        constructor: March
+        position: 15
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: March
+        position: 10
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: March
+        position: 9
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: March
+        position: 7
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: March
+        position: 18
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: March
+        position: null
+        points: 0

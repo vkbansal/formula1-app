@@ -1,1 +1,1 @@
-SELECT `year` FROM `seasons`;
+SELECT `year` FROM `seasons`

@@ -12,10 +12,24 @@ export interface HomePage {
 	constructorsChampions: number;
 }
 
+export interface DriverResults {
+	round: number;
+	roundName: string;
+	constructor: string;
+	position: number | null;
+	points: number;
+}
+
+export interface DriverSeason {
+	year: number;
+	results: DriverResults[];
+}
+
 export interface Driver {
 	driverRef: string;
 	name: string;
 	dob: string;
+	hasImage: boolean;
 	nationality: string;
 	totalRaces: number;
 	raceWins: number;
@@ -23,6 +37,7 @@ export interface Driver {
 	totalLaps: number | null;
 	lapsLead: number | null;
 	championshipStandings: Array<{ year: number; position: number }>;
+	seasons: DriverSeason[];
 }
 
 export interface Constructor {
@@ -90,6 +105,7 @@ export interface SeasonConstructor {
 }
 
 export interface Season {
+	year: number;
 	rounds: Round[];
 	drivers: SeasonDriver[];
 	constructors: SeasonConstructor[];
@@ -98,14 +114,14 @@ export interface Season {
 export interface DataMap {
 	homepage: HomePage;
 	metadata: Metadata;
-	seasons: number[];
+	seasons: Season[];
 	drivers: Driver[];
 	[key: `drivers/${string}`]: Driver;
-	[key: `seasons/${number | string}`]: Season;
+	[key: `seasons/${string}`]: Season;
 }
 
 export async function loadData<T extends keyof DataMap>(key: T): Promise<DataMap[T]> {
-	if (key === 'drivers') {
+	if (key === 'drivers' || key === 'seasons') {
 		const files = await globby(`src/data/${key}/*.yaml`);
 
 		const dataPromises = files.map(async (yamlFile) => {

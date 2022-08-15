@@ -4,6 +4,7 @@ driverRef: duncan
 name: Len Duncan
 dob: '1911-07-25'
 nationality: American
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1954
     position: 95
+seasons:
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Schroeder
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: thackwell
 name: Mike Thackwell
 dob: '1961-03-30'
 nationality: New Zealander
+hasImage: true
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -14,3 +15,33 @@ championshipStandings:
     position: 34
   - year: 1984
     position: 34
+seasons:
+  - year: 1980
+    results:
+      - round: 11
+        roundName: Dutch Grand Prix
+        constructor: Arrows
+        position: null
+        points: 0
+      - round: 13
+        roundName: Canadian Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0
+      - round: 14
+        roundName: United States Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0
+  - year: 1984
+    results:
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0

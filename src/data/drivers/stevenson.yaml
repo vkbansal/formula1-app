@@ -4,6 +4,7 @@ driverRef: stevenson
 name: Chuck Stevenson
 dob: '1919-10-15'
 nationality: American
+hasImage: true
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -20,3 +21,49 @@ championshipStandings:
     position: 51
   - year: 1960
     position: 58
+seasons:
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Marchese
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 18
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: 9
+        points: 0
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: 12
+        points: 0
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: 15
+        points: 0

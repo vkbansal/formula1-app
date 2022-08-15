@@ -4,6 +4,7 @@ driverRef: hoyt
 name: Jerry Hoyt
 dob: '1929-01-29'
 nationality: American
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -18,3 +19,37 @@ championshipStandings:
     position: 38
   - year: 1955
     position: 82
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 21
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 8
+        points: 0
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Stevens
+        position: null
+        points: 0

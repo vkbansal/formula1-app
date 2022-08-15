@@ -4,6 +4,7 @@ driverRef: grignard
 name: Georges Grignard
 dob: '1905-07-25'
 nationality: French
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1951
     position: 54
+seasons:
+  - year: 1951
+    results:
+      - round: 8
+        roundName: Spanish Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0

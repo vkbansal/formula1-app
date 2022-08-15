@@ -4,6 +4,7 @@ driverRef: tornaco
 name: Charles de Tornaco
 dob: '1927-06-07'
 nationality: Belgian
+hasImage: true
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -12,3 +13,21 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 29
+seasons:
+  - year: 1952
+    results:
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 7
+        points: 0
+      - round: 7
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0

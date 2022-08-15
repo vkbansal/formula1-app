@@ -4,6 +4,7 @@ driverRef: pietsch
 name: Paul Pietsch
 dob: '1911-06-20'
 nationality: German
+hasImage: true
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 56
   - year: 1952
     position: 92
+seasons:
+  - year: 1950
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Alfa Romeo
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Veritas
+        position: null
+        points: 0

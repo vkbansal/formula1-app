@@ -4,6 +4,7 @@ driverRef: adolff
 name: Kurt Adolff
 dob: '1921-11-05'
 nationality: German
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1953
     position: 103
+seasons:
+  - year: 1953
+    results:
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0

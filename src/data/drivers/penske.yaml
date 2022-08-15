@@ -4,6 +4,7 @@ driverRef: penske
 name: Roger Penske
 dob: '1937-02-20'
 nationality: American
+hasImage: true
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 22
   - year: 1962
     position: 26
+seasons:
+  - year: 1961
+    results:
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Cooper-Climax
+        position: 8
+        points: 0
+  - year: 1962
+    results:
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-Climax
+        position: 9
+        points: 0

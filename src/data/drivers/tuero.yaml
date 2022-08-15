@@ -4,6 +4,7 @@ driverRef: tuero
 name: Esteban Tuero
 dob: '1978-04-22'
 nationality: Argentine
+hasImage: true
 totalRaces: 16
 raceWins: 0
 podiums: 0
@@ -12,3 +13,86 @@ lapsLead: 0
 championshipStandings:
   - year: 1998
     position: 19
+seasons:
+  - year: 1998
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 3
+        roundName: Argentine Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Minardi
+        position: 8
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Minardi
+        position: 15
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 10
+        roundName: Austrian Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Minardi
+        position: 16
+        points: 0
+      - round: 12
+        roundName: Hungarian Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 13
+        roundName: Belgian Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Minardi
+        position: 11
+        points: 0
+      - round: 15
+        roundName: Luxembourg Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: Minardi
+        position: null
+        points: 0

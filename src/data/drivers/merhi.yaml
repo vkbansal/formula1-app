@@ -4,6 +4,7 @@ driverRef: merhi
 name: Roberto Merhi
 dob: '1991-03-22'
 nationality: Spanish
+hasImage: true
 totalRaces: 13
 raceWins: 0
 podiums: 0
@@ -12,3 +13,71 @@ lapsLead: 0
 championshipStandings:
   - year: 2015
     position: 19
+seasons:
+  - year: 2015
+    results:
+      - round: 2
+        roundName: Malaysian Grand Prix
+        constructor: Manor Marussia
+        position: 15
+        points: 0
+      - round: 3
+        roundName: Chinese Grand Prix
+        constructor: Manor Marussia
+        position: 16
+        points: 0
+      - round: 4
+        roundName: Bahrain Grand Prix
+        constructor: Manor Marussia
+        position: 17
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Manor Marussia
+        position: 18
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Manor Marussia
+        position: 16
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Manor Marussia
+        position: null
+        points: 0
+      - round: 8
+        roundName: Austrian Grand Prix
+        constructor: Manor Marussia
+        position: 14
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Manor Marussia
+        position: 12
+        points: 0
+      - round: 10
+        roundName: Hungarian Grand Prix
+        constructor: Manor Marussia
+        position: 15
+        points: 0
+      - round: 11
+        roundName: Belgian Grand Prix
+        constructor: Manor Marussia
+        position: 15
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Manor Marussia
+        position: 16
+        points: 0
+      - round: 15
+        roundName: Russian Grand Prix
+        constructor: Manor Marussia
+        position: 13
+        points: 0
+      - round: 19
+        roundName: Abu Dhabi Grand Prix
+        constructor: Manor Marussia
+        position: 19
+        points: 0

@@ -4,6 +4,7 @@ driverRef: kennedy
 name: Dave Kennedy
 dob: '1953-01-15'
 nationality: Irish
+hasImage: false
 totalRaces: 7
 raceWins: 0
 podiums: 0
@@ -12,3 +13,41 @@ lapsLead: null
 championshipStandings:
   - year: 1980
     position: 35
+seasons:
+  - year: 1980
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0

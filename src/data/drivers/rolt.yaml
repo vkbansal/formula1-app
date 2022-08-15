@@ -4,6 +4,7 @@ driverRef: rolt
 name: Tony Rolt
 dob: '1918-10-16'
 nationality: British
+hasImage: true
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 74
   - year: 1955
     position: 66
+seasons:
+  - year: 1950
+    results:
+      - round: 1
+        roundName: British Grand Prix
+        constructor: ERA
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: gilles_villeneuve
 name: Gilles Villeneuve
 dob: '1950-01-18'
 nationality: Canadian
+hasImage: true
 totalRaces: 68
 raceWins: 6
 podiums: 13
@@ -22,3 +23,356 @@ championshipStandings:
     position: 7
   - year: 1982
     position: 15
+seasons:
+  - year: 1977
+    results:
+      - round: 10
+        roundName: British Grand Prix
+        constructor: McLaren
+        position: 11
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: Ferrari
+        position: 12
+        points: 0
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1978
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: 8
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 3
+      - round: 7
+        roundName: Spanish Grand Prix
+        constructor: Ferrari
+        position: 10
+        points: 0
+      - round: 8
+        roundName: Swedish Grand Prix
+        constructor: Ferrari
+        position: 9
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: 12
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 8
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 4
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 1
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 7
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 16
+        roundName: Canadian Grand Prix
+        constructor: Ferrari
+        position: 1
+        points: 9
+  - year: 1979
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Ferrari
+        position: 5
+        points: 2
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Ferrari
+        position: 1
+        points: 9
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Ferrari
+        position: 1
+        points: 9
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Ferrari
+        position: 7
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 7
+        points: 0
+      - round: 7
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: 14
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 8
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+      - round: 12
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Ferrari
+        position: 1
+        points: 9
+  - year: 1980
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Ferrari
+        position: 16
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 1
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: 5
+        points: 2
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: 8
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 9
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 1
+      - round: 10
+        roundName: Austrian Grand Prix
+        constructor: Ferrari
+        position: 8
+        points: 0
+      - round: 11
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: 7
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 13
+        roundName: Canadian Grand Prix
+        constructor: Ferrari
+        position: 5
+        points: 2
+      - round: 14
+        roundName: United States Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1981
+    results:
+      - round: 1
+        roundName: United States Grand Prix West
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 3
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Ferrari
+        position: 7
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 3
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: 1
+        points: 9
+      - round: 7
+        roundName: Spanish Grand Prix
+        constructor: Ferrari
+        position: 1
+        points: 9
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 10
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 12
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 4
+      - round: 15
+        roundName: Caesars Palace Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1982
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 3
+        roundName: United States Grand Prix West
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0

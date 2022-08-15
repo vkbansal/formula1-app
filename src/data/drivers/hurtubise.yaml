@@ -4,6 +4,7 @@ driverRef: hurtubise
 name: Jim Hurtubise
 dob: '1932-12-05'
 nationality: American
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1960
     position: 61
+seasons:
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Christensen
+        position: 18
+        points: 0

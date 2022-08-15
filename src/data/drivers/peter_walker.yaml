@@ -4,6 +4,7 @@ driverRef: peter_walker
 name: Peter Walker
 dob: '1912-10-07'
 nationality: British
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -16,3 +17,30 @@ championshipStandings:
     position: 28
   - year: 1955
     position: 58
+seasons:
+  - year: 1950
+    results:
+      - round: 1
+        roundName: British Grand Prix
+        constructor: ERA
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: BRM
+        position: 7
+        points: 0
+  - year: 1955
+    results:
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: ward
 name: Rodger Ward
 dob: '1921-01-10'
 nationality: American
+hasImage: true
 totalRaces: 12
 raceWins: 1
 podiums: 2
@@ -32,3 +33,86 @@ championshipStandings:
     position: 14
   - year: 1963
     position: 39
+seasons:
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Bromme
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 16
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Pawl
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: null
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 8
+        points: 0
+  - year: 1957
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Lesovsky
+        position: null
+        points: 0
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Lesovsky
+        position: null
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: 1
+        points: 8
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Watson
+        position: 2
+        points: 6
+  - year: 1963
+    results:
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0

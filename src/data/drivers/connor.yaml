@@ -4,6 +4,7 @@ driverRef: connor
 name: Pat O'Connor
 dob: '1928-10-09'
 nationality: American
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -20,3 +21,39 @@ championshipStandings:
     position: 31
   - year: 1958
     position: 81
+seasons:
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 8
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 18
+        points: 0
+  - year: 1957
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 8
+        points: 0
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0

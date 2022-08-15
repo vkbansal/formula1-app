@@ -4,6 +4,7 @@ driverRef: chiron
 name: Louis Chiron
 dob: '1899-08-03'
 nationality: Monegasque
+hasImage: true
 totalRaces: 17
 raceWins: 0
 podiums: 1
@@ -22,3 +23,101 @@ championshipStandings:
     position: 63
   - year: 1958
     position: 83
+seasons:
+  - year: 1950
+    results:
+      - round: 1
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 4
+      - round: 4
+        roundName: Swiss Grand Prix
+        constructor: Maserati
+        position: 9
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 1
+        roundName: Swiss Grand Prix
+        constructor: Maserati
+        position: 7
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Talbot-Lago
+        position: 6
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0
+      - round: 8
+        roundName: Spanish Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 5
+        roundName: French Grand Prix
+        constructor: OSCA
+        position: 15
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: OSCA
+        position: 10
+        points: 0
+  - year: 1955
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Lancia
+        position: 6
+        points: 0
+  - year: 1956
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1958
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0

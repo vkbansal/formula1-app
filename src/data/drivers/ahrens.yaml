@@ -4,6 +4,7 @@ driverRef: ahrens
 name: Kurt Ahrens
 dob: '1940-04-19'
 nationality: German
+hasImage: true
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 43
   - year: 1968
     position: 28
+seasons:
+  - year: 1967
+    results:
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Protos
+        position: null
+        points: 0
+  - year: 1968
+    results:
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Brabham-Repco
+        position: 12
+        points: 0

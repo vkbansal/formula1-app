@@ -4,6 +4,7 @@ driverRef: galli
 name: Nanni Galli
 dob: '1940-10-02'
 nationality: Italian
+hasImage: true
 totalRaces: 17
 raceWins: 0
 podiums: 0
@@ -18,3 +19,97 @@ championshipStandings:
     position: 33
   - year: 1973
     position: 27
+seasons:
+  - year: 1970
+    results:
+      - round: 10
+        roundName: Italian Grand Prix
+        constructor: McLaren-Alfa Romeo
+        position: null
+        points: 0
+  - year: 1971
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: March-Ford
+        position: 11
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: March-Alfa Romeo
+        position: 12
+        points: 0
+      - round: 8
+        roundName: Austrian Grand Prix
+        constructor: March-Alfa Romeo
+        position: 12
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: March-Ford
+        position: null
+        points: 0
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: March-Ford
+        position: 16
+        points: 0
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: March-Ford
+        position: null
+        points: 0
+  - year: 1972
+    results:
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Tecno
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: 13
+        points: 0
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Tecno
+        position: null
+        points: 0
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: Tecno
+        position: null
+        points: 0
+      - round: 10
+        roundName: Italian Grand Prix
+        constructor: Tecno
+        position: null
+        points: 0
+  - year: 1973
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Iso Marlboro
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Iso Marlboro
+        position: 9
+        points: 0
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Iso Marlboro
+        position: 11
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Iso Marlboro
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Iso Marlboro
+        position: null
+        points: 0

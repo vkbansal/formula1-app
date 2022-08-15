@@ -4,6 +4,7 @@ driverRef: robarts
 name: Richard Robarts
 dob: '1944-09-22'
 nationality: British
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -12,3 +13,26 @@ lapsLead: null
 championshipStandings:
   - year: 1974
     position: 42
+seasons:
+  - year: 1974
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Brabham
+        position: 15
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Brabham
+        position: 17
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Iso Marlboro
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: zorzi
 name: Renzo Zorzi
 dob: '1946-12-12'
 nationality: Italian
+hasImage: true
 totalRaces: 7
 raceWins: 0
 podiums: 0
@@ -16,3 +17,45 @@ championshipStandings:
     position: 28
   - year: 1977
     position: 21
+seasons:
+  - year: 1975
+    results:
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+  - year: 1976
+    results:
+      - round: 1
+        roundName: Brazilian Grand Prix
+        constructor: Williams
+        position: 9
+        points: 0
+  - year: 1977
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Shadow
+        position: 6
+        points: 1
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Shadow
+        position: null
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Shadow
+        position: null
+        points: 0

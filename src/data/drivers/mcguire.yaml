@@ -4,6 +4,7 @@ driverRef: mcguire
 name: Brian McGuire
 dob: '1945-12-13'
 nationality: Australian
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1977
     position: 61
+seasons:
+  - year: 1977
+    results:
+      - round: 10
+        roundName: British Grand Prix
+        constructor: McGuire
+        position: null
+        points: 0

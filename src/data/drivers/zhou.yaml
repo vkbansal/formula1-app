@@ -4,9 +4,78 @@ driverRef: zhou
 name: Guanyu Zhou
 dob: '1999-05-30'
 nationality: Chinese
+hasImage: true
 totalRaces: 13
 raceWins: 0
 podiums: 0
 totalLaps: 603
 lapsLead: 0
 championshipStandings: null
+seasons:
+  - year: 2022
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: Alfa Romeo
+        position: 10
+        points: 1
+      - round: 2
+        roundName: Saudi Arabian Grand Prix
+        constructor: Alfa Romeo
+        position: 11
+        points: 0
+      - round: 3
+        roundName: Australian Grand Prix
+        constructor: Alfa Romeo
+        position: 11
+        points: 0
+      - round: 4
+        roundName: Emilia Romagna Grand Prix
+        constructor: Alfa Romeo
+        position: 15
+        points: 0
+      - round: 5
+        roundName: Miami Grand Prix
+        constructor: Alfa Romeo
+        position: null
+        points: 0
+      - round: 6
+        roundName: Spanish Grand Prix
+        constructor: Alfa Romeo
+        position: null
+        points: 0
+      - round: 7
+        roundName: Monaco Grand Prix
+        constructor: Alfa Romeo
+        position: 16
+        points: 0
+      - round: 8
+        roundName: Azerbaijan Grand Prix
+        constructor: Alfa Romeo
+        position: null
+        points: 0
+      - round: 9
+        roundName: Canadian Grand Prix
+        constructor: Alfa Romeo
+        position: 8
+        points: 4
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Alfa Romeo
+        position: null
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Alfa Romeo
+        position: 14
+        points: 0
+      - round: 12
+        roundName: French Grand Prix
+        constructor: Alfa Romeo
+        position: 16
+        points: 0
+      - round: 13
+        roundName: Hungarian Grand Prix
+        constructor: Alfa Romeo
+        position: 13
+        points: 0

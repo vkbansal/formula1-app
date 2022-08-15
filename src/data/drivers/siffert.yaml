@@ -4,6 +4,7 @@ driverRef: siffert
 name: Jo Siffert
 dob: '1936-07-07'
 nationality: Swiss
+hasImage: true
 totalRaces: 100
 raceWins: 2
 podiums: 6
@@ -30,3 +31,524 @@ championshipStandings:
     position: 26
   - year: 1971
     position: 5
+seasons:
+  - year: 1962
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Climax
+        position: 10
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Lotus-Climax
+        position: 12
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+  - year: 1963
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 2
+        roundName: Belgian Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: Lotus-BRM
+        position: 7
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-BRM
+        position: 6
+        points: 1
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Lotus-BRM
+        position: 9
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 9
+        roundName: Mexican Grand Prix
+        constructor: Lotus-BRM
+        position: 9
+        points: 0
+  - year: 1964
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0
+      - round: 2
+        roundName: Dutch Grand Prix
+        constructor: Brabham-BRM
+        position: 13
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Brabham-Climax
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Brabham-BRM
+        position: 11
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Brabham-BRM
+        position: 4
+        points: 3
+      - round: 7
+        roundName: Austrian Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Brabham-BRM
+        position: 7
+        points: 0
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Brabham-BRM
+        position: 3
+        points: 4
+      - round: 10
+        roundName: Mexican Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+  - year: 1965
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Brabham-BRM
+        position: 7
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Brabham-BRM
+        position: 6
+        points: 1
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Brabham-BRM
+        position: 8
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Brabham-BRM
+        position: 6
+        points: 1
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Brabham-BRM
+        position: 9
+        points: 0
+      - round: 6
+        roundName: Dutch Grand Prix
+        constructor: Brabham-BRM
+        position: 13
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Brabham-BRM
+        position: 11
+        points: 0
+      - round: 10
+        roundName: Mexican Grand Prix
+        constructor: Brabham-BRM
+        position: 4
+        points: 3
+  - year: 1966
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+      - round: 2
+        roundName: Belgian Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 3
+        roundName: French Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 4
+        roundName: British Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Cooper-Maserati
+        position: 4
+        points: 3
+      - round: 9
+        roundName: Mexican Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+  - year: 1967
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: Cooper-Maserati
+        position: 10
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Cooper-Maserati
+        position: 7
+        points: 0
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Cooper-Maserati
+        position: 4
+        points: 3
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 10
+        roundName: United States Grand Prix
+        constructor: Cooper-Maserati
+        position: 4
+        points: 3
+      - round: 11
+        roundName: Mexican Grand Prix
+        constructor: Cooper-Maserati
+        position: 12
+        points: 0
+  - year: 1968
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Cooper-Maserati
+        position: 7
+        points: 0
+      - round: 2
+        roundName: Spanish Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Ford
+        position: 7
+        points: 0
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Lotus-Ford
+        position: 11
+        points: 0
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Lotus-Ford
+        position: 1
+        points: 9
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: Lotus-Ford
+        position: 5
+        points: 2
+      - round: 12
+        roundName: Mexican Grand Prix
+        constructor: Lotus-Ford
+        position: 6
+        points: 1
+  - year: 1969
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Lotus-Ford
+        position: 4
+        points: 3
+      - round: 2
+        roundName: Spanish Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: Lotus-Ford
+        position: 3
+        points: 4
+      - round: 4
+        roundName: Dutch Grand Prix
+        constructor: Lotus-Ford
+        position: 2
+        points: 6
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Lotus-Ford
+        position: 9
+        points: 0
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Lotus-Ford
+        position: 8
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Lotus-Ford
+        position: 5
+        points: 2
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Lotus-Ford
+        position: 8
+        points: 0
+      - round: 9
+        roundName: Canadian Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 10
+        roundName: United States Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+      - round: 11
+        roundName: Mexican Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0
+  - year: 1970
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: March
+        position: 10
+        points: 0
+      - round: 2
+        roundName: Spanish Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: March
+        position: 8
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: March
+        position: 7
+        points: 0
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 7
+        roundName: British Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 8
+        roundName: German Grand Prix
+        constructor: March
+        position: 8
+        points: 0
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: March
+        position: 9
+        points: 0
+      - round: 10
+        roundName: Italian Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 11
+        roundName: Canadian Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 12
+        roundName: United States Grand Prix
+        constructor: March
+        position: 9
+        points: 0
+      - round: 13
+        roundName: Mexican Grand Prix
+        constructor: March
+        position: null
+        points: 0
+  - year: 1971
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 2
+        roundName: Spanish Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 4
+        roundName: Dutch Grand Prix
+        constructor: BRM
+        position: 6
+        points: 1
+      - round: 5
+        roundName: French Grand Prix
+        constructor: BRM
+        position: 4
+        points: 3
+      - round: 6
+        roundName: British Grand Prix
+        constructor: BRM
+        position: 9
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 8
+        roundName: Austrian Grand Prix
+        constructor: BRM
+        position: 1
+        points: 9
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: BRM
+        position: 9
+        points: 0
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: BRM
+        position: 9
+        points: 0
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: BRM
+        position: 2
+        points: 6

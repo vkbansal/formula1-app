@@ -4,6 +4,7 @@ driverRef: vaccarella
 name: Nino Vaccarella
 dob: '1933-03-04'
 nationality: Italian
+hasImage: true
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -16,3 +17,35 @@ championshipStandings:
     position: 23
   - year: 1965
     position: 29
+seasons:
+  - year: 1961
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: De Tomaso-Alfa Romeo
+        position: null
+        points: 0
+  - year: 1962
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Porsche
+        position: 15
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-Climax
+        position: 9
+        points: 0
+  - year: 1965
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 12
+        points: 0

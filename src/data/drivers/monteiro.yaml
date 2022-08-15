@@ -4,6 +4,7 @@ driverRef: monteiro
 name: Tiago Monteiro
 dob: '1976-07-24'
 nationality: Portuguese
+hasImage: true
 totalRaces: 37
 raceWins: 0
 podiums: 1
@@ -14,3 +15,193 @@ championshipStandings:
     position: 16
   - year: 2006
     position: 21
+seasons:
+  - year: 2005
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Jordan
+        position: 16
+        points: 0
+      - round: 2
+        roundName: Malaysian Grand Prix
+        constructor: Jordan
+        position: 12
+        points: 0
+      - round: 3
+        roundName: Bahrain Grand Prix
+        constructor: Jordan
+        position: 10
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Jordan
+        position: 13
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Jordan
+        position: 12
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Jordan
+        position: 13
+        points: 0
+      - round: 7
+        roundName: European Grand Prix
+        constructor: Jordan
+        position: 15
+        points: 0
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: Jordan
+        position: 10
+        points: 0
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Jordan
+        position: 3
+        points: 6
+      - round: 10
+        roundName: French Grand Prix
+        constructor: Jordan
+        position: 13
+        points: 0
+      - round: 11
+        roundName: British Grand Prix
+        constructor: Jordan
+        position: 17
+        points: 0
+      - round: 12
+        roundName: German Grand Prix
+        constructor: Jordan
+        position: 17
+        points: 0
+      - round: 13
+        roundName: Hungarian Grand Prix
+        constructor: Jordan
+        position: 13
+        points: 0
+      - round: 14
+        roundName: Turkish Grand Prix
+        constructor: Jordan
+        position: 15
+        points: 0
+      - round: 15
+        roundName: Italian Grand Prix
+        constructor: Jordan
+        position: 17
+        points: 0
+      - round: 16
+        roundName: Belgian Grand Prix
+        constructor: Jordan
+        position: 8
+        points: 1
+      - round: 17
+        roundName: Brazilian Grand Prix
+        constructor: Jordan
+        position: null
+        points: 0
+      - round: 18
+        roundName: Japanese Grand Prix
+        constructor: Jordan
+        position: 13
+        points: 0
+      - round: 19
+        roundName: Chinese Grand Prix
+        constructor: Jordan
+        position: 11
+        points: 0
+  - year: 2006
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: MF1
+        position: 17
+        points: 0
+      - round: 2
+        roundName: Malaysian Grand Prix
+        constructor: MF1
+        position: 13
+        points: 0
+      - round: 3
+        roundName: Australian Grand Prix
+        constructor: MF1
+        position: null
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: MF1
+        position: 16
+        points: 0
+      - round: 5
+        roundName: European Grand Prix
+        constructor: MF1
+        position: 12
+        points: 0
+      - round: 6
+        roundName: Spanish Grand Prix
+        constructor: MF1
+        position: 16
+        points: 0
+      - round: 7
+        roundName: Monaco Grand Prix
+        constructor: MF1
+        position: 15
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: MF1
+        position: 16
+        points: 0
+      - round: 9
+        roundName: Canadian Grand Prix
+        constructor: MF1
+        position: 14
+        points: 0
+      - round: 10
+        roundName: United States Grand Prix
+        constructor: MF1
+        position: null
+        points: 0
+      - round: 11
+        roundName: French Grand Prix
+        constructor: MF1
+        position: null
+        points: 0
+      - round: 12
+        roundName: German Grand Prix
+        constructor: MF1
+        position: null
+        points: 0
+      - round: 13
+        roundName: Hungarian Grand Prix
+        constructor: MF1
+        position: 9
+        points: 0
+      - round: 14
+        roundName: Turkish Grand Prix
+        constructor: MF1
+        position: null
+        points: 0
+      - round: 15
+        roundName: Italian Grand Prix
+        constructor: Spyker MF1
+        position: null
+        points: 0
+      - round: 16
+        roundName: Chinese Grand Prix
+        constructor: Spyker MF1
+        position: null
+        points: 0
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Spyker MF1
+        position: 16
+        points: 0
+      - round: 18
+        roundName: Brazilian Grand Prix
+        constructor: Spyker MF1
+        position: 15
+        points: 0

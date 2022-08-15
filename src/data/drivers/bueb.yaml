@@ -4,6 +4,7 @@ driverRef: bueb
 name: Ivor Bueb
 dob: '1923-06-06'
 nationality: British
+hasImage: false
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -16,3 +17,40 @@ championshipStandings:
     position: 43
   - year: 1959
     position: 43
+seasons:
+  - year: 1957
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: 8
+        points: 0
+  - year: 1958
+    results:
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Team Lotus
+        position: 11
+        points: 0
+  - year: 1959
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper-Borgward
+        position: 13
+        points: 0

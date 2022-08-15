@@ -4,6 +4,7 @@ driverRef: klenk
 name: Hans Klenk
 dob: '1919-10-28'
 nationality: German
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 52
+seasons:
+  - year: 1952
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Veritas
+        position: 11
+        points: 0

@@ -4,6 +4,7 @@ driverRef: hobbs
 name: David Hobbs
 dob: '1939-06-09'
 nationality: British
+hasImage: true
 totalRaces: 7
 raceWins: 0
 podiums: 0
@@ -18,3 +19,47 @@ championshipStandings:
     position: 27
   - year: 1974
     position: 22
+seasons:
+  - year: 1967
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: BRM
+        position: 8
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Lola
+        position: 10
+        points: 0
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: BRM
+        position: 9
+        points: 0
+  - year: 1968
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Honda
+        position: null
+        points: 0
+  - year: 1971
+    results:
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: McLaren
+        position: 10
+        points: 0
+  - year: 1974
+    results:
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: McLaren
+        position: 7
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: McLaren
+        position: 9
+        points: 0

@@ -4,6 +4,7 @@ driverRef: beauman
 name: Don Beauman
 dob: '1928-07-26'
 nationality: British
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1954
     position: 48
+seasons:
+  - year: 1954
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: 11
+        points: 0

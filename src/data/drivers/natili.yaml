@@ -4,6 +4,7 @@ driverRef: natili
 name: Massimo Natili
 dob: '1935-07-28'
 nationality: Italian
+hasImage: true
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1961
     position: 54
+seasons:
+  - year: 1961
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0

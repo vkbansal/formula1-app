@@ -4,6 +4,7 @@ driverRef: leclere
 name: Michel Leclère
 dob: '1946-03-18'
 nationality: French
+hasImage: false
 totalRaces: 8
 raceWins: 0
 podiums: 0
@@ -14,3 +15,48 @@ championshipStandings:
     position: 47
   - year: 1976
     position: 29
+seasons:
+  - year: 1975
+    results:
+      - round: 14
+        roundName: United States Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0
+  - year: 1976
+    results:
+      - round: 2
+        roundName: South African Grand Prix
+        constructor: Wolf
+        position: 13
+        points: 0
+      - round: 3
+        roundName: United States Grand Prix West
+        constructor: Wolf
+        position: null
+        points: 0
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Wolf
+        position: 10
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Wolf
+        position: 11
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Wolf
+        position: 11
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Wolf
+        position: null
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Wolf
+        position: 13
+        points: 0

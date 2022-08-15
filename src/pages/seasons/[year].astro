@@ -3,20 +3,37 @@ import type { GetStaticPathsItem } from 'astro';
 import MainLayout from 'layouts/MainLayout.astro';
 import Breadcrumbs from 'components/Breadcrumbs.astro';
 import { SeasonsClient } from 'client/seaons/seasons';
-import { loadData } from 'helpers/data';
+import { loadData, type Season } from 'helpers/data';
 import colors from 'helpers/colors';
 
-export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
-	const seasonsForPagination = await loadData('seasons');
-
-	return seasonsForPagination.map((year) => ({ params: { year: year.toString() } }));
+export interface Props {
+	season: Season;
+	hasPrev: boolean;
+	hasNext: boolean;
 }
 
-const { year: yearStr } = Astro.params;
-const year = parseInt(yearStr as string, 10);
-const { rounds, drivers, constructors } = await loadData(`seasons/${yearStr}`);
+export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
+	const seasons = await loadData('seasons');
+
+	return seasons
+		.sort((a, b) => a.year - b.year)
+		.map((season) => {
+			const hasPrev = seasons[0].year < season.year;
+			const hasNext = seasons[seasons.length - 1].year > season.year;
+
+			return {
+				params: { year: season.year.toString() },
+				props: { season, hasPrev, hasNext },
+			};
+		});
+}
+
+const {
+	season: { year, rounds, drivers, constructors },
+	hasNext,
+	hasPrev,
+} = Astro.props as Props;
 const metadata = await loadData('metadata');
-const seasons = await loadData('seasons');
 const driverColors = drivers.reduce((p, c, i) => {
 	p[`chart-color-${c.driverRef}`] = colors[i];
 	return p;
@@ -26,8 +43,6 @@ const constructorsColors = constructors.reduce((p, c, i) => {
 	p[`chart-color-${c.constructorRef}`] = colors[i];
 	return p;
 }, {} as Record<string, string>);
-const hasPrev = seasons[0] < year;
-const hasNext = seasons[seasons.length - 1] > year;
 ---
 
 <MainLayout title="Home">

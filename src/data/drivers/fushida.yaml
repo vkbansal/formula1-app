@@ -4,6 +4,7 @@ driverRef: fushida
 name: Hiroshi Fushida
 dob: '1946-03-10'
 nationality: Japanese
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1975
     position: 50
+seasons:
+  - year: 1975
+    results:
+      - round: 8
+        roundName: Dutch Grand Prix
+        constructor: Maki
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Maki
+        position: null
+        points: 0

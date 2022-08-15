@@ -4,6 +4,7 @@ driverRef: scott_Brown
 name: Archie Scott Brown
 dob: '1927-05-13'
 nationality: British
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1956
     position: 74
+seasons:
+  - year: 1956
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0

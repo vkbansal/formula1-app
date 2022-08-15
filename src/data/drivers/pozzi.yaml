@@ -4,6 +4,7 @@ driverRef: pozzi
 name: Charles Pozzi
 dob: '1909-08-27'
 nationality: French
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1950
     position: 26
+seasons:
+  - year: 1950
+    results:
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Talbot-Lago
+        position: 6
+        points: 0

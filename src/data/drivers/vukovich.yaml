@@ -4,6 +4,7 @@ driverRef: vukovich
 name: Bill Vukovich
 dob: '1918-12-13'
 nationality: American
+hasImage: true
 totalRaces: 5
 raceWins: 2
 podiums: 2
@@ -20,3 +21,39 @@ championshipStandings:
     position: 6
   - year: 1955
     position: 25
+seasons:
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Trevis
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 17
+        points: 1
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 1
+        points: 9
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 1
+        points: 8
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 1

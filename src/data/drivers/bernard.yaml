@@ -4,6 +4,7 @@ driverRef: bernard
 name: Éric Bernard
 dob: '1964-08-24'
 nationality: French
+hasImage: false
 totalRaces: 47
 raceWins: 0
 podiums: 1
@@ -18,3 +19,247 @@ championshipStandings:
     position: 21
   - year: 1994
     position: 18
+seasons:
+  - year: 1989
+    results:
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Larrousse
+        position: 11
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+  - year: 1990
+    results:
+      - round: 1
+        roundName: United States Grand Prix
+        constructor: Larrousse
+        position: 8
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 3
+        roundName: San Marino Grand Prix
+        constructor: Larrousse
+        position: 13
+        points: 0
+      - round: 4
+        roundName: Monaco Grand Prix
+        constructor: Larrousse
+        position: 6
+        points: 1
+      - round: 5
+        roundName: Canadian Grand Prix
+        constructor: Larrousse
+        position: 9
+        points: 0
+      - round: 6
+        roundName: Mexican Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Larrousse
+        position: 8
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: Larrousse
+        position: 4
+        points: 3
+      - round: 9
+        roundName: German Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 10
+        roundName: Hungarian Grand Prix
+        constructor: Larrousse
+        position: 6
+        points: 1
+      - round: 11
+        roundName: Belgian Grand Prix
+        constructor: Larrousse
+        position: 9
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 13
+        roundName: Portuguese Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 14
+        roundName: Spanish Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 15
+        roundName: Japanese Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 16
+        roundName: Australian Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+  - year: 1991
+    results:
+      - round: 1
+        roundName: United States Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Larrousse
+        position: null
+        points: 0
+      - round: 3
+        roundName: San Marino Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 4
+        roundName: Monaco Grand Prix
+        constructor: Lola
+        position: 9
+        points: 0
+      - round: 5
+        roundName: Canadian Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 6
+        roundName: Mexican Grand Prix
+        constructor: Lola
+        position: 6
+        points: 1
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 9
+        roundName: German Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 10
+        roundName: Hungarian Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 11
+        roundName: Belgian Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 13
+        roundName: Portuguese Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 14
+        roundName: Spanish Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+      - round: 15
+        roundName: Japanese Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+  - year: 1994
+    results:
+      - round: 1
+        roundName: Brazilian Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 2
+        roundName: Pacific Grand Prix
+        constructor: Ligier
+        position: 10
+        points: 0
+      - round: 3
+        roundName: San Marino Grand Prix
+        constructor: Ligier
+        position: 12
+        points: 0
+      - round: 4
+        roundName: Monaco Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Ligier
+        position: 8
+        points: 0
+      - round: 6
+        roundName: Canadian Grand Prix
+        constructor: Ligier
+        position: 13
+        points: 0
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Ligier
+        position: null
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: Ligier
+        position: 13
+        points: 0
+      - round: 9
+        roundName: German Grand Prix
+        constructor: Ligier
+        position: 3
+        points: 4
+      - round: 10
+        roundName: Hungarian Grand Prix
+        constructor: Ligier
+        position: 10
+        points: 0
+      - round: 11
+        roundName: Belgian Grand Prix
+        constructor: Ligier
+        position: 10
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Ligier
+        position: 7
+        points: 0
+      - round: 13
+        roundName: Portuguese Grand Prix
+        constructor: Ligier
+        position: 10
+        points: 0
+      - round: 14
+        roundName: European Grand Prix
+        constructor: Team Lotus
+        position: 18
+        points: 0

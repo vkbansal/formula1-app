@@ -4,6 +4,7 @@ driverRef: webb
 name: Travis Webb
 dob: '1910-10-08'
 nationality: American
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -18,3 +19,32 @@ championshipStandings:
     position: 87
   - year: 1954
     position: 93
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Maserati
+        position: 20
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Bromme
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Bromme
+        position: null
+        points: 0

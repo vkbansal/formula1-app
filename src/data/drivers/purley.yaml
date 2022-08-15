@@ -4,6 +4,7 @@ driverRef: purley
 name: David Purley
 dob: '1945-01-26'
 nationality: British
+hasImage: true
 totalRaces: 11
 raceWins: 0
 podiums: 0
@@ -16,3 +17,65 @@ championshipStandings:
     position: 58
   - year: 1977
     position: 39
+seasons:
+  - year: 1973
+    results:
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 10
+        roundName: Dutch Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: March
+        position: 15
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: March
+        position: 9
+        points: 0
+  - year: 1974
+    results:
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Token
+        position: null
+        points: 0
+  - year: 1977
+    results:
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: LEC
+        position: null
+        points: 0
+      - round: 7
+        roundName: Belgian Grand Prix
+        constructor: LEC
+        position: 13
+        points: 0
+      - round: 8
+        roundName: Swedish Grand Prix
+        constructor: LEC
+        position: 14
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: LEC
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: LEC
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: owen
 name: Arthur Owen
 dob: '1915-03-23'
 nationality: British
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1960
     position: 84
+seasons:
+  - year: 1960
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0

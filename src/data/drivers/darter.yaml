@@ -4,6 +4,7 @@ driverRef: darter
 name: Duane Carter
 dob: '1913-05-05'
 nationality: American
+hasImage: false
 totalRaces: 8
 raceWins: 0
 podiums: 1
@@ -26,3 +27,70 @@ championshipStandings:
     position: 27
   - year: 1960
     position: 51
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Stevens
+        position: 12
+        points: 0
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Deidt
+        position: 8
+        points: 0
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Lesovsky
+        position: 4
+        points: 3
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 3
+        points: 2
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Lesovsky
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 4
+        points: 1.5
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 15
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: 11
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 7
+        points: 0
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: 12
+        points: 0

@@ -4,6 +4,7 @@ driverRef: baghetti
 name: Giancarlo Baghetti
 dob: '1934-12-25'
 nationality: Italian
+hasImage: true
 totalRaces: 26
 raceWins: 1
 podiums: 1
@@ -24,3 +25,148 @@ championshipStandings:
     position: 29
   - year: 1967
     position: 34
+seasons:
+  - year: 1961
+    results:
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: 1
+        points: 9
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1962
+    results:
+      - round: 1
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 3
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 10
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 5
+        points: 2
+  - year: 1963
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 2
+        roundName: Belgian Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: ATS
+        position: 15
+        points: 0
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+      - round: 9
+        roundName: Mexican Grand Prix
+        constructor: ATS
+        position: null
+        points: 0
+  - year: 1964
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 2
+        roundName: Dutch Grand Prix
+        constructor: BRM
+        position: 10
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: BRM
+        position: 8
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: BRM
+        position: 12
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 7
+        roundName: Austrian Grand Prix
+        constructor: BRM
+        position: 7
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: BRM
+        position: 8
+        points: 0
+  - year: 1965
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Brabham-Climax
+        position: null
+        points: 0
+  - year: 1966
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1967
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Lotus-Ford
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: bertaggia
 name: Enrico Bertaggia
 dob: '1964-09-19'
 nationality: Italian
+hasImage: false
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -12,3 +13,36 @@ lapsLead: null
 championshipStandings:
   - year: 1989
     position: 47
+seasons:
+  - year: 1989
+    results:
+      - round: 11
+        roundName: Belgian Grand Prix
+        constructor: Coloni
+        position: null
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Coloni
+        position: null
+        points: 0
+      - round: 13
+        roundName: Portuguese Grand Prix
+        constructor: Coloni
+        position: null
+        points: 0
+      - round: 14
+        roundName: Spanish Grand Prix
+        constructor: Coloni
+        position: null
+        points: 0
+      - round: 15
+        roundName: Japanese Grand Prix
+        constructor: Coloni
+        position: null
+        points: 0
+      - round: 16
+        roundName: Australian Grand Prix
+        constructor: Coloni
+        position: null
+        points: 0

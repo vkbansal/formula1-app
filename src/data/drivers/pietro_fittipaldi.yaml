@@ -4,6 +4,7 @@ driverRef: pietro_fittipaldi
 name: Pietro Fittipaldi
 dob: '1996-06-25'
 nationality: Brazilian
+hasImage: true
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: 0
 championshipStandings:
   - year: 2020
     position: 23
+seasons:
+  - year: 2020
+    results:
+      - round: 16
+        roundName: Sakhir Grand Prix
+        constructor: Haas F1 Team
+        position: 17
+        points: 0
+      - round: 17
+        roundName: Abu Dhabi Grand Prix
+        constructor: Haas F1 Team
+        position: 19
+        points: 0

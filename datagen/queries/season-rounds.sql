@@ -1,6 +1,4 @@
 SELECT
-	`T2`.`raceId`,
-	`T2`.`year`,
 	`T2`.`round`,
 	`T2`.`name`,
 	`T2`.`date`,

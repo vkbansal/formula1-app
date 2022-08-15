@@ -4,6 +4,7 @@ driverRef: gonzalez
 name: José Froilán González
 dob: '1922-10-05'
 nationality: Argentine
+hasImage: true
 totalRaces: 26
 raceWins: 2
 podiums: 15
@@ -28,3 +29,167 @@ championshipStandings:
     position: 22
   - year: 1960
     position: 46
+seasons:
+  - year: 1950
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 1
+        roundName: Swiss Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 3
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: 1
+        points: 8
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 4
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+      - round: 8
+        roundName: Spanish Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+  - year: 1952
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 2
+        points: 6.5
+  - year: 1953
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 4
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 2
+      - round: 3
+        roundName: Dutch Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 1
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 4
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: 4
+        points: 3.5
+  - year: 1954
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 5
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 1.5
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Ferrari
+        position: 1
+        points: 8.14
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 3
+      - round: 7
+        roundName: Swiss Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 6
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 3
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: 2
+        points: 2
+  - year: 1956
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Vanwall
+        position: null
+        points: 0
+  - year: 1957
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: 5
+        points: 1
+  - year: 1960
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: 10
+        points: 0

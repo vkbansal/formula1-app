@@ -4,6 +4,7 @@ driverRef: ricardo_rodriguez
 name: Ricardo Rodríguez
 dob: '1942-02-14'
 nationality: Mexican
+hasImage: true
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -14,3 +15,38 @@ championshipStandings:
     position: 42
   - year: 1962
     position: 13
+seasons:
+  - year: 1961
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1962
+    results:
+      - round: 1
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 3
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 1
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: 14
+        points: 0

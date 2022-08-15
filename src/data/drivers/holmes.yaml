@@ -4,6 +4,7 @@ driverRef: holmes
 name: Jackie Holmes
 dob: '1920-09-04'
 nationality: American
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 54
   - year: 1953
     position: 86
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Olson
+        position: 23
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0

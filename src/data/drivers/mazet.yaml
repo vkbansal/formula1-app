@@ -4,6 +4,7 @@ driverRef: mazet
 name: François Mazet
 dob: '1943-02-24'
 nationality: French
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1971
     position: 32
+seasons:
+  - year: 1971
+    results:
+      - round: 5
+        roundName: French Grand Prix
+        constructor: March-Ford
+        position: 13
+        points: 0

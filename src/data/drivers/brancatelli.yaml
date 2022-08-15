@@ -4,6 +4,7 @@ driverRef: brancatelli
 name: Gianfranco Brancatelli
 dob: '1950-01-18'
 nationality: Italian
+hasImage: false
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -12,3 +13,21 @@ lapsLead: null
 championshipStandings:
   - year: 1979
     position: 35
+seasons:
+  - year: 1979
+    results:
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Kauhsen
+        position: null
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: Kauhsen
+        position: null
+        points: 0
+      - round: 7
+        roundName: Monaco Grand Prix
+        constructor: Merzario
+        position: null
+        points: 0

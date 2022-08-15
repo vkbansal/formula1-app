@@ -4,6 +4,7 @@ driverRef: brandon
 name: Eric Brandon
 dob: '1920-07-18'
 nationality: British
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -14,3 +15,33 @@ championshipStandings:
     position: 35
   - year: 1954
     position: 91
+seasons:
+  - year: 1952
+    results:
+      - round: 1
+        roundName: Swiss Grand Prix
+        constructor: Cooper
+        position: 8
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Cooper
+        position: 9
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper
+        position: 20
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Cooper
+        position: 13
+        points: 0
+  - year: 1954
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper
+        position: null
+        points: 0

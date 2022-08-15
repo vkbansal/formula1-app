@@ -4,6 +4,7 @@ driverRef: boullion
 name: Jean-Christophe Boullion
 dob: '1969-12-27'
 nationality: French
+hasImage: true
 totalRaces: 11
 raceWins: 0
 podiums: 0
@@ -12,3 +13,61 @@ lapsLead: null
 championshipStandings:
   - year: 1995
     position: 16
+seasons:
+  - year: 1995
+    results:
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: Sauber
+        position: 8
+        points: 0
+      - round: 6
+        roundName: Canadian Grand Prix
+        constructor: Sauber
+        position: null
+        points: 0
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Sauber
+        position: null
+        points: 0
+      - round: 8
+        roundName: British Grand Prix
+        constructor: Sauber
+        position: 9
+        points: 0
+      - round: 9
+        roundName: German Grand Prix
+        constructor: Sauber
+        position: 5
+        points: 2
+      - round: 10
+        roundName: Hungarian Grand Prix
+        constructor: Sauber
+        position: 10
+        points: 0
+      - round: 11
+        roundName: Belgian Grand Prix
+        constructor: Sauber
+        position: 11
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: Sauber
+        position: 6
+        points: 1
+      - round: 13
+        roundName: Portuguese Grand Prix
+        constructor: Sauber
+        position: 12
+        points: 0
+      - round: 14
+        roundName: European Grand Prix
+        constructor: Sauber
+        position: null
+        points: 0
+      - round: 15
+        roundName: Pacific Grand Prix
+        constructor: Sauber
+        position: null
+        points: 0

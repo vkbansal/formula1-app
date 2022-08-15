@@ -4,6 +4,7 @@ driverRef: adams
 name: Philippe Adams
 dob: '1969-11-19'
 nationality: Belgian
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1994
     position: 36
+seasons:
+  - year: 1994
+    results:
+      - round: 11
+        roundName: Belgian Grand Prix
+        constructor: Team Lotus
+        position: null
+        points: 0
+      - round: 13
+        roundName: Portuguese Grand Prix
+        constructor: Team Lotus
+        position: 16
+        points: 0

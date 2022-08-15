@@ -4,6 +4,7 @@ driverRef: sweikert
 name: Bob Sweikert
 dob: '1926-05-20'
 nationality: American
+hasImage: false
 totalRaces: 5
 raceWins: 1
 podiums: 1
@@ -20,3 +21,39 @@ championshipStandings:
     position: 7
   - year: 1956
     position: 32
+seasons:
+  - year: 1952
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: null
+        points: 0
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 14
+        points: 0
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 1
+        points: 8
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: 6
+        points: 0

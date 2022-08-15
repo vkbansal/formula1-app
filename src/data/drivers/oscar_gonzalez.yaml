@@ -4,6 +4,7 @@ driverRef: oscar_gonzalez
 name: Óscar González
 dob: '1923-11-10'
 nationality: Uruguayan
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1956
     position: 31
+seasons:
+  - year: 1956
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 6
+        points: 0

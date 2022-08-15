@@ -4,6 +4,7 @@ driverRef: daigh
 name: Chuck Daigh
 dob: '1923-11-29'
 nationality: American
+hasImage: false
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -12,3 +13,36 @@ lapsLead: null
 championshipStandings:
   - year: 1960
     position: 42
+seasons:
+  - year: 1960
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Scarab
+        position: null
+        points: 0
+      - round: 4
+        roundName: Dutch Grand Prix
+        constructor: Scarab
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Scarab
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Scarab
+        position: null
+        points: 0
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+      - round: 10
+        roundName: United States Grand Prix
+        constructor: Scarab
+        position: 10
+        points: 0

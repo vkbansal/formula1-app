@@ -4,6 +4,7 @@ driverRef: kavanagh
 name: Ken Kavanagh
 dob: '1923-12-12'
 nationality: Australian
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1958
     position: 59
+seasons:
+  - year: 1958
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0

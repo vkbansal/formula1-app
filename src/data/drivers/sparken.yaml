@@ -4,6 +4,7 @@ driverRef: sparken
 name: Mike Sparken
 dob: '1930-06-16'
 nationality: French
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1955
     position: 33
+seasons:
+  - year: 1955
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Gordini
+        position: 7
+        points: 0

@@ -4,6 +4,7 @@ driverRef: chimeri
 name: Ettore Chimeri
 dob: '1921-06-04'
 nationality: Venezuelan
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1960
     position: 88
+seasons:
+  - year: 1960
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0

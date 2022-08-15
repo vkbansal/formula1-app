@@ -4,6 +4,7 @@ driverRef: ide
 name: Yuji Ide
 dob: '1975-01-21'
 nationality: Japanese
+hasImage: true
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -12,3 +13,26 @@ lapsLead: 0
 championshipStandings:
   - year: 2006
     position: 25
+seasons:
+  - year: 2006
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: Super Aguri
+        position: null
+        points: 0
+      - round: 2
+        roundName: Malaysian Grand Prix
+        constructor: Super Aguri
+        position: null
+        points: 0
+      - round: 3
+        roundName: Australian Grand Prix
+        constructor: Super Aguri
+        position: 13
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Super Aguri
+        position: null
+        points: 0

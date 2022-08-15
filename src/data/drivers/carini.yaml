@@ -4,6 +4,7 @@ driverRef: carini
 name: Piero Carini
 dob: '1921-03-06'
 nationality: Italian
+hasImage: true
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -14,3 +15,23 @@ championshipStandings:
     position: 82
   - year: 1953
     position: 97
+seasons:
+  - year: 1952
+    results:
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0

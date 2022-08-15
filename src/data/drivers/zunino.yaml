@@ -4,6 +4,7 @@ driverRef: zunino
 name: Ricardo Zunino
 dob: '1949-04-13'
 nationality: Argentine
+hasImage: true
 totalRaces: 11
 raceWins: 0
 podiums: 0
@@ -16,3 +17,65 @@ championshipStandings:
     position: 23
   - year: 1981
     position: 30
+seasons:
+  - year: 1979
+    results:
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Brabham-Ford
+        position: 7
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Brabham-Ford
+        position: null
+        points: 0
+  - year: 1980
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Brabham
+        position: 7
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Brabham
+        position: 8
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Brabham
+        position: 10
+        points: 0
+      - round: 4
+        roundName: United States Grand Prix West
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Brabham
+        position: null
+        points: 0
+  - year: 1981
+    results:
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Tyrrell
+        position: 13
+        points: 0
+      - round: 3
+        roundName: Argentine Grand Prix
+        constructor: Tyrrell
+        position: 13
+        points: 0

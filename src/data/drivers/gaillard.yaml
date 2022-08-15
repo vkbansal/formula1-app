@@ -4,6 +4,7 @@ driverRef: gaillard
 name: Patrick Gaillard
 dob: '1952-02-12'
 nationality: French
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -12,3 +13,31 @@ lapsLead: null
 championshipStandings:
   - year: 1979
     position: 31
+seasons:
+  - year: 1979
+    results:
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Ensign
+        position: 13
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0
+      - round: 12
+        roundName: Dutch Grand Prix
+        constructor: Ensign
+        position: null
+        points: 0

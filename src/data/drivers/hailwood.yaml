@@ -4,6 +4,7 @@ driverRef: hailwood
 name: Mike Hailwood
 dob: '1940-04-02'
 nationality: British
+hasImage: true
 totalRaces: 51
 raceWins: 0
 podiums: 2
@@ -24,3 +25,273 @@ championshipStandings:
     position: 22
   - year: 1974
     position: 11
+seasons:
+  - year: 1963
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lotus-Climax
+        position: 8
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lola
+        position: 10
+        points: 0
+      - round: 10
+        roundName: South African Grand Prix
+        constructor: Lola
+        position: null
+        points: 0
+  - year: 1964
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Lotus-BRM
+        position: 6
+        points: 1
+      - round: 2
+        roundName: Dutch Grand Prix
+        constructor: Lotus-BRM
+        position: 12
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 7
+        roundName: Austrian Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 9
+        roundName: United States Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0
+      - round: 10
+        roundName: Mexican Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+  - year: 1965
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+  - year: 1971
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Surtees
+        position: 4
+        points: 3
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: Surtees
+        position: 15
+        points: 0
+  - year: 1972
+    results:
+      - round: 2
+        roundName: South African Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 3
+        roundName: Spanish Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 4
+        roundName: Monaco Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Surtees
+        position: 4
+        points: 3
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Surtees
+        position: 6
+        points: 1
+      - round: 7
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 8
+        roundName: German Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: Surtees
+        position: 4
+        points: 3
+      - round: 10
+        roundName: Italian Grand Prix
+        constructor: Surtees
+        position: 2
+        points: 6
+      - round: 12
+        roundName: United States Grand Prix
+        constructor: Surtees
+        position: 17
+        points: 0
+  - year: 1973
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Surtees
+        position: 8
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 10
+        roundName: Dutch Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Surtees
+        position: 14
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: Surtees
+        position: 10
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Surtees
+        position: 7
+        points: 0
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Surtees
+        position: 9
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Surtees
+        position: null
+        points: 0
+  - year: 1974
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: McLaren
+        position: 4
+        points: 3
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: McLaren
+        position: 5
+        points: 2
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: McLaren
+        position: 3
+        points: 4
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: McLaren
+        position: 9
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: McLaren
+        position: 7
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 8
+        roundName: Dutch Grand Prix
+        constructor: McLaren
+        position: 4
+        points: 3
+      - round: 9
+        roundName: French Grand Prix
+        constructor: McLaren
+        position: 7
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: McLaren
+        position: 15
+        points: 0

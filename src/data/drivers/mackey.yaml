@@ -4,6 +4,7 @@ driverRef: mackey
 name: Bill Mackey
 dob: '1927-12-15'
 nationality: American
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1951
     position: 63
+seasons:
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Hall
+        position: null
+        points: 0

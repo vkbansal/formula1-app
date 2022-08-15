@@ -4,6 +4,7 @@ driverRef: tom_jones
 name: Tom Jones
 dob: '1943-04-26'
 nationality: American
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1967
     position: 41
+seasons:
+  - year: 1967
+    results:
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0

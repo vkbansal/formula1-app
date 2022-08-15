@@ -4,6 +4,7 @@ driverRef: tunmer
 name: Guy Tunmer
 dob: '1948-12-01'
 nationality: South African
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1975
     position: 32
+seasons:
+  - year: 1975
+    results:
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Team Lotus
+        position: 11
+        points: 0

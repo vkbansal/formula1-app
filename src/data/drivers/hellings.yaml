@@ -4,6 +4,7 @@ driverRef: hellings
 name: Mack Hellings
 dob: '1915-09-14'
 nationality: American
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 44
   - year: 1951
     position: 82
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 13
+        points: 0
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Deidt
+        position: null
+        points: 0

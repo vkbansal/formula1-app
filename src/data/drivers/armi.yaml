@@ -4,6 +4,7 @@ driverRef: armi
 name: Frank Armi
 dob: '1918-10-12'
 nationality: American
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1954
     position: 65
+seasons:
+  - year: 1954
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 19
+        points: 0

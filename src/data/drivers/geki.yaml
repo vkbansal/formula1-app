@@ -4,6 +4,7 @@ driverRef: geki
 name: Giacomo Russo
 dob: '1937-10-23'
 nationality: Italian
+hasImage: true
 totalRaces: 3
 raceWins: 0
 podiums: 0
@@ -16,3 +17,25 @@ championshipStandings:
     position: 37
   - year: 1966
     position: 25
+seasons:
+  - year: 1964
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+  - year: 1965
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+  - year: 1966
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-Climax
+        position: 9
+        points: 0

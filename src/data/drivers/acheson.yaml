@@ -4,6 +4,7 @@ driverRef: acheson
 name: Kenny Acheson
 dob: '1957-11-27'
 nationality: British
+hasImage: false
 totalRaces: 9
 raceWins: 0
 podiums: 0
@@ -14,3 +15,53 @@ championshipStandings:
     position: 30
   - year: 1985
     position: 33
+seasons:
+  - year: 1983
+    results:
+      - round: 9
+        roundName: British Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+      - round: 12
+        roundName: Dutch Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+      - round: 14
+        roundName: European Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+      - round: 15
+        roundName: South African Grand Prix
+        constructor: RAM
+        position: 12
+        points: 0
+  - year: 1985
+    results:
+      - round: 10
+        roundName: Austrian Grand Prix
+        constructor: RAM
+        position: null
+        points: 0
+      - round: 12
+        roundName: Italian Grand Prix
+        constructor: RAM
+        position: null
+        points: 0

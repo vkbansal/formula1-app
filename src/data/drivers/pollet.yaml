@@ -4,6 +4,7 @@ driverRef: pollet
 name: Jacques Pollet
 dob: '1922-07-02'
 nationality: French
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -14,3 +15,33 @@ championshipStandings:
     position: 71
   - year: 1955
     position: 30
+seasons:
+  - year: 1954
+    results:
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0
+      - round: 9
+        roundName: Spanish Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Gordini
+        position: 7
+        points: 0
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Gordini
+        position: 10
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0

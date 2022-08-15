@@ -4,6 +4,7 @@ driverRef: sommer
 name: Raymond Sommer
 dob: '1906-08-31'
 nationality: French
+hasImage: true
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -12,3 +13,31 @@ lapsLead: null
 championshipStandings:
   - year: 1950
     position: 15
+seasons:
+  - year: 1950
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 3
+      - round: 4
+        roundName: Swiss Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Talbot-Lago
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: cabral
 name: Mário de Araújo Cabral
 dob: '1934-01-15'
 nationality: Portuguese
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -18,3 +19,37 @@ championshipStandings:
     position: 38
   - year: 1964
     position: 33
+seasons:
+  - year: 1959
+    results:
+      - round: 7
+        roundName: Portuguese Grand Prix
+        constructor: Cooper-Maserati
+        position: 10
+        points: 0
+  - year: 1960
+    results:
+      - round: 8
+        roundName: Portuguese Grand Prix
+        constructor: Cooper-Maserati
+        position: null
+        points: 0
+  - year: 1963
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+  - year: 1964
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Derrington
+        position: null
+        points: 0

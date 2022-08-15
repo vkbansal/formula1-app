@@ -4,6 +4,7 @@ driverRef: lotterer
 name: André Lotterer
 dob: '1981-11-19'
 nationality: German
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: 0
 championshipStandings:
   - year: 2014
     position: 24
+seasons:
+  - year: 2014
+    results:
+      - round: 12
+        roundName: Belgian Grand Prix
+        constructor: Caterham
+        position: null
+        points: 0

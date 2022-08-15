@@ -4,6 +4,7 @@ driverRef: kessel
 name: Loris Kessel
 dob: '1950-04-01'
 nationality: Swiss
+hasImage: true
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -14,3 +15,38 @@ championshipStandings:
     position: 36
   - year: 1977
     position: 57
+seasons:
+  - year: 1976
+    results:
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Brabham-Ford
+        position: null
+        points: 0
+      - round: 5
+        roundName: Belgian Grand Prix
+        constructor: Brabham-Ford
+        position: 12
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Brabham-Ford
+        position: null
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Brabham-Ford
+        position: null
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Brabham-Ford
+        position: null
+        points: 0
+  - year: 1977
+    results:
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Apollon
+        position: null
+        points: 0

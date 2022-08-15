@@ -4,6 +4,7 @@ driverRef: gerard
 name: Bob Gerard
 dob: '1914-01-19'
 nationality: British
+hasImage: false
 totalRaces: 7
 raceWins: 0
 podiums: 0
@@ -22,3 +23,51 @@ championshipStandings:
     position: 42
   - year: 1957
     position: 25
+seasons:
+  - year: 1950
+    results:
+      - round: 1
+        roundName: British Grand Prix
+        constructor: ERA
+        position: 6
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: ERA
+        position: 6
+        points: 0
+  - year: 1951
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: ERA
+        position: 11
+        points: 0
+  - year: 1953
+    results:
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Cooper
+        position: 11
+        points: 0
+  - year: 1954
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper
+        position: 10
+        points: 0
+  - year: 1956
+    results:
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Cooper
+        position: 11
+        points: 0
+  - year: 1957
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper
+        position: 6
+        points: 0

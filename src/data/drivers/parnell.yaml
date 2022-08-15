@@ -4,6 +4,7 @@ driverRef: parnell
 name: Tim Parnell
 dob: '1932-06-25'
 nationality: British
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -16,3 +17,30 @@ championshipStandings:
     position: 27
   - year: 1963
     position: 56
+seasons:
+  - year: 1959
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0
+  - year: 1961
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-Climax
+        position: 10
+        points: 0
+  - year: 1963
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0

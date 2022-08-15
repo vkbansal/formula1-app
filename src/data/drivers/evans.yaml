@@ -4,6 +4,7 @@ driverRef: evans
 name: Bob Evans
 dob: '1947-06-11'
 nationality: British
+hasImage: true
 totalRaces: 12
 raceWins: 0
 podiums: 0
@@ -14,3 +15,68 @@ championshipStandings:
     position: 26
   - year: 1976
     position: 31
+seasons:
+  - year: 1975
+    results:
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: BRM
+        position: 15
+        points: 0
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: BRM
+        position: 9
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: BRM
+        position: 13
+        points: 0
+      - round: 8
+        roundName: Dutch Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: BRM
+        position: 17
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: BRM
+        position: null
+        points: 0
+  - year: 1976
+    results:
+      - round: 2
+        roundName: South African Grand Prix
+        constructor: Team Lotus
+        position: 10
+        points: 0
+      - round: 3
+        roundName: United States Grand Prix West
+        constructor: Team Lotus
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Brabham-Ford
+        position: null
+        points: 0

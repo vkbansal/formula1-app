@@ -22,11 +22,11 @@
 		box-shadow: 0px 1px 0px var(--border);
 	}
 
-	& thead tr th,
-	& tbody tr td {
+	& tr th,
+	& tr td {
 		padding: 1em;
 		text-align: left;
-		vertical-align: baseline;
+		vertical-align: middle;
 
 		&:first-child {
 			padding-left: 2em;
@@ -109,8 +109,8 @@
 	}
 
 	&.table-sm {
-		& thead tr th,
-		& tbody tr td {
+		& tr th,
+		& tr td {
 			padding: 0.25em 0.5em;
 			text-align: left;
 

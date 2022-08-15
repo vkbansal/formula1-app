@@ -4,6 +4,7 @@ driverRef: fitch
 name: John Fitch
 dob: '1917-08-04'
 nationality: American
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 104
   - year: 1955
     position: 40
+seasons:
+  - year: 1953
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: HWM
+        position: null
+        points: 0
+  - year: 1955
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 9
+        points: 0

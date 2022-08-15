@@ -1,18 +1,16 @@
+import ora from 'ora';
 import { Datagen } from './Datagen.mjs';
 
-const datagen = new Datagen();
+const spinner = ora('').start();
+
+const datagen = new Datagen(spinner);
 
 await datagen.init();
 
-const seasonsData = await datagen.executeQueryFromFile('seasons.sql');
+await datagen.seasons();
+// await datagen.homePage();
+// await datagen.drivers();
+// await datagen.constructors();
 
-await datagen.writeDataFile(
-	'seasons.yaml',
-	seasonsData.map(({ year }) => year),
-);
-await datagen.homePage();
-await datagen.seasons(seasonsData);
-await datagen.drivers();
-await datagen.constructors();
-
+spinner.stop();
 process.exit(0);

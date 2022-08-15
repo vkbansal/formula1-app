@@ -4,6 +4,7 @@ driverRef: herman
 name: Al Herman
 dob: '1927-03-15'
 nationality: American
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -20,3 +21,39 @@ championshipStandings:
     position: 44
   - year: 1960
     position: 75
+seasons:
+  - year: 1955
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 7
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1957
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Dunn
+        position: null
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Dunn
+        position: 13
+        points: 0
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Ewing
+        position: 32
+        points: 0

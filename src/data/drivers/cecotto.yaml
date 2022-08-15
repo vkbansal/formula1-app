@@ -4,6 +4,7 @@ driverRef: cecotto
 name: Johnny Cecotto
 dob: '1956-01-25'
 nationality: Venezuelan
+hasImage: true
 totalRaces: 23
 raceWins: 0
 podiums: 0
@@ -14,3 +15,123 @@ championshipStandings:
     position: 20
   - year: 1984
     position: 29
+seasons:
+  - year: 1983
+    results:
+      - round: 1
+        roundName: Brazilian Grand Prix
+        constructor: Theodore
+        position: 13
+        points: 0
+      - round: 2
+        roundName: United States Grand Prix West
+        constructor: Theodore
+        position: 6
+        points: 1
+      - round: 3
+        roundName: French Grand Prix
+        constructor: Theodore
+        position: 11
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Theodore
+        position: null
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: Theodore
+        position: null
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: Theodore
+        position: 10
+        points: 0
+      - round: 7
+        roundName: Detroit Grand Prix
+        constructor: Theodore
+        position: null
+        points: 0
+      - round: 8
+        roundName: Canadian Grand Prix
+        constructor: Theodore
+        position: null
+        points: 0
+      - round: 9
+        roundName: British Grand Prix
+        constructor: Theodore
+        position: null
+        points: 0
+      - round: 10
+        roundName: German Grand Prix
+        constructor: Theodore
+        position: 11
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Theodore
+        position: null
+        points: 0
+      - round: 12
+        roundName: Dutch Grand Prix
+        constructor: Theodore
+        position: null
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Theodore
+        position: 12
+        points: 0
+  - year: 1984
+    results:
+      - round: 1
+        roundName: Brazilian Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0
+      - round: 2
+        roundName: South African Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0
+      - round: 4
+        roundName: San Marino Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Toleman
+        position: 9
+        points: 0
+      - round: 8
+        roundName: Detroit Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0
+      - round: 9
+        roundName: Dallas Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Toleman
+        position: null
+        points: 0

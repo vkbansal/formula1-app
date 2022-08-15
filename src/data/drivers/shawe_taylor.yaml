@@ -4,6 +4,7 @@ driverRef: shawe_taylor
 name: Brian Shawe Taylor
 dob: '1915-01-28'
 nationality: British
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 41
   - year: 1951
     position: 34
+seasons:
+  - year: 1950
+    results:
+      - round: 1
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: 10
+        points: 0
+  - year: 1951
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: ERA
+        position: 8
+        points: 0

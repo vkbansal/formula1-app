@@ -4,6 +4,7 @@ driverRef: gardner
 name: Frank Gardner
 dob: '1930-10-01'
 nationality: Australian
+hasImage: false
 totalRaces: 9
 raceWins: 0
 podiums: 0
@@ -16,3 +17,55 @@ championshipStandings:
     position: 18
   - year: 1968
     position: 42
+seasons:
+  - year: 1964
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Brabham-Ford
+        position: null
+        points: 0
+  - year: 1965
+    results:
+      - round: 1
+        roundName: South African Grand Prix
+        constructor: Brabham-BRM
+        position: 12
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Brabham-BRM
+        position: 8
+        points: 0
+      - round: 6
+        roundName: Dutch Grand Prix
+        constructor: Brabham-BRM
+        position: 11
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Brabham-BRM
+        position: null
+        points: 0
+  - year: 1968
+    results:
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: BRM
+        position: null
+        points: 0

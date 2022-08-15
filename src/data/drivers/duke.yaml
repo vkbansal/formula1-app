@@ -4,6 +4,7 @@ driverRef: duke
 name: Geoff Duke
 dob: '1923-03-29'
 nationality: British
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1961
     position: 57
+seasons:
+  - year: 1961
+    results:
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Cooper-Climax
+        position: null
+        points: 0

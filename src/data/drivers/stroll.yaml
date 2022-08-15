@@ -4,6 +4,7 @@ driverRef: stroll
 name: Lance Stroll
 dob: '1998-10-29'
 nationality: Canadian
+hasImage: true
 totalRaces: 113
 raceWins: 0
 podiums: 3
@@ -20,3 +21,581 @@ championshipStandings:
     position: 11
   - year: 2021
     position: 13
+seasons:
+  - year: 2017
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 2
+        roundName: Chinese Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 3
+        roundName: Bahrain Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 4
+        roundName: Russian Grand Prix
+        constructor: Williams
+        position: 11
+        points: 0
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Williams
+        position: 16
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Williams
+        position: 15
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Williams
+        position: 9
+        points: 2
+      - round: 8
+        roundName: Azerbaijan Grand Prix
+        constructor: Williams
+        position: 3
+        points: 15
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: Williams
+        position: 10
+        points: 1
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Williams
+        position: 16
+        points: 0
+      - round: 11
+        roundName: Hungarian Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 12
+        roundName: Belgian Grand Prix
+        constructor: Williams
+        position: 11
+        points: 0
+      - round: 13
+        roundName: Italian Grand Prix
+        constructor: Williams
+        position: 7
+        points: 6
+      - round: 14
+        roundName: Singapore Grand Prix
+        constructor: Williams
+        position: 8
+        points: 4
+      - round: 15
+        roundName: Malaysian Grand Prix
+        constructor: Williams
+        position: 8
+        points: 4
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 17
+        roundName: United States Grand Prix
+        constructor: Williams
+        position: 11
+        points: 0
+      - round: 18
+        roundName: Mexican Grand Prix
+        constructor: Williams
+        position: 6
+        points: 8
+      - round: 19
+        roundName: Brazilian Grand Prix
+        constructor: Williams
+        position: 16
+        points: 0
+      - round: 20
+        roundName: Abu Dhabi Grand Prix
+        constructor: Williams
+        position: 18
+        points: 0
+  - year: 2018
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 2
+        roundName: Bahrain Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 3
+        roundName: Chinese Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 4
+        roundName: Azerbaijan Grand Prix
+        constructor: Williams
+        position: 8
+        points: 4
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Williams
+        position: 11
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Williams
+        position: 17
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Williams
+        position: 17
+        points: 0
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Williams
+        position: 12
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Williams
+        position: null
+        points: 0
+      - round: 12
+        roundName: Hungarian Grand Prix
+        constructor: Williams
+        position: 17
+        points: 0
+      - round: 13
+        roundName: Belgian Grand Prix
+        constructor: Williams
+        position: 13
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Williams
+        position: 10
+        points: 2
+      - round: 15
+        roundName: Singapore Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 16
+        roundName: Russian Grand Prix
+        constructor: Williams
+        position: 15
+        points: 0
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Williams
+        position: 17
+        points: 0
+      - round: 18
+        roundName: United States Grand Prix
+        constructor: Williams
+        position: 14
+        points: 0
+      - round: 19
+        roundName: Mexican Grand Prix
+        constructor: Williams
+        position: 12
+        points: 0
+      - round: 20
+        roundName: Brazilian Grand Prix
+        constructor: Williams
+        position: 18
+        points: 0
+      - round: 21
+        roundName: Abu Dhabi Grand Prix
+        constructor: Williams
+        position: 13
+        points: 0
+  - year: 2019
+    results:
+      - round: 1
+        roundName: Australian Grand Prix
+        constructor: Racing Point
+        position: 9
+        points: 2
+      - round: 2
+        roundName: Bahrain Grand Prix
+        constructor: Racing Point
+        position: 14
+        points: 0
+      - round: 3
+        roundName: Chinese Grand Prix
+        constructor: Racing Point
+        position: 12
+        points: 0
+      - round: 4
+        roundName: Azerbaijan Grand Prix
+        constructor: Racing Point
+        position: 9
+        points: 2
+      - round: 5
+        roundName: Spanish Grand Prix
+        constructor: Racing Point
+        position: null
+        points: 0
+      - round: 6
+        roundName: Monaco Grand Prix
+        constructor: Racing Point
+        position: 16
+        points: 0
+      - round: 7
+        roundName: Canadian Grand Prix
+        constructor: Racing Point
+        position: 9
+        points: 2
+      - round: 8
+        roundName: French Grand Prix
+        constructor: Racing Point
+        position: 13
+        points: 0
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: Racing Point
+        position: 14
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Racing Point
+        position: 13
+        points: 0
+      - round: 11
+        roundName: German Grand Prix
+        constructor: Racing Point
+        position: 4
+        points: 12
+      - round: 12
+        roundName: Hungarian Grand Prix
+        constructor: Racing Point
+        position: 17
+        points: 0
+      - round: 13
+        roundName: Belgian Grand Prix
+        constructor: Racing Point
+        position: 10
+        points: 1
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Racing Point
+        position: 12
+        points: 0
+      - round: 15
+        roundName: Singapore Grand Prix
+        constructor: Racing Point
+        position: 13
+        points: 0
+      - round: 16
+        roundName: Russian Grand Prix
+        constructor: Racing Point
+        position: 11
+        points: 0
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Racing Point
+        position: 9
+        points: 2
+      - round: 18
+        roundName: Mexican Grand Prix
+        constructor: Racing Point
+        position: 12
+        points: 0
+      - round: 19
+        roundName: United States Grand Prix
+        constructor: Racing Point
+        position: 13
+        points: 0
+      - round: 20
+        roundName: Brazilian Grand Prix
+        constructor: Racing Point
+        position: 19
+        points: 0
+      - round: 21
+        roundName: Abu Dhabi Grand Prix
+        constructor: Racing Point
+        position: null
+        points: 0
+  - year: 2020
+    results:
+      - round: 1
+        roundName: Austrian Grand Prix
+        constructor: Racing Point
+        position: null
+        points: 0
+      - round: 2
+        roundName: Styrian Grand Prix
+        constructor: Racing Point
+        position: 7
+        points: 6
+      - round: 3
+        roundName: Hungarian Grand Prix
+        constructor: Racing Point
+        position: 4
+        points: 12
+      - round: 4
+        roundName: British Grand Prix
+        constructor: Racing Point
+        position: 9
+        points: 2
+      - round: 5
+        roundName: 70th Anniversary Grand Prix
+        constructor: Racing Point
+        position: 6
+        points: 8
+      - round: 6
+        roundName: Spanish Grand Prix
+        constructor: Racing Point
+        position: 4
+        points: 12
+      - round: 7
+        roundName: Belgian Grand Prix
+        constructor: Racing Point
+        position: 9
+        points: 2
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Racing Point
+        position: 3
+        points: 15
+      - round: 9
+        roundName: Tuscan Grand Prix
+        constructor: Racing Point
+        position: null
+        points: 0
+      - round: 10
+        roundName: Russian Grand Prix
+        constructor: Racing Point
+        position: null
+        points: 0
+      - round: 12
+        roundName: Portuguese Grand Prix
+        constructor: Racing Point
+        position: null
+        points: 0
+      - round: 13
+        roundName: Emilia Romagna Grand Prix
+        constructor: Racing Point
+        position: 13
+        points: 0
+      - round: 14
+        roundName: Turkish Grand Prix
+        constructor: Racing Point
+        position: 9
+        points: 2
+      - round: 15
+        roundName: Bahrain Grand Prix
+        constructor: Racing Point
+        position: null
+        points: 0
+      - round: 16
+        roundName: Sakhir Grand Prix
+        constructor: Racing Point
+        position: 3
+        points: 15
+      - round: 17
+        roundName: Abu Dhabi Grand Prix
+        constructor: Racing Point
+        position: 10
+        points: 1
+  - year: 2021
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: Aston Martin
+        position: 10
+        points: 1
+      - round: 2
+        roundName: Emilia Romagna Grand Prix
+        constructor: Aston Martin
+        position: 8
+        points: 4
+      - round: 3
+        roundName: Portuguese Grand Prix
+        constructor: Aston Martin
+        position: 14
+        points: 0
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Aston Martin
+        position: 11
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: Aston Martin
+        position: 8
+        points: 4
+      - round: 6
+        roundName: Azerbaijan Grand Prix
+        constructor: Aston Martin
+        position: null
+        points: 0
+      - round: 7
+        roundName: French Grand Prix
+        constructor: Aston Martin
+        position: 10
+        points: 1
+      - round: 8
+        roundName: Styrian Grand Prix
+        constructor: Aston Martin
+        position: 8
+        points: 4
+      - round: 9
+        roundName: Austrian Grand Prix
+        constructor: Aston Martin
+        position: 13
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Aston Martin
+        position: 8
+        points: 4
+      - round: 11
+        roundName: Hungarian Grand Prix
+        constructor: Aston Martin
+        position: null
+        points: 0
+      - round: 12
+        roundName: Belgian Grand Prix
+        constructor: Aston Martin
+        position: 20
+        points: 0
+      - round: 13
+        roundName: Dutch Grand Prix
+        constructor: Aston Martin
+        position: 12
+        points: 0
+      - round: 14
+        roundName: Italian Grand Prix
+        constructor: Aston Martin
+        position: 7
+        points: 6
+      - round: 15
+        roundName: Russian Grand Prix
+        constructor: Aston Martin
+        position: 11
+        points: 0
+      - round: 16
+        roundName: Turkish Grand Prix
+        constructor: Aston Martin
+        position: 9
+        points: 2
+      - round: 17
+        roundName: United States Grand Prix
+        constructor: Aston Martin
+        position: 12
+        points: 0
+      - round: 18
+        roundName: Mexico City Grand Prix
+        constructor: Aston Martin
+        position: 14
+        points: 0
+      - round: 19
+        roundName: São Paulo Grand Prix
+        constructor: Aston Martin
+        position: null
+        points: 0
+      - round: 20
+        roundName: Qatar Grand Prix
+        constructor: Aston Martin
+        position: 6
+        points: 8
+      - round: 21
+        roundName: Saudi Arabian Grand Prix
+        constructor: Aston Martin
+        position: 11
+        points: 0
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        constructor: Aston Martin
+        position: 13
+        points: 0
+  - year: 2022
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: Aston Martin
+        position: 12
+        points: 0
+      - round: 2
+        roundName: Saudi Arabian Grand Prix
+        constructor: Aston Martin
+        position: 13
+        points: 0
+      - round: 3
+        roundName: Australian Grand Prix
+        constructor: Aston Martin
+        position: 12
+        points: 0
+      - round: 4
+        roundName: Emilia Romagna Grand Prix
+        constructor: Aston Martin
+        position: 10
+        points: 1
+      - round: 5
+        roundName: Miami Grand Prix
+        constructor: Aston Martin
+        position: 10
+        points: 1
+      - round: 6
+        roundName: Spanish Grand Prix
+        constructor: Aston Martin
+        position: 15
+        points: 0
+      - round: 7
+        roundName: Monaco Grand Prix
+        constructor: Aston Martin
+        position: 14
+        points: 0
+      - round: 8
+        roundName: Azerbaijan Grand Prix
+        constructor: Aston Martin
+        position: 16
+        points: 0
+      - round: 9
+        roundName: Canadian Grand Prix
+        constructor: Aston Martin
+        position: 10
+        points: 1
+      - round: 10
+        roundName: British Grand Prix
+        constructor: Aston Martin
+        position: 11
+        points: 0
+      - round: 11
+        roundName: Austrian Grand Prix
+        constructor: Aston Martin
+        position: 13
+        points: 0
+      - round: 12
+        roundName: French Grand Prix
+        constructor: Aston Martin
+        position: 10
+        points: 1
+      - round: 13
+        roundName: Hungarian Grand Prix
+        constructor: Aston Martin
+        position: 11
+        points: 0

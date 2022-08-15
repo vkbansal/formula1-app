@@ -4,6 +4,7 @@ driverRef: picard
 name: François Picard
 dob: '1921-04-26'
 nationality: French
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1958
     position: 60
+seasons:
+  - year: 1958
+    results:
+      - round: 11
+        roundName: Moroccan Grand Prix
+        constructor: Cooper
+        position: null
+        points: 0

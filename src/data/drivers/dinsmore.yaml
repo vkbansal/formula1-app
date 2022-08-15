@@ -4,6 +4,7 @@ driverRef: dinsmore
 name: Duke Dinsmore
 dob: '1913-04-10'
 nationality: American
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -18,3 +19,32 @@ championshipStandings:
     position: 66
   - year: 1956
     position: 49
+seasons:
+  - year: 1950
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Schroeder
+        position: null
+        points: 0
+  - year: 1953
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 16
+        points: 0
+  - year: 1956
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kurtis Kraft
+        position: 17
+        points: 0

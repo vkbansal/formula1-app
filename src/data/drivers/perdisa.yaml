@@ -4,6 +4,7 @@ driverRef: perdisa
 name: Cesare Perdisa
 dob: '1932-10-21'
 nationality: Italian
+hasImage: false
 totalRaces: 8
 raceWins: 0
 podiums: 2
@@ -16,3 +17,55 @@ championshipStandings:
     position: 16
   - year: 1957
     position: 26
+seasons:
+  - year: 1955
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 2
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: 8
+        points: 0
+  - year: 1956
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: 7
+        points: 0
+      - round: 4
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: 3
+        points: 2
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: 5
+        points: 1
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: 7
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1957
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 0

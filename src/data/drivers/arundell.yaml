@@ -4,6 +4,7 @@ driverRef: arundell
 name: Peter Arundell
 dob: '1933-11-08'
 nationality: British
+hasImage: true
 totalRaces: 15
 raceWins: 0
 podiums: 2
@@ -18,3 +19,87 @@ championshipStandings:
     position: 9
   - year: 1966
     position: 17
+seasons:
+  - year: 1962
+    results:
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Team Lotus
+        position: null
+        points: 0
+  - year: 1963
+    results:
+      - round: 2
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-Climax
+        position: null
+        points: 0
+  - year: 1964
+    results:
+      - round: 1
+        roundName: Monaco Grand Prix
+        constructor: Lotus-Climax
+        position: 3
+        points: 4
+      - round: 2
+        roundName: Dutch Grand Prix
+        constructor: Lotus-Climax
+        position: 3
+        points: 4
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Lotus-Climax
+        position: 9
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Lotus-Climax
+        position: 4
+        points: 3
+  - year: 1966
+    results:
+      - round: 2
+        roundName: Belgian Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 3
+        roundName: French Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 4
+        roundName: British Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 5
+        roundName: Dutch Grand Prix
+        constructor: Lotus-BRM
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Lotus-BRM
+        position: 8
+        points: 0
+      - round: 8
+        roundName: United States Grand Prix
+        constructor: Lotus-Climax
+        position: 6
+        points: 1
+      - round: 9
+        roundName: Mexican Grand Prix
+        constructor: Lotus-BRM
+        position: 7
+        points: 0

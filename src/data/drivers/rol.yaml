@@ -4,6 +4,7 @@ driverRef: rol
 name: Franco Rol
 dob: '1908-06-05'
 nationality: Italian
+hasImage: false
 totalRaces: 5
 raceWins: 0
 podiums: 0
@@ -16,3 +17,35 @@ championshipStandings:
     position: 37
   - year: 1952
     position: 84
+seasons:
+  - year: 1950
+    results:
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: OSCA
+        position: 9
+        points: 0
+  - year: 1952
+    results:
+      - round: 8
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0

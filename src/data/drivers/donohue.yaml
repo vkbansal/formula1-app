@@ -4,6 +4,7 @@ driverRef: donohue
 name: Mark Donohue
 dob: '1937-03-18'
 nationality: American
+hasImage: true
 totalRaces: 15
 raceWins: 0
 podiums: 1
@@ -16,3 +17,85 @@ championshipStandings:
     position: 36
   - year: 1975
     position: 15
+seasons:
+  - year: 1971
+    results:
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: McLaren
+        position: 3
+        points: 4
+  - year: 1974
+    results:
+      - round: 14
+        roundName: Canadian Grand Prix
+        constructor: Penske
+        position: 12
+        points: 0
+      - round: 15
+        roundName: United States Grand Prix
+        constructor: Penske
+        position: null
+        points: 0
+  - year: 1975
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Penske
+        position: 7
+        points: 0
+      - round: 2
+        roundName: Brazilian Grand Prix
+        constructor: Penske
+        position: null
+        points: 0
+      - round: 3
+        roundName: South African Grand Prix
+        constructor: Penske
+        position: 8
+        points: 0
+      - round: 4
+        roundName: Spanish Grand Prix
+        constructor: Penske
+        position: null
+        points: 0
+      - round: 5
+        roundName: Monaco Grand Prix
+        constructor: Penske
+        position: null
+        points: 0
+      - round: 6
+        roundName: Belgian Grand Prix
+        constructor: Penske
+        position: 11
+        points: 0
+      - round: 7
+        roundName: Swedish Grand Prix
+        constructor: Penske
+        position: 5
+        points: 2
+      - round: 8
+        roundName: Dutch Grand Prix
+        constructor: Penske
+        position: 8
+        points: 0
+      - round: 9
+        roundName: French Grand Prix
+        constructor: Penske
+        position: null
+        points: 0
+      - round: 10
+        roundName: British Grand Prix
+        constructor: March
+        position: 5
+        points: 2
+      - round: 11
+        roundName: German Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 12
+        roundName: Austrian Grand Prix
+        constructor: March
+        position: null
+        points: 0

@@ -4,6 +4,7 @@ driverRef: bira
 name: Prince Bira
 dob: '1914-07-15'
 nationality: Thai
+hasImage: true
 totalRaces: 19
 raceWins: 0
 podiums: 0
@@ -20,3 +21,109 @@ championshipStandings:
     position: 27
   - year: 1954
     position: 17
+seasons:
+  - year: 1950
+    results:
+      - round: 1
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 2
+        roundName: Monaco Grand Prix
+        constructor: Maserati
+        position: 5
+        points: 2
+      - round: 4
+        roundName: Swiss Grand Prix
+        constructor: Maserati
+        position: 4
+        points: 3
+      - round: 7
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1951
+    results:
+      - round: 8
+        roundName: Spanish Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+  - year: 1952
+    results:
+      - round: 1
+        roundName: Swiss Grand Prix
+        constructor: Simca
+        position: null
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Simca
+        position: 10
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Gordini
+        position: null
+        points: 0
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Gordini
+        position: 11
+        points: 0
+  - year: 1953
+    results:
+      - round: 5
+        roundName: French Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0
+      - round: 6
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: 7
+        points: 0
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0
+      - round: 9
+        roundName: Italian Grand Prix
+        constructor: Maserati
+        position: 11
+        points: 0
+  - year: 1954
+    results:
+      - round: 1
+        roundName: Argentine Grand Prix
+        constructor: Maserati
+        position: 7
+        points: 0
+      - round: 3
+        roundName: Belgian Grand Prix
+        constructor: Maserati
+        position: 6
+        points: 0
+      - round: 4
+        roundName: French Grand Prix
+        constructor: Maserati
+        position: 4
+        points: 3
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 6
+        roundName: German Grand Prix
+        constructor: Maserati
+        position: null
+        points: 0
+      - round: 9
+        roundName: Spanish Grand Prix
+        constructor: Maserati
+        position: 9
+        points: 0

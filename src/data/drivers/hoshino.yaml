@@ -4,6 +4,7 @@ driverRef: hoshino
 name: Kazuyoshi Hoshino
 dob: '1947-07-01'
 nationality: Japanese
+hasImage: true
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -14,3 +15,18 @@ championshipStandings:
     position: 43
   - year: 1977
     position: 37
+seasons:
+  - year: 1976
+    results:
+      - round: 16
+        roundName: Japanese Grand Prix
+        constructor: Tyrrell
+        position: null
+        points: 0
+  - year: 1977
+    results:
+      - round: 17
+        roundName: Japanese Grand Prix
+        constructor: Kojima
+        position: 11
+        points: 0

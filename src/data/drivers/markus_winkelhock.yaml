@@ -4,9 +4,18 @@ driverRef: markus_winkelhock
 name: Markus Winkelhock
 dob: '1980-06-13'
 nationality: German
+hasImage: true
 totalRaces: 1
 raceWins: 0
 podiums: 0
 totalLaps: 13
 lapsLead: 6
 championshipStandings: null
+seasons:
+  - year: 2007
+    results:
+      - round: 10
+        roundName: European Grand Prix
+        constructor: Spyker
+        position: null
+        points: 0

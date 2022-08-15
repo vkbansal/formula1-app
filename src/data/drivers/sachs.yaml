@@ -4,6 +4,7 @@ driverRef: sachs
 name: Eddie Sachs
 dob: '1927-05-28'
 nationality: American
+hasImage: false
 totalRaces: 4
 raceWins: 0
 podiums: 0
@@ -18,3 +19,32 @@ championshipStandings:
     position: 54
   - year: 1960
     position: 64
+seasons:
+  - year: 1957
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: null
+        points: 0
+  - year: 1958
+    results:
+      - round: 4
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: null
+        points: 0
+  - year: 1959
+    results:
+      - round: 2
+        roundName: Indianapolis 500
+        constructor: Kuzma
+        position: null
+        points: 0
+  - year: 1960
+    results:
+      - round: 3
+        roundName: Indianapolis 500
+        constructor: Ewing
+        position: 21
+        points: 0

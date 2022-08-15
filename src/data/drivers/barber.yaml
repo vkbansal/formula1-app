@@ -4,6 +4,7 @@ driverRef: barber
 name: Skip Barber
 dob: '1936-11-16'
 nationality: American
+hasImage: false
 totalRaces: 6
 raceWins: 0
 podiums: 0
@@ -14,3 +15,38 @@ championshipStandings:
     position: 37
   - year: 1972
     position: 34
+seasons:
+  - year: 1971
+    results:
+      - round: 3
+        roundName: Monaco Grand Prix
+        constructor: March-Ford
+        position: null
+        points: 0
+      - round: 4
+        roundName: Dutch Grand Prix
+        constructor: March-Ford
+        position: null
+        points: 0
+      - round: 10
+        roundName: Canadian Grand Prix
+        constructor: March-Ford
+        position: null
+        points: 0
+      - round: 11
+        roundName: United States Grand Prix
+        constructor: March-Ford
+        position: null
+        points: 0
+  - year: 1972
+    results:
+      - round: 11
+        roundName: Canadian Grand Prix
+        constructor: March
+        position: null
+        points: 0
+      - round: 12
+        roundName: United States Grand Prix
+        constructor: March
+        position: 16
+        points: 0

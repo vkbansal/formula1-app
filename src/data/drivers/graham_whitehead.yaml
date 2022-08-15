@@ -4,6 +4,7 @@ driverRef: graham_whitehead
 name: Graham Whitehead
 dob: '1922-04-15'
 nationality: British
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 57
+seasons:
+  - year: 1952
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Alta
+        position: 12
+        points: 0

@@ -4,6 +4,7 @@ driverRef: downing
 name: Ken Downing
 dob: '1917-12-05'
 nationality: British
+hasImage: false
 totalRaces: 2
 raceWins: 0
 podiums: 0
@@ -12,3 +13,16 @@ lapsLead: null
 championshipStandings:
   - year: 1952
     position: 42
+seasons:
+  - year: 1952
+    results:
+      - round: 5
+        roundName: British Grand Prix
+        constructor: Connaught
+        position: 9
+        points: 0
+      - round: 7
+        roundName: Dutch Grand Prix
+        constructor: Connaught
+        position: null
+        points: 0

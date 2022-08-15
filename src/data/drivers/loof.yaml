@@ -4,6 +4,7 @@ driverRef: loof
 name: Ernst Loof
 dob: '1907-07-04'
 nationality: German
+hasImage: false
 totalRaces: 1
 raceWins: 0
 podiums: 0
@@ -12,3 +13,11 @@ lapsLead: null
 championshipStandings:
   - year: 1953
     position: 108
+seasons:
+  - year: 1953
+    results:
+      - round: 7
+        roundName: German Grand Prix
+        constructor: Veritas
+        position: null
+        points: 0
