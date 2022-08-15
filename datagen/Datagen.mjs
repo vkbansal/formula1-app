@@ -86,6 +86,9 @@ export class Datagen {
 		const data = await this.executeQueryFromFile('constructors.sql');
 
 		for (const row of data) {
+			const seasonData = await this.executeQueryFromFile('constructor-seasons.sql', row);
+			row.seasons = seasonData;
+
 			await this.writeDataFile(`constructors/${row.constructorRef}.yaml`, row);
 		}
 	}

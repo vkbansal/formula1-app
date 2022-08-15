@@ -1,10 +1,22 @@
 import { h, type VNode } from 'preact';
 import { useMemo } from 'preact/hooks';
-import type { Driver } from 'helpers/data';
+import type { Driver as OriginalDriver } from 'helpers/data';
 import { CharNav, CHARS } from 'components/CharNav';
 import { useHashChange } from 'client/hooks/useHashChange';
 import { Table } from 'components/Table';
 import { Nationality } from 'components/Nationality';
+
+export type Driver = Pick<
+	OriginalDriver,
+	| 'championshipStandings'
+	| 'nationality'
+	| 'totalLaps'
+	| 'totalRaces'
+	| 'lapsLead'
+	| 'name'
+	| 'driverRef'
+	| 'raceWins'
+>;
 
 function NationalityCell(props: Driver): VNode {
 	return (

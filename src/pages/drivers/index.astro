@@ -1,4 +1,6 @@
 ---
+import { pick } from 'lodash-es';
+
 import MainLayout from 'layouts/MainLayout.astro';
 import Breadcrumbs from 'components/Breadcrumbs.astro';
 import { Drivers } from 'client/drivers/drivers';
@@ -8,6 +10,18 @@ const metadata = await loadData('metadata');
 const allDrivers = await loadData('drivers');
 const { drivers: currentSeasonDrivers } = await loadData(`seasons/${metadata.currentSeason}`);
 const currentDrivers = currentSeasonDrivers.map((d) => d.driverRef);
+const drivers = allDrivers.map((driver) =>
+	pick(driver, [
+		'championshipStandings',
+		'nationality',
+		'totalLaps',
+		'totalRaces',
+		'lapsLead',
+		'name',
+		'driverRef',
+		'raceWins',
+	]),
+);
 ---
 
 <MainLayout title="Home">
@@ -15,7 +29,7 @@ const currentDrivers = currentSeasonDrivers.map((d) => d.driverRef);
 	<h1>Drivers</h1>
 	<p>Note: Lap time data is available from the 1996 season onwards.</p>
 	<Drivers
-		drivers={allDrivers}
+		drivers={drivers}
 		currentSeason={metadata.currentSeason}
 		currentDrivers={currentDrivers}
 		client:load

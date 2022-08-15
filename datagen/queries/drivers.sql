@@ -10,7 +10,7 @@ SELECT
 	`R`.`podiums`,
 	`L`.`totalLaps`,
 	`L`.`lapsLead`,
-	`DC`.`championshipStandings`
+	IF(`DC`.`championshipStandings` IS NULL, JSON_ARRAY(), `DC`.`championshipStandings`) AS `championshipStandings`
 FROM `drivers` AS `D`
 LEFT OUTER JOIN (
 	SELECT

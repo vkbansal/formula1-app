@@ -116,12 +116,14 @@ export interface DataMap {
 	metadata: Metadata;
 	seasons: Season[];
 	drivers: Driver[];
+	constructors: Constructor[];
 	[key: `drivers/${string}`]: Driver;
 	[key: `seasons/${string}`]: Season;
+	[key: `constructors/${string}`]: Constructor;
 }
 
 export async function loadData<T extends keyof DataMap>(key: T): Promise<DataMap[T]> {
-	if (key === 'drivers' || key === 'seasons') {
+	if (key === 'drivers' || key === 'seasons' || key === 'constructors') {
 		const files = await globby(`src/data/${key}/*.yaml`);
 
 		const dataPromises = files.map(async (yamlFile) => {
