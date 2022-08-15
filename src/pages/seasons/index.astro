@@ -16,16 +16,18 @@ seasons.reverse();
 	<h1>All Seasons</h1>
 	<p class="text-light">* - Current Season</p>
 	<section class="seasons-grid">
-		{seasons.map((season) => (
-			<div class="season-card">
-				<a
-					href={`/seasons/${season}/`}
-					class:list={['h2', { 'current-season': metadata.currentSeason === season }]}
-				>
-					{season}
-				</a>
-			</div>
-		))}
+		{
+			seasons.map((season) => (
+				<div class="season-card">
+					<a
+						href={`/seasons/${season}/`}
+						class:list={['h2', { 'current-season': metadata.currentSeason === season }]}
+					>
+						{season}
+					</a>
+				</div>
+			))
+		}
 		{extraBoxes.map(() => <div class="season-card" />)}
 	</section>
 	<br />

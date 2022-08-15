@@ -17,11 +17,13 @@ const lastLink = links.at(-1);
 
 <div class="breadcrumbs">
 	<a class="home-link" title="home" href="/" set:html={homeIcon}></a>
-	{restLinks.map((link) => (
-		<a href={link.href} title={link.label}>
-			{link.label.trim()}
-		</a>
-	))}
+	{
+		restLinks.map((link) => (
+			<a href={link.href} title={link.label}>
+				{link.label.trim()}
+			</a>
+		))
+	}
 	{lastLink ? <span>{lastLink.label}</span> : null}
 </div>
 
