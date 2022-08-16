@@ -1,5 +1,6 @@
 ---
 import f1Logo from 'images/f1-logo.svg';
+import github from 'images/github.svg';
 
 const url = Astro.url.pathname;
 ---
@@ -51,6 +52,9 @@ const url = Astro.url.pathname;
 			<a href="/about" class:list={['nav-link', { 'nav-link-active': url.startsWith('/about/') }]}>
 				About
 			</a>
+			<a class="github" href="https://github.com/vkbansal/formula1-app/" target="_blank">
+				<img src={github} alt="GitHub" />
+			</a>
 		</nav>
 	</nav>
 </header>
@@ -98,6 +102,16 @@ const url = Astro.url.pathname;
 			@media screen and (max-width: bp.$lg) {
 				width: 100%;
 				justify-content: space-between;
+			}
+		}
+
+		.github {
+			display: inline-block;
+
+			& > :global(img) {
+				display: inline-block;
+				width: 1.25rem;
+				height: 1.25rem;
 			}
 		}
 

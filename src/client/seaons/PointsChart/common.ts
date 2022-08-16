@@ -16,6 +16,7 @@ export interface ChartPoint {
 
 export interface ChartData {
 	label: string;
+	link: string;
 	id: string;
 	data: Array<ChartPoint | null>;
 }

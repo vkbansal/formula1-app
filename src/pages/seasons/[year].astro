@@ -45,7 +45,7 @@ const constructorsColors = constructors.reduce((p, c, i) => {
 }, {} as Record<string, string>);
 ---
 
-<MainLayout title="Home">
+<MainLayout title={`${year} Season`}>
 	<div class="seasons-header">
 		<Breadcrumbs
 			links={[

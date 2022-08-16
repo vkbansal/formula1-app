@@ -48,6 +48,10 @@ function ChampionshipCell(props: Driver): VNode {
 	);
 }
 
+function NameCell(props: Driver): VNode {
+	return <a href={`/drivers/${props.driverRef}`}>{props.name}</a>;
+}
+
 function TotalLapsCell(props: Driver): VNode {
 	return <span>{typeof props.totalLaps === 'number' ? props.totalLaps : 'n/a'}</span>;
 }
@@ -147,7 +151,7 @@ export function Drivers(props: DriversProps): VNode {
 				disabledChars={disabledChars}
 			/>
 			<Table data={tableData} rowId="driverRef" stickyHeader="var(--char-nav-height)" fixedLayout>
-				<Table.Column<Driver> id="name" title="Driver" render="name" sortBy="name" />
+				<Table.Column<Driver> id="name" title="Driver" render={NameCell} sortBy="name" />
 				<Table.Column<Driver>
 					id="country"
 					title="Nationality"

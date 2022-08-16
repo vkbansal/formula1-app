@@ -37,12 +37,13 @@ function PositionCell(props: LegendsData): VNode {
 function LabelCell(props: LegendsData): VNode {
 	return (
 		<div class="points-legend-label">
-			<span
+			<a
 				class="points-legend-label-color"
 				style={{ '--legend-color': `var(--chart-color-${props.id})` }}
+				href={props.link}
 			>
 				{props.label}
-			</span>
+			</a>
 			<div>
 				{props.podium.map((i) => (
 					<span
@@ -71,6 +72,7 @@ export function PointsTable(props: PointsTableProps): VNode {
 				return {
 					id: row.id,
 					label: row.label,
+					link: row.link,
 					...(race || { position: Infinity, points: 0, wins: 0, podium: [] }),
 					gain: prevRace && race ? prevRace.position - race.position : 0,
 				};

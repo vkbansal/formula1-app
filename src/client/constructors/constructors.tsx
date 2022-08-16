@@ -17,6 +17,10 @@ export type Constructor = Pick<
 	| 'raceWins'
 >;
 
+function NameCell(props: Constructor): VNode {
+	return <a href={`/constructors/${props.constructorRef}`}>{props.name}</a>;
+}
+
 function NationalityCell(props: Constructor): VNode {
 	return (
 		<div class="flex-center-y">
@@ -113,7 +117,7 @@ export function Constructors(props: ConstructorsProps): VNode {
 				stickyHeader="var(--char-nav-height)"
 				fixedLayout
 			>
-				<Table.Column<Constructor> id="name" title="Constructor" render="name" sortBy="name" />
+				<Table.Column<Constructor> id="name" title="Constructor" render={NameCell} sortBy="name" />
 				<Table.Column<Constructor>
 					id="country"
 					title="Nationality"

@@ -32,7 +32,7 @@ function WinnerCell(props: Round & Omit<ClientProps, 'rounds'>): VNode | null {
 	return (
 		<Fragment>
 			<Nationality nationality={driver.nationality} />
-			<span>{driver.name}</span>
+			<a href={`/drivers/${driver.driverRef}`}>{driver.name}</a>
 			{constructor ? <span>&nbsp;({constructor.name})</span> : null}
 		</Fragment>
 	);
@@ -67,6 +67,7 @@ export function SeasonsClient(props: ClientProps): VNode {
 			return {
 				id: driver.driverRef,
 				label: driver.name,
+				link: `/drivers/${driver.driverRef}`,
 				data,
 			};
 		});
@@ -95,6 +96,7 @@ export function SeasonsClient(props: ClientProps): VNode {
 			return {
 				id: constructor_.constructorRef,
 				label: constructor_.name,
+				link: `/constructors/${constructor_.constructorRef}`,
 				data,
 			};
 		});

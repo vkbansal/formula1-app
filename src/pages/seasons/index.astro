@@ -9,7 +9,7 @@ const metadata = await loadData('metadata');
 seasons.sort((a, b) => b.year - a.year);
 ---
 
-<MainLayout title="Home">
+<MainLayout title={`Seasons`}>
 	<Breadcrumbs links={[{ label: 'Seasons', href: '/seasons/' }]} />
 	<h1>All Seasons</h1>
 	<p class="text-light">* - Current Season</p>

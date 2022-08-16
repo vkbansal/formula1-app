@@ -1,0 +1,44 @@
+---
+import type { GetStaticPathsItem } from 'astro';
+import { loadData } from 'helpers/data';
+import type { Constructor, Season } from 'helpers/data';
+import MainLayout from 'layouts/MainLayout.astro';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+
+export interface Props {
+	constructor: Constructor;
+	totalRoundsInSeasons: Record<number, number>;
+}
+
+export type StaticPathsItem = Omit<GetStaticPathsItem, 'props'> & { props: Props };
+export async function getStaticPaths(): Promise<StaticPathsItem[]> {
+	const allDrivers = await loadData('constructors');
+	// const seasons = await loadData('seasons');
+	// const seasonsMap = seasons.reduce<Record<string, Season>>((p, c) => ({ ...p, [c.year]: c }), {});
+
+	return allDrivers.map((constructor_) => {
+		// const totalRoundsInSeasons = constructor_.seasons.reduce<Record<number, number>>(
+		// 	(p, c) => ({ ...p, [c.year]: seasonsMap[c.year].rounds.length }),
+		// 	{},
+		// );
+
+		return {
+			params: { constructorRef: constructor_.constructorRef },
+			props: { constructor: constructor_, totalRoundsInSeasons: {} },
+		};
+	});
+}
+
+const { constructor: constructor_ } = Astro.props as Props;
+---
+
+<MainLayout title={constructor_.name}>
+	<Breadcrumbs
+		links={[
+			{ label: 'Constructors', href: '/constructors/' },
+			{ label: constructor_.name, href: '' },
+		]}
+	/>
+	<h1>{constructor_.name}</h1>
+	<p>WIP: coming soon</p>
+</MainLayout>

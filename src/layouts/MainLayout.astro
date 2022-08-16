@@ -30,6 +30,11 @@ const { title, class: className } = Astro.props as Props;
 			href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap'
 			rel='stylesheet'
 		/>
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={`${title} - F1 statistics`} />
+		<meta name="twitter:site" content="@_vkbansal" />
+		<meta name="twitter:description" content="F1 statistics by Vivek Kumar Bansal" />
+		<!-- <meta name="twitter:image" content={} /> -->
 	</head>
 	<body>
 		<Header />

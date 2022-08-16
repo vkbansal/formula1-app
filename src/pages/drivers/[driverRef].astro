@@ -4,22 +4,39 @@ import type { GetStaticPathsItem } from 'astro';
 import { parseISO, format } from 'date-fns';
 
 import MainLayout from 'layouts/MainLayout.astro';
-import { type Driver, loadData } from 'helpers/data';
+import type { Driver, Season } from 'helpers/data';
+import { loadData } from 'helpers/data';
 import Breadcrumbs from 'components/Breadcrumbs.astro';
 import { Nationality } from 'components/Nationality';
+import { DriverSeasonTable } from 'client/driver/DriverSeasonTable';
 
-// const metadata = await loadData('metadata');
-
-export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
-	const allDrivers = await loadData('drivers');
-
-	return allDrivers.map((driver) => ({
-		params: { driverRef: driver.driverRef },
-		props: { driver },
-	}));
+export interface Props {
+	driver: Driver;
+	totalRoundsInSeasons: Record<number, number>;
 }
 
-const { driver } = Astro.props as { driver: Driver };
+export type StaticPathsItem = Omit<GetStaticPathsItem, 'props'> & { props: Props };
+
+export async function getStaticPaths(): Promise<StaticPathsItem[]> {
+	const allDrivers = await loadData('drivers');
+	const seasons = await loadData('seasons');
+	const seasonsMap = seasons.reduce<Record<string, Season>>((p, c) => ({ ...p, [c.year]: c }), {});
+
+	return allDrivers.map((driver) => {
+		const totalRoundsInSeasons = driver.seasons.reduce<Record<number, number>>(
+			(p, c) => ({ ...p, [c.year]: seasonsMap[c.year].rounds.length }),
+			{},
+		);
+
+		return {
+			params: { driverRef: driver.driverRef },
+			props: { driver, totalRoundsInSeasons },
+		};
+	});
+}
+
+const { driver, totalRoundsInSeasons } = Astro.props as Props;
+const maxRounds = Math.max(...Object.values(totalRoundsInSeasons));
 
 let profilePicture: string | null = null;
 
@@ -106,8 +123,9 @@ const wonChampionships = driver.championshipStandings
 			</table>
 		</div>
 	</div>
+	<h2>Race Finishes</h2>
+	<DriverSeasonTable maxRounds={maxRounds} driver={driver} />
 </MainLayout>
-
 <style lang="scss">
 	.driver-page {
 		margin-bottom: 4rem;
@@ -120,13 +138,12 @@ const wonChampionships = driver.championshipStandings
 		}
 
 		.driver-info {
-			display: grid;
-			grid-template-columns: auto 1fr;
-			gap: 1rem;
+			display: flex;
+			gap: 2rem;
 		}
 
 		.table {
-			width: max-content;
+			flex: 1 0 auto;
 			border-top: 1px solid var(--border);
 		}
 	}
