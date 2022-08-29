@@ -3,10 +3,10 @@ constructorId: 6
 constructorRef: ferrari
 name: Ferrari
 nationality: Italian
-totalRaces: 1045
+totalRaces: 1046
 raceWins: 243
-podiums: 801
-winPct: 23.2536
+podiums: 802
+winPct: 23.2314
 championshipStandings:
   - year: 1958
     position: 2
@@ -11928,3 +11928,13 @@ seasons:
         constructor: Ferrari
         position: 4
         points: 12
+      - round: 14
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 6
+        points: 8
+      - round: 14
+        roundName: Belgian Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 15

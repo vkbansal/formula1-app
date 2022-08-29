@@ -1873,9 +1873,142 @@ rounds:
       name: Circuit de Spa-Francorchamps
       location: Spa
       country: Belgium
-    podium: []
-    driverStandings: []
-    constructorStandings: []
+    podium:
+      - driverRef: max_verstappen
+        constructorRef: red_bull
+        position: 1
+      - driverRef: perez
+        constructorRef: red_bull
+        position: 2
+      - driverRef: sainz
+        constructorRef: ferrari
+        position: 3
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 284
+        wins: 9
+      - driverRef: perez
+        position: 2
+        points: 191
+        wins: 1
+      - driverRef: leclerc
+        position: 3
+        points: 186
+        wins: 3
+      - driverRef: sainz
+        position: 4
+        points: 171
+        wins: 1
+      - driverRef: russell
+        position: 5
+        points: 170
+        wins: 0
+      - driverRef: hamilton
+        position: 6
+        points: 146
+        wins: 0
+      - driverRef: norris
+        position: 7
+        points: 76
+        wins: 0
+      - driverRef: ocon
+        position: 8
+        points: 64
+        wins: 0
+      - driverRef: alonso
+        position: 9
+        points: 51
+        wins: 0
+      - driverRef: bottas
+        position: 10
+        points: 46
+        wins: 0
+      - driverRef: kevin_magnussen
+        position: 11
+        points: 22
+        wins: 0
+      - driverRef: vettel
+        position: 12
+        points: 20
+        wins: 0
+      - driverRef: ricciardo
+        position: 13
+        points: 19
+        wins: 0
+      - driverRef: gasly
+        position: 14
+        points: 18
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 15
+        points: 12
+        wins: 0
+      - driverRef: tsunoda
+        position: 16
+        points: 11
+        wins: 0
+      - driverRef: zhou
+        position: 17
+        points: 5
+        wins: 0
+      - driverRef: albon
+        position: 18
+        points: 4
+        wins: 0
+      - driverRef: stroll
+        position: 19
+        points: 4
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: hulkenberg
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 475
+        wins: 10
+      - constructorRef: ferrari
+        position: 2
+        points: 357
+        wins: 4
+      - constructorRef: mercedes
+        position: 3
+        points: 316
+        wins: 0
+      - constructorRef: alpine
+        position: 4
+        points: 115
+        wins: 0
+      - constructorRef: mclaren
+        position: 5
+        points: 95
+        wins: 0
+      - constructorRef: alfa
+        position: 6
+        points: 51
+        wins: 0
+      - constructorRef: haas
+        position: 7
+        points: 34
+        wins: 0
+      - constructorRef: alphatauri
+        position: 8
+        points: 29
+        wins: 0
+      - constructorRef: aston_martin
+        position: 9
+        points: 24
+        wins: 0
+      - constructorRef: williams
+        position: 10
+        points: 4
+        wins: 0
   - round: 15
     name: Dutch Grand Prix
     date: 4th Sep 2022
