@@ -122,13 +122,17 @@ const wonChampionships = driver.championshipStandings
 				</tbody>
 			</table>
 		</div>
+		<h2>Race Results</h2>
+		<DriverSeasonTable maxRounds={maxRounds} driver={driver} />
 	</div>
-	<h2>Race Finishes</h2>
-	<DriverSeasonTable maxRounds={maxRounds} driver={driver} />
 </MainLayout>
 <style lang="scss">
 	.driver-page {
 		margin-bottom: 4rem;
+
+		:global(.constructor-name-cell) {
+			padding-left: 0.5rem !important;
+		}
 
 		.profile-pic {
 			display: inline-block;

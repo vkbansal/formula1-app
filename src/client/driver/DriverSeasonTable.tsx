@@ -12,40 +12,52 @@ export function DriverSeasonTable(props: DriverSeasonTableProps): VNode {
 	const maxRoundsArr = Array.from({ length: maxRounds });
 
 	return (
-		<table class="table">
+		<table class="table table-sm">
 			<thead>
 				<th>Season</th>
+				<th>Constructor</th>
 				{maxRoundsArr.map((_, i) => (
-					<th>R{i + 1}</th>
+					<th class="text-center">R{i + 1}</th>
 				))}
-				<th>WDC</th>
+				<th class="text-center">WDC</th>
 			</thead>
 			<tbody>
-				{driver.seasons.map((season) => {
+				{driver.seasons.flatMap((season) => {
 					const wdcStanding = driver.championshipStandings.find((c) => c.year === season.year);
-					return (
-						<tr>
-							<th>{season.year}</th>
-							{maxRoundsArr.map((_, i) => {
-								const round = season.results.find((r) => r.round === i + 1);
+					const constructorsInSeason = [...new Set(season.results.map((r) => r.constructor))];
 
-								if (i + 1 > season.results.length) {
-									return <td>-</td>;
-								}
+					return constructorsInSeason.map((con, i) => {
+						const results = season.results.filter((r) => r.constructor === con);
 
-								if (!round) {
-									return <td>-</td>;
-								}
+						return (
+							<tr>
+								{i === 0 ? <th rowSpan={constructorsInSeason.length}>{season.year}</th> : null}
+								<td class="constructor-name-cell">{con}</td>
+								{maxRoundsArr.map((_, i) => {
+									const round = results.find((r) => r.round === i + 1);
 
-								return (
-									<td>
-										<div>{round.position ? formatOrdinals(round.position) : '-'}</div>
+									if (i + 1 > season.results.length) {
+										return <td class="text-center">-</td>;
+									}
+
+									if (!round) {
+										return <td class="text-center">-</td>;
+									}
+
+									return (
+										<td class="text-center">
+											<div>{round.position ? formatOrdinals(round.position) : '-'}</div>
+										</td>
+									);
+								})}
+								{i === 0 ? (
+									<td class="text-center" rowSpan={constructorsInSeason.length}>
+										{wdcStanding ? formatOrdinals(wdcStanding.position) : '-'}
 									</td>
-								);
-							})}
-							<td>{wdcStanding ? formatOrdinals(wdcStanding.position) : '-'}</td>
-						</tr>
-					);
+								) : null}
+							</tr>
+						);
+					});
 				})}
 			</tbody>
 		</table>
