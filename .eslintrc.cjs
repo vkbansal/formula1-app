@@ -15,7 +15,12 @@ module.exports = {
 		es6: true,
 		browser: true,
 	},
-	extends: ['eslint:recommended', 'prettier', 'plugin:@typescript-eslint/recommended'],
+	extends: [
+		'eslint:recommended',
+		'prettier',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:astro/recommended',
+	],
 	rules: {
 		'no-new-object': 2,
 		'no-lonely-if': 2,
