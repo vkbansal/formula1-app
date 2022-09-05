@@ -76,7 +76,7 @@ export class Datagen {
 			row.hasImage = fs.existsSync(`src/images/drivers/${row.driverRef}.webp`);
 
 			const seasonData = await this.executeQueryFromFile('driver-seasons.sql', row);
-			row.seasons = seasonData;
+			row.seasons = seasonData.filter((row) => typeof row.year === 'number');
 
 			await this.writeDataFile(`drivers/${row.driverRef}.yaml`, row);
 		}
@@ -87,7 +87,7 @@ export class Datagen {
 
 		for (const row of data) {
 			const seasonData = await this.executeQueryFromFile('constructor-seasons.sql', row);
-			row.seasons = seasonData;
+			row.seasons = seasonData.filter((row) => typeof row.year === 'number');
 
 			await this.writeDataFile(`constructors/${row.constructorRef}.yaml`, row);
 		}
