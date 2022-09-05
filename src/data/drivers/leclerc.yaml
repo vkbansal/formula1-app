@@ -5,10 +5,10 @@ name: Charles Leclerc
 dob: '1997-10-16'
 nationality: Monegasque
 hasImage: true
-totalRaces: 95
+totalRaces: 96
 raceWins: 5
-podiums: 18
-totalLaps: 4902
+podiums: 19
+totalLaps: 4974
 lapsLead: 596
 championshipStandings:
   - year: 2018
@@ -505,3 +505,8 @@ seasons:
         constructor: Ferrari
         position: 6
         points: 8
+      - round: 15
+        roundName: Dutch Grand Prix
+        constructor: Ferrari
+        position: 3
+        points: 15

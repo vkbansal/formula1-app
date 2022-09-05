@@ -5,10 +5,10 @@ name: Nicholas Latifi
 dob: '1995-06-29'
 nationality: Canadian
 hasImage: true
-totalRaces: 53
+totalRaces: 54
 raceWins: 0
 podiums: 0
-totalLaps: 2852
+totalLaps: 2923
 lapsLead: 0
 championshipStandings:
   - year: 2020
@@ -284,6 +284,11 @@ seasons:
         points: 0
       - round: 14
         roundName: Belgian Grand Prix
+        constructor: Williams
+        position: 18
+        points: 0
+      - round: 15
+        roundName: Dutch Grand Prix
         constructor: Williams
         position: 18
         points: 0

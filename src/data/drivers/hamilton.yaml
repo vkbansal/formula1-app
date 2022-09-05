@@ -5,11 +5,11 @@ name: Lewis Hamilton
 dob: '1985-01-07'
 nationality: British
 hasImage: true
-totalRaces: 302
+totalRaces: 303
 raceWins: 103
 podiums: 188
-totalLaps: 17218
-lapsLead: 5410
+totalLaps: 17290
+lapsLead: 5424
 championshipStandings:
   - year: 2007
     position: 2
@@ -1584,3 +1584,8 @@ seasons:
         constructor: Mercedes
         position: null
         points: 0
+      - round: 15
+        roundName: Dutch Grand Prix
+        constructor: Mercedes
+        position: 4
+        points: 12

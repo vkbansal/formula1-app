@@ -3,10 +3,10 @@ constructorId: 51
 constructorRef: alfa
 name: Alfa Romeo
 nationality: Swiss
-totalRaces: 186
+totalRaces: 187
 raceWins: 11
 podiums: 28
-winPct: 5.91398
+winPct: 5.88235
 championshipStandings:
   - year: 1963
     position: 16
@@ -2017,4 +2017,14 @@ seasons:
         roundName: Belgian Grand Prix
         constructor: Alfa Romeo
         position: 14
+        points: 0
+      - round: 15
+        roundName: Dutch Grand Prix
+        constructor: Alfa Romeo
+        position: null
+        points: 0
+      - round: 15
+        roundName: Dutch Grand Prix
+        constructor: Alfa Romeo
+        position: 16
         points: 0

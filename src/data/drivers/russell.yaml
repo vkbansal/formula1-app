@@ -5,10 +5,10 @@ name: George Russell
 dob: '1998-02-15'
 nationality: British
 hasImage: true
-totalRaces: 74
+totalRaces: 75
 raceWins: 0
-podiums: 6
-totalLaps: 4007
+podiums: 7
+totalLaps: 4079
 lapsLead: 87
 championshipStandings:
   - year: 2019
@@ -396,3 +396,8 @@ seasons:
         constructor: Mercedes
         position: 4
         points: 12
+      - round: 15
+        roundName: Dutch Grand Prix
+        constructor: Mercedes
+        position: 2
+        points: 18

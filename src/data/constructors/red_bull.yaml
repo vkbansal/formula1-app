@@ -3,10 +3,10 @@ constructorId: 9
 constructorRef: red_bull
 name: Red Bull
 nationality: Austrian
-totalRaces: 340
-raceWins: 85
-podiums: 224
-winPct: 25
+totalRaces: 341
+raceWins: 86
+podiums: 225
+winPct: 25.2199
 championshipStandings:
   - year: 2005
     position: 7
@@ -3476,6 +3476,16 @@ seasons:
         points: 18
       - round: 14
         roundName: Belgian Grand Prix
+        constructor: Red Bull
+        position: 1
+        points: 26
+      - round: 15
+        roundName: Dutch Grand Prix
+        constructor: Red Bull
+        position: 5
+        points: 10
+      - round: 15
+        roundName: Dutch Grand Prix
         constructor: Red Bull
         position: 1
         points: 26

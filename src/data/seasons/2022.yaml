@@ -2017,9 +2017,142 @@ rounds:
       name: Circuit Park Zandvoort
       location: Zandvoort
       country: Netherlands
-    podium: []
-    driverStandings: []
-    constructorStandings: []
+    podium:
+      - driverRef: max_verstappen
+        constructorRef: red_bull
+        position: 1
+      - driverRef: russell
+        constructorRef: mercedes
+        position: 2
+      - driverRef: leclerc
+        constructorRef: ferrari
+        position: 3
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 310
+        wins: 10
+      - driverRef: leclerc
+        position: 2
+        points: 201
+        wins: 3
+      - driverRef: perez
+        position: 3
+        points: 201
+        wins: 1
+      - driverRef: russell
+        position: 4
+        points: 188
+        wins: 0
+      - driverRef: sainz
+        position: 5
+        points: 175
+        wins: 1
+      - driverRef: hamilton
+        position: 6
+        points: 158
+        wins: 0
+      - driverRef: norris
+        position: 7
+        points: 82
+        wins: 0
+      - driverRef: ocon
+        position: 8
+        points: 66
+        wins: 0
+      - driverRef: alonso
+        position: 9
+        points: 59
+        wins: 0
+      - driverRef: bottas
+        position: 10
+        points: 46
+        wins: 0
+      - driverRef: kevin_magnussen
+        position: 11
+        points: 22
+        wins: 0
+      - driverRef: vettel
+        position: 12
+        points: 20
+        wins: 0
+      - driverRef: ricciardo
+        position: 13
+        points: 19
+        wins: 0
+      - driverRef: gasly
+        position: 14
+        points: 18
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 15
+        points: 12
+        wins: 0
+      - driverRef: tsunoda
+        position: 16
+        points: 11
+        wins: 0
+      - driverRef: zhou
+        position: 17
+        points: 5
+        wins: 0
+      - driverRef: stroll
+        position: 18
+        points: 5
+        wins: 0
+      - driverRef: albon
+        position: 19
+        points: 4
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 0
+        wins: 0
+      - driverRef: hulkenberg
+        position: 21
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 511
+        wins: 11
+      - constructorRef: ferrari
+        position: 2
+        points: 376
+        wins: 4
+      - constructorRef: mercedes
+        position: 3
+        points: 346
+        wins: 0
+      - constructorRef: alpine
+        position: 4
+        points: 125
+        wins: 0
+      - constructorRef: mclaren
+        position: 5
+        points: 101
+        wins: 0
+      - constructorRef: alfa
+        position: 6
+        points: 51
+        wins: 0
+      - constructorRef: haas
+        position: 7
+        points: 34
+        wins: 0
+      - constructorRef: alphatauri
+        position: 8
+        points: 29
+        wins: 0
+      - constructorRef: aston_martin
+        position: 9
+        points: 25
+        wins: 0
+      - constructorRef: williams
+        position: 10
+        points: 4
+        wins: 0
   - round: 16
     name: Italian Grand Prix
     date: 11th Sep 2022
