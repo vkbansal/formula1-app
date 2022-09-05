@@ -84,7 +84,7 @@ const wonChampionships = driver.championshipStandings
 						<td>{dob}</td>
 					</tr>
 					<tr>
-						<th>Natioanality</th>
+						<th>Nationality</th>
 						<td>
 							<span>{driver.nationality}</span>
 							<Nationality nationality={driver.nationality} />
@@ -132,6 +132,10 @@ const wonChampionships = driver.championshipStandings
 
 		:global(.constructor-name-cell) {
 			padding-left: 0.5rem !important;
+		}
+
+		:global(.table-divider, .table-divider td, .table-divider th) {
+			box-shadow: 0px 1px 0px var(--border-darker) !important;
 		}
 
 		.profile-pic {

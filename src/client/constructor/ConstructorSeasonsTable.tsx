@@ -1,4 +1,5 @@
 import { h, type VNode } from 'preact';
+import cx from 'classnames';
 import { formatOrdinals } from 'helpers/utils';
 import type { Constructor } from 'helpers/data';
 
@@ -12,14 +13,16 @@ export function ConstructorSeasonsTable(props: ConstructorSeasonsTableProps): VN
 	const maxRoundsArr = Array.from({ length: maxRounds });
 
 	return (
-		<table class="table table-sm">
+		<table class="table table-sm constructor-results-table">
 			<thead>
-				<th>Season</th>
-				<th>Driver</th>
-				{maxRoundsArr.map((_, i) => (
-					<th class="text-center">R{i + 1}</th>
-				))}
-				<th class="text-center">WCC</th>
+				<tr class="table-divider">
+					<th>Season</th>
+					<th>Driver</th>
+					{maxRoundsArr.map((_, i) => (
+						<th class="text-center">R{i + 1}</th>
+					))}
+					<th class="text-center">WCC</th>
+				</tr>
 			</thead>
 			<tbody>
 				{data.seasons.flatMap((season) => {
@@ -30,14 +33,14 @@ export function ConstructorSeasonsTable(props: ConstructorSeasonsTableProps): VN
 						const driverResults = season.results.filter((r) => r.driver === driver);
 
 						return (
-							<tr>
+							<tr class={cx({ 'table-divider': i === driversInSeason.length - 1 })}>
 								{i === 0 ? <th rowSpan={driversInSeason.length}>{season.year}</th> : null}
 								<td class="driver-name-cell">{driver}</td>
 								{maxRoundsArr.map((_, i) => {
 									const round = driverResults.find((r) => r.round === i + 1);
 
 									if (i + 1 > season.results.length) {
-										return <td>-</td>;
+										return <td class="text-center">-</td>;
 									}
 
 									if (!round) {

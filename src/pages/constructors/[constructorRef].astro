@@ -49,14 +49,14 @@ const winPct = `${
 			]}
 		/>
 		<h1>{con.name}</h1>
-		<table class="table table-sm">
+		<table class="table">
 			<tbody>
 				<tr>
 					<th>Name</th>
 					<td>{con.name}</td>
 				</tr>
 				<tr>
-					<th>Natioanality</th>
+					<th>Nationality</th>
 					<td>
 						<span>{con.nationality}</span>
 						<Nationality nationality={con.nationality} />
@@ -96,6 +96,10 @@ const winPct = `${
 
 		:global(.driver-name-cell) {
 			padding-left: 0.5rem !important;
+		}
+
+		:global(.table-divider, .table-divider td, .table-divider th) {
+			box-shadow: 0px 1px 0px var(--border-darker) !important;
 		}
 	}
 </style>

@@ -1,4 +1,5 @@
 import { h, type VNode } from 'preact';
+import cx from 'classnames';
 import { formatOrdinals } from 'helpers/utils';
 import type { Driver } from 'helpers/data';
 
@@ -14,12 +15,14 @@ export function DriverSeasonTable(props: DriverSeasonTableProps): VNode {
 	return (
 		<table class="table table-sm">
 			<thead>
-				<th>Season</th>
-				<th>Constructor</th>
-				{maxRoundsArr.map((_, i) => (
-					<th class="text-center">R{i + 1}</th>
-				))}
-				<th class="text-center">WDC</th>
+				<tr class="table-divider">
+					<th>Season</th>
+					<th>Constructor</th>
+					{maxRoundsArr.map((_, i) => (
+						<th class="text-center">R{i + 1}</th>
+					))}
+					<th class="text-center">WDC</th>
+				</tr>
 			</thead>
 			<tbody>
 				{driver.seasons.flatMap((season) => {
@@ -30,7 +33,7 @@ export function DriverSeasonTable(props: DriverSeasonTableProps): VNode {
 						const results = season.results.filter((r) => r.constructor === con);
 
 						return (
-							<tr>
+							<tr class={cx({ 'table-divider': i === constructorsInSeason.length - 1 })}>
 								{i === 0 ? <th rowSpan={constructorsInSeason.length}>{season.year}</th> : null}
 								<td class="constructor-name-cell">{con}</td>
 								{maxRoundsArr.map((_, i) => {
