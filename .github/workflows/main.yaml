@@ -22,7 +22,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: '7.9.5'
+          version: latest
           run_install: false
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -52,7 +52,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: '7.9.5'
+          version: latest
           run_install: false
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -82,7 +82,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: '7.9.5'
+          version: latest
           run_install: false
       - name: Get pnpm store directory
         id: pnpm-cache
