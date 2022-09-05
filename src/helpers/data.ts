@@ -12,7 +12,7 @@ export interface HomePage {
 	constructorsChampions: number;
 }
 
-export interface DriverResults {
+export interface DriverResult {
 	round: number;
 	roundName: string;
 	constructor: string;
@@ -20,9 +20,22 @@ export interface DriverResults {
 	points: number;
 }
 
+export interface ConstructorResult {
+	round: number;
+	roundName: string;
+	driver: string;
+	position: number | null;
+	points: number;
+}
+
 export interface DriverSeason {
 	year: number;
-	results: DriverResults[];
+	results: DriverResult[];
+}
+
+export interface ConstructorSeason {
+	year: number;
+	results: ConstructorResult[];
 }
 
 export interface Driver {
@@ -49,6 +62,7 @@ export interface Constructor {
 	podiums: number;
 	winPct: number;
 	championshipStandings: Array<{ year: number; position: number }>;
+	seasons: ConstructorSeason[];
 }
 
 export interface Metadata {
