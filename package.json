@@ -18,11 +18,11 @@
     "build": "NODE_ENV=production astro build"
   },
   "dependencies": {
-    "@astrojs/preact": "^1.0.2",
+    "@astrojs/preact": "^1.1.0",
     "@netlify/functions": "^1.2.0",
     "@types/js-yaml": "^4.0.5",
-    "@types/node": "^18.7.15",
-    "astro": "1.1.5",
+    "@types/node": "^18.7.16",
+    "astro": "1.2.1",
     "change-case": "^4.1.2",
     "classnames": "^2.3.1",
     "date-fns": "^2.29.2",
@@ -31,17 +31,17 @@
     "mongodb": "^4.9.1",
     "normalize.css": "^8.0.1",
     "preact": "^10.10.6",
-    "preact-render-to-string": "^5.2.2",
-    "sass": "^1.54.8",
-    "typescript": "^4.8.2"
+    "preact-render-to-string": "^5.2.4",
+    "sass": "^1.54.9",
+    "typescript": "^4.8.3"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.6",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-astro": "^0.18.0",
+    "eslint-plugin-astro": "^0.19.0",
     "husky": "^8.0.1",
     "lodash-es": "^4.17.21",
     "mariadb": "^3.0.1",
