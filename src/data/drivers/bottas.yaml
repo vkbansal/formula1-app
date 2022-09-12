@@ -5,10 +5,10 @@ name: Valtteri Bottas
 dob: '1989-08-28'
 nationality: Finnish
 hasImage: true
-totalRaces: 194
+totalRaces: 195
 raceWins: 10
 podiums: 67
-totalLaps: 10919
+totalLaps: 10971
 lapsLead: 728
 championshipStandings:
   - year: 2013
@@ -1019,4 +1019,9 @@ seasons:
         roundName: Dutch Grand Prix
         constructor: Alfa Romeo
         position: null
+        points: 0
+      - round: 16
+        roundName: Italian Grand Prix
+        constructor: Alfa Romeo
+        position: 13
         points: 0

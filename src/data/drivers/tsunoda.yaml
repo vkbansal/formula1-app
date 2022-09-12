@@ -5,10 +5,10 @@ name: Yuki Tsunoda
 dob: '2000-05-11'
 nationality: Japanese
 hasImage: true
-totalRaces: 37
+totalRaces: 38
 raceWins: 0
 podiums: 0
-totalLaps: 1831
+totalLaps: 1883
 lapsLead: 0
 championshipStandings:
   - year: 2021
@@ -202,4 +202,9 @@ seasons:
         roundName: Dutch Grand Prix
         constructor: AlphaTauri
         position: null
+        points: 0
+      - round: 16
+        roundName: Italian Grand Prix
+        constructor: AlphaTauri
+        position: 14
         points: 0

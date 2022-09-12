@@ -5,10 +5,10 @@ name: Sebastian Vettel
 dob: '1987-07-03'
 nationality: German
 hasImage: true
-totalRaces: 293
+totalRaces: 294
 raceWins: 53
 podiums: 122
-totalLaps: 16075
+totalLaps: 16085
 lapsLead: 3499
 championshipStandings:
   - year: 2007
@@ -1538,4 +1538,9 @@ seasons:
         roundName: Dutch Grand Prix
         constructor: Aston Martin
         position: 14
+        points: 0
+      - round: 16
+        roundName: Italian Grand Prix
+        constructor: Aston Martin
+        position: null
         points: 0

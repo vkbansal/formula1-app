@@ -2161,9 +2161,146 @@ rounds:
       name: Autodromo Nazionale di Monza
       location: Monza
       country: Italy
-    podium: []
-    driverStandings: []
-    constructorStandings: []
+    podium:
+      - driverRef: max_verstappen
+        constructorRef: red_bull
+        position: 1
+      - driverRef: leclerc
+        constructorRef: ferrari
+        position: 2
+      - driverRef: russell
+        constructorRef: mercedes
+        position: 3
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 335
+        wins: 11
+      - driverRef: leclerc
+        position: 2
+        points: 219
+        wins: 3
+      - driverRef: perez
+        position: 3
+        points: 210
+        wins: 1
+      - driverRef: russell
+        position: 4
+        points: 203
+        wins: 0
+      - driverRef: sainz
+        position: 5
+        points: 187
+        wins: 1
+      - driverRef: hamilton
+        position: 6
+        points: 168
+        wins: 0
+      - driverRef: norris
+        position: 7
+        points: 88
+        wins: 0
+      - driverRef: ocon
+        position: 8
+        points: 66
+        wins: 0
+      - driverRef: alonso
+        position: 9
+        points: 59
+        wins: 0
+      - driverRef: bottas
+        position: 10
+        points: 46
+        wins: 0
+      - driverRef: gasly
+        position: 11
+        points: 22
+        wins: 0
+      - driverRef: kevin_magnussen
+        position: 12
+        points: 22
+        wins: 0
+      - driverRef: vettel
+        position: 13
+        points: 20
+        wins: 0
+      - driverRef: ricciardo
+        position: 14
+        points: 19
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 15
+        points: 12
+        wins: 0
+      - driverRef: tsunoda
+        position: 16
+        points: 11
+        wins: 0
+      - driverRef: zhou
+        position: 17
+        points: 6
+        wins: 0
+      - driverRef: stroll
+        position: 18
+        points: 5
+        wins: 0
+      - driverRef: albon
+        position: 19
+        points: 4
+        wins: 0
+      - driverRef: de_vries
+        position: 20
+        points: 2
+        wins: 0
+      - driverRef: latifi
+        position: 21
+        points: 0
+        wins: 0
+      - driverRef: hulkenberg
+        position: 22
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 545
+        wins: 12
+      - constructorRef: ferrari
+        position: 2
+        points: 406
+        wins: 4
+      - constructorRef: mercedes
+        position: 3
+        points: 371
+        wins: 0
+      - constructorRef: alpine
+        position: 4
+        points: 125
+        wins: 0
+      - constructorRef: mclaren
+        position: 5
+        points: 107
+        wins: 0
+      - constructorRef: alfa
+        position: 6
+        points: 52
+        wins: 0
+      - constructorRef: haas
+        position: 7
+        points: 34
+        wins: 0
+      - constructorRef: alphatauri
+        position: 8
+        points: 33
+        wins: 0
+      - constructorRef: aston_martin
+        position: 9
+        points: 25
+        wins: 0
+      - constructorRef: williams
+        position: 10
+        points: 6
+        wins: 0
   - round: 17
     name: Singapore Grand Prix
     date: 2nd Oct 2022
@@ -2279,6 +2416,9 @@ drivers:
   - driverRef: hulkenberg
     name: Nico Hülkenberg
     nationality: German
+  - driverRef: de_vries
+    name: Nyck de Vries
+    nationality: Dutch
   - driverRef: gasly
     name: Pierre Gasly
     nationality: French
