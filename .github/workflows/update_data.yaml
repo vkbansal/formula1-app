@@ -32,3 +32,8 @@ jobs:
         run: |
           set -e
           ./datagen/get-new-data.sh
+      - name: Commit and Push
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: src
+          message: 'chore: updated data (from GHA)'
