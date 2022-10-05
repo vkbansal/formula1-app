@@ -37,3 +37,4 @@ jobs:
         with:
           add: src
           message: 'chore: updated data (from GHA)'
+          push: 'origin main --force'
