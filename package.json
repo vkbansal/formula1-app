@@ -18,11 +18,11 @@
     "build": "NODE_ENV=production astro build"
   },
   "dependencies": {
-    "@astrojs/preact": "^1.1.0",
-    "@netlify/functions": "^1.2.0",
+    "@astrojs/preact": "^1.1.1",
+    "@netlify/functions": "^1.3.0",
     "@types/js-yaml": "^4.0.5",
-    "@types/node": "^18.7.23",
-    "astro": "1.3.0",
+    "@types/node": "^18.8.2",
+    "astro": "1.4.4",
     "change-case": "^4.1.2",
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
@@ -30,15 +30,15 @@
     "js-yaml": "^4.1.0",
     "mongodb": "^4.10.0",
     "normalize.css": "^8.0.1",
-    "preact": "^10.11.0",
+    "preact": "^10.11.1",
     "preact-render-to-string": "^5.2.4",
     "sass": "^1.55.0",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.4"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.6",
-    "@typescript-eslint/eslint-plugin": "^5.38.1",
-    "@typescript-eslint/parser": "^5.38.1",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-astro": "^0.19.0",
@@ -47,6 +47,6 @@
     "mariadb": "^3.0.1",
     "ora": "^6.1.2",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.5.4"
+    "prettier-plugin-astro": "^0.5.5"
   }
 }
