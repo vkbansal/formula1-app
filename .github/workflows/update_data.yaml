@@ -7,7 +7,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
-          token: ${{ secrets.GH_PAT }}
+          token: '${{ secrets.GH_PAT }}'
       - name: Setup Node
         uses: actions/setup-node@v3
         with:

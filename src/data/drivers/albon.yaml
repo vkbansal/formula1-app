@@ -5,10 +5,10 @@ name: Alexander Albon
 dob: '1996-03-23'
 nationality: Thai
 hasImage: true
-totalRaces: 53
+totalRaces: 54
 raceWins: 0
 podiums: 2
-totalLaps: 3060
+totalLaps: 3085
 lapsLead: 1
 championshipStandings:
   - year: 2019
@@ -286,4 +286,9 @@ seasons:
         roundName: Dutch Grand Prix
         constructor: Williams
         position: 12
+        points: 0
+      - round: 17
+        roundName: Singapore Grand Prix
+        constructor: Williams
+        position: null
         points: 0

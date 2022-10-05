@@ -3,10 +3,10 @@ constructorId: 214
 constructorRef: alpine
 name: Alpine F1 Team
 nationality: French
-totalRaces: 38
+totalRaces: 39
 raceWins: 1
 podiums: 2
-winPct: 2.63158
+winPct: 2.5641
 championshipStandings:
   - year: 2021
     position: 5
@@ -394,4 +394,14 @@ seasons:
         roundName: Italian Grand Prix
         driver: Esteban Ocon
         position: 11
+        points: 0
+      - round: 17
+        roundName: Singapore Grand Prix
+        driver: Fernando Alonso
+        position: null
+        points: 0
+      - round: 17
+        roundName: Singapore Grand Prix
+        driver: Esteban Ocon
+        position: null
         points: 0

@@ -5,10 +5,10 @@ name: Guanyu Zhou
 dob: '1999-05-30'
 nationality: Chinese
 hasImage: true
-totalRaces: 16
+totalRaces: 17
 raceWins: 0
 podiums: 0
-totalLaps: 772
+totalLaps: 778
 lapsLead: 0
 championshipStandings: []
 seasons:
@@ -94,3 +94,8 @@ seasons:
         constructor: Alfa Romeo
         position: 10
         points: 1
+      - round: 17
+        roundName: Singapore Grand Prix
+        constructor: Alfa Romeo
+        position: null
+        points: 0
