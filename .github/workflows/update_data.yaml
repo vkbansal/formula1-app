@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+        with:
+          token: ${{ secrets.GH_PAT }}
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -35,6 +37,9 @@ jobs:
       - name: Commit and Push
         uses: EndBug/add-and-commit@v9
         with:
-          add: src
+          add: '.'
+          branch: main
+          author_name: 'Vivek Kumar Bansal'
+          author_email: vkb0310@gmail.com
           message: 'chore: updated data (from GHA)'
           push: 'origin main --force'
