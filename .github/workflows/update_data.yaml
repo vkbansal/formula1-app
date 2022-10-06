@@ -38,7 +38,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: '.'
-          branch: main
           author_name: 'Vivek Kumar Bansal'
           author_email: vkb0310@gmail.com
           message: 'chore: updated data (from GHA)'
