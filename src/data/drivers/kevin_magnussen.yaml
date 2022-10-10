@@ -5,10 +5,10 @@ name: Kevin Magnussen
 dob: '1992-10-05'
 nationality: Danish
 hasImage: true
-totalRaces: 137
+totalRaces: 138
 raceWins: 0
 podiums: 1
-totalLaps: 7287
+totalLaps: 7315
 lapsLead: 0
 championshipStandings:
   - year: 2014
@@ -726,4 +726,9 @@ seasons:
         roundName: Singapore Grand Prix
         constructor: Haas F1 Team
         position: 12
+        points: 0
+      - round: 18
+        roundName: Japanese Grand Prix
+        constructor: Haas F1 Team
+        position: 14
         points: 0

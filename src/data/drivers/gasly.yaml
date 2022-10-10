@@ -5,10 +5,10 @@ name: Pierre Gasly
 dob: '1996-02-07'
 nationality: French
 hasImage: true
-totalRaces: 103
+totalRaces: 104
 raceWins: 1
 podiums: 3
-totalLaps: 5512
+totalLaps: 5540
 lapsLead: 26
 championshipStandings:
   - year: 2017
@@ -549,3 +549,8 @@ seasons:
         constructor: AlphaTauri
         position: 10
         points: 1
+      - round: 18
+        roundName: Japanese Grand Prix
+        constructor: AlphaTauri
+        position: 18
+        points: 0

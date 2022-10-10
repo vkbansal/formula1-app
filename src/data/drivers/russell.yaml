@@ -5,10 +5,10 @@ name: George Russell
 dob: '1998-02-15'
 nationality: British
 hasImage: true
-totalRaces: 77
+totalRaces: 78
 raceWins: 0
 podiums: 8
-totalLaps: 4189
+totalLaps: 4217
 lapsLead: 87
 championshipStandings:
   - year: 2019
@@ -411,3 +411,8 @@ seasons:
         constructor: Mercedes
         position: 14
         points: 0
+      - round: 18
+        roundName: Japanese Grand Prix
+        constructor: Mercedes
+        position: 8
+        points: 4

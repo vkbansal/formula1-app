@@ -5,11 +5,11 @@ name: Max Verstappen
 dob: '1997-09-30'
 nationality: Dutch
 hasImage: true
-totalRaces: 158
-raceWins: 31
-podiums: 73
-totalLaps: 8320
-lapsLead: 1670
+totalRaces: 159
+raceWins: 32
+podiums: 74
+totalLaps: 8348
+lapsLead: 1697
 championshipStandings:
   - year: 2015
     position: 12
@@ -832,3 +832,8 @@ seasons:
         constructor: Red Bull
         position: 7
         points: 6
+      - round: 18
+        roundName: Japanese Grand Prix
+        constructor: Red Bull
+        position: 1
+        points: 25
