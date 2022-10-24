@@ -5,10 +5,10 @@ name: Lance Stroll
 dob: '1998-10-29'
 nationality: Canadian
 hasImage: true
-totalRaces: 118
+totalRaces: 119
 raceWins: 0
 podiums: 3
-totalLaps: 6386
+totalLaps: 6407
 lapsLead: 32
 championshipStandings:
   - year: 2017
@@ -194,7 +194,7 @@ seasons:
       - round: 14
         roundName: Italian Grand Prix
         constructor: Williams
-        position: 10
+        position: 9
         points: 2
       - round: 15
         roundName: Singapore Grand Prix
@@ -623,4 +623,9 @@ seasons:
         roundName: Japanese Grand Prix
         constructor: Aston Martin
         position: 12
+        points: 0
+      - round: 19
+        roundName: United States Grand Prix
+        constructor: Aston Martin
+        position: null
         points: 0

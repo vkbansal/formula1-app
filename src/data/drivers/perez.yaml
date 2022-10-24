@@ -5,11 +5,11 @@ name: Sergio Pérez
 dob: '1990-01-26'
 nationality: Mexican
 hasImage: true
-totalRaces: 233
+totalRaces: 234
 raceWins: 4
 podiums: 24
-totalLaps: 12756
-lapsLead: 238
+totalLaps: 12812
+lapsLead: 242
 championshipStandings:
   - year: 2011
     position: 16
@@ -798,7 +798,7 @@ seasons:
       - round: 14
         roundName: Italian Grand Prix
         constructor: Force India
-        position: 8
+        position: 7
         points: 6
       - round: 15
         roundName: Singapore Grand Prix
@@ -1223,3 +1223,8 @@ seasons:
         constructor: Red Bull
         position: 2
         points: 18
+      - round: 19
+        roundName: United States Grand Prix
+        constructor: Red Bull
+        position: 4
+        points: 12

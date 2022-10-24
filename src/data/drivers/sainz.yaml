@@ -5,10 +5,10 @@ name: Carlos Sainz
 dob: '1994-09-01'
 nationality: Spanish
 hasImage: true
-totalRaces: 159
+totalRaces: 160
 raceWins: 1
 podiums: 14
-totalLaps: 8329
+totalLaps: 8330
 lapsLead: 89
 championshipStandings:
   - year: 2015
@@ -402,7 +402,7 @@ seasons:
       - round: 14
         roundName: Italian Grand Prix
         constructor: Renault
-        position: 9
+        position: 8
         points: 4
       - round: 15
         roundName: Singapore Grand Prix
@@ -834,6 +834,11 @@ seasons:
         points: 15
       - round: 18
         roundName: Japanese Grand Prix
+        constructor: Ferrari
+        position: null
+        points: 0
+      - round: 19
+        roundName: United States Grand Prix
         constructor: Ferrari
         position: null
         points: 0

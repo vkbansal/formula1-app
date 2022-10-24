@@ -5,10 +5,10 @@ name: Mick Schumacher
 dob: '1999-03-22'
 nationality: German
 hasImage: true
-totalRaces: 40
+totalRaces: 41
 raceWins: 0
 podiums: 0
-totalLaps: 2023
+totalLaps: 2079
 lapsLead: 0
 championshipStandings:
   - year: 2021
@@ -217,4 +217,9 @@ seasons:
         roundName: Japanese Grand Prix
         constructor: Haas F1 Team
         position: 17
+        points: 0
+      - round: 19
+        roundName: United States Grand Prix
+        constructor: Haas F1 Team
+        position: 14
         points: 0
