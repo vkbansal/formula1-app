@@ -16,7 +16,7 @@ const lastLink = links.at(-1);
 ---
 
 <div class="breadcrumbs">
-	<a class="home-link" title="home" href="/" set:html={homeIcon}></a>
+	<a class="home-link" title="home" href="/" set:html={homeIcon} />
 	{
 		restLinks.map((link) => (
 			<a href={link.href} title={link.label}>
