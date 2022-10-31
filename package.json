@@ -15,7 +15,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "prebuild": "rm -rf public",
-    "build": "NODE_ENV=production astro build"
+    "build": "NODE_ENV=production astro build",
+		"data:update": "node ./datagen/get-new-data.mjs"
   },
   "dependencies": {
     "@astrojs/preact": "^1.2.0",
@@ -47,6 +48,7 @@
     "mariadb": "^3.0.1",
     "ora": "^6.1.2",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.6.0"
+    "prettier-plugin-astro": "^0.6.0",
+    "zx": "^7.1.1"
   }
 }
