@@ -26,7 +26,7 @@ const [, updateTime] = lastestUpdateTime;
 
 if (!argv.includes('--force') && metadata.databaseLastUpdatedAt === updateTime) {
 	console.log('No new data found!');
-	process.exit(1);
+	process.exit(0);
 }
 
 console.log('New data exists');
