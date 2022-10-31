@@ -5,11 +5,11 @@ name: Lewis Hamilton
 dob: '1985-01-07'
 nationality: British
 hasImage: true
-totalRaces: 307
+totalRaces: 308
 raceWins: 103
-podiums: 189
-totalLaps: 17486
-lapsLead: 5433
+podiums: 190
+totalLaps: 17557
+lapsLead: 5438
 championshipStandings:
   - year: 2007
     position: 2
@@ -1606,6 +1606,11 @@ seasons:
         points: 10
       - round: 19
         roundName: United States Grand Prix
+        constructor: Mercedes
+        position: 2
+        points: 18
+      - round: 20
+        roundName: Mexico City Grand Prix
         constructor: Mercedes
         position: 2
         points: 18

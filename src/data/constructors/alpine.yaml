@@ -3,10 +3,10 @@ constructorId: 214
 constructorRef: alpine
 name: Alpine F1 Team
 nationality: French
-totalRaces: 41
+totalRaces: 42
 raceWins: 1
 podiums: 2
-winPct: 2.43902
+winPct: 2.38095
 championshipStandings:
   - year: 2021
     position: 5
@@ -417,11 +417,21 @@ seasons:
         points: 12
       - round: 19
         roundName: United States Grand Prix
-        driver: Fernando Alonso
-        position: 15
+        driver: Esteban Ocon
+        position: 11
         points: 0
       - round: 19
         roundName: United States Grand Prix
+        driver: Fernando Alonso
+        position: 7
+        points: 6
+      - round: 20
+        roundName: Mexico City Grand Prix
+        driver: Fernando Alonso
+        position: 19
+        points: 0
+      - round: 20
+        roundName: Mexico City Grand Prix
         driver: Esteban Ocon
-        position: 10
-        points: 1
+        position: 8
+        points: 4

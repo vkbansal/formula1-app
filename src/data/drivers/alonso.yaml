@@ -5,10 +5,10 @@ name: Fernando Alonso
 dob: '1981-07-29'
 nationality: Spanish
 hasImage: true
-totalRaces: 355
+totalRaces: 356
 raceWins: 32
 podiums: 98
-totalLaps: 18994
+totalLaps: 19057
 lapsLead: 1770
 championshipStandings:
   - year: 2001
@@ -1859,5 +1859,10 @@ seasons:
       - round: 19
         roundName: United States Grand Prix
         constructor: Alpine F1 Team
-        position: 15
+        position: 7
+        points: 6
+      - round: 20
+        roundName: Mexico City Grand Prix
+        constructor: Alpine F1 Team
+        position: 19
         points: 0

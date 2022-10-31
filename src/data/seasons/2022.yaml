@@ -2646,11 +2646,11 @@ rounds:
         wins: 0
       - driverRef: ocon
         position: 8
-        points: 79
+        points: 78
         wins: 0
       - driverRef: alonso
         position: 9
-        points: 65
+        points: 71
         wins: 0
       - driverRef: bottas
         position: 10
@@ -2658,7 +2658,7 @@ rounds:
         wins: 0
       - driverRef: vettel
         position: 11
-        points: 38
+        points: 36
         wins: 0
       - driverRef: ricciardo
         position: 12
@@ -2666,7 +2666,7 @@ rounds:
         wins: 0
       - driverRef: kevin_magnussen
         position: 13
-        points: 26
+        points: 24
         wins: 0
       - driverRef: gasly
         position: 14
@@ -2676,11 +2676,11 @@ rounds:
         position: 15
         points: 13
         wins: 0
-      - driverRef: tsunoda
-        position: 16
-        points: 13
-        wins: 0
       - driverRef: mick_schumacher
+        position: 16
+        points: 12
+        wins: 0
+      - driverRef: tsunoda
         position: 17
         points: 12
         wins: 0
@@ -2719,7 +2719,7 @@ rounds:
         wins: 0
       - constructorRef: alpine
         position: 4
-        points: 144
+        points: 149
         wins: 0
       - constructorRef: mclaren
         position: 5
@@ -2731,15 +2731,15 @@ rounds:
         wins: 0
       - constructorRef: aston_martin
         position: 7
-        points: 51
+        points: 49
         wins: 0
       - constructorRef: haas
         position: 8
-        points: 38
+        points: 36
         wins: 0
       - constructorRef: alphatauri
         position: 9
-        points: 36
+        points: 35
         wins: 0
       - constructorRef: williams
         position: 10
@@ -2753,9 +2753,146 @@ rounds:
       name: Autódromo Hermanos Rodríguez
       location: Mexico City
       country: Mexico
-    podium: []
-    driverStandings: []
-    constructorStandings: []
+    podium:
+      - driverRef: max_verstappen
+        constructorRef: red_bull
+        position: 1
+      - driverRef: hamilton
+        constructorRef: mercedes
+        position: 2
+      - driverRef: perez
+        constructorRef: red_bull
+        position: 3
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 416
+        wins: 14
+      - driverRef: perez
+        position: 2
+        points: 280
+        wins: 2
+      - driverRef: leclerc
+        position: 3
+        points: 275
+        wins: 3
+      - driverRef: russell
+        position: 4
+        points: 231
+        wins: 0
+      - driverRef: hamilton
+        position: 5
+        points: 216
+        wins: 0
+      - driverRef: sainz
+        position: 6
+        points: 212
+        wins: 1
+      - driverRef: norris
+        position: 7
+        points: 111
+        wins: 0
+      - driverRef: ocon
+        position: 8
+        points: 82
+        wins: 0
+      - driverRef: alonso
+        position: 9
+        points: 71
+        wins: 0
+      - driverRef: bottas
+        position: 10
+        points: 47
+        wins: 0
+      - driverRef: vettel
+        position: 11
+        points: 36
+        wins: 0
+      - driverRef: ricciardo
+        position: 12
+        points: 35
+        wins: 0
+      - driverRef: kevin_magnussen
+        position: 13
+        points: 24
+        wins: 0
+      - driverRef: gasly
+        position: 14
+        points: 23
+        wins: 0
+      - driverRef: stroll
+        position: 15
+        points: 13
+        wins: 0
+      - driverRef: mick_schumacher
+        position: 16
+        points: 12
+        wins: 0
+      - driverRef: tsunoda
+        position: 17
+        points: 12
+        wins: 0
+      - driverRef: zhou
+        position: 18
+        points: 6
+        wins: 0
+      - driverRef: albon
+        position: 19
+        points: 4
+        wins: 0
+      - driverRef: latifi
+        position: 20
+        points: 2
+        wins: 0
+      - driverRef: de_vries
+        position: 21
+        points: 2
+        wins: 0
+      - driverRef: hulkenberg
+        position: 22
+        points: 0
+        wins: 0
+    constructorStandings:
+      - constructorRef: red_bull
+        position: 1
+        points: 696
+        wins: 16
+      - constructorRef: ferrari
+        position: 2
+        points: 487
+        wins: 4
+      - constructorRef: mercedes
+        position: 3
+        points: 447
+        wins: 0
+      - constructorRef: alpine
+        position: 4
+        points: 153
+        wins: 0
+      - constructorRef: mclaren
+        position: 5
+        points: 146
+        wins: 0
+      - constructorRef: alfa
+        position: 6
+        points: 53
+        wins: 0
+      - constructorRef: aston_martin
+        position: 7
+        points: 49
+        wins: 0
+      - constructorRef: haas
+        position: 8
+        points: 36
+        wins: 0
+      - constructorRef: alphatauri
+        position: 9
+        points: 35
+        wins: 0
+      - constructorRef: williams
+        position: 10
+        points: 8
+        wins: 0
   - round: 21
     name: Brazilian Grand Prix
     date: 13th Nov 2022

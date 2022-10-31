@@ -5,10 +5,10 @@ name: Yuki Tsunoda
 dob: '2000-05-11'
 nationality: Japanese
 hasImage: true
-totalRaces: 41
+totalRaces: 42
 raceWins: 0
 podiums: 0
-totalLaps: 2001
+totalLaps: 2051
 lapsLead: 0
 championshipStandings:
   - year: 2021
@@ -221,5 +221,10 @@ seasons:
       - round: 19
         roundName: United States Grand Prix
         constructor: AlphaTauri
-        position: 9
-        points: 2
+        position: 10
+        points: 1
+      - round: 20
+        roundName: Mexico City Grand Prix
+        constructor: AlphaTauri
+        position: null
+        points: 0

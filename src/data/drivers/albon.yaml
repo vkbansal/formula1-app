@@ -5,10 +5,10 @@ name: Alexander Albon
 dob: '1996-03-23'
 nationality: Thai
 hasImage: true
-totalRaces: 56
+totalRaces: 57
 raceWins: 0
 podiums: 2
-totalLaps: 3141
+totalLaps: 3211
 lapsLead: 1
 championshipStandings:
   - year: 2019
@@ -299,6 +299,11 @@ seasons:
         points: 0
       - round: 19
         roundName: United States Grand Prix
+        constructor: Williams
+        position: 13
+        points: 0
+      - round: 20
+        roundName: Mexico City Grand Prix
         constructor: Williams
         position: 12
         points: 0

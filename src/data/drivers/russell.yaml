@@ -5,11 +5,11 @@ name: George Russell
 dob: '1998-02-15'
 nationality: British
 hasImage: true
-totalRaces: 79
+totalRaces: 80
 raceWins: 0
 podiums: 8
-totalLaps: 4273
-lapsLead: 87
+totalLaps: 4344
+lapsLead: 92
 championshipStandings:
   - year: 2019
     position: 20
@@ -421,3 +421,8 @@ seasons:
         constructor: Mercedes
         position: 5
         points: 11
+      - round: 20
+        roundName: Mexico City Grand Prix
+        constructor: Mercedes
+        position: 4
+        points: 13

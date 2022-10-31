@@ -5,10 +5,10 @@ name: Kevin Magnussen
 dob: '1992-10-05'
 nationality: Danish
 hasImage: true
-totalRaces: 139
+totalRaces: 140
 raceWins: 0
 podiums: 1
-totalLaps: 7371
+totalLaps: 7441
 lapsLead: 0
 championshipStandings:
   - year: 2014
@@ -735,5 +735,10 @@ seasons:
       - round: 19
         roundName: United States Grand Prix
         constructor: Haas F1 Team
-        position: 8
-        points: 4
+        position: 9
+        points: 2
+      - round: 20
+        roundName: Mexico City Grand Prix
+        constructor: Haas F1 Team
+        position: 17
+        points: 0
