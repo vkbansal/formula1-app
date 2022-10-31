@@ -11,7 +11,6 @@ const metadata = JSON.parse(await fs.promises.readFile(METADATA_FILE, 'utf8'));
 
 const lastestDBUpdatePage = await fetch('http://ergast.com/mrd/db/');
 const lastestDBUpdateText = await lastestDBUpdatePage.text();
-console.log('lastestDBUpdateText', lastestDBUpdateText);
 
 const lastestUpdateTime = lastestDBUpdateText.match(
 	/<p>The database images were last updated on: (.+)<\/p>/,
