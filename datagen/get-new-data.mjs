@@ -7,19 +7,24 @@ import { fileURLToPath } from 'node:url';
 const cwd = path.dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);
 const METADATA_FILE = path.resolve(cwd, 'metadata.json');
+const metadata = JSON.parse(await fs.promises.readFile(METADATA_FILE, 'utf8'));
 
-const lastestResults = await fetch('http://ergast.com/api/f1/current/last/results.json');
-const resultsJSON = await lastestResults.json();
-const latestSeason = resultsJSON.MRData.RaceTable.season;
-const latestRound = resultsJSON.MRData.RaceTable.round;
+const lastestDBUpdatePage = await fetch('http://ergast.com/mrd/db/');
+const lastestDBUpdateText = await lastestDBUpdatePage.text();
+console.log('lastestDBUpdateText', lastestDBUpdateText);
 
-const currentJSON = JSON.parse(await fs.promises.readFile(METADATA_FILE, 'utf8'));
+const lastestUpdateTime = lastestDBUpdateText.match(
+	/<p>The database images were last updated on: (.+)<\/p>/,
+);
 
-if (
-	!argv.includes('--force') &&
-	currentJSON.latest.round === latestRound &&
-	currentJSON.latest.season === latestSeason
-) {
+if (!lastestUpdateTime) {
+	console.log('Could not find database update time!');
+	process.exit(1);
+}
+
+const [, updateTime] = lastestUpdateTime;
+
+if (!argv.includes('--force') && metadata.databaseLastUpdatedAt === updateTime) {
 	console.log('No new data found!');
 	process.exit(1);
 }
@@ -44,6 +49,6 @@ console.log('Stopping docker');
 await $`docker compose down`;
 
 console.log('writing metadata');
-const newContent = { latest: { season: latestSeason, round: latestRound } };
+const newContent = { databaseLastUpdatedAt: updateTime };
 await fs.promises.writeFile(METADATA_FILE, JSON.stringify(newContent, null, 2), 'utf8');
 console.log('done!');
