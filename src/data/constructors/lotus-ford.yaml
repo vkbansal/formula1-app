@@ -22,654 +22,530 @@ championshipStandings:
     position: 5
 seasons:
   - year: 1963
-    results:
+    rounds:
       - round: 10
         roundName: South African Grand Prix
-        driver: Brausch Niemann
-        position: 14
-        points: 0
+        results:
+          - driver: Brausch Niemann
+            position: 14
+            points: 0
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Dave Charlton
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Brausch Niemann
-        position: null
-        points: 0
+        results:
+          - driver: Dave Charlton
+            position: null
+            points: 0
+          - driver: Brausch Niemann
+            position: null
+            points: 0
   - year: 1967
-    results:
+    rounds:
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jim Clark
-        position: 6
-        points: 1
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 6
+            points: 1
       - round: 5
         roundName: French Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 7
         roundName: German Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jackie Oliver
-        position: 5
-        points: 0
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jackie Oliver
+            position: 5
+            points: 0
       - round: 8
         roundName: Canadian Grand Prix
-        driver: Eppie Wietzes
-        position: null
-        points: 0
-      - round: 8
-        roundName: Canadian Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 8
-        roundName: Canadian Grand Prix
-        driver: Graham Hill
-        position: 4
-        points: 3
+        results:
+          - driver: Eppie Wietzes
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: 4
+            points: 3
       - round: 9
         roundName: Italian Grand Prix
-        driver: Giancarlo Baghetti
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jim Clark
-        position: 3
-        points: 4
+        results:
+          - driver: Giancarlo Baghetti
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 3
+            points: 4
       - round: 10
         roundName: United States Grand Prix
-        driver: Moisés Solana
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Graham Hill
-        position: 2
-        points: 6
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Moisés Solana
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: 2
+            points: 6
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 11
         roundName: Mexican Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
   - year: 1968
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Graham Hill
-        position: 2
-        points: 6
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Graham Hill
+            position: 2
+            points: 6
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 2
         roundName: Spanish Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Graham Hill
-        position: 1
-        points: 9
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: 1
+            points: 9
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Jackie Oliver
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Graham Hill
-        position: 1
-        points: 9
+        results:
+          - driver: Jackie Oliver
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: 1
+            points: 9
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jo Siffert
-        position: 7
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jackie Oliver
-        position: 5
-        points: 2
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 7
+            points: 0
+          - driver: Jackie Oliver
+            position: 5
+            points: 2
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Jackie Oliver
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Graham Hill
-        position: 9
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jackie Oliver
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: 9
+            points: 0
       - round: 6
         roundName: French Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Jo Siffert
-        position: 11
-        points: 0
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 11
+            points: 0
       - round: 7
         roundName: British Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Jackie Oliver
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Jo Siffert
-        position: 1
-        points: 9
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jackie Oliver
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 1
+            points: 9
       - round: 8
         roundName: German Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Jackie Oliver
-        position: 11
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Graham Hill
-        position: 2
-        points: 6
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jackie Oliver
+            position: 11
+            points: 0
+          - driver: Graham Hill
+            position: 2
+            points: 6
       - round: 9
         roundName: Italian Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jackie Oliver
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jackie Oliver
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
       - round: 10
         roundName: Canadian Grand Prix
-        driver: Bill Brack
-        position: null
-        points: 0
-      - round: 10
-        roundName: Canadian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 10
-        roundName: Canadian Grand Prix
-        driver: Jackie Oliver
-        position: null
-        points: 0
-      - round: 10
-        roundName: Canadian Grand Prix
-        driver: Graham Hill
-        position: 4
-        points: 3
+        results:
+          - driver: Bill Brack
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jackie Oliver
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: 4
+            points: 3
       - round: 11
         roundName: United States Grand Prix
-        driver: Jackie Oliver
-        position: null
-        points: 0
-      - round: 11
-        roundName: United States Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 11
-        roundName: United States Grand Prix
-        driver: Jo Siffert
-        position: 5
-        points: 2
-      - round: 11
-        roundName: United States Grand Prix
-        driver: Graham Hill
-        position: 2
-        points: 6
+        results:
+          - driver: Jackie Oliver
+            position: null
+            points: 0
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 5
+            points: 2
+          - driver: Graham Hill
+            position: 2
+            points: 6
       - round: 12
         roundName: Mexican Grand Prix
-        driver: Moisés Solana
-        position: null
-        points: 0
-      - round: 12
-        roundName: Mexican Grand Prix
-        driver: Jo Siffert
-        position: 6
-        points: 1
-      - round: 12
-        roundName: Mexican Grand Prix
-        driver: Jackie Oliver
-        position: 3
-        points: 4
-      - round: 12
-        roundName: Mexican Grand Prix
-        driver: Graham Hill
-        position: 1
-        points: 9
+        results:
+          - driver: Moisés Solana
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 6
+            points: 1
+          - driver: Jackie Oliver
+            position: 3
+            points: 4
+          - driver: Graham Hill
+            position: 1
+            points: 9
   - year: 1969
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: John Love
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jo Siffert
-        position: 4
-        points: 3
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Graham Hill
-        position: 2
-        points: 6
+        results:
+          - driver: John Love
+            position: null
+            points: 0
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 4
+            points: 3
+          - driver: Graham Hill
+            position: 2
+            points: 6
       - round: 2
         roundName: Spanish Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
+        results:
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Richard Attwood
-        position: 4
-        points: 3
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Jo Siffert
-        position: 3
-        points: 4
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Graham Hill
-        position: 1
-        points: 9
+        results:
+          - driver: Richard Attwood
+            position: 4
+            points: 3
+          - driver: Jo Siffert
+            position: 3
+            points: 4
+          - driver: Graham Hill
+            position: 1
+            points: 9
       - round: 4
         roundName: Dutch Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Graham Hill
-        position: 7
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Jo Siffert
-        position: 2
-        points: 6
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: 7
+            points: 0
+          - driver: Jo Siffert
+            position: 2
+            points: 6
       - round: 5
         roundName: French Grand Prix
-        driver: John Miles
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Jo Siffert
-        position: 9
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Graham Hill
-        position: 6
-        points: 1
+        results:
+          - driver: John Miles
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 9
+            points: 0
+          - driver: Graham Hill
+            position: 6
+            points: 1
       - round: 6
         roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: John Miles
-        position: 10
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jo Siffert
-        position: 8
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Graham Hill
-        position: 7
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jochen Rindt
-        position: 4
-        points: 3
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: John Miles
+            position: 10
+            points: 0
+          - driver: Jo Siffert
+            position: 8
+            points: 0
+          - driver: Graham Hill
+            position: 7
+            points: 0
+          - driver: Jochen Rindt
+            position: 4
+            points: 3
       - round: 7
         roundName: German Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jo Siffert
-        position: 5
-        points: 2
-      - round: 7
-        roundName: German Grand Prix
-        driver: Graham Hill
-        position: 4
-        points: 3
+        results:
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 5
+            points: 2
+          - driver: Graham Hill
+            position: 4
+            points: 3
       - round: 8
         roundName: Italian Grand Prix
-        driver: John Miles
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Graham Hill
-        position: 9
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jo Siffert
-        position: 8
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jochen Rindt
-        position: 2
-        points: 6
+        results:
+          - driver: John Miles
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: 9
+            points: 0
+          - driver: Jo Siffert
+            position: 8
+            points: 0
+          - driver: Jochen Rindt
+            position: 2
+            points: 6
       - round: 9
         roundName: Canadian Grand Prix
-        driver: John Miles
-        position: null
-        points: 0
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Pete Lovely
-        position: 7
-        points: 0
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Jochen Rindt
-        position: 3
-        points: 4
+        results:
+          - driver: John Miles
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Pete Lovely
+            position: 7
+            points: 0
+          - driver: Jochen Rindt
+            position: 3
+            points: 4
       - round: 10
         roundName: United States Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Pete Lovely
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Graham Hill
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Jochen Rindt
-        position: 1
-        points: 9
+        results:
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Pete Lovely
+            position: null
+            points: 0
+          - driver: Graham Hill
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: 1
+            points: 9
       - round: 11
         roundName: Mexican Grand Prix
-        driver: John Miles
-        position: null
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Pete Lovely
-        position: 9
-        points: 0
+        results:
+          - driver: John Miles
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Pete Lovely
+            position: 9
+            points: 0
   - year: 1971
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Emerson Fittipaldi
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Reine Wisell
-        position: 4
-        points: 3
+        results:
+          - driver: Emerson Fittipaldi
+            position: null
+            points: 0
+          - driver: Reine Wisell
+            position: 4
+            points: 3
       - round: 2
         roundName: Spanish Grand Prix
-        driver: Emerson Fittipaldi
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Reine Wisell
-        position: null
-        points: 0
+        results:
+          - driver: Emerson Fittipaldi
+            position: null
+            points: 0
+          - driver: Reine Wisell
+            position: null
+            points: 0
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Reine Wisell
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Emerson Fittipaldi
-        position: 5
-        points: 2
+        results:
+          - driver: Reine Wisell
+            position: null
+            points: 0
+          - driver: Emerson Fittipaldi
+            position: 5
+            points: 2
       - round: 4
         roundName: Dutch Grand Prix
-        driver: Reine Wisell
-        position: null
-        points: 0
+        results:
+          - driver: Reine Wisell
+            position: null
+            points: 0
       - round: 5
         roundName: French Grand Prix
-        driver: Reine Wisell
-        position: 6
-        points: 1
-      - round: 5
-        roundName: French Grand Prix
-        driver: Emerson Fittipaldi
-        position: 3
-        points: 4
+        results:
+          - driver: Reine Wisell
+            position: 6
+            points: 1
+          - driver: Emerson Fittipaldi
+            position: 3
+            points: 4
       - round: 6
         roundName: British Grand Prix
-        driver: Dave Charlton
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Emerson Fittipaldi
-        position: 3
-        points: 4
+        results:
+          - driver: Dave Charlton
+            position: null
+            points: 0
+          - driver: Emerson Fittipaldi
+            position: 3
+            points: 4
       - round: 7
         roundName: German Grand Prix
-        driver: Emerson Fittipaldi
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Reine Wisell
-        position: 8
-        points: 0
+        results:
+          - driver: Emerson Fittipaldi
+            position: null
+            points: 0
+          - driver: Reine Wisell
+            position: 8
+            points: 0
       - round: 8
         roundName: Austrian Grand Prix
-        driver: Reine Wisell
-        position: 4
-        points: 3
-      - round: 8
-        roundName: Austrian Grand Prix
-        driver: Emerson Fittipaldi
-        position: 2
-        points: 6
+        results:
+          - driver: Reine Wisell
+            position: 4
+            points: 3
+          - driver: Emerson Fittipaldi
+            position: 2
+            points: 6
       - round: 10
         roundName: Canadian Grand Prix
-        driver: Pete Lovely
-        position: null
-        points: 0
-      - round: 10
-        roundName: Canadian Grand Prix
-        driver: Emerson Fittipaldi
-        position: 7
-        points: 0
-      - round: 10
-        roundName: Canadian Grand Prix
-        driver: Reine Wisell
-        position: 5
-        points: 2
+        results:
+          - driver: Pete Lovely
+            position: null
+            points: 0
+          - driver: Emerson Fittipaldi
+            position: 7
+            points: 0
+          - driver: Reine Wisell
+            position: 5
+            points: 2
       - round: 11
         roundName: United States Grand Prix
-        driver: Reine Wisell
-        position: null
-        points: 0
-      - round: 11
-        roundName: United States Grand Prix
-        driver: Pete Lovely
-        position: null
-        points: 0
-      - round: 11
-        roundName: United States Grand Prix
-        driver: Emerson Fittipaldi
-        position: null
-        points: 0
+        results:
+          - driver: Reine Wisell
+            position: null
+            points: 0
+          - driver: Pete Lovely
+            position: null
+            points: 0
+          - driver: Emerson Fittipaldi
+            position: null
+            points: 0

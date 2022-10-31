@@ -10,9 +10,10 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1954
-    results:
+    rounds:
       - round: 6
         roundName: German Grand Prix
-        driver: Theo Helfrich
-        position: null
-        points: 0
+        results:
+          - driver: Theo Helfrich
+            position: null
+            points: 0

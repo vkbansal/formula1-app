@@ -12,44 +12,40 @@ championshipStandings:
     position: 12
 seasons:
   - year: 2006
-    results:
+    rounds:
       - round: 15
         roundName: Italian Grand Prix
-        driver: Tiago Monteiro
-        position: null
-        points: 0
-      - round: 15
-        roundName: Italian Grand Prix
-        driver: Christijan Albers
-        position: 17
-        points: 0
+        results:
+          - driver: Tiago Monteiro
+            position: null
+            points: 0
+          - driver: Christijan Albers
+            position: 17
+            points: 0
       - round: 16
         roundName: Chinese Grand Prix
-        driver: Tiago Monteiro
-        position: null
-        points: 0
-      - round: 16
-        roundName: Chinese Grand Prix
-        driver: Christijan Albers
-        position: 15
-        points: 0
+        results:
+          - driver: Tiago Monteiro
+            position: null
+            points: 0
+          - driver: Christijan Albers
+            position: 15
+            points: 0
       - round: 17
         roundName: Japanese Grand Prix
-        driver: Christijan Albers
-        position: null
-        points: 0
-      - round: 17
-        roundName: Japanese Grand Prix
-        driver: Tiago Monteiro
-        position: 16
-        points: 0
+        results:
+          - driver: Christijan Albers
+            position: null
+            points: 0
+          - driver: Tiago Monteiro
+            position: 16
+            points: 0
       - round: 18
         roundName: Brazilian Grand Prix
-        driver: Tiago Monteiro
-        position: 15
-        points: 0
-      - round: 18
-        roundName: Brazilian Grand Prix
-        driver: Christijan Albers
-        position: 14
-        points: 0
+        results:
+          - driver: Tiago Monteiro
+            position: 15
+            points: 0
+          - driver: Christijan Albers
+            position: 14
+            points: 0

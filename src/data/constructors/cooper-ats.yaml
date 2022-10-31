@@ -12,9 +12,10 @@ championshipStandings:
     position: 20
 seasons:
   - year: 1967
-    results:
+    rounds:
       - round: 6
         roundName: British Grand Prix
-        driver: Silvio Moser
-        position: null
-        points: 0
+        results:
+          - driver: Silvio Moser
+            position: null
+            points: 0

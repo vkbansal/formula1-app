@@ -27,29 +27,28 @@ export function ConstructorSeasonsTable(props: ConstructorSeasonsTableProps): VN
 			<tbody>
 				{data.seasons.flatMap((season) => {
 					const wccStanding = data.championshipStandings.find((c) => c.year === season.year);
-					const driversInSeason = [...new Set(season.results.map((r) => r.driver))];
+					const driversInSeason = [
+						...new Set(
+							season.rounds.flatMap((round) => round.results.map((result) => result.driver)),
+						),
+					];
 
 					return driversInSeason.map((driver, i) => {
-						const driverResults = season.results.filter((r) => r.driver === driver);
-
 						return (
 							<tr class={cx({ 'table-divider': i === driversInSeason.length - 1 })}>
 								{i === 0 ? <th rowSpan={driversInSeason.length}>{season.year}</th> : null}
 								<td class="driver-name-cell">{driver}</td>
 								{maxRoundsArr.map((_, i) => {
-									const round = driverResults.find((r) => r.round === i + 1);
+									const round = season.rounds.find((round) => round.round === i + 1);
+									const driverResult = round?.results.find((result) => result.driver === driver);
 
-									if (i + 1 > season.results.length) {
-										return <td class="text-center">-</td>;
-									}
-
-									if (!round) {
+									if (i + 1 > season.rounds.length || !round || !driverResult?.position) {
 										return <td class="text-center">-</td>;
 									}
 
 									return (
 										<td class="text-center">
-											<div>{round.position ? formatOrdinals(round.position) : '-'}</div>
+											<div>{formatOrdinals(driverResult.position)}</div>
 										</td>
 									);
 								})}

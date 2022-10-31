@@ -10,16 +10,18 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Myron Fohr
-        position: 11
-        points: 0
+        results:
+          - driver: Myron Fohr
+            position: 11
+            points: 0
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Chuck Stevenson
-        position: null
-        points: 0
+        results:
+          - driver: Chuck Stevenson
+            position: null
+            points: 0

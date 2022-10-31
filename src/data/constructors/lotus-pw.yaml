@@ -12,19 +12,22 @@ championshipStandings:
     position: 10
 seasons:
   - year: 1971
-    results:
+    rounds:
       - round: 4
         roundName: Dutch Grand Prix
-        driver: David Walker
-        position: null
-        points: 0
+        results:
+          - driver: David Walker
+            position: null
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Reine Wisell
-        position: null
-        points: 0
+        results:
+          - driver: Reine Wisell
+            position: null
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Emerson Fittipaldi
-        position: 8
-        points: 0
+        results:
+          - driver: Emerson Fittipaldi
+            position: 8
+            points: 0

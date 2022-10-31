@@ -16,2204 +16,1551 @@ championshipStandings:
     position: 11
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 1
         roundName: British Grand Prix
-        driver: Joe Fry
-        position: 10
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Louis Chiron
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: David Murray
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Prince Bira
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Brian Shawe Taylor
-        position: 10
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: David Hampshire
-        position: 9
-        points: 0
+        results:
+          - driver: Joe Fry
+            position: 10
+            points: 0
+          - driver: Louis Chiron
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: David Murray
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: null
+            points: 0
+          - driver: Brian Shawe Taylor
+            position: 10
+            points: 0
+          - driver: David Hampshire
+            position: 9
+            points: 0
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Alfredo Pián
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Franco Rol
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: José Froilán González
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Prince Bira
-        position: 5
-        points: 2
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Louis Chiron
-        position: 3
-        points: 4
+        results:
+          - driver: Alfredo Pián
+            position: null
+            points: 0
+          - driver: Franco Rol
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: José Froilán González
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: 5
+            points: 2
+          - driver: Louis Chiron
+            position: 3
+            points: 4
       - round: 3
         roundName: Indianapolis 500
-        driver: Henry Banks
-        position: null
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Travis Webb
-        position: 20
-        points: 0
+        results:
+          - driver: Henry Banks
+            position: null
+            points: 0
+          - driver: Travis Webb
+            position: 20
+            points: 0
       - round: 4
         roundName: Swiss Grand Prix
-        driver: Toni Branca
-        position: 11
-        points: 0
-      - round: 4
-        roundName: Swiss Grand Prix
-        driver: Louis Chiron
-        position: 9
-        points: 0
-      - round: 4
-        roundName: Swiss Grand Prix
-        driver: Nello Pagani
-        position: 7
-        points: 0
-      - round: 4
-        roundName: Swiss Grand Prix
-        driver: Toulo de Graffenried
-        position: 6
-        points: 0
-      - round: 4
-        roundName: Swiss Grand Prix
-        driver: Felice Bonetto
-        position: 5
-        points: 2
-      - round: 4
-        roundName: Swiss Grand Prix
-        driver: Prince Bira
-        position: 4
-        points: 3
+        results:
+          - driver: Toni Branca
+            position: 11
+            points: 0
+          - driver: Louis Chiron
+            position: 9
+            points: 0
+          - driver: Nello Pagani
+            position: 7
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 6
+            points: 0
+          - driver: Felice Bonetto
+            position: 5
+            points: 2
+          - driver: Prince Bira
+            position: 4
+            points: 3
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Toni Branca
-        position: 10
-        points: 0
+        results:
+          - driver: Toni Branca
+            position: 10
+            points: 0
       - round: 6
         roundName: French Grand Prix
-        driver: José Froilán González
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: David Hampshire
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Louis Chiron
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Franco Rol
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Reg Parnell
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Felice Bonetto
-        position: null
-        points: 0
+        results:
+          - driver: José Froilán González
+            position: null
+            points: 0
+          - driver: David Hampshire
+            position: null
+            points: 0
+          - driver: Louis Chiron
+            position: null
+            points: 0
+          - driver: Franco Rol
+            position: null
+            points: 0
+          - driver: Reg Parnell
+            position: null
+            points: 0
+          - driver: Felice Bonetto
+            position: null
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Paul Pietsch
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Prince Bira
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Louis Chiron
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Franco Comotti
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Franco Rol
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: David Murray
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Toulo de Graffenried
-        position: 6
-        points: 0
+        results:
+          - driver: Paul Pietsch
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: null
+            points: 0
+          - driver: Louis Chiron
+            position: null
+            points: 0
+          - driver: Franco Comotti
+            position: null
+            points: 0
+          - driver: Franco Rol
+            position: null
+            points: 0
+          - driver: David Murray
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 6
+            points: 0
   - year: 1951
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Harry Schell
-        position: 12
-        points: 0
-      - round: 1
-        roundName: Swiss Grand Prix
-        driver: Louis Chiron
-        position: 7
-        points: 0
+        results:
+          - driver: Harry Schell
+            position: 12
+            points: 0
+          - driver: Louis Chiron
+            position: 7
+            points: 0
       - round: 2
         roundName: Indianapolis 500
-        driver: Johnny McDowell
-        position: null
-        points: 0
+        results:
+          - driver: Johnny McDowell
+            position: null
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
+        results:
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: John James
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: David Murray
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Philip Fotheringham-Parker
-        position: null
-        points: 0
+        results:
+          - driver: John James
+            position: null
+            points: 0
+          - driver: David Murray
+            position: null
+            points: 0
+          - driver: Philip Fotheringham-Parker
+            position: null
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Toni Branca
-        position: null
-        points: 0
+        results:
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Toni Branca
+            position: null
+            points: 0
       - round: 8
         roundName: Spanish Grand Prix
-        driver: Juan Jover
-        position: null
-        points: 0
-      - round: 8
-        roundName: Spanish Grand Prix
-        driver: Prince Bira
-        position: null
-        points: 0
-      - round: 8
-        roundName: Spanish Grand Prix
-        driver: Paco Godia
-        position: 10
-        points: 0
+        results:
+          - driver: Juan Jover
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: null
+            points: 0
+          - driver: Paco Godia
+            position: 10
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 1
-        roundName: Swiss Grand Prix
-        driver: Toulo de Graffenried
-        position: 6
-        points: 0
+        results:
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 6
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Philippe Étancelin
-        position: 8
-        points: 0
+        results:
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Philippe Étancelin
+            position: 8
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Eitel Cantoni
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Toulo de Graffenried
-        position: 19
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Gino Bianco
-        position: 18
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Harry Schell
-        position: 17
-        points: 0
+        results:
+          - driver: Eitel Cantoni
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 19
+            points: 0
+          - driver: Gino Bianco
+            position: 18
+            points: 0
+          - driver: Harry Schell
+            position: 17
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Gino Bianco
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Felice Bonetto
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Eitel Cantoni
-        position: null
-        points: 0
+        results:
+          - driver: Gino Bianco
+            position: null
+            points: 0
+          - driver: Felice Bonetto
+            position: null
+            points: 0
+          - driver: Eitel Cantoni
+            position: null
+            points: 0
       - round: 7
         roundName: Dutch Grand Prix
-        driver: Jan Flinterman
-        position: 9
-        points: 0
-      - round: 7
-        roundName: Dutch Grand Prix
-        driver: Gino Bianco
-        position: null
-        points: 0
-      - round: 7
-        roundName: Dutch Grand Prix
-        driver: Jan Flinterman
-        position: null
-        points: 0
-      - round: 7
-        roundName: Dutch Grand Prix
-        driver: Chico Landi
-        position: 9
-        points: 0
+        results:
+          - driver: Jan Flinterman
+            position: 9
+            points: 0
+          - driver: Gino Bianco
+            position: null
+            points: 0
+          - driver: Jan Flinterman
+            position: null
+            points: 0
+          - driver: Chico Landi
+            position: 9
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Alberto Crespo
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Franco Rol
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Gino Bianco
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Eitel Cantoni
-        position: 11
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Chico Landi
-        position: 8
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Felice Bonetto
-        position: 5
-        points: 2
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: José Froilán González
-        position: 2
-        points: 6.5
+        results:
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Alberto Crespo
+            position: null
+            points: 0
+          - driver: Franco Rol
+            position: null
+            points: 0
+          - driver: Gino Bianco
+            position: null
+            points: 0
+          - driver: Eitel Cantoni
+            position: 11
+            points: 0
+          - driver: Chico Landi
+            position: 8
+            points: 0
+          - driver: Felice Bonetto
+            position: 5
+            points: 2
+          - driver: José Froilán González
+            position: 2
+            points: 6.5
   - year: 1953
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Felice Bonetto
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Oscar Gálvez
-        position: 5
-        points: 2
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: José Froilán González
-        position: 3
-        points: 4
+        results:
+          - driver: Felice Bonetto
+            position: null
+            points: 0
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Oscar Gálvez
+            position: 5
+            points: 2
+          - driver: José Froilán González
+            position: 3
+            points: 4
       - round: 3
         roundName: Dutch Grand Prix
-        driver: José Froilán González
-        position: 3
-        points: 2
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: José Froilán González
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Toulo de Graffenried
-        position: 5
-        points: 2
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Felice Bonetto
-        position: 3
-        points: 2
+        results:
+          - driver: José Froilán González
+            position: 3
+            points: 2
+          - driver: José Froilán González
+            position: null
+            points: 0
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 5
+            points: 2
+          - driver: Felice Bonetto
+            position: 3
+            points: 2
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: José Froilán González
-        position: null
-        points: 1
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Johnny Claes
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Toulo de Graffenried
-        position: 4
-        points: 3
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Onofre Marimón
-        position: 3
-        points: 4
+        results:
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: José Froilán González
+            position: null
+            points: 1
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Johnny Claes
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 4
+            points: 3
+          - driver: Onofre Marimón
+            position: 3
+            points: 4
       - round: 5
         roundName: French Grand Prix
-        driver: Felice Bonetto
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Onofre Marimón
-        position: 9
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Toulo de Graffenried
-        position: 7
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: José Froilán González
-        position: 3
-        points: 4
-      - round: 5
-        roundName: French Grand Prix
-        driver: Juan Fangio
-        position: 2
-        points: 7
+        results:
+          - driver: Felice Bonetto
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: 9
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 7
+            points: 0
+          - driver: José Froilán González
+            position: 3
+            points: 4
+          - driver: Juan Fangio
+            position: 2
+            points: 7
       - round: 6
         roundName: British Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Felice Bonetto
-        position: 6
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: José Froilán González
-        position: 4
-        points: 3.5
-      - round: 6
-        roundName: British Grand Prix
-        driver: Juan Fangio
-        position: 2
-        points: 6
+        results:
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Felice Bonetto
+            position: 6
+            points: 0
+          - driver: José Froilán González
+            position: 4
+            points: 3.5
+          - driver: Juan Fangio
+            position: 2
+            points: 6
       - round: 7
         roundName: German Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Toulo de Graffenried
-        position: 5
-        points: 2
-      - round: 7
-        roundName: German Grand Prix
-        driver: Felice Bonetto
-        position: 4
-        points: 3
-      - round: 7
-        roundName: German Grand Prix
-        driver: Juan Fangio
-        position: 2
-        points: 6
+        results:
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 5
+            points: 2
+          - driver: Felice Bonetto
+            position: 4
+            points: 3
+          - driver: Juan Fangio
+            position: 2
+            points: 6
       - round: 8
         roundName: Swiss Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 8
-        roundName: Swiss Grand Prix
-        driver: Felice Bonetto
-        position: 4
-        points: 1.5
-      - round: 8
-        roundName: Swiss Grand Prix
-        driver: Felice Bonetto
-        position: null
-        points: 0
-      - round: 8
-        roundName: Swiss Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 8
-        roundName: Swiss Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 8
-        roundName: Swiss Grand Prix
-        driver: Chico Landi
-        position: null
-        points: 0
-      - round: 8
-        roundName: Swiss Grand Prix
-        driver: Hermann Lang
-        position: 5
-        points: 2
-      - round: 8
-        roundName: Swiss Grand Prix
-        driver: Juan Fangio
-        position: 4
-        points: 1.5
+        results:
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Felice Bonetto
+            position: 4
+            points: 1.5
+          - driver: Felice Bonetto
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Chico Landi
+            position: null
+            points: 0
+          - driver: Hermann Lang
+            position: 5
+            points: 2
+          - driver: Juan Fangio
+            position: 4
+            points: 1.5
       - round: 9
         roundName: Italian Grand Prix
-        driver: Luigi Musso
-        position: 7
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Chico Landi
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Felice Bonetto
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Prince Bira
-        position: 11
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Sergio Mantovani
-        position: 7
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 9
+        results:
+          - driver: Luigi Musso
+            position: 7
+            points: 0
+          - driver: Chico Landi
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Felice Bonetto
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: 11
+            points: 0
+          - driver: Sergio Mantovani
+            position: 7
+            points: 0
+          - driver: Juan Fangio
+            position: 1
+            points: 9
   - year: 1954
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Carlos Menditeguy
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Luigi Musso
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jorge Daponte
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Toulo de Graffenried
-        position: 8
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Prince Bira
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Harry Schell
-        position: 6
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 8
+        results:
+          - driver: Carlos Menditeguy
+            position: null
+            points: 0
+          - driver: Luigi Musso
+            position: null
+            points: 0
+          - driver: Jorge Daponte
+            position: null
+            points: 0
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 8
+            points: 0
+          - driver: Prince Bira
+            position: 7
+            points: 0
+          - driver: Harry Schell
+            position: 6
+            points: 0
+          - driver: Juan Fangio
+            position: 1
+            points: 8
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Sergio Mantovani
-        position: 7
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Prince Bira
-        position: 6
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Stirling Moss
-        position: 3
-        points: 4
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 9
+        results:
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Sergio Mantovani
+            position: 7
+            points: 0
+          - driver: Prince Bira
+            position: 6
+            points: 0
+          - driver: Stirling Moss
+            position: 3
+            points: 4
+          - driver: Juan Fangio
+            position: 1
+            points: 9
       - round: 4
         roundName: French Grand Prix
-        driver: Sergio Mantovani
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Alberto Ascari
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Ken Wharton
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Luigi Villoresi
-        position: 5
-        points: 2
-      - round: 4
-        roundName: French Grand Prix
-        driver: Prince Bira
-        position: 4
-        points: 3
+        results:
+          - driver: Sergio Mantovani
+            position: null
+            points: 0
+          - driver: Alberto Ascari
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Ken Wharton
+            position: null
+            points: 0
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Luigi Villoresi
+            position: 5
+            points: 2
+          - driver: Prince Bira
+            position: 4
+            points: 3
       - round: 5
         roundName: British Grand Prix
-        driver: Alberto Ascari
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Ron Flockhart
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Alberto Ascari
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Prince Bira
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Harry Schell
-        position: 12
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Ken Wharton
-        position: 8
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Roberto Mieres
-        position: 6
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Onofre Marimón
-        position: 3
-        points: 4.14
+        results:
+          - driver: Alberto Ascari
+            position: null
+            points: 0
+          - driver: Ron Flockhart
+            position: null
+            points: 0
+          - driver: Alberto Ascari
+            position: null
+            points: 0
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: 12
+            points: 0
+          - driver: Ken Wharton
+            position: 8
+            points: 0
+          - driver: Roberto Mieres
+            position: 6
+            points: 0
+          - driver: Onofre Marimón
+            position: 3
+            points: 4.14
       - round: 6
         roundName: German Grand Prix
-        driver: Ken Wharton
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Onofre Marimón
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Prince Bira
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Harry Schell
-        position: 7
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Sergio Mantovani
-        position: 5
-        points: 2
+        results:
+          - driver: Ken Wharton
+            position: null
+            points: 0
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Onofre Marimón
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: 7
+            points: 0
+          - driver: Sergio Mantovani
+            position: 5
+            points: 2
       - round: 7
         roundName: Swiss Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 7
-        roundName: Swiss Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 7
-        roundName: Swiss Grand Prix
-        driver: Ken Wharton
-        position: 6
-        points: 0
-      - round: 7
-        roundName: Swiss Grand Prix
-        driver: Sergio Mantovani
-        position: 5
-        points: 2
-      - round: 7
-        roundName: Swiss Grand Prix
-        driver: Roberto Mieres
-        position: 4
-        points: 3
+        results:
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Ken Wharton
+            position: 6
+            points: 0
+          - driver: Sergio Mantovani
+            position: 5
+            points: 2
+          - driver: Roberto Mieres
+            position: 4
+            points: 3
       - round: 8
         roundName: Italian Grand Prix
-        driver: Giovanni de Riu
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Luigi Musso
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jorge Daponte
-        position: 11
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Stirling Moss
-        position: 10
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Sergio Mantovani
-        position: 9
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Louis Rosier
-        position: 8
-        points: 0
+        results:
+          - driver: Giovanni de Riu
+            position: null
+            points: 0
+          - driver: Luigi Musso
+            position: null
+            points: 0
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Jorge Daponte
+            position: 11
+            points: 0
+          - driver: Stirling Moss
+            position: 10
+            points: 0
+          - driver: Sergio Mantovani
+            position: 9
+            points: 0
+          - driver: Louis Rosier
+            position: 8
+            points: 0
       - round: 9
         roundName: Spanish Grand Prix
-        driver: Ottorino Volonterio
-        position: null
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Sergio Mantovani
-        position: null
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Prince Bira
-        position: 9
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Ken Wharton
-        position: 8
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Louis Rosier
-        position: 7
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Paco Godia
-        position: 6
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Roberto Mieres
-        position: 4
-        points: 3
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Luigi Musso
-        position: 2
-        points: 6
+        results:
+          - driver: Ottorino Volonterio
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Sergio Mantovani
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: 9
+            points: 0
+          - driver: Ken Wharton
+            position: 8
+            points: 0
+          - driver: Louis Rosier
+            position: 7
+            points: 0
+          - driver: Paco Godia
+            position: 6
+            points: 0
+          - driver: Roberto Mieres
+            position: 4
+            points: 3
+          - driver: Luigi Musso
+            position: 2
+            points: 6
   - year: 1955
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Carlos Menditeguy
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Luigi Musso
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Harry Schell
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Sergio Mantovani
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jean Behra
-        position: 6
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Carlos Menditeguy
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Alberto Uria
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Clemar Bucci
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Sergio Mantovani
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Luigi Musso
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Harry Schell
-        position: 6
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Roberto Mieres
-        position: 5
-        points: 2
+        results:
+          - driver: Carlos Menditeguy
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Luigi Musso
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: 7
+            points: 0
+          - driver: Sergio Mantovani
+            position: 7
+            points: 0
+          - driver: Jean Behra
+            position: 6
+            points: 0
+          - driver: Carlos Menditeguy
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Alberto Uria
+            position: null
+            points: 0
+          - driver: Clemar Bucci
+            position: null
+            points: 0
+          - driver: Sergio Mantovani
+            position: null
+            points: 0
+          - driver: Luigi Musso
+            position: 7
+            points: 0
+          - driver: Harry Schell
+            position: 6
+            points: 0
+          - driver: Roberto Mieres
+            position: 5
+            points: 2
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Cesare Perdisa
-        position: 3
-        points: 2
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Lance Macklin
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Luigi Musso
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Louis Rosier
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Cesare Perdisa
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jean Behra
-        position: 3
-        points: 2
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Cesare Perdisa
+            position: 3
+            points: 2
+          - driver: Lance Macklin
+            position: null
+            points: 0
+          - driver: Luigi Musso
+            position: null
+            points: 0
+          - driver: Louis Rosier
+            position: null
+            points: 0
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Cesare Perdisa
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: 3
+            points: 2
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Jean Behra
-        position: 5
-        points: 1
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Johnny Claes
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Louis Rosier
-        position: 9
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Cesare Perdisa
-        position: 8
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Luigi Musso
-        position: 7
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Roberto Mieres
-        position: 5
-        points: 1
+        results:
+          - driver: Jean Behra
+            position: 5
+            points: 1
+          - driver: Johnny Claes
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Louis Rosier
+            position: 9
+            points: 0
+          - driver: Cesare Perdisa
+            position: 8
+            points: 0
+          - driver: Luigi Musso
+            position: 7
+            points: 0
+          - driver: Roberto Mieres
+            position: 5
+            points: 1
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Peter Walker
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Louis Rosier
-        position: 9
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Jean Behra
-        position: 6
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Roberto Mieres
-        position: 4
-        points: 4
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Luigi Musso
-        position: 3
-        points: 4
+        results:
+          - driver: Peter Walker
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Louis Rosier
+            position: 9
+            points: 0
+          - driver: Jean Behra
+            position: 6
+            points: 0
+          - driver: Roberto Mieres
+            position: 4
+            points: 4
+          - driver: Luigi Musso
+            position: 3
+            points: 4
       - round: 6
         roundName: British Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: André Simon
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Peter Collins
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Lance Macklin
-        position: 8
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Luigi Musso
-        position: 5
-        points: 2
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: André Simon
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Peter Collins
+            position: null
+            points: 0
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Lance Macklin
+            position: 8
+            points: 0
+          - driver: Luigi Musso
+            position: 5
+            points: 2
       - round: 7
         roundName: Italian Grand Prix
-        driver: Peter Collins
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Luigi Musso
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: John Fitch
-        position: 9
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Roberto Mieres
-        position: 7
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Carlos Menditeguy
-        position: 5
-        points: 2
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jean Behra
-        position: 4
-        points: 3
+        results:
+          - driver: Peter Collins
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Luigi Musso
+            position: null
+            points: 0
+          - driver: John Fitch
+            position: 9
+            points: 0
+          - driver: Roberto Mieres
+            position: 7
+            points: 0
+          - driver: Carlos Menditeguy
+            position: 5
+            points: 2
+          - driver: Jean Behra
+            position: 4
+            points: 3
   - year: 1956
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Óscar González
-        position: 6
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Gerino Gerini
-        position: 4
-        points: 1.5
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: José Froilán González
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Carlos Menditeguy
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Luigi Piotti
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Alberto Uria
-        position: 6
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Chico Landi
-        position: 4
-        points: 1.5
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Mike Hawthorn
-        position: 3
-        points: 4
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jean Behra
-        position: 2
-        points: 6
+        results:
+          - driver: Óscar González
+            position: 6
+            points: 0
+          - driver: Gerino Gerini
+            position: 4
+            points: 1.5
+          - driver: José Froilán González
+            position: null
+            points: 0
+          - driver: Carlos Menditeguy
+            position: null
+            points: 0
+          - driver: Luigi Piotti
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Alberto Uria
+            position: 6
+            points: 0
+          - driver: Chico Landi
+            position: 4
+            points: 1.5
+          - driver: Mike Hawthorn
+            position: 3
+            points: 4
+          - driver: Jean Behra
+            position: 2
+            points: 6
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Louis Chiron
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Louis Rosier
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Horace Gould
-        position: 8
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Cesare Perdisa
-        position: 7
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jean Behra
-        position: 3
-        points: 4
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Stirling Moss
-        position: 1
-        points: 8
+        results:
+          - driver: Louis Chiron
+            position: null
+            points: 0
+          - driver: Louis Rosier
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: 8
+            points: 0
+          - driver: Cesare Perdisa
+            position: 7
+            points: 0
+          - driver: Jean Behra
+            position: 3
+            points: 4
+          - driver: Stirling Moss
+            position: 1
+            points: 8
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Stirling Moss
-        position: 3
-        points: 3
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Paco Godia
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Louis Rosier
-        position: 8
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jean Behra
-        position: 7
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Luigi Villoresi
-        position: 5
-        points: 2
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Cesare Perdisa
-        position: 3
-        points: 2
+        results:
+          - driver: Stirling Moss
+            position: 3
+            points: 3
+          - driver: Paco Godia
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Louis Rosier
+            position: 8
+            points: 0
+          - driver: Jean Behra
+            position: 7
+            points: 0
+          - driver: Luigi Villoresi
+            position: 5
+            points: 2
+          - driver: Cesare Perdisa
+            position: 3
+            points: 2
       - round: 5
         roundName: French Grand Prix
-        driver: Stirling Moss
-        position: 5
-        points: 1
-      - round: 5
-        roundName: French Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Hernando da Silva Ramos
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: André Simon
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Paco Godia
-        position: 7
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Louis Rosier
-        position: 6
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Cesare Perdisa
-        position: 5
-        points: 1
-      - round: 5
-        roundName: French Grand Prix
-        driver: Jean Behra
-        position: 3
-        points: 4
+        results:
+          - driver: Stirling Moss
+            position: 5
+            points: 1
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Hernando da Silva Ramos
+            position: null
+            points: 0
+          - driver: André Simon
+            position: null
+            points: 0
+          - driver: Paco Godia
+            position: 7
+            points: 0
+          - driver: Louis Rosier
+            position: 6
+            points: 0
+          - driver: Cesare Perdisa
+            position: 5
+            points: 1
+          - driver: Jean Behra
+            position: 3
+            points: 4
       - round: 6
         roundName: British Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Umberto Maglioli
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Bruce Halford
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Louis Rosier
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 1
-      - round: 6
-        roundName: British Grand Prix
-        driver: Paco Godia
-        position: 8
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Cesare Perdisa
-        position: 7
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Luigi Villoresi
-        position: 6
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Horace Gould
-        position: 5
-        points: 2
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jean Behra
-        position: 3
-        points: 4
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Umberto Maglioli
+            position: null
+            points: 0
+          - driver: Bruce Halford
+            position: null
+            points: 0
+          - driver: Louis Rosier
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 1
+          - driver: Paco Godia
+            position: 8
+            points: 0
+          - driver: Cesare Perdisa
+            position: 7
+            points: 0
+          - driver: Luigi Villoresi
+            position: 6
+            points: 0
+          - driver: Horace Gould
+            position: 5
+            points: 2
+          - driver: Jean Behra
+            position: 3
+            points: 4
       - round: 7
         roundName: German Grand Prix
-        driver: Luigi Piotti
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Cesare Perdisa
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Umberto Maglioli
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Ottorino Volonterio
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Bruce Halford
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Louis Rosier
-        position: 5
-        points: 2
-      - round: 7
-        roundName: German Grand Prix
-        driver: Paco Godia
-        position: 4
-        points: 3
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jean Behra
-        position: 3
-        points: 4
-      - round: 7
-        roundName: German Grand Prix
-        driver: Stirling Moss
-        position: 2
-        points: 6
+        results:
+          - driver: Luigi Piotti
+            position: null
+            points: 0
+          - driver: Cesare Perdisa
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Umberto Maglioli
+            position: null
+            points: 0
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Ottorino Volonterio
+            position: null
+            points: 0
+          - driver: Bruce Halford
+            position: null
+            points: 0
+          - driver: Louis Rosier
+            position: 5
+            points: 2
+          - driver: Paco Godia
+            position: 4
+            points: 3
+          - driver: Jean Behra
+            position: 3
+            points: 4
+          - driver: Stirling Moss
+            position: 2
+            points: 6
       - round: 8
         roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Bruce Halford
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Umberto Maglioli
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Roy Salvadori
-        position: 11
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Gerino Gerini
-        position: 10
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Toulo de Graffenried
-        position: 7
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Luigi Piotti
-        position: 6
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Paco Godia
-        position: 4
-        points: 3
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Stirling Moss
-        position: 1
-        points: 9
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Bruce Halford
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Umberto Maglioli
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: 11
+            points: 0
+          - driver: Gerino Gerini
+            position: 10
+            points: 0
+          - driver: Toulo de Graffenried
+            position: 7
+            points: 0
+          - driver: Luigi Piotti
+            position: 6
+            points: 0
+          - driver: Paco Godia
+            position: 4
+            points: 3
+          - driver: Stirling Moss
+            position: 1
+            points: 9
   - year: 1957
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Luigi Piotti
-        position: 10
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Stirling Moss
-        position: 8
-        points: 1
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Harry Schell
-        position: 4
-        points: 3
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Carlos Menditeguy
-        position: 3
-        points: 4
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jean Behra
-        position: 2
-        points: 6
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 8
+        results:
+          - driver: Luigi Piotti
+            position: 10
+            points: 0
+          - driver: Stirling Moss
+            position: 8
+            points: 1
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
+          - driver: Harry Schell
+            position: 4
+            points: 3
+          - driver: Carlos Menditeguy
+            position: 3
+            points: 4
+          - driver: Jean Behra
+            position: 2
+            points: 6
+          - driver: Juan Fangio
+            position: 1
+            points: 8
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Luigi Piotti
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: André Simon
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Hans Herrmann
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Carlos Menditeguy
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Giorgio Scarlatti
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Masten Gregory
-        position: 3
-        points: 4
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 9
+        results:
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Luigi Piotti
+            position: null
+            points: 0
+          - driver: André Simon
+            position: null
+            points: 0
+          - driver: Hans Herrmann
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Carlos Menditeguy
+            position: null
+            points: 0
+          - driver: Giorgio Scarlatti
+            position: null
+            points: 0
+          - driver: Masten Gregory
+            position: 3
+            points: 4
+          - driver: Juan Fangio
+            position: 1
+            points: 9
       - round: 4
         roundName: French Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Carlos Menditeguy
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jean Behra
-        position: 6
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Harry Schell
-        position: 5
-        points: 2
-      - round: 4
-        roundName: French Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 8
+        results:
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Carlos Menditeguy
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: 6
+            points: 0
+          - driver: Harry Schell
+            position: 5
+            points: 2
+          - driver: Juan Fangio
+            position: 1
+            points: 8
       - round: 5
         roundName: British Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Carlos Menditeguy
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Ivor Bueb
-        position: 8
-        points: 0
+        results:
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Carlos Menditeguy
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Ivor Bueb
+            position: 8
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Paco Godia
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Hans Herrmann
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Bruce Halford
-        position: 11
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Giorgio Scarlatti
-        position: 10
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Masten Gregory
-        position: 8
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Harry Schell
-        position: 7
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jean Behra
-        position: 6
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 9
+        results:
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Paco Godia
+            position: null
+            points: 0
+          - driver: Hans Herrmann
+            position: null
+            points: 0
+          - driver: Bruce Halford
+            position: 11
+            points: 0
+          - driver: Giorgio Scarlatti
+            position: 10
+            points: 0
+          - driver: Masten Gregory
+            position: 8
+            points: 0
+          - driver: Harry Schell
+            position: 7
+            points: 0
+          - driver: Jean Behra
+            position: 6
+            points: 0
+          - driver: Juan Fangio
+            position: 1
+            points: 9
       - round: 7
         roundName: Pescara Grand Prix
-        driver: Luigi Piotti
-        position: null
-        points: 0
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Bruce Halford
-        position: null
-        points: 0
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Paco Godia
-        position: null
-        points: 0
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Giorgio Scarlatti
-        position: 6
-        points: 0
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Masten Gregory
-        position: 4
-        points: 3
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Harry Schell
-        position: 3
-        points: 4
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Juan Fangio
-        position: 2
-        points: 6
+        results:
+          - driver: Luigi Piotti
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Bruce Halford
+            position: null
+            points: 0
+          - driver: Paco Godia
+            position: null
+            points: 0
+          - driver: Giorgio Scarlatti
+            position: 6
+            points: 0
+          - driver: Masten Gregory
+            position: 4
+            points: 3
+          - driver: Harry Schell
+            position: 3
+            points: 4
+          - driver: Juan Fangio
+            position: 2
+            points: 6
       - round: 8
         roundName: Italian Grand Prix
-        driver: Ottorino Volonterio
-        position: 11
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Harry Schell
-        position: 5
-        points: 1
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Luigi Piotti
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Bruce Halford
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: André Simon
-        position: 11
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Horace Gould
-        position: 10
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Paco Godia
-        position: 9
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Giorgio Scarlatti
-        position: 5
-        points: 1
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Masten Gregory
-        position: 4
-        points: 3
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Juan Fangio
-        position: 2
-        points: 6
+        results:
+          - driver: Ottorino Volonterio
+            position: 11
+            points: 0
+          - driver: Harry Schell
+            position: 5
+            points: 1
+          - driver: Luigi Piotti
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Bruce Halford
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: André Simon
+            position: 11
+            points: 0
+          - driver: Horace Gould
+            position: 10
+            points: 0
+          - driver: Paco Godia
+            position: 9
+            points: 0
+          - driver: Giorgio Scarlatti
+            position: 5
+            points: 1
+          - driver: Masten Gregory
+            position: 4
+            points: 3
+          - driver: Juan Fangio
+            position: 2
+            points: 6
   - year: 1958
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Horace Gould
-        position: 9
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Paco Godia
-        position: 8
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Carlos Menditeguy
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Harry Schell
-        position: 6
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jean Behra
-        position: 5
-        points: 2
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Juan Fangio
-        position: 4
-        points: 4
+        results:
+          - driver: Horace Gould
+            position: 9
+            points: 0
+          - driver: Paco Godia
+            position: 8
+            points: 0
+          - driver: Carlos Menditeguy
+            position: 7
+            points: 0
+          - driver: Harry Schell
+            position: 6
+            points: 0
+          - driver: Jean Behra
+            position: 5
+            points: 2
+          - driver: Juan Fangio
+            position: 4
+            points: 4
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Paco Godia
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Louis Chiron
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Luigi Taramazzo
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: André Testut
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Maria de Filippis
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Gerino Gerini
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Ken Kavanagh
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Giorgio Scarlatti
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
+        results:
+          - driver: Paco Godia
+            position: null
+            points: 0
+          - driver: Louis Chiron
+            position: null
+            points: 0
+          - driver: Luigi Taramazzo
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: André Testut
+            position: null
+            points: 0
+          - driver: Maria de Filippis
+            position: null
+            points: 0
+          - driver: Gerino Gerini
+            position: null
+            points: 0
+          - driver: Ken Kavanagh
+            position: null
+            points: 0
+          - driver: Giorgio Scarlatti
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Masten Gregory
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Giorgio Scarlatti
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Jo Bonnier
-        position: 10
-        points: 0
+        results:
+          - driver: Horace Gould
+            position: null
+            points: 0
+          - driver: Masten Gregory
+            position: null
+            points: 0
+          - driver: Giorgio Scarlatti
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 10
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Masten Gregory
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Wolfgang Seidel
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Paco Godia
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Maria de Filippis
-        position: 10
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Jo Bonnier
-        position: 9
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Maurice Trintignant
-        position: 7
-        points: 0
+        results:
+          - driver: Masten Gregory
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: null
+            points: 0
+          - driver: Paco Godia
+            position: null
+            points: 0
+          - driver: Maria de Filippis
+            position: 10
+            points: 0
+          - driver: Jo Bonnier
+            position: 9
+            points: 0
+          - driver: Maurice Trintignant
+            position: 7
+            points: 0
       - round: 6
         roundName: French Grand Prix
-        driver: Carroll Shelby
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Paco Godia
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Troy Ruttman
-        position: 10
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Gerino Gerini
-        position: 9
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Jo Bonnier
-        position: 8
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Phil Hill
-        position: 7
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Juan Fangio
-        position: 4
-        points: 3
+        results:
+          - driver: Carroll Shelby
+            position: null
+            points: 0
+          - driver: Paco Godia
+            position: null
+            points: 0
+          - driver: Troy Ruttman
+            position: 10
+            points: 0
+          - driver: Gerino Gerini
+            position: 9
+            points: 0
+          - driver: Jo Bonnier
+            position: 8
+            points: 0
+          - driver: Phil Hill
+            position: 7
+            points: 0
+          - driver: Juan Fangio
+            position: 4
+            points: 3
       - round: 7
         roundName: British Grand Prix
-        driver: Gerino Gerini
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Carroll Shelby
-        position: 9
-        points: 0
+        results:
+          - driver: Gerino Gerini
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Carroll Shelby
+            position: 9
+            points: 0
       - round: 8
         roundName: German Grand Prix
-        driver: Troy Ruttman
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Hans Herrmann
-        position: null
-        points: 0
+        results:
+          - driver: Troy Ruttman
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Hans Herrmann
+            position: null
+            points: 0
       - round: 9
         roundName: Portuguese Grand Prix
-        driver: Maria de Filippis
-        position: null
-        points: 0
-      - round: 9
-        roundName: Portuguese Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 9
-        roundName: Portuguese Grand Prix
-        driver: Cliff Allison
-        position: null
-        points: 0
-      - round: 9
-        roundName: Portuguese Grand Prix
-        driver: Carroll Shelby
-        position: null
-        points: 0
+        results:
+          - driver: Maria de Filippis
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Cliff Allison
+            position: null
+            points: 0
+          - driver: Carroll Shelby
+            position: null
+            points: 0
       - round: 10
         roundName: Italian Grand Prix
-        driver: Carroll Shelby
-        position: 4
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Carroll Shelby
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Gerino Gerini
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Hans Herrmann
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Giulio Cabianca
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Maria de Filippis
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Masten Gregory
-        position: 4
-        points: 0
+        results:
+          - driver: Carroll Shelby
+            position: 4
+            points: 0
+          - driver: Carroll Shelby
+            position: null
+            points: 0
+          - driver: Gerino Gerini
+            position: null
+            points: 0
+          - driver: Hans Herrmann
+            position: null
+            points: 0
+          - driver: Giulio Cabianca
+            position: null
+            points: 0
+          - driver: Maria de Filippis
+            position: null
+            points: 0
+          - driver: Masten Gregory
+            position: 4
+            points: 0
       - round: 11
         roundName: Moroccan Grand Prix
-        driver: Gerino Gerini
-        position: 12
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Hans Herrmann
-        position: 9
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Masten Gregory
-        position: 6
-        points: 0
+        results:
+          - driver: Gerino Gerini
+            position: 12
+            points: 0
+          - driver: Hans Herrmann
+            position: 9
+            points: 0
+          - driver: Masten Gregory
+            position: 6
+            points: 0
   - year: 1959
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: André Testut
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Giorgio Scarlatti
-        position: null
-        points: 0
+        results:
+          - driver: André Testut
+            position: null
+            points: 0
+          - driver: Giorgio Scarlatti
+            position: null
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Azdrubal Fontes
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Fritz d'Orey
-        position: 10
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 9
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Giorgio Scarlatti
-        position: 8
-        points: 0
+        results:
+          - driver: Azdrubal Fontes
+            position: null
+            points: 0
+          - driver: Fritz d'Orey
+            position: 10
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 9
+            points: 0
+          - driver: Giorgio Scarlatti
+            position: 8
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Fritz d'Orey
-        position: null
-        points: 0
+        results:
+          - driver: Fritz d'Orey
+            position: null
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Giulio Cabianca
-        position: 15
-        points: 0
+        results:
+          - driver: Giulio Cabianca
+            position: 15
+            points: 0
       - round: 9
         roundName: United States Grand Prix
-        driver: Phil Cade
-        position: null
-        points: 0
+        results:
+          - driver: Phil Cade
+            position: null
+            points: 0
   - year: 1960
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Giorgio Scarlatti
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Antonio Creus
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Ettore Chimeri
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Nasif Estéfano
-        position: 14
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Gino Munaron
-        position: 13
-        points: 0
+        results:
+          - driver: Giorgio Scarlatti
+            position: null
+            points: 0
+          - driver: Antonio Creus
+            position: null
+            points: 0
+          - driver: Ettore Chimeri
+            position: null
+            points: 0
+          - driver: Nasif Estéfano
+            position: 14
+            points: 0
+          - driver: Gino Munaron
+            position: 13
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Horace Gould
-        position: null
-        points: 0
+        results:
+          - driver: Horace Gould
+            position: null
+            points: 0
       - round: 10
         roundName: United States Grand Prix
-        driver: Bob Drake
-        position: 13
-        points: 0
+        results:
+          - driver: Bob Drake
+            position: 13
+            points: 0

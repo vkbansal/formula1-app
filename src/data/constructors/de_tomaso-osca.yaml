@@ -14,21 +14,24 @@ championshipStandings:
     position: 17
 seasons:
   - year: 1961
-    results:
+    rounds:
       - round: 4
         roundName: French Grand Prix
-        driver: Giorgio Scarlatti
-        position: null
-        points: 0
+        results:
+          - driver: Giorgio Scarlatti
+            position: null
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Roberto Lippi
-        position: null
-        points: 0
+        results:
+          - driver: Roberto Lippi
+            position: null
+            points: 0
   - year: 1962
-    results:
+    rounds:
       - round: 7
         roundName: Italian Grand Prix
-        driver: Roberto Lippi
-        position: null
-        points: 0
+        results:
+          - driver: Roberto Lippi
+            position: null
+            points: 0

@@ -10,50 +10,46 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Duke Dinsmore
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Bobby Ball
-        position: 5
-        points: 2
+        results:
+          - driver: Duke Dinsmore
+            position: null
+            points: 0
+          - driver: Bobby Ball
+            position: 5
+            points: 2
   - year: 1953
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Jimmy Bryan
-        position: 14
-        points: 0
+        results:
+          - driver: Jimmy Bryan
+            position: 14
+            points: 0
   - year: 1954
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: George Fonder
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Bob Scott
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Len Duncan
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Andy Linden
-        position: null
-        points: 0
+        results:
+          - driver: George Fonder
+            position: null
+            points: 0
+          - driver: Bob Scott
+            position: null
+            points: 0
+          - driver: Len Duncan
+            position: null
+            points: 0
+          - driver: Andy Linden
+            position: null
+            points: 0
   - year: 1955
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Keith Andrews
-        position: null
-        points: 0
+        results:
+          - driver: Keith Andrews
+            position: null
+            points: 0

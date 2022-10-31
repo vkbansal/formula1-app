@@ -10,24 +10,28 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1952
-    results:
+    rounds:
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Robin Montgomerie-Charrington
-        position: null
-        points: 0
+        results:
+          - driver: Robin Montgomerie-Charrington
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Bill Aston
-        position: null
-        points: 0
+        results:
+          - driver: Bill Aston
+            position: null
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Bill Aston
-        position: null
-        points: 0
+        results:
+          - driver: Bill Aston
+            position: null
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Bill Aston
-        position: null
-        points: 0
+        results:
+          - driver: Bill Aston
+            position: null
+            points: 0

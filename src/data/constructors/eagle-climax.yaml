@@ -14,73 +14,86 @@ championshipStandings:
     position: 17
 seasons:
   - year: 1966
-    results:
+    rounds:
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
       - round: 3
         roundName: French Grand Prix
-        driver: Dan Gurney
-        position: 5
-        points: 2
+        results:
+          - driver: Dan Gurney
+            position: 5
+            points: 2
       - round: 4
         roundName: British Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Dan Gurney
-        position: 7
-        points: 0
+        results:
+          - driver: Dan Gurney
+            position: 7
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Phil Hill
-        position: null
-        points: 0
+        results:
+          - driver: Phil Hill
+            position: null
+            points: 0
       - round: 8
         roundName: United States Grand Prix
-        driver: Bob Bondurant
-        position: null
-        points: 0
+        results:
+          - driver: Bob Bondurant
+            position: null
+            points: 0
       - round: 9
         roundName: Mexican Grand Prix
-        driver: Dan Gurney
-        position: 5
-        points: 2
+        results:
+          - driver: Dan Gurney
+            position: 5
+            points: 2
   - year: 1967
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Richie Ginther
-        position: null
-        points: 0
+        results:
+          - driver: Richie Ginther
+            position: null
+            points: 0
       - round: 8
         roundName: Canadian Grand Prix
-        driver: Al Pease
-        position: null
-        points: 0
+        results:
+          - driver: Al Pease
+            position: null
+            points: 0
       - round: 11
         roundName: Mexican Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
   - year: 1969
-    results:
+    rounds:
       - round: 9
         roundName: Canadian Grand Prix
-        driver: Al Pease
-        position: null
-        points: 0
+        results:
+          - driver: Al Pease
+            position: null
+            points: 0

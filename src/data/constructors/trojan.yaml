@@ -12,44 +12,52 @@ championshipStandings:
     position: 14
 seasons:
   - year: 1974
-    results:
+    rounds:
       - round: 4
         roundName: Spanish Grand Prix
-        driver: Tim Schenken
-        position: 14
-        points: 0
+        results:
+          - driver: Tim Schenken
+            position: 14
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Tim Schenken
-        position: 10
-        points: 0
+        results:
+          - driver: Tim Schenken
+            position: 10
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Tim Schenken
-        position: null
-        points: 0
+        results:
+          - driver: Tim Schenken
+            position: null
+            points: 0
       - round: 8
         roundName: Dutch Grand Prix
-        driver: Tim Schenken
-        position: null
-        points: 0
+        results:
+          - driver: Tim Schenken
+            position: null
+            points: 0
       - round: 10
         roundName: British Grand Prix
-        driver: Tim Schenken
-        position: null
-        points: 0
+        results:
+          - driver: Tim Schenken
+            position: null
+            points: 0
       - round: 11
         roundName: German Grand Prix
-        driver: Tim Schenken
-        position: null
-        points: 0
+        results:
+          - driver: Tim Schenken
+            position: null
+            points: 0
       - round: 12
         roundName: Austrian Grand Prix
-        driver: Tim Schenken
-        position: 10
-        points: 0
+        results:
+          - driver: Tim Schenken
+            position: 10
+            points: 0
       - round: 13
         roundName: Italian Grand Prix
-        driver: Tim Schenken
-        position: null
-        points: 0
+        results:
+          - driver: Tim Schenken
+            position: null
+            points: 0

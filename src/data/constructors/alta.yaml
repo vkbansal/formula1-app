@@ -10,38 +10,41 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 1
         roundName: British Grand Prix
-        driver: Geoff Crossley
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Joe Kelly
-        position: null
-        points: 0
+        results:
+          - driver: Geoff Crossley
+            position: null
+            points: 0
+          - driver: Joe Kelly
+            position: null
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Geoff Crossley
-        position: 9
-        points: 0
+        results:
+          - driver: Geoff Crossley
+            position: 9
+            points: 0
   - year: 1951
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: Joe Kelly
-        position: null
-        points: 0
+        results:
+          - driver: Joe Kelly
+            position: null
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 4
         roundName: French Grand Prix
-        driver: Peter Whitehead
-        position: null
-        points: 0
+        results:
+          - driver: Peter Whitehead
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Graham Whitehead
-        position: 12
-        points: 0
+        results:
+          - driver: Graham Whitehead
+            position: 12
+            points: 0

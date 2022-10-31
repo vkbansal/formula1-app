@@ -14,46 +14,54 @@ championshipStandings:
     position: 19
 seasons:
   - year: 1976
-    results:
+    rounds:
       - round: 4
         roundName: Spanish Grand Prix
-        driver: Larry Perkins
-        position: 13
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: 13
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Larry Perkins
-        position: 8
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: 8
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Larry Perkins
-        position: null
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: null
+            points: 0
       - round: 7
         roundName: Swedish Grand Prix
-        driver: Larry Perkins
-        position: null
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: null
+            points: 0
       - round: 12
         roundName: Dutch Grand Prix
-        driver: Larry Perkins
-        position: null
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: null
+            points: 0
       - round: 13
         roundName: Italian Grand Prix
-        driver: Larry Perkins
-        position: null
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: null
+            points: 0
   - year: 1977
-    results:
+    rounds:
       - round: 13
         roundName: Dutch Grand Prix
-        driver: Brian Henton
-        position: null
-        points: 0
+        results:
+          - driver: Brian Henton
+            position: null
+            points: 0
       - round: 14
         roundName: Italian Grand Prix
-        driver: Brian Henton
-        position: null
-        points: 0
+        results:
+          - driver: Brian Henton
+            position: null
+            points: 0

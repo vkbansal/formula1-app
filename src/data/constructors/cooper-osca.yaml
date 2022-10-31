@@ -12,9 +12,10 @@ championshipStandings:
     position: 11
 seasons:
   - year: 1959
-    results:
+    rounds:
       - round: 9
         roundName: United States Grand Prix
-        driver: Alessandro de Tomaso
-        position: null
-        points: 0
+        results:
+          - driver: Alessandro de Tomaso
+            position: null
+            points: 0

@@ -18,395 +18,340 @@ championshipStandings:
     position: 8
 seasons:
   - year: 1966
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Jack Brabham
-        position: 4
-        points: 3
+        results:
+          - driver: Jack Brabham
+            position: 4
+            points: 3
       - round: 3
         roundName: French Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
-      - round: 3
-        roundName: French Grand Prix
-        driver: Jack Brabham
-        position: 1
-        points: 9
+        results:
+          - driver: Denny Hulme
+            position: 3
+            points: 4
+          - driver: Jack Brabham
+            position: 1
+            points: 9
       - round: 4
         roundName: British Grand Prix
-        driver: Denny Hulme
-        position: 2
-        points: 6
-      - round: 4
-        roundName: British Grand Prix
-        driver: Jack Brabham
-        position: 1
-        points: 9
+        results:
+          - driver: Denny Hulme
+            position: 2
+            points: 6
+          - driver: Jack Brabham
+            position: 1
+            points: 9
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Jack Brabham
-        position: 1
-        points: 9
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 1
+            points: 9
       - round: 6
         roundName: German Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jack Brabham
-        position: 1
-        points: 9
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 1
+            points: 9
       - round: 7
         roundName: Italian Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 3
+            points: 4
       - round: 8
         roundName: United States Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
       - round: 9
         roundName: Mexican Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
-      - round: 9
-        roundName: Mexican Grand Prix
-        driver: Jack Brabham
-        position: 2
-        points: 6
+        results:
+          - driver: Denny Hulme
+            position: 3
+            points: 4
+          - driver: Jack Brabham
+            position: 2
+            points: 6
   - year: 1967
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Jack Brabham
-        position: 6
-        points: 1
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Denny Hulme
-        position: 4
-        points: 3
+        results:
+          - driver: Jack Brabham
+            position: 6
+            points: 1
+          - driver: Denny Hulme
+            position: 4
+            points: 3
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Denny Hulme
-        position: 1
-        points: 9
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 1
+            points: 9
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Jack Brabham
-        position: 2
-        points: 6
+        results:
+          - driver: Denny Hulme
+            position: 3
+            points: 4
+          - driver: Jack Brabham
+            position: 2
+            points: 6
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
       - round: 5
         roundName: French Grand Prix
-        driver: Denny Hulme
-        position: 2
-        points: 6
-      - round: 5
-        roundName: French Grand Prix
-        driver: Jack Brabham
-        position: 1
-        points: 9
+        results:
+          - driver: Denny Hulme
+            position: 2
+            points: 6
+          - driver: Jack Brabham
+            position: 1
+            points: 9
       - round: 6
         roundName: British Grand Prix
-        driver: Guy Ligier
-        position: 10
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jack Brabham
-        position: 4
-        points: 3
-      - round: 6
-        roundName: British Grand Prix
-        driver: Denny Hulme
-        position: 2
-        points: 6
+        results:
+          - driver: Guy Ligier
+            position: 10
+            points: 0
+          - driver: Jack Brabham
+            position: 4
+            points: 3
+          - driver: Denny Hulme
+            position: 2
+            points: 6
       - round: 7
         roundName: German Grand Prix
-        driver: Guy Ligier
-        position: 8
-        points: 1
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jack Brabham
-        position: 2
-        points: 6
-      - round: 7
-        roundName: German Grand Prix
-        driver: Denny Hulme
-        position: 1
-        points: 9
+        results:
+          - driver: Guy Ligier
+            position: 8
+            points: 1
+          - driver: Jack Brabham
+            position: 2
+            points: 6
+          - driver: Denny Hulme
+            position: 1
+            points: 9
       - round: 8
         roundName: Canadian Grand Prix
-        driver: Denny Hulme
-        position: 2
-        points: 6
-      - round: 8
-        roundName: Canadian Grand Prix
-        driver: Jack Brabham
-        position: 1
-        points: 9
+        results:
+          - driver: Denny Hulme
+            position: 2
+            points: 6
+          - driver: Jack Brabham
+            position: 1
+            points: 9
       - round: 9
         roundName: Italian Grand Prix
-        driver: Guy Ligier
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jack Brabham
-        position: 2
-        points: 6
+        results:
+          - driver: Guy Ligier
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 2
+            points: 6
       - round: 10
         roundName: United States Grand Prix
-        driver: Guy Ligier
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Jack Brabham
-        position: 5
-        points: 2
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
+        results:
+          - driver: Guy Ligier
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 5
+            points: 2
+          - driver: Denny Hulme
+            position: 3
+            points: 4
       - round: 11
         roundName: Mexican Grand Prix
-        driver: Guy Ligier
-        position: 11
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Jack Brabham
-        position: 2
-        points: 6
+        results:
+          - driver: Guy Ligier
+            position: 11
+            points: 0
+          - driver: Denny Hulme
+            position: 3
+            points: 4
+          - driver: Jack Brabham
+            position: 2
+            points: 6
   - year: 1968
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Dave Charlton
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: John Love
-        position: 9
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jochen Rindt
-        position: 3
-        points: 4
+        results:
+          - driver: Dave Charlton
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: John Love
+            position: 9
+            points: 0
+          - driver: Jochen Rindt
+            position: 3
+            points: 4
       - round: 2
         roundName: Spanish Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Silvio Moser
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
+        results:
+          - driver: Silvio Moser
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Silvio Moser
-        position: 5
-        points: 2
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Silvio Moser
+            position: 5
+            points: 2
       - round: 6
         roundName: French Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
       - round: 7
         roundName: British Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Silvio Moser
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Silvio Moser
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
       - round: 8
         roundName: German Grand Prix
-        driver: Kurt Ahrens
-        position: 12
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Jack Brabham
-        position: 5
-        points: 2
-      - round: 8
-        roundName: German Grand Prix
-        driver: Jochen Rindt
-        position: 3
-        points: 4
+        results:
+          - driver: Kurt Ahrens
+            position: 12
+            points: 0
+          - driver: Jack Brabham
+            position: 5
+            points: 2
+          - driver: Jochen Rindt
+            position: 3
+            points: 4
       - round: 9
         roundName: Italian Grand Prix
-        driver: Silvio Moser
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
+        results:
+          - driver: Silvio Moser
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
       - round: 10
         roundName: Canadian Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 10
-        roundName: Canadian Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
       - round: 11
         roundName: United States Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 11
-        roundName: United States Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
       - round: 12
         roundName: Mexican Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 12
-        roundName: Mexican Grand Prix
-        driver: Jack Brabham
-        position: 10
-        points: 0
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 10
+            points: 0
   - year: 1969
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Peter de Klerk
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Sam Tingle
-        position: 8
-        points: 0
+        results:
+          - driver: Peter de Klerk
+            position: null
+            points: 0
+          - driver: Sam Tingle
+            position: 8
+            points: 0

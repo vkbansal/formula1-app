@@ -10,9 +10,10 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Bill Schindler
-        position: null
-        points: 0
+        results:
+          - driver: Bill Schindler
+            position: null
+            points: 0

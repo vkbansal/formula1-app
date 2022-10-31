@@ -12,9 +12,10 @@ championshipStandings:
     position: 10
 seasons:
   - year: 1962
-    results:
+    rounds:
       - round: 6
         roundName: German Grand Prix
-        driver: Lucien Bianchi
-        position: 16
-        points: 0
+        results:
+          - driver: Lucien Bianchi
+            position: 16
+            points: 0

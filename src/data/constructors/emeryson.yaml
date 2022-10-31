@@ -14,63 +14,68 @@ championshipStandings:
     position: 9
 seasons:
   - year: 1956
-    results:
+    rounds:
       - round: 6
         roundName: British Grand Prix
-        driver: Paul Emery
-        position: null
-        points: 0
+        results:
+          - driver: Paul Emery
+            position: null
+            points: 0
   - year: 1961
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Olivier Gendebien
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Lucien Bianchi
-        position: null
-        points: 0
+        results:
+          - driver: Olivier Gendebien
+            position: null
+            points: 0
+          - driver: Lucien Bianchi
+            position: null
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Olivier Gendebien
-        position: null
-        points: 0
+        results:
+          - driver: Olivier Gendebien
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Olivier Gendebien
-        position: null
-        points: 0
+        results:
+          - driver: Olivier Gendebien
+            position: null
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: André Pilette
-        position: null
-        points: 0
+        results:
+          - driver: André Pilette
+            position: null
+            points: 0
   - year: 1962
-    results:
+    rounds:
       - round: 1
         roundName: Dutch Grand Prix
-        driver: Wolfgang Seidel
-        position: null
-        points: 0
+        results:
+          - driver: Wolfgang Seidel
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: John Campbell-Jones
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Tony Settember
-        position: 11
-        points: 0
+        results:
+          - driver: John Campbell-Jones
+            position: null
+            points: 0
+          - driver: Tony Settember
+            position: 11
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Tony Settember
-        position: null
-        points: 0
+        results:
+          - driver: Tony Settember
+            position: null
+            points: 0
       - round: 9
         roundName: South African Grand Prix
-        driver: Tony Settember
-        position: null
-        points: 0
+        results:
+          - driver: Tony Settember
+            position: null
+            points: 0

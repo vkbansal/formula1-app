@@ -10,14 +10,13 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1961
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: Jack Fairman
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
+        results:
+          - driver: Jack Fairman
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0

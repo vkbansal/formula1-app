@@ -12,50 +12,49 @@ championshipStandings:
     position: 9
 seasons:
   - year: 1951
-    results:
+    rounds:
       - round: 7
         roundName: Italian Grand Prix
-        driver: Franco Rol
-        position: 9
-        points: 0
+        results:
+          - driver: Franco Rol
+            position: 9
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 8
         roundName: Italian Grand Prix
-        driver: Élie Bayol
-        position: null
-        points: 0
+        results:
+          - driver: Élie Bayol
+            position: null
+            points: 0
   - year: 1953
-    results:
+    rounds:
       - round: 5
         roundName: French Grand Prix
-        driver: Élie Bayol
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Louis Chiron
-        position: 15
-        points: 0
+        results:
+          - driver: Élie Bayol
+            position: null
+            points: 0
+          - driver: Louis Chiron
+            position: 15
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Élie Bayol
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Louis Chiron
-        position: 10
-        points: 0
+        results:
+          - driver: Élie Bayol
+            position: null
+            points: 0
+          - driver: Louis Chiron
+            position: 10
+            points: 0
   - year: 1958
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Luigi Piotti
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Giulio Cabianca
-        position: null
-        points: 0
+        results:
+          - driver: Luigi Piotti
+            position: null
+            points: 0
+          - driver: Giulio Cabianca
+            position: null
+            points: 0

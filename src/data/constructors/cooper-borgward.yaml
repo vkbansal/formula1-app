@@ -12,19 +12,19 @@ championshipStandings:
     position: 10
 seasons:
   - year: 1959
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: Ivor Bueb
-        position: 13
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Chris Bristow
-        position: 10
-        points: 0
+        results:
+          - driver: Ivor Bueb
+            position: 13
+            points: 0
+          - driver: Chris Bristow
+            position: 10
+            points: 0
       - round: 9
         roundName: United States Grand Prix
-        driver: George Constantine
-        position: null
-        points: 0
+        results:
+          - driver: George Constantine
+            position: null
+            points: 0

@@ -12,9 +12,10 @@ championshipStandings:
     position: 16
 seasons:
   - year: 1959
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: Mike Parkes
-        position: null
-        points: 0
+        results:
+          - driver: Mike Parkes
+            position: null
+            points: 0

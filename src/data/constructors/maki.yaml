@@ -16,48 +16,56 @@ championshipStandings:
     position: 21
 seasons:
   - year: 1974
-    results:
+    rounds:
       - round: 10
         roundName: British Grand Prix
-        driver: Howden Ganley
-        position: null
-        points: 0
+        results:
+          - driver: Howden Ganley
+            position: null
+            points: 0
       - round: 11
         roundName: German Grand Prix
-        driver: Howden Ganley
-        position: null
-        points: 0
+        results:
+          - driver: Howden Ganley
+            position: null
+            points: 0
   - year: 1975
-    results:
+    rounds:
       - round: 8
         roundName: Dutch Grand Prix
-        driver: Hiroshi Fushida
-        position: null
-        points: 0
+        results:
+          - driver: Hiroshi Fushida
+            position: null
+            points: 0
       - round: 10
         roundName: British Grand Prix
-        driver: Hiroshi Fushida
-        position: null
-        points: 0
+        results:
+          - driver: Hiroshi Fushida
+            position: null
+            points: 0
       - round: 11
         roundName: German Grand Prix
-        driver: Tony Trimmer
-        position: null
-        points: 0
+        results:
+          - driver: Tony Trimmer
+            position: null
+            points: 0
       - round: 12
         roundName: Austrian Grand Prix
-        driver: Tony Trimmer
-        position: null
-        points: 0
+        results:
+          - driver: Tony Trimmer
+            position: null
+            points: 0
       - round: 13
         roundName: Italian Grand Prix
-        driver: Tony Trimmer
-        position: null
-        points: 0
+        results:
+          - driver: Tony Trimmer
+            position: null
+            points: 0
   - year: 1976
-    results:
+    rounds:
       - round: 16
         roundName: Japanese Grand Prix
-        driver: Tony Trimmer
-        position: null
-        points: 0
+        results:
+          - driver: Tony Trimmer
+            position: null
+            points: 0

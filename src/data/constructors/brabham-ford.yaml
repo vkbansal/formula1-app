@@ -22,304 +22,257 @@ championshipStandings:
     position: 13
 seasons:
   - year: 1964
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: Frank Gardner
-        position: null
-        points: 0
+        results:
+          - driver: Frank Gardner
+            position: null
+            points: 0
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: David Prophet
-        position: 14
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Paul Hawkins
-        position: 9
-        points: 0
+        results:
+          - driver: David Prophet
+            position: 14
+            points: 0
+          - driver: Paul Hawkins
+            position: 9
+            points: 0
   - year: 1967
-    results:
+    rounds:
       - round: 7
         roundName: German Grand Prix
-        driver: Alan Rees
-        position: 7
-        points: 0
+        results:
+          - driver: Alan Rees
+            position: 7
+            points: 0
   - year: 1969
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Jacky Ickx
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
+        results:
+          - driver: Jacky Ickx
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
       - round: 2
         roundName: Spanish Grand Prix
-        driver: Piers Courage
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Jacky Ickx
-        position: 6
-        points: 1
+        results:
+          - driver: Piers Courage
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jacky Ickx
+            position: 6
+            points: 1
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Silvio Moser
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Jacky Ickx
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Piers Courage
-        position: 2
-        points: 6
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Silvio Moser
+            position: null
+            points: 0
+          - driver: Jacky Ickx
+            position: null
+            points: 0
+          - driver: Piers Courage
+            position: 2
+            points: 6
       - round: 4
         roundName: Dutch Grand Prix
-        driver: Piers Courage
-        position: null
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Silvio Moser
-        position: null
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Jack Brabham
-        position: 6
-        points: 1
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Jacky Ickx
-        position: 5
-        points: 2
+        results:
+          - driver: Piers Courage
+            position: null
+            points: 0
+          - driver: Silvio Moser
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 6
+            points: 1
+          - driver: Jacky Ickx
+            position: 5
+            points: 2
       - round: 5
         roundName: French Grand Prix
-        driver: Piers Courage
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Silvio Moser
-        position: 7
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Jacky Ickx
-        position: 3
-        points: 4
+        results:
+          - driver: Piers Courage
+            position: null
+            points: 0
+          - driver: Silvio Moser
+            position: 7
+            points: 0
+          - driver: Jacky Ickx
+            position: 3
+            points: 4
       - round: 6
         roundName: British Grand Prix
-        driver: Piers Courage
-        position: 5
-        points: 2
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jacky Ickx
-        position: 2
-        points: 6
+        results:
+          - driver: Piers Courage
+            position: 5
+            points: 2
+          - driver: Jacky Ickx
+            position: 2
+            points: 6
       - round: 7
         roundName: German Grand Prix
-        driver: Piers Courage
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jacky Ickx
-        position: 1
-        points: 9
+        results:
+          - driver: Piers Courage
+            position: null
+            points: 0
+          - driver: Jacky Ickx
+            position: 1
+            points: 9
       - round: 8
         roundName: Italian Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Silvio Moser
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jacky Ickx
-        position: 10
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Piers Courage
-        position: 5
-        points: 2
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Silvio Moser
+            position: null
+            points: 0
+          - driver: Jacky Ickx
+            position: 10
+            points: 0
+          - driver: Piers Courage
+            position: 5
+            points: 2
       - round: 9
         roundName: Canadian Grand Prix
-        driver: Silvio Moser
-        position: null
-        points: 0
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Piers Courage
-        position: null
-        points: 0
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Jack Brabham
-        position: 2
-        points: 6
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Jacky Ickx
-        position: 1
-        points: 9
+        results:
+          - driver: Silvio Moser
+            position: null
+            points: 0
+          - driver: Piers Courage
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 2
+            points: 6
+          - driver: Jacky Ickx
+            position: 1
+            points: 9
       - round: 10
         roundName: United States Grand Prix
-        driver: Jacky Ickx
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Silvio Moser
-        position: 6
-        points: 1
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Jack Brabham
-        position: 4
-        points: 3
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Piers Courage
-        position: 2
-        points: 6
+        results:
+          - driver: Jacky Ickx
+            position: null
+            points: 0
+          - driver: Silvio Moser
+            position: 6
+            points: 1
+          - driver: Jack Brabham
+            position: 4
+            points: 3
+          - driver: Piers Courage
+            position: 2
+            points: 6
       - round: 11
         roundName: Mexican Grand Prix
-        driver: Silvio Moser
-        position: 11
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Piers Courage
-        position: 10
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Jack Brabham
-        position: 3
-        points: 4
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Jacky Ickx
-        position: 2
-        points: 6
+        results:
+          - driver: Silvio Moser
+            position: 11
+            points: 0
+          - driver: Piers Courage
+            position: 10
+            points: 0
+          - driver: Jack Brabham
+            position: 3
+            points: 4
+          - driver: Jacky Ickx
+            position: 2
+            points: 6
   - year: 1976
-    results:
+    rounds:
       - round: 4
         roundName: Spanish Grand Prix
-        driver: Emilio de Villota
-        position: null
-        points: 0
-      - round: 4
-        roundName: Spanish Grand Prix
-        driver: Loris Kessel
-        position: null
-        points: 0
+        results:
+          - driver: Emilio de Villota
+            position: null
+            points: 0
+          - driver: Loris Kessel
+            position: null
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Patrick Nève
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Loris Kessel
-        position: 12
-        points: 0
+        results:
+          - driver: Patrick Nève
+            position: null
+            points: 0
+          - driver: Loris Kessel
+            position: 12
+            points: 0
       - round: 7
         roundName: Swedish Grand Prix
-        driver: Jac Nelleman
-        position: null
-        points: 0
-      - round: 7
-        roundName: Swedish Grand Prix
-        driver: Loris Kessel
-        position: null
-        points: 0
+        results:
+          - driver: Jac Nelleman
+            position: null
+            points: 0
+          - driver: Loris Kessel
+            position: null
+            points: 0
       - round: 8
         roundName: French Grand Prix
-        driver: Loris Kessel
-        position: null
-        points: 0
-      - round: 8
-        roundName: French Grand Prix
-        driver: Damien Magee
-        position: null
-        points: 0
+        results:
+          - driver: Loris Kessel
+            position: null
+            points: 0
+          - driver: Damien Magee
+            position: null
+            points: 0
       - round: 9
         roundName: British Grand Prix
-        driver: Lella Lombardi
-        position: null
-        points: 0
-      - round: 9
-        roundName: British Grand Prix
-        driver: Bob Evans
-        position: null
-        points: 0
+        results:
+          - driver: Lella Lombardi
+            position: null
+            points: 0
+          - driver: Bob Evans
+            position: null
+            points: 0
       - round: 10
         roundName: German Grand Prix
-        driver: Lella Lombardi
-        position: null
-        points: 0
+        results:
+          - driver: Lella Lombardi
+            position: null
+            points: 0
       - round: 11
         roundName: Austrian Grand Prix
-        driver: Loris Kessel
-        position: null
-        points: 0
-      - round: 11
-        roundName: Austrian Grand Prix
-        driver: Lella Lombardi
-        position: 12
-        points: 0
+        results:
+          - driver: Loris Kessel
+            position: null
+            points: 0
+          - driver: Lella Lombardi
+            position: 12
+            points: 0
   - year: 1979
-    results:
+    rounds:
       - round: 14
         roundName: Canadian Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
-      - round: 14
-        roundName: Canadian Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
-      - round: 14
-        roundName: Canadian Grand Prix
-        driver: Ricardo Zunino
-        position: 7
-        points: 0
+        results:
+          - driver: Niki Lauda
+            position: null
+            points: 0
+          - driver: Nelson Piquet
+            position: null
+            points: 0
+          - driver: Ricardo Zunino
+            position: 7
+            points: 0
       - round: 15
         roundName: United States Grand Prix
-        driver: Ricardo Zunino
-        position: null
-        points: 0
-      - round: 15
-        roundName: United States Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
+        results:
+          - driver: Ricardo Zunino
+            position: null
+            points: 0
+          - driver: Nelson Piquet
+            position: null
+            points: 0

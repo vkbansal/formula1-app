@@ -12,24 +12,28 @@ championshipStandings:
     position: 16
 seasons:
   - year: 1974
-    results:
+    rounds:
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Tom Pryce
-        position: null
-        points: 0
+        results:
+          - driver: Tom Pryce
+            position: null
+            points: 0
       - round: 10
         roundName: British Grand Prix
-        driver: David Purley
-        position: null
-        points: 0
+        results:
+          - driver: David Purley
+            position: null
+            points: 0
       - round: 11
         roundName: German Grand Prix
-        driver: Ian Ashley
-        position: 14
-        points: 0
+        results:
+          - driver: Ian Ashley
+            position: 14
+            points: 0
       - round: 12
         roundName: Austrian Grand Prix
-        driver: Ian Ashley
-        position: null
-        points: 0
+        results:
+          - driver: Ian Ashley
+            position: null
+            points: 0

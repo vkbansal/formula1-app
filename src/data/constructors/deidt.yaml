@@ -10,48 +10,41 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Tony Bettenhausen
-        position: null
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Mauri Rose
-        position: 3
-        points: 4
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Bill Holland
-        position: 2
-        points: 6
+        results:
+          - driver: Tony Bettenhausen
+            position: null
+            points: 0
+          - driver: Mauri Rose
+            position: 3
+            points: 4
+          - driver: Bill Holland
+            position: 2
+            points: 6
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Mack Hellings
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Mauri Rose
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Tony Bettenhausen
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Duane Carter
-        position: 8
-        points: 0
+        results:
+          - driver: Mack Hellings
+            position: null
+            points: 0
+          - driver: Mauri Rose
+            position: null
+            points: 0
+          - driver: Tony Bettenhausen
+            position: null
+            points: 0
+          - driver: Duane Carter
+            position: 8
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Tony Bettenhausen
-        position: null
-        points: 0
+        results:
+          - driver: Tony Bettenhausen
+            position: null
+            points: 0

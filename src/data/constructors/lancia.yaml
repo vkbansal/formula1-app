@@ -10,61 +10,51 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1954
-    results:
+    rounds:
       - round: 9
         roundName: Spanish Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Alberto Ascari
-        position: null
-        points: 1
+        results:
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Alberto Ascari
+            position: null
+            points: 1
   - year: 1955
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Luigi Villoresi
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Alberto Ascari
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Eugenio Castellotti
-        position: null
-        points: 0
+        results:
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Luigi Villoresi
+            position: null
+            points: 0
+          - driver: Alberto Ascari
+            position: null
+            points: 0
+          - driver: Eugenio Castellotti
+            position: null
+            points: 0
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Alberto Ascari
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Louis Chiron
-        position: 6
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Luigi Villoresi
-        position: 5
-        points: 2
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Eugenio Castellotti
-        position: 2
-        points: 6
+        results:
+          - driver: Alberto Ascari
+            position: null
+            points: 0
+          - driver: Louis Chiron
+            position: 6
+            points: 0
+          - driver: Luigi Villoresi
+            position: 5
+            points: 2
+          - driver: Eugenio Castellotti
+            position: 2
+            points: 6
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Eugenio Castellotti
-        position: null
-        points: 0
+        results:
+          - driver: Eugenio Castellotti
+            position: null
+            points: 0

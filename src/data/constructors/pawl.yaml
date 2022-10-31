@@ -10,28 +10,29 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Jimmy Davies
-        position: null
-        points: 0
+        results:
+          - driver: Jimmy Davies
+            position: null
+            points: 0
   - year: 1954
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Eddie Johnson
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Rodger Ward
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Johnson
+            position: null
+            points: 0
+          - driver: Rodger Ward
+            position: null
+            points: 0
   - year: 1955
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Eddie Russo
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Russo
+            position: null
+            points: 0

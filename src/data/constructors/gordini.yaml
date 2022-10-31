@@ -10,522 +10,417 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1952
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 1
-        roundName: Swiss Grand Prix
-        driver: Jean Behra
-        position: 3
-        points: 4
+        results:
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: 3
+            points: 4
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Johnny Claes
-        position: 8
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Robert Manzon
-        position: 3
-        points: 4
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Johnny Claes
+            position: 8
+            points: 0
+          - driver: Robert Manzon
+            position: 3
+            points: 4
       - round: 4
         roundName: French Grand Prix
-        driver: Prince Bira
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jean Behra
-        position: 7
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Robert Manzon
-        position: 4
-        points: 3
+        results:
+          - driver: Prince Bira
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: 7
+            points: 0
+          - driver: Robert Manzon
+            position: 4
+            points: 3
       - round: 5
         roundName: British Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Prince Bira
-        position: 11
-        points: 0
+        results:
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: 11
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jean Behra
-        position: 5
-        points: 2
+        results:
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: 5
+            points: 2
       - round: 7
         roundName: Dutch Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 7
-        roundName: Dutch Grand Prix
-        driver: Maurice Trintignant
-        position: 6
-        points: 0
-      - round: 7
-        roundName: Dutch Grand Prix
-        driver: Robert Manzon
-        position: 5
-        points: 2
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: 6
+            points: 0
+          - driver: Robert Manzon
+            position: 5
+            points: 2
       - round: 8
         roundName: Italian Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Robert Manzon
-        position: 14
-        points: 0
+        results:
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Robert Manzon
+            position: 14
+            points: 0
   - year: 1953
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Harry Schell
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Carlos Menditeguy
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Maurice Trintignant
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jean Behra
-        position: 6
-        points: 0
+        results:
+          - driver: Harry Schell
+            position: 7
+            points: 0
+          - driver: Carlos Menditeguy
+            position: null
+            points: 0
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: 7
+            points: 0
+          - driver: Jean Behra
+            position: 6
+            points: 0
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Maurice Trintignant
-        position: 6
-        points: 0
+        results:
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: 6
+            points: 0
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Fred Wacker
-        position: 9
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Harry Schell
-        position: 7
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Maurice Trintignant
-        position: 5
-        points: 2
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Fred Wacker
+            position: 9
+            points: 0
+          - driver: Harry Schell
+            position: 7
+            points: 0
+          - driver: Maurice Trintignant
+            position: 5
+            points: 2
       - round: 5
         roundName: French Grand Prix
-        driver: Roberto Mieres
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Jean Behra
-        position: 10
-        points: 0
+        results:
+          - driver: Roberto Mieres
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: 10
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
+        results:
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
       - round: 7
         roundName: German Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
+        results:
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Harry Schell
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
       - round: 8
         roundName: Swiss Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 8
-        roundName: Swiss Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Harry Schell
-        position: 9
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Roberto Mieres
-        position: 6
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Maurice Trintignant
-        position: 5
-        points: 2
+        results:
+          - driver: Harry Schell
+            position: 9
+            points: 0
+          - driver: Roberto Mieres
+            position: 6
+            points: 0
+          - driver: Maurice Trintignant
+            position: 5
+            points: 2
   - year: 1954
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Roger Loyer
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Élie Bayol
-        position: 5
-        points: 2
+        results:
+          - driver: Roger Loyer
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Élie Bayol
+            position: 5
+            points: 2
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Paul Frère
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: André Pilette
-        position: 5
-        points: 2
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Paul Frère
+            position: null
+            points: 0
+          - driver: André Pilette
+            position: 5
+            points: 2
       - round: 4
         roundName: French Grand Prix
-        driver: Jacques Pollet
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Georges Berger
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Paul Frère
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jean Behra
-        position: 6
-        points: 0
+        results:
+          - driver: Jacques Pollet
+            position: null
+            points: 0
+          - driver: Georges Berger
+            position: null
+            points: 0
+          - driver: Paul Frère
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: 6
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Clemar Bucci
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: André Pilette
-        position: 9
-        points: 0
+        results:
+          - driver: Clemar Bucci
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: André Pilette
+            position: 9
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: André Pilette
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Paul Frère
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Clemar Bucci
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jean Behra
-        position: 10
-        points: 0
+        results:
+          - driver: André Pilette
+            position: null
+            points: 0
+          - driver: Paul Frère
+            position: null
+            points: 0
+          - driver: Clemar Bucci
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: 10
+            points: 0
       - round: 7
         roundName: Swiss Grand Prix
-        driver: Clemar Bucci
-        position: null
-        points: 0
-      - round: 7
-        roundName: Swiss Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 7
-        roundName: Swiss Grand Prix
-        driver: Fred Wacker
-        position: null
-        points: 0
+        results:
+          - driver: Clemar Bucci
+            position: null
+            points: 0
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Fred Wacker
+            position: null
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Clemar Bucci
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Fred Wacker
-        position: 6
-        points: 0
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Clemar Bucci
+            position: null
+            points: 0
+          - driver: Fred Wacker
+            position: 6
+            points: 0
       - round: 9
         roundName: Spanish Grand Prix
-        driver: Jean Behra
-        position: null
-        points: 0
-      - round: 9
-        roundName: Spanish Grand Prix
-        driver: Jacques Pollet
-        position: null
-        points: 0
+        results:
+          - driver: Jean Behra
+            position: null
+            points: 0
+          - driver: Jacques Pollet
+            position: null
+            points: 0
   - year: 1955
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Pablo Birger
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Élie Bayol
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Jesús Iglesias
-        position: null
-        points: 0
+        results:
+          - driver: Pablo Birger
+            position: null
+            points: 0
+          - driver: Élie Bayol
+            position: null
+            points: 0
+          - driver: Jesús Iglesias
+            position: null
+            points: 0
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Élie Bayol
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jacques Pollet
-        position: 7
-        points: 0
+        results:
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: Élie Bayol
+            position: null
+            points: 0
+          - driver: Jacques Pollet
+            position: 7
+            points: 0
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Jacques Pollet
-        position: 10
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Hernando da Silva Ramos
-        position: 8
-        points: 0
+        results:
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: Jacques Pollet
+            position: 10
+            points: 0
+          - driver: Hernando da Silva Ramos
+            position: 8
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Hernando da Silva Ramos
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Mike Sparken
-        position: 7
-        points: 0
+        results:
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: Hernando da Silva Ramos
+            position: null
+            points: 0
+          - driver: Mike Sparken
+            position: 7
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Jean Lucas
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Hernando da Silva Ramos
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jacques Pollet
-        position: null
-        points: 0
+        results:
+          - driver: Jean Lucas
+            position: null
+            points: 0
+          - driver: Hernando da Silva Ramos
+            position: null
+            points: 0
+          - driver: Jacques Pollet
+            position: null
+            points: 0
   - year: 1956
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: André Pilette
-        position: 6
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Élie Bayol
-        position: 6
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Hernando da Silva Ramos
-        position: 5
-        points: 2
+        results:
+          - driver: André Pilette
+            position: 6
+            points: 0
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: Élie Bayol
+            position: 6
+            points: 0
+          - driver: Hernando da Silva Ramos
+            position: 5
+            points: 2
       - round: 5
         roundName: French Grand Prix
-        driver: André Pilette
-        position: 11
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Robert Manzon
-        position: 9
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Hernando da Silva Ramos
-        position: 8
-        points: 0
+        results:
+          - driver: André Pilette
+            position: 11
+            points: 0
+          - driver: Robert Manzon
+            position: 9
+            points: 0
+          - driver: Hernando da Silva Ramos
+            position: 8
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Hernando da Silva Ramos
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Robert Manzon
-        position: 9
-        points: 0
+        results:
+          - driver: Hernando da Silva Ramos
+            position: null
+            points: 0
+          - driver: Robert Manzon
+            position: 9
+            points: 0
       - round: 7
         roundName: German Grand Prix
-        driver: André Pilette
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: André Milhoux
-        position: null
-        points: 0
+        results:
+          - driver: André Pilette
+            position: null
+            points: 0
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: André Milhoux
+            position: null
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Hernando da Silva Ramos
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Robert Manzon
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: André Simon
-        position: 9
-        points: 0
+        results:
+          - driver: Hernando da Silva Ramos
+            position: null
+            points: 0
+          - driver: Robert Manzon
+            position: null
+            points: 0
+          - driver: André Simon
+            position: 9
+            points: 0

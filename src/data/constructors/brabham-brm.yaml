@@ -16,213 +16,203 @@ championshipStandings:
     position: 11
 seasons:
   - year: 1964
-    results:
+    rounds:
       - round: 2
         roundName: Dutch Grand Prix
-        driver: Jo Siffert
-        position: 13
-        points: 0
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Jo Bonnier
-        position: 9
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: 13
+            points: 0
+          - driver: Jo Bonnier
+            position: 9
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Ian Raby
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jo Siffert
-        position: 11
-        points: 0
+        results:
+          - driver: Ian Raby
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 11
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jo Siffert
-        position: 4
-        points: 3
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 4
+            points: 3
       - round: 7
         roundName: Austrian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 7
-        roundName: Austrian Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Ian Raby
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Giacomo Russo
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jo Siffert
-        position: 7
-        points: 0
+        results:
+          - driver: Ian Raby
+            position: null
+            points: 0
+          - driver: Giacomo Russo
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 7
+            points: 0
       - round: 9
         roundName: United States Grand Prix
-        driver: Hap Sharp
-        position: null
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Jo Siffert
-        position: 3
-        points: 4
+        results:
+          - driver: Hap Sharp
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 3
+            points: 4
       - round: 10
         roundName: Mexican Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Hap Sharp
-        position: 13
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Hap Sharp
+            position: 13
+            points: 0
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Frank Gardner
-        position: 12
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jo Siffert
-        position: 7
-        points: 0
+        results:
+          - driver: Frank Gardner
+            position: 12
+            points: 0
+          - driver: Jo Siffert
+            position: 7
+            points: 0
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Frank Gardner
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jo Siffert
-        position: 6
-        points: 1
+        results:
+          - driver: Frank Gardner
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 6
+            points: 1
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Frank Gardner
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jo Siffert
-        position: 8
-        points: 0
+        results:
+          - driver: Frank Gardner
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 8
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Jo Siffert
-        position: 6
-        points: 1
+        results:
+          - driver: Jo Siffert
+            position: 6
+            points: 1
       - round: 5
         roundName: British Grand Prix
-        driver: Ian Raby
-        position: 11
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jo Siffert
-        position: 9
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Frank Gardner
-        position: 8
-        points: 0
+        results:
+          - driver: Ian Raby
+            position: 11
+            points: 0
+          - driver: Jo Siffert
+            position: 9
+            points: 0
+          - driver: Frank Gardner
+            position: 8
+            points: 0
       - round: 6
         roundName: Dutch Grand Prix
-        driver: Jo Siffert
-        position: 13
-        points: 0
-      - round: 6
-        roundName: Dutch Grand Prix
-        driver: Frank Gardner
-        position: 11
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: 13
+            points: 0
+          - driver: Frank Gardner
+            position: 11
+            points: 0
       - round: 7
         roundName: German Grand Prix
-        driver: Frank Gardner
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
+        results:
+          - driver: Frank Gardner
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Frank Gardner
-        position: null
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Frank Gardner
+            position: null
+            points: 0
       - round: 9
         roundName: United States Grand Prix
-        driver: Jo Siffert
-        position: 11
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: 11
+            points: 0
       - round: 10
         roundName: Mexican Grand Prix
-        driver: Jo Siffert
-        position: 4
-        points: 3
+        results:
+          - driver: Jo Siffert
+            position: 4
+            points: 3
   - year: 1966
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
       - round: 3
         roundName: French Grand Prix
-        driver: John Taylor
-        position: 6
-        points: 1
+        results:
+          - driver: John Taylor
+            position: 6
+            points: 1
       - round: 4
         roundName: British Grand Prix
-        driver: John Taylor
-        position: 8
-        points: 0
+        results:
+          - driver: John Taylor
+            position: 8
+            points: 0
       - round: 5
         roundName: Dutch Grand Prix
-        driver: John Taylor
-        position: 8
-        points: 0
+        results:
+          - driver: John Taylor
+            position: 8
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: John Taylor
-        position: null
-        points: 0
+        results:
+          - driver: John Taylor
+            position: null
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Chris Amon
-        position: null
-        points: 0
+        results:
+          - driver: Chris Amon
+            position: null
+            points: 0

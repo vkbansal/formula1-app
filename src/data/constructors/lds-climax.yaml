@@ -14,16 +14,18 @@ championshipStandings:
     position: 15
 seasons:
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Doug Serrurier
-        position: null
-        points: 0
+        results:
+          - driver: Doug Serrurier
+            position: null
+            points: 0
   - year: 1967
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Sam Tingle
-        position: null
-        points: 0
+        results:
+          - driver: Sam Tingle
+            position: null
+            points: 0

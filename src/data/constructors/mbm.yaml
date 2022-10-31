@@ -12,9 +12,10 @@ championshipStandings:
     position: 13
 seasons:
   - year: 1961
-    results:
+    rounds:
       - round: 6
         roundName: German Grand Prix
-        driver: Peter Monteverdi
-        position: null
-        points: 0
+        results:
+          - driver: Peter Monteverdi
+            position: null
+            points: 0

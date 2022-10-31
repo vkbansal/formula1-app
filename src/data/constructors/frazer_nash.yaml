@@ -10,24 +10,28 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1952
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Ken Wharton
-        position: 4
-        points: 3
+        results:
+          - driver: Ken Wharton
+            position: 4
+            points: 3
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Ken Wharton
-        position: null
-        points: 0
+        results:
+          - driver: Ken Wharton
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Tony Crook
-        position: 21
-        points: 0
+        results:
+          - driver: Tony Crook
+            position: 21
+            points: 0
       - round: 7
         roundName: Dutch Grand Prix
-        driver: Ken Wharton
-        position: null
-        points: 0
+        results:
+          - driver: Ken Wharton
+            position: null
+            points: 0

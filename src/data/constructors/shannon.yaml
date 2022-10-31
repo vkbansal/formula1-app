@@ -12,9 +12,10 @@ championshipStandings:
     position: 15
 seasons:
   - year: 1966
-    results:
+    rounds:
       - round: 4
         roundName: British Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
+        results:
+          - driver: Trevor Taylor
+            position: null
+            points: 0

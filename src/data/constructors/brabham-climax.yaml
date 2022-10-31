@@ -22,479 +22,398 @@ championshipStandings:
     position: 10
 seasons:
   - year: 1964
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Bob Anderson
-        position: 7
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: 7
+            points: 0
       - round: 2
         roundName: Dutch Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Bob Anderson
-        position: 6
-        points: 1
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: 6
+            points: 1
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Dan Gurney
-        position: 6
-        points: 1
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jack Brabham
-        position: 3
-        points: 4
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: 6
+            points: 1
+          - driver: Jack Brabham
+            position: 3
+            points: 4
       - round: 4
         roundName: French Grand Prix
-        driver: Bob Anderson
-        position: 12
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jack Brabham
-        position: 3
-        points: 4
-      - round: 4
-        roundName: French Grand Prix
-        driver: Dan Gurney
-        position: 1
-        points: 9
+        results:
+          - driver: Bob Anderson
+            position: 12
+            points: 0
+          - driver: Jack Brabham
+            position: 3
+            points: 4
+          - driver: Dan Gurney
+            position: 1
+            points: 9
       - round: 5
         roundName: British Grand Prix
-        driver: Dan Gurney
-        position: 13
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Bob Anderson
-        position: 7
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jack Brabham
-        position: 4
-        points: 3
+        results:
+          - driver: Dan Gurney
+            position: 13
+            points: 0
+          - driver: Bob Anderson
+            position: 7
+            points: 0
+          - driver: Jack Brabham
+            position: 4
+            points: 3
       - round: 6
         roundName: German Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jack Brabham
-        position: 12
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Dan Gurney
-        position: 10
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 12
+            points: 0
+          - driver: Dan Gurney
+            position: 10
+            points: 0
       - round: 7
         roundName: Austrian Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 7
-        roundName: Austrian Grand Prix
-        driver: Jack Brabham
-        position: 9
-        points: 0
-      - round: 7
-        roundName: Austrian Grand Prix
-        driver: Jo Bonnier
-        position: 6
-        points: 1
-      - round: 7
-        roundName: Austrian Grand Prix
-        driver: Bob Anderson
-        position: 3
-        points: 4
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 9
+            points: 0
+          - driver: Jo Bonnier
+            position: 6
+            points: 1
+          - driver: Bob Anderson
+            position: 3
+            points: 4
       - round: 8
         roundName: Italian Grand Prix
-        driver: Jack Brabham
-        position: 14
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: 12
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Bob Anderson
-        position: 11
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Dan Gurney
-        position: 10
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: 14
+            points: 0
+          - driver: Jo Bonnier
+            position: 12
+            points: 0
+          - driver: Bob Anderson
+            position: 11
+            points: 0
+          - driver: Dan Gurney
+            position: 10
+            points: 0
       - round: 9
         roundName: United States Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: null
+            points: 0
       - round: 10
         roundName: Mexican Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Dan Gurney
-        position: 1
-        points: 9
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: 1
+            points: 9
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jack Brabham
-        position: 8
-        points: 0
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 8
+            points: 0
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Bob Anderson
-        position: 9
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Denny Hulme
-        position: 8
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: 9
+            points: 0
+          - driver: Denny Hulme
+            position: 8
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Dan Gurney
-        position: 10
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jack Brabham
-        position: 4
-        points: 3
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: 10
+            points: 0
+          - driver: Jack Brabham
+            position: 4
+            points: 3
       - round: 4
         roundName: French Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Bob Anderson
-        position: 9
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Denny Hulme
-        position: 4
-        points: 3
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: 9
+            points: 0
+          - driver: Denny Hulme
+            position: 4
+            points: 3
       - round: 5
         roundName: British Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Dan Gurney
-        position: 6
-        points: 1
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
+          - driver: Dan Gurney
+            position: 6
+            points: 1
       - round: 6
         roundName: Dutch Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
-      - round: 6
-        roundName: Dutch Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 6
-        roundName: Dutch Grand Prix
-        driver: Denny Hulme
-        position: 5
-        points: 2
-      - round: 6
-        roundName: Dutch Grand Prix
-        driver: Dan Gurney
-        position: 3
-        points: 4
+        results:
+          - driver: Bob Anderson
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 5
+            points: 2
+          - driver: Dan Gurney
+            position: 3
+            points: 4
       - round: 7
         roundName: German Grand Prix
-        driver: Ian Raby
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jack Brabham
-        position: 5
-        points: 2
-      - round: 7
-        roundName: German Grand Prix
-        driver: Dan Gurney
-        position: 3
-        points: 4
+        results:
+          - driver: Ian Raby
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
+          - driver: Jack Brabham
+            position: 5
+            points: 2
+          - driver: Dan Gurney
+            position: 3
+            points: 4
       - round: 8
         roundName: Italian Grand Prix
-        driver: Giancarlo Baghetti
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Dan Gurney
-        position: 3
-        points: 4
+        results:
+          - driver: Giancarlo Baghetti
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
+          - driver: Dan Gurney
+            position: 3
+            points: 4
       - round: 9
         roundName: United States Grand Prix
-        driver: Jo Bonnier
-        position: 8
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Jack Brabham
-        position: 3
-        points: 4
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Dan Gurney
-        position: 2
-        points: 6
+        results:
+          - driver: Jo Bonnier
+            position: 8
+            points: 0
+          - driver: Jack Brabham
+            position: 3
+            points: 4
+          - driver: Dan Gurney
+            position: 2
+            points: 6
       - round: 10
         roundName: Mexican Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Dan Gurney
-        position: 2
-        points: 6
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: 2
+            points: 6
   - year: 1966
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: null
+            points: 0
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
       - round: 3
         roundName: French Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 3
-        roundName: French Grand Prix
-        driver: Bob Anderson
-        position: 7
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: 7
+            points: 0
       - round: 4
         roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 4
-        roundName: British Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
-      - round: 4
-        roundName: British Grand Prix
-        driver: Chris Irwin
-        position: 7
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: null
+            points: 0
+          - driver: Chris Irwin
+            position: 7
+            points: 0
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: null
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: null
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Bob Anderson
-        position: 6
-        points: 1
+        results:
+          - driver: Bob Anderson
+            position: 6
+            points: 1
   - year: 1967
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Luki Botha
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Dave Charlton
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Bob Anderson
-        position: 5
-        points: 2
+        results:
+          - driver: Luki Botha
+            position: null
+            points: 0
+          - driver: Dave Charlton
+            position: null
+            points: 0
+          - driver: Bob Anderson
+            position: 5
+            points: 2
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: null
+            points: 0
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Bob Anderson
-        position: 9
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: 9
+            points: 0
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Bob Anderson
-        position: 8
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: 8
+            points: 0
       - round: 5
         roundName: French Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: null
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Bob Anderson
-        position: null
-        points: 0
+        results:
+          - driver: Bob Anderson
+            position: null
+            points: 0
   - year: 1968
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Jackie Pretorius
-        position: null
-        points: 0
+        results:
+          - driver: Jackie Pretorius
+            position: null
+            points: 0
   - year: 1969
-    results:
+    rounds:
       - round: 9
         roundName: Canadian Grand Prix
-        driver: John Cordts
-        position: null
-        points: 0
+        results:
+          - driver: John Cordts
+            position: null
+            points: 0

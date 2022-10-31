@@ -10,73 +10,68 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 1
         roundName: British Grand Prix
-        driver: Tony Rolt
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Leslie Johnson
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Peter Walker
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Cuth Harrison
-        position: 7
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Bob Gerard
-        position: 6
-        points: 0
+        results:
+          - driver: Tony Rolt
+            position: null
+            points: 0
+          - driver: Leslie Johnson
+            position: null
+            points: 0
+          - driver: Peter Walker
+            position: null
+            points: 0
+          - driver: Cuth Harrison
+            position: 7
+            points: 0
+          - driver: Bob Gerard
+            position: 6
+            points: 0
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Cuth Harrison
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Bob Gerard
-        position: 6
-        points: 0
+        results:
+          - driver: Cuth Harrison
+            position: null
+            points: 0
+          - driver: Bob Gerard
+            position: 6
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Cuth Harrison
-        position: null
-        points: 0
+        results:
+          - driver: Cuth Harrison
+            position: null
+            points: 0
   - year: 1951
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: Bob Gerard
-        position: 11
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Brian Shawe Taylor
-        position: 8
-        points: 0
+        results:
+          - driver: Bob Gerard
+            position: 11
+            points: 0
+          - driver: Brian Shawe Taylor
+            position: 8
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
+        results:
+          - driver: Stirling Moss
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
+        results:
+          - driver: Stirling Moss
+            position: null
+            points: 0
       - round: 7
         roundName: Dutch Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
+        results:
+          - driver: Stirling Moss
+            position: null
+            points: 0

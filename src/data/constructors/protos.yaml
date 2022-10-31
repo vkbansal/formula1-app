@@ -12,14 +12,13 @@ championshipStandings:
     position: 19
 seasons:
   - year: 1967
-    results:
+    rounds:
       - round: 7
         roundName: German Grand Prix
-        driver: Kurt Ahrens
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Brian Hart
-        position: null
-        points: 0
+        results:
+          - driver: Kurt Ahrens
+            position: null
+            points: 0
+          - driver: Brian Hart
+            position: null
+            points: 0

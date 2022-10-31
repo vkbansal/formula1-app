@@ -12,9 +12,10 @@ championshipStandings:
     position: 9
 seasons:
   - year: 1969
-    results:
+    rounds:
       - round: 7
         roundName: German Grand Prix
-        driver: Jackie Oliver
-        position: null
-        points: 0
+        results:
+          - driver: Jackie Oliver
+            position: null
+            points: 0

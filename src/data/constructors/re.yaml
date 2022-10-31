@@ -12,9 +12,10 @@ championshipStandings:
     position: 15
 seasons:
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Ray Reed
-        position: null
-        points: 0
+        results:
+          - driver: Ray Reed
+            position: null
+            points: 0

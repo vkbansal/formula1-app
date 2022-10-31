@@ -14,16 +14,18 @@ championshipStandings:
     position: 18
 seasons:
   - year: 1974
-    results:
+    rounds:
       - round: 10
         roundName: British Grand Prix
-        driver: John Nicholson
-        position: null
-        points: 0
+        results:
+          - driver: John Nicholson
+            position: null
+            points: 0
   - year: 1975
-    results:
+    rounds:
       - round: 10
         roundName: British Grand Prix
-        driver: John Nicholson
-        position: 17
-        points: 0
+        results:
+          - driver: John Nicholson
+            position: 17
+            points: 0

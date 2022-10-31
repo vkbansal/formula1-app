@@ -10,41 +10,39 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1952
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Hans von Stuck
-        position: null
-        points: 0
+        results:
+          - driver: Hans von Stuck
+            position: null
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Willi Heeks
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Helmut Niedermayr
-        position: 9
-        points: 0
+        results:
+          - driver: Willi Heeks
+            position: null
+            points: 0
+          - driver: Helmut Niedermayr
+            position: 9
+            points: 0
   - year: 1953
-    results:
+    rounds:
       - round: 7
         roundName: German Grand Prix
-        driver: Hans von Stuck
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Günther Bechem
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Theo Fitzau
-        position: null
-        points: 0
+        results:
+          - driver: Hans von Stuck
+            position: null
+            points: 0
+          - driver: Günther Bechem
+            position: null
+            points: 0
+          - driver: Theo Fitzau
+            position: null
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Hans von Stuck
-        position: 14
-        points: 0
+        results:
+          - driver: Hans von Stuck
+            position: 14
+            points: 0

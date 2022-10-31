@@ -14,301 +14,270 @@ championshipStandings:
     position: 8
 seasons:
   - year: 1976
-    results:
+    rounds:
       - round: 1
         roundName: Brazilian Grand Prix
-        driver: Carlos Reutemann
-        position: 12
-        points: 0
-      - round: 1
-        roundName: Brazilian Grand Prix
-        driver: Carlos Pace
-        position: 10
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: 12
+            points: 0
+          - driver: Carlos Pace
+            position: 10
+            points: 0
       - round: 2
         roundName: South African Grand Prix
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 2
-        roundName: South African Grand Prix
-        driver: Carlos Pace
-        position: null
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: null
+            points: 0
       - round: 3
         roundName: United States Grand Prix West
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 3
-        roundName: United States Grand Prix West
-        driver: Carlos Pace
-        position: 9
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: 9
+            points: 0
       - round: 4
         roundName: Spanish Grand Prix
-        driver: Carlos Pace
-        position: 6
-        points: 1
-      - round: 4
-        roundName: Spanish Grand Prix
-        driver: Carlos Reutemann
-        position: 4
-        points: 3
+        results:
+          - driver: Carlos Pace
+            position: 6
+            points: 1
+          - driver: Carlos Reutemann
+            position: 4
+            points: 3
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Carlos Pace
-        position: null
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: null
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 6
-        roundName: Monaco Grand Prix
-        driver: Carlos Pace
-        position: 9
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: 9
+            points: 0
       - round: 7
         roundName: Swedish Grand Prix
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 7
-        roundName: Swedish Grand Prix
-        driver: Carlos Pace
-        position: 8
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: 8
+            points: 0
       - round: 8
         roundName: French Grand Prix
-        driver: Carlos Reutemann
-        position: 11
-        points: 0
-      - round: 8
-        roundName: French Grand Prix
-        driver: Carlos Pace
-        position: 4
-        points: 3
+        results:
+          - driver: Carlos Reutemann
+            position: 11
+            points: 0
+          - driver: Carlos Pace
+            position: 4
+            points: 3
       - round: 9
         roundName: British Grand Prix
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 9
-        roundName: British Grand Prix
-        driver: Carlos Pace
-        position: 8
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: 8
+            points: 0
       - round: 10
         roundName: German Grand Prix
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 10
-        roundName: German Grand Prix
-        driver: Rolf Stommelen
-        position: 6
-        points: 1
-      - round: 10
-        roundName: German Grand Prix
-        driver: Carlos Pace
-        position: 4
-        points: 3
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Rolf Stommelen
+            position: 6
+            points: 1
+          - driver: Carlos Pace
+            position: 4
+            points: 3
       - round: 11
         roundName: Austrian Grand Prix
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 11
-        roundName: Austrian Grand Prix
-        driver: Carlos Pace
-        position: null
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: null
+            points: 0
       - round: 12
         roundName: Dutch Grand Prix
-        driver: Carlos Reutemann
-        position: null
-        points: 0
-      - round: 12
-        roundName: Dutch Grand Prix
-        driver: Carlos Pace
-        position: null
-        points: 0
+        results:
+          - driver: Carlos Reutemann
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: null
+            points: 0
       - round: 13
         roundName: Italian Grand Prix
-        driver: Carlos Pace
-        position: null
-        points: 0
-      - round: 13
-        roundName: Italian Grand Prix
-        driver: Rolf Stommelen
-        position: null
-        points: 0
+        results:
+          - driver: Carlos Pace
+            position: null
+            points: 0
+          - driver: Rolf Stommelen
+            position: null
+            points: 0
       - round: 14
         roundName: Canadian Grand Prix
-        driver: Larry Perkins
-        position: 17
-        points: 0
-      - round: 14
-        roundName: Canadian Grand Prix
-        driver: Carlos Pace
-        position: 7
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: 17
+            points: 0
+          - driver: Carlos Pace
+            position: 7
+            points: 0
       - round: 15
         roundName: United States Grand Prix
-        driver: Larry Perkins
-        position: null
-        points: 0
-      - round: 15
-        roundName: United States Grand Prix
-        driver: Carlos Pace
-        position: null
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: null
+            points: 0
       - round: 16
         roundName: Japanese Grand Prix
-        driver: Larry Perkins
-        position: null
-        points: 0
-      - round: 16
-        roundName: Japanese Grand Prix
-        driver: Carlos Pace
-        position: null
-        points: 0
+        results:
+          - driver: Larry Perkins
+            position: null
+            points: 0
+          - driver: Carlos Pace
+            position: null
+            points: 0
   - year: 1979
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
+        results:
+          - driver: Nelson Piquet
+            position: null
+            points: 0
+          - driver: Niki Lauda
+            position: null
+            points: 0
       - round: 2
         roundName: Brazilian Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
-      - round: 2
-        roundName: Brazilian Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
+        results:
+          - driver: Nelson Piquet
+            position: null
+            points: 0
+          - driver: Niki Lauda
+            position: null
+            points: 0
       - round: 3
         roundName: South African Grand Prix
-        driver: Nelson Piquet
-        position: 7
-        points: 0
-      - round: 3
-        roundName: South African Grand Prix
-        driver: Niki Lauda
-        position: 6
-        points: 1
+        results:
+          - driver: Nelson Piquet
+            position: 7
+            points: 0
+          - driver: Niki Lauda
+            position: 6
+            points: 1
       - round: 4
         roundName: United States Grand Prix West
-        driver: Niki Lauda
-        position: null
-        points: 0
-      - round: 4
-        roundName: United States Grand Prix West
-        driver: Nelson Piquet
-        position: 8
-        points: 0
+        results:
+          - driver: Niki Lauda
+            position: null
+            points: 0
+          - driver: Nelson Piquet
+            position: 8
+            points: 0
       - round: 5
         roundName: Spanish Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
-      - round: 5
-        roundName: Spanish Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
+        results:
+          - driver: Nelson Piquet
+            position: null
+            points: 0
+          - driver: Niki Lauda
+            position: null
+            points: 0
       - round: 6
         roundName: Belgian Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
-      - round: 6
-        roundName: Belgian Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
+        results:
+          - driver: Niki Lauda
+            position: null
+            points: 0
+          - driver: Nelson Piquet
+            position: null
+            points: 0
       - round: 7
         roundName: Monaco Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
-      - round: 7
-        roundName: Monaco Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
+        results:
+          - driver: Niki Lauda
+            position: null
+            points: 0
+          - driver: Nelson Piquet
+            position: null
+            points: 0
       - round: 8
         roundName: French Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
-      - round: 8
-        roundName: French Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
+        results:
+          - driver: Niki Lauda
+            position: null
+            points: 0
+          - driver: Nelson Piquet
+            position: null
+            points: 0
       - round: 9
         roundName: British Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
-      - round: 9
-        roundName: British Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
+        results:
+          - driver: Nelson Piquet
+            position: null
+            points: 0
+          - driver: Niki Lauda
+            position: null
+            points: 0
       - round: 10
         roundName: German Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
-      - round: 10
-        roundName: German Grand Prix
-        driver: Nelson Piquet
-        position: 12
-        points: 0
+        results:
+          - driver: Niki Lauda
+            position: null
+            points: 0
+          - driver: Nelson Piquet
+            position: 12
+            points: 0
       - round: 11
         roundName: Austrian Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
-      - round: 11
-        roundName: Austrian Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
+        results:
+          - driver: Nelson Piquet
+            position: null
+            points: 0
+          - driver: Niki Lauda
+            position: null
+            points: 0
       - round: 12
         roundName: Dutch Grand Prix
-        driver: Niki Lauda
-        position: null
-        points: 0
-      - round: 12
-        roundName: Dutch Grand Prix
-        driver: Nelson Piquet
-        position: 4
-        points: 3
+        results:
+          - driver: Niki Lauda
+            position: null
+            points: 0
+          - driver: Nelson Piquet
+            position: 4
+            points: 3
       - round: 13
         roundName: Italian Grand Prix
-        driver: Nelson Piquet
-        position: null
-        points: 0
-      - round: 13
-        roundName: Italian Grand Prix
-        driver: Niki Lauda
-        position: 4
-        points: 3
+        results:
+          - driver: Nelson Piquet
+            position: null
+            points: 0
+          - driver: Niki Lauda
+            position: 4
+            points: 3

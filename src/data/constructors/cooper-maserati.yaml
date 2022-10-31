@@ -28,690 +28,560 @@ championshipStandings:
     position: 7
 seasons:
   - year: 1959
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Roy Salvadori
-        position: 6
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: 6
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Colin Davis
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
+        results:
+          - driver: Colin Davis
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Hans Herrmann
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
+        results:
+          - driver: Hans Herrmann
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: null
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Ian Burgess
-        position: 6
-        points: 0
+        results:
+          - driver: Ian Burgess
+            position: 6
+            points: 0
       - round: 7
         roundName: Portuguese Grand Prix
-        driver: Mário de Araújo Cabral
-        position: 10
-        points: 0
+        results:
+          - driver: Mário de Araújo Cabral
+            position: 10
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Jack Fairman
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Ian Burgess
-        position: 14
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Colin Davis
-        position: 11
-        points: 0
+        results:
+          - driver: Jack Fairman
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: 14
+            points: 0
+          - driver: Colin Davis
+            position: 11
+            points: 0
       - round: 9
         roundName: United States Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
   - year: 1960
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Roberto Bonomi
-        position: 11
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Carlos Menditeguy
-        position: 4
-        points: 3
+        results:
+          - driver: Roberto Bonomi
+            position: 11
+            points: 0
+          - driver: Carlos Menditeguy
+            position: 4
+            points: 3
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Masten Gregory
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
+        results:
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Masten Gregory
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
       - round: 4
         roundName: Dutch Grand Prix
-        driver: Masten Gregory
-        position: null
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
+        results:
+          - driver: Masten Gregory
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
       - round: 6
         roundName: French Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Ian Burgess
-        position: 10
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Masten Gregory
-        position: 9
-        points: 0
+        results:
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: 10
+            points: 0
+          - driver: Masten Gregory
+            position: 9
+            points: 0
       - round: 7
         roundName: British Grand Prix
-        driver: Keith Greene
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Masten Gregory
-        position: 14
-        points: 0
+        results:
+          - driver: Keith Greene
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Masten Gregory
+            position: 14
+            points: 0
       - round: 8
         roundName: Portuguese Grand Prix
-        driver: Masten Gregory
-        position: null
-        points: 0
-      - round: 8
-        roundName: Portuguese Grand Prix
-        driver: Mário de Araújo Cabral
-        position: null
-        points: 0
+        results:
+          - driver: Masten Gregory
+            position: null
+            points: 0
+          - driver: Mário de Araújo Cabral
+            position: null
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Giorgio Scarlatti
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Alfonso Thiele
-        position: null
-        points: 0
+        results:
+          - driver: Giorgio Scarlatti
+            position: null
+            points: 0
+          - driver: Alfonso Thiele
+            position: null
+            points: 0
       - round: 10
         roundName: United States Grand Prix
-        driver: Brian Naylor
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Maurice Trintignant
-        position: 15
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Wolfgang von Trips
-        position: 9
-        points: 0
+        results:
+          - driver: Brian Naylor
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: 15
+            points: 0
+          - driver: Wolfgang von Trips
+            position: 9
+            points: 0
   - year: 1961
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Maurice Trintignant
-        position: 7
-        points: 0
+        results:
+          - driver: Maurice Trintignant
+            position: 7
+            points: 0
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Lorenzo Bandini
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
+        results:
+          - driver: Lorenzo Bandini
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Maurice Trintignant
-        position: 13
-        points: 0
+        results:
+          - driver: Maurice Trintignant
+            position: 13
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Massimo Natili
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Lorenzo Bandini
-        position: 12
-        points: 0
+        results:
+          - driver: Massimo Natili
+            position: null
+            points: 0
+          - driver: Lorenzo Bandini
+            position: 12
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Lorenzo Bandini
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
+        results:
+          - driver: Lorenzo Bandini
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Massimo Natili
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Renato Pirocchi
-        position: 12
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Maurice Trintignant
-        position: 9
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Lorenzo Bandini
-        position: 8
-        points: 0
+        results:
+          - driver: Massimo Natili
+            position: null
+            points: 0
+          - driver: Renato Pirocchi
+            position: 12
+            points: 0
+          - driver: Maurice Trintignant
+            position: 9
+            points: 0
+          - driver: Lorenzo Bandini
+            position: 8
+            points: 0
   - year: 1963
-    results:
+    rounds:
       - round: 7
         roundName: Italian Grand Prix
-        driver: Ernesto Brambilla
-        position: null
-        points: 0
+        results:
+          - driver: Ernesto Brambilla
+            position: null
+            points: 0
       - round: 10
         roundName: South African Grand Prix
-        driver: Trevor Blokdyk
-        position: 12
-        points: 0
+        results:
+          - driver: Trevor Blokdyk
+            position: 12
+            points: 0
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: David Clapham
-        position: null
-        points: 0
+        results:
+          - driver: David Clapham
+            position: null
+            points: 0
   - year: 1966
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Guy Ligier
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Richie Ginther
-        position: null
-        points: 0
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Guy Ligier
+            position: null
+            points: 0
+          - driver: Richie Ginther
+            position: null
+            points: 0
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 2
-        roundName: Belgian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 2
-        roundName: Belgian Grand Prix
-        driver: Guy Ligier
-        position: null
-        points: 0
-      - round: 2
-        roundName: Belgian Grand Prix
-        driver: Richie Ginther
-        position: 5
-        points: 2
-      - round: 2
-        roundName: Belgian Grand Prix
-        driver: Jochen Rindt
-        position: 2
-        points: 6
+        results:
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Guy Ligier
+            position: null
+            points: 0
+          - driver: Richie Ginther
+            position: 5
+            points: 2
+          - driver: Jochen Rindt
+            position: 2
+            points: 6
       - round: 3
         roundName: French Grand Prix
-        driver: John Surtees
-        position: null
-        points: 0
-      - round: 3
-        roundName: French Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 3
-        roundName: French Grand Prix
-        driver: Guy Ligier
-        position: null
-        points: 0
-      - round: 3
-        roundName: French Grand Prix
-        driver: Chris Amon
-        position: 8
-        points: 0
-      - round: 3
-        roundName: French Grand Prix
-        driver: Jochen Rindt
-        position: 4
-        points: 3
+        results:
+          - driver: John Surtees
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Guy Ligier
+            position: null
+            points: 0
+          - driver: Chris Amon
+            position: 8
+            points: 0
+          - driver: Jochen Rindt
+            position: 4
+            points: 3
       - round: 4
         roundName: British Grand Prix
-        driver: John Surtees
-        position: null
-        points: 0
-      - round: 4
-        roundName: British Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 4
-        roundName: British Grand Prix
-        driver: Guy Ligier
-        position: 10
-        points: 0
-      - round: 4
-        roundName: British Grand Prix
-        driver: Jochen Rindt
-        position: 5
-        points: 2
+        results:
+          - driver: John Surtees
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Guy Ligier
+            position: 10
+            points: 0
+          - driver: Jochen Rindt
+            position: 5
+            points: 2
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: John Surtees
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Guy Ligier
-        position: 9
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: John Surtees
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Guy Ligier
+            position: 9
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Guy Ligier
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jochen Rindt
-        position: 3
-        points: 4
-      - round: 6
-        roundName: German Grand Prix
-        driver: John Surtees
-        position: 2
-        points: 6
+        results:
+          - driver: Guy Ligier
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: 3
+            points: 4
+          - driver: John Surtees
+            position: 2
+            points: 6
       - round: 7
         roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: John Surtees
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jochen Rindt
-        position: 4
-        points: 3
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: John Surtees
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: 4
+            points: 3
       - round: 8
         roundName: United States Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Jo Siffert
-        position: 4
-        points: 3
-      - round: 8
-        roundName: United States Grand Prix
-        driver: John Surtees
-        position: 3
-        points: 4
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Jochen Rindt
-        position: 2
-        points: 6
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 4
+            points: 3
+          - driver: John Surtees
+            position: 3
+            points: 4
+          - driver: Jochen Rindt
+            position: 2
+            points: 6
       - round: 9
         roundName: Mexican Grand Prix
-        driver: Moisés Solana
-        position: null
-        points: 0
-      - round: 9
-        roundName: Mexican Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 9
-        roundName: Mexican Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 9
-        roundName: Mexican Grand Prix
-        driver: Jo Bonnier
-        position: 6
-        points: 1
-      - round: 9
-        roundName: Mexican Grand Prix
-        driver: John Surtees
-        position: 1
-        points: 9
+        results:
+          - driver: Moisés Solana
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 6
+            points: 1
+          - driver: John Surtees
+            position: 1
+            points: 9
   - year: 1967
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Pedro Rodríguez
-        position: 1
-        points: 9
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Pedro Rodríguez
+            position: 1
+            points: 9
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Pedro Rodríguez
-        position: 5
-        points: 2
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Pedro Rodríguez
+            position: 5
+            points: 2
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Pedro Rodríguez
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Jo Siffert
-        position: 10
-        points: 0
+        results:
+          - driver: Pedro Rodríguez
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 10
+            points: 0
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Guy Ligier
-        position: 10
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Pedro Rodríguez
-        position: 9
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jo Siffert
-        position: 7
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Jochen Rindt
-        position: 4
-        points: 3
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Guy Ligier
+            position: 10
+            points: 0
+          - driver: Pedro Rodríguez
+            position: 9
+            points: 0
+          - driver: Jo Siffert
+            position: 7
+            points: 0
+          - driver: Jochen Rindt
+            position: 4
+            points: 3
       - round: 5
         roundName: French Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Guy Ligier
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Pedro Rodríguez
-        position: 6
-        points: 1
-      - round: 5
-        roundName: French Grand Prix
-        driver: Jo Siffert
-        position: 4
-        points: 3
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Guy Ligier
+            position: null
+            points: 0
+          - driver: Pedro Rodríguez
+            position: 6
+            points: 1
+          - driver: Jo Siffert
+            position: 4
+            points: 3
       - round: 6
         roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Alan Rees
-        position: 9
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Pedro Rodríguez
-        position: 5
-        points: 2
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Alan Rees
+            position: 9
+            points: 0
+          - driver: Pedro Rodríguez
+            position: 5
+            points: 2
       - round: 7
         roundName: German Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Pedro Rodríguez
-        position: 11
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jo Bonnier
-        position: 6
-        points: 2
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Pedro Rodríguez
+            position: 11
+            points: 0
+          - driver: Jo Bonnier
+            position: 6
+            points: 2
       - round: 8
         roundName: Canadian Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 8
-        roundName: Canadian Grand Prix
-        driver: Richard Attwood
-        position: 10
-        points: 0
-      - round: 8
-        roundName: Canadian Grand Prix
-        driver: Jo Bonnier
-        position: 8
-        points: 0
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Richard Attwood
+            position: 10
+            points: 0
+          - driver: Jo Bonnier
+            position: 8
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jacky Ickx
-        position: 6
-        points: 1
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jochen Rindt
-        position: 4
-        points: 3
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Jacky Ickx
+            position: 6
+            points: 1
+          - driver: Jochen Rindt
+            position: 4
+            points: 3
       - round: 10
         roundName: United States Grand Prix
-        driver: Jochen Rindt
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Jacky Ickx
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Jo Bonnier
-        position: 6
-        points: 1
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Jo Siffert
-        position: 4
-        points: 3
+        results:
+          - driver: Jochen Rindt
+            position: null
+            points: 0
+          - driver: Jacky Ickx
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 6
+            points: 1
+          - driver: Jo Siffert
+            position: 4
+            points: 3
       - round: 11
         roundName: Mexican Grand Prix
-        driver: Jo Siffert
-        position: 12
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Jo Bonnier
-        position: 10
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Pedro Rodríguez
-        position: 6
-        points: 1
+        results:
+          - driver: Jo Siffert
+            position: 12
+            points: 0
+          - driver: Jo Bonnier
+            position: 10
+            points: 0
+          - driver: Pedro Rodríguez
+            position: 6
+            points: 1
   - year: 1968
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Brian Redman
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jo Siffert
-        position: 7
-        points: 0
+        results:
+          - driver: Brian Redman
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 7
+            points: 0
   - year: 1969
-    results:
+    rounds:
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Vic Elford
-        position: 7
-        points: 0
+        results:
+          - driver: Vic Elford
+            position: 7
+            points: 0

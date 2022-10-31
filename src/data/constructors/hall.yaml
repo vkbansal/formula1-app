@@ -10,9 +10,10 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Bill Mackey
-        position: null
-        points: 0
+        results:
+          - driver: Bill Mackey
+            position: null
+            points: 0

@@ -10,97 +10,78 @@ winPct: 40
 championshipStandings: []
 seasons:
   - year: 1955
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Jim Rathmann
-        position: 14
-        points: 0
+        results:
+          - driver: Jim Rathmann
+            position: 14
+            points: 0
   - year: 1957
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Jim Rathmann
-        position: 2
-        points: 7
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Sam Hanks
-        position: 1
-        points: 8
+        results:
+          - driver: Jim Rathmann
+            position: 2
+            points: 7
+          - driver: Sam Hanks
+            position: 1
+            points: 8
   - year: 1958
-    results:
+    rounds:
       - round: 4
         roundName: Indianapolis 500
-        driver: Jim Rathmann
-        position: 5
-        points: 2
-      - round: 4
-        roundName: Indianapolis 500
-        driver: Tony Bettenhausen
-        position: 4
-        points: 4
-      - round: 4
-        roundName: Indianapolis 500
-        driver: George Amick
-        position: 2
-        points: 6
-      - round: 4
-        roundName: Indianapolis 500
-        driver: Jimmy Bryan
-        position: 1
-        points: 8
+        results:
+          - driver: Jim Rathmann
+            position: 5
+            points: 2
+          - driver: Tony Bettenhausen
+            position: 4
+            points: 4
+          - driver: George Amick
+            position: 2
+            points: 6
+          - driver: Jimmy Bryan
+            position: 1
+            points: 8
   - year: 1959
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Jimmy Bryan
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Johnny Boyd
-        position: 6
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Paul Goldsmith
-        position: 5
-        points: 2
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Tony Bettenhausen
-        position: 4
-        points: 3
+        results:
+          - driver: Jimmy Bryan
+            position: null
+            points: 0
+          - driver: Johnny Boyd
+            position: 6
+            points: 0
+          - driver: Paul Goldsmith
+            position: 5
+            points: 2
+          - driver: Tony Bettenhausen
+            position: 4
+            points: 3
   - year: 1960
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Jim McWithey
-        position: 29
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Johnny Boyd
-        position: 27
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Wayne Weiler
-        position: 24
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Jimmy Bryan
-        position: 19
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Red Amick
-        position: 11
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Paul Goldsmith
-        position: 3
-        points: 4
+        results:
+          - driver: Jim McWithey
+            position: 29
+            points: 0
+          - driver: Johnny Boyd
+            position: 27
+            points: 0
+          - driver: Wayne Weiler
+            position: 24
+            points: 0
+          - driver: Jimmy Bryan
+            position: 19
+            points: 0
+          - driver: Red Amick
+            position: 11
+            points: 0
+          - driver: Paul Goldsmith
+            position: 3
+            points: 4

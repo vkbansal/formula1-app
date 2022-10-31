@@ -10,23 +10,26 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1957
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Al Herman
-        position: null
-        points: 0
+        results:
+          - driver: Al Herman
+            position: null
+            points: 0
   - year: 1958
-    results:
+    rounds:
       - round: 4
         roundName: Indianapolis 500
-        driver: Chuck Weyant
-        position: null
-        points: 0
+        results:
+          - driver: Chuck Weyant
+            position: null
+            points: 0
   - year: 1959
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Al Herman
-        position: 13
-        points: 0
+        results:
+          - driver: Al Herman
+            position: 13
+            points: 0

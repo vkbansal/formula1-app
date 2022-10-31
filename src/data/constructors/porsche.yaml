@@ -24,438 +24,372 @@ championshipStandings:
     position: 12
 seasons:
   - year: 1957
-    results:
+    rounds:
       - round: 6
         roundName: German Grand Prix
-        driver: Umberto Maglioli
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 14
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Edgar Barth
-        position: 12
-        points: 0
+        results:
+          - driver: Umberto Maglioli
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 14
+            points: 0
+          - driver: Edgar Barth
+            position: 12
+            points: 0
   - year: 1958
-    results:
+    rounds:
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 11
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 11
+            points: 0
       - round: 8
         roundName: German Grand Prix
-        driver: Carel Godin de Beaufort
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Edgar Barth
-        position: 6
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: null
+            points: 0
+          - driver: Edgar Barth
+            position: 6
+            points: 0
   - year: 1959
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Maria de Filippis
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Wolfgang von Trips
-        position: null
-        points: 0
+        results:
+          - driver: Maria de Filippis
+            position: null
+            points: 0
+          - driver: Wolfgang von Trips
+            position: null
+            points: 0
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 10
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 10
+            points: 0
       - round: 9
         roundName: United States Grand Prix
-        driver: Harry Blanchard
-        position: 7
-        points: 0
+        results:
+          - driver: Harry Blanchard
+            position: 7
+            points: 0
   - year: 1960
-    results:
+    rounds:
       - round: 9
         roundName: Italian Grand Prix
-        driver: Edgar Barth
-        position: 7
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Hans Herrmann
-        position: 6
-        points: 1
+        results:
+          - driver: Edgar Barth
+            position: 7
+            points: 0
+          - driver: Hans Herrmann
+            position: 6
+            points: 1
   - year: 1961
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Jo Bonnier
-        position: 12
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Hans Herrmann
-        position: 9
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Dan Gurney
-        position: 5
-        points: 2
+        results:
+          - driver: Jo Bonnier
+            position: 12
+            points: 0
+          - driver: Hans Herrmann
+            position: 9
+            points: 0
+          - driver: Dan Gurney
+            position: 5
+            points: 2
       - round: 2
         roundName: Dutch Grand Prix
-        driver: Hans Herrmann
-        position: 15
-        points: 0
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 14
-        points: 0
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Jo Bonnier
-        position: 11
-        points: 0
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Dan Gurney
-        position: 10
-        points: 0
+        results:
+          - driver: Hans Herrmann
+            position: 15
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 14
+            points: 0
+          - driver: Jo Bonnier
+            position: 11
+            points: 0
+          - driver: Dan Gurney
+            position: 10
+            points: 0
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 11
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Dan Gurney
-        position: 6
-        points: 1
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 11
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
+          - driver: Dan Gurney
+            position: 6
+            points: 1
       - round: 4
         roundName: French Grand Prix
-        driver: Hans Herrmann
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Carel Godin de Beaufort
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Dan Gurney
-        position: 2
-        points: 6
+        results:
+          - driver: Hans Herrmann
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
+          - driver: Dan Gurney
+            position: 2
+            points: 6
       - round: 5
         roundName: British Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 16
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Dan Gurney
-        position: 7
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: 5
-        points: 2
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 16
+            points: 0
+          - driver: Dan Gurney
+            position: 7
+            points: 0
+          - driver: Jo Bonnier
+            position: 5
+            points: 2
       - round: 6
         roundName: German Grand Prix
-        driver: Edgar Barth
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 14
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Hans Herrmann
-        position: 13
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Dan Gurney
-        position: 7
-        points: 0
+        results:
+          - driver: Edgar Barth
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 14
+            points: 0
+          - driver: Hans Herrmann
+            position: 13
+            points: 0
+          - driver: Dan Gurney
+            position: 7
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Edgar Barth
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 7
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Dan Gurney
-        position: 2
-        points: 6
+        results:
+          - driver: Edgar Barth
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 7
+            points: 0
+          - driver: Dan Gurney
+            position: 2
+            points: 6
       - round: 8
         roundName: United States Grand Prix
-        driver: Jo Bonnier
-        position: 6
-        points: 1
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Dan Gurney
-        position: 2
-        points: 6
+        results:
+          - driver: Jo Bonnier
+            position: 6
+            points: 1
+          - driver: Dan Gurney
+            position: 2
+            points: 6
   - year: 1962
-    results:
+    rounds:
       - round: 1
         roundName: Dutch Grand Prix
-        driver: Rob Slotemaker
-        position: null
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Ben Pon
-        position: null
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 6
-        points: 1
+        results:
+          - driver: Rob Slotemaker
+            position: null
+            points: 0
+          - driver: Ben Pon
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 6
+            points: 1
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Carel Godin de Beaufort
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jo Bonnier
-        position: 5
-        points: 2
+        results:
+          - driver: Carel Godin de Beaufort
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 5
+            points: 2
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Heinz Schiller
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 7
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Heinz Schiller
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 7
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Colin Davis
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 6
-        points: 1
-      - round: 4
-        roundName: French Grand Prix
-        driver: Dan Gurney
-        position: 1
-        points: 9
+        results:
+          - driver: Colin Davis
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 6
+            points: 1
+          - driver: Dan Gurney
+            position: 1
+            points: 9
       - round: 5
         roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 14
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Dan Gurney
-        position: 9
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 14
+            points: 0
+          - driver: Dan Gurney
+            position: 9
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Nino Vaccarella
-        position: 15
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Heini Walter
-        position: 14
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 13
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jo Bonnier
-        position: 7
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Dan Gurney
-        position: 3
-        points: 4
+        results:
+          - driver: Nino Vaccarella
+            position: 15
+            points: 0
+          - driver: Heini Walter
+            position: 14
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 13
+            points: 0
+          - driver: Jo Bonnier
+            position: 7
+            points: 0
+          - driver: Dan Gurney
+            position: 3
+            points: 4
       - round: 7
         roundName: Italian Grand Prix
-        driver: Dan Gurney
-        position: 13
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 10
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: 6
-        points: 1
+        results:
+          - driver: Dan Gurney
+            position: 13
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 10
+            points: 0
+          - driver: Jo Bonnier
+            position: 6
+            points: 1
       - round: 8
         roundName: United States Grand Prix
-        driver: Carel Godin de Beaufort
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Jo Bonnier
-        position: 13
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Dan Gurney
-        position: 5
-        points: 2
+        results:
+          - driver: Carel Godin de Beaufort
+            position: null
+            points: 0
+          - driver: Jo Bonnier
+            position: 13
+            points: 0
+          - driver: Dan Gurney
+            position: 5
+            points: 2
       - round: 9
         roundName: South African Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 11
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 11
+            points: 0
   - year: 1963
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Carel Godin de Beaufort
-        position: null
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: null
+            points: 0
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 6
-        points: 1
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 6
+            points: 1
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Gerhard Mitter
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 9
-        points: 0
+        results:
+          - driver: Gerhard Mitter
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: 9
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 10
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 10
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Carel Godin de Beaufort
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Gerhard Mitter
-        position: 4
-        points: 3
+        results:
+          - driver: Carel Godin de Beaufort
+            position: null
+            points: 0
+          - driver: Gerhard Mitter
+            position: 4
+            points: 3
       - round: 7
         roundName: Italian Grand Prix
-        driver: Carlo Abate
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Gerhard Mitter
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Carel Godin de Beaufort
-        position: null
-        points: 0
+        results:
+          - driver: Carlo Abate
+            position: null
+            points: 0
+          - driver: Gerhard Mitter
+            position: null
+            points: 0
+          - driver: Carel Godin de Beaufort
+            position: null
+            points: 0
       - round: 8
         roundName: United States Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 6
-        points: 1
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 6
+            points: 1
       - round: 9
         roundName: Mexican Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 10
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 10
+            points: 0
       - round: 10
         roundName: South African Grand Prix
-        driver: Carel Godin de Beaufort
-        position: 10
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: 10
+            points: 0
   - year: 1964
-    results:
+    rounds:
       - round: 2
         roundName: Dutch Grand Prix
-        driver: Carel Godin de Beaufort
-        position: null
-        points: 0
+        results:
+          - driver: Carel Godin de Beaufort
+            position: null
+            points: 0

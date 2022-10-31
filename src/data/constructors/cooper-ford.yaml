@@ -12,14 +12,16 @@ championshipStandings:
     position: 12
 seasons:
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Trevor Blokdyk
-        position: null
-        points: 0
+        results:
+          - driver: Trevor Blokdyk
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Alan Rollinson
-        position: null
-        points: 0
+        results:
+          - driver: Alan Rollinson
+            position: null
+            points: 0

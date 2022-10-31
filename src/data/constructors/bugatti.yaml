@@ -10,9 +10,10 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1956
-    results:
+    rounds:
       - round: 5
         roundName: French Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
+        results:
+          - driver: Maurice Trintignant
+            position: null
+            points: 0

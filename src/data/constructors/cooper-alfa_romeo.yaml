@@ -12,9 +12,10 @@ championshipStandings:
     position: 13
 seasons:
   - year: 1962
-    results:
+    rounds:
       - round: 9
         roundName: South African Grand Prix
-        driver: Mike Harris
-        position: null
-        points: 0
+        results:
+          - driver: Mike Harris
+            position: null
+            points: 0

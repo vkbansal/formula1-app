@@ -20,447 +20,390 @@ championshipStandings:
     position: 5
 seasons:
   - year: 1966
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
       - round: 8
         roundName: United States Grand Prix
-        driver: Bruce McLaren
-        position: 5
-        points: 2
+        results:
+          - driver: Bruce McLaren
+            position: 5
+            points: 2
       - round: 9
         roundName: Mexican Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
   - year: 1967
-    results:
+    rounds:
       - round: 10
         roundName: United States Grand Prix
-        driver: Jean-Pierre Beltoise
-        position: 7
-        points: 0
+        results:
+          - driver: Jean-Pierre Beltoise
+            position: 7
+            points: 0
       - round: 11
         roundName: Mexican Grand Prix
-        driver: Jean-Pierre Beltoise
-        position: 7
-        points: 0
+        results:
+          - driver: Jean-Pierre Beltoise
+            position: 7
+            points: 0
   - year: 1968
-    results:
+    rounds:
       - round: 2
         roundName: Spanish Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Denny Hulme
-        position: 2
-        points: 6
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 2
+            points: 6
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Denny Hulme
-        position: 5
-        points: 2
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 5
+            points: 2
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 4
-        roundName: Belgian Grand Prix
-        driver: Bruce McLaren
-        position: 1
-        points: 9
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: 1
+            points: 9
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: null
+            points: 0
       - round: 6
         roundName: French Grand Prix
-        driver: Bruce McLaren
-        position: 8
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Denny Hulme
-        position: 5
-        points: 2
+        results:
+          - driver: Bruce McLaren
+            position: 8
+            points: 0
+          - driver: Denny Hulme
+            position: 5
+            points: 2
       - round: 7
         roundName: British Grand Prix
-        driver: Bruce McLaren
-        position: 7
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Denny Hulme
-        position: 4
-        points: 3
+        results:
+          - driver: Bruce McLaren
+            position: 7
+            points: 0
+          - driver: Denny Hulme
+            position: 4
+            points: 3
       - round: 8
         roundName: German Grand Prix
-        driver: Denny Hulme
-        position: 7
-        points: 0
+        results:
+          - driver: Denny Hulme
+            position: 7
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Denny Hulme
-        position: 1
-        points: 9
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 1
+            points: 9
       - round: 10
         roundName: Canadian Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 10
-        roundName: Canadian Grand Prix
-        driver: Bruce McLaren
-        position: 2
-        points: 6
-      - round: 10
-        roundName: Canadian Grand Prix
-        driver: Denny Hulme
-        position: 1
-        points: 9
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: 2
+            points: 6
+          - driver: Denny Hulme
+            position: 1
+            points: 9
       - round: 11
         roundName: United States Grand Prix
-        driver: Bruce McLaren
-        position: 6
-        points: 1
-      - round: 11
-        roundName: United States Grand Prix
-        driver: Dan Gurney
-        position: 4
-        points: 3
+        results:
+          - driver: Bruce McLaren
+            position: 6
+            points: 1
+          - driver: Dan Gurney
+            position: 4
+            points: 3
       - round: 12
         roundName: Mexican Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 12
-        roundName: Mexican Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 12
-        roundName: Mexican Grand Prix
-        driver: Bruce McLaren
-        position: 2
-        points: 6
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: 2
+            points: 6
   - year: 1969
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Basil van Rooyen
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Bruce McLaren
-        position: 5
-        points: 2
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
+        results:
+          - driver: Basil van Rooyen
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: 5
+            points: 2
+          - driver: Denny Hulme
+            position: 3
+            points: 4
       - round: 2
         roundName: Spanish Grand Prix
-        driver: Denny Hulme
-        position: 4
-        points: 3
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Bruce McLaren
-        position: 2
-        points: 6
+        results:
+          - driver: Denny Hulme
+            position: 4
+            points: 3
+          - driver: Bruce McLaren
+            position: 2
+            points: 6
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Denny Hulme
-        position: 6
-        points: 1
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Bruce McLaren
-        position: 5
-        points: 2
+        results:
+          - driver: Denny Hulme
+            position: 6
+            points: 1
+          - driver: Bruce McLaren
+            position: 5
+            points: 2
       - round: 4
         roundName: Dutch Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Vic Elford
-        position: 10
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Jean-Pierre Beltoise
-        position: 8
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Denny Hulme
-        position: 4
-        points: 3
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
+          - driver: Vic Elford
+            position: 10
+            points: 0
+          - driver: Jean-Pierre Beltoise
+            position: 8
+            points: 0
+          - driver: Denny Hulme
+            position: 4
+            points: 3
       - round: 5
         roundName: French Grand Prix
-        driver: Denny Hulme
-        position: 8
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Vic Elford
-        position: 5
-        points: 2
-      - round: 5
-        roundName: French Grand Prix
-        driver: Bruce McLaren
-        position: 4
-        points: 3
+        results:
+          - driver: Denny Hulme
+            position: 8
+            points: 0
+          - driver: Vic Elford
+            position: 5
+            points: 2
+          - driver: Bruce McLaren
+            position: 4
+            points: 3
       - round: 6
         roundName: British Grand Prix
-        driver: Derek Bell
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Vic Elford
-        position: 6
-        points: 1
-      - round: 6
-        roundName: British Grand Prix
-        driver: Bruce McLaren
-        position: 3
-        points: 4
+        results:
+          - driver: Derek Bell
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Vic Elford
+            position: 6
+            points: 1
+          - driver: Bruce McLaren
+            position: 3
+            points: 4
       - round: 7
         roundName: German Grand Prix
-        driver: Vic Elford
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Bruce McLaren
-        position: 3
-        points: 4
+        results:
+          - driver: Vic Elford
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: 3
+            points: 4
       - round: 8
         roundName: Italian Grand Prix
-        driver: Denny Hulme
-        position: 7
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Bruce McLaren
-        position: 4
-        points: 3
+        results:
+          - driver: Denny Hulme
+            position: 7
+            points: 0
+          - driver: Bruce McLaren
+            position: 4
+            points: 3
       - round: 9
         roundName: Canadian Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Bruce McLaren
-        position: 5
-        points: 2
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: 5
+            points: 2
       - round: 10
         roundName: United States Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
-      - round: 10
-        roundName: United States Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: null
+            points: 0
       - round: 11
         roundName: Mexican Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
-      - round: 11
-        roundName: Mexican Grand Prix
-        driver: Denny Hulme
-        position: 1
-        points: 9
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 1
+            points: 9
   - year: 1970
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: John Surtees
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Denny Hulme
-        position: 2
-        points: 6
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
+          - driver: John Surtees
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 2
+            points: 6
       - round: 2
         roundName: Spanish Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: John Surtees
-        position: null
-        points: 0
-      - round: 2
-        roundName: Spanish Grand Prix
-        driver: Bruce McLaren
-        position: 2
-        points: 6
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: John Surtees
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: 2
+            points: 6
       - round: 3
         roundName: Monaco Grand Prix
-        driver: John Surtees
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
-      - round: 3
-        roundName: Monaco Grand Prix
-        driver: Denny Hulme
-        position: 4
-        points: 3
+        results:
+          - driver: John Surtees
+            position: null
+            points: 0
+          - driver: Bruce McLaren
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 4
+            points: 3
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: Peter Gethin
-        position: null
-        points: 0
-      - round: 5
-        roundName: Dutch Grand Prix
-        driver: John Surtees
-        position: 6
-        points: 1
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Peter Gethin
+            position: null
+            points: 0
+          - driver: John Surtees
+            position: 6
+            points: 1
       - round: 6
         roundName: French Grand Prix
-        driver: Dan Gurney
-        position: 6
-        points: 1
-      - round: 6
-        roundName: French Grand Prix
-        driver: Denny Hulme
-        position: 4
-        points: 3
+        results:
+          - driver: Dan Gurney
+            position: 6
+            points: 1
+          - driver: Denny Hulme
+            position: 4
+            points: 3
       - round: 7
         roundName: British Grand Prix
-        driver: Dan Gurney
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
+        results:
+          - driver: Dan Gurney
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 3
+            points: 4
       - round: 8
         roundName: German Grand Prix
-        driver: Peter Gethin
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
+        results:
+          - driver: Peter Gethin
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 3
+            points: 4
       - round: 9
         roundName: Austrian Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 9
-        roundName: Austrian Grand Prix
-        driver: Peter Gethin
-        position: 10
-        points: 0
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Peter Gethin
+            position: 10
+            points: 0
       - round: 10
         roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Peter Gethin
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Denny Hulme
-        position: 4
-        points: 3
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Peter Gethin
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 4
+            points: 3
       - round: 11
         roundName: Canadian Grand Prix
-        driver: Denny Hulme
-        position: null
-        points: 0
-      - round: 11
-        roundName: Canadian Grand Prix
-        driver: Peter Gethin
-        position: 6
-        points: 1
+        results:
+          - driver: Denny Hulme
+            position: null
+            points: 0
+          - driver: Peter Gethin
+            position: 6
+            points: 1
       - round: 12
         roundName: United States Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
-      - round: 12
-        roundName: United States Grand Prix
-        driver: Peter Gethin
-        position: 14
-        points: 0
-      - round: 12
-        roundName: United States Grand Prix
-        driver: Denny Hulme
-        position: 7
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
+          - driver: Peter Gethin
+            position: 14
+            points: 0
+          - driver: Denny Hulme
+            position: 7
+            points: 0
       - round: 13
         roundName: Mexican Grand Prix
-        driver: Peter Gethin
-        position: null
-        points: 0
-      - round: 13
-        roundName: Mexican Grand Prix
-        driver: Denny Hulme
-        position: 3
-        points: 4
+        results:
+          - driver: Peter Gethin
+            position: null
+            points: 0
+          - driver: Denny Hulme
+            position: 3
+            points: 4

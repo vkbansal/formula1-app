@@ -12,14 +12,16 @@ championshipStandings:
     position: 8
 seasons:
   - year: 1960
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Masten Gregory
-        position: 12
-        points: 0
+        results:
+          - driver: Masten Gregory
+            position: 12
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Fred Gamble
-        position: 10
-        points: 0
+        results:
+          - driver: Fred Gamble
+            position: 10
+            points: 0

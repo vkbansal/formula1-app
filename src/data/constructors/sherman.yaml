@@ -10,16 +10,18 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Andy Linden
-        position: 4
-        points: 3
+        results:
+          - driver: Andy Linden
+            position: 4
+            points: 3
   - year: 1952
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: George Fonder
-        position: 15
-        points: 0
+        results:
+          - driver: George Fonder
+            position: 15
+            points: 0

@@ -20,12 +20,16 @@ export interface DriverResult {
 	points: number;
 }
 
-export interface ConstructorResult {
-	round: number;
-	roundName: string;
+export interface ConstructorDriverResult {
 	driver: string;
 	position: number | null;
 	points: number;
+}
+
+export interface ConstructorResult {
+	round: number;
+	roundName: string;
+	results: ConstructorDriverResult[];
 }
 
 export interface DriverSeason {
@@ -35,7 +39,7 @@ export interface DriverSeason {
 
 export interface ConstructorSeason {
 	year: number;
-	results: ConstructorResult[];
+	rounds: ConstructorResult[];
 }
 
 export interface Driver {

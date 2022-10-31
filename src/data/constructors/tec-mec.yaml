@@ -12,9 +12,10 @@ championshipStandings:
     position: 12
 seasons:
   - year: 1959
-    results:
+    rounds:
       - round: 9
         roundName: United States Grand Prix
-        driver: Fritz d'Orey
-        position: null
-        points: 0
+        results:
+          - driver: Fritz d'Orey
+            position: null
+            points: 0

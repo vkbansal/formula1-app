@@ -12,9 +12,10 @@ championshipStandings:
     position: 12
 seasons:
   - year: 1972
-    results:
+    rounds:
       - round: 7
         roundName: British Grand Prix
-        driver: Henri Pescarolo
-        position: null
-        points: 0
+        results:
+          - driver: Henri Pescarolo
+            position: null
+            points: 0

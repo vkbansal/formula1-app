@@ -10,26 +10,24 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Paul Russo
-        position: 9
-        points: 0
+        results:
+          - driver: Paul Russo
+            position: 9
+            points: 0
   - year: 1954
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Jimmy Daywalt
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Andy Linden
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Johnny Thomson
-        position: null
-        points: 0
+        results:
+          - driver: Jimmy Daywalt
+            position: null
+            points: 0
+          - driver: Andy Linden
+            position: null
+            points: 0
+          - driver: Johnny Thomson
+            position: null
+            points: 0

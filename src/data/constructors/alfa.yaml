@@ -34,2047 +34,1817 @@ championshipStandings:
     position: 9
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 1
         roundName: British Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 1
-        roundName: British Grand Prix
-        driver: Reg Parnell
-        position: 3
-        points: 4
-      - round: 1
-        roundName: British Grand Prix
-        driver: Luigi Fagioli
-        position: 2
-        points: 6
-      - round: 1
-        roundName: British Grand Prix
-        driver: Nino Farina
-        position: 1
-        points: 9
+        results:
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Reg Parnell
+            position: 3
+            points: 4
+          - driver: Luigi Fagioli
+            position: 2
+            points: 6
+          - driver: Nino Farina
+            position: 1
+            points: 9
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Luigi Fagioli
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Nino Farina
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 9
+        results:
+          - driver: Luigi Fagioli
+            position: null
+            points: 0
+          - driver: Nino Farina
+            position: null
+            points: 0
+          - driver: Juan Fangio
+            position: 1
+            points: 9
       - round: 4
         roundName: Swiss Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 4
-        roundName: Swiss Grand Prix
-        driver: Luigi Fagioli
-        position: 2
-        points: 6
-      - round: 4
-        roundName: Swiss Grand Prix
-        driver: Nino Farina
-        position: 1
-        points: 9
+        results:
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Luigi Fagioli
+            position: 2
+            points: 6
+          - driver: Nino Farina
+            position: 1
+            points: 9
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Nino Farina
-        position: 4
-        points: 4
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Luigi Fagioli
-        position: 2
-        points: 6
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 8
+        results:
+          - driver: Nino Farina
+            position: 4
+            points: 4
+          - driver: Luigi Fagioli
+            position: 2
+            points: 6
+          - driver: Juan Fangio
+            position: 1
+            points: 8
       - round: 6
         roundName: French Grand Prix
-        driver: Nino Farina
-        position: 7
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Luigi Fagioli
-        position: 2
-        points: 6
-      - round: 6
-        roundName: French Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 9
+        results:
+          - driver: Nino Farina
+            position: 7
+            points: 0
+          - driver: Luigi Fagioli
+            position: 2
+            points: 6
+          - driver: Juan Fangio
+            position: 1
+            points: 9
       - round: 7
         roundName: Italian Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Consalvo Sanesi
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 1
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Piero Taruffi
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Luigi Fagioli
-        position: 3
-        points: 4
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Nino Farina
-        position: 1
-        points: 8
+        results:
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Consalvo Sanesi
+            position: null
+            points: 0
+          - driver: Juan Fangio
+            position: null
+            points: 1
+          - driver: Piero Taruffi
+            position: null
+            points: 0
+          - driver: Luigi Fagioli
+            position: 3
+            points: 4
+          - driver: Nino Farina
+            position: 1
+            points: 8
   - year: 1951
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Toulo de Graffenried
-        position: 5
-        points: 2
-      - round: 1
-        roundName: Swiss Grand Prix
-        driver: Consalvo Sanesi
-        position: 4
-        points: 3
-      - round: 1
-        roundName: Swiss Grand Prix
-        driver: Nino Farina
-        position: 3
-        points: 4
-      - round: 1
-        roundName: Swiss Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 9
+        results:
+          - driver: Toulo de Graffenried
+            position: 5
+            points: 2
+          - driver: Consalvo Sanesi
+            position: 4
+            points: 3
+          - driver: Nino Farina
+            position: 3
+            points: 4
+          - driver: Juan Fangio
+            position: 1
+            points: 9
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Consalvo Sanesi
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Juan Fangio
-        position: 9
-        points: 1
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Nino Farina
-        position: 1
-        points: 8
+        results:
+          - driver: Consalvo Sanesi
+            position: null
+            points: 0
+          - driver: Juan Fangio
+            position: 9
+            points: 1
+          - driver: Nino Farina
+            position: 1
+            points: 8
       - round: 4
         roundName: French Grand Prix
-        driver: Luigi Fagioli
-        position: 11
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 5
-      - round: 4
-        roundName: French Grand Prix
-        driver: Juan Fangio
-        position: 11
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Consalvo Sanesi
-        position: 10
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Nino Farina
-        position: 5
-        points: 2
-      - round: 4
-        roundName: French Grand Prix
-        driver: Luigi Fagioli
-        position: 1
-        points: 4
+        results:
+          - driver: Luigi Fagioli
+            position: 11
+            points: 0
+          - driver: Juan Fangio
+            position: 1
+            points: 5
+          - driver: Juan Fangio
+            position: 11
+            points: 0
+          - driver: Consalvo Sanesi
+            position: 10
+            points: 0
+          - driver: Nino Farina
+            position: 5
+            points: 2
+          - driver: Luigi Fagioli
+            position: 1
+            points: 4
       - round: 5
         roundName: British Grand Prix
-        driver: Nino Farina
-        position: null
-        points: 1
-      - round: 5
-        roundName: British Grand Prix
-        driver: Consalvo Sanesi
-        position: 6
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Felice Bonetto
-        position: 4
-        points: 3
-      - round: 5
-        roundName: British Grand Prix
-        driver: Juan Fangio
-        position: 2
-        points: 6
+        results:
+          - driver: Nino Farina
+            position: null
+            points: 1
+          - driver: Consalvo Sanesi
+            position: 6
+            points: 0
+          - driver: Felice Bonetto
+            position: 4
+            points: 3
+          - driver: Juan Fangio
+            position: 2
+            points: 6
       - round: 6
         roundName: German Grand Prix
-        driver: Nino Farina
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Paul Pietsch
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Felice Bonetto
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Juan Fangio
-        position: 2
-        points: 7
+        results:
+          - driver: Nino Farina
+            position: null
+            points: 0
+          - driver: Paul Pietsch
+            position: null
+            points: 0
+          - driver: Felice Bonetto
+            position: null
+            points: 0
+          - driver: Juan Fangio
+            position: 2
+            points: 7
       - round: 7
         roundName: Italian Grand Prix
-        driver: Nino Farina
-        position: 3
-        points: 3
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Toulo de Graffenried
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Nino Farina
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Juan Fangio
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Felice Bonetto
-        position: 3
-        points: 2
+        results:
+          - driver: Nino Farina
+            position: 3
+            points: 3
+          - driver: Toulo de Graffenried
+            position: null
+            points: 0
+          - driver: Nino Farina
+            position: null
+            points: 0
+          - driver: Juan Fangio
+            position: null
+            points: 0
+          - driver: Felice Bonetto
+            position: 3
+            points: 2
       - round: 8
         roundName: Spanish Grand Prix
-        driver: Toulo de Graffenried
-        position: 6
-        points: 0
-      - round: 8
-        roundName: Spanish Grand Prix
-        driver: Felice Bonetto
-        position: 5
-        points: 2
-      - round: 8
-        roundName: Spanish Grand Prix
-        driver: Nino Farina
-        position: 3
-        points: 4
-      - round: 8
-        roundName: Spanish Grand Prix
-        driver: Juan Fangio
-        position: 1
-        points: 9
+        results:
+          - driver: Toulo de Graffenried
+            position: 6
+            points: 0
+          - driver: Felice Bonetto
+            position: 5
+            points: 2
+          - driver: Nino Farina
+            position: 3
+            points: 4
+          - driver: Juan Fangio
+            position: 1
+            points: 9
   - year: 1963
-    results:
+    rounds:
       - round: 10
         roundName: South African Grand Prix
-        driver: Peter de Klerk
-        position: null
-        points: 0
+        results:
+          - driver: Peter de Klerk
+            position: null
+            points: 0
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Peter de Klerk
-        position: 10
-        points: 0
+        results:
+          - driver: Peter de Klerk
+            position: 10
+            points: 0
   - year: 1979
-    results:
+    rounds:
       - round: 6
         roundName: Belgian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 8
         roundName: French Grand Prix
-        driver: Bruno Giacomelli
-        position: 17
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: 17
+            points: 0
       - round: 13
         roundName: Italian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 13
-        roundName: Italian Grand Prix
-        driver: Vittorio Brambilla
-        position: 12
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Vittorio Brambilla
+            position: 12
+            points: 0
       - round: 14
         roundName: Canadian Grand Prix
-        driver: Vittorio Brambilla
-        position: null
-        points: 0
+        results:
+          - driver: Vittorio Brambilla
+            position: null
+            points: 0
       - round: 15
         roundName: United States Grand Prix
-        driver: Vittorio Brambilla
-        position: null
-        points: 0
-      - round: 15
-        roundName: United States Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Vittorio Brambilla
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
   - year: 1980
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Patrick Depailler
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Bruno Giacomelli
-        position: 5
-        points: 2
+        results:
+          - driver: Patrick Depailler
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 5
+            points: 2
       - round: 2
         roundName: Brazilian Grand Prix
-        driver: Patrick Depailler
-        position: null
-        points: 0
-      - round: 2
-        roundName: Brazilian Grand Prix
-        driver: Bruno Giacomelli
-        position: 13
-        points: 0
+        results:
+          - driver: Patrick Depailler
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 13
+            points: 0
       - round: 3
         roundName: South African Grand Prix
-        driver: Patrick Depailler
-        position: null
-        points: 0
-      - round: 3
-        roundName: South African Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Patrick Depailler
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 4
         roundName: United States Grand Prix West
-        driver: Patrick Depailler
-        position: null
-        points: 0
-      - round: 4
-        roundName: United States Grand Prix West
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Patrick Depailler
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Patrick Depailler
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Patrick Depailler
+            position: null
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 6
-        roundName: Monaco Grand Prix
-        driver: Patrick Depailler
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Patrick Depailler
+            position: null
+            points: 0
       - round: 7
         roundName: French Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 7
-        roundName: French Grand Prix
-        driver: Patrick Depailler
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Patrick Depailler
+            position: null
+            points: 0
       - round: 8
         roundName: British Grand Prix
-        driver: Patrick Depailler
-        position: null
-        points: 0
-      - round: 8
-        roundName: British Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Patrick Depailler
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 9
         roundName: German Grand Prix
-        driver: Bruno Giacomelli
-        position: 5
-        points: 2
+        results:
+          - driver: Bruno Giacomelli
+            position: 5
+            points: 2
       - round: 10
         roundName: Austrian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 11
         roundName: Dutch Grand Prix
-        driver: Vittorio Brambilla
-        position: null
-        points: 0
-      - round: 11
-        roundName: Dutch Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Vittorio Brambilla
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 12
         roundName: Italian Grand Prix
-        driver: Vittorio Brambilla
-        position: null
-        points: 0
-      - round: 12
-        roundName: Italian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Vittorio Brambilla
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 13
         roundName: Canadian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 13
-        roundName: Canadian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
       - round: 14
         roundName: United States Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 14
-        roundName: United States Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
   - year: 1981
-    results:
+    rounds:
       - round: 1
         roundName: United States Grand Prix West
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 1
-        roundName: United States Grand Prix West
-        driver: Mario Andretti
-        position: 4
-        points: 3
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Mario Andretti
+            position: 4
+            points: 3
       - round: 2
         roundName: Brazilian Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 2
-        roundName: Brazilian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 3
         roundName: Argentine Grand Prix
-        driver: Bruno Giacomelli
-        position: 10
-        points: 0
-      - round: 3
-        roundName: Argentine Grand Prix
-        driver: Mario Andretti
-        position: 8
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: 10
+            points: 0
+          - driver: Mario Andretti
+            position: 8
+            points: 0
       - round: 4
         roundName: San Marino Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 4
-        roundName: San Marino Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Mario Andretti
-        position: 10
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Bruno Giacomelli
-        position: 9
-        points: 0
+        results:
+          - driver: Mario Andretti
+            position: 10
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 9
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 6
-        roundName: Monaco Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 7
         roundName: Spanish Grand Prix
-        driver: Bruno Giacomelli
-        position: 10
-        points: 0
-      - round: 7
-        roundName: Spanish Grand Prix
-        driver: Mario Andretti
-        position: 8
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: 10
+            points: 0
+          - driver: Mario Andretti
+            position: 8
+            points: 0
       - round: 8
         roundName: French Grand Prix
-        driver: Bruno Giacomelli
-        position: 15
-        points: 0
-      - round: 8
-        roundName: French Grand Prix
-        driver: Mario Andretti
-        position: 8
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: 15
+            points: 0
+          - driver: Mario Andretti
+            position: 8
+            points: 0
       - round: 9
         roundName: British Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 9
-        roundName: British Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Mario Andretti
+            position: null
+            points: 0
       - round: 10
         roundName: German Grand Prix
-        driver: Bruno Giacomelli
-        position: 15
-        points: 0
-      - round: 10
-        roundName: German Grand Prix
-        driver: Mario Andretti
-        position: 9
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: 15
+            points: 0
+          - driver: Mario Andretti
+            position: 9
+            points: 0
       - round: 11
         roundName: Austrian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 11
-        roundName: Austrian Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Mario Andretti
+            position: null
+            points: 0
       - round: 12
         roundName: Dutch Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 12
-        roundName: Dutch Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Mario Andretti
+            position: null
+            points: 0
       - round: 13
         roundName: Italian Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 13
-        roundName: Italian Grand Prix
-        driver: Bruno Giacomelli
-        position: 8
-        points: 0
+        results:
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 8
+            points: 0
       - round: 14
         roundName: Canadian Grand Prix
-        driver: Mario Andretti
-        position: 7
-        points: 0
-      - round: 14
-        roundName: Canadian Grand Prix
-        driver: Bruno Giacomelli
-        position: 4
-        points: 3
+        results:
+          - driver: Mario Andretti
+            position: 7
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 4
+            points: 3
       - round: 15
         roundName: Caesars Palace Grand Prix
-        driver: Mario Andretti
-        position: null
-        points: 0
-      - round: 15
-        roundName: Caesars Palace Grand Prix
-        driver: Bruno Giacomelli
-        position: 3
-        points: 4
+        results:
+          - driver: Mario Andretti
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 3
+            points: 4
   - year: 1982
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Andrea de Cesaris
-        position: 13
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Bruno Giacomelli
-        position: 11
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: 13
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 11
+            points: 0
       - round: 2
         roundName: Brazilian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 2
-        roundName: Brazilian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 3
         roundName: United States Grand Prix West
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 3
-        roundName: United States Grand Prix West
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
       - round: 4
         roundName: San Marino Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 4
-        roundName: San Marino Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 6
-        roundName: Monaco Grand Prix
-        driver: Andrea de Cesaris
-        position: 3
-        points: 4
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 3
+            points: 4
       - round: 7
         roundName: Detroit Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 7
-        roundName: Detroit Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
       - round: 8
         roundName: Canadian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 8
-        roundName: Canadian Grand Prix
-        driver: Andrea de Cesaris
-        position: 6
-        points: 1
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 6
+            points: 1
       - round: 9
         roundName: Dutch Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 9
-        roundName: Dutch Grand Prix
-        driver: Bruno Giacomelli
-        position: 11
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 11
+            points: 0
       - round: 10
         roundName: British Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 10
-        roundName: British Grand Prix
-        driver: Bruno Giacomelli
-        position: 7
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 7
+            points: 0
       - round: 11
         roundName: French Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 11
-        roundName: French Grand Prix
-        driver: Bruno Giacomelli
-        position: 9
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 9
+            points: 0
       - round: 12
         roundName: German Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 12
-        roundName: German Grand Prix
-        driver: Bruno Giacomelli
-        position: 5
-        points: 2
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Bruno Giacomelli
+            position: 5
+            points: 2
       - round: 13
         roundName: Austrian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 13
-        roundName: Austrian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
       - round: 14
         roundName: Swiss Grand Prix
-        driver: Bruno Giacomelli
-        position: 12
-        points: 0
-      - round: 14
-        roundName: Swiss Grand Prix
-        driver: Andrea de Cesaris
-        position: 10
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: 12
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 10
+            points: 0
       - round: 15
         roundName: Italian Grand Prix
-        driver: Bruno Giacomelli
-        position: null
-        points: 0
-      - round: 15
-        roundName: Italian Grand Prix
-        driver: Andrea de Cesaris
-        position: 10
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 10
+            points: 0
       - round: 16
         roundName: Caesars Palace Grand Prix
-        driver: Bruno Giacomelli
-        position: 10
-        points: 0
-      - round: 16
-        roundName: Caesars Palace Grand Prix
-        driver: Andrea de Cesaris
-        position: 9
-        points: 0
+        results:
+          - driver: Bruno Giacomelli
+            position: 10
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 9
+            points: 0
   - year: 1983
-    results:
+    rounds:
       - round: 1
         roundName: Brazilian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 1
-        roundName: Brazilian Grand Prix
-        driver: Mauro Baldi
-        position: null
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Mauro Baldi
+            position: null
+            points: 0
       - round: 2
         roundName: United States Grand Prix West
-        driver: Mauro Baldi
-        position: null
-        points: 0
-      - round: 2
-        roundName: United States Grand Prix West
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
+        results:
+          - driver: Mauro Baldi
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
       - round: 3
         roundName: French Grand Prix
-        driver: Mauro Baldi
-        position: null
-        points: 0
-      - round: 3
-        roundName: French Grand Prix
-        driver: Andrea de Cesaris
-        position: 12
-        points: 0
+        results:
+          - driver: Mauro Baldi
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 12
+            points: 0
       - round: 4
         roundName: San Marino Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 4
-        roundName: San Marino Grand Prix
-        driver: Mauro Baldi
-        position: 10
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Mauro Baldi
+            position: 10
+            points: 0
       - round: 5
         roundName: Monaco Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 5
-        roundName: Monaco Grand Prix
-        driver: Mauro Baldi
-        position: 6
-        points: 1
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Mauro Baldi
+            position: 6
+            points: 1
       - round: 6
         roundName: Belgian Grand Prix
-        driver: Mauro Baldi
-        position: null
-        points: 0
-      - round: 6
-        roundName: Belgian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
+        results:
+          - driver: Mauro Baldi
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
       - round: 7
         roundName: Detroit Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 7
-        roundName: Detroit Grand Prix
-        driver: Mauro Baldi
-        position: 12
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Mauro Baldi
+            position: 12
+            points: 0
       - round: 8
         roundName: Canadian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 8
-        roundName: Canadian Grand Prix
-        driver: Mauro Baldi
-        position: 10
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Mauro Baldi
+            position: 10
+            points: 0
       - round: 9
         roundName: British Grand Prix
-        driver: Andrea de Cesaris
-        position: 8
-        points: 0
-      - round: 9
-        roundName: British Grand Prix
-        driver: Mauro Baldi
-        position: 7
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: 8
+            points: 0
+          - driver: Mauro Baldi
+            position: 7
+            points: 0
       - round: 10
         roundName: German Grand Prix
-        driver: Mauro Baldi
-        position: null
-        points: 0
-      - round: 10
-        roundName: German Grand Prix
-        driver: Andrea de Cesaris
-        position: 2
-        points: 6
+        results:
+          - driver: Mauro Baldi
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 2
+            points: 6
       - round: 11
         roundName: Austrian Grand Prix
-        driver: Mauro Baldi
-        position: null
-        points: 0
-      - round: 11
-        roundName: Austrian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
+        results:
+          - driver: Mauro Baldi
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
       - round: 12
         roundName: Dutch Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 12
-        roundName: Dutch Grand Prix
-        driver: Mauro Baldi
-        position: 5
-        points: 2
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Mauro Baldi
+            position: 5
+            points: 2
       - round: 13
         roundName: Italian Grand Prix
-        driver: Andrea de Cesaris
-        position: null
-        points: 0
-      - round: 13
-        roundName: Italian Grand Prix
-        driver: Mauro Baldi
-        position: null
-        points: 0
+        results:
+          - driver: Andrea de Cesaris
+            position: null
+            points: 0
+          - driver: Mauro Baldi
+            position: null
+            points: 0
       - round: 14
         roundName: European Grand Prix
-        driver: Mauro Baldi
-        position: null
-        points: 0
-      - round: 14
-        roundName: European Grand Prix
-        driver: Andrea de Cesaris
-        position: 4
-        points: 3
+        results:
+          - driver: Mauro Baldi
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 4
+            points: 3
       - round: 15
         roundName: South African Grand Prix
-        driver: Mauro Baldi
-        position: null
-        points: 0
-      - round: 15
-        roundName: South African Grand Prix
-        driver: Andrea de Cesaris
-        position: 2
-        points: 6
+        results:
+          - driver: Mauro Baldi
+            position: null
+            points: 0
+          - driver: Andrea de Cesaris
+            position: 2
+            points: 6
   - year: 1984
-    results:
+    rounds:
       - round: 1
         roundName: Brazilian Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 1
-        roundName: Brazilian Grand Prix
-        driver: Eddie Cheever
-        position: 4
-        points: 3
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: 4
+            points: 3
       - round: 2
         roundName: South African Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 2
-        roundName: South African Grand Prix
-        driver: Riccardo Patrese
-        position: 4
-        points: 3
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: 4
+            points: 3
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 4
         roundName: San Marino Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 4
-        roundName: San Marino Grand Prix
-        driver: Eddie Cheever
-        position: 7
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: 7
+            points: 0
       - round: 5
         roundName: French Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 6
-        roundName: Monaco Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
       - round: 7
         roundName: Canadian Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 7
-        roundName: Canadian Grand Prix
-        driver: Eddie Cheever
-        position: 11
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: 11
+            points: 0
       - round: 8
         roundName: Detroit Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 8
-        roundName: Detroit Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 9
         roundName: Dallas Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 9
-        roundName: Dallas Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
       - round: 10
         roundName: British Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 10
-        roundName: British Grand Prix
-        driver: Riccardo Patrese
-        position: 12
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: 12
+            points: 0
       - round: 11
         roundName: German Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 11
-        roundName: German Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 12
         roundName: Austrian Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 12
-        roundName: Austrian Grand Prix
-        driver: Riccardo Patrese
-        position: 10
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: 10
+            points: 0
       - round: 13
         roundName: Dutch Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 13
-        roundName: Dutch Grand Prix
-        driver: Eddie Cheever
-        position: 13
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: 13
+            points: 0
       - round: 14
         roundName: Italian Grand Prix
-        driver: Eddie Cheever
-        position: 9
-        points: 0
-      - round: 14
-        roundName: Italian Grand Prix
-        driver: Riccardo Patrese
-        position: 3
-        points: 4
+        results:
+          - driver: Eddie Cheever
+            position: 9
+            points: 0
+          - driver: Riccardo Patrese
+            position: 3
+            points: 4
       - round: 15
         roundName: European Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 15
-        roundName: European Grand Prix
-        driver: Riccardo Patrese
-        position: 6
-        points: 1
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: 6
+            points: 1
       - round: 16
         roundName: Portuguese Grand Prix
-        driver: Eddie Cheever
-        position: 17
-        points: 0
-      - round: 16
-        roundName: Portuguese Grand Prix
-        driver: Riccardo Patrese
-        position: 8
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: 17
+            points: 0
+          - driver: Riccardo Patrese
+            position: 8
+            points: 0
   - year: 1985
-    results:
+    rounds:
       - round: 1
         roundName: Brazilian Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 1
-        roundName: Brazilian Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 2
         roundName: Portuguese Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 2
-        roundName: Portuguese Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 3
         roundName: San Marino Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 3
-        roundName: San Marino Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 4
         roundName: Monaco Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 4
-        roundName: Monaco Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
       - round: 5
         roundName: Canadian Grand Prix
-        driver: Eddie Cheever
-        position: 17
-        points: 0
-      - round: 5
-        roundName: Canadian Grand Prix
-        driver: Riccardo Patrese
-        position: 10
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: 17
+            points: 0
+          - driver: Riccardo Patrese
+            position: 10
+            points: 0
       - round: 6
         roundName: Detroit Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 6
-        roundName: Detroit Grand Prix
-        driver: Eddie Cheever
-        position: 9
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: 9
+            points: 0
       - round: 7
         roundName: French Grand Prix
-        driver: Riccardo Patrese
-        position: 11
-        points: 0
-      - round: 7
-        roundName: French Grand Prix
-        driver: Eddie Cheever
-        position: 10
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: 11
+            points: 0
+          - driver: Eddie Cheever
+            position: 10
+            points: 0
       - round: 8
         roundName: British Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 8
-        roundName: British Grand Prix
-        driver: Riccardo Patrese
-        position: 9
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: 9
+            points: 0
       - round: 9
         roundName: German Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 9
-        roundName: German Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 10
         roundName: Austrian Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 10
-        roundName: Austrian Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
       - round: 11
         roundName: Dutch Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
-      - round: 11
-        roundName: Dutch Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
+        results:
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
+          - driver: Eddie Cheever
+            position: null
+            points: 0
       - round: 12
         roundName: Italian Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 12
-        roundName: Italian Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
       - round: 13
         roundName: Belgian Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 13
-        roundName: Belgian Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
       - round: 14
         roundName: European Grand Prix
-        driver: Eddie Cheever
-        position: 11
-        points: 0
-      - round: 14
-        roundName: European Grand Prix
-        driver: Riccardo Patrese
-        position: 9
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: 11
+            points: 0
+          - driver: Riccardo Patrese
+            position: 9
+            points: 0
       - round: 15
         roundName: South African Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 15
-        roundName: South African Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
       - round: 16
         roundName: Australian Grand Prix
-        driver: Eddie Cheever
-        position: null
-        points: 0
-      - round: 16
-        roundName: Australian Grand Prix
-        driver: Riccardo Patrese
-        position: null
-        points: 0
+        results:
+          - driver: Eddie Cheever
+            position: null
+            points: 0
+          - driver: Riccardo Patrese
+            position: null
+            points: 0
   - year: 2019
-    results:
+    rounds:
       - round: 1
         roundName: Australian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 15
-        points: 0
-      - round: 1
-        roundName: Australian Grand Prix
-        driver: Kimi Räikkönen
-        position: 8
-        points: 4
+        results:
+          - driver: Antonio Giovinazzi
+            position: 15
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 8
+            points: 4
       - round: 2
         roundName: Bahrain Grand Prix
-        driver: Antonio Giovinazzi
-        position: 11
-        points: 0
-      - round: 2
-        roundName: Bahrain Grand Prix
-        driver: Kimi Räikkönen
-        position: 7
-        points: 6
+        results:
+          - driver: Antonio Giovinazzi
+            position: 11
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 7
+            points: 6
       - round: 3
         roundName: Chinese Grand Prix
-        driver: Antonio Giovinazzi
-        position: 15
-        points: 0
-      - round: 3
-        roundName: Chinese Grand Prix
-        driver: Kimi Räikkönen
-        position: 9
-        points: 2
+        results:
+          - driver: Antonio Giovinazzi
+            position: 15
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 9
+            points: 2
       - round: 4
         roundName: Azerbaijan Grand Prix
-        driver: Antonio Giovinazzi
-        position: 12
-        points: 0
-      - round: 4
-        roundName: Azerbaijan Grand Prix
-        driver: Kimi Räikkönen
-        position: 10
-        points: 1
+        results:
+          - driver: Antonio Giovinazzi
+            position: 12
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 10
+            points: 1
       - round: 5
         roundName: Spanish Grand Prix
-        driver: Antonio Giovinazzi
-        position: 16
-        points: 0
-      - round: 5
-        roundName: Spanish Grand Prix
-        driver: Kimi Räikkönen
-        position: 14
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 16
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 14
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Antonio Giovinazzi
-        position: 19
-        points: 0
-      - round: 6
-        roundName: Monaco Grand Prix
-        driver: Kimi Räikkönen
-        position: 17
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 19
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 17
+            points: 0
       - round: 7
         roundName: Canadian Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
-      - round: 7
-        roundName: Canadian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 13
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 13
+            points: 0
       - round: 8
         roundName: French Grand Prix
-        driver: Antonio Giovinazzi
-        position: 16
-        points: 0
-      - round: 8
-        roundName: French Grand Prix
-        driver: Kimi Räikkönen
-        position: 7
-        points: 6
+        results:
+          - driver: Antonio Giovinazzi
+            position: 16
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 7
+            points: 6
       - round: 9
         roundName: Austrian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 10
-        points: 1
-      - round: 9
-        roundName: Austrian Grand Prix
-        driver: Kimi Räikkönen
-        position: 9
-        points: 2
+        results:
+          - driver: Antonio Giovinazzi
+            position: 10
+            points: 1
+          - driver: Kimi Räikkönen
+            position: 9
+            points: 2
       - round: 10
         roundName: British Grand Prix
-        driver: Antonio Giovinazzi
-        position: null
-        points: 0
-      - round: 10
-        roundName: British Grand Prix
-        driver: Kimi Räikkönen
-        position: 8
-        points: 4
+        results:
+          - driver: Antonio Giovinazzi
+            position: null
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 8
+            points: 4
       - round: 11
         roundName: German Grand Prix
-        driver: Antonio Giovinazzi
-        position: 13
-        points: 0
-      - round: 11
-        roundName: German Grand Prix
-        driver: Kimi Räikkönen
-        position: 12
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 13
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 12
+            points: 0
       - round: 12
         roundName: Hungarian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 18
-        points: 0
-      - round: 12
-        roundName: Hungarian Grand Prix
-        driver: Kimi Räikkönen
-        position: 7
-        points: 6
+        results:
+          - driver: Antonio Giovinazzi
+            position: 18
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 7
+            points: 6
       - round: 13
         roundName: Belgian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 18
-        points: 0
-      - round: 13
-        roundName: Belgian Grand Prix
-        driver: Kimi Räikkönen
-        position: 16
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 18
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 16
+            points: 0
       - round: 14
         roundName: Italian Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
-      - round: 14
-        roundName: Italian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 9
-        points: 2
+        results:
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 9
+            points: 2
       - round: 15
         roundName: Singapore Grand Prix
-        driver: Kimi Räikkönen
-        position: null
-        points: 0
-      - round: 15
-        roundName: Singapore Grand Prix
-        driver: Antonio Giovinazzi
-        position: 10
-        points: 1
+        results:
+          - driver: Kimi Räikkönen
+            position: null
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 10
+            points: 1
       - round: 16
         roundName: Russian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 15
-        points: 0
-      - round: 16
-        roundName: Russian Grand Prix
-        driver: Kimi Räikkönen
-        position: 13
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 15
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 13
+            points: 0
       - round: 17
         roundName: Japanese Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
-      - round: 17
-        roundName: Japanese Grand Prix
-        driver: Kimi Räikkönen
-        position: 12
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 12
+            points: 0
       - round: 18
         roundName: Mexican Grand Prix
-        driver: Kimi Räikkönen
-        position: null
-        points: 0
-      - round: 18
-        roundName: Mexican Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: null
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
       - round: 19
         roundName: United States Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
-      - round: 19
-        roundName: United States Grand Prix
-        driver: Kimi Räikkönen
-        position: 11
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 11
+            points: 0
       - round: 20
         roundName: Brazilian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 5
-        points: 10
-      - round: 20
-        roundName: Brazilian Grand Prix
-        driver: Kimi Räikkönen
-        position: 4
-        points: 12
+        results:
+          - driver: Antonio Giovinazzi
+            position: 5
+            points: 10
+          - driver: Kimi Räikkönen
+            position: 4
+            points: 12
       - round: 21
         roundName: Abu Dhabi Grand Prix
-        driver: Antonio Giovinazzi
-        position: 16
-        points: 0
-      - round: 21
-        roundName: Abu Dhabi Grand Prix
-        driver: Kimi Räikkönen
-        position: 13
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 16
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 13
+            points: 0
   - year: 2020
-    results:
+    rounds:
       - round: 1
         roundName: Austrian Grand Prix
-        driver: Kimi Räikkönen
-        position: null
-        points: 0
-      - round: 1
-        roundName: Austrian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 9
-        points: 2
+        results:
+          - driver: Kimi Räikkönen
+            position: null
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 9
+            points: 2
       - round: 2
         roundName: Styrian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
-      - round: 2
-        roundName: Styrian Grand Prix
-        driver: Kimi Räikkönen
-        position: 11
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 11
+            points: 0
       - round: 3
         roundName: Hungarian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 17
-        points: 0
-      - round: 3
-        roundName: Hungarian Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 17
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
       - round: 4
         roundName: British Grand Prix
-        driver: Kimi Räikkönen
-        position: 17
-        points: 0
-      - round: 4
-        roundName: British Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 17
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
       - round: 5
         roundName: 70th Anniversary Grand Prix
-        driver: Antonio Giovinazzi
-        position: 17
-        points: 0
-      - round: 5
-        roundName: 70th Anniversary Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 17
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
       - round: 6
         roundName: Spanish Grand Prix
-        driver: Antonio Giovinazzi
-        position: 16
-        points: 0
-      - round: 6
-        roundName: Spanish Grand Prix
-        driver: Kimi Räikkönen
-        position: 14
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 16
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 14
+            points: 0
       - round: 7
         roundName: Belgian Grand Prix
-        driver: Antonio Giovinazzi
-        position: null
-        points: 0
-      - round: 7
-        roundName: Belgian Grand Prix
-        driver: Kimi Räikkönen
-        position: 12
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: null
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 12
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 16
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Kimi Räikkönen
-        position: 13
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 16
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 13
+            points: 0
       - round: 9
         roundName: Tuscan Grand Prix
-        driver: Antonio Giovinazzi
-        position: null
-        points: 0
-      - round: 9
-        roundName: Tuscan Grand Prix
-        driver: Kimi Räikkönen
-        position: 9
-        points: 2
+        results:
+          - driver: Antonio Giovinazzi
+            position: null
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 9
+            points: 2
       - round: 10
         roundName: Russian Grand Prix
-        driver: Kimi Räikkönen
-        position: 14
-        points: 0
-      - round: 10
-        roundName: Russian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 11
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 14
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 11
+            points: 0
       - round: 11
         roundName: Eifel Grand Prix
-        driver: Kimi Räikkönen
-        position: 12
-        points: 0
-      - round: 11
-        roundName: Eifel Grand Prix
-        driver: Antonio Giovinazzi
-        position: 10
-        points: 1
+        results:
+          - driver: Kimi Räikkönen
+            position: 12
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 10
+            points: 1
       - round: 12
         roundName: Portuguese Grand Prix
-        driver: Antonio Giovinazzi
-        position: 15
-        points: 0
-      - round: 12
-        roundName: Portuguese Grand Prix
-        driver: Kimi Räikkönen
-        position: 11
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 15
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 11
+            points: 0
       - round: 13
         roundName: Emilia Romagna Grand Prix
-        driver: Antonio Giovinazzi
-        position: 10
-        points: 1
-      - round: 13
-        roundName: Emilia Romagna Grand Prix
-        driver: Kimi Räikkönen
-        position: 9
-        points: 2
+        results:
+          - driver: Antonio Giovinazzi
+            position: 10
+            points: 1
+          - driver: Kimi Räikkönen
+            position: 9
+            points: 2
       - round: 14
         roundName: Turkish Grand Prix
-        driver: Antonio Giovinazzi
-        position: null
-        points: 0
-      - round: 14
-        roundName: Turkish Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: null
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
       - round: 15
         roundName: Bahrain Grand Prix
-        driver: Antonio Giovinazzi
-        position: 16
-        points: 0
-      - round: 15
-        roundName: Bahrain Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 16
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
       - round: 16
         roundName: Sakhir Grand Prix
-        driver: Kimi Räikkönen
-        position: 14
-        points: 0
-      - round: 16
-        roundName: Sakhir Grand Prix
-        driver: Antonio Giovinazzi
-        position: 13
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 14
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 13
+            points: 0
       - round: 17
         roundName: Abu Dhabi Grand Prix
-        driver: Antonio Giovinazzi
-        position: 16
-        points: 0
-      - round: 17
-        roundName: Abu Dhabi Grand Prix
-        driver: Kimi Räikkönen
-        position: 12
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 16
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 12
+            points: 0
   - year: 2021
-    results:
+    rounds:
       - round: 1
         roundName: Bahrain Grand Prix
-        driver: Antonio Giovinazzi
-        position: 12
-        points: 0
-      - round: 1
-        roundName: Bahrain Grand Prix
-        driver: Kimi Räikkönen
-        position: 11
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 12
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 11
+            points: 0
       - round: 2
         roundName: Emilia Romagna Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
-      - round: 2
-        roundName: Emilia Romagna Grand Prix
-        driver: Kimi Räikkönen
-        position: 13
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 13
+            points: 0
       - round: 3
         roundName: Portuguese Grand Prix
-        driver: Kimi Räikkönen
-        position: null
-        points: 0
-      - round: 3
-        roundName: Portuguese Grand Prix
-        driver: Antonio Giovinazzi
-        position: 12
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: null
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 12
+            points: 0
       - round: 4
         roundName: Spanish Grand Prix
-        driver: Antonio Giovinazzi
-        position: 15
-        points: 0
-      - round: 4
-        roundName: Spanish Grand Prix
-        driver: Kimi Räikkönen
-        position: 12
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 15
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 12
+            points: 0
       - round: 5
         roundName: Monaco Grand Prix
-        driver: Kimi Räikkönen
-        position: 11
-        points: 0
-      - round: 5
-        roundName: Monaco Grand Prix
-        driver: Antonio Giovinazzi
-        position: 10
-        points: 1
+        results:
+          - driver: Kimi Räikkönen
+            position: 11
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 10
+            points: 1
       - round: 6
         roundName: Azerbaijan Grand Prix
-        driver: Antonio Giovinazzi
-        position: 11
-        points: 0
-      - round: 6
-        roundName: Azerbaijan Grand Prix
-        driver: Kimi Räikkönen
-        position: 10
-        points: 1
+        results:
+          - driver: Antonio Giovinazzi
+            position: 11
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 10
+            points: 1
       - round: 7
         roundName: French Grand Prix
-        driver: Kimi Räikkönen
-        position: 17
-        points: 0
-      - round: 7
-        roundName: French Grand Prix
-        driver: Antonio Giovinazzi
-        position: 15
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 17
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 15
+            points: 0
       - round: 8
         roundName: Styrian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 15
-        points: 0
-      - round: 8
-        roundName: Styrian Grand Prix
-        driver: Kimi Räikkönen
-        position: 11
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 15
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 11
+            points: 0
       - round: 9
         roundName: Austrian Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
-      - round: 9
-        roundName: Austrian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
       - round: 10
         roundName: British Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
-      - round: 10
-        roundName: British Grand Prix
-        driver: Antonio Giovinazzi
-        position: 13
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 13
+            points: 0
       - round: 11
         roundName: Hungarian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 13
-        points: 0
-      - round: 11
-        roundName: Hungarian Grand Prix
-        driver: Kimi Räikkönen
-        position: 10
-        points: 1
+        results:
+          - driver: Antonio Giovinazzi
+            position: 13
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 10
+            points: 1
       - round: 12
         roundName: Belgian Grand Prix
-        driver: Kimi Räikkönen
-        position: 18
-        points: 0
-      - round: 12
-        roundName: Belgian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 13
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 18
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 13
+            points: 0
       - round: 13
         roundName: Dutch Grand Prix
-        driver: Robert Kubica
-        position: 15
-        points: 0
-      - round: 13
-        roundName: Dutch Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
+        results:
+          - driver: Robert Kubica
+            position: 15
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
       - round: 14
         roundName: Italian Grand Prix
-        driver: Robert Kubica
-        position: 14
-        points: 0
-      - round: 14
-        roundName: Italian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 13
-        points: 0
+        results:
+          - driver: Robert Kubica
+            position: 14
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 13
+            points: 0
       - round: 15
         roundName: Russian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 16
-        points: 0
-      - round: 15
-        roundName: Russian Grand Prix
-        driver: Kimi Räikkönen
-        position: 8
-        points: 4
+        results:
+          - driver: Antonio Giovinazzi
+            position: 16
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 8
+            points: 4
       - round: 16
         roundName: Turkish Grand Prix
-        driver: Kimi Räikkönen
-        position: 12
-        points: 0
-      - round: 16
-        roundName: Turkish Grand Prix
-        driver: Antonio Giovinazzi
-        position: 11
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 12
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 11
+            points: 0
       - round: 17
         roundName: United States Grand Prix
-        driver: Kimi Räikkönen
-        position: 13
-        points: 0
-      - round: 17
-        roundName: United States Grand Prix
-        driver: Antonio Giovinazzi
-        position: 11
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: 13
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 11
+            points: 0
       - round: 18
         roundName: Mexico City Grand Prix
-        driver: Antonio Giovinazzi
-        position: 11
-        points: 0
-      - round: 18
-        roundName: Mexico City Grand Prix
-        driver: Kimi Räikkönen
-        position: 8
-        points: 4
+        results:
+          - driver: Antonio Giovinazzi
+            position: 11
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 8
+            points: 4
       - round: 19
         roundName: São Paulo Grand Prix
-        driver: Antonio Giovinazzi
-        position: 14
-        points: 0
-      - round: 19
-        roundName: São Paulo Grand Prix
-        driver: Kimi Räikkönen
-        position: 12
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 14
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 12
+            points: 0
       - round: 20
         roundName: Qatar Grand Prix
-        driver: Antonio Giovinazzi
-        position: 15
-        points: 0
-      - round: 20
-        roundName: Qatar Grand Prix
-        driver: Kimi Räikkönen
-        position: 14
-        points: 0
+        results:
+          - driver: Antonio Giovinazzi
+            position: 15
+            points: 0
+          - driver: Kimi Räikkönen
+            position: 14
+            points: 0
       - round: 21
         roundName: Saudi Arabian Grand Prix
-        driver: Kimi Räikkönen
-        position: 15
-        points: 0
-      - round: 21
-        roundName: Saudi Arabian Grand Prix
-        driver: Antonio Giovinazzi
-        position: 9
-        points: 2
+        results:
+          - driver: Kimi Räikkönen
+            position: 15
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: 9
+            points: 2
       - round: 22
         roundName: Abu Dhabi Grand Prix
-        driver: Kimi Räikkönen
-        position: null
-        points: 0
-      - round: 22
-        roundName: Abu Dhabi Grand Prix
-        driver: Antonio Giovinazzi
-        position: null
-        points: 0
+        results:
+          - driver: Kimi Räikkönen
+            position: null
+            points: 0
+          - driver: Antonio Giovinazzi
+            position: null
+            points: 0
   - year: 2022
-    results:
+    rounds:
       - round: 1
         roundName: Bahrain Grand Prix
-        driver: Guanyu Zhou
-        position: 10
-        points: 1
-      - round: 1
-        roundName: Bahrain Grand Prix
-        driver: Valtteri Bottas
-        position: 6
-        points: 8
+        results:
+          - driver: Guanyu Zhou
+            position: 10
+            points: 1
+          - driver: Valtteri Bottas
+            position: 6
+            points: 8
       - round: 2
         roundName: Saudi Arabian Grand Prix
-        driver: Valtteri Bottas
-        position: null
-        points: 0
-      - round: 2
-        roundName: Saudi Arabian Grand Prix
-        driver: Guanyu Zhou
-        position: 11
-        points: 0
+        results:
+          - driver: Valtteri Bottas
+            position: null
+            points: 0
+          - driver: Guanyu Zhou
+            position: 11
+            points: 0
       - round: 3
         roundName: Australian Grand Prix
-        driver: Guanyu Zhou
-        position: 11
-        points: 0
-      - round: 3
-        roundName: Australian Grand Prix
-        driver: Valtteri Bottas
-        position: 8
-        points: 4
+        results:
+          - driver: Guanyu Zhou
+            position: 11
+            points: 0
+          - driver: Valtteri Bottas
+            position: 8
+            points: 4
       - round: 4
         roundName: Emilia Romagna Grand Prix
-        driver: Guanyu Zhou
-        position: 15
-        points: 0
-      - round: 4
-        roundName: Emilia Romagna Grand Prix
-        driver: Valtteri Bottas
-        position: 5
-        points: 10
+        results:
+          - driver: Guanyu Zhou
+            position: 15
+            points: 0
+          - driver: Valtteri Bottas
+            position: 5
+            points: 10
       - round: 5
         roundName: Miami Grand Prix
-        driver: Guanyu Zhou
-        position: null
-        points: 0
-      - round: 5
-        roundName: Miami Grand Prix
-        driver: Valtteri Bottas
-        position: 7
-        points: 6
+        results:
+          - driver: Guanyu Zhou
+            position: null
+            points: 0
+          - driver: Valtteri Bottas
+            position: 7
+            points: 6
       - round: 6
         roundName: Spanish Grand Prix
-        driver: Guanyu Zhou
-        position: null
-        points: 0
-      - round: 6
-        roundName: Spanish Grand Prix
-        driver: Valtteri Bottas
-        position: 6
-        points: 8
+        results:
+          - driver: Guanyu Zhou
+            position: null
+            points: 0
+          - driver: Valtteri Bottas
+            position: 6
+            points: 8
       - round: 7
         roundName: Monaco Grand Prix
-        driver: Guanyu Zhou
-        position: 16
-        points: 0
-      - round: 7
-        roundName: Monaco Grand Prix
-        driver: Valtteri Bottas
-        position: 9
-        points: 2
+        results:
+          - driver: Guanyu Zhou
+            position: 16
+            points: 0
+          - driver: Valtteri Bottas
+            position: 9
+            points: 2
       - round: 8
         roundName: Azerbaijan Grand Prix
-        driver: Guanyu Zhou
-        position: null
-        points: 0
-      - round: 8
-        roundName: Azerbaijan Grand Prix
-        driver: Valtteri Bottas
-        position: 11
-        points: 0
+        results:
+          - driver: Guanyu Zhou
+            position: null
+            points: 0
+          - driver: Valtteri Bottas
+            position: 11
+            points: 0
       - round: 9
         roundName: Canadian Grand Prix
-        driver: Guanyu Zhou
-        position: 8
-        points: 4
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Valtteri Bottas
-        position: 7
-        points: 6
+        results:
+          - driver: Guanyu Zhou
+            position: 8
+            points: 4
+          - driver: Valtteri Bottas
+            position: 7
+            points: 6
       - round: 10
         roundName: British Grand Prix
-        driver: Guanyu Zhou
-        position: null
-        points: 0
-      - round: 10
-        roundName: British Grand Prix
-        driver: Valtteri Bottas
-        position: null
-        points: 0
+        results:
+          - driver: Guanyu Zhou
+            position: null
+            points: 0
+          - driver: Valtteri Bottas
+            position: null
+            points: 0
       - round: 11
         roundName: Austrian Grand Prix
-        driver: Guanyu Zhou
-        position: 14
-        points: 0
-      - round: 11
-        roundName: Austrian Grand Prix
-        driver: Valtteri Bottas
-        position: 11
-        points: 0
+        results:
+          - driver: Guanyu Zhou
+            position: 14
+            points: 0
+          - driver: Valtteri Bottas
+            position: 11
+            points: 0
       - round: 12
         roundName: French Grand Prix
-        driver: Guanyu Zhou
-        position: 16
-        points: 0
-      - round: 12
-        roundName: French Grand Prix
-        driver: Valtteri Bottas
-        position: 14
-        points: 0
+        results:
+          - driver: Guanyu Zhou
+            position: 16
+            points: 0
+          - driver: Valtteri Bottas
+            position: 14
+            points: 0
       - round: 13
         roundName: Hungarian Grand Prix
-        driver: Valtteri Bottas
-        position: 20
-        points: 0
-      - round: 13
-        roundName: Hungarian Grand Prix
-        driver: Guanyu Zhou
-        position: 13
-        points: 0
+        results:
+          - driver: Valtteri Bottas
+            position: 20
+            points: 0
+          - driver: Guanyu Zhou
+            position: 13
+            points: 0
       - round: 14
         roundName: Belgian Grand Prix
-        driver: Valtteri Bottas
-        position: null
-        points: 0
-      - round: 14
-        roundName: Belgian Grand Prix
-        driver: Guanyu Zhou
-        position: 14
-        points: 0
+        results:
+          - driver: Valtteri Bottas
+            position: null
+            points: 0
+          - driver: Guanyu Zhou
+            position: 14
+            points: 0
       - round: 15
         roundName: Dutch Grand Prix
-        driver: Valtteri Bottas
-        position: null
-        points: 0
-      - round: 15
-        roundName: Dutch Grand Prix
-        driver: Guanyu Zhou
-        position: 16
-        points: 0
+        results:
+          - driver: Valtteri Bottas
+            position: null
+            points: 0
+          - driver: Guanyu Zhou
+            position: 16
+            points: 0
       - round: 16
         roundName: Italian Grand Prix
-        driver: Valtteri Bottas
-        position: 13
-        points: 0
-      - round: 16
-        roundName: Italian Grand Prix
-        driver: Guanyu Zhou
-        position: 10
-        points: 1
+        results:
+          - driver: Valtteri Bottas
+            position: 13
+            points: 0
+          - driver: Guanyu Zhou
+            position: 10
+            points: 1
       - round: 17
         roundName: Singapore Grand Prix
-        driver: Guanyu Zhou
-        position: null
-        points: 0
-      - round: 17
-        roundName: Singapore Grand Prix
-        driver: Valtteri Bottas
-        position: 11
-        points: 0
+        results:
+          - driver: Guanyu Zhou
+            position: null
+            points: 0
+          - driver: Valtteri Bottas
+            position: 11
+            points: 0
       - round: 18
         roundName: Japanese Grand Prix
-        driver: Guanyu Zhou
-        position: 16
-        points: 0
-      - round: 18
-        roundName: Japanese Grand Prix
-        driver: Valtteri Bottas
-        position: 15
-        points: 0
+        results:
+          - driver: Guanyu Zhou
+            position: 16
+            points: 0
+          - driver: Valtteri Bottas
+            position: 15
+            points: 0
       - round: 19
         roundName: United States Grand Prix
-        driver: Valtteri Bottas
-        position: null
-        points: 0
-      - round: 19
-        roundName: United States Grand Prix
-        driver: Guanyu Zhou
-        position: 12
-        points: 0
+        results:
+          - driver: Valtteri Bottas
+            position: null
+            points: 0
+          - driver: Guanyu Zhou
+            position: 12
+            points: 0
       - round: 20
         roundName: Mexico City Grand Prix
-        driver: Guanyu Zhou
-        position: 13
-        points: 0
-      - round: 20
-        roundName: Mexico City Grand Prix
-        driver: Valtteri Bottas
-        position: 10
-        points: 1
+        results:
+          - driver: Guanyu Zhou
+            position: 13
+            points: 0
+          - driver: Valtteri Bottas
+            position: 10
+            points: 1

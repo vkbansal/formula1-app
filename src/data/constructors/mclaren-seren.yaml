@@ -12,14 +12,16 @@ championshipStandings:
     position: 12
 seasons:
   - year: 1966
-    results:
+    rounds:
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
       - round: 4
         roundName: British Grand Prix
-        driver: Bruce McLaren
-        position: 6
-        points: 1
+        results:
+          - driver: Bruce McLaren
+            position: 6
+            points: 1

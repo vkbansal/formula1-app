@@ -10,23 +10,26 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Lee Wallard
-        position: 6
-        points: 0
+        results:
+          - driver: Lee Wallard
+            position: 6
+            points: 0
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Henry Banks
-        position: 6
-        points: 0
+        results:
+          - driver: Henry Banks
+            position: 6
+            points: 0
   - year: 1959
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Bob Veith
-        position: 12
-        points: 0
+        results:
+          - driver: Bob Veith
+            position: 12
+            points: 0

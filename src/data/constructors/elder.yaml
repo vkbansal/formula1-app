@@ -10,9 +10,10 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1959
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Ray Crawford
-        position: null
-        points: 0
+        results:
+          - driver: Ray Crawford
+            position: null
+            points: 0

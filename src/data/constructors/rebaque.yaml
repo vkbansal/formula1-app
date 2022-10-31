@@ -12,19 +12,22 @@ championshipStandings:
     position: 17
 seasons:
   - year: 1979
-    results:
+    rounds:
       - round: 13
         roundName: Italian Grand Prix
-        driver: Hector Rebaque
-        position: null
-        points: 0
+        results:
+          - driver: Hector Rebaque
+            position: null
+            points: 0
       - round: 14
         roundName: Canadian Grand Prix
-        driver: Hector Rebaque
-        position: null
-        points: 0
+        results:
+          - driver: Hector Rebaque
+            position: null
+            points: 0
       - round: 15
         roundName: United States Grand Prix
-        driver: Hector Rebaque
-        position: null
-        points: 0
+        results:
+          - driver: Hector Rebaque
+            position: null
+            points: 0

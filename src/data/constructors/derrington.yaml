@@ -12,9 +12,10 @@ championshipStandings:
     position: 11
 seasons:
   - year: 1964
-    results:
+    rounds:
       - round: 8
         roundName: Italian Grand Prix
-        driver: Mário de Araújo Cabral
-        position: null
-        points: 0
+        results:
+          - driver: Mário de Araújo Cabral
+            position: null
+            points: 0

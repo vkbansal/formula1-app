@@ -12,9 +12,10 @@ championshipStandings:
     position: 21
 seasons:
   - year: 1977
-    results:
+    rounds:
       - round: 10
         roundName: British Grand Prix
-        driver: Brian McGuire
-        position: null
-        points: 0
+        results:
+          - driver: Brian McGuire
+            position: null
+            points: 0

@@ -10,9 +10,10 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1953
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Mike Nazaruk
-        position: null
-        points: 0
+        results:
+          - driver: Mike Nazaruk
+            position: null
+            points: 0

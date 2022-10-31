@@ -12,29 +12,31 @@ championshipStandings:
     position: 18
 seasons:
   - year: 1974
-    results:
+    rounds:
       - round: 4
         roundName: Spanish Grand Prix
-        driver: Chris Amon
-        position: null
-        points: 0
+        results:
+          - driver: Chris Amon
+            position: null
+            points: 0
       - round: 6
         roundName: Monaco Grand Prix
-        driver: Chris Amon
-        position: null
-        points: 0
+        results:
+          - driver: Chris Amon
+            position: null
+            points: 0
       - round: 11
         roundName: German Grand Prix
-        driver: Chris Amon
-        position: null
-        points: 0
-      - round: 11
-        roundName: German Grand Prix
-        driver: Larry Perkins
-        position: null
-        points: 0
+        results:
+          - driver: Chris Amon
+            position: null
+            points: 0
+          - driver: Larry Perkins
+            position: null
+            points: 0
       - round: 13
         roundName: Italian Grand Prix
-        driver: Chris Amon
-        position: null
-        points: 0
+        results:
+          - driver: Chris Amon
+            position: null
+            points: 0

@@ -12,14 +12,16 @@ championshipStandings:
     position: 19
 seasons:
   - year: 1975
-    results:
+    rounds:
       - round: 12
         roundName: Austrian Grand Prix
-        driver: Jean-Pierre Jarier
-        position: null
-        points: 0
+        results:
+          - driver: Jean-Pierre Jarier
+            position: null
+            points: 0
       - round: 13
         roundName: Italian Grand Prix
-        driver: Jean-Pierre Jarier
-        position: null
-        points: 0
+        results:
+          - driver: Jean-Pierre Jarier
+            position: null
+            points: 0

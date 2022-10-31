@@ -10,9 +10,10 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1953
-    results:
+    rounds:
       - round: 7
         roundName: German Grand Prix
-        driver: Edgar Barth
-        position: null
-        points: 0
+        results:
+          - driver: Edgar Barth
+            position: null
+            points: 0

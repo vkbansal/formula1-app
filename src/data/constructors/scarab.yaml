@@ -12,49 +12,46 @@ championshipStandings:
     position: 9
 seasons:
   - year: 1960
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Lance Reventlow
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Chuck Daigh
-        position: null
-        points: 0
+        results:
+          - driver: Lance Reventlow
+            position: null
+            points: 0
+          - driver: Chuck Daigh
+            position: null
+            points: 0
       - round: 4
         roundName: Dutch Grand Prix
-        driver: Chuck Daigh
-        position: null
-        points: 0
-      - round: 4
-        roundName: Dutch Grand Prix
-        driver: Lance Reventlow
-        position: null
-        points: 0
+        results:
+          - driver: Chuck Daigh
+            position: null
+            points: 0
+          - driver: Lance Reventlow
+            position: null
+            points: 0
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Lance Reventlow
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Chuck Daigh
-        position: null
-        points: 0
+        results:
+          - driver: Lance Reventlow
+            position: null
+            points: 0
+          - driver: Chuck Daigh
+            position: null
+            points: 0
       - round: 6
         roundName: French Grand Prix
-        driver: Chuck Daigh
-        position: null
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Richie Ginther
-        position: null
-        points: 0
+        results:
+          - driver: Chuck Daigh
+            position: null
+            points: 0
+          - driver: Richie Ginther
+            position: null
+            points: 0
       - round: 10
         roundName: United States Grand Prix
-        driver: Chuck Daigh
-        position: 10
-        points: 0
+        results:
+          - driver: Chuck Daigh
+            position: 10
+            points: 0

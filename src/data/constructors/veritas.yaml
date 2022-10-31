@@ -10,98 +10,80 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1951
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Peter Hirt
-        position: null
-        points: 0
+        results:
+          - driver: Peter Hirt
+            position: null
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Toni Ulmen
-        position: null
-        points: 0
+        results:
+          - driver: Toni Ulmen
+            position: null
+            points: 0
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Arthur Legat
-        position: 13
-        points: 0
+        results:
+          - driver: Arthur Legat
+            position: 13
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Josef Peters
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Theo Helfrich
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Paul Pietsch
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Adolf Brudes
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Hans Klenk
-        position: 11
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Toni Ulmen
-        position: 8
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Fritz Riess
-        position: 7
-        points: 0
+        results:
+          - driver: Josef Peters
+            position: null
+            points: 0
+          - driver: Theo Helfrich
+            position: null
+            points: 0
+          - driver: Paul Pietsch
+            position: null
+            points: 0
+          - driver: Adolf Brudes
+            position: null
+            points: 0
+          - driver: Hans Klenk
+            position: 11
+            points: 0
+          - driver: Toni Ulmen
+            position: 8
+            points: 0
+          - driver: Fritz Riess
+            position: 7
+            points: 0
   - year: 1953
-    results:
+    rounds:
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Arthur Legat
-        position: null
-        points: 0
+        results:
+          - driver: Arthur Legat
+            position: null
+            points: 0
       - round: 7
         roundName: German Grand Prix
-        driver: Ernst Loof
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Erwin Bauer
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Willi Heeks
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Oswald Karch
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Wolfgang Seidel
-        position: 16
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Theo Helfrich
-        position: 12
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Hans Herrmann
-        position: 9
-        points: 0
+        results:
+          - driver: Ernst Loof
+            position: null
+            points: 0
+          - driver: Erwin Bauer
+            position: null
+            points: 0
+          - driver: Willi Heeks
+            position: null
+            points: 0
+          - driver: Oswald Karch
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: 16
+            points: 0
+          - driver: Theo Helfrich
+            position: 12
+            points: 0
+          - driver: Hans Herrmann
+            position: 9
+            points: 0

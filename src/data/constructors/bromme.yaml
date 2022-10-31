@@ -10,35 +10,37 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Rodger Ward
-        position: null
-        points: 0
+        results:
+          - driver: Rodger Ward
+            position: null
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Travis Webb
-        position: null
-        points: 0
+        results:
+          - driver: Travis Webb
+            position: null
+            points: 0
   - year: 1953
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Bob Scott
-        position: null
-        points: 0
+        results:
+          - driver: Bob Scott
+            position: null
+            points: 0
   - year: 1954
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Danny Kladis
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Travis Webb
-        position: null
-        points: 0
+        results:
+          - driver: Danny Kladis
+            position: null
+            points: 0
+          - driver: Travis Webb
+            position: null
+            points: 0

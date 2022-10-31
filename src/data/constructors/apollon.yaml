@@ -12,9 +12,10 @@ championshipStandings:
     position: 20
 seasons:
   - year: 1977
-    results:
+    rounds:
       - round: 14
         roundName: Italian Grand Prix
-        driver: Loris Kessel
-        position: null
-        points: 0
+        results:
+          - driver: Loris Kessel
+            position: null
+            points: 0

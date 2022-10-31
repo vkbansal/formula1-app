@@ -14,288 +14,234 @@ championshipStandings:
     position: 13
 seasons:
   - year: 1952
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: Kenneth McAlpine
-        position: 16
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Ken Downing
-        position: 9
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Eric Thompson
-        position: 5
-        points: 2
-      - round: 5
-        roundName: British Grand Prix
-        driver: Dennis Poore
-        position: 4
-        points: 3
+        results:
+          - driver: Kenneth McAlpine
+            position: 16
+            points: 0
+          - driver: Ken Downing
+            position: 9
+            points: 0
+          - driver: Eric Thompson
+            position: 5
+            points: 2
+          - driver: Dennis Poore
+            position: 4
+            points: 3
       - round: 7
         roundName: Dutch Grand Prix
-        driver: Ken Downing
-        position: null
-        points: 0
+        results:
+          - driver: Ken Downing
+            position: null
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Kenneth McAlpine
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Dennis Poore
-        position: 12
-        points: 0
+        results:
+          - driver: Kenneth McAlpine
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Dennis Poore
+            position: 12
+            points: 0
   - year: 1953
-    results:
+    rounds:
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Johnny Claes
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Kenneth McAlpine
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Stirling Moss
-        position: 9
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Johnny Claes
+            position: null
+            points: 0
+          - driver: Kenneth McAlpine
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: 9
+            points: 0
       - round: 4
         roundName: Belgian Grand Prix
-        driver: André Pilette
-        position: 11
-        points: 0
+        results:
+          - driver: André Pilette
+            position: 11
+            points: 0
       - round: 5
         roundName: French Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Prince Bira
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Johnny Claes
-        position: 12
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: null
+            points: 0
+          - driver: Johnny Claes
+            position: 12
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Kenneth McAlpine
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Ian Stewart
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Tony Rolt
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Prince Bira
-        position: 7
-        points: 0
+        results:
+          - driver: Kenneth McAlpine
+            position: null
+            points: 0
+          - driver: Ian Stewart
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Tony Rolt
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: 7
+            points: 0
       - round: 7
         roundName: German Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Prince Bira
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Johnny Claes
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Kenneth McAlpine
-        position: 13
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Prince Bira
+            position: null
+            points: 0
+          - driver: Johnny Claes
+            position: null
+            points: 0
+          - driver: Kenneth McAlpine
+            position: 13
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Johnny Claes
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Kenneth McAlpine
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Jack Fairman
-        position: null
-        points: 0
+        results:
+          - driver: Johnny Claes
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Kenneth McAlpine
+            position: null
+            points: 0
+          - driver: Jack Fairman
+            position: null
+            points: 0
   - year: 1954
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: John Riseley-Prichard
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Bill Whitehouse
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Leslie Thorne
-        position: 14
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Leslie Marr
-        position: 13
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Don Beauman
-        position: 11
-        points: 0
+        results:
+          - driver: John Riseley-Prichard
+            position: null
+            points: 0
+          - driver: Bill Whitehouse
+            position: null
+            points: 0
+          - driver: Leslie Thorne
+            position: 14
+            points: 0
+          - driver: Leslie Marr
+            position: 13
+            points: 0
+          - driver: Don Beauman
+            position: 11
+            points: 0
   - year: 1955
-    results:
+    rounds:
       - round: 6
         roundName: British Grand Prix
-        driver: Peter Walker
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jack Fairman
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Leslie Marr
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Tony Rolt
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Kenneth McAlpine
-        position: null
-        points: 0
+        results:
+          - driver: Peter Walker
+            position: null
+            points: 0
+          - driver: Jack Fairman
+            position: null
+            points: 0
+          - driver: Leslie Marr
+            position: null
+            points: 0
+          - driver: Tony Rolt
+            position: null
+            points: 0
+          - driver: Kenneth McAlpine
+            position: null
+            points: 0
   - year: 1956
-    results:
+    rounds:
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Piero Scotti
-        position: null
-        points: 0
+        results:
+          - driver: Piero Scotti
+            position: null
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Archie Scott Brown
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Desmond Titterington
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jack Fairman
-        position: 4
-        points: 3
+        results:
+          - driver: Archie Scott Brown
+            position: null
+            points: 0
+          - driver: Desmond Titterington
+            position: null
+            points: 0
+          - driver: Jack Fairman
+            position: 4
+            points: 3
       - round: 8
         roundName: Italian Grand Prix
-        driver: Les Leston
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jack Fairman
-        position: 5
-        points: 2
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Ron Flockhart
-        position: 3
-        points: 4
+        results:
+          - driver: Les Leston
+            position: null
+            points: 0
+          - driver: Jack Fairman
+            position: 5
+            points: 2
+          - driver: Ron Flockhart
+            position: 3
+            points: 4
   - year: 1957
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Ivor Bueb
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Stuart Lewis-Evans
-        position: 4
-        points: 3
+        results:
+          - driver: Ivor Bueb
+            position: null
+            points: 0
+          - driver: Stuart Lewis-Evans
+            position: 4
+            points: 3
   - year: 1958
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Bernie Ecclestone
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Paul Emery
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Bruce Kessler
-        position: null
-        points: 0
+        results:
+          - driver: Bernie Ecclestone
+            position: null
+            points: 0
+          - driver: Paul Emery
+            position: null
+            points: 0
+          - driver: Bruce Kessler
+            position: null
+            points: 0
       - round: 7
         roundName: British Grand Prix
-        driver: Jack Fairman
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Ivor Bueb
-        position: null
-        points: 0
+        results:
+          - driver: Jack Fairman
+            position: null
+            points: 0
+          - driver: Ivor Bueb
+            position: null
+            points: 0
   - year: 1959
-    results:
+    rounds:
       - round: 9
         roundName: United States Grand Prix
-        driver: Bob Said
-        position: null
-        points: 0
+        results:
+          - driver: Bob Said
+            position: null
+            points: 0

@@ -14,535 +14,428 @@ championshipStandings:
     position: 11
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Harry Schell
-        position: null
-        points: 0
+        results:
+          - driver: Harry Schell
+            position: null
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 1
         roundName: Swiss Grand Prix
-        driver: Eric Brandon
-        position: 8
-        points: 0
-      - round: 1
-        roundName: Swiss Grand Prix
-        driver: Alan Brown
-        position: 5
-        points: 2
+        results:
+          - driver: Eric Brandon
+            position: 8
+            points: 0
+          - driver: Alan Brown
+            position: 5
+            points: 2
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Eric Brandon
-        position: 9
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Alan Brown
-        position: 6
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Mike Hawthorn
-        position: 4
-        points: 3
+        results:
+          - driver: Eric Brandon
+            position: 9
+            points: 0
+          - driver: Alan Brown
+            position: 6
+            points: 0
+          - driver: Mike Hawthorn
+            position: 4
+            points: 3
       - round: 4
         roundName: French Grand Prix
-        driver: Mike Hawthorn
-        position: null
-        points: 0
+        results:
+          - driver: Mike Hawthorn
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: David Murray
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Alan Brown
-        position: 22
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Eric Brandon
-        position: 20
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Reg Parnell
-        position: 7
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Mike Hawthorn
-        position: 3
-        points: 4
+        results:
+          - driver: David Murray
+            position: null
+            points: 0
+          - driver: Alan Brown
+            position: 22
+            points: 0
+          - driver: Eric Brandon
+            position: 20
+            points: 0
+          - driver: Reg Parnell
+            position: 7
+            points: 0
+          - driver: Mike Hawthorn
+            position: 3
+            points: 4
       - round: 7
         roundName: Dutch Grand Prix
-        driver: Mike Hawthorn
-        position: 4
-        points: 3
+        results:
+          - driver: Mike Hawthorn
+            position: 4
+            points: 3
       - round: 8
         roundName: Italian Grand Prix
-        driver: Mike Hawthorn
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Alan Brown
-        position: 15
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Eric Brandon
-        position: 13
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Ken Wharton
-        position: 9
-        points: 0
+        results:
+          - driver: Mike Hawthorn
+            position: null
+            points: 0
+          - driver: Alan Brown
+            position: 15
+            points: 0
+          - driver: Eric Brandon
+            position: 13
+            points: 0
+          - driver: Ken Wharton
+            position: 9
+            points: 0
   - year: 1953
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Adolfo Cruz
-        position: null
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: Alan Brown
-        position: 9
-        points: 0
-      - round: 1
-        roundName: Argentine Grand Prix
-        driver: John Barber
-        position: 8
-        points: 0
+        results:
+          - driver: Adolfo Cruz
+            position: null
+            points: 0
+          - driver: Alan Brown
+            position: 9
+            points: 0
+          - driver: John Barber
+            position: 8
+            points: 0
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Ken Wharton
-        position: null
-        points: 0
+        results:
+          - driver: Ken Wharton
+            position: null
+            points: 0
       - round: 5
         roundName: French Grand Prix
-        driver: Ken Wharton
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 5
-        roundName: French Grand Prix
-        driver: Bob Gerard
-        position: 11
-        points: 0
+        results:
+          - driver: Ken Wharton
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Bob Gerard
+            position: 11
+            points: 0
       - round: 6
         roundName: British Grand Prix
-        driver: Tony Crook
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Alan Brown
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Jimmy Stewart
-        position: null
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Peter Whitehead
-        position: 9
-        points: 0
-      - round: 6
-        roundName: British Grand Prix
-        driver: Ken Wharton
-        position: 8
-        points: 0
+        results:
+          - driver: Tony Crook
+            position: null
+            points: 0
+          - driver: Alan Brown
+            position: null
+            points: 0
+          - driver: Jimmy Stewart
+            position: null
+            points: 0
+          - driver: Peter Whitehead
+            position: 9
+            points: 0
+          - driver: Ken Wharton
+            position: 8
+            points: 0
       - round: 7
         roundName: German Grand Prix
-        driver: Alan Brown
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Rodney Nuckey
-        position: 11
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Stirling Moss
-        position: 6
-        points: 0
+        results:
+          - driver: Alan Brown
+            position: null
+            points: 0
+          - driver: Rodney Nuckey
+            position: 11
+            points: 0
+          - driver: Stirling Moss
+            position: 6
+            points: 0
       - round: 8
         roundName: Swiss Grand Prix
-        driver: Ken Wharton
-        position: 7
-        points: 0
+        results:
+          - driver: Ken Wharton
+            position: 7
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Ken Wharton
-        position: null
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Stirling Moss
-        position: 13
-        points: 0
-      - round: 9
-        roundName: Italian Grand Prix
-        driver: Alan Brown
-        position: 12
-        points: 0
+        results:
+          - driver: Ken Wharton
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: 13
+            points: 0
+          - driver: Alan Brown
+            position: 12
+            points: 0
   - year: 1954
-    results:
+    rounds:
       - round: 5
         roundName: British Grand Prix
-        driver: Rodney Nuckey
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Alan Brown
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Eric Brandon
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Peter Whitehead
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Horace Gould
-        position: 15
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Bob Gerard
-        position: 10
-        points: 0
+        results:
+          - driver: Rodney Nuckey
+            position: null
+            points: 0
+          - driver: Alan Brown
+            position: null
+            points: 0
+          - driver: Eric Brandon
+            position: null
+            points: 0
+          - driver: Peter Whitehead
+            position: null
+            points: 0
+          - driver: Horace Gould
+            position: 15
+            points: 0
+          - driver: Bob Gerard
+            position: 10
+            points: 0
   - year: 1955
-    results:
+    rounds:
       - round: 6
         roundName: British Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
   - year: 1956
-    results:
+    rounds:
       - round: 6
         roundName: British Grand Prix
-        driver: Bob Gerard
-        position: 11
-        points: 0
+        results:
+          - driver: Bob Gerard
+            position: 11
+            points: 0
   - year: 1957
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Les Leston
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: 6
-        points: 0
+        results:
+          - driver: Les Leston
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 6
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Jack Brabham
-        position: 7
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Mike MacDowel
-        position: 7
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: 7
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Mike MacDowel
+            position: 7
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Bob Gerard
-        position: 6
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Roy Salvadori
-        position: 5
-        points: 2
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Bob Gerard
+            position: 6
+            points: 0
+          - driver: Roy Salvadori
+            position: 5
+            points: 2
       - round: 6
         roundName: German Grand Prix
-        driver: Dick Gibson
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Paul England
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Tony Marsh
-        position: 15
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Brian Naylor
-        position: 13
-        points: 0
+        results:
+          - driver: Dick Gibson
+            position: null
+            points: 0
+          - driver: Paul England
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Tony Marsh
+            position: 15
+            points: 0
+          - driver: Brian Naylor
+            position: 13
+            points: 0
       - round: 7
         roundName: Pescara Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 7
-        roundName: Pescara Grand Prix
-        driver: Jack Brabham
-        position: 7
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 7
+            points: 0
   - year: 1958
-    results:
+    rounds:
       - round: 1
         roundName: Argentine Grand Prix
-        driver: Stirling Moss
-        position: 1
-        points: 8
+        results:
+          - driver: Stirling Moss
+            position: 1
+            points: 8
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Ron Flockhart
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: 4
-        points: 3
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Maurice Trintignant
-        position: 1
-        points: 8
+        results:
+          - driver: Ron Flockhart
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 4
+            points: 3
+          - driver: Maurice Trintignant
+            position: 1
+            points: 8
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Maurice Trintignant
-        position: 9
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Jack Brabham
-        position: 8
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Roy Salvadori
-        position: 4
-        points: 3
+        results:
+          - driver: Maurice Trintignant
+            position: 9
+            points: 0
+          - driver: Jack Brabham
+            position: 8
+            points: 0
+          - driver: Roy Salvadori
+            position: 4
+            points: 3
       - round: 5
         roundName: Belgian Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 5
-        roundName: Belgian Grand Prix
-        driver: Roy Salvadori
-        position: 8
-        points: 0
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: 8
+            points: 0
       - round: 6
         roundName: French Grand Prix
-        driver: Roy Salvadori
-        position: 11
-        points: 0
-      - round: 6
-        roundName: French Grand Prix
-        driver: Jack Brabham
-        position: 6
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: 11
+            points: 0
+          - driver: Jack Brabham
+            position: 6
+            points: 0
       - round: 7
         roundName: British Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Maurice Trintignant
-        position: 8
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Jack Brabham
-        position: 6
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Roy Salvadori
-        position: 3
-        points: 4
+        results:
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: 8
+            points: 0
+          - driver: Jack Brabham
+            position: 6
+            points: 0
+          - driver: Roy Salvadori
+            position: 3
+            points: 4
       - round: 8
         roundName: German Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Brian Naylor
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Dick Gibson
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Christian Goethals
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Wolfgang Seidel
-        position: null
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Tony Marsh
-        position: 8
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Ian Burgess
-        position: 7
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Bruce McLaren
-        position: 5
-        points: 0
-      - round: 8
-        roundName: German Grand Prix
-        driver: Maurice Trintignant
-        position: 3
-        points: 4
-      - round: 8
-        roundName: German Grand Prix
-        driver: Roy Salvadori
-        position: 2
-        points: 6
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Brian Naylor
+            position: null
+            points: 0
+          - driver: Dick Gibson
+            position: null
+            points: 0
+          - driver: Christian Goethals
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: null
+            points: 0
+          - driver: Tony Marsh
+            position: 8
+            points: 0
+          - driver: Ian Burgess
+            position: 7
+            points: 0
+          - driver: Bruce McLaren
+            position: 5
+            points: 0
+          - driver: Maurice Trintignant
+            position: 3
+            points: 4
+          - driver: Roy Salvadori
+            position: 2
+            points: 6
       - round: 9
         roundName: Portuguese Grand Prix
-        driver: Roy Salvadori
-        position: 9
-        points: 0
-      - round: 9
-        roundName: Portuguese Grand Prix
-        driver: Maurice Trintignant
-        position: 8
-        points: 0
-      - round: 9
-        roundName: Portuguese Grand Prix
-        driver: Jack Brabham
-        position: 7
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: 9
+            points: 0
+          - driver: Maurice Trintignant
+            position: 8
+            points: 0
+          - driver: Jack Brabham
+            position: 7
+            points: 0
       - round: 10
         roundName: Italian Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 10
-        roundName: Italian Grand Prix
-        driver: Roy Salvadori
-        position: 5
-        points: 2
+        results:
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: 5
+            points: 2
       - round: 11
         roundName: Moroccan Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Wolfgang Seidel
-        position: null
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Tom Bridger
-        position: null
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: François Picard
-        position: null
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: André Guelfi
-        position: 15
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Robert La Caze
-        position: 14
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Bruce McLaren
-        position: 13
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Jack Brabham
-        position: 11
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Jack Fairman
-        position: 8
-        points: 0
-      - round: 11
-        roundName: Moroccan Grand Prix
-        driver: Roy Salvadori
-        position: 7
-        points: 0
+        results:
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: null
+            points: 0
+          - driver: Tom Bridger
+            position: null
+            points: 0
+          - driver: François Picard
+            position: null
+            points: 0
+          - driver: André Guelfi
+            position: 15
+            points: 0
+          - driver: Robert La Caze
+            position: 14
+            points: 0
+          - driver: Bruce McLaren
+            position: 13
+            points: 0
+          - driver: Jack Brabham
+            position: 11
+            points: 0
+          - driver: Jack Fairman
+            position: 8
+            points: 0
+          - driver: Roy Salvadori
+            position: 7
+            points: 0
   - year: 1962
-    results:
+    rounds:
       - round: 4
         roundName: French Grand Prix
-        driver: Jackie Lewis
-        position: null
-        points: 0
+        results:
+          - driver: Jackie Lewis
+            position: null
+            points: 0

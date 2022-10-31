@@ -10,40 +10,40 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Bill Vukovich
-        position: null
-        points: 0
+        results:
+          - driver: Bill Vukovich
+            position: null
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Eddie Johnson
-        position: 16
-        points: 0
+        results:
+          - driver: Eddie Johnson
+            position: 16
+            points: 0
   - year: 1955
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Shorty Templeman
-        position: null
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Eddie Johnson
-        position: 13
-        points: 0
+        results:
+          - driver: Shorty Templeman
+            position: null
+            points: 0
+          - driver: Eddie Johnson
+            position: 13
+            points: 0
   - year: 1960
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Bud Tingelstad
-        position: 9
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Eddie Johnson
-        position: 6
-        points: 1
+        results:
+          - driver: Bud Tingelstad
+            position: 9
+            points: 0
+          - driver: Eddie Johnson
+            position: 6
+            points: 1

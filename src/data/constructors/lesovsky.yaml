@@ -10,95 +10,92 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Troy Ruttman
-        position: 15
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: George Connor
-        position: 8
-        points: 0
+        results:
+          - driver: Troy Ruttman
+            position: 15
+            points: 0
+          - driver: George Connor
+            position: 8
+            points: 0
   - year: 1951
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: George Connor
-        position: null
-        points: 0
+        results:
+          - driver: George Connor
+            position: null
+            points: 0
   - year: 1952
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Manny Ayulo
-        position: 20
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Henry Banks
-        position: 19
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Duane Carter
-        position: 4
-        points: 3
+        results:
+          - driver: Manny Ayulo
+            position: 20
+            points: 0
+          - driver: Henry Banks
+            position: 19
+            points: 0
+          - driver: Duane Carter
+            position: 4
+            points: 3
   - year: 1953
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Duane Carter
-        position: null
-        points: 0
+        results:
+          - driver: Duane Carter
+            position: null
+            points: 0
   - year: 1956
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Jimmy Reece
-        position: 9
-        points: 0
+        results:
+          - driver: Jimmy Reece
+            position: 9
+            points: 0
   - year: 1957
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Rodger Ward
-        position: null
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Gene Hartley
-        position: 10
-        points: 0
+        results:
+          - driver: Rodger Ward
+            position: null
+            points: 0
+          - driver: Gene Hartley
+            position: 10
+            points: 0
   - year: 1958
-    results:
+    rounds:
       - round: 4
         roundName: Indianapolis 500
-        driver: Jack Turner
-        position: null
-        points: 0
-      - round: 4
-        roundName: Indianapolis 500
-        driver: Rodger Ward
-        position: null
-        points: 0
+        results:
+          - driver: Jack Turner
+            position: null
+            points: 0
+          - driver: Rodger Ward
+            position: null
+            points: 0
   - year: 1959
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Len Sutton
-        position: null
-        points: 0
-      - round: 2
-        roundName: Indianapolis 500
-        driver: Johnny Thomson
-        position: 3
-        points: 5
+        results:
+          - driver: Len Sutton
+            position: null
+            points: 0
+          - driver: Johnny Thomson
+            position: 3
+            points: 5
   - year: 1960
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Johnny Thomson
-        position: 5
-        points: 2
+        results:
+          - driver: Johnny Thomson
+            position: 5
+            points: 2

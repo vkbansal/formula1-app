@@ -16,485 +16,439 @@ championshipStandings:
     position: 7
 seasons:
   - year: 1959
-    results:
+    rounds:
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Carroll Shelby
-        position: null
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Carroll Shelby
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Carroll Shelby
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Roy Salvadori
-        position: 6
-        points: 0
+        results:
+          - driver: Carroll Shelby
+            position: null
+            points: 0
+          - driver: Roy Salvadori
+            position: 6
+            points: 0
       - round: 7
         roundName: Portuguese Grand Prix
-        driver: Carroll Shelby
-        position: 8
-        points: 0
-      - round: 7
-        roundName: Portuguese Grand Prix
-        driver: Roy Salvadori
-        position: 6
-        points: 0
+        results:
+          - driver: Carroll Shelby
+            position: 8
+            points: 0
+          - driver: Roy Salvadori
+            position: 6
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Carroll Shelby
-        position: 10
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Carroll Shelby
+            position: 10
+            points: 0
   - year: 1960
-    results:
+    rounds:
       - round: 4
         roundName: Dutch Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
       - round: 7
         roundName: British Grand Prix
-        driver: Roy Salvadori
-        position: null
-        points: 0
-      - round: 7
-        roundName: British Grand Prix
-        driver: Maurice Trintignant
-        position: 11
-        points: 0
+        results:
+          - driver: Roy Salvadori
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: 11
+            points: 0
   - year: 2021
-    results:
+    rounds:
       - round: 1
         roundName: Bahrain Grand Prix
-        driver: Sebastian Vettel
-        position: 15
-        points: 0
-      - round: 1
-        roundName: Bahrain Grand Prix
-        driver: Lance Stroll
-        position: 10
-        points: 1
+        results:
+          - driver: Sebastian Vettel
+            position: 15
+            points: 0
+          - driver: Lance Stroll
+            position: 10
+            points: 1
       - round: 2
         roundName: Emilia Romagna Grand Prix
-        driver: Sebastian Vettel
-        position: 15
-        points: 0
-      - round: 2
-        roundName: Emilia Romagna Grand Prix
-        driver: Lance Stroll
-        position: 8
-        points: 4
+        results:
+          - driver: Sebastian Vettel
+            position: 15
+            points: 0
+          - driver: Lance Stroll
+            position: 8
+            points: 4
       - round: 3
         roundName: Portuguese Grand Prix
-        driver: Lance Stroll
-        position: 14
-        points: 0
-      - round: 3
-        roundName: Portuguese Grand Prix
-        driver: Sebastian Vettel
-        position: 13
-        points: 0
+        results:
+          - driver: Lance Stroll
+            position: 14
+            points: 0
+          - driver: Sebastian Vettel
+            position: 13
+            points: 0
       - round: 4
         roundName: Spanish Grand Prix
-        driver: Sebastian Vettel
-        position: 13
-        points: 0
-      - round: 4
-        roundName: Spanish Grand Prix
-        driver: Lance Stroll
-        position: 11
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: 13
+            points: 0
+          - driver: Lance Stroll
+            position: 11
+            points: 0
       - round: 5
         roundName: Monaco Grand Prix
-        driver: Lance Stroll
-        position: 8
-        points: 4
-      - round: 5
-        roundName: Monaco Grand Prix
-        driver: Sebastian Vettel
-        position: 5
-        points: 10
+        results:
+          - driver: Lance Stroll
+            position: 8
+            points: 4
+          - driver: Sebastian Vettel
+            position: 5
+            points: 10
       - round: 6
         roundName: Azerbaijan Grand Prix
-        driver: Lance Stroll
-        position: null
-        points: 0
-      - round: 6
-        roundName: Azerbaijan Grand Prix
-        driver: Sebastian Vettel
-        position: 2
-        points: 18
+        results:
+          - driver: Lance Stroll
+            position: null
+            points: 0
+          - driver: Sebastian Vettel
+            position: 2
+            points: 18
       - round: 7
         roundName: French Grand Prix
-        driver: Lance Stroll
-        position: 10
-        points: 1
-      - round: 7
-        roundName: French Grand Prix
-        driver: Sebastian Vettel
-        position: 9
-        points: 2
+        results:
+          - driver: Lance Stroll
+            position: 10
+            points: 1
+          - driver: Sebastian Vettel
+            position: 9
+            points: 2
       - round: 8
         roundName: Styrian Grand Prix
-        driver: Sebastian Vettel
-        position: 12
-        points: 0
-      - round: 8
-        roundName: Styrian Grand Prix
-        driver: Lance Stroll
-        position: 8
-        points: 4
+        results:
+          - driver: Sebastian Vettel
+            position: 12
+            points: 0
+          - driver: Lance Stroll
+            position: 8
+            points: 4
       - round: 9
         roundName: Austrian Grand Prix
-        driver: Sebastian Vettel
-        position: 17
-        points: 0
-      - round: 9
-        roundName: Austrian Grand Prix
-        driver: Lance Stroll
-        position: 13
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: 17
+            points: 0
+          - driver: Lance Stroll
+            position: 13
+            points: 0
       - round: 10
         roundName: British Grand Prix
-        driver: Sebastian Vettel
-        position: null
-        points: 0
-      - round: 10
-        roundName: British Grand Prix
-        driver: Lance Stroll
-        position: 8
-        points: 4
+        results:
+          - driver: Sebastian Vettel
+            position: null
+            points: 0
+          - driver: Lance Stroll
+            position: 8
+            points: 4
       - round: 11
         roundName: Hungarian Grand Prix
-        driver: Sebastian Vettel
-        position: null
-        points: 0
-      - round: 11
-        roundName: Hungarian Grand Prix
-        driver: Lance Stroll
-        position: null
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: null
+            points: 0
+          - driver: Lance Stroll
+            position: null
+            points: 0
       - round: 12
         roundName: Belgian Grand Prix
-        driver: Lance Stroll
-        position: 20
-        points: 0
-      - round: 12
-        roundName: Belgian Grand Prix
-        driver: Sebastian Vettel
-        position: 5
-        points: 5
+        results:
+          - driver: Lance Stroll
+            position: 20
+            points: 0
+          - driver: Sebastian Vettel
+            position: 5
+            points: 5
       - round: 13
         roundName: Dutch Grand Prix
-        driver: Sebastian Vettel
-        position: 13
-        points: 0
-      - round: 13
-        roundName: Dutch Grand Prix
-        driver: Lance Stroll
-        position: 12
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: 13
+            points: 0
+          - driver: Lance Stroll
+            position: 12
+            points: 0
       - round: 14
         roundName: Italian Grand Prix
-        driver: Sebastian Vettel
-        position: 12
-        points: 0
-      - round: 14
-        roundName: Italian Grand Prix
-        driver: Lance Stroll
-        position: 7
-        points: 6
+        results:
+          - driver: Sebastian Vettel
+            position: 12
+            points: 0
+          - driver: Lance Stroll
+            position: 7
+            points: 6
       - round: 15
         roundName: Russian Grand Prix
-        driver: Sebastian Vettel
-        position: 12
-        points: 0
-      - round: 15
-        roundName: Russian Grand Prix
-        driver: Lance Stroll
-        position: 11
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: 12
+            points: 0
+          - driver: Lance Stroll
+            position: 11
+            points: 0
       - round: 16
         roundName: Turkish Grand Prix
-        driver: Sebastian Vettel
-        position: 18
-        points: 0
-      - round: 16
-        roundName: Turkish Grand Prix
-        driver: Lance Stroll
-        position: 9
-        points: 2
+        results:
+          - driver: Sebastian Vettel
+            position: 18
+            points: 0
+          - driver: Lance Stroll
+            position: 9
+            points: 2
       - round: 17
         roundName: United States Grand Prix
-        driver: Lance Stroll
-        position: 12
-        points: 0
-      - round: 17
-        roundName: United States Grand Prix
-        driver: Sebastian Vettel
-        position: 10
-        points: 1
+        results:
+          - driver: Lance Stroll
+            position: 12
+            points: 0
+          - driver: Sebastian Vettel
+            position: 10
+            points: 1
       - round: 18
         roundName: Mexico City Grand Prix
-        driver: Lance Stroll
-        position: 14
-        points: 0
-      - round: 18
-        roundName: Mexico City Grand Prix
-        driver: Sebastian Vettel
-        position: 7
-        points: 6
+        results:
+          - driver: Lance Stroll
+            position: 14
+            points: 0
+          - driver: Sebastian Vettel
+            position: 7
+            points: 6
       - round: 19
         roundName: São Paulo Grand Prix
-        driver: Lance Stroll
-        position: null
-        points: 0
-      - round: 19
-        roundName: São Paulo Grand Prix
-        driver: Sebastian Vettel
-        position: 11
-        points: 0
+        results:
+          - driver: Lance Stroll
+            position: null
+            points: 0
+          - driver: Sebastian Vettel
+            position: 11
+            points: 0
       - round: 20
         roundName: Qatar Grand Prix
-        driver: Sebastian Vettel
-        position: 10
-        points: 1
-      - round: 20
-        roundName: Qatar Grand Prix
-        driver: Lance Stroll
-        position: 6
-        points: 8
+        results:
+          - driver: Sebastian Vettel
+            position: 10
+            points: 1
+          - driver: Lance Stroll
+            position: 6
+            points: 8
       - round: 21
         roundName: Saudi Arabian Grand Prix
-        driver: Sebastian Vettel
-        position: null
-        points: 0
-      - round: 21
-        roundName: Saudi Arabian Grand Prix
-        driver: Lance Stroll
-        position: 11
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: null
+            points: 0
+          - driver: Lance Stroll
+            position: 11
+            points: 0
       - round: 22
         roundName: Abu Dhabi Grand Prix
-        driver: Lance Stroll
-        position: 13
-        points: 0
-      - round: 22
-        roundName: Abu Dhabi Grand Prix
-        driver: Sebastian Vettel
-        position: 11
-        points: 0
+        results:
+          - driver: Lance Stroll
+            position: 13
+            points: 0
+          - driver: Sebastian Vettel
+            position: 11
+            points: 0
   - year: 2022
-    results:
+    rounds:
       - round: 1
         roundName: Bahrain Grand Prix
-        driver: Nico Hülkenberg
-        position: 17
-        points: 0
-      - round: 1
-        roundName: Bahrain Grand Prix
-        driver: Lance Stroll
-        position: 12
-        points: 0
+        results:
+          - driver: Nico Hülkenberg
+            position: 17
+            points: 0
+          - driver: Lance Stroll
+            position: 12
+            points: 0
       - round: 2
         roundName: Saudi Arabian Grand Prix
-        driver: Lance Stroll
-        position: 13
-        points: 0
-      - round: 2
-        roundName: Saudi Arabian Grand Prix
-        driver: Nico Hülkenberg
-        position: 12
-        points: 0
+        results:
+          - driver: Lance Stroll
+            position: 13
+            points: 0
+          - driver: Nico Hülkenberg
+            position: 12
+            points: 0
       - round: 3
         roundName: Australian Grand Prix
-        driver: Sebastian Vettel
-        position: null
-        points: 0
-      - round: 3
-        roundName: Australian Grand Prix
-        driver: Lance Stroll
-        position: 12
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: null
+            points: 0
+          - driver: Lance Stroll
+            position: 12
+            points: 0
       - round: 4
         roundName: Emilia Romagna Grand Prix
-        driver: Lance Stroll
-        position: 10
-        points: 1
-      - round: 4
-        roundName: Emilia Romagna Grand Prix
-        driver: Sebastian Vettel
-        position: 8
-        points: 4
+        results:
+          - driver: Lance Stroll
+            position: 10
+            points: 1
+          - driver: Sebastian Vettel
+            position: 8
+            points: 4
       - round: 5
         roundName: Miami Grand Prix
-        driver: Sebastian Vettel
-        position: 17
-        points: 0
-      - round: 5
-        roundName: Miami Grand Prix
-        driver: Lance Stroll
-        position: 10
-        points: 1
+        results:
+          - driver: Sebastian Vettel
+            position: 17
+            points: 0
+          - driver: Lance Stroll
+            position: 10
+            points: 1
       - round: 6
         roundName: Spanish Grand Prix
-        driver: Lance Stroll
-        position: 15
-        points: 0
-      - round: 6
-        roundName: Spanish Grand Prix
-        driver: Sebastian Vettel
-        position: 11
-        points: 0
+        results:
+          - driver: Lance Stroll
+            position: 15
+            points: 0
+          - driver: Sebastian Vettel
+            position: 11
+            points: 0
       - round: 7
         roundName: Monaco Grand Prix
-        driver: Lance Stroll
-        position: 14
-        points: 0
-      - round: 7
-        roundName: Monaco Grand Prix
-        driver: Sebastian Vettel
-        position: 10
-        points: 1
+        results:
+          - driver: Lance Stroll
+            position: 14
+            points: 0
+          - driver: Sebastian Vettel
+            position: 10
+            points: 1
       - round: 8
         roundName: Azerbaijan Grand Prix
-        driver: Lance Stroll
-        position: 16
-        points: 0
-      - round: 8
-        roundName: Azerbaijan Grand Prix
-        driver: Sebastian Vettel
-        position: 6
-        points: 8
+        results:
+          - driver: Lance Stroll
+            position: 16
+            points: 0
+          - driver: Sebastian Vettel
+            position: 6
+            points: 8
       - round: 9
         roundName: Canadian Grand Prix
-        driver: Sebastian Vettel
-        position: 12
-        points: 0
-      - round: 9
-        roundName: Canadian Grand Prix
-        driver: Lance Stroll
-        position: 10
-        points: 1
+        results:
+          - driver: Sebastian Vettel
+            position: 12
+            points: 0
+          - driver: Lance Stroll
+            position: 10
+            points: 1
       - round: 10
         roundName: British Grand Prix
-        driver: Lance Stroll
-        position: 11
-        points: 0
-      - round: 10
-        roundName: British Grand Prix
-        driver: Sebastian Vettel
-        position: 9
-        points: 2
+        results:
+          - driver: Lance Stroll
+            position: 11
+            points: 0
+          - driver: Sebastian Vettel
+            position: 9
+            points: 2
       - round: 11
         roundName: Austrian Grand Prix
-        driver: Sebastian Vettel
-        position: 17
-        points: 0
-      - round: 11
-        roundName: Austrian Grand Prix
-        driver: Lance Stroll
-        position: 13
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: 17
+            points: 0
+          - driver: Lance Stroll
+            position: 13
+            points: 0
       - round: 12
         roundName: French Grand Prix
-        driver: Sebastian Vettel
-        position: 11
-        points: 0
-      - round: 12
-        roundName: French Grand Prix
-        driver: Lance Stroll
-        position: 10
-        points: 1
+        results:
+          - driver: Sebastian Vettel
+            position: 11
+            points: 0
+          - driver: Lance Stroll
+            position: 10
+            points: 1
       - round: 13
         roundName: Hungarian Grand Prix
-        driver: Lance Stroll
-        position: 11
-        points: 0
-      - round: 13
-        roundName: Hungarian Grand Prix
-        driver: Sebastian Vettel
-        position: 10
-        points: 1
+        results:
+          - driver: Lance Stroll
+            position: 11
+            points: 0
+          - driver: Sebastian Vettel
+            position: 10
+            points: 1
       - round: 14
         roundName: Belgian Grand Prix
-        driver: Lance Stroll
-        position: 11
-        points: 0
-      - round: 14
-        roundName: Belgian Grand Prix
-        driver: Sebastian Vettel
-        position: 8
-        points: 4
+        results:
+          - driver: Lance Stroll
+            position: 11
+            points: 0
+          - driver: Sebastian Vettel
+            position: 8
+            points: 4
       - round: 15
         roundName: Dutch Grand Prix
-        driver: Sebastian Vettel
-        position: 14
-        points: 0
-      - round: 15
-        roundName: Dutch Grand Prix
-        driver: Lance Stroll
-        position: 10
-        points: 1
+        results:
+          - driver: Sebastian Vettel
+            position: 14
+            points: 0
+          - driver: Lance Stroll
+            position: 10
+            points: 1
       - round: 16
         roundName: Italian Grand Prix
-        driver: Sebastian Vettel
-        position: null
-        points: 0
-      - round: 16
-        roundName: Italian Grand Prix
-        driver: Lance Stroll
-        position: null
-        points: 0
+        results:
+          - driver: Sebastian Vettel
+            position: null
+            points: 0
+          - driver: Lance Stroll
+            position: null
+            points: 0
       - round: 17
         roundName: Singapore Grand Prix
-        driver: Sebastian Vettel
-        position: 8
-        points: 4
-      - round: 17
-        roundName: Singapore Grand Prix
-        driver: Lance Stroll
-        position: 6
-        points: 8
+        results:
+          - driver: Sebastian Vettel
+            position: 8
+            points: 4
+          - driver: Lance Stroll
+            position: 6
+            points: 8
       - round: 18
         roundName: Japanese Grand Prix
-        driver: Lance Stroll
-        position: 12
-        points: 0
-      - round: 18
-        roundName: Japanese Grand Prix
-        driver: Sebastian Vettel
-        position: 6
-        points: 8
+        results:
+          - driver: Lance Stroll
+            position: 12
+            points: 0
+          - driver: Sebastian Vettel
+            position: 6
+            points: 8
       - round: 19
         roundName: United States Grand Prix
-        driver: Lance Stroll
-        position: null
-        points: 0
-      - round: 19
-        roundName: United States Grand Prix
-        driver: Sebastian Vettel
-        position: 8
-        points: 4
+        results:
+          - driver: Lance Stroll
+            position: null
+            points: 0
+          - driver: Sebastian Vettel
+            position: 8
+            points: 4
       - round: 20
         roundName: Mexico City Grand Prix
-        driver: Lance Stroll
-        position: 15
-        points: 0
-      - round: 20
-        roundName: Mexico City Grand Prix
-        driver: Sebastian Vettel
-        position: 14
-        points: 0
+        results:
+          - driver: Lance Stroll
+            position: 15
+            points: 0
+          - driver: Sebastian Vettel
+            position: 14
+            points: 0

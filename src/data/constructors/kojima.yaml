@@ -14,21 +14,21 @@ championshipStandings:
     position: 15
 seasons:
   - year: 1976
-    results:
+    rounds:
       - round: 16
         roundName: Japanese Grand Prix
-        driver: Masahiro Hasemi
-        position: 11
-        points: 0
+        results:
+          - driver: Masahiro Hasemi
+            position: 11
+            points: 0
   - year: 1977
-    results:
+    rounds:
       - round: 17
         roundName: Japanese Grand Prix
-        driver: Noritake Takahara
-        position: null
-        points: 0
-      - round: 17
-        roundName: Japanese Grand Prix
-        driver: Kazuyoshi Hoshino
-        position: 11
-        points: 0
+        results:
+          - driver: Noritake Takahara
+            position: null
+            points: 0
+          - driver: Kazuyoshi Hoshino
+            position: 11
+            points: 0

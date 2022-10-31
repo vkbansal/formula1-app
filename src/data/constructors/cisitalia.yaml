@@ -10,9 +10,10 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1952
-    results:
+    rounds:
       - round: 8
         roundName: Italian Grand Prix
-        driver: Piero Dusio
-        position: null
-        points: 0
+        results:
+          - driver: Piero Dusio
+            position: null
+            points: 0

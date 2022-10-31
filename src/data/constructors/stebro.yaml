@@ -12,14 +12,13 @@ championshipStandings:
     position: 10
 seasons:
   - year: 1963
-    results:
+    rounds:
       - round: 8
         roundName: United States Grand Prix
-        driver: Ernie de Vos
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Peter Broeker
-        position: 7
-        points: 0
+        results:
+          - driver: Ernie de Vos
+            position: null
+            points: 0
+          - driver: Peter Broeker
+            position: 7
+            points: 0

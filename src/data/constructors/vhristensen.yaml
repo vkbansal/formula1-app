@@ -10,16 +10,18 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1959
-    results:
+    rounds:
       - round: 2
         roundName: Indianapolis 500
-        driver: Jack Turner
-        position: null
-        points: 0
+        results:
+          - driver: Jack Turner
+            position: null
+            points: 0
   - year: 1960
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Jim Hurtubise
-        position: 18
-        points: 0
+        results:
+          - driver: Jim Hurtubise
+            position: 18
+            points: 0

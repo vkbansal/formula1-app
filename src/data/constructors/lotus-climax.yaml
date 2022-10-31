@@ -24,1181 +24,883 @@ championshipStandings:
     position: 16
 seasons:
   - year: 1961
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Henry Taylor
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Michael May
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Jim Clark
-        position: 10
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Cliff Allison
-        position: 8
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Stirling Moss
-        position: 1
-        points: 9
+        results:
+          - driver: Henry Taylor
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Michael May
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 10
+            points: 0
+          - driver: Cliff Allison
+            position: 8
+            points: 0
+          - driver: Stirling Moss
+            position: 1
+            points: 9
       - round: 2
         roundName: Dutch Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Trevor Taylor
-        position: 13
-        points: 0
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Stirling Moss
-        position: 4
-        points: 3
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Jim Clark
-        position: 3
-        points: 4
+        results:
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: 13
+            points: 0
+          - driver: Stirling Moss
+            position: 4
+            points: 3
+          - driver: Jim Clark
+            position: 3
+            points: 4
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Henry Taylor
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Cliff Allison
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Wolfgang Seidel
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Tony Marsh
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Willy Mairesse
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Lucien Bianchi
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jim Clark
-        position: 12
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Stirling Moss
-        position: 8
-        points: 0
+        results:
+          - driver: Henry Taylor
+            position: null
+            points: 0
+          - driver: Cliff Allison
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: null
+            points: 0
+          - driver: Tony Marsh
+            position: null
+            points: 0
+          - driver: Willy Mairesse
+            position: null
+            points: 0
+          - driver: Lucien Bianchi
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 12
+            points: 0
+          - driver: Stirling Moss
+            position: 8
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Juan Manuel Bordeu
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Wolfgang Seidel
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Lucien Bianchi
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Willy Mairesse
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Ian Burgess
-        position: 14
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Michael May
-        position: 11
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Henry Taylor
-        position: 10
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Innes Ireland
-        position: 4
-        points: 3
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jim Clark
-        position: 3
-        points: 4
+        results:
+          - driver: Juan Manuel Bordeu
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: null
+            points: 0
+          - driver: Lucien Bianchi
+            position: null
+            points: 0
+          - driver: Willy Mairesse
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: 14
+            points: 0
+          - driver: Michael May
+            position: 11
+            points: 0
+          - driver: Henry Taylor
+            position: 10
+            points: 0
+          - driver: Innes Ireland
+            position: 4
+            points: 3
+          - driver: Jim Clark
+            position: 3
+            points: 4
       - round: 5
         roundName: British Grand Prix
-        driver: Henry Taylor
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Gerry Ashmore
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Tim Parnell
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Tony Marsh
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Lucien Bianchi
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Wolfgang Seidel
-        position: 17
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Ian Burgess
-        position: 14
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Tony Maggs
-        position: 13
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Innes Ireland
-        position: 10
-        points: 0
+        results:
+          - driver: Henry Taylor
+            position: null
+            points: 0
+          - driver: Gerry Ashmore
+            position: null
+            points: 0
+          - driver: Tim Parnell
+            position: null
+            points: 0
+          - driver: Tony Marsh
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Lucien Bianchi
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: 17
+            points: 0
+          - driver: Ian Burgess
+            position: 14
+            points: 0
+          - driver: Tony Maggs
+            position: 13
+            points: 0
+          - driver: Innes Ireland
+            position: 10
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Michael May
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Wolfgang Seidel
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Gerry Ashmore
-        position: 16
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Tony Marsh
-        position: 15
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Tony Maggs
-        position: 11
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jim Clark
-        position: 4
-        points: 3
-      - round: 6
-        roundName: German Grand Prix
-        driver: Stirling Moss
-        position: 1
-        points: 9
+        results:
+          - driver: Michael May
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: null
+            points: 0
+          - driver: Gerry Ashmore
+            position: 16
+            points: 0
+          - driver: Tony Marsh
+            position: 15
+            points: 0
+          - driver: Tony Maggs
+            position: 11
+            points: 0
+          - driver: Jim Clark
+            position: 4
+            points: 3
+          - driver: Stirling Moss
+            position: 1
+            points: 9
       - round: 7
         roundName: Italian Grand Prix
-        driver: Michael May
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Ernesto Prinoth
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Gerry Ashmore
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Wolfgang Seidel
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Masten Gregory
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Henry Taylor
-        position: 11
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Tim Parnell
-        position: 10
-        points: 0
+        results:
+          - driver: Michael May
+            position: null
+            points: 0
+          - driver: Ernesto Prinoth
+            position: null
+            points: 0
+          - driver: Gerry Ashmore
+            position: null
+            points: 0
+          - driver: Wolfgang Seidel
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Masten Gregory
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Henry Taylor
+            position: 11
+            points: 0
+          - driver: Tim Parnell
+            position: 10
+            points: 0
       - round: 8
         roundName: United States Grand Prix
-        driver: Masten Gregory
-        position: 11
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Ken Miles
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Masten Gregory
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Stirling Moss
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Lloyd Ruby
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Jim Hall
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Olivier Gendebien
-        position: 11
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Peter Ryan
-        position: 9
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Jim Clark
-        position: 7
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Innes Ireland
-        position: 1
-        points: 9
+        results:
+          - driver: Masten Gregory
+            position: 11
+            points: 0
+          - driver: Ken Miles
+            position: null
+            points: 0
+          - driver: Masten Gregory
+            position: null
+            points: 0
+          - driver: Stirling Moss
+            position: null
+            points: 0
+          - driver: Lloyd Ruby
+            position: null
+            points: 0
+          - driver: Jim Hall
+            position: null
+            points: 0
+          - driver: Olivier Gendebien
+            position: 11
+            points: 0
+          - driver: Peter Ryan
+            position: 9
+            points: 0
+          - driver: Jim Clark
+            position: 7
+            points: 0
+          - driver: Innes Ireland
+            position: 1
+            points: 9
   - year: 1962
-    results:
+    rounds:
       - round: 1
         roundName: Dutch Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Masten Gregory
-        position: null
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Jim Clark
-        position: 9
-        points: 0
-      - round: 1
-        roundName: Dutch Grand Prix
-        driver: Trevor Taylor
-        position: 2
-        points: 6
+        results:
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Masten Gregory
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 9
+            points: 0
+          - driver: Trevor Taylor
+            position: 2
+            points: 6
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Nino Vaccarella
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jo Siffert
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 2
-        roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: 8
-        points: 0
+        results:
+          - driver: Nino Vaccarella
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 8
+            points: 0
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: John Campbell-Jones
-        position: 11
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jo Siffert
-        position: 10
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Lucien Bianchi
-        position: 9
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Maurice Trintignant
-        position: 8
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jack Brabham
-        position: 6
-        points: 1
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: John Campbell-Jones
+            position: 11
+            points: 0
+          - driver: Jo Siffert
+            position: 10
+            points: 0
+          - driver: Lucien Bianchi
+            position: 9
+            points: 0
+          - driver: Maurice Trintignant
+            position: 8
+            points: 0
+          - driver: Jack Brabham
+            position: 6
+            points: 1
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 4
         roundName: French Grand Prix
-        driver: Carlo Abate
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jack Brabham
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Trevor Taylor
-        position: 8
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Maurice Trintignant
-        position: 7
-        points: 0
+        results:
+          - driver: Carlo Abate
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: 8
+            points: 0
+          - driver: Maurice Trintignant
+            position: 7
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Keith Greene
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Tony Shelly
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Innes Ireland
-        position: 16
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jay Chamberlain
-        position: 15
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Trevor Taylor
-        position: 8
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Masten Gregory
-        position: 7
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jack Brabham
-        position: 5
-        points: 2
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Keith Greene
+            position: null
+            points: 0
+          - driver: Tony Shelly
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: 16
+            points: 0
+          - driver: Jay Chamberlain
+            position: 15
+            points: 0
+          - driver: Trevor Taylor
+            position: 8
+            points: 0
+          - driver: Masten Gregory
+            position: 7
+            points: 0
+          - driver: Jack Brabham
+            position: 5
+            points: 2
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 6
         roundName: German Grand Prix
-        driver: Jay Chamberlain
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Tony Shelly
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jo Siffert
-        position: 12
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jim Clark
-        position: 4
-        points: 3
+        results:
+          - driver: Jay Chamberlain
+            position: null
+            points: 0
+          - driver: Tony Shelly
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Jo Siffert
+            position: 12
+            points: 0
+          - driver: Jim Clark
+            position: 4
+            points: 3
       - round: 7
         roundName: Italian Grand Prix
-        driver: Jay Chamberlain
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Ernesto Prinoth
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Gerry Ashmore
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Innes Ireland
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Nino Vaccarella
-        position: 9
-        points: 0
+        results:
+          - driver: Jay Chamberlain
+            position: null
+            points: 0
+          - driver: Ernesto Prinoth
+            position: null
+            points: 0
+          - driver: Gerry Ashmore
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: Innes Ireland
+            position: null
+            points: 0
+          - driver: Nino Vaccarella
+            position: 9
+            points: 0
       - round: 8
         roundName: United States Grand Prix
-        driver: Jim Hall
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Maurice Trintignant
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Trevor Taylor
-        position: 12
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Rob Schroeder
-        position: 10
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Roger Penske
-        position: 9
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Innes Ireland
-        position: 8
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Jim Hall
+            position: null
+            points: 0
+          - driver: Maurice Trintignant
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: 12
+            points: 0
+          - driver: Rob Schroeder
+            position: 10
+            points: 0
+          - driver: Roger Penske
+            position: 9
+            points: 0
+          - driver: Innes Ireland
+            position: 8
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 9
         roundName: South African Grand Prix
-        driver: Sam Tingle
-        position: null
-        points: 0
-      - round: 9
-        roundName: South African Grand Prix
-        driver: Syd van der Vyver
-        position: null
-        points: 0
-      - round: 9
-        roundName: South African Grand Prix
-        driver: Gary Hocking
-        position: null
-        points: 0
-      - round: 9
-        roundName: South African Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 9
-        roundName: South African Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 9
-        roundName: South African Grand Prix
-        driver: Ernie Pieterse
-        position: 10
-        points: 0
-      - round: 9
-        roundName: South African Grand Prix
-        driver: Neville Lederle
-        position: 6
-        points: 1
-      - round: 9
-        roundName: South African Grand Prix
-        driver: Innes Ireland
-        position: 5
-        points: 2
+        results:
+          - driver: Sam Tingle
+            position: null
+            points: 0
+          - driver: Syd van der Vyver
+            position: null
+            points: 0
+          - driver: Gary Hocking
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Ernie Pieterse
+            position: 10
+            points: 0
+          - driver: Neville Lederle
+            position: 6
+            points: 1
+          - driver: Innes Ireland
+            position: 5
+            points: 2
   - year: 1963
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Bernard Collomb
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Jack Brabham
-        position: 9
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Jim Clark
-        position: 8
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Trevor Taylor
-        position: 6
-        points: 1
+        results:
+          - driver: Bernard Collomb
+            position: null
+            points: 0
+          - driver: Jack Brabham
+            position: 9
+            points: 0
+          - driver: Jim Clark
+            position: 8
+            points: 0
+          - driver: Trevor Taylor
+            position: 6
+            points: 1
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Peter Arundell
-        position: null
-        points: 0
-      - round: 2
-        roundName: Belgian Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 2
-        roundName: Belgian Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Peter Arundell
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Trevor Taylor
-        position: 10
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Trevor Taylor
+            position: 10
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 4
         roundName: French Grand Prix
-        driver: Peter Arundell
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Trevor Taylor
-        position: 13
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Maurice Trintignant
-        position: 8
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Peter Arundell
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: 13
+            points: 0
+          - driver: Maurice Trintignant
+            position: 8
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 5
         roundName: British Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Mike Hailwood
-        position: 8
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: Mike Hailwood
+            position: 8
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 6
         roundName: German Grand Prix
-        driver: Tim Parnell
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: André Pilette
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Bernard Collomb
-        position: 10
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Trevor Taylor
-        position: 8
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Jim Clark
-        position: 2
-        points: 6
+        results:
+          - driver: Tim Parnell
+            position: null
+            points: 0
+          - driver: André Pilette
+            position: null
+            points: 0
+          - driver: Bernard Collomb
+            position: 10
+            points: 0
+          - driver: Trevor Taylor
+            position: 8
+            points: 0
+          - driver: Jim Clark
+            position: 2
+            points: 6
       - round: 7
         roundName: Italian Grand Prix
-        driver: André Pilette
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Mike Spence
-        position: 13
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: André Pilette
+            position: null
+            points: 0
+          - driver: Mike Spence
+            position: 13
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 8
         roundName: United States Grand Prix
-        driver: Walt Hansgen
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Pedro Rodríguez
-        position: null
-        points: 0
-      - round: 8
-        roundName: United States Grand Prix
-        driver: Jim Clark
-        position: 3
-        points: 4
+        results:
+          - driver: Walt Hansgen
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: Pedro Rodríguez
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 3
+            points: 4
       - round: 9
         roundName: Mexican Grand Prix
-        driver: Thomas Monarch
-        position: null
-        points: 0
-      - round: 9
-        roundName: Mexican Grand Prix
-        driver: Trevor Taylor
-        position: null
-        points: 0
-      - round: 9
-        roundName: Mexican Grand Prix
-        driver: Pedro Rodríguez
-        position: null
-        points: 0
-      - round: 9
-        roundName: Mexican Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Thomas Monarch
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: null
+            points: 0
+          - driver: Pedro Rodríguez
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 10
         roundName: South African Grand Prix
-        driver: Neville Lederle
-        position: null
-        points: 0
-      - round: 10
-        roundName: South African Grand Prix
-        driver: Ernie Pieterse
-        position: null
-        points: 0
-      - round: 10
-        roundName: South African Grand Prix
-        driver: Trevor Taylor
-        position: 8
-        points: 0
-      - round: 10
-        roundName: South African Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Neville Lederle
+            position: null
+            points: 0
+          - driver: Ernie Pieterse
+            position: null
+            points: 0
+          - driver: Trevor Taylor
+            position: 8
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
   - year: 1964
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Jim Clark
-        position: 4
-        points: 3
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Peter Arundell
-        position: 3
-        points: 4
+        results:
+          - driver: Jim Clark
+            position: 4
+            points: 3
+          - driver: Peter Arundell
+            position: 3
+            points: 4
       - round: 2
         roundName: Dutch Grand Prix
-        driver: Peter Arundell
-        position: 3
-        points: 4
-      - round: 2
-        roundName: Dutch Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Peter Arundell
+            position: 3
+            points: 4
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Peter Revson
-        position: null
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Peter Arundell
-        position: 9
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Peter Revson
+            position: null
+            points: 0
+          - driver: Peter Arundell
+            position: 9
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 4
         roundName: French Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Peter Arundell
-        position: 4
-        points: 3
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Peter Arundell
+            position: 4
+            points: 3
       - round: 5
         roundName: British Grand Prix
-        driver: Mike Spence
-        position: 9
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Mike Spence
+            position: 9
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 6
         roundName: German Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Gerhard Mitter
-        position: 9
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Mike Spence
-        position: 8
-        points: 0
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Gerhard Mitter
+            position: 9
+            points: 0
+          - driver: Mike Spence
+            position: 8
+            points: 0
       - round: 7
         roundName: Austrian Grand Prix
-        driver: Chris Amon
-        position: null
-        points: 0
-      - round: 7
-        roundName: Austrian Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 7
-        roundName: Austrian Grand Prix
-        driver: Mike Spence
-        position: null
-        points: 0
+        results:
+          - driver: Chris Amon
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Mike Spence
+            position: null
+            points: 0
       - round: 8
         roundName: Italian Grand Prix
-        driver: Jim Clark
-        position: 15
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Mike Spence
-        position: 6
-        points: 1
+        results:
+          - driver: Jim Clark
+            position: 15
+            points: 0
+          - driver: Mike Spence
+            position: 6
+            points: 1
       - round: 9
         roundName: United States Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Mike Spence
-        position: null
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Jim Clark
-        position: 7
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Walt Hansgen
-        position: 5
-        points: 2
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Mike Spence
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 7
+            points: 0
+          - driver: Walt Hansgen
+            position: 5
+            points: 2
       - round: 10
         roundName: Mexican Grand Prix
-        driver: Moisés Solana
-        position: 10
-        points: 0
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Jim Clark
-        position: 5
-        points: 2
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Mike Spence
-        position: 4
-        points: 3
+        results:
+          - driver: Moisés Solana
+            position: 10
+            points: 0
+          - driver: Jim Clark
+            position: 5
+            points: 2
+          - driver: Mike Spence
+            position: 4
+            points: 3
   - year: 1965
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Clive Puzey
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Ernie Pieterse
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Neville Lederle
-        position: null
-        points: 0
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Mike Spence
-        position: 4
-        points: 3
-      - round: 1
-        roundName: South African Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Clive Puzey
+            position: null
+            points: 0
+          - driver: Ernie Pieterse
+            position: null
+            points: 0
+          - driver: Neville Lederle
+            position: null
+            points: 0
+          - driver: Mike Spence
+            position: 4
+            points: 3
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Paul Hawkins
-        position: 10
-        points: 0
+        results:
+          - driver: Paul Hawkins
+            position: 10
+            points: 0
       - round: 3
         roundName: Belgian Grand Prix
-        driver: Mike Spence
-        position: 7
-        points: 0
-      - round: 3
-        roundName: Belgian Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Mike Spence
+            position: 7
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 4
         roundName: French Grand Prix
-        driver: Mike Spence
-        position: 7
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Mike Spence
+            position: 7
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 5
         roundName: British Grand Prix
-        driver: Brian Gubby
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Mike Spence
-        position: 4
-        points: 3
-      - round: 5
-        roundName: British Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Brian Gubby
+            position: null
+            points: 0
+          - driver: Mike Spence
+            position: 4
+            points: 3
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 6
         roundName: Dutch Grand Prix
-        driver: Mike Spence
-        position: 8
-        points: 0
-      - round: 6
-        roundName: Dutch Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Mike Spence
+            position: 8
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 7
         roundName: German Grand Prix
-        driver: Paul Hawkins
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Gerhard Mitter
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Mike Spence
-        position: null
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Jim Clark
-        position: 1
-        points: 9
+        results:
+          - driver: Paul Hawkins
+            position: null
+            points: 0
+          - driver: Gerhard Mitter
+            position: null
+            points: 0
+          - driver: Mike Spence
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: 1
+            points: 9
       - round: 8
         roundName: Italian Grand Prix
-        driver: Giacomo Russo
-        position: null
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Mike Spence
-        position: 11
-        points: 0
-      - round: 8
-        roundName: Italian Grand Prix
-        driver: Jim Clark
-        position: 10
-        points: 0
+        results:
+          - driver: Giacomo Russo
+            position: null
+            points: 0
+          - driver: Mike Spence
+            position: 11
+            points: 0
+          - driver: Jim Clark
+            position: 10
+            points: 0
       - round: 9
         roundName: United States Grand Prix
-        driver: Mike Spence
-        position: null
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 9
-        roundName: United States Grand Prix
-        driver: Moisés Solana
-        position: 12
-        points: 0
+        results:
+          - driver: Mike Spence
+            position: null
+            points: 0
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Moisés Solana
+            position: 12
+            points: 0
       - round: 10
         roundName: Mexican Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Moisés Solana
-        position: null
-        points: 0
-      - round: 10
-        roundName: Mexican Grand Prix
-        driver: Mike Spence
-        position: 3
-        points: 4
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0
+          - driver: Moisés Solana
+            position: null
+            points: 0
+          - driver: Mike Spence
+            position: 3
+            points: 4
   - year: 1966
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0
       - round: 3
         roundName: French Grand Prix
-        driver: Pedro Rodríguez
-        position: null
-        points: 0
+        results:
+          - driver: Pedro Rodríguez
+            position: null
+            points: 0
       - round: 4
         roundName: British Grand Prix
-        driver: Jim Clark
-        position: 4
-        points: 3
+        results:
+          - driver: Jim Clark
+            position: 4
+            points: 3
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Jim Clark
-        position: 3
-        points: 4
+        results:
+          - driver: Jim Clark
+            position: 3
+            points: 4
       - round: 6
         roundName: German Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Giacomo Russo
-        position: 9
-        points: 0
+        results:
+          - driver: Giacomo Russo
+            position: 9
+            points: 0
       - round: 8
         roundName: United States Grand Prix
-        driver: Peter Arundell
-        position: 6
-        points: 1
+        results:
+          - driver: Peter Arundell
+            position: 6
+            points: 1
   - year: 1967
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Jim Clark
-        position: null
-        points: 0
+        results:
+          - driver: Jim Clark
+            position: null
+            points: 0

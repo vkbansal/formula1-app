@@ -12,14 +12,16 @@ championshipStandings:
     position: 19
 seasons:
   - year: 1979
-    results:
+    rounds:
       - round: 5
         roundName: Spanish Grand Prix
-        driver: Gianfranco Brancatelli
-        position: null
-        points: 0
+        results:
+          - driver: Gianfranco Brancatelli
+            position: null
+            points: 0
       - round: 6
         roundName: Belgian Grand Prix
-        driver: Gianfranco Brancatelli
-        position: null
-        points: 0
+        results:
+          - driver: Gianfranco Brancatelli
+            position: null
+            points: 0

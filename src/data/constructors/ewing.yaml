@@ -10,21 +10,21 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1950
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Jimmy Davies
-        position: 17
-        points: 0
+        results:
+          - driver: Jimmy Davies
+            position: 17
+            points: 0
   - year: 1960
-    results:
+    rounds:
       - round: 3
         roundName: Indianapolis 500
-        driver: Al Herman
-        position: 32
-        points: 0
-      - round: 3
-        roundName: Indianapolis 500
-        driver: Eddie Sachs
-        position: 21
-        points: 0
+        results:
+          - driver: Al Herman
+            position: 32
+            points: 0
+          - driver: Eddie Sachs
+            position: 21
+            points: 0

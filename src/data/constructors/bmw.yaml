@@ -10,36 +10,30 @@ winPct: 0
 championshipStandings: []
 seasons:
   - year: 1952
-    results:
+    rounds:
       - round: 6
         roundName: German Grand Prix
-        driver: Rudolf Krause
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Günther Bechem
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Marcel Balsa
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Ernst Klodwig
-        position: 12
-        points: 0
+        results:
+          - driver: Rudolf Krause
+            position: null
+            points: 0
+          - driver: Günther Bechem
+            position: null
+            points: 0
+          - driver: Marcel Balsa
+            position: null
+            points: 0
+          - driver: Ernst Klodwig
+            position: 12
+            points: 0
   - year: 1953
-    results:
+    rounds:
       - round: 7
         roundName: German Grand Prix
-        driver: Ernst Klodwig
-        position: 15
-        points: 0
-      - round: 7
-        roundName: German Grand Prix
-        driver: Rudolf Krause
-        position: 14
-        points: 0
+        results:
+          - driver: Ernst Klodwig
+            position: 15
+            points: 0
+          - driver: Rudolf Krause
+            position: 14
+            points: 0

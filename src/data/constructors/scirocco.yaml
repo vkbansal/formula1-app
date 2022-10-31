@@ -14,91 +14,87 @@ championshipStandings:
     position: 10
 seasons:
   - year: 1963
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: Tony Settember
-        position: null
-        points: 0
-      - round: 1
-        roundName: Monaco Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
+        results:
+          - driver: Tony Settember
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: null
+            points: 0
       - round: 2
         roundName: Belgian Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 2
-        roundName: Belgian Grand Prix
-        driver: Tony Settember
-        position: 8
-        points: 0
+        results:
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Tony Settember
+            position: 8
+            points: 0
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 3
-        roundName: Dutch Grand Prix
-        driver: Tony Settember
-        position: null
-        points: 0
+        results:
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Tony Settember
+            position: null
+            points: 0
       - round: 4
         roundName: French Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 4
-        roundName: French Grand Prix
-        driver: Tony Settember
-        position: null
-        points: 0
+        results:
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Tony Settember
+            position: null
+            points: 0
       - round: 5
         roundName: British Grand Prix
-        driver: Tony Settember
-        position: null
-        points: 0
-      - round: 5
-        roundName: British Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
+        results:
+          - driver: Tony Settember
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: null
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: Tony Settember
-        position: null
-        points: 0
-      - round: 6
-        roundName: German Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
+        results:
+          - driver: Tony Settember
+            position: null
+            points: 0
+          - driver: Ian Burgess
+            position: null
+            points: 0
       - round: 7
         roundName: Italian Grand Prix
-        driver: Ian Burgess
-        position: null
-        points: 0
-      - round: 7
-        roundName: Italian Grand Prix
-        driver: Tony Settember
-        position: null
-        points: 0
+        results:
+          - driver: Ian Burgess
+            position: null
+            points: 0
+          - driver: Tony Settember
+            position: null
+            points: 0
   - year: 1964
-    results:
+    rounds:
       - round: 1
         roundName: Monaco Grand Prix
-        driver: André Pilette
-        position: null
-        points: 0
+        results:
+          - driver: André Pilette
+            position: null
+            points: 0
       - round: 3
         roundName: Belgian Grand Prix
-        driver: André Pilette
-        position: null
-        points: 0
+        results:
+          - driver: André Pilette
+            position: null
+            points: 0
       - round: 6
         roundName: German Grand Prix
-        driver: André Pilette
-        position: null
-        points: 0
+        results:
+          - driver: André Pilette
+            position: null
+            points: 0

@@ -14,76 +14,90 @@ championshipStandings:
     position: 10
 seasons:
   - year: 1967
-    results:
+    rounds:
       - round: 2
         roundName: Monaco Grand Prix
-        driver: Bruce McLaren
-        position: 4
-        points: 3
+        results:
+          - driver: Bruce McLaren
+            position: 4
+            points: 3
       - round: 3
         roundName: Dutch Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
       - round: 8
         roundName: Canadian Grand Prix
-        driver: Bruce McLaren
-        position: 7
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: 7
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
       - round: 10
         roundName: United States Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
       - round: 11
         roundName: Mexican Grand Prix
-        driver: Bruce McLaren
-        position: null
-        points: 0
+        results:
+          - driver: Bruce McLaren
+            position: null
+            points: 0
   - year: 1968
-    results:
+    rounds:
       - round: 1
         roundName: South African Grand Prix
-        driver: Denny Hulme
-        position: 5
-        points: 2
+        results:
+          - driver: Denny Hulme
+            position: 5
+            points: 2
       - round: 3
         roundName: Monaco Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
       - round: 4
         roundName: Belgian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
       - round: 5
         roundName: Dutch Grand Prix
-        driver: Jo Bonnier
-        position: 8
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: 8
+            points: 0
       - round: 7
         roundName: British Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
       - round: 9
         roundName: Italian Grand Prix
-        driver: Jo Bonnier
-        position: 6
-        points: 1
+        results:
+          - driver: Jo Bonnier
+            position: 6
+            points: 1
       - round: 10
         roundName: Canadian Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
       - round: 11
         roundName: United States Grand Prix
-        driver: Jo Bonnier
-        position: null
-        points: 0
+        results:
+          - driver: Jo Bonnier
+            position: null
+            points: 0
