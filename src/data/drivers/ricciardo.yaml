@@ -5,7 +5,7 @@ name: Daniel Ricciardo
 dob: '1989-07-01'
 nationality: Australian
 hasImage: true
-totalRaces: 230
+totalRaces: 231
 raceWins: 8
 podiums: 32
 totalLaps: 12660
@@ -1208,3 +1208,8 @@ seasons:
         constructor: McLaren
         position: 7
         points: 6
+      - round: 21
+        roundName: Brazilian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0

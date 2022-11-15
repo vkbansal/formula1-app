@@ -3,10 +3,10 @@ constructorId: 51
 constructorRef: alfa
 name: Alfa Romeo
 nationality: Swiss
-totalRaces: 192
+totalRaces: 193
 raceWins: 11
 podiums: 28
-winPct: 5.72917
+winPct: 5.69948
 championshipStandings:
   - year: 1963
     position: 16
@@ -1848,3 +1848,12 @@ seasons:
           - driver: Valtteri Bottas
             position: 10
             points: 1
+      - round: 21
+        roundName: Brazilian Grand Prix
+        results:
+          - driver: Guanyu Zhou
+            position: 12
+            points: 0
+          - driver: Valtteri Bottas
+            position: 9
+            points: 2

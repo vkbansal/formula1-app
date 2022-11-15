@@ -5,10 +5,10 @@ name: Lando Norris
 dob: '1999-11-13'
 nationality: British
 hasImage: true
-totalRaces: 80
+totalRaces: 81
 raceWins: 0
 podiums: 6
-totalLaps: 4485
+totalLaps: 4535
 lapsLead: 31
 championshipStandings:
   - year: 2019
@@ -426,3 +426,8 @@ seasons:
         constructor: McLaren
         position: 9
         points: 2
+      - round: 21
+        roundName: Brazilian Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0

@@ -5,10 +5,10 @@ name: Esteban Ocon
 dob: '1996-09-17'
 nationality: French
 hasImage: true
-totalRaces: 109
+totalRaces: 110
 raceWins: 1
 podiums: 2
-totalLaps: 5804
+totalLaps: 5875
 lapsLead: 66
 championshipStandings:
   - year: 2016
@@ -576,6 +576,11 @@ seasons:
         points: 0
       - round: 20
         roundName: Mexico City Grand Prix
+        constructor: Alpine F1 Team
+        position: 8
+        points: 4
+      - round: 21
+        roundName: Brazilian Grand Prix
         constructor: Alpine F1 Team
         position: 8
         points: 4

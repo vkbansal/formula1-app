@@ -3,10 +3,10 @@ constructorId: 131
 constructorRef: mercedes
 name: Mercedes
 nationality: German
-totalRaces: 269
-raceWins: 124
-podiums: 279
-winPct: 46.0967
+totalRaces: 270
+raceWins: 125
+podiums: 281
+winPct: 46.2963
 championshipStandings:
   - year: 2010
     position: 4
@@ -2538,3 +2538,12 @@ seasons:
           - driver: Lewis Hamilton
             position: 2
             points: 18
+      - round: 21
+        roundName: Brazilian Grand Prix
+        results:
+          - driver: Lewis Hamilton
+            position: 2
+            points: 18
+          - driver: George Russell
+            position: 1
+            points: 26
