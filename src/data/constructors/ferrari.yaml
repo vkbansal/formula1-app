@@ -3,10 +3,10 @@ constructorId: 6
 constructorRef: ferrari
 name: Ferrari
 nationality: Italian
-totalRaces: 1053
+totalRaces: 1054
 raceWins: 243
-podiums: 809
-winPct: 23.0769
+podiums: 810
+winPct: 23.055
 championshipStandings:
   - year: 1958
     position: 2
@@ -136,6 +136,8 @@ championshipStandings:
     position: 6
   - year: 2021
     position: 3
+  - year: 2022
+    position: 2
 seasons:
   - year: 1950
     rounds:
@@ -10477,3 +10479,12 @@ seasons:
           - driver: Carlos Sainz
             position: 3
             points: 15
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Carlos Sainz
+            position: 4
+            points: 12
+          - driver: Charles Leclerc
+            position: 2
+            points: 18

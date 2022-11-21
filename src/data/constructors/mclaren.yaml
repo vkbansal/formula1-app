@@ -3,10 +3,10 @@ constructorId: 1
 constructorRef: mclaren
 name: McLaren
 nationality: British
-totalRaces: 882
+totalRaces: 883
 raceWins: 179
 podiums: 478
-winPct: 20.2948
+winPct: 20.2718
 championshipStandings:
   - year: 1968
     position: 14
@@ -112,6 +112,8 @@ championshipStandings:
     position: 3
   - year: 2021
     position: 4
+  - year: 2022
+    position: 5
 seasons:
   - year: 1968
     rounds:
@@ -8352,3 +8354,12 @@ seasons:
           - driver: Lando Norris
             position: null
             points: 0
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Daniel Ricciardo
+            position: 9
+            points: 2
+          - driver: Lando Norris
+            position: 6
+            points: 9

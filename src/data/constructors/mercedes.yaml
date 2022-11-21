@@ -3,10 +3,10 @@ constructorId: 131
 constructorRef: mercedes
 name: Mercedes
 nationality: German
-totalRaces: 270
+totalRaces: 271
 raceWins: 125
 podiums: 281
-winPct: 46.2963
+winPct: 46.1255
 championshipStandings:
   - year: 2010
     position: 4
@@ -32,6 +32,8 @@ championshipStandings:
     position: 1
   - year: 2021
     position: 1
+  - year: 2022
+    position: 3
 seasons:
   - year: 1954
     rounds:
@@ -2547,3 +2549,12 @@ seasons:
           - driver: George Russell
             position: 1
             points: 26
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Lewis Hamilton
+            position: 18
+            points: 0
+          - driver: George Russell
+            position: 5
+            points: 10

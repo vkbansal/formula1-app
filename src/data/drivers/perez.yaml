@@ -5,10 +5,10 @@ name: Sergio Pérez
 dob: '1990-01-26'
 nationality: Mexican
 hasImage: true
-totalRaces: 236
+totalRaces: 237
 raceWins: 4
-podiums: 25
-totalLaps: 12954
+podiums: 26
+totalLaps: 13012
 lapsLead: 242
 championshipStandings:
   - year: 2011
@@ -33,6 +33,8 @@ championshipStandings:
     position: 4
   - year: 2021
     position: 4
+  - year: 2022
+    position: 3
 seasons:
   - year: 2011
     results:
@@ -1238,3 +1240,8 @@ seasons:
         constructor: Red Bull
         position: 7
         points: 6
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        constructor: Red Bull
+        position: 3
+        points: 15

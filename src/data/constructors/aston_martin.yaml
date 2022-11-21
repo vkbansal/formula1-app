@@ -3,7 +3,7 @@ constructorId: 117
 constructorRef: aston_martin
 name: Aston Martin
 nationality: British
-totalRaces: 49
+totalRaces: 50
 raceWins: 0
 podiums: 1
 winPct: 0
@@ -13,6 +13,8 @@ championshipStandings:
   - year: 1960
     position: 10
   - year: 2021
+    position: 7
+  - year: 2022
     position: 7
 seasons:
   - year: 1959
@@ -461,3 +463,12 @@ seasons:
           - driver: Lance Stroll
             position: 10
             points: 1
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Sebastian Vettel
+            position: 10
+            points: 1
+          - driver: Lance Stroll
+            position: 8
+            points: 4

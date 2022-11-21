@@ -3,13 +3,15 @@ constructorId: 214
 constructorRef: alpine
 name: Alpine F1 Team
 nationality: French
-totalRaces: 43
+totalRaces: 44
 raceWins: 1
 podiums: 2
-winPct: 2.32558
+winPct: 2.27273
 championshipStandings:
   - year: 2021
     position: 5
+  - year: 2022
+    position: 4
 seasons:
   - year: 2021
     rounds:
@@ -402,3 +404,12 @@ seasons:
           - driver: Fernando Alonso
             position: 5
             points: 10
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Fernando Alonso
+            position: null
+            points: 0
+          - driver: Esteban Ocon
+            position: 7
+            points: 6

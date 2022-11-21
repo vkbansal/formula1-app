@@ -3,10 +3,10 @@ constructorId: 3
 constructorRef: williams
 name: Williams
 nationality: British
-totalRaces: 796
+totalRaces: 797
 raceWins: 114
 podiums: 313
-winPct: 14.3216
+winPct: 14.3036
 championshipStandings:
   - year: 1975
     position: 9
@@ -100,6 +100,8 @@ championshipStandings:
     position: 10
   - year: 2021
     position: 8
+  - year: 2022
+    position: 10
 seasons:
   - year: 1975
     rounds:
@@ -7331,4 +7333,13 @@ seasons:
             points: 0
           - driver: Alexander Albon
             position: 15
+            points: 0
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Nicholas Latifi
+            position: 19
+            points: 0
+          - driver: Alexander Albon
+            position: 13
             points: 0

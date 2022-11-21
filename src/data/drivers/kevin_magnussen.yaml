@@ -5,10 +5,10 @@ name: Kevin Magnussen
 dob: '1992-10-05'
 nationality: Danish
 hasImage: true
-totalRaces: 141
+totalRaces: 142
 raceWins: 0
 podiums: 1
-totalLaps: 7441
+totalLaps: 7498
 lapsLead: 0
 championshipStandings:
   - year: 2014
@@ -25,6 +25,8 @@ championshipStandings:
     position: 16
   - year: 2020
     position: 20
+  - year: 2022
+    position: 13
 seasons:
   - year: 2014
     results:
@@ -746,4 +748,9 @@ seasons:
         roundName: Brazilian Grand Prix
         constructor: Haas F1 Team
         position: null
+        points: 0
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        constructor: Haas F1 Team
+        position: 17
         points: 0

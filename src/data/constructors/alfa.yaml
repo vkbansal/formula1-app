@@ -3,10 +3,10 @@ constructorId: 51
 constructorRef: alfa
 name: Alfa Romeo
 nationality: Swiss
-totalRaces: 193
+totalRaces: 194
 raceWins: 11
 podiums: 28
-winPct: 5.69948
+winPct: 5.6701
 championshipStandings:
   - year: 1963
     position: 16
@@ -32,6 +32,8 @@ championshipStandings:
     position: 8
   - year: 2021
     position: 9
+  - year: 2022
+    position: 6
 seasons:
   - year: 1950
     rounds:
@@ -1857,3 +1859,12 @@ seasons:
           - driver: Valtteri Bottas
             position: 9
             points: 2
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Valtteri Bottas
+            position: 15
+            points: 0
+          - driver: Guanyu Zhou
+            position: 12
+            points: 0

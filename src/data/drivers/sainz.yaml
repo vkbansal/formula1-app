@@ -5,10 +5,10 @@ name: Carlos Sainz
 dob: '1994-09-01'
 nationality: Spanish
 hasImage: true
-totalRaces: 162
+totalRaces: 163
 raceWins: 1
 podiums: 15
-totalLaps: 8472
+totalLaps: 8530
 lapsLead: 89
 championshipStandings:
   - year: 2015
@@ -24,6 +24,8 @@ championshipStandings:
   - year: 2020
     position: 6
   - year: 2021
+    position: 5
+  - year: 2022
     position: 5
 seasons:
   - year: 2015
@@ -852,3 +854,8 @@ seasons:
         constructor: Ferrari
         position: 3
         points: 15
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        constructor: Ferrari
+        position: 4
+        points: 12

@@ -3,10 +3,10 @@ constructorId: 9
 constructorRef: red_bull
 name: Red Bull
 nationality: Austrian
-totalRaces: 347
-raceWins: 91
-podiums: 232
-winPct: 26.2248
+totalRaces: 348
+raceWins: 92
+podiums: 234
+winPct: 26.4368
 championshipStandings:
   - year: 2005
     position: 7
@@ -42,6 +42,8 @@ championshipStandings:
     position: 2
   - year: 2021
     position: 2
+  - year: 2022
+    position: 1
 seasons:
   - year: 2005
     rounds:
@@ -3202,3 +3204,12 @@ seasons:
           - driver: Max Verstappen
             position: 6
             points: 8
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Sergio Pérez
+            position: 3
+            points: 15
+          - driver: Max Verstappen
+            position: 1
+            points: 25

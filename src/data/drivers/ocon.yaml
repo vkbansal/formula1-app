@@ -5,10 +5,10 @@ name: Esteban Ocon
 dob: '1996-09-17'
 nationality: French
 hasImage: true
-totalRaces: 110
+totalRaces: 111
 raceWins: 1
 podiums: 2
-totalLaps: 5875
+totalLaps: 5933
 lapsLead: 66
 championshipStandings:
   - year: 2016
@@ -21,6 +21,8 @@ championshipStandings:
     position: 12
   - year: 2021
     position: 11
+  - year: 2022
+    position: 8
 seasons:
   - year: 2016
     results:
@@ -584,3 +586,8 @@ seasons:
         constructor: Alpine F1 Team
         position: 8
         points: 4
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        constructor: Alpine F1 Team
+        position: 7
+        points: 6

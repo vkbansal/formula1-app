@@ -5,10 +5,10 @@ name: Daniel Ricciardo
 dob: '1989-07-01'
 nationality: Australian
 hasImage: true
-totalRaces: 231
+totalRaces: 232
 raceWins: 8
 podiums: 32
-totalLaps: 12660
+totalLaps: 12718
 lapsLead: 340
 championshipStandings:
   - year: 2011
@@ -33,6 +33,8 @@ championshipStandings:
     position: 5
   - year: 2021
     position: 8
+  - year: 2022
+    position: 11
 seasons:
   - year: 2011
     results:
@@ -1213,3 +1215,8 @@ seasons:
         constructor: McLaren
         position: null
         points: 0
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        constructor: McLaren
+        position: 9
+        points: 2

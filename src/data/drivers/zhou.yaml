@@ -5,12 +5,14 @@ name: Guanyu Zhou
 dob: '1999-05-30'
 nationality: Chinese
 hasImage: true
-totalRaces: 21
+totalRaces: 22
 raceWins: 0
 podiums: 0
-totalLaps: 1003
+totalLaps: 1060
 lapsLead: 0
-championshipStandings: []
+championshipStandings:
+  - year: 2022
+    position: 18
 seasons:
   - year: 2022
     results:
@@ -116,6 +118,11 @@ seasons:
         points: 0
       - round: 21
         roundName: Brazilian Grand Prix
+        constructor: Alfa Romeo
+        position: 12
+        points: 0
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
         constructor: Alfa Romeo
         position: 12
         points: 0

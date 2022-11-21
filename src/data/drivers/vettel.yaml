@@ -5,10 +5,10 @@ name: Sebastian Vettel
 dob: '1987-07-03'
 nationality: German
 hasImage: true
-totalRaces: 299
+totalRaces: 300
 raceWins: 53
 podiums: 122
-totalLaps: 16369
+totalLaps: 16427
 lapsLead: 3501
 championshipStandings:
   - year: 2007
@@ -40,6 +40,8 @@ championshipStandings:
   - year: 2020
     position: 13
   - year: 2021
+    position: 12
+  - year: 2022
     position: 12
 seasons:
   - year: 2007
@@ -1569,3 +1571,8 @@ seasons:
         constructor: Aston Martin
         position: 11
         points: 0
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        constructor: Aston Martin
+        position: 10
+        points: 1

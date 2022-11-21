@@ -3,15 +3,17 @@ constructorId: 213
 constructorRef: alphatauri
 name: AlphaTauri
 nationality: Italian
-totalRaces: 60
+totalRaces: 61
 raceWins: 1
 podiums: 2
-winPct: 1.66667
+winPct: 1.63934
 championshipStandings:
   - year: 2020
     position: 7
   - year: 2021
     position: 6
+  - year: 2022
+    position: 9
 seasons:
   - year: 2020
     rounds:
@@ -558,4 +560,13 @@ seasons:
             points: 0
           - driver: Pierre Gasly
             position: 14
+            points: 0
+      - round: 22
+        roundName: Abu Dhabi Grand Prix
+        results:
+          - driver: Pierre Gasly
+            position: 14
+            points: 0
+          - driver: Yuki Tsunoda
+            position: 11
             points: 0
