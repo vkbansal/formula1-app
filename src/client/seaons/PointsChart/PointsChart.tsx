@@ -12,11 +12,12 @@ import {
 	MOUSE_OFFSET,
 	TOTAL_HEIGHT,
 	TOTAL_WIDTH,
-	Y_STEP,
 } from './common';
 import { XAxis, YAxis } from './Axes';
 import { Grid } from './Grid';
 import { DataPlot } from './DataPlot';
+
+const LOG_5 = Math.log(5);
 
 export interface PointsChartProps {
 	data: ChartData[];
@@ -38,11 +39,12 @@ export function PointsChart(props: PointsChartProps): VNode {
 			),
 		[data],
 	);
+	const yStep = useMemo(() => Math.ceil(Math.log(yMaxValue) / LOG_5) * 10, [yMaxValue]);
 	const yMax = useMemo(() => {
-		const max = Math.ceil(yMaxValue / Y_STEP) * Y_STEP;
-		const remainder = (max - yMaxValue) % Y_STEP;
+		const max = Math.ceil(yMaxValue / yStep) * yStep;
+		const remainder = (max - yMaxValue) % yStep;
 
-		return remainder < Y_STEP / 2 ? max + Y_STEP : max;
+		return remainder < yStep / 2 ? max + yStep : max;
 	}, [yMaxValue]);
 	const yDomain = useMemo(() => {
 		const values: number[] = [];
@@ -51,7 +53,7 @@ export function PointsChart(props: PointsChartProps): VNode {
 
 		while (y <= yMax) {
 			values.push(y);
-			y += Y_STEP;
+			y += yStep;
 		}
 
 		return values;
