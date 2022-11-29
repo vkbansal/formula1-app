@@ -2,9 +2,7 @@
 import type { GetStaticPathsItem } from 'astro';
 import MainLayout from 'layouts/MainLayout.astro';
 import Breadcrumbs from 'components/Breadcrumbs.astro';
-import { SeasonsClient } from 'client/seaons/seasons';
 import { loadData, type Season } from 'helpers/data';
-import colors from 'helpers/colors';
 
 export interface Props {
 	season: Season;
