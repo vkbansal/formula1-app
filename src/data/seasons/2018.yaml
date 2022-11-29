@@ -2941,95 +2941,104 @@ rounds:
         position: 10
         points: 7
         wins: 0
-drivers:
-  - driverRef: brendon_hartley
-    name: Brendon Hartley
-    nationality: New Zealander
-  - driverRef: sainz
-    name: Carlos Sainz
-    nationality: Spanish
-  - driverRef: leclerc
-    name: Charles Leclerc
-    nationality: Monegasque
-  - driverRef: ricciardo
-    name: Daniel Ricciardo
-    nationality: Australian
-  - driverRef: ocon
-    name: Esteban Ocon
-    nationality: French
-  - driverRef: alonso
-    name: Fernando Alonso
-    nationality: Spanish
-  - driverRef: kevin_magnussen
-    name: Kevin Magnussen
-    nationality: Danish
-  - driverRef: raikkonen
-    name: Kimi Räikkönen
-    nationality: Finnish
-  - driverRef: stroll
-    name: Lance Stroll
-    nationality: Canadian
-  - driverRef: hamilton
-    name: Lewis Hamilton
-    nationality: British
-  - driverRef: ericsson
-    name: Marcus Ericsson
-    nationality: Swedish
-  - driverRef: max_verstappen
-    name: Max Verstappen
-    nationality: Dutch
-  - driverRef: hulkenberg
-    name: Nico Hülkenberg
-    nationality: German
-  - driverRef: gasly
-    name: Pierre Gasly
-    nationality: French
-  - driverRef: grosjean
-    name: Romain Grosjean
-    nationality: French
-  - driverRef: vettel
-    name: Sebastian Vettel
-    nationality: German
-  - driverRef: sirotkin
-    name: Sergey Sirotkin
-    nationality: Russian
-  - driverRef: perez
-    name: Sergio Pérez
-    nationality: Mexican
-  - driverRef: vandoorne
-    name: Stoffel Vandoorne
-    nationality: Belgian
-  - driverRef: bottas
-    name: Valtteri Bottas
-    nationality: Finnish
 constructors:
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: raikkonen
+        name: Kimi Räikkönen
+        nationality: Finnish
+      - driverRef: vettel
+        name: Sebastian Vettel
+        nationality: German
   - constructorRef: force_india
     name: Force India
     nationality: Indian
+    drivers:
+      - driverRef: ocon
+        name: Esteban Ocon
+        nationality: French
+      - driverRef: perez
+        name: Sergio Pérez
+        nationality: Mexican
   - constructorRef: haas
     name: Haas F1 Team
     nationality: American
+    drivers:
+      - driverRef: kevin_magnussen
+        name: Kevin Magnussen
+        nationality: Danish
+      - driverRef: grosjean
+        name: Romain Grosjean
+        nationality: French
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: alonso
+        name: Fernando Alonso
+        nationality: Spanish
+      - driverRef: vandoorne
+        name: Stoffel Vandoorne
+        nationality: Belgian
   - constructorRef: mercedes
     name: Mercedes
     nationality: German
+    drivers:
+      - driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+      - driverRef: bottas
+        name: Valtteri Bottas
+        nationality: Finnish
   - constructorRef: red_bull
     name: Red Bull
     nationality: Austrian
+    drivers:
+      - driverRef: ricciardo
+        name: Daniel Ricciardo
+        nationality: Australian
+      - driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
   - constructorRef: renault
     name: Renault
     nationality: French
+    drivers:
+      - driverRef: sainz
+        name: Carlos Sainz
+        nationality: Spanish
+      - driverRef: hulkenberg
+        name: Nico Hülkenberg
+        nationality: German
   - constructorRef: sauber
     name: Sauber
     nationality: Swiss
+    drivers:
+      - driverRef: leclerc
+        name: Charles Leclerc
+        nationality: Monegasque
+      - driverRef: ericsson
+        name: Marcus Ericsson
+        nationality: Swedish
   - constructorRef: toro_rosso
     name: Toro Rosso
     nationality: Italian
+    drivers:
+      - driverRef: brendon_hartley
+        name: Brendon Hartley
+        nationality: New Zealander
+      - driverRef: gasly
+        name: Pierre Gasly
+        nationality: French
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: stroll
+        name: Lance Stroll
+        nationality: Canadian
+      - driverRef: sirotkin
+        name: Sergey Sirotkin
+        nationality: Russian

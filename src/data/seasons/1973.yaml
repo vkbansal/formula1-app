@@ -2989,170 +2989,196 @@ rounds:
         position: 12
         points: 0
         wins: 0
-drivers:
-  - driverRef: adamich
-    name: Andrea de Adamich
-    nationality: Italian
-  - driverRef: merzario
-    name: Arturo Merzario
-    nationality: Italian
-  - driverRef: redman
-    name: Brian Redman
-    nationality: British
-  - driverRef: pace
-    name: Carlos Pace
-    nationality: Brazilian
-  - driverRef: reutemann
-    name: Carlos Reutemann
-    nationality: Argentine
-  - driverRef: amon
-    name: Chris Amon
-    nationality: New Zealander
-  - driverRef: regazzoni
-    name: Clay Regazzoni
-    nationality: Swiss
-  - driverRef: charlton
-    name: Dave Charlton
-    nationality: South African
-  - driverRef: purley
-    name: David Purley
-    nationality: British
-  - driverRef: hulme
-    name: Denny Hulme
-    nationality: New Zealander
-  - driverRef: keizan
-    name: Eddie Keizan
-    nationality: South African
-  - driverRef: emerson_fittipaldi
-    name: Emerson Fittipaldi
-    nationality: Brazilian
-  - driverRef: cevert
-    name: François Cevert
-    nationality: French
-  - driverRef: follmer
-    name: George Follmer
-    nationality: American
-  - driverRef: lennep
-    name: Gijs van Lennep
-    nationality: Dutch
-  - driverRef: hill
-    name: Graham Hill
-    nationality: British
-  - driverRef: mcrae
-    name: Graham McRae
-    nationality: New Zealander
-  - driverRef: pescarolo
-    name: Henri Pescarolo
-    nationality: French
-  - driverRef: ganley
-    name: Howden Ganley
-    nationality: New Zealander
-  - driverRef: oliver
-    name: Jackie Oliver
-    nationality: British
-  - driverRef: pretorius
-    name: Jackie Pretorius
-    nationality: South African
-  - driverRef: stewart
-    name: Jackie Stewart
-    nationality: British
-  - driverRef: ickx
-    name: Jacky Ickx
-    nationality: Belgian
-  - driverRef: hunt
-    name: James Hunt
-    nationality: British
-  - driverRef: beltoise
-    name: Jean-Pierre Beltoise
-    nationality: French
-  - driverRef: jarier
-    name: Jean-Pierre Jarier
-    nationality: French
-  - driverRef: mass
-    name: Jochen Mass
-    nationality: German
-  - driverRef: scheckter
-    name: Jody Scheckter
-    nationality: South African
-  - driverRef: watson
-    name: John Watson
-    nationality: British
-  - driverRef: bueno
-    name: Luiz Bueno
-    nationality: Brazilian
-  - driverRef: beuttler
-    name: Mike Beuttler
-    nationality: British
-  - driverRef: hailwood
-    name: Mike Hailwood
-    nationality: British
-  - driverRef: galli
-    name: Nanni Galli
-    nationality: Italian
-  - driverRef: lauda
-    name: Niki Lauda
-    nationality: Austrian
-  - driverRef: gethin
-    name: Peter Gethin
-    nationality: British
-  - driverRef: revson
-    name: Peter Revson
-    nationality: American
-  - driverRef: wisell
-    name: Reine Wisell
-    nationality: Swedish
-  - driverRef: opel
-    name: Rikky von Opel
-    nationality: Liechtensteiner
-  - driverRef: williamson
-    name: Roger Williamson
-    nationality: British
-  - driverRef: stommelen
-    name: Rolf Stommelen
-    nationality: German
-  - driverRef: peterson
-    name: Ronnie Peterson
-    nationality: Swedish
-  - driverRef: schenken
-    name: Tim Schenken
-    nationality: Australian
-  - driverRef: wilson_fittipaldi
-    name: Wilson Fittipaldi
-    nationality: Brazilian
 constructors:
   - constructorRef: brabham
     name: Brabham
     nationality: British
+    drivers:
+      - driverRef: adamich
+        name: Andrea de Adamich
+        nationality: Italian
+      - driverRef: reutemann
+        name: Carlos Reutemann
+        nationality: Argentine
+      - driverRef: watson
+        name: John Watson
+        nationality: British
+      - driverRef: stommelen
+        name: Rolf Stommelen
+        nationality: German
+      - driverRef: wilson_fittipaldi
+        name: Wilson Fittipaldi
+        nationality: Brazilian
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: regazzoni
+        name: Clay Regazzoni
+        nationality: Swiss
+      - driverRef: beltoise
+        name: Jean-Pierre Beltoise
+        nationality: French
+      - driverRef: lauda
+        name: Niki Lauda
+        nationality: Austrian
+      - driverRef: gethin
+        name: Peter Gethin
+        nationality: British
   - constructorRef: ensign
     name: Ensign
     nationality: British
+    drivers:
+      - driverRef: opel
+        name: Rikky von Opel
+        nationality: Liechtensteiner
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: merzario
+        name: Arturo Merzario
+        nationality: Italian
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
   - constructorRef: iso_marlboro
     name: Iso Marlboro
     nationality: British
+    drivers:
+      - driverRef: lennep
+        name: Gijs van Lennep
+        nationality: Dutch
+      - driverRef: mcrae
+        name: Graham McRae
+        nationality: New Zealander
+      - driverRef: pescarolo
+        name: Henri Pescarolo
+        nationality: French
+      - driverRef: ganley
+        name: Howden Ganley
+        nationality: New Zealander
+      - driverRef: pretorius
+        name: Jackie Pretorius
+        nationality: South African
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: galli
+        name: Nanni Galli
+        nationality: Italian
+      - driverRef: schenken
+        name: Tim Schenken
+        nationality: Australian
   - constructorRef: march
     name: March
     nationality: British
+    drivers:
+      - driverRef: purley
+        name: David Purley
+        nationality: British
+      - driverRef: pescarolo
+        name: Henri Pescarolo
+        nationality: French
+      - driverRef: hunt
+        name: James Hunt
+        nationality: British
+      - driverRef: jarier
+        name: Jean-Pierre Jarier
+        nationality: French
+      - driverRef: beuttler
+        name: Mike Beuttler
+        nationality: British
+      - driverRef: wisell
+        name: Reine Wisell
+        nationality: Swedish
+      - driverRef: williamson
+        name: Roger Williamson
+        nationality: British
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: hulme
+        name: Denny Hulme
+        nationality: New Zealander
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: scheckter
+        name: Jody Scheckter
+        nationality: South African
+      - driverRef: revson
+        name: Peter Revson
+        nationality: American
   - constructorRef: shadow
     name: Shadow
     nationality: British
+    drivers:
+      - driverRef: redman
+        name: Brian Redman
+        nationality: British
+      - driverRef: follmer
+        name: George Follmer
+        nationality: American
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: oliver
+        name: Jackie Oliver
+        nationality: British
   - constructorRef: surtees
     name: Surtees
     nationality: British
+    drivers:
+      - driverRef: adamich
+        name: Andrea de Adamich
+        nationality: Italian
+      - driverRef: pace
+        name: Carlos Pace
+        nationality: Brazilian
+      - driverRef: mass
+        name: Jochen Mass
+        nationality: German
+      - driverRef: bueno
+        name: Luiz Bueno
+        nationality: Brazilian
+      - driverRef: hailwood
+        name: Mike Hailwood
+        nationality: British
   - constructorRef: team_lotus
     name: Team Lotus
     nationality: British
+    drivers:
+      - driverRef: charlton
+        name: Dave Charlton
+        nationality: South African
+      - driverRef: emerson_fittipaldi
+        name: Emerson Fittipaldi
+        nationality: Brazilian
+      - driverRef: peterson
+        name: Ronnie Peterson
+        nationality: Swedish
   - constructorRef: tecno
     name: Tecno
     nationality: Italian
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
   - constructorRef: tyrrell
     name: Tyrrell
     nationality: British
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: keizan
+        name: Eddie Keizan
+        nationality: South African
+      - driverRef: cevert
+        name: François Cevert
+        nationality: French
+      - driverRef: stewart
+        name: Jackie Stewart
+        nationality: British

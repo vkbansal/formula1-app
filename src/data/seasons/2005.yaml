@@ -3025,116 +3025,125 @@ rounds:
         position: 10
         points: 7
         wins: 0
-drivers:
-  - driverRef: wurz
-    name: Alexander Wurz
-    nationality: Austrian
-  - driverRef: davidson
-    name: Anthony Davidson
-    nationality: British
-  - driverRef: pizzonia
-    name: Antônio Pizzonia
-    nationality: Brazilian
-  - driverRef: klien
-    name: Christian Klien
-    nationality: Austrian
-  - driverRef: albers
-    name: Christijan Albers
-    nationality: Dutch
-  - driverRef: coulthard
-    name: David Coulthard
-    nationality: British
-  - driverRef: massa
-    name: Felipe Massa
-    nationality: Brazilian
-  - driverRef: alonso
-    name: Fernando Alonso
-    nationality: Spanish
-  - driverRef: fisichella
-    name: Giancarlo Fisichella
-    nationality: Italian
-  - driverRef: villeneuve
-    name: Jacques Villeneuve
-    nationality: Canadian
-  - driverRef: trulli
-    name: Jarno Trulli
-    nationality: Italian
-  - driverRef: button
-    name: Jenson Button
-    nationality: British
-  - driverRef: montoya
-    name: Juan Pablo Montoya
-    nationality: Colombian
-  - driverRef: raikkonen
-    name: Kimi Räikkönen
-    nationality: Finnish
-  - driverRef: webber
-    name: Mark Webber
-    nationality: Australian
-  - driverRef: michael_schumacher
-    name: Michael Schumacher
-    nationality: German
-  - driverRef: karthikeyan
-    name: Narain Karthikeyan
-    nationality: Indian
-  - driverRef: heidfeld
-    name: Nick Heidfeld
-    nationality: German
-  - driverRef: friesacher
-    name: Patrick Friesacher
-    nationality: Austrian
-  - driverRef: rosa
-    name: Pedro de la Rosa
-    nationality: Spanish
-  - driverRef: ralf_schumacher
-    name: Ralf Schumacher
-    nationality: German
-  - driverRef: zonta
-    name: Ricardo Zonta
-    nationality: Brazilian
-  - driverRef: doornbos
-    name: Robert Doornbos
-    nationality: Dutch
-  - driverRef: barrichello
-    name: Rubens Barrichello
-    nationality: Brazilian
-  - driverRef: sato
-    name: Takuma Sato
-    nationality: Japanese
-  - driverRef: monteiro
-    name: Tiago Monteiro
-    nationality: Portuguese
-  - driverRef: liuzzi
-    name: Vitantonio Liuzzi
-    nationality: Italian
 constructors:
   - constructorRef: bar
     name: BAR
     nationality: British
+    drivers:
+      - driverRef: davidson
+        name: Anthony Davidson
+        nationality: British
+      - driverRef: button
+        name: Jenson Button
+        nationality: British
+      - driverRef: sato
+        name: Takuma Sato
+        nationality: Japanese
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: michael_schumacher
+        name: Michael Schumacher
+        nationality: German
+      - driverRef: barrichello
+        name: Rubens Barrichello
+        nationality: Brazilian
   - constructorRef: jordan
     name: Jordan
     nationality: Irish
+    drivers:
+      - driverRef: karthikeyan
+        name: Narain Karthikeyan
+        nationality: Indian
+      - driverRef: monteiro
+        name: Tiago Monteiro
+        nationality: Portuguese
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: wurz
+        name: Alexander Wurz
+        nationality: Austrian
+      - driverRef: montoya
+        name: Juan Pablo Montoya
+        nationality: Colombian
+      - driverRef: raikkonen
+        name: Kimi Räikkönen
+        nationality: Finnish
+      - driverRef: rosa
+        name: Pedro de la Rosa
+        nationality: Spanish
   - constructorRef: minardi
     name: Minardi
     nationality: Italian
+    drivers:
+      - driverRef: albers
+        name: Christijan Albers
+        nationality: Dutch
+      - driverRef: friesacher
+        name: Patrick Friesacher
+        nationality: Austrian
+      - driverRef: doornbos
+        name: Robert Doornbos
+        nationality: Dutch
   - constructorRef: red_bull
     name: Red Bull
     nationality: Austrian
+    drivers:
+      - driverRef: klien
+        name: Christian Klien
+        nationality: Austrian
+      - driverRef: coulthard
+        name: David Coulthard
+        nationality: British
+      - driverRef: liuzzi
+        name: Vitantonio Liuzzi
+        nationality: Italian
   - constructorRef: renault
     name: Renault
     nationality: French
+    drivers:
+      - driverRef: alonso
+        name: Fernando Alonso
+        nationality: Spanish
+      - driverRef: fisichella
+        name: Giancarlo Fisichella
+        nationality: Italian
   - constructorRef: sauber
     name: Sauber
     nationality: Swiss
+    drivers:
+      - driverRef: massa
+        name: Felipe Massa
+        nationality: Brazilian
+      - driverRef: villeneuve
+        name: Jacques Villeneuve
+        nationality: Canadian
   - constructorRef: toyota
     name: Toyota
     nationality: Japanese
+    drivers:
+      - driverRef: trulli
+        name: Jarno Trulli
+        nationality: Italian
+      - driverRef: ralf_schumacher
+        name: Ralf Schumacher
+        nationality: German
+      - driverRef: zonta
+        name: Ricardo Zonta
+        nationality: Brazilian
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: pizzonia
+        name: Antônio Pizzonia
+        nationality: Brazilian
+      - driverRef: webber
+        name: Mark Webber
+        nationality: Australian
+      - driverRef: heidfeld
+        name: Nick Heidfeld
+        nationality: German

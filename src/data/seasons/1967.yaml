@@ -2397,200 +2397,261 @@ rounds:
         position: 20
         points: 0
         wins: 0
-drivers:
-  - driverRef: pease
-    name: Al Pease
-    nationality: Canadian
-  - driverRef: rees
-    name: Alan Rees
-    nationality: British
-  - driverRef: anderson
-    name: Bob Anderson
-    nationality: British
-  - driverRef: hart
-    name: Brian Hart
-    nationality: British
-  - driverRef: mclaren
-    name: Bruce McLaren
-    nationality: New Zealander
-  - driverRef: amon
-    name: Chris Amon
-    nationality: New Zealander
-  - driverRef: irwin
-    name: Chris Irwin
-    nationality: British
-  - driverRef: gurney
-    name: Dan Gurney
-    nationality: American
-  - driverRef: charlton
-    name: Dave Charlton
-    nationality: South African
-  - driverRef: hobbs
-    name: David Hobbs
-    nationality: British
-  - driverRef: hulme
-    name: Denny Hulme
-    nationality: New Zealander
-  - driverRef: wietzes
-    name: Eppie Wietzes
-    nationality: Canadian
-  - driverRef: baghetti
-    name: Giancarlo Baghetti
-    nationality: Italian
-  - driverRef: hill
-    name: Graham Hill
-    nationality: British
-  - driverRef: ligier
-    name: Guy Ligier
-    nationality: French
-  - driverRef: hahne
-    name: Hubert Hahne
-    nationality: German
-  - driverRef: jack_brabham
-    name: Jack Brabham
-    nationality: Australian
-  - driverRef: oliver
-    name: Jackie Oliver
-    nationality: British
-  - driverRef: stewart
-    name: Jackie Stewart
-    nationality: British
-  - driverRef: ickx
-    name: Jacky Ickx
-    nationality: Belgian
-  - driverRef: beltoise
-    name: Jean-Pierre Beltoise
-    nationality: French
-  - driverRef: clark
-    name: Jim Clark
-    nationality: British
-  - driverRef: bonnier
-    name: Jo Bonnier
-    nationality: Swedish
-  - driverRef: jo_schlesser
-    name: Jo Schlesser
-    nationality: French
-  - driverRef: siffert
-    name: Jo Siffert
-    nationality: Swiss
-  - driverRef: rindt
-    name: Jochen Rindt
-    nationality: Austrian
-  - driverRef: love
-    name: John Love
-    nationality: Rhodesian
-  - driverRef: surtees
-    name: John Surtees
-    nationality: British
-  - driverRef: gavin
-    name: Johnny Servoz-Gavin
-    nationality: French
-  - driverRef: williams
-    name: Jonathan Williams
-    nationality: British
-  - driverRef: ahrens
-    name: Kurt Ahrens
-    nationality: German
-  - driverRef: bandini
-    name: Lorenzo Bandini
-    nationality: Italian
-  - driverRef: scarfiotti
-    name: Ludovico Scarfiotti
-    nationality: Italian
-  - driverRef: botha
-    name: Luki Botha
-    nationality: South African
-  - driverRef: fisher
-    name: Mike Fisher
-    nationality: American
-  - driverRef: parkes
-    name: Mike Parkes
-    nationality: British
-  - driverRef: spence
-    name: Mike Spence
-    nationality: British
-  - driverRef: solana
-    name: Moisés Solana
-    nationality: Mexican
-  - driverRef: rodriguez
-    name: Pedro Rodríguez
-    nationality: Mexican
-  - driverRef: courage
-    name: Piers Courage
-    nationality: British
-  - driverRef: attwood
-    name: Richard Attwood
-    nationality: British
-  - driverRef: ginther
-    name: Richie Ginther
-    nationality: American
-  - driverRef: tingle
-    name: Sam Tingle
-    nationality: Rhodesian
-  - driverRef: moser
-    name: Silvio Moser
-    nationality: Swiss
-  - driverRef: tom_jones
-    name: Tom Jones
-    nationality: American
 constructors:
   - constructorRef: brabham-climax
     name: Brabham-Climax
     nationality: British
+    drivers:
+      - driverRef: anderson
+        name: Bob Anderson
+        nationality: British
+      - driverRef: charlton
+        name: Dave Charlton
+        nationality: South African
+      - driverRef: botha
+        name: Luki Botha
+        nationality: South African
   - constructorRef: brabham-ford
     name: Brabham-Ford
     nationality: British
+    drivers:
+      - driverRef: rees
+        name: Alan Rees
+        nationality: British
   - constructorRef: brabham-repco
     name: Brabham-Repco
     nationality: British
+    drivers:
+      - driverRef: hulme
+        name: Denny Hulme
+        nationality: New Zealander
+      - driverRef: ligier
+        name: Guy Ligier
+        nationality: French
+      - driverRef: jack_brabham
+        name: Jack Brabham
+        nationality: Australian
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: irwin
+        name: Chris Irwin
+        nationality: British
+      - driverRef: hobbs
+        name: David Hobbs
+        nationality: British
+      - driverRef: stewart
+        name: Jackie Stewart
+        nationality: British
+      - driverRef: spence
+        name: Mike Spence
+        nationality: British
+      - driverRef: courage
+        name: Piers Courage
+        nationality: British
   - constructorRef: cooper-ats
     name: Cooper-ATS
     nationality: British
+    drivers:
+      - driverRef: moser
+        name: Silvio Moser
+        nationality: Swiss
   - constructorRef: cooper-climax
     name: Cooper-Climax
     nationality: British
+    drivers:
+      - driverRef: love
+        name: John Love
+        nationality: Rhodesian
+      - driverRef: tom_jones
+        name: Tom Jones
+        nationality: American
   - constructorRef: cooper-maserati
     name: Cooper-Maserati
     nationality: British
+    drivers:
+      - driverRef: rees
+        name: Alan Rees
+        nationality: British
+      - driverRef: ligier
+        name: Guy Ligier
+        nationality: French
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish
+      - driverRef: siffert
+        name: Jo Siffert
+        nationality: Swiss
+      - driverRef: rindt
+        name: Jochen Rindt
+        nationality: Austrian
+      - driverRef: rodriguez
+        name: Pedro Rodríguez
+        nationality: Mexican
+      - driverRef: attwood
+        name: Richard Attwood
+        nationality: British
   - constructorRef: eagle-climax
     name: Eagle-Climax
     nationality: American
+    drivers:
+      - driverRef: pease
+        name: Al Pease
+        nationality: Canadian
+      - driverRef: gurney
+        name: Dan Gurney
+        nationality: American
+      - driverRef: ginther
+        name: Richie Ginther
+        nationality: American
   - constructorRef: eagle-weslake
     name: Eagle-Weslake
     nationality: American
+    drivers:
+      - driverRef: mclaren
+        name: Bruce McLaren
+        nationality: New Zealander
+      - driverRef: gurney
+        name: Dan Gurney
+        nationality: American
+      - driverRef: scarfiotti
+        name: Ludovico Scarfiotti
+        nationality: Italian
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: williams
+        name: Jonathan Williams
+        nationality: British
+      - driverRef: bandini
+        name: Lorenzo Bandini
+        nationality: Italian
+      - driverRef: scarfiotti
+        name: Ludovico Scarfiotti
+        nationality: Italian
+      - driverRef: parkes
+        name: Mike Parkes
+        nationality: British
   - constructorRef: honda
     name: Honda
     nationality: Japanese
+    drivers:
+      - driverRef: surtees
+        name: John Surtees
+        nationality: British
   - constructorRef: lds-climax
     name: LDS-Climax
     nationality: South African
+    drivers:
+      - driverRef: tingle
+        name: Sam Tingle
+        nationality: Rhodesian
   - constructorRef: lola
     name: Lola
     nationality: British
+    drivers:
+      - driverRef: hobbs
+        name: David Hobbs
+        nationality: British
+      - driverRef: hahne
+        name: Hubert Hahne
+        nationality: German
   - constructorRef: lotus-brm
     name: Lotus-BRM
     nationality: British
+    drivers:
+      - driverRef: irwin
+        name: Chris Irwin
+        nationality: British
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: clark
+        name: Jim Clark
+        nationality: British
+      - driverRef: fisher
+        name: Mike Fisher
+        nationality: American
+      - driverRef: solana
+        name: Moisés Solana
+        nationality: Mexican
+      - driverRef: courage
+        name: Piers Courage
+        nationality: British
   - constructorRef: lotus-climax
     name: Lotus-Climax
     nationality: British
+    drivers:
+      - driverRef: clark
+        name: Jim Clark
+        nationality: British
   - constructorRef: lotus-ford
     name: Lotus-Ford
     nationality: British
+    drivers:
+      - driverRef: wietzes
+        name: Eppie Wietzes
+        nationality: Canadian
+      - driverRef: baghetti
+        name: Giancarlo Baghetti
+        nationality: Italian
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: oliver
+        name: Jackie Oliver
+        nationality: British
+      - driverRef: clark
+        name: Jim Clark
+        nationality: British
+      - driverRef: solana
+        name: Moisés Solana
+        nationality: Mexican
   - constructorRef: matra
     name: Matra
     nationality: French
+    drivers:
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: beltoise
+        name: Jean-Pierre Beltoise
+        nationality: French
+      - driverRef: jo_schlesser
+        name: Jo Schlesser
+        nationality: French
+      - driverRef: gavin
+        name: Johnny Servoz-Gavin
+        nationality: French
   - constructorRef: mclaren-brm
     name: McLaren-BRM
     nationality: British
+    drivers:
+      - driverRef: mclaren
+        name: Bruce McLaren
+        nationality: New Zealander
   - constructorRef: mclaren-ford
     name: McLaren-Ford
     nationality: British
+    drivers:
+      - driverRef: beltoise
+        name: Jean-Pierre Beltoise
+        nationality: French
   - constructorRef: protos
     name: Protos
     nationality: British
+    drivers:
+      - driverRef: hart
+        name: Brian Hart
+        nationality: British
+      - driverRef: ahrens
+        name: Kurt Ahrens
+        nationality: German

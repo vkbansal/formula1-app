@@ -1713,233 +1713,273 @@ rounds:
         position: 13
         points: 0
         wins: 0
-drivers:
-  - driverRef: thiele
-    name: Alfonso Thiele
-    nationality: American-Italian
-  - driverRef: andre_pilette
-    name: André Pilette
-    nationality: Belgian
-  - driverRef: collomb
-    name: Bernard Collomb
-    nationality: French
-  - driverRef: naylor
-    name: Brian Naylor
-    nationality: British
-  - driverRef: mclaren
-    name: Bruce McLaren
-    nationality: New Zealander
-  - driverRef: beaufort
-    name: Carel Godin de Beaufort
-    nationality: Dutch
-  - driverRef: allison
-    name: Cliff Allison
-    nationality: British
-  - driverRef: gurney
-    name: Dan Gurney
-    nationality: American
-  - driverRef: barth
-    name: Edgar Barth
-    nationality: German
-  - driverRef: prinoth
-    name: Ernesto Prinoth
-    nationality: Italian
-  - driverRef: starrabba
-    name: Gaetano Starrabba
-    nationality: Italian
-  - driverRef: duke
-    name: Geoff Duke
-    nationality: British
-  - driverRef: ashmore
-    name: Gerry Ashmore
-    nationality: British
-  - driverRef: baghetti
-    name: Giancarlo Baghetti
-    nationality: Italian
-  - driverRef: scarlatti
-    name: Giorgio Scarlatti
-    nationality: Italian
-  - driverRef: hill
-    name: Graham Hill
-    nationality: British
-  - driverRef: herrmann
-    name: Hans Herrmann
-    nationality: German
-  - driverRef: sharp
-    name: Hap Sharp
-    nationality: American
-  - driverRef: henry_taylor
-    name: Henry Taylor
-    nationality: British
-  - driverRef: burgess
-    name: Ian Burgess
-    nationality: British
-  - driverRef: ireland
-    name: Innes Ireland
-    nationality: British
-  - driverRef: jack_brabham
-    name: Jack Brabham
-    nationality: Australian
-  - driverRef: fairman
-    name: Jack Fairman
-    nationality: British
-  - driverRef: lewis
-    name: Jackie Lewis
-    nationality: British
-  - driverRef: clark
-    name: Jim Clark
-    nationality: British
-  - driverRef: hall
-    name: Jim Hall
-    nationality: American
-  - driverRef: bonnier
-    name: Jo Bonnier
-    nationality: Swedish
-  - driverRef: campbell-jones
-    name: John Campbell-Jones
-    nationality: British
-  - driverRef: surtees
-    name: John Surtees
-    nationality: British
-  - driverRef: bordeu
-    name: Juan Manuel Bordeu
-    nationality: Argentine
-  - driverRef: greene
-    name: Keith Greene
-    nationality: British
-  - driverRef: ken_miles
-    name: Ken Miles
-    nationality: British
-  - driverRef: ruby
-    name: Lloyd Ruby
-    nationality: American
-  - driverRef: bandini
-    name: Lorenzo Bandini
-    nationality: Italian
-  - driverRef: bianchi
-    name: Lucien Bianchi
-    nationality: Belgian
-  - driverRef: natili
-    name: Massimo Natili
-    nationality: Italian
-  - driverRef: gregory
-    name: Masten Gregory
-    nationality: American
-  - driverRef: trintignant
-    name: Maurice Trintignant
-    nationality: French
-  - driverRef: boffa
-    name: Menato Boffa
-    nationality: Italian
-  - driverRef: may
-    name: Michael May
-    nationality: Swiss
-  - driverRef: vaccarella
-    name: Nino Vaccarella
-    nationality: Italian
-  - driverRef: gendebien
-    name: Olivier Gendebien
-    nationality: Belgian
-  - driverRef: monteverdi
-    name: Peter Monteverdi
-    nationality: Swiss
-  - driverRef: ryan
-    name: Peter Ryan
-    nationality: Canadian
-  - driverRef: phil_hill
-    name: Phil Hill
-    nationality: American
-  - driverRef: pirocchi
-    name: Renato Pirocchi
-    nationality: Italian
-  - driverRef: ricardo_rodriguez
-    name: Ricardo Rodríguez
-    nationality: Mexican
-  - driverRef: ginther
-    name: Richie Ginther
-    nationality: American
-  - driverRef: bussinello
-    name: Roberto Bussinello
-    nationality: Italian
-  - driverRef: lippi
-    name: Roberto Lippi
-    nationality: Italian
-  - driverRef: penske
-    name: Roger Penske
-    nationality: American
-  - driverRef: salvadori
-    name: Roy Salvadori
-    nationality: British
-  - driverRef: moss
-    name: Stirling Moss
-    nationality: British
-  - driverRef: parnell
-    name: Tim Parnell
-    nationality: British
-  - driverRef: brooks
-    name: Tony Brooks
-    nationality: British
-  - driverRef: maggs
-    name: Tony Maggs
-    nationality: South African
-  - driverRef: marsh
-    name: Tony Marsh
-    nationality: British
-  - driverRef: trevor_taylor
-    name: Trevor Taylor
-    nationality: British
-  - driverRef: hansgen
-    name: Walt Hansgen
-    nationality: American
-  - driverRef: mairesse
-    name: Willy Mairesse
-    nationality: Belgian
-  - driverRef: seidel
-    name: Wolfgang Seidel
-    nationality: German
-  - driverRef: trips
-    name: Wolfgang von Trips
-    nationality: German
 constructors:
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: brooks
+        name: Tony Brooks
+        nationality: British
   - constructorRef: cooper-climax
     name: Cooper-Climax
     nationality: British
+    drivers:
+      - driverRef: thiele
+        name: Alfonso Thiele
+        nationality: American-Italian
+      - driverRef: collomb
+        name: Bernard Collomb
+        nationality: French
+      - driverRef: mclaren
+        name: Bruce McLaren
+        nationality: New Zealander
+      - driverRef: duke
+        name: Geoff Duke
+        nationality: British
+      - driverRef: sharp
+        name: Hap Sharp
+        nationality: American
+      - driverRef: burgess
+        name: Ian Burgess
+        nationality: British
+      - driverRef: jack_brabham
+        name: Jack Brabham
+        nationality: Australian
+      - driverRef: fairman
+        name: Jack Fairman
+        nationality: British
+      - driverRef: lewis
+        name: Jackie Lewis
+        nationality: British
+      - driverRef: campbell-jones
+        name: John Campbell-Jones
+        nationality: British
+      - driverRef: surtees
+        name: John Surtees
+        nationality: British
+      - driverRef: gregory
+        name: Masten Gregory
+        nationality: American
+      - driverRef: boffa
+        name: Menato Boffa
+        nationality: Italian
+      - driverRef: pirocchi
+        name: Renato Pirocchi
+        nationality: Italian
+      - driverRef: penske
+        name: Roger Penske
+        nationality: American
+      - driverRef: salvadori
+        name: Roy Salvadori
+        nationality: British
+      - driverRef: hansgen
+        name: Walt Hansgen
+        nationality: American
   - constructorRef: cooper-maserati
     name: Cooper-Maserati
     nationality: British
+    drivers:
+      - driverRef: bandini
+        name: Lorenzo Bandini
+        nationality: Italian
+      - driverRef: natili
+        name: Massimo Natili
+        nationality: Italian
+      - driverRef: trintignant
+        name: Maurice Trintignant
+        nationality: French
+      - driverRef: pirocchi
+        name: Renato Pirocchi
+        nationality: Italian
   - constructorRef: de_tomaso-alfa_romeo
     name: De Tomaso-Alfa Romeo
     nationality: Italian
+    drivers:
+      - driverRef: vaccarella
+        name: Nino Vaccarella
+        nationality: Italian
+      - driverRef: bussinello
+        name: Roberto Bussinello
+        nationality: Italian
   - constructorRef: de_tomaso-osca
     name: De Tomaso-Osca
     nationality: Italian
+    drivers:
+      - driverRef: scarlatti
+        name: Giorgio Scarlatti
+        nationality: Italian
+      - driverRef: lippi
+        name: Roberto Lippi
+        nationality: Italian
   - constructorRef: emeryson
     name: Emeryson
     nationality: British
+    drivers:
+      - driverRef: andre_pilette
+        name: André Pilette
+        nationality: Belgian
+      - driverRef: bianchi
+        name: Lucien Bianchi
+        nationality: Belgian
+      - driverRef: gendebien
+        name: Olivier Gendebien
+        nationality: Belgian
   - constructorRef: ferguson
     name: Ferguson
     nationality: British
+    drivers:
+      - driverRef: fairman
+        name: Jack Fairman
+        nationality: British
+      - driverRef: moss
+        name: Stirling Moss
+        nationality: British
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: baghetti
+        name: Giancarlo Baghetti
+        nationality: Italian
+      - driverRef: gendebien
+        name: Olivier Gendebien
+        nationality: Belgian
+      - driverRef: phil_hill
+        name: Phil Hill
+        nationality: American
+      - driverRef: ricardo_rodriguez
+        name: Ricardo Rodríguez
+        nationality: Mexican
+      - driverRef: ginther
+        name: Richie Ginther
+        nationality: American
+      - driverRef: mairesse
+        name: Willy Mairesse
+        nationality: Belgian
+      - driverRef: trips
+        name: Wolfgang von Trips
+        nationality: German
   - constructorRef: gilby
     name: Gilby
     nationality: British
+    drivers:
+      - driverRef: greene
+        name: Keith Greene
+        nationality: British
   - constructorRef: jbw
     name: JBW
     nationality: British
+    drivers:
+      - driverRef: naylor
+        name: Brian Naylor
+        nationality: British
   - constructorRef: lotus-climax
     name: Lotus-Climax
     nationality: British
+    drivers:
+      - driverRef: allison
+        name: Cliff Allison
+        nationality: British
+      - driverRef: prinoth
+        name: Ernesto Prinoth
+        nationality: Italian
+      - driverRef: ashmore
+        name: Gerry Ashmore
+        nationality: British
+      - driverRef: henry_taylor
+        name: Henry Taylor
+        nationality: British
+      - driverRef: burgess
+        name: Ian Burgess
+        nationality: British
+      - driverRef: ireland
+        name: Innes Ireland
+        nationality: British
+      - driverRef: clark
+        name: Jim Clark
+        nationality: British
+      - driverRef: hall
+        name: Jim Hall
+        nationality: American
+      - driverRef: bordeu
+        name: Juan Manuel Bordeu
+        nationality: Argentine
+      - driverRef: ken_miles
+        name: Ken Miles
+        nationality: British
+      - driverRef: ruby
+        name: Lloyd Ruby
+        nationality: American
+      - driverRef: bianchi
+        name: Lucien Bianchi
+        nationality: Belgian
+      - driverRef: gregory
+        name: Masten Gregory
+        nationality: American
+      - driverRef: may
+        name: Michael May
+        nationality: Swiss
+      - driverRef: gendebien
+        name: Olivier Gendebien
+        nationality: Belgian
+      - driverRef: ryan
+        name: Peter Ryan
+        nationality: Canadian
+      - driverRef: moss
+        name: Stirling Moss
+        nationality: British
+      - driverRef: parnell
+        name: Tim Parnell
+        nationality: British
+      - driverRef: maggs
+        name: Tony Maggs
+        nationality: South African
+      - driverRef: marsh
+        name: Tony Marsh
+        nationality: British
+      - driverRef: trevor_taylor
+        name: Trevor Taylor
+        nationality: British
+      - driverRef: mairesse
+        name: Willy Mairesse
+        nationality: Belgian
+      - driverRef: seidel
+        name: Wolfgang Seidel
+        nationality: German
   - constructorRef: lotus-maserati
     name: Lotus-Maserati
     nationality: British
+    drivers:
+      - driverRef: starrabba
+        name: Gaetano Starrabba
+        nationality: Italian
   - constructorRef: mbm
     name: MBM
     nationality: Swiss
+    drivers:
+      - driverRef: monteverdi
+        name: Peter Monteverdi
+        nationality: Swiss
   - constructorRef: porsche
     name: Porsche
     nationality: German
+    drivers:
+      - driverRef: beaufort
+        name: Carel Godin de Beaufort
+        nationality: Dutch
+      - driverRef: gurney
+        name: Dan Gurney
+        nationality: American
+      - driverRef: barth
+        name: Edgar Barth
+        nationality: German
+      - driverRef: herrmann
+        name: Hans Herrmann
+        nationality: German
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish

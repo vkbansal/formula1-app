@@ -3009,143 +3009,159 @@ rounds:
         position: 14
         points: 0
         wins: 0
-drivers:
-  - driverRef: prost
-    name: Alain Prost
-    nationality: French
-  - driverRef: jones
-    name: Alan Jones
-    nationality: Australian
-  - driverRef: nannini
-    name: Alessandro Nannini
-    nationality: Italian
-  - driverRef: caffi
-    name: Alex Caffi
-    nationality: Italian
-  - driverRef: berg
-    name: Allen Berg
-    nationality: Canadian
-  - driverRef: cesaris
-    name: Andrea de Cesaris
-    nationality: Italian
-  - driverRef: senna
-    name: Ayrton Senna
-    nationality: Brazilian
-  - driverRef: danner
-    name: Christian Danner
-    nationality: German
-  - driverRef: warwick
-    name: Derek Warwick
-    nationality: British
-  - driverRef: cheever
-    name: Eddie Cheever
-    nationality: American
-  - driverRef: angelis
-    name: Elio de Angelis
-    nationality: Italian
-  - driverRef: berger
-    name: Gerhard Berger
-    nationality: Austrian
-  - driverRef: rothengatter
-    name: Huub Rothengatter
-    nationality: Dutch
-  - driverRef: capelli
-    name: Ivan Capelli
-    nationality: Italian
-  - driverRef: laffite
-    name: Jacques Laffite
-    nationality: French
-  - driverRef: dumfries
-    name: Johnny Dumfries
-    nationality: British
-  - driverRef: palmer
-    name: Jonathan Palmer
-    nationality: British
-  - driverRef: keke_rosberg
-    name: Keke Rosberg
-    nationality: Finnish
-  - driverRef: surer
-    name: Marc Surer
-    nationality: Swiss
-  - driverRef: brundle
-    name: Martin Brundle
-    nationality: British
-  - driverRef: alboreto
-    name: Michele Alboreto
-    nationality: Italian
-  - driverRef: piquet
-    name: Nelson Piquet
-    nationality: Brazilian
-  - driverRef: mansell
-    name: Nigel Mansell
-    nationality: British
-  - driverRef: tambay
-    name: Patrick Tambay
-    nationality: French
-  - driverRef: alliot
-    name: Philippe Alliot
-    nationality: French
-  - driverRef: streiff
-    name: Philippe Streiff
-    nationality: French
-  - driverRef: ghinzani
-    name: Piercarlo Ghinzani
-    nationality: Italian
-  - driverRef: arnoux
-    name: René Arnoux
-    nationality: French
-  - driverRef: patrese
-    name: Riccardo Patrese
-    nationality: Italian
-  - driverRef: johansson
-    name: Stefan Johansson
-    nationality: Swedish
-  - driverRef: fabi
-    name: Teo Fabi
-    nationality: Italian
-  - driverRef: boutsen
-    name: Thierry Boutsen
-    nationality: Belgian
 constructors:
   - constructorRef: ags
     name: AGS
     nationality: French
+    drivers:
+      - driverRef: capelli
+        name: Ivan Capelli
+        nationality: Italian
   - constructorRef: arrows
     name: Arrows
     nationality: British
+    drivers:
+      - driverRef: danner
+        name: Christian Danner
+        nationality: German
+      - driverRef: surer
+        name: Marc Surer
+        nationality: Swiss
+      - driverRef: boutsen
+        name: Thierry Boutsen
+        nationality: Belgian
   - constructorRef: benetton
     name: Benetton
     nationality: Italian
+    drivers:
+      - driverRef: berger
+        name: Gerhard Berger
+        nationality: Austrian
+      - driverRef: fabi
+        name: Teo Fabi
+        nationality: Italian
   - constructorRef: brabham
     name: Brabham
     nationality: British
+    drivers:
+      - driverRef: warwick
+        name: Derek Warwick
+        nationality: British
+      - driverRef: angelis
+        name: Elio de Angelis
+        nationality: Italian
+      - driverRef: patrese
+        name: Riccardo Patrese
+        nationality: Italian
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: alboreto
+        name: Michele Alboreto
+        nationality: Italian
+      - driverRef: johansson
+        name: Stefan Johansson
+        nationality: Swedish
   - constructorRef: ligier
     name: Ligier
     nationality: French
+    drivers:
+      - driverRef: laffite
+        name: Jacques Laffite
+        nationality: French
+      - driverRef: alliot
+        name: Philippe Alliot
+        nationality: French
+      - driverRef: arnoux
+        name: René Arnoux
+        nationality: French
   - constructorRef: lola
     name: Lola
     nationality: British
+    drivers:
+      - driverRef: jones
+        name: Alan Jones
+        nationality: Australian
+      - driverRef: cheever
+        name: Eddie Cheever
+        nationality: American
+      - driverRef: tambay
+        name: Patrick Tambay
+        nationality: French
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: prost
+        name: Alain Prost
+        nationality: French
+      - driverRef: keke_rosberg
+        name: Keke Rosberg
+        nationality: Finnish
   - constructorRef: minardi
     name: Minardi
     nationality: Italian
+    drivers:
+      - driverRef: nannini
+        name: Alessandro Nannini
+        nationality: Italian
+      - driverRef: cesaris
+        name: Andrea de Cesaris
+        nationality: Italian
   - constructorRef: osella
     name: Osella
     nationality: Italian
+    drivers:
+      - driverRef: caffi
+        name: Alex Caffi
+        nationality: Italian
+      - driverRef: berg
+        name: Allen Berg
+        nationality: Canadian
+      - driverRef: danner
+        name: Christian Danner
+        nationality: German
+      - driverRef: ghinzani
+        name: Piercarlo Ghinzani
+        nationality: Italian
   - constructorRef: team_lotus
     name: Team Lotus
     nationality: British
+    drivers:
+      - driverRef: senna
+        name: Ayrton Senna
+        nationality: Brazilian
+      - driverRef: dumfries
+        name: Johnny Dumfries
+        nationality: British
   - constructorRef: tyrrell
     name: Tyrrell
     nationality: British
+    drivers:
+      - driverRef: brundle
+        name: Martin Brundle
+        nationality: British
+      - driverRef: streiff
+        name: Philippe Streiff
+        nationality: French
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: piquet
+        name: Nelson Piquet
+        nationality: Brazilian
+      - driverRef: mansell
+        name: Nigel Mansell
+        nationality: British
   - constructorRef: zakspeed
     name: Zakspeed
     nationality: German
+    drivers:
+      - driverRef: rothengatter
+        name: Huub Rothengatter
+        nationality: Dutch
+      - driverRef: palmer
+        name: Jonathan Palmer
+        nationality: British

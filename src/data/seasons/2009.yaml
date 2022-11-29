@@ -2473,110 +2473,122 @@ rounds:
         position: 10
         points: 8
         wins: 0
-drivers:
-  - driverRef: sutil
-    name: Adrian Sutil
-    nationality: German
-  - driverRef: massa
-    name: Felipe Massa
-    nationality: Brazilian
-  - driverRef: alonso
-    name: Fernando Alonso
-    nationality: Spanish
-  - driverRef: fisichella
-    name: Giancarlo Fisichella
-    nationality: Italian
-  - driverRef: kovalainen
-    name: Heikki Kovalainen
-    nationality: Finnish
-  - driverRef: alguersuari
-    name: Jaime Alguersuari
-    nationality: Spanish
-  - driverRef: trulli
-    name: Jarno Trulli
-    nationality: Italian
-  - driverRef: button
-    name: Jenson Button
-    nationality: British
-  - driverRef: kobayashi
-    name: Kamui Kobayashi
-    nationality: Japanese
-  - driverRef: nakajima
-    name: Kazuki Nakajima
-    nationality: Japanese
-  - driverRef: raikkonen
-    name: Kimi Räikkönen
-    nationality: Finnish
-  - driverRef: hamilton
-    name: Lewis Hamilton
-    nationality: British
-  - driverRef: badoer
-    name: Luca Badoer
-    nationality: Italian
-  - driverRef: webber
-    name: Mark Webber
-    nationality: Australian
-  - driverRef: piquet_jr
-    name: Nelson Piquet Jr.
-    nationality: Brazilian
-  - driverRef: heidfeld
-    name: Nick Heidfeld
-    nationality: German
-  - driverRef: rosberg
-    name: Nico Rosberg
-    nationality: German
-  - driverRef: kubica
-    name: Robert Kubica
-    nationality: Polish
-  - driverRef: grosjean
-    name: Romain Grosjean
-    nationality: French
-  - driverRef: barrichello
-    name: Rubens Barrichello
-    nationality: Brazilian
-  - driverRef: vettel
-    name: Sebastian Vettel
-    nationality: German
-  - driverRef: bourdais
-    name: Sébastien Bourdais
-    nationality: French
-  - driverRef: buemi
-    name: Sébastien Buemi
-    nationality: Swiss
-  - driverRef: glock
-    name: Timo Glock
-    nationality: German
-  - driverRef: liuzzi
-    name: Vitantonio Liuzzi
-    nationality: Italian
 constructors:
   - constructorRef: bmw_sauber
     name: BMW Sauber
     nationality: German
+    drivers:
+      - driverRef: heidfeld
+        name: Nick Heidfeld
+        nationality: German
+      - driverRef: kubica
+        name: Robert Kubica
+        nationality: Polish
   - constructorRef: brawn
     name: Brawn
     nationality: British
+    drivers:
+      - driverRef: button
+        name: Jenson Button
+        nationality: British
+      - driverRef: barrichello
+        name: Rubens Barrichello
+        nationality: Brazilian
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: massa
+        name: Felipe Massa
+        nationality: Brazilian
+      - driverRef: fisichella
+        name: Giancarlo Fisichella
+        nationality: Italian
+      - driverRef: raikkonen
+        name: Kimi Räikkönen
+        nationality: Finnish
+      - driverRef: badoer
+        name: Luca Badoer
+        nationality: Italian
   - constructorRef: force_india
     name: Force India
     nationality: Indian
+    drivers:
+      - driverRef: sutil
+        name: Adrian Sutil
+        nationality: German
+      - driverRef: fisichella
+        name: Giancarlo Fisichella
+        nationality: Italian
+      - driverRef: liuzzi
+        name: Vitantonio Liuzzi
+        nationality: Italian
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: kovalainen
+        name: Heikki Kovalainen
+        nationality: Finnish
+      - driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
   - constructorRef: red_bull
     name: Red Bull
     nationality: Austrian
+    drivers:
+      - driverRef: webber
+        name: Mark Webber
+        nationality: Australian
+      - driverRef: vettel
+        name: Sebastian Vettel
+        nationality: German
   - constructorRef: renault
     name: Renault
     nationality: French
+    drivers:
+      - driverRef: alonso
+        name: Fernando Alonso
+        nationality: Spanish
+      - driverRef: piquet_jr
+        name: Nelson Piquet Jr.
+        nationality: Brazilian
+      - driverRef: grosjean
+        name: Romain Grosjean
+        nationality: French
   - constructorRef: toro_rosso
     name: Toro Rosso
     nationality: Italian
+    drivers:
+      - driverRef: alguersuari
+        name: Jaime Alguersuari
+        nationality: Spanish
+      - driverRef: bourdais
+        name: Sébastien Bourdais
+        nationality: French
+      - driverRef: buemi
+        name: Sébastien Buemi
+        nationality: Swiss
   - constructorRef: toyota
     name: Toyota
     nationality: Japanese
+    drivers:
+      - driverRef: trulli
+        name: Jarno Trulli
+        nationality: Italian
+      - driverRef: kobayashi
+        name: Kamui Kobayashi
+        nationality: Japanese
+      - driverRef: glock
+        name: Timo Glock
+        nationality: German
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: nakajima
+        name: Kazuki Nakajima
+        nationality: Japanese
+      - driverRef: rosberg
+        name: Nico Rosberg
+        nationality: German

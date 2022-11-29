@@ -19,14 +19,14 @@ import { DataPlot } from './DataPlot';
 
 const LOG_5 = Math.log(5);
 
-export interface PointsChartProps {
+export interface StandingsChartProps {
 	data: ChartData[];
 	lastCompletedRound: number;
 	labels: string[];
 	legendLabel: string;
 }
 
-export function PointsChart(props: PointsChartProps): VNode {
+export function StandingsChart(props: StandingsChartProps): VNode {
 	const { data, lastCompletedRound, labels, legendLabel } = props;
 	const svgRef = useRef<SVGSVGElement | null>(null);
 	const rectRef = useRef<SVGRectElement | null>(null);
@@ -92,7 +92,7 @@ export function PointsChart(props: PointsChartProps): VNode {
 	);
 
 	return (
-		<div class="points-chart">
+		<div class="standings-chart">
 			<svg ref={svgRef} viewBox={`0 0 ${TOTAL_WIDTH} ${TOTAL_HEIGHT}`}>
 				<XAxis scale={xScale} labels={labels} />
 				<YAxis yTicks={yTicks} yDomain={yDomain} />
@@ -111,7 +111,7 @@ export function PointsChart(props: PointsChartProps): VNode {
 					/>
 				</g>
 			</svg>
-			<div class="points-legend">
+			<div class="standings-chart-legend">
 				<div class="h4">
 					Round {activeRace + 1}: {labels[activeRace]}
 				</div>

@@ -3336,347 +3336,417 @@ rounds:
         position: 13
         points: 0
         wins: 0
-drivers:
-  - driverRef: herman
-    name: Al Herman
-    nationality: American
-  - driverRef: stacey
-    name: Alan Stacey
-    nationality: British
-  - driverRef: larreta
-    name: Alberto Rodriguez Larreta
-    nationality: Argentine
-  - driverRef: thiele
-    name: Alfonso Thiele
-    nationality: American-Italian
-  - driverRef: foyt
-    name: Anthony Foyt
-    nationality: American
-  - driverRef: creus
-    name: Antonio Creus
-    nationality: Spanish
-  - driverRef: owen
-    name: Arthur Owen
-    nationality: British
-  - driverRef: homeier
-    name: Bill Homeier
-    nationality: American
-  - driverRef: christie
-    name: Bob Christie
-    nationality: American
-  - driverRef: drake
-    name: Bob Drake
-    nationality: American
-  - driverRef: veith
-    name: Bob Veith
-    nationality: American
-  - driverRef: grim
-    name: Bobby Grim
-    nationality: American
-  - driverRef: naylor
-    name: Brian Naylor
-    nationality: British
-  - driverRef: halford
-    name: Bruce Halford
-    nationality: British
-  - driverRef: mclaren
-    name: Bruce McLaren
-    nationality: New Zealander
-  - driverRef: tingelstad
-    name: Bud Tingelstad
-    nationality: American
-  - driverRef: beaufort
-    name: Carel Godin de Beaufort
-    nationality: Dutch
-  - driverRef: menditeguy
-    name: Carlos Menditeguy
-    nationality: Argentine
-  - driverRef: bristow
-    name: Chris Bristow
-    nationality: British
-  - driverRef: daigh
-    name: Chuck Daigh
-    nationality: American
-  - driverRef: stevenson
-    name: Chuck Stevenson
-    nationality: American
-  - driverRef: allison
-    name: Cliff Allison
-    nationality: British
-  - driverRef: gurney
-    name: Dan Gurney
-    nationality: American
-  - driverRef: piper
-    name: David Piper
-    nationality: British
-  - driverRef: dempsey_wilson
-    name: Dempsey Wilson
-    nationality: American
-  - driverRef: dick_rathmann
-    name: Dick Rathmann
-    nationality: American
-  - driverRef: branson
-    name: Don Branson
-    nationality: American
-  - driverRef: freeland
-    name: Don Freeland
-    nationality: American
-  - driverRef: darter
-    name: Duane Carter
-    nationality: American
-  - driverRef: johnson
-    name: Eddie Johnson
-    nationality: American
-  - driverRef: russo
-    name: Eddie Russo
-    nationality: American
-  - driverRef: sachs
-    name: Eddie Sachs
-    nationality: American
-  - driverRef: barth
-    name: Edgar Barth
-    nationality: German
-  - driverRef: chimeri
-    name: Ettore Chimeri
-    nationality: Venezuelan
-  - driverRef: gamble
-    name: Fred Gamble
-    nationality: American
-  - driverRef: force
-    name: Gene Force
-    nationality: American
-  - driverRef: hartley
-    name: Gene Hartley
-    nationality: American
-  - driverRef: munaron
-    name: Gino Munaron
-    nationality: Italian
-  - driverRef: scarlatti
-    name: Giorgio Scarlatti
-    nationality: Italian
-  - driverRef: cabianca
-    name: Giulio Cabianca
-    nationality: Italian
-  - driverRef: hill
-    name: Graham Hill
-    nationality: British
-  - driverRef: herrmann
-    name: Hans Herrmann
-    nationality: German
-  - driverRef: schell
-    name: Harry Schell
-    nationality: American
-  - driverRef: henry_taylor
-    name: Henry Taylor
-    nationality: British
-  - driverRef: gould
-    name: Horace Gould
-    nationality: British
-  - driverRef: burgess
-    name: Ian Burgess
-    nationality: British
-  - driverRef: ireland
-    name: Innes Ireland
-    nationality: British
-  - driverRef: jack_brabham
-    name: Jack Brabham
-    nationality: Australian
-  - driverRef: fairman
-    name: Jack Fairman
-    nationality: British
-  - driverRef: clark
-    name: Jim Clark
-    nationality: British
-  - driverRef: hall
-    name: Jim Hall
-    nationality: American
-  - driverRef: hurtubise
-    name: Jim Hurtubise
-    nationality: American
-  - driverRef: mcwithey
-    name: Jim McWithey
-    nationality: American
-  - driverRef: rathmann
-    name: Jim Rathmann
-    nationality: American
-  - driverRef: bryan
-    name: Jimmy Bryan
-    nationality: American
-  - driverRef: bonnier
-    name: Jo Bonnier
-    nationality: Swedish
-  - driverRef: surtees
-    name: John Surtees
-    nationality: British
-  - driverRef: boyd
-    name: Johnny Boyd
-    nationality: American
-  - driverRef: thomson
-    name: Johnny Thomson
-    nationality: American
-  - driverRef: gonzalez
-    name: José Froilán González
-    nationality: Argentine
-  - driverRef: greene
-    name: Keith Greene
-    nationality: British
-  - driverRef: reventlow
-    name: Lance Reventlow
-    nationality: American
-  - driverRef: sutton
-    name: Len Sutton
-    nationality: American
-  - driverRef: ruby
-    name: Lloyd Ruby
-    nationality: American
-  - driverRef: bianchi
-    name: Lucien Bianchi
-    nationality: Belgian
-  - driverRef: cabral
-    name: Mário de Araújo Cabral
-    nationality: Portuguese
-  - driverRef: gregory
-    name: Masten Gregory
-    nationality: American
-  - driverRef: trintignant
-    name: Maurice Trintignant
-    nationality: French
-  - driverRef: mike_taylor
-    name: Mike Taylor
-    nationality: British
-  - driverRef: estefano
-    name: Nasif Estéfano
-    nationality: Argentine
-  - driverRef: gendebien
-    name: Olivier Gendebien
-    nationality: Belgian
-  - driverRef: goldsmith
-    name: Paul Goldsmith
-    nationality: American
-  - driverRef: lovely
-    name: Pete Lovely
-    nationality: American
-  - driverRef: phil_hill
-    name: Phil Hill
-    nationality: American
-  - driverRef: drogo
-    name: Piero Drogo
-    nationality: Italian
-  - driverRef: amick
-    name: Red Amick
-    nationality: American
-  - driverRef: ginther
-    name: Richie Ginther
-    nationality: American
-  - driverRef: bonomi
-    name: Roberto Bonomi
-    nationality: Argentine
-  - driverRef: ward
-    name: Rodger Ward
-    nationality: American
-  - driverRef: flockhart
-    name: Ron Flockhart
-    nationality: British
-  - driverRef: salvadori
-    name: Roy Salvadori
-    nationality: British
-  - driverRef: templeman
-    name: Shorty Templeman
-    nationality: American
-  - driverRef: moss
-    name: Stirling Moss
-    nationality: British
-  - driverRef: bettenhausen
-    name: Tony Bettenhausen
-    nationality: American
-  - driverRef: brooks
-    name: Tony Brooks
-    nationality: British
-  - driverRef: ruttman
-    name: Troy Ruttman
-    nationality: American
-  - driverRef: vic_wilson
-    name: Vic Wilson
-    nationality: British
-  - driverRef: weiler
-    name: Wayne Weiler
-    nationality: American
-  - driverRef: mairesse
-    name: Willy Mairesse
-    nationality: Belgian
-  - driverRef: seidel
-    name: Wolfgang Seidel
-    nationality: German
-  - driverRef: trips
-    name: Wolfgang von Trips
-    nationality: German
 constructors:
   - constructorRef: aston_martin
     name: Aston Martin
     nationality: British
+    drivers:
+      - driverRef: trintignant
+        name: Maurice Trintignant
+        nationality: French
+      - driverRef: salvadori
+        name: Roy Salvadori
+        nationality: British
   - constructorRef: behra-porsche
     name: Behra-Porsche
     nationality: Italian
+    drivers:
+      - driverRef: gamble
+        name: Fred Gamble
+        nationality: American
+      - driverRef: gregory
+        name: Masten Gregory
+        nationality: American
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: gurney
+        name: Dan Gurney
+        nationality: American
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish
   - constructorRef: vhristensen
     name: Christensen
     nationality: American
+    drivers:
+      - driverRef: hurtubise
+        name: Jim Hurtubise
+        nationality: American
   - constructorRef: cooper-castellotti
     name: Cooper-Castellotti
     nationality: British
+    drivers:
+      - driverRef: munaron
+        name: Gino Munaron
+        nationality: Italian
+      - driverRef: scarlatti
+        name: Giorgio Scarlatti
+        nationality: Italian
+      - driverRef: cabianca
+        name: Giulio Cabianca
+        nationality: Italian
+      - driverRef: lovely
+        name: Pete Lovely
+        nationality: American
   - constructorRef: cooper-climax
     name: Cooper-Climax
     nationality: British
+    drivers:
+      - driverRef: owen
+        name: Arthur Owen
+        nationality: British
+      - driverRef: halford
+        name: Bruce Halford
+        nationality: British
+      - driverRef: mclaren
+        name: Bruce McLaren
+        nationality: New Zealander
+      - driverRef: beaufort
+        name: Carel Godin de Beaufort
+        nationality: Dutch
+      - driverRef: bristow
+        name: Chris Bristow
+        nationality: British
+      - driverRef: daigh
+        name: Chuck Daigh
+        nationality: American
+      - driverRef: schell
+        name: Harry Schell
+        nationality: American
+      - driverRef: henry_taylor
+        name: Henry Taylor
+        nationality: British
+      - driverRef: jack_brabham
+        name: Jack Brabham
+        nationality: Australian
+      - driverRef: fairman
+        name: Jack Fairman
+        nationality: British
+      - driverRef: reventlow
+        name: Lance Reventlow
+        nationality: American
+      - driverRef: bianchi
+        name: Lucien Bianchi
+        nationality: Belgian
+      - driverRef: trintignant
+        name: Maurice Trintignant
+        nationality: French
+      - driverRef: gendebien
+        name: Olivier Gendebien
+        nationality: Belgian
+      - driverRef: phil_hill
+        name: Phil Hill
+        nationality: American
+      - driverRef: drogo
+        name: Piero Drogo
+        nationality: Italian
+      - driverRef: flockhart
+        name: Ron Flockhart
+        nationality: British
+      - driverRef: salvadori
+        name: Roy Salvadori
+        nationality: British
+      - driverRef: moss
+        name: Stirling Moss
+        nationality: British
+      - driverRef: brooks
+        name: Tony Brooks
+        nationality: British
+      - driverRef: vic_wilson
+        name: Vic Wilson
+        nationality: British
+      - driverRef: seidel
+        name: Wolfgang Seidel
+        nationality: German
   - constructorRef: cooper-maserati
     name: Cooper-Maserati
     nationality: British
+    drivers:
+      - driverRef: thiele
+        name: Alfonso Thiele
+        nationality: American-Italian
+      - driverRef: naylor
+        name: Brian Naylor
+        nationality: British
+      - driverRef: menditeguy
+        name: Carlos Menditeguy
+        nationality: Argentine
+      - driverRef: scarlatti
+        name: Giorgio Scarlatti
+        nationality: Italian
+      - driverRef: burgess
+        name: Ian Burgess
+        nationality: British
+      - driverRef: greene
+        name: Keith Greene
+        nationality: British
+      - driverRef: cabral
+        name: Mário de Araújo Cabral
+        nationality: Portuguese
+      - driverRef: gregory
+        name: Masten Gregory
+        nationality: American
+      - driverRef: trintignant
+        name: Maurice Trintignant
+        nationality: French
+      - driverRef: bonomi
+        name: Roberto Bonomi
+        nationality: Argentine
+      - driverRef: trips
+        name: Wolfgang von Trips
+        nationality: German
   - constructorRef: epperly
     name: Epperly
     nationality: American
+    drivers:
+      - driverRef: mcwithey
+        name: Jim McWithey
+        nationality: American
+      - driverRef: bryan
+        name: Jimmy Bryan
+        nationality: American
+      - driverRef: boyd
+        name: Johnny Boyd
+        nationality: American
+      - driverRef: goldsmith
+        name: Paul Goldsmith
+        nationality: American
+      - driverRef: amick
+        name: Red Amick
+        nationality: American
+      - driverRef: weiler
+        name: Wayne Weiler
+        nationality: American
   - constructorRef: ewing
     name: Ewing
     nationality: American
+    drivers:
+      - driverRef: herman
+        name: Al Herman
+        nationality: American
+      - driverRef: sachs
+        name: Eddie Sachs
+        nationality: American
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: allison
+        name: Cliff Allison
+        nationality: British
+      - driverRef: gonzalez
+        name: José Froilán González
+        nationality: Argentine
+      - driverRef: phil_hill
+        name: Phil Hill
+        nationality: American
+      - driverRef: ginther
+        name: Richie Ginther
+        nationality: American
+      - driverRef: mairesse
+        name: Willy Mairesse
+        nationality: Belgian
+      - driverRef: trips
+        name: Wolfgang von Trips
+        nationality: German
   - constructorRef: jbw
     name: JBW
     nationality: British
+    drivers:
+      - driverRef: naylor
+        name: Brian Naylor
+        nationality: British
   - constructorRef: kurtis_kraft
     name: Kurtis Kraft
     nationality: American
+    drivers:
+      - driverRef: foyt
+        name: Anthony Foyt
+        nationality: American
+      - driverRef: christie
+        name: Bob Christie
+        nationality: American
+      - driverRef: dempsey_wilson
+        name: Dempsey Wilson
+        nationality: American
+      - driverRef: freeland
+        name: Don Freeland
+        nationality: American
+      - driverRef: russo
+        name: Eddie Russo
+        nationality: American
+      - driverRef: force
+        name: Gene Force
+        nationality: American
+      - driverRef: hartley
+        name: Gene Hartley
+        nationality: American
+      - driverRef: templeman
+        name: Shorty Templeman
+        nationality: American
   - constructorRef: kuzma
     name: Kuzma
     nationality: American
+    drivers:
+      - driverRef: homeier
+        name: Bill Homeier
+        nationality: American
+      - driverRef: darter
+        name: Duane Carter
+        nationality: American
   - constructorRef: lesovsky
     name: Lesovsky
     nationality: American
+    drivers:
+      - driverRef: thomson
+        name: Johnny Thomson
+        nationality: American
   - constructorRef: maserati
     name: Maserati
     nationality: Italian
+    drivers:
+      - driverRef: creus
+        name: Antonio Creus
+        nationality: Spanish
+      - driverRef: drake
+        name: Bob Drake
+        nationality: American
+      - driverRef: chimeri
+        name: Ettore Chimeri
+        nationality: Venezuelan
+      - driverRef: munaron
+        name: Gino Munaron
+        nationality: Italian
+      - driverRef: scarlatti
+        name: Giorgio Scarlatti
+        nationality: Italian
+      - driverRef: gould
+        name: Horace Gould
+        nationality: British
+      - driverRef: estefano
+        name: Nasif Estéfano
+        nationality: Argentine
   - constructorRef: meskowski
     name: Meskowski
     nationality: American
+    drivers:
+      - driverRef: veith
+        name: Bob Veith
+        nationality: American
+      - driverRef: grim
+        name: Bobby Grim
+        nationality: American
   - constructorRef: phillips
     name: Phillips
     nationality: American
+    drivers:
+      - driverRef: branson
+        name: Don Branson
+        nationality: American
   - constructorRef: porsche
     name: Porsche
     nationality: German
+    drivers:
+      - driverRef: barth
+        name: Edgar Barth
+        nationality: German
+      - driverRef: herrmann
+        name: Hans Herrmann
+        nationality: German
   - constructorRef: scarab
     name: Scarab
     nationality: American
+    drivers:
+      - driverRef: daigh
+        name: Chuck Daigh
+        nationality: American
+      - driverRef: reventlow
+        name: Lance Reventlow
+        nationality: American
+      - driverRef: ginther
+        name: Richie Ginther
+        nationality: American
   - constructorRef: team_lotus
     name: Team Lotus
     nationality: British
+    drivers:
+      - driverRef: stacey
+        name: Alan Stacey
+        nationality: British
+      - driverRef: larreta
+        name: Alberto Rodriguez Larreta
+        nationality: Argentine
+      - driverRef: piper
+        name: David Piper
+        nationality: British
+      - driverRef: ireland
+        name: Innes Ireland
+        nationality: British
+      - driverRef: clark
+        name: Jim Clark
+        nationality: British
+      - driverRef: hall
+        name: Jim Hall
+        nationality: American
+      - driverRef: surtees
+        name: John Surtees
+        nationality: British
+      - driverRef: mike_taylor
+        name: Mike Taylor
+        nationality: British
+      - driverRef: flockhart
+        name: Ron Flockhart
+        nationality: British
+      - driverRef: moss
+        name: Stirling Moss
+        nationality: British
   - constructorRef: trevis
     name: Trevis
     nationality: American
+    drivers:
+      - driverRef: tingelstad
+        name: Bud Tingelstad
+        nationality: American
+      - driverRef: johnson
+        name: Eddie Johnson
+        nationality: American
   - constructorRef: vanwall
     name: Vanwall
     nationality: British
+    drivers:
+      - driverRef: brooks
+        name: Tony Brooks
+        nationality: British
   - constructorRef: watson
     name: Watson
     nationality: American
+    drivers:
+      - driverRef: stevenson
+        name: Chuck Stevenson
+        nationality: American
+      - driverRef: dick_rathmann
+        name: Dick Rathmann
+        nationality: American
+      - driverRef: rathmann
+        name: Jim Rathmann
+        nationality: American
+      - driverRef: sutton
+        name: Len Sutton
+        nationality: American
+      - driverRef: ruby
+        name: Lloyd Ruby
+        nationality: American
+      - driverRef: ward
+        name: Rodger Ward
+        nationality: American
+      - driverRef: bettenhausen
+        name: Tony Bettenhausen
+        nationality: American
+      - driverRef: ruttman
+        name: Troy Ruttman
+        nationality: American

@@ -1669,131 +1669,153 @@ rounds:
         position: 10
         points: 0
         wins: 0
-drivers:
-  - driverRef: pease
-    name: Al Pease
-    nationality: Canadian
-  - driverRef: rooyen
-    name: Basil van Rooyen
-    nationality: South African
-  - driverRef: brack
-    name: Bill Brack
-    nationality: Canadian
-  - driverRef: mclaren
-    name: Bruce McLaren
-    nationality: New Zealander
-  - driverRef: amon
-    name: Chris Amon
-    nationality: New Zealander
-  - driverRef: hulme
-    name: Denny Hulme
-    nationality: New Zealander
-  - driverRef: bell
-    name: Derek Bell
-    nationality: British
-  - driverRef: eaton
-    name: George Eaton
-    nationality: Canadian
-  - driverRef: hill
-    name: Graham Hill
-    nationality: British
-  - driverRef: jack_brabham
-    name: Jack Brabham
-    nationality: Australian
-  - driverRef: oliver
-    name: Jackie Oliver
-    nationality: British
-  - driverRef: stewart
-    name: Jackie Stewart
-    nationality: British
-  - driverRef: ickx
-    name: Jacky Ickx
-    nationality: Belgian
-  - driverRef: beltoise
-    name: Jean-Pierre Beltoise
-    nationality: French
-  - driverRef: bonnier
-    name: Jo Bonnier
-    nationality: Swedish
-  - driverRef: siffert
-    name: Jo Siffert
-    nationality: Swiss
-  - driverRef: rindt
-    name: Jochen Rindt
-    nationality: Austrian
-  - driverRef: cordts
-    name: John Cordts
-    nationality: Canadian
-  - driverRef: love
-    name: John Love
-    nationality: Rhodesian
-  - driverRef: miles
-    name: John Miles
-    nationality: British
-  - driverRef: surtees
-    name: John Surtees
-    nationality: British
-  - driverRef: gavin
-    name: Johnny Servoz-Gavin
-    nationality: French
-  - driverRef: mario_andretti
-    name: Mario Andretti
-    nationality: American
-  - driverRef: rodriguez
-    name: Pedro Rodríguez
-    nationality: Mexican
-  - driverRef: lovely
-    name: Pete Lovely
-    nationality: American
-  - driverRef: klerk
-    name: Peter de Klerk
-    nationality: South African
-  - driverRef: courage
-    name: Piers Courage
-    nationality: British
-  - driverRef: attwood
-    name: Richard Attwood
-    nationality: British
-  - driverRef: tingle
-    name: Sam Tingle
-    nationality: Rhodesian
-  - driverRef: moser
-    name: Silvio Moser
-    nationality: Swiss
-  - driverRef: elford
-    name: Vic Elford
-    nationality: British
 constructors:
   - constructorRef: brabham-climax
     name: Brabham-Climax
     nationality: British
+    drivers:
+      - driverRef: cordts
+        name: John Cordts
+        nationality: Canadian
   - constructorRef: brabham-ford
     name: Brabham-Ford
     nationality: British
+    drivers:
+      - driverRef: jack_brabham
+        name: Jack Brabham
+        nationality: Australian
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: courage
+        name: Piers Courage
+        nationality: British
+      - driverRef: moser
+        name: Silvio Moser
+        nationality: Swiss
   - constructorRef: brabham-repco
     name: Brabham-Repco
     nationality: British
+    drivers:
+      - driverRef: klerk
+        name: Peter de Klerk
+        nationality: South African
+      - driverRef: tingle
+        name: Sam Tingle
+        nationality: Rhodesian
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: brack
+        name: Bill Brack
+        nationality: Canadian
+      - driverRef: eaton
+        name: George Eaton
+        nationality: Canadian
+      - driverRef: oliver
+        name: Jackie Oliver
+        nationality: British
+      - driverRef: surtees
+        name: John Surtees
+        nationality: British
+      - driverRef: rodriguez
+        name: Pedro Rodríguez
+        nationality: Mexican
   - constructorRef: brm-ford
     name: BRM-Ford
     nationality: British
+    drivers:
+      - driverRef: oliver
+        name: Jackie Oliver
+        nationality: British
   - constructorRef: cooper-maserati
     name: Cooper-Maserati
     nationality: British
+    drivers:
+      - driverRef: elford
+        name: Vic Elford
+        nationality: British
   - constructorRef: eagle-climax
     name: Eagle-Climax
     nationality: American
+    drivers:
+      - driverRef: pease
+        name: Al Pease
+        nationality: Canadian
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: rodriguez
+        name: Pedro Rodríguez
+        nationality: Mexican
   - constructorRef: lotus-ford
     name: Lotus-Ford
     nationality: British
+    drivers:
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish
+      - driverRef: siffert
+        name: Jo Siffert
+        nationality: Swiss
+      - driverRef: rindt
+        name: Jochen Rindt
+        nationality: Austrian
+      - driverRef: love
+        name: John Love
+        nationality: Rhodesian
+      - driverRef: miles
+        name: John Miles
+        nationality: British
+      - driverRef: mario_andretti
+        name: Mario Andretti
+        nationality: American
+      - driverRef: lovely
+        name: Pete Lovely
+        nationality: American
+      - driverRef: attwood
+        name: Richard Attwood
+        nationality: British
   - constructorRef: matra-ford
     name: Matra-Ford
     nationality: French
+    drivers:
+      - driverRef: stewart
+        name: Jackie Stewart
+        nationality: British
+      - driverRef: beltoise
+        name: Jean-Pierre Beltoise
+        nationality: French
+      - driverRef: gavin
+        name: Johnny Servoz-Gavin
+        nationality: French
   - constructorRef: mclaren-ford
     name: McLaren-Ford
     nationality: British
+    drivers:
+      - driverRef: rooyen
+        name: Basil van Rooyen
+        nationality: South African
+      - driverRef: mclaren
+        name: Bruce McLaren
+        nationality: New Zealander
+      - driverRef: hulme
+        name: Denny Hulme
+        nationality: New Zealander
+      - driverRef: bell
+        name: Derek Bell
+        nationality: British
+      - driverRef: beltoise
+        name: Jean-Pierre Beltoise
+        nationality: French
+      - driverRef: elford
+        name: Vic Elford
+        nationality: British

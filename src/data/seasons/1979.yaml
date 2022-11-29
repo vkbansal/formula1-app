@@ -3109,170 +3109,203 @@ rounds:
         position: 19
         points: 0
         wins: 0
-drivers:
-  - driverRef: jones
-    name: Alan Jones
-    nationality: Australian
-  - driverRef: ribeiro
-    name: Alex Ribeiro
-    nationality: Brazilian
-  - driverRef: merzario
-    name: Arturo Merzario
-    nationality: Italian
-  - driverRef: giacomelli
-    name: Bruno Giacomelli
-    nationality: Italian
-  - driverRef: reutemann
-    name: Carlos Reutemann
-    nationality: Argentine
-  - driverRef: regazzoni
-    name: Clay Regazzoni
-    nationality: Swiss
-  - driverRef: daly
-    name: Derek Daly
-    nationality: Irish
-  - driverRef: pironi
-    name: Didier Pironi
-    nationality: French
-  - driverRef: angelis
-    name: Elio de Angelis
-    nationality: Italian
-  - driverRef: emerson_fittipaldi
-    name: Emerson Fittipaldi
-    nationality: Brazilian
-  - driverRef: lees
-    name: Geoff Lees
-    nationality: British
-  - driverRef: brancatelli
-    name: Gianfranco Brancatelli
-    nationality: Italian
-  - driverRef: gilles_villeneuve
-    name: Gilles Villeneuve
-    nationality: Canadian
-  - driverRef: stuck
-    name: Hans-Joachim Stuck
-    nationality: German
-  - driverRef: rebaque
-    name: Hector Rebaque
-    nationality: Mexican
-  - driverRef: ickx
-    name: Jacky Ickx
-    nationality: Belgian
-  - driverRef: laffite
-    name: Jacques Laffite
-    nationality: French
-  - driverRef: hunt
-    name: James Hunt
-    nationality: British
-  - driverRef: lammers
-    name: Jan Lammers
-    nationality: Dutch
-  - driverRef: jabouille
-    name: Jean-Pierre Jabouille
-    nationality: French
-  - driverRef: jarier
-    name: Jean-Pierre Jarier
-    nationality: French
-  - driverRef: mass
-    name: Jochen Mass
-    nationality: German
-  - driverRef: scheckter
-    name: Jody Scheckter
-    nationality: South African
-  - driverRef: watson
-    name: John Watson
-    nationality: British
-  - driverRef: keke_rosberg
-    name: Keke Rosberg
-    nationality: Finnish
-  - driverRef: surer
-    name: Marc Surer
-    nationality: Swiss
-  - driverRef: mario_andretti
-    name: Mario Andretti
-    nationality: American
-  - driverRef: piquet
-    name: Nelson Piquet
-    nationality: Brazilian
-  - driverRef: lauda
-    name: Niki Lauda
-    nationality: Austrian
-  - driverRef: depailler
-    name: Patrick Depailler
-    nationality: French
-  - driverRef: gaillard
-    name: Patrick Gaillard
-    nationality: French
-  - driverRef: tambay
-    name: Patrick Tambay
-    nationality: French
-  - driverRef: arnoux
-    name: René Arnoux
-    nationality: French
-  - driverRef: zunino
-    name: Ricardo Zunino
-    nationality: Argentine
-  - driverRef: patrese
-    name: Riccardo Patrese
-    nationality: Italian
-  - driverRef: brambilla
-    name: Vittorio Brambilla
-    nationality: Italian
 constructors:
   - constructorRef: alfa
     name: Alfa Romeo
     nationality: Swiss
+    drivers:
+      - driverRef: giacomelli
+        name: Bruno Giacomelli
+        nationality: Italian
+      - driverRef: brambilla
+        name: Vittorio Brambilla
+        nationality: Italian
   - constructorRef: arrows
     name: Arrows
     nationality: British
+    drivers:
+      - driverRef: mass
+        name: Jochen Mass
+        nationality: German
+      - driverRef: patrese
+        name: Riccardo Patrese
+        nationality: Italian
   - constructorRef: ats
     name: ATS
     nationality: Italian
+    drivers:
+      - driverRef: stuck
+        name: Hans-Joachim Stuck
+        nationality: German
   - constructorRef: brabham-alfa_romeo
     name: Brabham-Alfa Romeo
     nationality: British
+    drivers:
+      - driverRef: piquet
+        name: Nelson Piquet
+        nationality: Brazilian
+      - driverRef: lauda
+        name: Niki Lauda
+        nationality: Austrian
   - constructorRef: brabham-ford
     name: Brabham-Ford
     nationality: British
+    drivers:
+      - driverRef: piquet
+        name: Nelson Piquet
+        nationality: Brazilian
+      - driverRef: lauda
+        name: Niki Lauda
+        nationality: Austrian
+      - driverRef: zunino
+        name: Ricardo Zunino
+        nationality: Argentine
   - constructorRef: ensign
     name: Ensign
     nationality: British
+    drivers:
+      - driverRef: daly
+        name: Derek Daly
+        nationality: Irish
+      - driverRef: surer
+        name: Marc Surer
+        nationality: Swiss
+      - driverRef: gaillard
+        name: Patrick Gaillard
+        nationality: French
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: gilles_villeneuve
+        name: Gilles Villeneuve
+        nationality: Canadian
+      - driverRef: scheckter
+        name: Jody Scheckter
+        nationality: South African
   - constructorRef: fittipaldi
     name: Fittipaldi
     nationality: Brazilian
+    drivers:
+      - driverRef: ribeiro
+        name: Alex Ribeiro
+        nationality: Brazilian
+      - driverRef: emerson_fittipaldi
+        name: Emerson Fittipaldi
+        nationality: Brazilian
   - constructorRef: kauhsen
     name: Kauhsen
     nationality: German
+    drivers:
+      - driverRef: brancatelli
+        name: Gianfranco Brancatelli
+        nationality: Italian
   - constructorRef: ligier
     name: Ligier
     nationality: French
+    drivers:
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: laffite
+        name: Jacques Laffite
+        nationality: French
+      - driverRef: depailler
+        name: Patrick Depailler
+        nationality: French
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: watson
+        name: John Watson
+        nationality: British
+      - driverRef: tambay
+        name: Patrick Tambay
+        nationality: French
   - constructorRef: merzario
     name: Merzario
     nationality: Italian
+    drivers:
+      - driverRef: merzario
+        name: Arturo Merzario
+        nationality: Italian
+      - driverRef: brancatelli
+        name: Gianfranco Brancatelli
+        nationality: Italian
   - constructorRef: rebaque
     name: Rebaque
     nationality: Mexican
+    drivers:
+      - driverRef: rebaque
+        name: Hector Rebaque
+        nationality: Mexican
   - constructorRef: renault
     name: Renault
     nationality: French
+    drivers:
+      - driverRef: jabouille
+        name: Jean-Pierre Jabouille
+        nationality: French
+      - driverRef: arnoux
+        name: René Arnoux
+        nationality: French
   - constructorRef: shadow
     name: Shadow
     nationality: British
+    drivers:
+      - driverRef: angelis
+        name: Elio de Angelis
+        nationality: Italian
+      - driverRef: lammers
+        name: Jan Lammers
+        nationality: Dutch
   - constructorRef: team_lotus
     name: Team Lotus
     nationality: British
+    drivers:
+      - driverRef: reutemann
+        name: Carlos Reutemann
+        nationality: Argentine
+      - driverRef: rebaque
+        name: Hector Rebaque
+        nationality: Mexican
+      - driverRef: mario_andretti
+        name: Mario Andretti
+        nationality: American
   - constructorRef: tyrrell
     name: Tyrrell
     nationality: British
+    drivers:
+      - driverRef: daly
+        name: Derek Daly
+        nationality: Irish
+      - driverRef: pironi
+        name: Didier Pironi
+        nationality: French
+      - driverRef: lees
+        name: Geoff Lees
+        nationality: British
+      - driverRef: jarier
+        name: Jean-Pierre Jarier
+        nationality: French
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: jones
+        name: Alan Jones
+        nationality: Australian
+      - driverRef: regazzoni
+        name: Clay Regazzoni
+        nationality: Swiss
   - constructorRef: wolf
     name: Wolf
     nationality: Canadian
+    drivers:
+      - driverRef: hunt
+        name: James Hunt
+        nationality: British
+      - driverRef: keke_rosberg
+        name: Keke Rosberg
+        nationality: Finnish

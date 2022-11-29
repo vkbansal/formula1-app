@@ -8,7 +8,8 @@ import { loadData } from 'helpers/data';
 
 const metadata = await loadData('metadata');
 const allDrivers = await loadData('drivers');
-const { drivers: currentSeasonDrivers } = await loadData(`seasons/${metadata.currentSeason}`);
+const { constructors } = await loadData(`seasons/${metadata.currentSeason}`);
+const currentSeasonDrivers = constructors.flatMap((c) => c.drivers);
 const currentDrivers = currentSeasonDrivers.map((d) => d.driverRef);
 const drivers = allDrivers.map((driver) =>
 	pick(driver, [

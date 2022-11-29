@@ -3733,176 +3733,204 @@ rounds:
         position: 17
         points: 0
         wins: 0
-drivers:
-  - driverRef: prost
-    name: Alain Prost
-    nationality: French
-  - driverRef: cesaris
-    name: Andrea de Cesaris
-    nationality: Italian
-  - driverRef: henton
-    name: Brian Henton
-    nationality: British
-  - driverRef: giacomelli
-    name: Bruno Giacomelli
-    nationality: Italian
-  - driverRef: reutemann
-    name: Carlos Reutemann
-    nationality: Argentine
-  - driverRef: serra
-    name: Chico Serra
-    nationality: Brazilian
-  - driverRef: daly
-    name: Derek Daly
-    nationality: Irish
-  - driverRef: warwick
-    name: Derek Warwick
-    nationality: British
-  - driverRef: pironi
-    name: Didier Pironi
-    nationality: French
-  - driverRef: cheever
-    name: Eddie Cheever
-    nationality: American
-  - driverRef: angelis
-    name: Elio de Angelis
-    nationality: Italian
-  - driverRef: salazar
-    name: Eliseo Salazar
-    nationality: Chilean
-  - driverRef: villota
-    name: Emilio de Villota
-    nationality: Spanish
-  - driverRef: lees
-    name: Geoff Lees
-    nationality: British
-  - driverRef: gilles_villeneuve
-    name: Gilles Villeneuve
-    nationality: Canadian
-  - driverRef: laffite
-    name: Jacques Laffite
-    nationality: French
-  - driverRef: lammers
-    name: Jan Lammers
-    nationality: Dutch
-  - driverRef: jarier
-    name: Jean-Pierre Jarier
-    nationality: French
-  - driverRef: mass
-    name: Jochen Mass
-    nationality: German
-  - driverRef: watson
-    name: John Watson
-    nationality: British
-  - driverRef: keke_rosberg
-    name: Keke Rosberg
-    nationality: Finnish
-  - driverRef: manfred_winkelhock
-    name: Manfred Winkelhock
-    nationality: German
-  - driverRef: surer
-    name: Marc Surer
-    nationality: Swiss
-  - driverRef: mario_andretti
-    name: Mario Andretti
-    nationality: American
-  - driverRef: baldi
-    name: Mauro Baldi
-    nationality: Italian
-  - driverRef: alboreto
-    name: Michele Alboreto
-    nationality: Italian
-  - driverRef: piquet
-    name: Nelson Piquet
-    nationality: Brazilian
-  - driverRef: mansell
-    name: Nigel Mansell
-    nationality: British
-  - driverRef: lauda
-    name: Niki Lauda
-    nationality: Austrian
-  - driverRef: tambay
-    name: Patrick Tambay
-    nationality: French
-  - driverRef: boesel
-    name: Raul Boesel
-    nationality: Brazilian
-  - driverRef: arnoux
-    name: René Arnoux
-    nationality: French
-  - driverRef: paletti
-    name: Riccardo Paletti
-    nationality: Italian
-  - driverRef: patrese
-    name: Riccardo Patrese
-    nationality: Italian
-  - driverRef: guerrero
-    name: Roberto Guerrero
-    nationality: Colombian
-  - driverRef: moreno
-    name: Roberto Moreno
-    nationality: Brazilian
-  - driverRef: keegan
-    name: Rupert Keegan
-    nationality: British
-  - driverRef: borgudd
-    name: Slim Borgudd
-    nationality: Swedish
-  - driverRef: fabi
-    name: Teo Fabi
-    nationality: Italian
-  - driverRef: byrne
-    name: Tommy Byrne
-    nationality: Irish
 constructors:
   - constructorRef: alfa
     name: Alfa Romeo
     nationality: Swiss
+    drivers:
+      - driverRef: cesaris
+        name: Andrea de Cesaris
+        nationality: Italian
+      - driverRef: giacomelli
+        name: Bruno Giacomelli
+        nationality: Italian
   - constructorRef: arrows
     name: Arrows
     nationality: British
+    drivers:
+      - driverRef: henton
+        name: Brian Henton
+        nationality: British
+      - driverRef: surer
+        name: Marc Surer
+        nationality: Swiss
+      - driverRef: baldi
+        name: Mauro Baldi
+        nationality: Italian
   - constructorRef: ats
     name: ATS
     nationality: Italian
+    drivers:
+      - driverRef: salazar
+        name: Eliseo Salazar
+        nationality: Chilean
+      - driverRef: manfred_winkelhock
+        name: Manfred Winkelhock
+        nationality: German
   - constructorRef: brabham
     name: Brabham
     nationality: British
+    drivers:
+      - driverRef: piquet
+        name: Nelson Piquet
+        nationality: Brazilian
+      - driverRef: patrese
+        name: Riccardo Patrese
+        nationality: Italian
   - constructorRef: ensign
     name: Ensign
     nationality: British
+    drivers:
+      - driverRef: guerrero
+        name: Roberto Guerrero
+        nationality: Colombian
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: pironi
+        name: Didier Pironi
+        nationality: French
+      - driverRef: gilles_villeneuve
+        name: Gilles Villeneuve
+        nationality: Canadian
+      - driverRef: mario_andretti
+        name: Mario Andretti
+        nationality: American
+      - driverRef: tambay
+        name: Patrick Tambay
+        nationality: French
   - constructorRef: fittipaldi
     name: Fittipaldi
     nationality: Brazilian
+    drivers:
+      - driverRef: serra
+        name: Chico Serra
+        nationality: Brazilian
   - constructorRef: ligier
     name: Ligier
     nationality: French
+    drivers:
+      - driverRef: cheever
+        name: Eddie Cheever
+        nationality: American
+      - driverRef: laffite
+        name: Jacques Laffite
+        nationality: French
   - constructorRef: march
     name: March
     nationality: British
+    drivers:
+      - driverRef: villota
+        name: Emilio de Villota
+        nationality: Spanish
+      - driverRef: mass
+        name: Jochen Mass
+        nationality: German
+      - driverRef: boesel
+        name: Raul Boesel
+        nationality: Brazilian
+      - driverRef: keegan
+        name: Rupert Keegan
+        nationality: British
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: watson
+        name: John Watson
+        nationality: British
+      - driverRef: lauda
+        name: Niki Lauda
+        nationality: Austrian
   - constructorRef: osella
     name: Osella
     nationality: Italian
+    drivers:
+      - driverRef: jarier
+        name: Jean-Pierre Jarier
+        nationality: French
+      - driverRef: paletti
+        name: Riccardo Paletti
+        nationality: Italian
   - constructorRef: renault
     name: Renault
     nationality: French
+    drivers:
+      - driverRef: prost
+        name: Alain Prost
+        nationality: French
+      - driverRef: arnoux
+        name: René Arnoux
+        nationality: French
   - constructorRef: team_lotus
     name: Team Lotus
     nationality: British
+    drivers:
+      - driverRef: angelis
+        name: Elio de Angelis
+        nationality: Italian
+      - driverRef: lees
+        name: Geoff Lees
+        nationality: British
+      - driverRef: mansell
+        name: Nigel Mansell
+        nationality: British
+      - driverRef: moreno
+        name: Roberto Moreno
+        nationality: Brazilian
   - constructorRef: theodore
     name: Theodore
     nationality: Hong Kong
+    drivers:
+      - driverRef: daly
+        name: Derek Daly
+        nationality: Irish
+      - driverRef: lees
+        name: Geoff Lees
+        nationality: British
+      - driverRef: lammers
+        name: Jan Lammers
+        nationality: Dutch
+      - driverRef: byrne
+        name: Tommy Byrne
+        nationality: Irish
   - constructorRef: toleman
     name: Toleman
     nationality: British
+    drivers:
+      - driverRef: warwick
+        name: Derek Warwick
+        nationality: British
+      - driverRef: fabi
+        name: Teo Fabi
+        nationality: Italian
   - constructorRef: tyrrell
     name: Tyrrell
     nationality: British
+    drivers:
+      - driverRef: henton
+        name: Brian Henton
+        nationality: British
+      - driverRef: alboreto
+        name: Michele Alboreto
+        nationality: Italian
+      - driverRef: borgudd
+        name: Slim Borgudd
+        nationality: Swedish
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: reutemann
+        name: Carlos Reutemann
+        nationality: Argentine
+      - driverRef: daly
+        name: Derek Daly
+        nationality: Irish
+      - driverRef: keke_rosberg
+        name: Keke Rosberg
+        nationality: Finnish
+      - driverRef: mario_andretti
+        name: Mario Andretti
+        nationality: American

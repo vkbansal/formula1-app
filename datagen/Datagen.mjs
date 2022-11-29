@@ -57,13 +57,11 @@ export class Datagen {
 
 		for (const row of data) {
 			const rounds = await this.executeQueryFromFile('season-rounds.sql', row);
-			const drivers = await this.executeQueryFromFile('season-drivers.sql', row);
 			const constructors = await this.executeQueryFromFile('season-constructors.sql', row);
 
 			await this.writeDataFile(`seasons/${row.year}.yaml`, {
 				...row,
 				rounds,
-				drivers,
 				constructors,
 			});
 		}

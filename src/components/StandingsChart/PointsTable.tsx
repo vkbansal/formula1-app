@@ -18,10 +18,10 @@ export interface PointsTableProps {
 
 function PositionCell(props: LegendsData): VNode {
 	return (
-		<div class="points-legend-position">
+		<div class="standings-chart-legend-position">
 			<span>{props.position === Infinity ? '-' : formatOrdinals(props.position)}</span>
 			{props.gain !== 0 ? (
-				<span class="points-legend-position-gain">
+				<span class="standings-chart-legend-position-gain">
 					<span>{Math.abs(props.gain)}</span>
 					{props.gain / Math.abs(props.gain) === 1 ? (
 						<span class="gain-up">▲</span>
@@ -36,9 +36,9 @@ function PositionCell(props: LegendsData): VNode {
 
 function LabelCell(props: LegendsData): VNode {
 	return (
-		<div class="points-legend-label">
+		<div class="standings-chart-legend-label">
 			<a
-				class="points-legend-label-color"
+				class="standings-chart-legend-label-color"
 				style={{ '--legend-color': `var(--chart-color-${props.id})` }}
 				href={props.link}
 			>

@@ -1569,149 +1569,202 @@ rounds:
         position: 15
         points: 0
         wins: 0
-drivers:
-  - driverRef: anderson
-    name: Bob Anderson
-    nationality: British
-  - driverRef: bondurant
-    name: Bob Bondurant
-    nationality: American
-  - driverRef: mclaren
-    name: Bruce McLaren
-    nationality: New Zealander
-  - driverRef: amon
-    name: Chris Amon
-    nationality: New Zealander
-  - driverRef: irwin
-    name: Chris Irwin
-    nationality: British
-  - driverRef: lawrence
-    name: Chris Lawrence
-    nationality: British
-  - driverRef: gurney
-    name: Dan Gurney
-    nationality: American
-  - driverRef: hulme
-    name: Denny Hulme
-    nationality: New Zealander
-  - driverRef: geki
-    name: Giacomo Russo
-    nationality: Italian
-  - driverRef: baghetti
-    name: Giancarlo Baghetti
-    nationality: Italian
-  - driverRef: hill
-    name: Graham Hill
-    nationality: British
-  - driverRef: ligier
-    name: Guy Ligier
-    nationality: French
-  - driverRef: ireland
-    name: Innes Ireland
-    nationality: British
-  - driverRef: jack_brabham
-    name: Jack Brabham
-    nationality: Australian
-  - driverRef: stewart
-    name: Jackie Stewart
-    nationality: British
-  - driverRef: clark
-    name: Jim Clark
-    nationality: British
-  - driverRef: bonnier
-    name: Jo Bonnier
-    nationality: Swedish
-  - driverRef: siffert
-    name: Jo Siffert
-    nationality: Swiss
-  - driverRef: rindt
-    name: Jochen Rindt
-    nationality: Austrian
-  - driverRef: surtees
-    name: John Surtees
-    nationality: British
-  - driverRef: taylor
-    name: John Taylor
-    nationality: British
-  - driverRef: bandini
-    name: Lorenzo Bandini
-    nationality: Italian
-  - driverRef: scarfiotti
-    name: Ludovico Scarfiotti
-    nationality: Italian
-  - driverRef: parkes
-    name: Mike Parkes
-    nationality: British
-  - driverRef: spence
-    name: Mike Spence
-    nationality: British
-  - driverRef: solana
-    name: Moisés Solana
-    nationality: Mexican
-  - driverRef: rodriguez
-    name: Pedro Rodríguez
-    nationality: Mexican
-  - driverRef: arundell
-    name: Peter Arundell
-    nationality: British
-  - driverRef: phil_hill
-    name: Phil Hill
-    nationality: American
-  - driverRef: ginther
-    name: Richie Ginther
-    nationality: American
-  - driverRef: bucknum
-    name: Ronnie Bucknum
-    nationality: American
-  - driverRef: trevor_taylor
-    name: Trevor Taylor
-    nationality: British
-  - driverRef: vic_wilson
-    name: Vic Wilson
-    nationality: British
 constructors:
   - constructorRef: brabham-brm
     name: Brabham-BRM
     nationality: British
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: siffert
+        name: Jo Siffert
+        nationality: Swiss
+      - driverRef: taylor
+        name: John Taylor
+        nationality: British
   - constructorRef: brabham-climax
     name: Brabham-Climax
     nationality: British
+    drivers:
+      - driverRef: anderson
+        name: Bob Anderson
+        nationality: British
+      - driverRef: irwin
+        name: Chris Irwin
+        nationality: British
+      - driverRef: hulme
+        name: Denny Hulme
+        nationality: New Zealander
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish
   - constructorRef: brabham-repco
     name: Brabham-Repco
     nationality: British
+    drivers:
+      - driverRef: hulme
+        name: Denny Hulme
+        nationality: New Zealander
+      - driverRef: jack_brabham
+        name: Jack Brabham
+        nationality: Australian
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: bondurant
+        name: Bob Bondurant
+        nationality: American
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: ireland
+        name: Innes Ireland
+        nationality: British
+      - driverRef: stewart
+        name: Jackie Stewart
+        nationality: British
+      - driverRef: vic_wilson
+        name: Vic Wilson
+        nationality: British
   - constructorRef: cooper-ferrari
     name: Cooper-Ferrari
     nationality: British
+    drivers:
+      - driverRef: lawrence
+        name: Chris Lawrence
+        nationality: British
   - constructorRef: cooper-maserati
     name: Cooper-Maserati
     nationality: British
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: ligier
+        name: Guy Ligier
+        nationality: French
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish
+      - driverRef: siffert
+        name: Jo Siffert
+        nationality: Swiss
+      - driverRef: rindt
+        name: Jochen Rindt
+        nationality: Austrian
+      - driverRef: surtees
+        name: John Surtees
+        nationality: British
+      - driverRef: solana
+        name: Moisés Solana
+        nationality: Mexican
+      - driverRef: ginther
+        name: Richie Ginther
+        nationality: American
   - constructorRef: eagle-climax
     name: Eagle-Climax
     nationality: American
+    drivers:
+      - driverRef: bondurant
+        name: Bob Bondurant
+        nationality: American
+      - driverRef: gurney
+        name: Dan Gurney
+        nationality: American
+      - driverRef: phil_hill
+        name: Phil Hill
+        nationality: American
   - constructorRef: eagle-weslake
     name: Eagle-Weslake
     nationality: American
+    drivers:
+      - driverRef: bondurant
+        name: Bob Bondurant
+        nationality: American
+      - driverRef: gurney
+        name: Dan Gurney
+        nationality: American
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: baghetti
+        name: Giancarlo Baghetti
+        nationality: Italian
+      - driverRef: surtees
+        name: John Surtees
+        nationality: British
+      - driverRef: bandini
+        name: Lorenzo Bandini
+        nationality: Italian
+      - driverRef: scarfiotti
+        name: Ludovico Scarfiotti
+        nationality: Italian
+      - driverRef: parkes
+        name: Mike Parkes
+        nationality: British
   - constructorRef: honda
     name: Honda
     nationality: Japanese
+    drivers:
+      - driverRef: ginther
+        name: Richie Ginther
+        nationality: American
+      - driverRef: bucknum
+        name: Ronnie Bucknum
+        nationality: American
   - constructorRef: lotus-brm
     name: Lotus-BRM
     nationality: British
+    drivers:
+      - driverRef: clark
+        name: Jim Clark
+        nationality: British
+      - driverRef: spence
+        name: Mike Spence
+        nationality: British
+      - driverRef: rodriguez
+        name: Pedro Rodríguez
+        nationality: Mexican
+      - driverRef: arundell
+        name: Peter Arundell
+        nationality: British
   - constructorRef: lotus-climax
     name: Lotus-Climax
     nationality: British
+    drivers:
+      - driverRef: geki
+        name: Giacomo Russo
+        nationality: Italian
+      - driverRef: clark
+        name: Jim Clark
+        nationality: British
+      - driverRef: rodriguez
+        name: Pedro Rodríguez
+        nationality: Mexican
+      - driverRef: arundell
+        name: Peter Arundell
+        nationality: British
   - constructorRef: mclaren-ford
     name: McLaren-Ford
     nationality: British
+    drivers:
+      - driverRef: mclaren
+        name: Bruce McLaren
+        nationality: New Zealander
   - constructorRef: mclaren-seren
     name: McLaren-Serenissima
     nationality: British
+    drivers:
+      - driverRef: mclaren
+        name: Bruce McLaren
+        nationality: New Zealander
   - constructorRef: shannon
     name: Shannon
     nationality: British
+    drivers:
+      - driverRef: trevor_taylor
+        name: Trevor Taylor
+        nationality: British

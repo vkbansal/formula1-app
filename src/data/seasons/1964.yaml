@@ -1873,167 +1873,203 @@ rounds:
         position: 13
         points: 0
         wins: 0
-drivers:
-  - driverRef: andre_pilette
-    name: André Pilette
-    nationality: Belgian
-  - driverRef: collomb
-    name: Bernard Collomb
-    nationality: French
-  - driverRef: anderson
-    name: Bob Anderson
-    nationality: British
-  - driverRef: mclaren
-    name: Bruce McLaren
-    nationality: New Zealander
-  - driverRef: beaufort
-    name: Carel Godin de Beaufort
-    nationality: Dutch
-  - driverRef: amon
-    name: Chris Amon
-    nationality: New Zealander
-  - driverRef: gurney
-    name: Dan Gurney
-    nationality: American
-  - driverRef: barth
-    name: Edgar Barth
-    nationality: German
-  - driverRef: gardner
-    name: Frank Gardner
-    nationality: Australian
-  - driverRef: mitter
-    name: Gerhard Mitter
-    nationality: German
-  - driverRef: geki
-    name: Giacomo Russo
-    nationality: Italian
-  - driverRef: baghetti
-    name: Giancarlo Baghetti
-    nationality: Italian
-  - driverRef: hill
-    name: Graham Hill
-    nationality: British
-  - driverRef: sharp
-    name: Hap Sharp
-    nationality: American
-  - driverRef: raby
-    name: Ian Raby
-    nationality: British
-  - driverRef: ireland
-    name: Innes Ireland
-    nationality: British
-  - driverRef: jack_brabham
-    name: Jack Brabham
-    nationality: Australian
-  - driverRef: clark
-    name: Jim Clark
-    nationality: British
-  - driverRef: bonnier
-    name: Jo Bonnier
-    nationality: Swedish
-  - driverRef: siffert
-    name: Jo Siffert
-    nationality: Swiss
-  - driverRef: rindt
-    name: Jochen Rindt
-    nationality: Austrian
-  - driverRef: love
-    name: John Love
-    nationality: Rhodesian
-  - driverRef: surtees
-    name: John Surtees
-    nationality: British
-  - driverRef: taylor
-    name: John Taylor
-    nationality: British
-  - driverRef: bandini
-    name: Lorenzo Bandini
-    nationality: Italian
-  - driverRef: scarfiotti
-    name: Ludovico Scarfiotti
-    nationality: Italian
-  - driverRef: cabral
-    name: Mário de Araújo Cabral
-    nationality: Portuguese
-  - driverRef: trintignant
-    name: Maurice Trintignant
-    nationality: French
-  - driverRef: hailwood
-    name: Mike Hailwood
-    nationality: British
-  - driverRef: spence
-    name: Mike Spence
-    nationality: British
-  - driverRef: solana
-    name: Moisés Solana
-    nationality: Mexican
-  - driverRef: rodriguez
-    name: Pedro Rodríguez
-    nationality: Mexican
-  - driverRef: arundell
-    name: Peter Arundell
-    nationality: British
-  - driverRef: revson
-    name: Peter Revson
-    nationality: American
-  - driverRef: phil_hill
-    name: Phil Hill
-    nationality: American
-  - driverRef: attwood
-    name: Richard Attwood
-    nationality: British
-  - driverRef: ginther
-    name: Richie Ginther
-    nationality: American
-  - driverRef: bucknum
-    name: Ronnie Bucknum
-    nationality: American
-  - driverRef: maggs
-    name: Tony Maggs
-    nationality: South African
-  - driverRef: trevor_taylor
-    name: Trevor Taylor
-    nationality: British
-  - driverRef: hansgen
-    name: Walt Hansgen
-    nationality: American
 constructors:
   - constructorRef: brabham-brm
     name: Brabham-BRM
     nationality: British
+    drivers:
+      - driverRef: geki
+        name: Giacomo Russo
+        nationality: Italian
+      - driverRef: sharp
+        name: Hap Sharp
+        nationality: American
+      - driverRef: raby
+        name: Ian Raby
+        nationality: British
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish
+      - driverRef: siffert
+        name: Jo Siffert
+        nationality: Swiss
+      - driverRef: rindt
+        name: Jochen Rindt
+        nationality: Austrian
   - constructorRef: brabham-climax
     name: Brabham-Climax
     nationality: British
+    drivers:
+      - driverRef: anderson
+        name: Bob Anderson
+        nationality: British
+      - driverRef: gurney
+        name: Dan Gurney
+        nationality: American
+      - driverRef: jack_brabham
+        name: Jack Brabham
+        nationality: Australian
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish
+      - driverRef: siffert
+        name: Jo Siffert
+        nationality: Swiss
   - constructorRef: brabham-ford
     name: Brabham-Ford
     nationality: British
+    drivers:
+      - driverRef: gardner
+        name: Frank Gardner
+        nationality: Australian
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: baghetti
+        name: Giancarlo Baghetti
+        nationality: Italian
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: trintignant
+        name: Maurice Trintignant
+        nationality: French
+      - driverRef: attwood
+        name: Richard Attwood
+        nationality: British
+      - driverRef: ginther
+        name: Richie Ginther
+        nationality: American
+      - driverRef: maggs
+        name: Tony Maggs
+        nationality: South African
   - constructorRef: brp
     name: BRP
     nationality: British
+    drivers:
+      - driverRef: ireland
+        name: Innes Ireland
+        nationality: British
+      - driverRef: trevor_taylor
+        name: Trevor Taylor
+        nationality: British
   - constructorRef: cooper-climax
     name: Cooper-Climax
     nationality: British
+    drivers:
+      - driverRef: mclaren
+        name: Bruce McLaren
+        nationality: New Zealander
+      - driverRef: barth
+        name: Edgar Barth
+        nationality: German
+      - driverRef: bonnier
+        name: Jo Bonnier
+        nationality: Swedish
+      - driverRef: love
+        name: John Love
+        nationality: Rhodesian
+      - driverRef: taylor
+        name: John Taylor
+        nationality: British
+      - driverRef: phil_hill
+        name: Phil Hill
+        nationality: American
   - constructorRef: derrington
     name: Derrington
     nationality: British
+    drivers:
+      - driverRef: cabral
+        name: Mário de Araújo Cabral
+        nationality: Portuguese
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: surtees
+        name: John Surtees
+        nationality: British
+      - driverRef: bandini
+        name: Lorenzo Bandini
+        nationality: Italian
+      - driverRef: scarfiotti
+        name: Ludovico Scarfiotti
+        nationality: Italian
+      - driverRef: rodriguez
+        name: Pedro Rodríguez
+        nationality: Mexican
   - constructorRef: honda
     name: Honda
     nationality: Japanese
+    drivers:
+      - driverRef: bucknum
+        name: Ronnie Bucknum
+        nationality: American
   - constructorRef: lotus-brm
     name: Lotus-BRM
     nationality: British
+    drivers:
+      - driverRef: collomb
+        name: Bernard Collomb
+        nationality: French
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: ireland
+        name: Innes Ireland
+        nationality: British
+      - driverRef: siffert
+        name: Jo Siffert
+        nationality: Swiss
+      - driverRef: hailwood
+        name: Mike Hailwood
+        nationality: British
+      - driverRef: revson
+        name: Peter Revson
+        nationality: American
+      - driverRef: trevor_taylor
+        name: Trevor Taylor
+        nationality: British
   - constructorRef: lotus-climax
     name: Lotus-Climax
     nationality: British
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: mitter
+        name: Gerhard Mitter
+        nationality: German
+      - driverRef: clark
+        name: Jim Clark
+        nationality: British
+      - driverRef: spence
+        name: Mike Spence
+        nationality: British
+      - driverRef: solana
+        name: Moisés Solana
+        nationality: Mexican
+      - driverRef: arundell
+        name: Peter Arundell
+        nationality: British
+      - driverRef: revson
+        name: Peter Revson
+        nationality: American
+      - driverRef: hansgen
+        name: Walt Hansgen
+        nationality: American
   - constructorRef: porsche
     name: Porsche
     nationality: German
+    drivers:
+      - driverRef: beaufort
+        name: Carel Godin de Beaufort
+        nationality: Dutch
   - constructorRef: scirocco
     name: Scirocco
     nationality: British
+    drivers:
+      - driverRef: andre_pilette
+        name: André Pilette
+        nationality: Belgian

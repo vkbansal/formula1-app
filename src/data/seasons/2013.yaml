@@ -2897,107 +2897,117 @@ rounds:
         position: 11
         points: 0
         wins: 0
-drivers:
-  - driverRef: sutil
-    name: Adrian Sutil
-    nationality: German
-  - driverRef: pic
-    name: Charles Pic
-    nationality: French
-  - driverRef: ricciardo
-    name: Daniel Ricciardo
-    nationality: Australian
-  - driverRef: gutierrez
-    name: Esteban Gutiérrez
-    nationality: Mexican
-  - driverRef: massa
-    name: Felipe Massa
-    nationality: Brazilian
-  - driverRef: alonso
-    name: Fernando Alonso
-    nationality: Spanish
-  - driverRef: garde
-    name: Giedo van der Garde
-    nationality: Dutch
-  - driverRef: kovalainen
-    name: Heikki Kovalainen
-    nationality: Finnish
-  - driverRef: vergne
-    name: Jean-Éric Vergne
-    nationality: French
-  - driverRef: button
-    name: Jenson Button
-    nationality: British
-  - driverRef: jules_bianchi
-    name: Jules Bianchi
-    nationality: French
-  - driverRef: raikkonen
-    name: Kimi Räikkönen
-    nationality: Finnish
-  - driverRef: hamilton
-    name: Lewis Hamilton
-    nationality: British
-  - driverRef: webber
-    name: Mark Webber
-    nationality: Australian
-  - driverRef: chilton
-    name: Max Chilton
-    nationality: British
-  - driverRef: hulkenberg
-    name: Nico Hülkenberg
-    nationality: German
-  - driverRef: rosberg
-    name: Nico Rosberg
-    nationality: German
-  - driverRef: maldonado
-    name: Pastor Maldonado
-    nationality: Venezuelan
-  - driverRef: resta
-    name: Paul di Resta
-    nationality: British
-  - driverRef: grosjean
-    name: Romain Grosjean
-    nationality: French
-  - driverRef: vettel
-    name: Sebastian Vettel
-    nationality: German
-  - driverRef: perez
-    name: Sergio Pérez
-    nationality: Mexican
-  - driverRef: bottas
-    name: Valtteri Bottas
-    nationality: Finnish
 constructors:
   - constructorRef: caterham
     name: Caterham
     nationality: Malaysian
+    drivers:
+      - driverRef: pic
+        name: Charles Pic
+        nationality: French
+      - driverRef: garde
+        name: Giedo van der Garde
+        nationality: Dutch
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: massa
+        name: Felipe Massa
+        nationality: Brazilian
+      - driverRef: alonso
+        name: Fernando Alonso
+        nationality: Spanish
   - constructorRef: force_india
     name: Force India
     nationality: Indian
+    drivers:
+      - driverRef: sutil
+        name: Adrian Sutil
+        nationality: German
+      - driverRef: resta
+        name: Paul di Resta
+        nationality: British
   - constructorRef: lotus_f1
     name: Lotus F1
     nationality: British
+    drivers:
+      - driverRef: kovalainen
+        name: Heikki Kovalainen
+        nationality: Finnish
+      - driverRef: raikkonen
+        name: Kimi Räikkönen
+        nationality: Finnish
+      - driverRef: grosjean
+        name: Romain Grosjean
+        nationality: French
   - constructorRef: marussia
     name: Marussia
     nationality: Russian
+    drivers:
+      - driverRef: jules_bianchi
+        name: Jules Bianchi
+        nationality: French
+      - driverRef: chilton
+        name: Max Chilton
+        nationality: British
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: button
+        name: Jenson Button
+        nationality: British
+      - driverRef: perez
+        name: Sergio Pérez
+        nationality: Mexican
   - constructorRef: mercedes
     name: Mercedes
     nationality: German
+    drivers:
+      - driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+      - driverRef: rosberg
+        name: Nico Rosberg
+        nationality: German
   - constructorRef: red_bull
     name: Red Bull
     nationality: Austrian
+    drivers:
+      - driverRef: webber
+        name: Mark Webber
+        nationality: Australian
+      - driverRef: vettel
+        name: Sebastian Vettel
+        nationality: German
   - constructorRef: sauber
     name: Sauber
     nationality: Swiss
+    drivers:
+      - driverRef: gutierrez
+        name: Esteban Gutiérrez
+        nationality: Mexican
+      - driverRef: hulkenberg
+        name: Nico Hülkenberg
+        nationality: German
   - constructorRef: toro_rosso
     name: Toro Rosso
     nationality: Italian
+    drivers:
+      - driverRef: ricciardo
+        name: Daniel Ricciardo
+        nationality: Australian
+      - driverRef: vergne
+        name: Jean-Éric Vergne
+        nationality: French
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: maldonado
+        name: Pastor Maldonado
+        nationality: Venezuelan
+      - driverRef: bottas
+        name: Valtteri Bottas
+        nationality: Finnish

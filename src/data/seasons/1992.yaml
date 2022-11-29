@@ -2873,164 +2873,182 @@ rounds:
         position: 15
         points: 0
         wins: 0
-drivers:
-  - driverRef: suzuki
-    name: Aguri Suzuki
-    nationality: Japanese
-  - driverRef: zanardi
-    name: Alessandro Zanardi
-    nationality: Italian
-  - driverRef: chiesa
-    name: Andrea Chiesa
-    nationality: Swiss
-  - driverRef: cesaris
-    name: Andrea de Cesaris
-    nationality: Italian
-  - driverRef: senna
-    name: Ayrton Senna
-    nationality: Brazilian
-  - driverRef: gachot
-    name: Bertrand Gachot
-    nationality: Belgian
-  - driverRef: fittipaldi
-    name: Christian Fittipaldi
-    nationality: Brazilian
-  - driverRef: damon_hill
-    name: Damon Hill
-    nationality: British
-  - driverRef: naspetti
-    name: Emanuele Naspetti
-    nationality: Italian
-  - driverRef: poele
-    name: Eric van de Poele
-    nationality: Belgian
-  - driverRef: comas
-    name: Érik Comas
-    nationality: French
-  - driverRef: tarquini
-    name: Gabriele Tarquini
-    nationality: Italian
-  - driverRef: berger
-    name: Gerhard Berger
-    nationality: Austrian
-  - driverRef: morbidelli
-    name: Gianni Morbidelli
-    nationality: Italian
-  - driverRef: amati
-    name: Giovanna Amati
-    nationality: Italian
-  - driverRef: capelli
-    name: Ivan Capelli
-    nationality: Italian
-  - driverRef: lammers
-    name: Jan Lammers
-    nationality: Dutch
-  - driverRef: alesi
-    name: Jean Alesi
-    nationality: French
-  - driverRef: herbert
-    name: Johnny Herbert
-    nationality: British
-  - driverRef: lehto
-    name: Jyrki Järvilehto
-    nationality: Finnish
-  - driverRef: wendlinger
-    name: Karl Wendlinger
-    nationality: Austrian
-  - driverRef: brundle
-    name: Martin Brundle
-    nationality: British
-  - driverRef: gugelmin
-    name: Maurício Gugelmin
-    nationality: Brazilian
-  - driverRef: michael_schumacher
-    name: Michael Schumacher
-    nationality: German
-  - driverRef: alboreto
-    name: Michele Alboreto
-    nationality: Italian
-  - driverRef: hakkinen
-    name: Mika Häkkinen
-    nationality: Finnish
-  - driverRef: larini
-    name: Nicola Larini
-    nationality: Italian
-  - driverRef: mansell
-    name: Nigel Mansell
-    nationality: British
-  - driverRef: grouillard
-    name: Olivier Grouillard
-    nationality: French
-  - driverRef: belmondo
-    name: Paul Belmondo
-    nationality: French
-  - driverRef: mccarthy
-    name: Perry McCarthy
-    nationality: British
-  - driverRef: martini
-    name: Pierluigi Martini
-    nationality: Italian
-  - driverRef: patrese
-    name: Riccardo Patrese
-    nationality: Italian
-  - driverRef: moreno
-    name: Roberto Moreno
-    nationality: Brazilian
-  - driverRef: modena
-    name: Stefano Modena
-    nationality: Italian
-  - driverRef: boutsen
-    name: Thierry Boutsen
-    nationality: Belgian
-  - driverRef: katayama
-    name: Ukyo Katayama
-    nationality: Japanese
 constructors:
   - constructorRef: moda
     name: Andrea Moda
     nationality: Italian
+    drivers:
+      - driverRef: mccarthy
+        name: Perry McCarthy
+        nationality: British
+      - driverRef: moreno
+        name: Roberto Moreno
+        nationality: Brazilian
   - constructorRef: benetton
     name: Benetton
     nationality: Italian
+    drivers:
+      - driverRef: brundle
+        name: Martin Brundle
+        nationality: British
+      - driverRef: michael_schumacher
+        name: Michael Schumacher
+        nationality: German
   - constructorRef: brabham
     name: Brabham
     nationality: British
+    drivers:
+      - driverRef: damon_hill
+        name: Damon Hill
+        nationality: British
+      - driverRef: poele
+        name: Eric van de Poele
+        nationality: Belgian
+      - driverRef: amati
+        name: Giovanna Amati
+        nationality: Italian
   - constructorRef: dallara
     name: Dallara
     nationality: Italian
+    drivers:
+      - driverRef: lehto
+        name: Jyrki Järvilehto
+        nationality: Finnish
+      - driverRef: martini
+        name: Pierluigi Martini
+        nationality: Italian
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: capelli
+        name: Ivan Capelli
+        nationality: Italian
+      - driverRef: alesi
+        name: Jean Alesi
+        nationality: French
+      - driverRef: larini
+        name: Nicola Larini
+        nationality: Italian
   - constructorRef: fondmetal
     name: Fondmetal
     nationality: Italian
+    drivers:
+      - driverRef: chiesa
+        name: Andrea Chiesa
+        nationality: Swiss
+      - driverRef: poele
+        name: Eric van de Poele
+        nationality: Belgian
+      - driverRef: tarquini
+        name: Gabriele Tarquini
+        nationality: Italian
   - constructorRef: footwork
     name: Footwork
     nationality: British
+    drivers:
+      - driverRef: suzuki
+        name: Aguri Suzuki
+        nationality: Japanese
+      - driverRef: alboreto
+        name: Michele Alboreto
+        nationality: Italian
   - constructorRef: jordan
     name: Jordan
     nationality: Irish
+    drivers:
+      - driverRef: gugelmin
+        name: Maurício Gugelmin
+        nationality: Brazilian
+      - driverRef: modena
+        name: Stefano Modena
+        nationality: Italian
   - constructorRef: larrousse
     name: Larrousse
     nationality: French
+    drivers:
+      - driverRef: gachot
+        name: Bertrand Gachot
+        nationality: Belgian
+      - driverRef: katayama
+        name: Ukyo Katayama
+        nationality: Japanese
   - constructorRef: ligier
     name: Ligier
     nationality: French
+    drivers:
+      - driverRef: comas
+        name: Érik Comas
+        nationality: French
+      - driverRef: boutsen
+        name: Thierry Boutsen
+        nationality: Belgian
   - constructorRef: march
     name: March
     nationality: British
+    drivers:
+      - driverRef: naspetti
+        name: Emanuele Naspetti
+        nationality: Italian
+      - driverRef: lammers
+        name: Jan Lammers
+        nationality: Dutch
+      - driverRef: wendlinger
+        name: Karl Wendlinger
+        nationality: Austrian
+      - driverRef: belmondo
+        name: Paul Belmondo
+        nationality: French
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: senna
+        name: Ayrton Senna
+        nationality: Brazilian
+      - driverRef: berger
+        name: Gerhard Berger
+        nationality: Austrian
   - constructorRef: minardi
     name: Minardi
     nationality: Italian
+    drivers:
+      - driverRef: zanardi
+        name: Alessandro Zanardi
+        nationality: Italian
+      - driverRef: fittipaldi
+        name: Christian Fittipaldi
+        nationality: Brazilian
+      - driverRef: morbidelli
+        name: Gianni Morbidelli
+        nationality: Italian
   - constructorRef: team_lotus
     name: Team Lotus
     nationality: British
+    drivers:
+      - driverRef: herbert
+        name: Johnny Herbert
+        nationality: British
+      - driverRef: hakkinen
+        name: Mika Häkkinen
+        nationality: Finnish
   - constructorRef: tyrrell
     name: Tyrrell
     nationality: British
+    drivers:
+      - driverRef: cesaris
+        name: Andrea de Cesaris
+        nationality: Italian
+      - driverRef: grouillard
+        name: Olivier Grouillard
+        nationality: French
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: mansell
+        name: Nigel Mansell
+        nationality: British
+      - driverRef: patrese
+        name: Riccardo Patrese
+        nationality: Italian

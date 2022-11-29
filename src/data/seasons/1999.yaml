@@ -2297,110 +2297,123 @@ rounds:
         position: 11
         points: 0
         wins: 0
-drivers:
-  - driverRef: zanardi
-    name: Alessandro Zanardi
-    nationality: Italian
-  - driverRef: wurz
-    name: Alexander Wurz
-    nationality: Austrian
-  - driverRef: damon_hill
-    name: Damon Hill
-    nationality: British
-  - driverRef: coulthard
-    name: David Coulthard
-    nationality: British
-  - driverRef: irvine
-    name: Eddie Irvine
-    nationality: British
-  - driverRef: fisichella
-    name: Giancarlo Fisichella
-    nationality: Italian
-  - driverRef: frentzen
-    name: Heinz-Harald Frentzen
-    nationality: German
-  - driverRef: villeneuve
-    name: Jacques Villeneuve
-    nationality: Canadian
-  - driverRef: trulli
-    name: Jarno Trulli
-    nationality: Italian
-  - driverRef: alesi
-    name: Jean Alesi
-    nationality: French
-  - driverRef: herbert
-    name: Johnny Herbert
-    nationality: British
-  - driverRef: badoer
-    name: Luca Badoer
-    nationality: Italian
-  - driverRef: gene
-    name: Marc Gené
-    nationality: Spanish
-  - driverRef: michael_schumacher
-    name: Michael Schumacher
-    nationality: German
-  - driverRef: hakkinen
-    name: Mika Häkkinen
-    nationality: Finnish
-  - driverRef: salo
-    name: Mika Salo
-    nationality: Finnish
-  - driverRef: panis
-    name: Olivier Panis
-    nationality: French
-  - driverRef: rosa
-    name: Pedro de la Rosa
-    nationality: Spanish
-  - driverRef: diniz
-    name: Pedro Diniz
-    nationality: Brazilian
-  - driverRef: ralf_schumacher
-    name: Ralf Schumacher
-    nationality: German
-  - driverRef: zonta
-    name: Ricardo Zonta
-    nationality: Brazilian
-  - driverRef: barrichello
-    name: Rubens Barrichello
-    nationality: Brazilian
-  - driverRef: sarrazin
-    name: Stéphane Sarrazin
-    nationality: French
-  - driverRef: takagi
-    name: Toranosuke Takagi
-    nationality: Japanese
 constructors:
   - constructorRef: arrows
     name: Arrows
     nationality: British
+    drivers:
+      - driverRef: rosa
+        name: Pedro de la Rosa
+        nationality: Spanish
+      - driverRef: takagi
+        name: Toranosuke Takagi
+        nationality: Japanese
   - constructorRef: bar
     name: BAR
     nationality: British
+    drivers:
+      - driverRef: villeneuve
+        name: Jacques Villeneuve
+        nationality: Canadian
+      - driverRef: salo
+        name: Mika Salo
+        nationality: Finnish
+      - driverRef: zonta
+        name: Ricardo Zonta
+        nationality: Brazilian
   - constructorRef: benetton
     name: Benetton
     nationality: Italian
+    drivers:
+      - driverRef: wurz
+        name: Alexander Wurz
+        nationality: Austrian
+      - driverRef: fisichella
+        name: Giancarlo Fisichella
+        nationality: Italian
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: irvine
+        name: Eddie Irvine
+        nationality: British
+      - driverRef: michael_schumacher
+        name: Michael Schumacher
+        nationality: German
+      - driverRef: salo
+        name: Mika Salo
+        nationality: Finnish
   - constructorRef: jordan
     name: Jordan
     nationality: Irish
+    drivers:
+      - driverRef: damon_hill
+        name: Damon Hill
+        nationality: British
+      - driverRef: frentzen
+        name: Heinz-Harald Frentzen
+        nationality: German
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: coulthard
+        name: David Coulthard
+        nationality: British
+      - driverRef: hakkinen
+        name: Mika Häkkinen
+        nationality: Finnish
   - constructorRef: minardi
     name: Minardi
     nationality: Italian
+    drivers:
+      - driverRef: badoer
+        name: Luca Badoer
+        nationality: Italian
+      - driverRef: gene
+        name: Marc Gené
+        nationality: Spanish
+      - driverRef: sarrazin
+        name: Stéphane Sarrazin
+        nationality: French
   - constructorRef: prost
     name: Prost
     nationality: French
+    drivers:
+      - driverRef: trulli
+        name: Jarno Trulli
+        nationality: Italian
+      - driverRef: panis
+        name: Olivier Panis
+        nationality: French
   - constructorRef: sauber
     name: Sauber
     nationality: Swiss
+    drivers:
+      - driverRef: alesi
+        name: Jean Alesi
+        nationality: French
+      - driverRef: diniz
+        name: Pedro Diniz
+        nationality: Brazilian
   - constructorRef: stewart
     name: Stewart
     nationality: British
+    drivers:
+      - driverRef: herbert
+        name: Johnny Herbert
+        nationality: British
+      - driverRef: barrichello
+        name: Rubens Barrichello
+        nationality: Brazilian
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: zanardi
+        name: Alessandro Zanardi
+        nationality: Italian
+      - driverRef: ralf_schumacher
+        name: Ralf Schumacher
+        nationality: German

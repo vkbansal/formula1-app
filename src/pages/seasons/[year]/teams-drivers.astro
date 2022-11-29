@@ -1,0 +1,92 @@
+---
+import type { GetStaticPathsItem } from 'astro';
+import MainLayout from 'layouts/MainLayout.astro';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+import { loadData, type Season } from 'helpers/data';
+import { Nationality } from 'components/Nationality';
+
+export interface Props {
+	season: Season;
+	hasPrev: boolean;
+	hasNext: boolean;
+}
+
+export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
+	const seasons = await loadData('seasons');
+
+	return seasons
+		.sort((a, b) => a.year - b.year)
+		.map((season) => {
+			const hasPrev = seasons[0].year < season.year;
+			const hasNext = seasons[seasons.length - 1].year > season.year;
+
+			return {
+				params: { year: season.year.toString() },
+				props: { season, hasPrev, hasNext },
+			};
+		});
+}
+
+const {
+	season: { year, constructors },
+	hasNext,
+	hasPrev,
+} = Astro.props as Props;
+---
+
+<MainLayout title={`Teams & Drivers | ${year} Season`}>
+	<div class="seasons-header">
+		<Breadcrumbs
+			links={[
+				{ label: 'Seasons', href: '/seasons/' },
+				{ label: `${year} Season`, href: '' },
+			]}
+		/>
+		<nav class="season-pagination">
+			{hasPrev ? <a href={`/seasons/${year - 1}`}>&larr; {year - 1}</a> : null}
+			{hasNext ? <a href={`/seasons/${year + 1}`}>{year + 1} &rarr;</a> : null}
+		</nav>
+	</div>
+	<h1>
+		Teams & Drivers - {year} Season
+	</h1>
+	<table class="table team-drivers-table">
+		<thead>
+			<tr>
+				<th>Constructor</th>
+				<th>Nationality</th>
+				<th>Drivers</th>
+				<th>Nationality</th>
+			</tr>
+		</thead>
+		<tbody>
+			{
+				constructors.flatMap((c) => {
+					return c.drivers.map((d, i) => (
+						<tr>
+							{i === 0 ? <td rowspan={c.drivers.length}>{c.name}</td> : null}
+							{i === 0 ? (
+								<td rowspan={c.drivers.length}>
+									<Nationality nationality={c.nationality} />
+									<span>{c.nationality}</span>
+								</td>
+							) : null}
+							<td class="driver-name">{d.name}</td>
+							<td>
+								<Nationality nationality={d.nationality} />
+								<span>{d.nationality}</span>
+							</td>
+						</tr>
+					));
+				})
+			}
+		</tbody>
+	</table>
+</MainLayout>
+<style lang="scss">
+	:global(.table).team-drivers-table {
+		.driver-name {
+			padding-left: 1rem;
+		}
+	}
+</style>

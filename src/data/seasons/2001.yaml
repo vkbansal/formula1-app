@@ -2617,116 +2617,135 @@ rounds:
         position: 11
         points: 0
         wins: 0
-drivers:
-  - driverRef: yoong
-    name: Alex Yoong
-    nationality: Malaysian
-  - driverRef: coulthard
-    name: David Coulthard
-    nationality: British
-  - driverRef: irvine
-    name: Eddie Irvine
-    nationality: British
-  - driverRef: bernoldi
-    name: Enrique Bernoldi
-    nationality: Brazilian
-  - driverRef: alonso
-    name: Fernando Alonso
-    nationality: Spanish
-  - driverRef: mazzacane
-    name: Gastón Mazzacane
-    nationality: Argentine
-  - driverRef: fisichella
-    name: Giancarlo Fisichella
-    nationality: Italian
-  - driverRef: frentzen
-    name: Heinz-Harald Frentzen
-    nationality: German
-  - driverRef: villeneuve
-    name: Jacques Villeneuve
-    nationality: Canadian
-  - driverRef: trulli
-    name: Jarno Trulli
-    nationality: Italian
-  - driverRef: alesi
-    name: Jean Alesi
-    nationality: French
-  - driverRef: button
-    name: Jenson Button
-    nationality: British
-  - driverRef: verstappen
-    name: Jos Verstappen
-    nationality: Dutch
-  - driverRef: montoya
-    name: Juan Pablo Montoya
-    nationality: Colombian
-  - driverRef: raikkonen
-    name: Kimi Räikkönen
-    nationality: Finnish
-  - driverRef: burti
-    name: Luciano Burti
-    nationality: Brazilian
-  - driverRef: michael_schumacher
-    name: Michael Schumacher
-    nationality: German
-  - driverRef: hakkinen
-    name: Mika Häkkinen
-    nationality: Finnish
-  - driverRef: heidfeld
-    name: Nick Heidfeld
-    nationality: German
-  - driverRef: panis
-    name: Olivier Panis
-    nationality: French
-  - driverRef: rosa
-    name: Pedro de la Rosa
-    nationality: Spanish
-  - driverRef: ralf_schumacher
-    name: Ralf Schumacher
-    nationality: German
-  - driverRef: zonta
-    name: Ricardo Zonta
-    nationality: Brazilian
-  - driverRef: barrichello
-    name: Rubens Barrichello
-    nationality: Brazilian
-  - driverRef: marques
-    name: Tarso Marques
-    nationality: Brazilian
-  - driverRef: enge
-    name: Tomáš Enge
-    nationality: Czech
 constructors:
   - constructorRef: arrows
     name: Arrows
     nationality: British
+    drivers:
+      - driverRef: bernoldi
+        name: Enrique Bernoldi
+        nationality: Brazilian
+      - driverRef: verstappen
+        name: Jos Verstappen
+        nationality: Dutch
   - constructorRef: bar
     name: BAR
     nationality: British
+    drivers:
+      - driverRef: villeneuve
+        name: Jacques Villeneuve
+        nationality: Canadian
+      - driverRef: panis
+        name: Olivier Panis
+        nationality: French
   - constructorRef: benetton
     name: Benetton
     nationality: Italian
+    drivers:
+      - driverRef: fisichella
+        name: Giancarlo Fisichella
+        nationality: Italian
+      - driverRef: button
+        name: Jenson Button
+        nationality: British
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: michael_schumacher
+        name: Michael Schumacher
+        nationality: German
+      - driverRef: barrichello
+        name: Rubens Barrichello
+        nationality: Brazilian
   - constructorRef: jaguar
     name: Jaguar
     nationality: British
+    drivers:
+      - driverRef: irvine
+        name: Eddie Irvine
+        nationality: British
+      - driverRef: burti
+        name: Luciano Burti
+        nationality: Brazilian
+      - driverRef: rosa
+        name: Pedro de la Rosa
+        nationality: Spanish
   - constructorRef: jordan
     name: Jordan
     nationality: Irish
+    drivers:
+      - driverRef: frentzen
+        name: Heinz-Harald Frentzen
+        nationality: German
+      - driverRef: trulli
+        name: Jarno Trulli
+        nationality: Italian
+      - driverRef: alesi
+        name: Jean Alesi
+        nationality: French
+      - driverRef: zonta
+        name: Ricardo Zonta
+        nationality: Brazilian
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: coulthard
+        name: David Coulthard
+        nationality: British
+      - driverRef: hakkinen
+        name: Mika Häkkinen
+        nationality: Finnish
   - constructorRef: minardi
     name: Minardi
     nationality: Italian
+    drivers:
+      - driverRef: yoong
+        name: Alex Yoong
+        nationality: Malaysian
+      - driverRef: alonso
+        name: Fernando Alonso
+        nationality: Spanish
+      - driverRef: marques
+        name: Tarso Marques
+        nationality: Brazilian
   - constructorRef: prost
     name: Prost
     nationality: French
+    drivers:
+      - driverRef: mazzacane
+        name: Gastón Mazzacane
+        nationality: Argentine
+      - driverRef: frentzen
+        name: Heinz-Harald Frentzen
+        nationality: German
+      - driverRef: alesi
+        name: Jean Alesi
+        nationality: French
+      - driverRef: burti
+        name: Luciano Burti
+        nationality: Brazilian
+      - driverRef: enge
+        name: Tomáš Enge
+        nationality: Czech
   - constructorRef: sauber
     name: Sauber
     nationality: Swiss
+    drivers:
+      - driverRef: raikkonen
+        name: Kimi Räikkönen
+        nationality: Finnish
+      - driverRef: heidfeld
+        name: Nick Heidfeld
+        nationality: German
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: montoya
+        name: Juan Pablo Montoya
+        nationality: Colombian
+      - driverRef: ralf_schumacher
+        name: Ralf Schumacher
+        nationality: German

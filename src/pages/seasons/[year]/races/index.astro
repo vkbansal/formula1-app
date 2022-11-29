@@ -1,0 +1,72 @@
+---
+import type { GetStaticPathsItem } from 'astro';
+import MainLayout from 'layouts/MainLayout.astro';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+import { loadData, type Season } from 'helpers/data';
+import { RacesTable, type DataRow } from './RacesTable';
+
+export interface Props {
+	season: Season;
+	hasPrev: boolean;
+	hasNext: boolean;
+}
+
+export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
+	const seasons = await loadData('seasons');
+
+	return seasons
+		.sort((a, b) => a.year - b.year)
+		.map((season) => {
+			const hasPrev = seasons[0].year < season.year;
+			const hasNext = seasons[seasons.length - 1].year > season.year;
+
+			return {
+				params: { year: season.year.toString() },
+				props: { season, hasPrev, hasNext },
+			};
+		});
+}
+
+const {
+	season: { year, rounds, constructors },
+	hasNext,
+	hasPrev,
+} = Astro.props as Props;
+
+const drivers = constructors.flatMap((c) => c.drivers);
+
+const tableData: DataRow[] = rounds.map(
+	({ driverStandings, constructorStandings, podium, ...rest }) => {
+		const winner = podium.at(0);
+
+		const driver = drivers.find((d) => d.driverRef === winner?.driverRef);
+		const _constructor = constructors.find((c) => c.constructorRef === winner?.constructorRef);
+
+		return { ...rest, winner: { driver, constructor: _constructor } };
+	},
+);
+---
+
+<MainLayout title={`Races | ${year} Season`}>
+	<div class="seasons-header">
+		<Breadcrumbs
+			links={[
+				{ label: 'Seasons', href: '/seasons/' },
+				{ label: `${year} Season`, href: `/seasons/${year}` },
+				{ label: 'Races', href: '' },
+			]}
+		/>
+		<nav class="season-pagination">
+			{hasPrev ? <a href={`/seasons/${year - 1}`}>&larr; {year - 1}</a> : null}
+			{hasNext ? <a href={`/seasons/${year + 1}`}>{year + 1} &rarr;</a> : null}
+		</nav>
+	</div>
+	<h1>
+		Races - {year} Season
+	</h1>
+	<div class="season-tabs">
+		<RacesTable data={tableData} />
+	</div>
+</MainLayout>
+
+<style lang="scss"></style>

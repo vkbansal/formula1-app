@@ -2357,167 +2357,190 @@ rounds:
         position: 12
         points: 0
         wins: 0
-drivers:
-  - driverRef: roig
-    name: Alex Soler-Roig
-    nationality: Spanish
-  - driverRef: adamich
-    name: Andrea de Adamich
-    nationality: Italian
-  - driverRef: merzario
-    name: Arturo Merzario
-    nationality: Italian
-  - driverRef: brack
-    name: Bill Brack
-    nationality: Canadian
-  - driverRef: redman
-    name: Brian Redman
-    nationality: British
-  - driverRef: pace
-    name: Carlos Pace
-    nationality: Brazilian
-  - driverRef: reutemann
-    name: Carlos Reutemann
-    nationality: Argentine
-  - driverRef: amon
-    name: Chris Amon
-    nationality: New Zealander
-  - driverRef: regazzoni
-    name: Clay Regazzoni
-    nationality: Swiss
-  - driverRef: charlton
-    name: Dave Charlton
-    nationality: South African
-  - driverRef: walker
-    name: David Walker
-    nationality: Australian
-  - driverRef: hulme
-    name: Denny Hulme
-    nationality: New Zealander
-  - driverRef: bell
-    name: Derek Bell
-    nationality: British
-  - driverRef: emerson_fittipaldi
-    name: Emerson Fittipaldi
-    nationality: Brazilian
-  - driverRef: cevert
-    name: François Cevert
-    nationality: French
-  - driverRef: migault
-    name: François Migault
-    nationality: French
-  - driverRef: hill
-    name: Graham Hill
-    nationality: British
-  - driverRef: marko
-    name: Helmut Marko
-    nationality: Austrian
-  - driverRef: pescarolo
-    name: Henri Pescarolo
-    nationality: French
-  - driverRef: ganley
-    name: Howden Ganley
-    nationality: New Zealander
-  - driverRef: oliver
-    name: Jackie Oliver
-    nationality: British
-  - driverRef: stewart
-    name: Jackie Stewart
-    nationality: British
-  - driverRef: ickx
-    name: Jacky Ickx
-    nationality: Belgian
-  - driverRef: beltoise
-    name: Jean-Pierre Beltoise
-    nationality: French
-  - driverRef: scheckter
-    name: Jody Scheckter
-    nationality: South African
-  - driverRef: love
-    name: John Love
-    nationality: Rhodesian
-  - driverRef: surtees
-    name: John Surtees
-    nationality: British
-  - driverRef: mario_andretti
-    name: Mario Andretti
-    nationality: American
-  - driverRef: beuttler
-    name: Mike Beuttler
-    nationality: British
-  - driverRef: hailwood
-    name: Mike Hailwood
-    nationality: British
-  - driverRef: galli
-    name: Nanni Galli
-    nationality: Italian
-  - driverRef: lauda
-    name: Niki Lauda
-    nationality: Austrian
-  - driverRef: depailler
-    name: Patrick Depailler
-    nationality: French
-  - driverRef: gethin
-    name: Peter Gethin
-    nationality: British
-  - driverRef: revson
-    name: Peter Revson
-    nationality: American
-  - driverRef: wisell
-    name: Reine Wisell
-    nationality: Swedish
-  - driverRef: stommelen
-    name: Rolf Stommelen
-    nationality: German
-  - driverRef: peterson
-    name: Ronnie Peterson
-    nationality: Swedish
-  - driverRef: posey
-    name: Sam Posey
-    nationality: American
-  - driverRef: barber
-    name: Skip Barber
-    nationality: American
-  - driverRef: schenken
-    name: Tim Schenken
-    nationality: Australian
-  - driverRef: wilson_fittipaldi
-    name: Wilson Fittipaldi
-    nationality: Brazilian
 constructors:
   - constructorRef: brabham
     name: Brabham
     nationality: British
+    drivers:
+      - driverRef: reutemann
+        name: Carlos Reutemann
+        nationality: Argentine
+      - driverRef: hill
+        name: Graham Hill
+        nationality: British
+      - driverRef: wilson_fittipaldi
+        name: Wilson Fittipaldi
+        nationality: Brazilian
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: roig
+        name: Alex Soler-Roig
+        nationality: Spanish
+      - driverRef: brack
+        name: Bill Brack
+        nationality: Canadian
+      - driverRef: redman
+        name: Brian Redman
+        nationality: British
+      - driverRef: marko
+        name: Helmut Marko
+        nationality: Austrian
+      - driverRef: ganley
+        name: Howden Ganley
+        nationality: New Zealander
+      - driverRef: oliver
+        name: Jackie Oliver
+        nationality: British
+      - driverRef: beltoise
+        name: Jean-Pierre Beltoise
+        nationality: French
+      - driverRef: gethin
+        name: Peter Gethin
+        nationality: British
+      - driverRef: wisell
+        name: Reine Wisell
+        nationality: Swedish
   - constructorRef: connew
     name: Connew
     nationality: British
+    drivers:
+      - driverRef: migault
+        name: François Migault
+        nationality: French
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: merzario
+        name: Arturo Merzario
+        nationality: Italian
+      - driverRef: regazzoni
+        name: Clay Regazzoni
+        nationality: Swiss
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: mario_andretti
+        name: Mario Andretti
+        nationality: American
+      - driverRef: galli
+        name: Nanni Galli
+        nationality: Italian
   - constructorRef: march
     name: March
     nationality: British
+    drivers:
+      - driverRef: pace
+        name: Carlos Pace
+        nationality: Brazilian
+      - driverRef: pescarolo
+        name: Henri Pescarolo
+        nationality: French
+      - driverRef: beuttler
+        name: Mike Beuttler
+        nationality: British
+      - driverRef: lauda
+        name: Niki Lauda
+        nationality: Austrian
+      - driverRef: stommelen
+        name: Rolf Stommelen
+        nationality: German
+      - driverRef: peterson
+        name: Ronnie Peterson
+        nationality: Swedish
+      - driverRef: barber
+        name: Skip Barber
+        nationality: American
   - constructorRef: matra
     name: Matra
     nationality: French
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: redman
+        name: Brian Redman
+        nationality: British
+      - driverRef: hulme
+        name: Denny Hulme
+        nationality: New Zealander
+      - driverRef: scheckter
+        name: Jody Scheckter
+        nationality: South African
+      - driverRef: revson
+        name: Peter Revson
+        nationality: American
   - constructorRef: politoys
     name: Politoys
     nationality: British
+    drivers:
+      - driverRef: pescarolo
+        name: Henri Pescarolo
+        nationality: French
   - constructorRef: surtees
     name: Surtees
     nationality: British
+    drivers:
+      - driverRef: adamich
+        name: Andrea de Adamich
+        nationality: Italian
+      - driverRef: love
+        name: John Love
+        nationality: Rhodesian
+      - driverRef: surtees
+        name: John Surtees
+        nationality: British
+      - driverRef: hailwood
+        name: Mike Hailwood
+        nationality: British
+      - driverRef: posey
+        name: Sam Posey
+        nationality: American
+      - driverRef: schenken
+        name: Tim Schenken
+        nationality: Australian
   - constructorRef: team_lotus
     name: Team Lotus
     nationality: British
+    drivers:
+      - driverRef: charlton
+        name: Dave Charlton
+        nationality: South African
+      - driverRef: walker
+        name: David Walker
+        nationality: Australian
+      - driverRef: emerson_fittipaldi
+        name: Emerson Fittipaldi
+        nationality: Brazilian
+      - driverRef: wisell
+        name: Reine Wisell
+        nationality: Swedish
   - constructorRef: tecno
     name: Tecno
     nationality: Italian
+    drivers:
+      - driverRef: bell
+        name: Derek Bell
+        nationality: British
+      - driverRef: galli
+        name: Nanni Galli
+        nationality: Italian
   - constructorRef: tyrrell
     name: Tyrrell
     nationality: British
+    drivers:
+      - driverRef: cevert
+        name: François Cevert
+        nationality: French
+      - driverRef: stewart
+        name: Jackie Stewart
+        nationality: British
+      - driverRef: depailler
+        name: Patrick Depailler
+        nationality: French

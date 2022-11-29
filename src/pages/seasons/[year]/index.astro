@@ -1,0 +1,85 @@
+---
+import type { GetStaticPathsItem } from 'astro';
+import MainLayout from 'layouts/MainLayout.astro';
+import Breadcrumbs from 'components/Breadcrumbs.astro';
+import { SeasonsClient } from 'client/seaons/seasons';
+import { loadData, type Season } from 'helpers/data';
+import colors from 'helpers/colors';
+
+export interface Props {
+	season: Season;
+	hasPrev: boolean;
+	hasNext: boolean;
+}
+
+export async function getStaticPaths(): Promise<GetStaticPathsItem[]> {
+	const seasons = await loadData('seasons');
+
+	return seasons
+		.sort((a, b) => a.year - b.year)
+		.map((season) => {
+			const hasPrev = seasons[0].year < season.year;
+			const hasNext = seasons[seasons.length - 1].year > season.year;
+
+			return {
+				params: { year: season.year.toString() },
+				props: { season, hasPrev, hasNext },
+			};
+		});
+}
+
+const {
+	season: { year },
+	hasNext,
+	hasPrev,
+} = Astro.props as Props;
+
+const metadata = await loadData('metadata');
+---
+
+<MainLayout title={`${year} Season`}>
+	<div class="seasons-header">
+		<Breadcrumbs
+			links={[
+				{ label: 'Seasons', href: '/seasons/' },
+				{ label: `${year} Season`, href: '' },
+			]}
+		/>
+		<nav class="season-pagination">
+			{hasPrev ? <a href={`/seasons/${year - 1}`}>&larr; {year - 1}</a> : null}
+			{hasNext ? <a href={`/seasons/${year + 1}`}>{year + 1} &rarr;</a> : null}
+		</nav>
+	</div>
+	<h1>
+		{year} Season {metadata.currentSeason === year ? '(Current Season)' : ''}
+	</h1>
+	<div class="seasons-data-grid">
+		<a href={`/seasons/${year}/teams-drivers`}>Teams & Drivers</a>
+		<a href={`/seasons/${year}/races`}>Races</a>
+		<a href={`/seasons/${year}/driver-standings`}>Driver Standings</a>
+		<a href={`/seasons/${year}/constructor-standings`}>Constructor Standings</a>
+	</div>
+</MainLayout>
+<style lang="scss">
+	.seasons-data-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: var(--red-600);
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 500;
+			border-radius: 0.5rem;
+			padding: 4rem;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+</style>

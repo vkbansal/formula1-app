@@ -4101,230 +4101,286 @@ rounds:
         position: 21
         points: 0
         wins: 0
-drivers:
-  - driverRef: jones
-    name: Alan Jones
-    nationality: Australian
-  - driverRef: pesenti_rossi
-    name: Alessandro Pesenti-Rossi
-    nationality: Italian
-  - driverRef: ribeiro
-    name: Alex Ribeiro
-    nationality: Brazilian
-  - driverRef: merzario
-    name: Arturo Merzario
-    nationality: Italian
-  - driverRef: evans
-    name: Bob Evans
-    nationality: British
-  - driverRef: hayje
-    name: Boy Lunger
-    nationality: Dutch
-  - driverRef: lunger
-    name: Brett Lunger
-    nationality: American
-  - driverRef: pace
-    name: Carlos Pace
-    nationality: Brazilian
-  - driverRef: reutemann
-    name: Carlos Reutemann
-    nationality: Argentine
-  - driverRef: amon
-    name: Chris Amon
-    nationality: New Zealander
-  - driverRef: regazzoni
-    name: Clay Regazzoni
-    nationality: Swiss
-  - driverRef: andersson
-    name: Conny Andersson
-    nationality: Swedish
-  - driverRef: magee
-    name: Damien Magee
-    nationality: British
-  - driverRef: galica
-    name: Divina Galica
-    nationality: British
-  - driverRef: emerson_fittipaldi
-    name: Emerson Fittipaldi
-    nationality: Brazilian
-  - driverRef: villota
-    name: Emilio de Villota
-    nationality: Spanish
-  - driverRef: zapico
-    name: Emilio Zapico
-    nationality: Spanish
-  - driverRef: nilsson
-    name: Gunnar Nilsson
-    nationality: Swedish
-  - driverRef: edwards
-    name: Guy Edwards
-    nationality: British
-  - driverRef: binder
-    name: Hans Binder
-    nationality: Austrian
-  - driverRef: stuck
-    name: Hans-Joachim Stuck
-    nationality: German
-  - driverRef: ertl
-    name: Harald Ertl
-    nationality: Austrian
-  - driverRef: pescarolo
-    name: Henri Pescarolo
-    nationality: French
-  - driverRef: ashley
-    name: Ian Ashley
-    nationality: British
-  - driverRef: ian_scheckter
-    name: Ian Scheckter
-    nationality: South African
-  - driverRef: hoffmann
-    name: Ingo Hoffmann
-    nationality: Brazilian
-  - driverRef: nelleman
-    name: Jac Nelleman
-    nationality: Danish
-  - driverRef: ickx
-    name: Jacky Ickx
-    nationality: Belgian
-  - driverRef: laffite
-    name: Jacques Laffite
-    nationality: French
-  - driverRef: hunt
-    name: James Hunt
-    nationality: British
-  - driverRef: jarier
-    name: Jean-Pierre Jarier
-    nationality: French
-  - driverRef: mass
-    name: Jochen Mass
-    nationality: German
-  - driverRef: scheckter
-    name: Jody Scheckter
-    nationality: South African
-  - driverRef: watson
-    name: John Watson
-    nationality: British
-  - driverRef: hoshino
-    name: Kazuyoshi Hoshino
-    nationality: Japanese
-  - driverRef: perkins
-    name: Larry Perkins
-    nationality: Australian
-  - driverRef: lombardi
-    name: Lella Lombardi
-    nationality: Italian
-  - driverRef: kessel
-    name: Loris Kessel
-    nationality: Swiss
-  - driverRef: mario_andretti
-    name: Mario Andretti
-    nationality: American
-  - driverRef: hasemi
-    name: Masahiro Hasemi
-    nationality: Japanese
-  - driverRef: leclere
-    name: Michel Leclère
-    nationality: French
-  - driverRef: wilds
-    name: Mike Wilds
-    nationality: British
-  - driverRef: lauda
-    name: Niki Lauda
-    nationality: Austrian
-  - driverRef: takahara
-    name: Noritake Takahara
-    nationality: Japanese
-  - driverRef: stuppacher
-    name: Otto Stuppacher
-    nationality: Austrian
-  - driverRef: depailler
-    name: Patrick Depailler
-    nationality: French
-  - driverRef: neve
-    name: Patrick Nève
-    nationality: Belgian
-  - driverRef: zorzi
-    name: Renzo Zorzi
-    nationality: Italian
-  - driverRef: stommelen
-    name: Rolf Stommelen
-    nationality: German
-  - driverRef: peterson
-    name: Ronnie Peterson
-    nationality: Swedish
-  - driverRef: pryce
-    name: Tom Pryce
-    nationality: British
-  - driverRef: trimmer
-    name: Tony Trimmer
-    nationality: British
-  - driverRef: brambilla
-    name: Vittorio Brambilla
-    nationality: Italian
-  - driverRef: brown
-    name: Warwick Brown
-    nationality: Australian
 constructors:
   - constructorRef: boro
     name: Boro
     nationality: Dutch
+    drivers:
+      - driverRef: perkins
+        name: Larry Perkins
+        nationality: Australian
   - constructorRef: brabham-alfa_romeo
     name: Brabham-Alfa Romeo
     nationality: British
+    drivers:
+      - driverRef: pace
+        name: Carlos Pace
+        nationality: Brazilian
+      - driverRef: reutemann
+        name: Carlos Reutemann
+        nationality: Argentine
+      - driverRef: perkins
+        name: Larry Perkins
+        nationality: Australian
+      - driverRef: stommelen
+        name: Rolf Stommelen
+        nationality: German
   - constructorRef: brabham-ford
     name: Brabham-Ford
     nationality: British
+    drivers:
+      - driverRef: evans
+        name: Bob Evans
+        nationality: British
+      - driverRef: magee
+        name: Damien Magee
+        nationality: British
+      - driverRef: villota
+        name: Emilio de Villota
+        nationality: Spanish
+      - driverRef: nelleman
+        name: Jac Nelleman
+        nationality: Danish
+      - driverRef: lombardi
+        name: Lella Lombardi
+        nationality: Italian
+      - driverRef: kessel
+        name: Loris Kessel
+        nationality: Swiss
+      - driverRef: neve
+        name: Patrick Nève
+        nationality: Belgian
   - constructorRef: brm
     name: BRM
     nationality: British
+    drivers:
+      - driverRef: ashley
+        name: Ian Ashley
+        nationality: British
   - constructorRef: ensign
     name: Ensign
     nationality: British
+    drivers:
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: binder
+        name: Hans Binder
+        nationality: Austrian
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: neve
+        name: Patrick Nève
+        nationality: Belgian
   - constructorRef: ferrari
     name: Ferrari
     nationality: Italian
+    drivers:
+      - driverRef: reutemann
+        name: Carlos Reutemann
+        nationality: Argentine
+      - driverRef: regazzoni
+        name: Clay Regazzoni
+        nationality: Swiss
+      - driverRef: lauda
+        name: Niki Lauda
+        nationality: Austrian
   - constructorRef: fittipaldi
     name: Fittipaldi
     nationality: Brazilian
+    drivers:
+      - driverRef: emerson_fittipaldi
+        name: Emerson Fittipaldi
+        nationality: Brazilian
+      - driverRef: hoffmann
+        name: Ingo Hoffmann
+        nationality: Brazilian
   - constructorRef: hesketh
     name: Hesketh
     nationality: British
+    drivers:
+      - driverRef: ribeiro
+        name: Alex Ribeiro
+        nationality: Brazilian
+      - driverRef: edwards
+        name: Guy Edwards
+        nationality: British
+      - driverRef: ertl
+        name: Harald Ertl
+        nationality: Austrian
+      - driverRef: stommelen
+        name: Rolf Stommelen
+        nationality: German
   - constructorRef: kojima
     name: Kojima
     nationality: Japanese
+    drivers:
+      - driverRef: hasemi
+        name: Masahiro Hasemi
+        nationality: Japanese
   - constructorRef: ligier
     name: Ligier
     nationality: French
+    drivers:
+      - driverRef: laffite
+        name: Jacques Laffite
+        nationality: French
   - constructorRef: maki
     name: Maki
     nationality: Japanese
+    drivers:
+      - driverRef: trimmer
+        name: Tony Trimmer
+        nationality: British
   - constructorRef: march
     name: March
     nationality: British
+    drivers:
+      - driverRef: merzario
+        name: Arturo Merzario
+        nationality: Italian
+      - driverRef: stuck
+        name: Hans-Joachim Stuck
+        nationality: German
+      - driverRef: lombardi
+        name: Lella Lombardi
+        nationality: Italian
+      - driverRef: peterson
+        name: Ronnie Peterson
+        nationality: Swedish
+      - driverRef: brambilla
+        name: Vittorio Brambilla
+        nationality: Italian
   - constructorRef: mclaren
     name: McLaren
     nationality: British
+    drivers:
+      - driverRef: hunt
+        name: James Hunt
+        nationality: British
+      - driverRef: mass
+        name: Jochen Mass
+        nationality: German
   - constructorRef: parnelli
     name: Parnelli
     nationality: American
+    drivers:
+      - driverRef: mario_andretti
+        name: Mario Andretti
+        nationality: American
   - constructorRef: penske
     name: Penske
     nationality: American
+    drivers:
+      - driverRef: hayje
+        name: Boy Lunger
+        nationality: Dutch
+      - driverRef: watson
+        name: John Watson
+        nationality: British
   - constructorRef: shadow
     name: Shadow
     nationality: British
+    drivers:
+      - driverRef: jarier
+        name: Jean-Pierre Jarier
+        nationality: French
+      - driverRef: wilds
+        name: Mike Wilds
+        nationality: British
+      - driverRef: pryce
+        name: Tom Pryce
+        nationality: British
   - constructorRef: surtees
     name: Surtees
     nationality: British
+    drivers:
+      - driverRef: jones
+        name: Alan Jones
+        nationality: Australian
+      - driverRef: lunger
+        name: Brett Lunger
+        nationality: American
+      - driverRef: andersson
+        name: Conny Andersson
+        nationality: Swedish
+      - driverRef: galica
+        name: Divina Galica
+        nationality: British
+      - driverRef: pescarolo
+        name: Henri Pescarolo
+        nationality: French
+      - driverRef: takahara
+        name: Noritake Takahara
+        nationality: Japanese
   - constructorRef: team_lotus
     name: Team Lotus
     nationality: British
+    drivers:
+      - driverRef: evans
+        name: Bob Evans
+        nationality: British
+      - driverRef: nilsson
+        name: Gunnar Nilsson
+        nationality: Swedish
+      - driverRef: mario_andretti
+        name: Mario Andretti
+        nationality: American
+      - driverRef: peterson
+        name: Ronnie Peterson
+        nationality: Swedish
   - constructorRef: tyrrell
     name: Tyrrell
     nationality: British
+    drivers:
+      - driverRef: pesenti_rossi
+        name: Alessandro Pesenti-Rossi
+        nationality: Italian
+      - driverRef: ian_scheckter
+        name: Ian Scheckter
+        nationality: South African
+      - driverRef: scheckter
+        name: Jody Scheckter
+        nationality: South African
+      - driverRef: hoshino
+        name: Kazuyoshi Hoshino
+        nationality: Japanese
+      - driverRef: stuppacher
+        name: Otto Stuppacher
+        nationality: Austrian
+      - driverRef: depailler
+        name: Patrick Depailler
+        nationality: French
   - constructorRef: williams
     name: Williams
     nationality: British
+    drivers:
+      - driverRef: zapico
+        name: Emilio Zapico
+        nationality: Spanish
+      - driverRef: zorzi
+        name: Renzo Zorzi
+        nationality: Italian
   - constructorRef: wolf
     name: Wolf
     nationality: Canadian
+    drivers:
+      - driverRef: merzario
+        name: Arturo Merzario
+        nationality: Italian
+      - driverRef: amon
+        name: Chris Amon
+        nationality: New Zealander
+      - driverRef: binder
+        name: Hans Binder
+        nationality: Austrian
+      - driverRef: ickx
+        name: Jacky Ickx
+        nationality: Belgian
+      - driverRef: leclere
+        name: Michel Leclère
+        nationality: French
+      - driverRef: brown
+        name: Warwick Brown
+        nationality: Australian

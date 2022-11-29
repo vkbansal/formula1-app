@@ -120,12 +120,12 @@ export interface SeasonConstructor {
 	constructorRef: string;
 	name: string;
 	nationality: string;
+	drivers: SeasonDriver[];
 }
 
 export interface Season {
 	year: number;
 	rounds: Round[];
-	drivers: SeasonDriver[];
 	constructors: SeasonConstructor[];
 }
 
