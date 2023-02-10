@@ -24,8 +24,7 @@ FROM (
 	GROUP BY `R`.`year`
 ) AS `FR`
 LEFT OUTER JOIN `races` AS `R` USING (`round`, `year`)
-LEFT OUTER JOIN `driverStandings` AS DS USING (`raceId`)
-;
+LEFT OUTER JOIN `driverStandings` AS DS USING (`raceId`);
 
 CREATE TABLE `constructorChampionships` (
 	`constructorChampionshipId` int(11) NOT NULL AUTO_INCREMENT,
@@ -52,6 +51,27 @@ FROM (
 ) AS `FR`
 LEFT OUTER JOIN `races` AS `R` USING (`round`, `year`)
 LEFT OUTER JOIN `constructorStandings` AS CS USING (`raceId`);
+
+
+CREATE TABLE `teams` (
+	`constructorId` int(11) NOT NULL,
+  `driverId` int(11) NOT NULL,
+  `year` int(11) NOT NULL,
+	UNIQUE KEY `team_unique_key` (`constructorId`,`driverId`, `year`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `teams`
+SELECT DISTINCT
+	`C`.`constructorId`,
+	`D`.`driverId`,
+	`R`.`year`
+FROM `results` AS `RE`
+LEFT OUTER JOIN `races` AS `R`
+	ON `RE`.`raceId` = `R`.`raceId`
+LEFT OUTER JOIN `constructors` AS `C`
+	ON `C`.`constructorId` = `RE`.`constructorId`
+LEFT OUTER JOIN `drivers` AS `D`
+	ON `D`.`driverId` = `RE`.`driverId`;
 
 ALTER TABLE `circuits` ENGINE=InnoDB;
 ALTER TABLE `constructorResults` ENGINE=InnoDB;
@@ -141,3 +161,9 @@ ALTER TABLE `constructorChampionships` ADD CONSTRAINT `constructorChampionships_
 
 ALTER TABLE `constructorChampionships` ADD CONSTRAINT `constructorChampionships_fk_constructorId`
 	FOREIGN KEY (`constructorId`) REFERENCES `constructors` (`constructorId`);
+
+ALTER TABLE `teams` ADD CONSTRAINT `teams_fk_constructorId`
+	FOREIGN KEY (`constructorId`) REFERENCES `constructors` (`constructorId`);
+
+ALTER TABLE `teams` ADD CONSTRAINT `teams_fk_driverId`
+	FOREIGN KEY (`driverId`) REFERENCES `drivers` (`driverId`);

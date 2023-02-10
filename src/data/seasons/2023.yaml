@@ -374,4 +374,104 @@ rounds:
     podium: []
     driverStandings: []
     constructorStandings: []
-constructors: []
+constructors:
+  - constructorRef: alfa
+    name: Alfa Romeo
+    nationality: Swiss
+    drivers:
+      - driverRef: zhou
+        name: Guanyu Zhou
+        nationality: Chinese
+      - driverRef: bottas
+        name: Valtteri Bottas
+        nationality: Finnish
+  - constructorRef: alphatauri
+    name: AlphaTauri
+    nationality: Italian
+    drivers:
+      - driverRef: de_vries
+        name: Nyck de Vries
+        nationality: Dutch
+      - driverRef: tsunoda
+        name: Yuki Tsunoda
+        nationality: Japanese
+  - constructorRef: alpine
+    name: Alpine F1 Team
+    nationality: French
+    drivers:
+      - driverRef: ocon
+        name: Esteban Ocon
+        nationality: French
+      - driverRef: gasly
+        name: Pierre Gasly
+        nationality: French
+  - constructorRef: aston_martin
+    name: Aston Martin
+    nationality: British
+    drivers:
+      - driverRef: alonso
+        name: Fernando Alonso
+        nationality: Spanish
+      - driverRef: stroll
+        name: Lance Stroll
+        nationality: Canadian
+  - constructorRef: ferrari
+    name: Ferrari
+    nationality: Italian
+    drivers:
+      - driverRef: sainz
+        name: Carlos Sainz
+        nationality: Spanish
+      - driverRef: leclerc
+        name: Charles Leclerc
+        nationality: Monegasque
+  - constructorRef: haas
+    name: Haas F1 Team
+    nationality: American
+    drivers:
+      - driverRef: kevin_magnussen
+        name: Kevin Magnussen
+        nationality: Danish
+      - driverRef: hulkenberg
+        name: Nico Hülkenberg
+        nationality: German
+  - constructorRef: mclaren
+    name: McLaren
+    nationality: British
+    drivers:
+      - driverRef: norris
+        name: Lando Norris
+        nationality: British
+      - driverRef: piastri
+        name: Oscar Piastri
+        nationality: Australian
+  - constructorRef: mercedes
+    name: Mercedes
+    nationality: German
+    drivers:
+      - driverRef: russell
+        name: George Russell
+        nationality: British
+      - driverRef: hamilton
+        name: Lewis Hamilton
+        nationality: British
+  - constructorRef: red_bull
+    name: Red Bull
+    nationality: Austrian
+    drivers:
+      - driverRef: max_verstappen
+        name: Max Verstappen
+        nationality: Dutch
+      - driverRef: perez
+        name: Sergio Pérez
+        nationality: Mexican
+  - constructorRef: williams
+    name: Williams
+    nationality: British
+    drivers:
+      - driverRef: albon
+        name: Alexander Albon
+        nationality: Thai
+      - driverRef: sargeant
+        name: Logan Sargeant
+        nationality: American
