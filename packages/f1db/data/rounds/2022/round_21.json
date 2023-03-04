@@ -1,0 +1,465 @@
+{
+	"circuit": {
+		"circuitRef": "interlagos",
+		"country": "Brazil",
+		"location": "São Paulo",
+		"name": "Autódromo José Carlos Pace"
+	},
+	"date": "2022-11-13",
+	"driversData": [
+		{
+			"constructorRef": "mercedes",
+			"driverRef": "russell",
+			"grid": 1,
+			"lapPositions": [
+				1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+				2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+				1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+			],
+			"pitStops": [
+				{ "lap": 24, "stop": 1 },
+				{ "lap": 49, "stop": 2 }
+			],
+			"points": 26,
+			"position": 1,
+			"positionOrder": 1,
+			"positionText": "1",
+			"qualifying": {
+				"position": 3,
+				"q1": "1:14.427",
+				"q2": "1:11.318",
+				"q3": "1:12.059"
+			}
+		},
+		{
+			"constructorRef": "mercedes",
+			"driverRef": "hamilton",
+			"grid": 2,
+			"lapPositions": [
+				2, 2, 2, 2, 2, 2, 8, 8, 6, 6, 6, 6, 6, 5, 4, 4, 3, 3, 3, 3, 3, 3, 3, 2,
+				1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2,
+				3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+			],
+			"pitStops": [
+				{ "lap": 29, "stop": 1 },
+				{ "lap": 48, "stop": 2 }
+			],
+			"points": 18,
+			"position": 2,
+			"positionOrder": 2,
+			"positionText": "2",
+			"qualifying": {
+				"position": 8,
+				"q1": "1:13.403",
+				"q2": "1:11.539",
+				"q3": "1:12.611"
+			}
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "sainz",
+			"grid": 7,
+			"lapPositions": [
+				7, 7, 7, 7, 7, 7, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 4, 11, 11, 9, 8, 8, 8,
+				5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+				3, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3
+			],
+			"pitStops": [
+				{ "lap": 17, "stop": 1 },
+				{ "lap": 36, "stop": 2 },
+				{ "lap": 53, "stop": 3 }
+			],
+			"points": 15,
+			"position": 3,
+			"positionOrder": 3,
+			"positionText": "3",
+			"qualifying": {
+				"position": 5,
+				"q1": "1:14.680",
+				"q2": "1:10.890",
+				"q3": "1:12.357"
+			}
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "leclerc",
+			"grid": 5,
+			"lapPositions": [
+				6, 6, 6, 6, 6, 6, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 17, 17, 17,
+				16, 16, 17, 17, 16, 16, 15, 15, 15, 14, 13, 13, 13, 13, 13, 12, 9, 9, 9,
+				9, 9, 9, 9, 8, 10, 14, 13, 11, 9, 8, 8, 7, 7, 6, 6, 6, 6, 6, 6, 6, 5, 5,
+				5, 5, 4, 4, 4, 4, 4, 4, 4, 4
+			],
+			"pitStops": [
+				{ "lap": 7, "stop": 1 },
+				{ "lap": 21, "stop": 2 },
+				{ "lap": 44, "stop": 3 }
+			],
+			"points": 12,
+			"position": 4,
+			"positionOrder": 4,
+			"positionText": "4",
+			"qualifying": {
+				"position": 10,
+				"q1": "1:14.486",
+				"q2": "1:10.950",
+				"q3": ""
+			}
+		},
+		{
+			"constructorRef": "alpine",
+			"driverRef": "alonso",
+			"grid": 17,
+			"lapPositions": [
+				15, 15, 15, 15, 15, 15, 12, 12, 12, 12, 12, 12, 12, 13, 17, 17, 16, 16,
+				16, 14, 13, 13, 12, 12, 7, 7, 6, 6, 5, 5, 5, 5, 5, 5, 7, 15, 14, 13, 13,
+				13, 12, 12, 12, 11, 9, 7, 7, 5, 5, 5, 5, 5, 9, 9, 9, 9, 9, 9, 9, 7, 6,
+				6, 6, 6, 5, 5, 5, 5, 5, 5, 5
+			],
+			"pitStops": [
+				{ "lap": 14, "stop": 1 },
+				{ "lap": 35, "stop": 2 },
+				{ "lap": 52, "stop": 3 }
+			],
+			"points": 10,
+			"position": 5,
+			"positionOrder": 5,
+			"positionText": "5",
+			"qualifying": {
+				"position": 7,
+				"q1": "1:13.542",
+				"q2": "1:11.394",
+				"q3": "1:12.504"
+			}
+		},
+		{
+			"constructorRef": "red_bull",
+			"driverRef": "max_verstappen",
+			"grid": 3,
+			"lapPositions": [
+				3, 3, 3, 3, 3, 3, 17, 17, 17, 17, 17, 17, 17, 17, 16, 16, 15, 15, 14,
+				12, 12, 12, 14, 17, 17, 17, 17, 17, 17, 16, 16, 16, 15, 15, 15, 12, 11,
+				11, 11, 11, 10, 10, 10, 9, 8, 6, 6, 6, 11, 11, 10, 10, 10, 10, 10, 10,
+				10, 10, 10, 9, 9, 9, 7, 7, 7, 7, 6, 6, 6, 6, 6
+			],
+			"pitStops": [
+				{ "lap": 7, "stop": 1 },
+				{ "lap": 23, "stop": 2 },
+				{ "lap": 48, "stop": 3 }
+			],
+			"points": 8,
+			"position": 6,
+			"positionOrder": 6,
+			"positionText": "6",
+			"qualifying": {
+				"position": 2,
+				"q1": "1:13.625",
+				"q2": "1:10.881",
+				"q3": "1:11.877"
+			}
+		},
+		{
+			"constructorRef": "red_bull",
+			"driverRef": "perez",
+			"grid": 4,
+			"lapPositions": [
+				4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4,
+				4, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4,
+				4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 5, 6, 6, 7, 7, 7, 7, 7
+			],
+			"pitStops": [
+				{ "lap": 23, "stop": 1 },
+				{ "lap": 47, "stop": 2 }
+			],
+			"points": 6,
+			"position": 7,
+			"positionOrder": 7,
+			"positionText": "7",
+			"qualifying": {
+				"position": 9,
+				"q1": "1:13.613",
+				"q2": "1:11.456",
+				"q3": "1:15.601"
+			}
+		},
+		{
+			"constructorRef": "alpine",
+			"driverRef": "ocon",
+			"grid": 16,
+			"lapPositions": [
+				14, 14, 14, 14, 14, 14, 11, 11, 11, 11, 11, 11, 10, 10, 10, 10, 10, 8,
+				7, 7, 7, 7, 7, 8, 12, 11, 10, 10, 10, 8, 8, 8, 8, 8, 8, 7, 7, 7, 7, 7,
+				7, 7, 7, 7, 6, 5, 5, 11, 9, 9, 9, 9, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8,
+				8, 8, 8, 8, 8, 8, 8
+			],
+			"pitStops": [
+				{ "lap": 24, "stop": 1 },
+				{ "lap": 47, "stop": 2 }
+			],
+			"points": 4,
+			"position": 8,
+			"positionOrder": 8,
+			"positionText": "8",
+			"qualifying": {
+				"position": 6,
+				"q1": "1:14.663",
+				"q2": "1:11.587",
+				"q3": "1:12.425"
+			}
+		},
+		{
+			"constructorRef": "alfa",
+			"driverRef": "bottas",
+			"grid": 14,
+			"lapPositions": [
+				11, 11, 11, 11, 11, 11, 10, 10, 10, 10, 10, 9, 9, 9, 9, 9, 8, 7, 6, 6,
+				6, 6, 6, 7, 10, 9, 8, 7, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+				5, 9, 8, 7, 6, 6, 6, 6, 5, 5, 5, 5, 5, 5, 5, 6, 7, 7, 9, 9, 9, 9, 9, 9,
+				9, 9, 9
+			],
+			"pitStops": [
+				{ "lap": 24, "stop": 1 },
+				{ "lap": 45, "stop": 2 }
+			],
+			"points": 2,
+			"position": 9,
+			"positionOrder": 9,
+			"positionText": "9",
+			"qualifying": { "position": 18, "q1": "1:15.486", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "aston_martin",
+			"driverRef": "stroll",
+			"grid": 15,
+			"lapPositions": [
+				12, 12, 12, 12, 12, 12, 9, 9, 9, 9, 9, 10, 11, 11, 11, 11, 11, 10, 10,
+				10, 10, 10, 10, 9, 6, 6, 5, 5, 7, 15, 15, 15, 14, 14, 14, 13, 13, 12,
+				12, 12, 13, 13, 13, 13, 12, 8, 9, 10, 15, 15, 14, 14, 13, 13, 13, 13,
+				13, 13, 13, 12, 12, 12, 11, 11, 10, 10, 10, 10, 10, 10, 10
+			],
+			"pitStops": [
+				{ "lap": 29, "stop": 1 },
+				{ "lap": 48, "stop": 2 }
+			],
+			"points": 1,
+			"position": 10,
+			"positionOrder": 10,
+			"positionText": "10",
+			"qualifying": {
+				"position": 15,
+				"q1": "1:14.398",
+				"q2": "1:12.210",
+				"q3": null
+			}
+		},
+		{
+			"constructorRef": "aston_martin",
+			"driverRef": "vettel",
+			"grid": 9,
+			"lapPositions": [
+				8, 8, 8, 8, 8, 8, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 5, 4, 4, 4, 4, 4, 4, 3,
+				3, 5, 9, 9, 8, 7, 7, 7, 7, 7, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 11, 10,
+				8, 7, 7, 8, 8, 7, 7, 7, 7, 7, 7, 7, 10, 10, 10, 10, 10, 11, 11, 11, 11,
+				11, 11, 11
+			],
+			"pitStops": [
+				{ "lap": 26, "stop": 1 },
+				{ "lap": 45, "stop": 2 }
+			],
+			"points": 0,
+			"position": 11,
+			"positionOrder": 11,
+			"positionText": "11",
+			"qualifying": {
+				"position": 13,
+				"q1": "1:13.597",
+				"q2": "1:11.678",
+				"q3": ""
+			}
+		},
+		{
+			"constructorRef": "alfa",
+			"driverRef": "zhou",
+			"grid": 13,
+			"lapPositions": [
+				13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 12, 12, 12, 18, 18,
+				18, 18, 15, 15, 15, 14, 9, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 10,
+				12, 17, 17, 17, 16, 16, 16, 16, 16, 15, 13, 14, 13, 13, 12, 12, 11, 11,
+				11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 13, 13, 13, 13
+			],
+			"pitStops": [
+				{ "lap": 16, "stop": 1 },
+				{ "lap": 37, "stop": 2 }
+			],
+			"points": 0,
+			"position": 12,
+			"positionOrder": 12,
+			"positionText": "12",
+			"qualifying": { "position": 17, "q1": "1:15.197", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "haas",
+			"driverRef": "mick_schumacher",
+			"grid": 12,
+			"lapPositions": [
+				10, 10, 10, 10, 10, 10, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 8, 9, 9,
+				9, 10, 14, 13, 13, 13, 13, 12, 12, 12, 12, 12, 13, 11, 10, 10, 10, 10,
+				11, 11, 11, 12, 11, 10, 16, 15, 14, 14, 13, 13, 12, 12, 12, 12, 12, 12,
+				12, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14
+			],
+			"pitStops": [
+				{ "lap": 24, "stop": 1 },
+				{ "lap": 46, "stop": 2 }
+			],
+			"points": 0,
+			"position": 13,
+			"positionOrder": 13,
+			"positionText": "13",
+			"qualifying": { "position": 20, "q1": "1:16.361", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "alphatauri",
+			"driverRef": "gasly",
+			"grid": 10,
+			"lapPositions": [
+				9, 9, 9, 9, 9, 9, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 6, 8, 15, 14, 14, 13,
+				13, 8, 8, 7, 8, 9, 9, 9, 9, 9, 9, 10, 17, 17, 16, 16, 14, 14, 14, 14,
+				14, 13, 12, 12, 12, 10, 10, 11, 11, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+				14, 14, 14, 14, 13, 13, 12, 12, 12, 12
+			],
+			"pitStops": [
+				{ "lap": 19, "stop": 1 },
+				{ "lap": 35, "stop": 2 },
+				{ "lap": 52, "stop": 3 }
+			],
+			"points": 0,
+			"position": 14,
+			"positionOrder": 14,
+			"positionText": "14",
+			"qualifying": {
+				"position": 12,
+				"q1": "1:14.371",
+				"q2": "1:11.675",
+				"q3": ""
+			}
+		},
+		{
+			"constructorRef": "williams",
+			"driverRef": "albon",
+			"grid": 19,
+			"lapPositions": [
+				17, 17, 17, 18, 18, 18, 16, 16, 16, 16, 16, 15, 14, 14, 13, 13, 12, 12,
+				12, 11, 11, 11, 11, 11, 11, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 16,
+				16, 15, 15, 15, 15, 15, 15, 15, 15, 14, 15, 17, 17, 17, 16, 16, 16, 16,
+				15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15
+			],
+			"pitStops": [
+				{ "lap": 4, "stop": 1 },
+				{ "lap": 25, "stop": 2 },
+				{ "lap": 47, "stop": 3 }
+			],
+			"points": 0,
+			"position": 15,
+			"positionOrder": 15,
+			"positionText": "15",
+			"qualifying": {
+				"position": 11,
+				"q1": "1:14.324",
+				"q2": "1:11.631",
+				"q3": ""
+			}
+		},
+		{
+			"constructorRef": "williams",
+			"driverRef": "latifi",
+			"grid": 18,
+			"lapPositions": [
+				16, 16, 16, 16, 16, 16, 14, 14, 14, 14, 14, 16, 16, 16, 15, 15, 14, 14,
+				15, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18,
+				18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 17, 17, 17, 17,
+				17, 17, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16
+			],
+			"pitStops": [
+				{ "lap": 20, "stop": 1 },
+				{ "lap": 32, "stop": 2 },
+				{ "lap": 52, "stop": 3 }
+			],
+			"points": 0,
+			"position": 16,
+			"positionOrder": 16,
+			"positionText": "16",
+			"qualifying": { "position": 16, "q1": "1:15.095", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "alphatauri",
+			"driverRef": "tsunoda",
+			"grid": 0,
+			"lapPositions": [
+				18, 18, 18, 17, 17, 17, 15, 15, 15, 15, 15, 14, 15, 15, 14, 14, 13, 13,
+				13, 13, 17, 16, 16, 15, 15, 14, 14, 14, 15, 14, 14, 14, 16, 16, 16, 14,
+				15, 14, 14, 16, 17, 17, 17, 17, 17, 17, 17, 16, 16, 16, 15, 15, 15, 15,
+				16, 16, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17
+			],
+			"pitStops": [
+				{ "lap": 20, "stop": 1 },
+				{ "lap": 40, "stop": 2 },
+				{ "lap": 54, "stop": 3 }
+			],
+			"points": 0,
+			"position": 17,
+			"positionOrder": 17,
+			"positionText": "17",
+			"qualifying": { "position": 19, "q1": "1:16.264", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "mclaren",
+			"driverRef": "norris",
+			"grid": 6,
+			"lapPositions": [
+				5, 5, 5, 5, 5, 5, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 6, 5, 5, 5, 5, 5, 5, 6,
+				13, 12, 12, 12, 12, 10, 10, 10, 10, 10, 9, 8, 8, 8, 8, 8, 8, 8, 9, 8,
+				10, 16, 14, 13, 12, 12
+			],
+			"pitStops": [
+				{ "lap": 24, "stop": 1 },
+				{ "lap": 45, "stop": 2 }
+			],
+			"points": 0,
+			"position": null,
+			"positionOrder": 18,
+			"positionText": "R",
+			"qualifying": {
+				"position": 4,
+				"q1": "1:13.106",
+				"q2": "1:11.377",
+				"q3": "1:12.263"
+			}
+		},
+		{
+			"constructorRef": "haas",
+			"driverRef": "kevin_magnussen",
+			"grid": 8,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": null,
+			"positionOrder": 19,
+			"positionText": "R"
+		},
+		{
+			"constructorRef": "mclaren",
+			"driverRef": "ricciardo",
+			"grid": 11,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": null,
+			"positionOrder": 20,
+			"positionText": "R"
+		}
+	],
+	"name": "Brazilian Grand Prix",
+	"raceId": 1095,
+	"round": 21,
+	"year": 2022
+}

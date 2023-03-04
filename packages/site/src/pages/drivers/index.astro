@@ -1,0 +1,256 @@
+---
+import { drivers } from 'f1db/data';
+
+import MainLayout from '$/layouts/MainLayout.astro';
+import Breadcrumbs from '$/components/Breadcrumbs.astro';
+import { currentSeason } from '$/data/metadata.js';
+import Nationality from '$/components/Nationality.astro';
+
+const driversArr = Object.values(drivers);
+const currentSeasonDrivers = driversArr
+	.filter((driver) => !!driver.seasons.find((season) => season.year === currentSeason))
+	.map((driver) => driver.driverRef);
+const enabledChars = driversArr.reduce((p, c) => {
+	p.add(c.name.charAt(0).toUpperCase());
+	return p;
+}, new Set<string>());
+
+const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
+export const prerender = true;
+---
+
+<MainLayout title="Drivers">
+	<Breadcrumbs links={[{ label: 'Drivers', href: '/drivers/' }]} />
+	<h1>Drivers</h1>
+	<p>Note: Lap time data is available from the 1996 season onwards.</p>
+	<div class="char-nav">
+		<a class="nav-link nav-link-active" href="#">
+			{currentSeason}
+		</a>
+		<div class="char-nav-chars">
+			{
+				CHARS.map((char) => {
+					const disabled = !enabledChars.has(char);
+
+					return (
+						<a
+							class:list={['nav-link', { 'nav-link-disabled': disabled }]}
+							href={disabled ? 'javascript:void(0)' : `#${char}`}
+						>
+							{char}
+						</a>
+					);
+				})
+			}
+		</div>
+		<a class="nav-link" href="#all">All</a>
+	</div>
+	<table class="table table-fixed" id="drivers-table">
+		<thead>
+			<tr>
+				<th class="sortable-column">
+					<button type="button" class="sort-btn" data-sort="string">
+						<span>Name</span>
+						<span aria-hidden="true" class="sort-indicator"></span>
+					</button>
+				</th>
+				<th class="sortable-column">
+					<button type="button" class="sort-btn" data-sort="string">
+						<span>Nationality</span>
+						<span aria-hidden="true" class="sort-indicator"></span>
+					</button>
+				</th>
+				<th class="sortable-column">
+					<button type="button" class="sort-btn" data-sort="number">
+						<span>Total Races</span>
+						<span aria-hidden="true" class="sort-indicator"></span>
+					</button>
+				</th>
+				<th class="sortable-column">
+					<button type="button" class="sort-btn" data-sort="number">
+						<span>Races Won</span>
+						<span aria-hidden="true" class="sort-indicator"></span>
+					</button>
+				</th>
+				<th class="sortable-column">
+					<button type="button" class="sort-btn" data-sort="number">
+						<span>Total Laps</span>
+						<span aria-hidden="true" class="sort-indicator"></span>
+					</button>
+				</th>
+				<th class="sortable-column">
+					<button type="button" class="sort-btn" data-sort="number">
+						<span>Laps Lead</span>
+						<span aria-hidden="true" class="sort-indicator"></span>
+					</button>
+				</th>
+				<th class="sortable-column text-right">
+					<button type="button" class="sort-btn" data-sort="number">
+						<span>Championships</span>
+						<span aria-hidden="true" class="sort-indicator"></span>
+					</button>
+				</th>
+			</tr>
+		</thead>
+		<tbody
+			>{
+				driversArr.map((driver) => {
+					const championshipsWon = driver.championshipStandings
+						.filter((c) => c.position === 1)
+						.map((c) => c.year);
+
+					return (
+						<tr data-char={driver.name.charAt(0).toUpperCase()} data-ref={driver.driverRef}>
+							<td data-value={driver.name}>
+								<a href={`/drivers/${driver.driverRef}`}>{driver.name}</a>
+							</td>
+							<td data-value={driver.nationality}>
+								{driver.nationality ? (
+									<>
+										<Nationality nationality={driver.nationality} />
+										<span>{driver.nationality}</span>
+									</>
+								) : (
+									'-'
+								)}
+							</td>
+							<td class="text-right" data-value={driver.totalRaces}>
+								{driver.totalRaces}
+							</td>
+							<td class="text-right" data-value={driver.raceWins}>
+								{driver.raceWins}
+							</td>
+							<td class="text-right" data-value={driver.totalLaps}>
+								{driver.totalLaps || '-'}
+							</td>
+							<td class="text-right" data-value={driver.lapsLead}>
+								{driver.lapsLead || '-'}
+							</td>
+							<td class="text-right" data-value={championshipsWon.length}>
+								{championshipsWon.length > 0 ? (
+									<details>
+										<summary>{championshipsWon.length}</summary>
+										{championshipsWon.join(', ')}
+									</details>
+								) : (
+									<span>0</span>
+								)}
+							</td>
+						</tr>
+					);
+				})
+			}</tbody
+		>
+	</table>
+</MainLayout>
+
+<style lang="scss">
+	:global(#drivers-table) {
+		& > thead {
+			position: sticky;
+			top: 3rem;
+			background-color: var(--body-bg);
+
+			& > tr {
+				box-shadow: 0 1px 0 var(--border);
+			}
+		}
+	}
+</style>
+<script define:vars={{ currentSeasonDrivers }}>
+	const table = document.getElementById('drivers-table');
+	const nav_links = document.querySelectorAll('.nav-link');
+	const sort_btns = document.querySelectorAll('.sort-btn');
+
+	function filterBySelection() {
+		const hash = window.location.hash.slice(1);
+
+		for (const row of table.tBodies[0].rows) {
+			if (hash === 'all') {
+				// show all drivers
+				row.style.removeProperty('display');
+			} else if (hash.length === 1) {
+				// show filtered by alphabet
+				if (row.dataset.char === hash) {
+					row.style.removeProperty('display');
+				} else {
+					row.style.setProperty('display', 'none');
+				}
+			} else {
+				// show current season
+
+				if (currentSeasonDrivers.includes(row.dataset.ref)) {
+					row.style.removeProperty('display');
+				} else {
+					row.style.setProperty('display', 'none');
+				}
+			}
+		}
+
+		nav_links.forEach((link) => {
+			if (link.href.endsWith(`#${hash}`)) {
+				link.classList.add('nav-link-active');
+			} else {
+				link.classList.remove('nav-link-active');
+			}
+		});
+	}
+
+	window.addEventListener('hashchange', filterBySelection);
+
+	filterBySelection();
+
+	sort_btns.forEach((btn) => {
+		btn.addEventListener('click', (e) => {
+			const current = btn.parentElement.getAttribute('aria-sort');
+			const sortType = btn.dataset.sort;
+			const rows = Array.from(table.tBodies[0].rows);
+			const colIndex = Array.from(table.tHead.rows[0].cells).indexOf(btn.parentElement);
+			const sortOrder = !current || current === 'descending' ? 'ascending' : 'descending';
+
+			document.querySelectorAll('[aria-sort]').forEach((sort) => {
+				sort.removeAttribute('aria-sort');
+			});
+
+			btn.parentElement.setAttribute('aria-sort', sortOrder);
+
+			rows.sort((rowA, rowB) => {
+				const a =
+					sortType === 'number'
+						? parseFloat(rowA.cells[colIndex].dataset.value)
+						: rowA.cells[colIndex].dataset.value;
+				const b =
+					sortType === 'number'
+						? parseFloat(rowB.cells[colIndex].dataset.value)
+						: rowB.cells[colIndex].dataset.value;
+
+				if (sortType === 'number') {
+					if (Number.isNaN(a) && Number.isNaN(b)) {
+						return 0;
+					}
+
+					if (Number.isNaN(a) && Number.isFinite(b)) {
+						return 1;
+					}
+
+					if (Number.isFinite(a) && Number.isNaN(b)) {
+						return -1;
+					}
+				}
+
+				if (a > b) {
+					return sortOrder === 'ascending' ? 1 : -1;
+				}
+
+				if (a < b) {
+					return sortOrder === 'ascending' ? -1 : 1;
+				}
+
+				return 0;
+			});
+
+			table.tBodies[0].replaceChildren(...rows);
+		});
+	});
+</script>

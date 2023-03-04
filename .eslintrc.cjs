@@ -24,20 +24,9 @@ module.exports = {
 	rules: {
 		'no-new-object': 2,
 		'no-lonely-if': 2,
-		camelcase: 2,
 		'no-console': 2,
 		'no-restricted-imports': 0,
 		'no-unused-vars': 0,
-		'@typescript-eslint/no-restricted-imports': [
-			2,
-			{
-				paths: [
-					{
-						name: 'preact/debug',
-					},
-				],
-			},
-		],
 		'@typescript-eslint/no-unused-vars': [
 			2,
 			{
@@ -59,6 +48,14 @@ module.exports = {
 				prefer: 'type-imports',
 			},
 		],
+		'@typescript-eslint/naming-convention': [
+			2,
+			{
+				selector: ['interface', 'typeAlias'],
+				format: ['StrictPascalCase'],
+				prefix: ['I'],
+			},
+		],
 	},
 	overrides: [
 		{
@@ -73,7 +70,9 @@ module.exports = {
 				extraFileExtensions: ['.astro'],
 				project: null,
 			},
-			rules: {},
+			rules: {
+				'@typescript-eslint/naming-convention': 0,
+			},
 		},
 	],
 };

@@ -1,0 +1,31 @@
+---
+import MainLayout from 'layouts/MainLayout.astro';
+
+export const prerender = true;
+---
+
+<MainLayout title="About">
+	<h1>About</h1>
+	<ul>
+		<li>
+			<p>
+				The main objective of this project is to be restricted as a
+				<strong>static site</strong> and provide some statistics and data visualisations around
+				<strong>The Formula 1 World Championship</strong>.
+			</p>
+		</li>
+		<li>
+			<p>
+				The data for this project is taken from
+				<a href="http://ergast.com/mrd/" target="_blank">Ergast developer API</a>.
+			</p>
+		</li>
+		<li>
+			<p>
+				The code for this project is open-source and is available on
+				<a href="https://github.com/vkbansal/formula1-app" target="_blank">GitHub</a>. You are
+				welcome to submit ideas and issues.
+			</p>
+		</li>
+	</ul>
+</MainLayout>

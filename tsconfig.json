@@ -1,19 +1,13 @@
 {
 	"compilerOptions": {
-		"baseUrl": "src",
 		"target": "ESNext",
 		"module": "ESNext",
 		"strict": true,
 		"isolatedModules": true,
 		"esModuleInterop": true,
-		"moduleResolution": "Node",
+		"moduleResolution": "nodenext",
 		"allowSyntheticDefaultImports": true,
 		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"types": ["astro/client", "@types/node"],
-		"jsx": "react",
-		"jsxFactory": "h",
-		"jsxFragmentFactory": "Fragment"
-	},
-	"include": ["src", "astro.config.ts"]
+		"skipLibCheck": true
+	}
 }

@@ -1,0 +1,25 @@
+{
+    "name": "site",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "license": "MIT",
+    "scripts": {
+        "typecheck": "astro check && tsc --noEmit",
+        "dev": "astro dev",
+        "start": "astro dev",
+        "prebuild": "rm -rf public",
+        "build": "NODE_ENV=production astro build"
+    },
+    "dependencies": {
+        "@astrojs/netlify": "^2.2.0",
+        "astro": "^2.1.3",
+        "chart.js": "^4.2.1",
+        "chartjs-plugin-zoom": "^2.0.0",
+        "dayjs": "^1.11.7",
+        "f1db": "workspace:^",
+        "normalize.css": "^8.0.1",
+        "sass": "^1.59.3",
+        "typescript": "^4.9.5"
+    }
+}

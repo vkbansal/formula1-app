@@ -1,0 +1,9 @@
+[build]
+  command = "pnpm run build"
+
+[build.environment]
+  NODE_VERSION="18"
+
+# [functions]
+#   directory = "src/_netlify/functions"
+  # external_node_modules = ["mongodb"]
