@@ -5,10 +5,10 @@ name: Kevin Magnussen
 dob: '1992-10-05'
 nationality: Danish
 hasImage: true
-totalRaces: 142
+totalRaces: 143
 raceWins: 0
 podiums: 1
-totalLaps: 7498
+totalLaps: 7554
 lapsLead: 0
 championshipStandings:
   - year: 2014
@@ -753,4 +753,11 @@ seasons:
         roundName: Abu Dhabi Grand Prix
         constructor: Haas F1 Team
         position: 17
+        points: 0
+  - year: 2023
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: Haas F1 Team
+        position: 13
         points: 0

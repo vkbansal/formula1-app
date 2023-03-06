@@ -5,10 +5,17 @@ name: Oscar Piastri
 dob: '2001-04-06'
 nationality: Australian
 hasImage: false
-totalRaces: null
-raceWins: null
-podiums: null
-totalLaps: null
-lapsLead: null
+totalRaces: 1
+raceWins: 0
+podiums: 0
+totalLaps: 13
+lapsLead: 0
 championshipStandings: []
-seasons: []
+seasons:
+  - year: 2023
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: McLaren
+        position: null
+        points: 0

@@ -3,10 +3,10 @@ constructorId: 131
 constructorRef: mercedes
 name: Mercedes
 nationality: German
-totalRaces: 271
+totalRaces: 272
 raceWins: 125
 podiums: 281
-winPct: 46.1255
+winPct: 45.9559
 championshipStandings:
   - year: 2010
     position: 4
@@ -2556,5 +2556,16 @@ seasons:
             position: 18
             points: 0
           - driver: George Russell
+            position: 5
+            points: 10
+  - year: 2023
+    rounds:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        results:
+          - driver: George Russell
+            position: 7
+            points: 6
+          - driver: Lewis Hamilton
             position: 5
             points: 10

@@ -3,10 +3,10 @@ constructorId: 1
 constructorRef: mclaren
 name: McLaren
 nationality: British
-totalRaces: 883
+totalRaces: 884
 raceWins: 179
 podiums: 478
-winPct: 20.2718
+winPct: 20.2489
 championshipStandings:
   - year: 1968
     position: 14
@@ -8363,3 +8363,14 @@ seasons:
           - driver: Lando Norris
             position: 6
             points: 9
+  - year: 2023
+    rounds:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        results:
+          - driver: Oscar Piastri
+            position: null
+            points: 0
+          - driver: Lando Norris
+            position: 17
+            points: 0

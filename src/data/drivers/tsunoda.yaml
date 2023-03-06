@@ -5,10 +5,10 @@ name: Yuki Tsunoda
 dob: '2000-05-11'
 nationality: Japanese
 hasImage: true
-totalRaces: 44
+totalRaces: 45
 raceWins: 0
 podiums: 0
-totalLaps: 2179
+totalLaps: 2236
 lapsLead: 0
 championshipStandings:
   - year: 2021
@@ -237,6 +237,13 @@ seasons:
         points: 0
       - round: 22
         roundName: Abu Dhabi Grand Prix
+        constructor: AlphaTauri
+        position: 11
+        points: 0
+  - year: 2023
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
         constructor: AlphaTauri
         position: 11
         points: 0

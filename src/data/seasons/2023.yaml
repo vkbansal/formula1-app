@@ -9,126 +9,135 @@ rounds:
       name: Bahrain International Circuit
       location: Sakhir
       country: Bahrain
-    podium: []
-    driverStandings:
-      - driverRef: albon
+    podium:
+      - driverRef: max_verstappen
+        constructorRef: red_bull
         position: 1
-        points: 0
+      - driverRef: perez
+        constructorRef: red_bull
+        position: 2
+      - driverRef: alonso
+        constructorRef: aston_martin
+        position: 3
+    driverStandings:
+      - driverRef: max_verstappen
+        position: 1
+        points: 25
+        wins: 1
+      - driverRef: perez
+        position: 2
+        points: 18
         wins: 0
       - driverRef: alonso
-        position: 2
-        points: 0
-        wins: 0
-      - driverRef: bottas
         position: 3
-        points: 0
+        points: 15
         wins: 0
-      - driverRef: gasly
+      - driverRef: sainz
         position: 4
-        points: 0
+        points: 12
         wins: 0
       - driverRef: hamilton
         position: 5
-        points: 0
+        points: 10
         wins: 0
-      - driverRef: hulkenberg
+      - driverRef: stroll
         position: 6
-        points: 0
+        points: 8
         wins: 0
-      - driverRef: leclerc
+      - driverRef: russell
         position: 7
-        points: 0
+        points: 6
         wins: 0
-      - driverRef: kevin_magnussen
+      - driverRef: bottas
         position: 8
-        points: 0
+        points: 4
         wins: 0
-      - driverRef: norris
+      - driverRef: gasly
         position: 9
-        points: 0
+        points: 2
         wins: 0
-      - driverRef: ocon
+      - driverRef: albon
         position: 10
-        points: 0
+        points: 1
         wins: 0
-      - driverRef: perez
+      - driverRef: tsunoda
         position: 11
         points: 0
         wins: 0
-      - driverRef: piastri
+      - driverRef: sargeant
         position: 12
         points: 0
         wins: 0
-      - driverRef: russell
+      - driverRef: kevin_magnussen
         position: 13
         points: 0
         wins: 0
-      - driverRef: sainz
+      - driverRef: de_vries
         position: 14
         points: 0
         wins: 0
-      - driverRef: sargeant
+      - driverRef: hulkenberg
         position: 15
         points: 0
         wins: 0
-      - driverRef: stroll
+      - driverRef: zhou
         position: 16
         points: 0
         wins: 0
-      - driverRef: tsunoda
+      - driverRef: norris
         position: 17
         points: 0
         wins: 0
-      - driverRef: max_verstappen
+      - driverRef: ocon
         position: 18
         points: 0
         wins: 0
-      - driverRef: de_vries
+      - driverRef: leclerc
         position: 19
         points: 0
         wins: 0
-      - driverRef: zhou
+      - driverRef: piastri
         position: 20
         points: 0
         wins: 0
     constructorStandings:
-      - constructorRef: alfa
+      - constructorRef: red_bull
         position: 1
-        points: 0
-        wins: 0
-      - constructorRef: alphatauri
-        position: 2
-        points: 0
-        wins: 0
-      - constructorRef: alpine
-        position: 3
-        points: 0
-        wins: 0
+        points: 43
+        wins: 1
       - constructorRef: aston_martin
-        position: 4
-        points: 0
-        wins: 0
-      - constructorRef: ferrari
-        position: 5
-        points: 0
-        wins: 0
-      - constructorRef: haas
-        position: 6
-        points: 0
-        wins: 0
-      - constructorRef: mclaren
-        position: 7
-        points: 0
+        position: 2
+        points: 23
         wins: 0
       - constructorRef: mercedes
+        position: 3
+        points: 16
+        wins: 0
+      - constructorRef: ferrari
+        position: 4
+        points: 12
+        wins: 0
+      - constructorRef: alfa
+        position: 5
+        points: 4
+        wins: 0
+      - constructorRef: alpine
+        position: 6
+        points: 2
+        wins: 0
+      - constructorRef: williams
+        position: 7
+        points: 1
+        wins: 0
+      - constructorRef: alphatauri
         position: 8
         points: 0
         wins: 0
-      - constructorRef: red_bull
+      - constructorRef: haas
         position: 9
         points: 0
         wins: 0
-      - constructorRef: williams
+      - constructorRef: mclaren
         position: 10
         points: 0
         wins: 0

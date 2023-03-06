@@ -5,11 +5,11 @@ name: Max Verstappen
 dob: '1997-09-30'
 nationality: Dutch
 hasImage: true
-totalRaces: 163
-raceWins: 35
-podiums: 77
-totalLaps: 8604
-lapsLead: 1855
+totalRaces: 164
+raceWins: 36
+podiums: 78
+totalLaps: 8661
+lapsLead: 1909
 championshipStandings:
   - year: 2015
     position: 12
@@ -856,6 +856,13 @@ seasons:
         points: 8
       - round: 22
         roundName: Abu Dhabi Grand Prix
+        constructor: Red Bull
+        position: 1
+        points: 25
+  - year: 2023
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
         constructor: Red Bull
         position: 1
         points: 25

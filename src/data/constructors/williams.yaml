@@ -3,10 +3,10 @@ constructorId: 3
 constructorRef: williams
 name: Williams
 nationality: British
-totalRaces: 797
+totalRaces: 798
 raceWins: 114
 podiums: 313
-winPct: 14.3036
+winPct: 14.2857
 championshipStandings:
   - year: 1975
     position: 9
@@ -6747,7 +6747,7 @@ seasons:
         roundName: Japanese Grand Prix
         results:
           - driver: Robert Kubica
-            position: 16
+            position: 17
             points: 0
           - driver: George Russell
             position: 16
@@ -7343,3 +7343,14 @@ seasons:
           - driver: Alexander Albon
             position: 13
             points: 0
+  - year: 2023
+    rounds:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        results:
+          - driver: Logan Sargeant
+            position: 12
+            points: 0
+          - driver: Alexander Albon
+            position: 10
+            points: 1

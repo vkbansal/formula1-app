@@ -5,10 +5,10 @@ name: Nyck de Vries
 dob: '1995-02-06'
 nationality: Dutch
 hasImage: false
-totalRaces: 1
+totalRaces: 2
 raceWins: 0
 podiums: 0
-totalLaps: 53
+totalLaps: 109
 lapsLead: 0
 championshipStandings:
   - year: 2022
@@ -21,3 +21,10 @@ seasons:
         constructor: Williams
         position: 9
         points: 2
+  - year: 2023
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: AlphaTauri
+        position: 14
+        points: 0

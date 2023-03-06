@@ -5,10 +5,10 @@ name: Nico Hülkenberg
 dob: '1987-08-19'
 nationality: German
 hasImage: true
-totalRaces: 184
+totalRaces: 185
 raceWins: 0
 podiums: 0
-totalLaps: 9327
+totalLaps: 9383
 lapsLead: 43
 championshipStandings:
   - year: 2010
@@ -975,4 +975,11 @@ seasons:
         roundName: Saudi Arabian Grand Prix
         constructor: Aston Martin
         position: 12
+        points: 0
+  - year: 2023
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: Haas F1 Team
+        position: 15
         points: 0

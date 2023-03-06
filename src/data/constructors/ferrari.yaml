@@ -3,10 +3,10 @@ constructorId: 6
 constructorRef: ferrari
 name: Ferrari
 nationality: Italian
-totalRaces: 1054
+totalRaces: 1055
 raceWins: 243
 podiums: 810
-winPct: 23.055
+winPct: 23.0332
 championshipStandings:
   - year: 1958
     position: 2
@@ -968,7 +968,7 @@ seasons:
             points: 2
           - driver: Luigi Musso
             position: 1
-            points: 5
+            points: 4
       - round: 2
         roundName: Monaco Grand Prix
         results:
@@ -10488,3 +10488,14 @@ seasons:
           - driver: Charles Leclerc
             position: 2
             points: 18
+  - year: 2023
+    rounds:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        results:
+          - driver: Charles Leclerc
+            position: null
+            points: 0
+          - driver: Carlos Sainz
+            position: 4
+            points: 12

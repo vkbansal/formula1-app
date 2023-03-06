@@ -3,10 +3,10 @@ constructorId: 9
 constructorRef: red_bull
 name: Red Bull
 nationality: Austrian
-totalRaces: 348
-raceWins: 92
-podiums: 234
-winPct: 26.4368
+totalRaces: 349
+raceWins: 93
+podiums: 236
+winPct: 26.6476
 championshipStandings:
   - year: 2005
     position: 7
@@ -3210,6 +3210,17 @@ seasons:
           - driver: Sergio Pérez
             position: 3
             points: 15
+          - driver: Max Verstappen
+            position: 1
+            points: 25
+  - year: 2023
+    rounds:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        results:
+          - driver: Sergio Pérez
+            position: 2
+            points: 18
           - driver: Max Verstappen
             position: 1
             points: 25

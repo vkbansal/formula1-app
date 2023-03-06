@@ -5,10 +5,17 @@ name: Logan Sargeant
 dob: '2000-12-31'
 nationality: American
 hasImage: false
-totalRaces: null
-raceWins: null
-podiums: null
-totalLaps: null
-lapsLead: null
+totalRaces: 1
+raceWins: 0
+podiums: 0
+totalLaps: 56
+lapsLead: 0
 championshipStandings: []
-seasons: []
+seasons:
+  - year: 2023
+    results:
+      - round: 1
+        roundName: Bahrain Grand Prix
+        constructor: Williams
+        position: 12
+        points: 0
