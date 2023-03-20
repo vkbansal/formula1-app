@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 /* global $ */
 import 'zx/globals';
 import meow from 'meow';

@@ -11,7 +11,7 @@
     "start": "astro dev",
     "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production astro build",
-		"postbuild": "sed -i \"s|/seasons/:year/round-   |/seasons/:year/round-:id|\" dist/_redirects",
+		"postbuild": "sed -i \"s|/seasons/:year/round- |/seasons/:year/round-*|\" dist/_redirects",
 		"fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}'",
     "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx,astro}'"
   },
