@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -40,6 +39,7 @@ const db = await mariadb.createConnection({
 /** Common Functions **********************************************************/
 function debugLog(msg) {
     if (debug) {
+        // eslint-disable-next-line no-console
         console.log(msg);
     }
 }
@@ -211,7 +211,6 @@ const queryFns = {
         });
         for (const race of data) {
             const rawDriversData = await executeQueryFromFile(`rounds/drivers-data.sql`, race);
-            console.log('race', race.raceId);
             const driversData = z.array(driverRaceData).parse(rawDriversData);
             const driversDataMap = driversData.reduce((p, c) => ({ ...p, [c.driverRef]: c }), {});
             race.driversData = race.driversData.map((data) => ({
@@ -250,20 +249,24 @@ else if (allQueries) {
     queries.splice(0, queries.length, ...LIST_QUERIES);
 }
 if (queries.length === 0) {
+    // eslint-disable-next-line no-console
     console.log('No query selceted. Exiting!');
     process.exit(0);
 }
 for (const query of queries) {
     try {
+        // eslint-disable-next-line no-console
         console.log(`Executing ${query} query...`);
         await queryFns[query]();
     }
     catch (e) {
         if (e instanceof ZodError) {
+            // eslint-disable-next-line no-console
             console.log(e.errors.map(formatZodError).join('\n'));
             process.exit(1);
         }
         else {
+            // eslint-disable-next-line no-console
             console.log(e);
             process.exit(1);
         }

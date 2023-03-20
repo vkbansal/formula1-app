@@ -33,7 +33,9 @@ jobs:
       - name: Update data
         run: |
           set -e
-          pnpm data:update
+          cd packages/f1db
+          pnpm run dataup
+          cd ../..
       - name: Commit and Push
         uses: EndBug/add-and-commit@v9
         with:

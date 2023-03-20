@@ -7,7 +7,8 @@
 	"scripts": {
 		"build": "rm -rf dist && tsc",
 		"lint": "eslint 'src/**/*.{ts,tsx,astro}'",
-		"datagen": "node ./dist/make-new-data.js",
+		"datagen": "node ./dist/make-new-data.js --allQueries",
+		"dataup": "node ./dist/get-new-data.js",
 		"typecheck": "tsc --noEmit",
 		"fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx}'",
     "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx}'"

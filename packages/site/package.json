@@ -9,8 +9,9 @@
     "typecheck": "astro check && tsc --noEmit",
     "dev": "astro dev",
     "start": "astro dev",
-    "prebuild": "rm -rf public",
+    "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production astro build",
+		"postbuild": "sed -i \"s|/seasons/:year/round-   |/seasons/:year/round-:id|\" dist/_redirects",
 		"fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}'",
     "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx,astro}'"
   },

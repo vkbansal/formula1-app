@@ -13,8 +13,8 @@ const cli = meow(``, {
 	},
 });
 
-const cwd = path.dirname(fileURLToPath(import.meta.url));
-const METADATA_FILE = path.resolve(cwd, 'metadata.json');
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const METADATA_FILE = path.resolve(__dirname, '../metadata.json');
 const metadata = JSON.parse(await fs.promises.readFile(METADATA_FILE, 'utf8'));
 
 const lastestDBUpdatePage = await fetch('http://ergast.com/mrd/db/');
@@ -48,7 +48,7 @@ console.log('Staring docker');
 await $`docker compose up -d`;
 
 console.log('running datagen');
-await $`while ! node datagen/index.mjs >/dev/null 2>&1; do
+await $`while ! pnpm run datagen >/dev/null 2>&1; do
 	echo "Trying datagen"
 	sleep 2
 done`;
