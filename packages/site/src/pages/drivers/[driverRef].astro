@@ -1,0 +1,194 @@
+---
+import { drivers, seasons } from 'f1db/data';
+
+import MainLayout from '$/layouts/MainLayout.astro';
+import Breadcrumbs from '$/components/Breadcrumbs.astro';
+import Nationality from '$/components/Nationality.astro';
+import { formatOrdinals } from '$/helpers/utils.js';
+
+const { driverRef = '' } = Astro.params;
+const driver = drivers[driverRef];
+
+if (!driver) {
+	return new Response(null, {
+		status: 404,
+		statusText: 'Not found',
+	});
+}
+
+const totalRoundsInSeasons = driver.seasons.reduce<Record<number, number>>(
+	(p, c) => ({ ...p, [c.year]: seasons[c.year].rounds.length }),
+	{},
+);
+const maxRounds = Math.max(...Object.values(totalRoundsInSeasons));
+const maxRoundsArr = Array.from({ length: maxRounds });
+// const dob = format(parseISO(driver.dob), 'do MMM yyy');
+const winPct = `${
+	driver.totalRaces > 0 ? ((driver.raceWins * 100) / driver.totalRaces).toFixed(2) : '0.00'
+}%`;
+const lapsLeadPct = `${
+	typeof driver.totalLaps === 'number' && typeof driver.lapsLead === 'number'
+		? driver.totalLaps > 0
+			? ((driver.lapsLead * 100) / driver.totalLaps).toFixed(2)
+			: '0.00'
+		: ''
+}%`;
+const wonChampionships = driver.championshipStandings
+	.filter((c) => c.position === 1)
+	.map((c) => c.year);
+---
+
+<MainLayout title={`${driver.name}`}>
+	<div class="driver-page">
+		<Breadcrumbs
+			links={[
+				{ label: 'Drivers', href: '/drivers/' },
+				{ label: driver.name, href: '' },
+			]}
+		/>
+		<h1>{driver.name}</h1>
+		<div class="driver-info">
+			<div>
+				{driver.image ? <img class="profile-pic" src={driver.image} alt={driver.name} /> : null}
+			</div>
+			<table class="table table-sm">
+				<tbody>
+					<tr>
+						<th>Name</th>
+						<td>{driver.name}</td>
+					</tr>
+					<tr>
+						<th>Date of Birth</th>
+						<td>{driver.dob}</td>
+					</tr>
+					<tr>
+						<th>Nationality</th>
+						<td>
+							{
+								driver.nationality ? (
+									<>
+										<span>{driver.nationality}</span>
+										<Nationality nationality={driver.nationality} />
+									</>
+								) : (
+									'-'
+								)
+							}
+						</td>
+					</tr>
+					<tr>
+						<th>Total Races</th>
+						<td>{driver.totalRaces}</td>
+					</tr>
+					<tr>
+						<th>Races Won</th>
+						<td>{driver.raceWins} ({winPct})</td>
+					</tr>
+					<tr>
+						<th>Podiums</th>
+						<td>{driver.podiums}</td>
+					</tr>
+					<tr>
+						<th>Total Laps</th>
+						<td>{driver.totalLaps}</td>
+					</tr>
+					<tr>
+						<th>Laps Lead</th>
+						<td>
+							{typeof driver.lapsLead === 'number' ? `${driver.lapsLead} (${lapsLeadPct})` : 'N/A'}
+						</td>
+					</tr>
+					<tr>
+						<th>World Championships Won</th>
+						<td>
+							<span>{wonChampionships.length}</span>
+							{wonChampionships.length > 0 ? <span>({wonChampionships.join(', ')})</span> : null}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<h2>Race Results</h2>
+		<table class="table table-sm">
+			<thead>
+				<tr class="table-divider">
+					<th>Season</th>
+					<th>Constructor</th>
+					{maxRoundsArr.map((_, i) => <th class="text-center">R{i + 1}</th>)}
+					<th class="text-center">WDC</th>
+				</tr>
+			</thead>
+			<tbody>
+				{
+					driver.seasons.flatMap((season) => {
+						const wdcStanding = driver.championshipStandings.find((c) => c.year === season.year);
+						const constructorsInSeason = [...new Set(season.results.map((r) => r.constructor))];
+
+						return constructorsInSeason.map((con, i) => {
+							const results = season.results.filter((r) => r.constructor === con);
+
+							return (
+								<tr class:list={{ 'table-divider': i === constructorsInSeason.length - 1 }}>
+									{i === 0 ? <th rowspan={constructorsInSeason.length}>{season.year}</th> : null}
+									<td class="constructor-name-cell">{con}</td>
+									{maxRoundsArr.map((_, i) => {
+										const round = results.find((r) => r.round === i + 1);
+
+										if (i + 1 > season.results.length) {
+											return <td class="text-center">-</td>;
+										}
+
+										if (!round) {
+											return <td class="text-center">-</td>;
+										}
+
+										return (
+											<td class="text-center">
+												<div>{round.position ? formatOrdinals(round.position) : '-'}</div>
+											</td>
+										);
+									})}
+									{i === 0 ? (
+										<td class="text-center" rowspan={constructorsInSeason.length}>
+											{wdcStanding?.position ? formatOrdinals(wdcStanding.position) : '-'}
+										</td>
+									) : null}
+								</tr>
+							);
+						});
+					})
+				}
+			</tbody>
+		</table>
+	</div>
+</MainLayout>
+<style lang="scss">
+	.driver-page {
+		margin-bottom: 4rem;
+
+		:global(.constructor-name-cell) {
+			padding-left: 0.5rem !important;
+		}
+
+		:global(.table-divider, .table-divider td, .table-divider th) {
+			box-shadow: 0px 1px 0px var(--border-darker) !important;
+		}
+
+		.profile-pic {
+			display: inline-block;
+			height: 500px;
+			border-radius: 1rem;
+			border: 2px solid var(--red-600);
+		}
+
+		.driver-info {
+			display: flex;
+			gap: 2rem;
+		}
+
+		.table {
+			flex: 1 0 auto;
+			border-top: 1px solid var(--border);
+		}
+	}
+</style>

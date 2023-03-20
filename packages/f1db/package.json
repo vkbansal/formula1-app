@@ -1,0 +1,45 @@
+{
+	"name": "f1db",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"license": "MIT",
+	"scripts": {
+		"build": "rm -rf dist && tsc",
+		"lint": "eslint 'src/**/*.{ts,tsx,astro}'",
+		"datagen": "node ./dist/make-new-data.js",
+		"typecheck": "tsc --noEmit",
+		"fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx}'",
+    "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx}'"
+	},
+	"exports": {
+		"./data": "./data/index.js",
+		"./types/constructors": "./dist/types/constructors.js",
+		"./types/db": "./dist/types/db.js",
+		"./types/drivers": "./dist/types/drivers.js",
+		"./types/homepage": "./dist/types/homepage.js",
+		"./types/rounds": "./dist/types/rounds.js",
+		"./types/seasons-list": "./dist/types/seasons-list.js",
+		"./types/seasons": "./dist/types/seasons.js"
+	},
+	"files": [
+		"data",
+		"dist/types"
+	],
+	"dependencies": {
+		"zod": "^3.21.4"
+	},
+	"devDependencies": {
+		"@types/cli-progress": "^3.11.0",
+		"@types/prettier": "^2.7.2",
+		"@types/prompts": "^2.4.3",
+		"cli-progress": "^3.12.0",
+		"fast-json-stable-stringify": "^2.1.0",
+		"mariadb": "^3.1.1",
+		"meow": "^11.0.0",
+		"prettier": "^2.8.4",
+		"prompts": "^2.4.2",
+		"typescript": "^5.0.2",
+		"zx": "^7.2.1"
+	}
+}

@@ -1,0 +1,79 @@
+---
+import '../styles/_variables.scss';
+import '../styles/_bootstrap.scss';
+import '../styles/_tabs.scss';
+import '../styles/_nationality.scss';
+import '../styles/_table.scss';
+import '../styles/_char-nav.scss';
+import '../styles/_seasons.scss';
+
+import Header from 'components/Header.astro';
+import Footer from 'components/Footer.astro';
+import buildTime from 'data/buildTime.js';
+
+export interface Props {
+	title: string;
+	class?: string;
+}
+
+const { title, class: className } = Astro.props as Props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>{title} | F1 statistics</title>
+		<meta name="description" content={title} />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Work+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={`${title} - F1 statistics`} />
+		<meta name="twitter:site" content="@_vkbansal" />
+		<meta name="twitter:description" content="F1 statistics by Vivek Kumar Bansal" />
+		<!-- <meta name="twitter:image" content={} /> -->
+	</head>
+	<body>
+		<Header />
+		<div class:list={['container content-wrapper', className]}>
+			<slot />
+		</div>
+		<Footer />
+	</body>
+</html>
+
+<style lang="scss">
+	.content-wrapper {
+		width: 100%;
+		flex: 1 1 auto;
+		border: 1px solid transparent;
+		position: relative;
+	}
+</style>
+
+<script define:vars={{ buildTime }}>
+	try {
+		// theme handling
+		const mql = window.matchMedia('(prefers-color-scheme: dark)');
+		const themeToggle = document.getElementById('theme-toggle');
+		const themeFromStorage = localStorage.getItem('theme');
+		const appliedTheme = themeFromStorage || (mql.matches ? 'dark' : 'light');
+		document.body.parentElement.dataset.theme = appliedTheme;
+
+		if (themeToggle) {
+			themeToggle.checked = appliedTheme === 'dark';
+			themeToggle.addEventListener('change', function () {
+				const theme = this.checked ? 'dark' : 'light';
+				localStorage.setItem('theme', theme);
+				document.body.parentElement.dataset.theme = theme;
+			});
+		}
+
+		// build time handling
+		document.getElementById('last-updated').innerHTML = new Date(buildTime).toLocaleString();
+	} catch (e) {}
+</script>

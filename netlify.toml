@@ -1,10 +1,2 @@
 [build]
-  publish = "public"
-  command = "pnpm run build"
-
-[build.environment]
-  NODE_VERSION="16"
-
-# [functions]
-#   directory = "src/_netlify/functions"
-  # external_node_modules = ["mongodb"]
+  base = "packages/site/"
