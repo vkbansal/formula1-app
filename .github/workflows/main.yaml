@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Lint
-        run: pnpm run lint
+        run: pnpm run -r lint
   typecheck:
     name: TypeCheck
     runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Type Check
-        run: pnpm run typecheck
+        run: pnpm run -r typecheck
   prettier:
     name: Prettier
     runs-on: ubuntu-latest
@@ -98,4 +98,4 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Prettier
-        run: pnpm run fmtc
+        run: pnpm run -r fmtc

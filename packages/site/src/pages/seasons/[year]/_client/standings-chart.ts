@@ -10,7 +10,7 @@ import {
 } from 'chart.js';
 import zoomPlugin from 'chartjs-plugin-zoom';
 
-import type { IChartData } from 'queries/constructor_standings';
+type IChartData = any;
 
 declare global {
 	// eslint-disable-next-line @typescript-eslint/naming-convention
@@ -29,17 +29,23 @@ Chart.register(
 	CategoryScale,
 	Tooltip,
 	Legend,
-	zoomPlugin,
+	zoomPlugin as any,
 );
 
 const FONT_FAMILY = '"Roboto Mono", Monaco, "Ubuntu Mono", monospace';
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const COLOR = document.body.parentElement!.dataset.theme === 'dark' ? 'white' : 'black';
 
+interface IDataPoint {
+	points: number;
+	position: number;
+	wins: number;
+}
+
 function renderStandingsChart(ctx: HTMLCanvasElement, datasets: IChartData['datasets']): void {
-	const labelsLength = window._constructorsChartDataSets.map((c) => c.label.length);
+	const labelsLength = window._constructorsChartDataSets.map((c: any) => c.label.length);
 	const MAX_LABEL_LENGTH = Math.max(...labelsLength);
-	const points = datasets.flatMap((c) => c.data.map((d) => d.points || 0));
+	const points = datasets.flatMap((c: any) => c.data.map((d: any) => d.points || 0));
 	const MAX_POINTS = Math.max(...points);
 	const BASE = Math.pow(10, Math.ceil(Math.log10(MAX_POINTS)) - 1);
 
@@ -114,13 +120,13 @@ function renderStandingsChart(ctx: HTMLCanvasElement, datasets: IChartData['data
 					boxWidth: 2,
 					bodyFont: { size: 13, family: FONT_FAMILY },
 					itemSort(a, b): number {
-						return (b.raw as DataPoint).points - (a.raw as DataPoint).points;
+						return (b.raw as IDataPoint).points - (a.raw as IDataPoint).points;
 					},
 					callbacks: {
 						label(item): string {
 							const { dataIndex, dataset } = item;
-							const raw = item.raw as DataPoint;
-							const prevData = dataset.data[dataIndex - 1] as unknown as DataPoint;
+							const raw = item.raw as IDataPoint;
+							const prevData = dataset.data[dataIndex - 1] as unknown as IDataPoint;
 							let updateText = '';
 
 							if (prevData) {
@@ -185,9 +191,3 @@ const ctx2 = document.getElementById('constructor-standings-chart') as HTMLCanva
 
 renderStandingsChart(ctx1, window._driversChartDataSets);
 renderStandingsChart(ctx2, window._constructorsChartDataSets);
-
-interface DataPoint {
-	points: number;
-	position: number;
-	wins: number;
-}
