@@ -1,9 +1,9 @@
 [build]
   command = "pnpm run build"
+  publish = "dist/"
 
 [build.environment]
   NODE_VERSION="18"
 
-# [functions]
-#   directory = "src/_netlify/functions"
-  # external_node_modules = ["mongodb"]
+[[edge_functions]]
+  path = ".netlify/edge-functions"
