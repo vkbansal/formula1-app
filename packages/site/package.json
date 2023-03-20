@@ -10,7 +10,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "prebuild": "rm -rf public",
-    "build": "NODE_ENV=production astro build && ls -la .netlify/edge-functions",
+    "build": "NODE_ENV=production astro build",
 		"fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}'",
     "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx,astro}'"
   },
