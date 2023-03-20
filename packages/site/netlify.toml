@@ -1,9 +1,7 @@
 [build]
   command = "pnpm run build"
   publish = "dist/"
+	edge_functions = ".netlify/edge-functions"
 
 [build.environment]
   NODE_VERSION="18"
-
-[[edge_functions]]
-  path = ".netlify/edge-functions"
