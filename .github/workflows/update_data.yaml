@@ -34,7 +34,7 @@ jobs:
         run: |
           set -e
           cd packages/f1db
-          pnpm run dataup
+          pnpm run dataup --datagen
           cd ../..
       - name: Commit and Push
         uses: EndBug/add-and-commit@v9

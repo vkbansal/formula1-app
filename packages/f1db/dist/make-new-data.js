@@ -80,6 +80,10 @@ function formatZodError(e) {
     }
 }
 const queryCache = {};
+async function cleanDataDir(folder) {
+    const finalPath = path.resolve(data_dir, folder);
+    return fs.rm(finalPath, { recursive: true, force: true });
+}
 async function executeQueryFromFile(filepath, params = {}) {
     const sql = queryCache[filepath] || (await fs.readFile(path.resolve(queries_dir, filepath), 'utf8'));
     debugLog(`executing query from ${filepath} with params => ${JSON.stringify(params)}`);
@@ -116,6 +120,7 @@ const queryFns = {
         const indexFileImports = [];
         const indexFileExports = [];
         let i = 0;
+        await cleanDataDir('seasons');
         for (const row of data) {
             const rawRounds = await executeQueryFromFile('seasons/rounds.sql', row);
             const rounds = z.array(seasonTypes.SeasonRound).parse(rawRounds);
@@ -148,6 +153,7 @@ const queryFns = {
         const indexFileImports = [];
         const indexFileExports = [];
         let i = 0;
+        await cleanDataDir('drivers');
         for (const driver of data) {
             driver.image = driverImages[driver.driverRef];
             const rawSeasonData = await executeQueryFromFile('drivers/driver-seasons.sql', driver);
@@ -172,6 +178,7 @@ const queryFns = {
         const indexFileImports = [];
         const indexFileExports = [];
         let i = 0;
+        await cleanDataDir('constructors');
         for (const row of data) {
             const rawSeasonData = await executeQueryFromFile('constructors/constructor-seasons.sql', row);
             const seasonData = z.array(contructorTypes.ConstructorSeaon).parse(rawSeasonData);
@@ -203,6 +210,7 @@ const queryFns = {
         const indexFileImports = [];
         const indexFileExports = [];
         let i = 0;
+        await cleanDataDir('rounds');
         const driverRaceData = raceTypes.DriverData.pick({
             driverRef: true,
             qualifying: true,
