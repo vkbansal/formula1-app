@@ -9,7 +9,7 @@
 	"constructorRef": "aston_martin",
 	"name": "Aston Martin",
 	"nationality": "British",
-	"podiums": 2,
+	"podiums": 3,
 	"raceWins": 0,
 	"seasons": [
 		{
@@ -440,11 +440,19 @@
 					],
 					"round": 1,
 					"roundName": "Bahrain Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lance Stroll", "points": 0, "position": null },
+						{ "driver": "Fernando Alonso", "points": 15, "position": 3 }
+					],
+					"round": 2,
+					"roundName": "Saudi Arabian Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 51,
+	"totalRaces": 52,
 	"winPct": 0
 }

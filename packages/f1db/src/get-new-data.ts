@@ -6,6 +6,7 @@ import meow from 'meow';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import cheerio from 'cheerio';
 
 const cli = meow(``, {
 	importMeta: import.meta,
@@ -18,21 +19,27 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const METADATA_FILE = path.resolve(__dirname, '../metadata.json');
 const metadata = JSON.parse(await fs.promises.readFile(METADATA_FILE, 'utf8'));
 
-const lastestDBUpdatePage = await fetch('http://ergast.com/mrd/db/');
-const lastestDBUpdateText = await lastestDBUpdatePage.text();
+const downloadsPage = await fetch('http://ergast.com/downloads/');
+const downloadsPageText = await downloadsPage.text();
+const $$ = cheerio.load(downloadsPageText);
 
-const lastestUpdateTime = lastestDBUpdateText.match(
-	/<p>The database images were last updated on: (.+)<\/p>/,
-);
+const totalRows = $$('table > tbody > tr').length;
+const csvRowIndex = Array.from({ length: totalRows }).findIndex((_, i) => {
+	const text = $$(`table > tbody > tr:nth-child(${i}) > td:nth-child(2)`).text();
 
-if (!lastestUpdateTime) {
+	return text.trim() === 'f1db.sql.gz';
+});
+
+const lastModified = $$(`table > tbody > tr:nth-child(${csvRowIndex}) > td:nth-child(3)`)
+	.text()
+	.trim();
+
+if (!lastModified) {
 	console.log('Could not find database update time!');
 	process.exit(1);
 }
 
-const [, updateTime] = lastestUpdateTime;
-
-if (!cli.flags.force && metadata.databaseLastUpdatedAt === updateTime) {
+if (!cli.flags.force && metadata.databaseLastUpdatedAt === lastModified) {
 	console.log('No new data found!');
 	process.exit(0);
 }
@@ -59,6 +66,6 @@ console.log('Stopping docker');
 await $`docker compose down`;
 
 console.log('writing metadata');
-const newContent = { databaseLastUpdatedAt: updateTime };
+const newContent = { databaseLastUpdatedAt: lastModified };
 await fs.promises.writeFile(METADATA_FILE, JSON.stringify(newContent, null, '\t'), 'utf8');
 console.log('done!');
