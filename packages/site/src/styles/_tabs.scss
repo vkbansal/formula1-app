@@ -5,10 +5,10 @@
 		flex-shrink: 0;
 		min-block-size: fit-content;
 		padding: 0 2rem;
+		overflow: auto hidden;
 
 		& > a.tab {
 			cursor: pointer;
-			overflow: auto hidden;
 			display: inline-flex;
 			align-items: center;
 			white-space: nowrap;

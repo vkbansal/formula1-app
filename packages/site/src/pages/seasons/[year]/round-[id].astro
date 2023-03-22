@@ -151,7 +151,7 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 			<article class="tab-panel" id="race">
 				<p>Note: Lap time data is available from the 1996 season onwards.</p>
 				<CarIcon />
-				<div class="animation-container">
+				<div class="animation-container" id="animation-container">
 					<div class="center-line"></div>
 					<div id="laps-container" class="laps-container">
 						<div class="lap-container" data-lap="start"></div>
@@ -189,6 +189,27 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 						}
 					</div>
 				</div>
+				<div class="animation-controls">
+					<div class="lap-progress">
+						<input
+							id="animation-progress"
+							type="range"
+							min="0"
+							max={totalLaps + 1}
+							step="1"
+							value="0"
+						/>
+						<span class="lap-counter">
+							<span id="lap-count">0</span>
+							<span>/</span>
+							<span>{totalLaps}</span>
+						</span>
+					</div>
+					<div class="control-btns">
+						<button type="button" id="reset">Reset</button>
+						<button type="button" id="play-pause">Play</button>
+					</div>
+				</div>
 			</article>
 		</section>
 	</div>
@@ -196,7 +217,8 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 <style lang="scss" define:vars={{ carSize: `${CAR_SIZE}px`, totalDrivers: startingGrid.length }}>
 	.animation-container {
 		height: calc(calc(var(--totalDrivers) + 4) * var(--carSize));
-		width: 1280px;
+		width: 100%;
+		max-width: 1280px;
 		background: slategray;
 		margin: 1rem auto;
 		border-radius: 1%;
@@ -206,7 +228,7 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 			display: flex;
 			align-items: stretch;
 			width: 100%;
-			overflow: auto;
+			overflow: hidden;
 			height: 100%;
 		}
 
@@ -233,8 +255,6 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 
 			&:first-of-type,
 			&:last-of-type {
-				width: 60%;
-
 				&::before {
 					content: attr(data-lap);
 					text-transform: uppercase;
@@ -246,17 +266,22 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 				}
 			}
 
-			&:first-of-type::before {
-				top: 50%;
-				right: 0%;
-				left: unset;
-				transform: rotate(90deg) translateY(-150%);
+			&:first-of-type {
+				&::before {
+					top: 50%;
+					right: 0%;
+					left: unset;
+					transform: rotate(90deg) translateY(-150%);
+				}
 			}
 
-			&:last-of-type::before {
-				left: 0;
-				top: 50%;
-				transform: rotate(90deg) translateY(200%);
+			&:last-of-type {
+				border-right: none;
+				&::before {
+					left: 0;
+					top: 50%;
+					transform: rotate(90deg) translateY(200%);
+				}
 			}
 		}
 
@@ -298,6 +323,9 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 					display: block;
 					transform: translateY(10%);
 					color: white;
+					background: rgba(0, 0, 0, 0.75);
+					padding: 0.25rem;
+					border-radius: 0.25rem;
 					white-space: nowrap;
 					line-height: 1;
 					font-size: 0.85rem;
@@ -361,12 +389,37 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 			}
 
 			&[data-lap='start'] .driver {
-				transform: translateX(0) translateY(calc(var(--y) * var(--carSize)));
+				transform: translateX(-50px) translateY(calc(var(--y) * var(--carSize)));
 			}
 
 			&[data-lap='finish'] .driver {
-				transform: translateX(60px) translateY(calc(var(--y) * var(--carSize)));
+				transform: translateX(150px) translateY(calc(var(--y) * var(--carSize)));
 			}
+		}
+	}
+
+	.animation-controls {
+		margin-top: 1rem;
+
+		.lap-progress {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.lap-counter {
+			display: flex;
+			align-items: center;
+		}
+
+		#animation-progress {
+			display: inline-block;
+			width: 90%;
+			flex: 0 1 auto;
+		}
+
+		.control-btns {
+			margin-top: 1rem;
 		}
 	}
 </style>
