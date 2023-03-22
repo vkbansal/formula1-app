@@ -215,12 +215,15 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 	</div>
 </MainLayout>
 <style lang="scss" define:vars={{ carSize: `${CAR_SIZE}px`, totalDrivers: startingGrid.length }}>
-	.animation-container {
-		height: calc(calc(var(--totalDrivers) + 4) * var(--carSize));
+	.animation-container,
+	.animation-controls {
 		width: 100%;
 		max-width: 1280px;
-		background: slategray;
 		margin: 1rem auto;
+	}
+	.animation-container {
+		height: calc(calc(var(--totalDrivers) + 4) * var(--carSize));
+		background: slategray;
 		border-radius: 1%;
 		position: relative;
 
