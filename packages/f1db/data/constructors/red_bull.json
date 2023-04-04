@@ -23,8 +23,8 @@
 	"constructorRef": "red_bull",
 	"name": "Red Bull",
 	"nationality": "Austrian",
-	"podiums": 238,
-	"raceWins": 94,
+	"podiums": 239,
+	"raceWins": 95,
 	"seasons": [
 		{
 			"rounds": [
@@ -2917,11 +2917,19 @@
 					],
 					"round": 2,
 					"roundName": "Saudi Arabian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 11, "position": 5 },
+						{ "driver": "Max Verstappen", "points": 25, "position": 1 }
+					],
+					"round": 3,
+					"roundName": "Australian Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 350,
-	"winPct": 26.8571
+	"totalRaces": 351,
+	"winPct": 27.0655
 }
