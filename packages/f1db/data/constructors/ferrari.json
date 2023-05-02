@@ -70,7 +70,7 @@
 	"constructorRef": "ferrari",
 	"name": "Ferrari",
 	"nationality": "Italian",
-	"podiums": 810,
+	"podiums": 811,
 	"raceWins": 243,
 	"seasons": [
 		{
@@ -9126,11 +9126,19 @@
 					],
 					"round": 3,
 					"roundName": "Australian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Carlos Sainz", "points": 10, "position": 5 },
+						{ "driver": "Charles Leclerc", "points": 15, "position": 3 }
+					],
+					"round": 4,
+					"roundName": "Azerbaijan Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 1057,
-	"winPct": 22.9896
+	"totalRaces": 1058,
+	"winPct": 22.9679
 }
