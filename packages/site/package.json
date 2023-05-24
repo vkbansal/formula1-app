@@ -11,24 +11,24 @@
     "start": "astro dev",
     "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production astro build",
-		"postbuild": "sed -i \"s|/seasons/:year/round- |/seasons/:year/round-*|\" dist/_redirects",
-		"fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}'",
+    "postbuild": "sed -i \"s|/seasons/:year/round- |/seasons/:year/round-*|\" dist/_redirects",
+    "fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}'",
     "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx,astro}'"
   },
   "dependencies": {
-    "@astrojs/netlify": "^2.2.0",
-    "astro": "^2.1.3",
-    "chart.js": "^4.2.1",
-    "chartjs-plugin-zoom": "^2.0.0",
+    "@astrojs/netlify": "^2.2.3",
+    "astro": "^2.5.5",
+    "chart.js": "^4.3.0",
+    "chartjs-plugin-zoom": "^2.0.1",
     "dayjs": "^1.11.7",
     "f1db": "workspace:^",
     "normalize.css": "^8.0.1",
-    "sass": "^1.59.3",
-    "typescript": "^5.0.2"
+    "sass": "^1.62.1",
+    "typescript": "^5.0.4"
   },
-	"pnpm": {
-		"overrides": {
-			"chart.js": "4.2.1"
-		}
-	}
+  "pnpm": {
+    "overrides": {
+      "chart.js": "4.2.1"
+    }
+  }
 }
