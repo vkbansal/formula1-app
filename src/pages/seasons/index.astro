@@ -1,9 +1,8 @@
 ---
-import { seasons_list } from 'f1db/data';
-
-import MainLayout from 'layouts/MainLayout.astro';
-import Breadcrumbs from 'components/Breadcrumbs.astro';
-import { currentSeason } from 'data/metadata.js';
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { currentSeason } from '~/data/metadata.js';
+import seasons_list from '~/data/seasons-list.json';
 
 export const prerender = true;
 ---
@@ -41,7 +40,7 @@ export const prerender = true;
 		const resizeObsever = new ResizeObserver((entries) => {
 			const entry = entries[0];
 
-			if (entry.target === grid) {
+			if (entry?.target === grid) {
 				let isBGBlack = true;
 				const width = entry.contentRect.width;
 				const gridSize = Math.floor(width / CELL_WIDTH);
@@ -52,7 +51,7 @@ export const prerender = true;
 
 				while (diff > 0) {
 					if (existingEmptyBoxes.length > extraBoxes) {
-						existingEmptyBoxes[0].remove();
+						existingEmptyBoxes[0]?.remove();
 					} else if (existingEmptyBoxes.length < extraBoxes) {
 						grid.appendChild(emptyCell.cloneNode());
 					}
@@ -64,7 +63,7 @@ export const prerender = true;
 					const bg = isBGBlack ? 'var(--black)' : 'var(--white)';
 					const color = isBGBlack ? 'var(--white)' : 'var(--black)';
 
-					child.setAttribute('style', `background: ${bg}; color: ${color};`);
+					child?.setAttribute('style', `background: ${bg}; color: ${color};`);
 
 					if (gridSize % 2 === 1 || i % gridSize !== 0) {
 						isBGBlack = !isBGBlack;

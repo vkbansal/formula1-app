@@ -1,26 +1,48 @@
 ---
-import { drivers, rounds, seasons, constructors } from 'f1db/data';
-import MainLayout from '$/layouts/MainLayout.astro';
-import Breadcrumbs from '$/components/Breadcrumbs.astro';
-import CarIcon from '$/components/CarIcon.astro';
-import { constructorColors } from '$/data/colors.js';
-import Nationality from '$/components/Nationality.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import type { InferGetStaticPropsType } from 'astro';
 
-const { year = '', id = '' } = Astro.params;
-const season = seasons[year];
-const round = rounds[`round_${id}_${year}`];
-// const hasPrev = season < currentSeason;
-// const hasNext = season > firstSeason;
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import CarIcon from '~/components/CarIcon.astro';
+import Nationality from '~/components/Nationality.astro';
+import { constructorColors } from '~/data/colors.js';
 
-if (!round || !season) {
-	return new Response(null, {
-		status: 404,
-		statusText: 'Not found',
+export async function getStaticPaths() {
+	const rounds = await getCollection('rounds');
+
+	return rounds.map(({ data }) => {
+		return {
+			params: { year: data.year, id: data.round.toString().padStart(2, '0') },
+			props: data,
+		};
 	});
 }
 
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const drivers = (await getCollection('drivers')).reduce<
+	Record<string, CollectionEntry<'drivers'>['data']>
+>((driversMap, { data }) => {
+	driversMap[data.driverRef] = data;
+	return driversMap;
+}, {});
+const constructors = (await getCollection('constructors')).reduce<
+	Record<string, CollectionEntry<'constructors'>['data']>
+>((constructorsMap, { data }) => {
+	constructorsMap[data.constructorRef] = data;
+	return constructorsMap;
+}, {});
+const { year = '', ...round } = Astro.props;
+const id = round.round.toString().padStart(2, '0');
+// const hasPrev = season < currentSeason;
+// const hasNext = season > firstSeason;
+
 const title = `${year} ${round.name}`;
-const totalLaps = Math.max(...round.driversData.map((d) => d.lapPositions.length));
+const totalLaps = Math.max(
+	...round.driversData.map((d) => d.lapPositions.length),
+);
 const startingGrid = round.driversData.slice(0).sort((a, b) => a.grid - b.grid);
 const CAR_SIZE = 35;
 
@@ -58,17 +80,22 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 					</thead>
 					<tbody>
 						{
-							sort(round.driversData, (a, b) => a.positionOrder - b.positionOrder).map((result) => {
+							sort(
+								round.driversData,
+								(a, b) => a.positionOrder - b.positionOrder,
+							).map((result) => {
 								const driver = drivers[result.driverRef];
 
 								return (
 									<tr>
 										<td>{result.positionText}</td>
 										<td>
-											{driver.nationality ? <Nationality nationality={driver.nationality} /> : null}
-											<span>{driver.name}</span>
+											{driver?.nationality ? (
+												<Nationality nationality={driver.nationality} />
+											) : null}
+											<span>{driver?.name}</span>
 										</td>
-										<td>{constructors[result.constructorRef].name}</td>
+										<td>{constructors[result.constructorRef]?.name}</td>
 										<td>{result.points}</td>
 									</tr>
 								);
@@ -77,8 +104,8 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 					</tbody>
 				</table>
 				<p class="text-lighter">
-					R - Retired, D - Disqualified, E - Excluded, W - Withdrawn, F - Failed to qualify, N - Not
-					Classified
+					R - Retired, D - Disqualified, E - Excluded, W - Withdrawn, F - Failed
+					to qualify, N - Not Classified
 				</p>
 			</article>
 			<article class="tab-panel" id="starting-grid">
@@ -92,20 +119,24 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 					</thead>
 					<tbody>
 						{
-							sort(round.driversData, (a, b) => a.grid - b.grid).map((result) => {
-								const driver = drivers[result.driverRef];
+							sort(round.driversData, (a, b) => a.grid - b.grid).map(
+								(result) => {
+									const driver = drivers[result.driverRef];
 
-								return (
-									<tr>
-										<td>{result.grid}</td>
-										<td>
-											{driver.nationality ? <Nationality nationality={driver.nationality} /> : null}
-											<span>{driver.name}</span>
-										</td>
-										<td>{constructors[result.constructorRef].name}</td>
-									</tr>
-								);
-							})
+									return (
+										<tr>
+											<td>{result.grid}</td>
+											<td>
+												{driver?.nationality ? (
+													<Nationality nationality={driver.nationality} />
+												) : null}
+												<span>{driver?.name}</span>
+											</td>
+											<td>{constructors[result.constructorRef]?.name}</td>
+										</tr>
+									);
+								},
+							)
 						}
 					</tbody>
 				</table>
@@ -126,7 +157,8 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 						{
 							sort(
 								round.driversData,
-								(a, b) => (a.qualifying?.position || 0) - (b.qualifying?.position || 0),
+								(a, b) =>
+									(a.qualifying?.position || 0) - (b.qualifying?.position || 0),
 							).map((result) => {
 								const driver = drivers[result.driverRef];
 
@@ -134,10 +166,12 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 									<tr>
 										<td>{result.qualifying?.position}</td>
 										<td>
-											{driver.nationality ? <Nationality nationality={driver.nationality} /> : null}
-											<span>{driver.name}</span>
+											{driver?.nationality ? (
+												<Nationality nationality={driver.nationality} />
+											) : null}
+											<span>{driver?.name}</span>
 										</td>
-										<td>{constructors[result.constructorRef].name}</td>
+										<td>{constructors[result.constructorRef]?.name}</td>
 										<td>{result.qualifying?.q1}</td>
 										<td>{result.qualifying?.q2}</td>
 										<td>{result.qualifying?.q3}</td>
@@ -166,7 +200,7 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 						{
 							startingGrid.map(({ driverRef, grid, constructorRef }) => {
 								const driver = drivers[driverRef];
-								const label = `${driver.name} (${constructors[constructorRef].name})`;
+								const label = `${driver?.name} (${constructors[constructorRef]?.name})`;
 
 								return (
 									<div
@@ -214,7 +248,10 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 		</section>
 	</div>
 </MainLayout>
-<style lang="scss" define:vars={{ carSize: `${CAR_SIZE}px`, totalDrivers: startingGrid.length }}>
+<style
+	lang="scss"
+	define:vars={{ carSize: `${CAR_SIZE}px`, totalDrivers: startingGrid.length }}
+>
 	.animation-container,
 	.animation-controls {
 		width: 100%;
@@ -298,7 +335,8 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 			& .driver {
 				position: absolute;
 				top: 30px;
-				transform: translateX(calc(var(--y) * -5px)) translateY(calc(var(--y) * var(--carSize)));
+				transform: translateX(calc(var(--y) * -5px))
+					translateY(calc(var(--y) * var(--carSize)));
 				transition: transform 0.6s ease-in-out;
 				height: 40px;
 				display: flex;

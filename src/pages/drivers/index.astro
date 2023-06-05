@@ -1,17 +1,20 @@
 ---
-import { drivers } from 'f1db/data';
+import { getCollection } from 'astro:content';
 
-import MainLayout from '$/layouts/MainLayout.astro';
-import Breadcrumbs from '$/components/Breadcrumbs.astro';
-import { currentSeason } from '$/data/metadata.js';
-import Nationality from '$/components/Nationality.astro';
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { currentSeason } from '~/data/metadata.js';
+import Nationality from '~/components/Nationality.astro';
 
-const driversArr = Object.values(drivers);
+const driversArr = await getCollection('drivers');
 const currentSeasonDrivers = driversArr
-	.filter((driver) => !!driver.seasons.find((season) => season.year === currentSeason))
-	.map((driver) => driver.driverRef);
+	.filter(
+		({ data: driver }) =>
+			!!driver.seasons.find((season) => season.year === currentSeason),
+	)
+	.map(({ data: driver }) => driver.driverRef);
 const enabledChars = driversArr.reduce((p, c) => {
-	p.add(c.name.charAt(0).toUpperCase());
+	p.add(c.data.name.charAt(0).toUpperCase());
 	return p;
 }, new Set<string>());
 
@@ -36,7 +39,7 @@ export const prerender = true;
 					return (
 						<a
 							class:list={['nav-link', { 'nav-link-disabled': disabled }]}
-							href={disabled ? 'javascript:void(0)' : `#${char}`}
+							href={disabled ? 'javascript:void(0)' : `#~{char}`}
 						>
 							{char}
 						</a>
@@ -95,15 +98,18 @@ export const prerender = true;
 		</thead>
 		<tbody
 			>{
-				driversArr.map((driver) => {
+				driversArr.map(({ data: driver }) => {
 					const championshipsWon = driver.championshipStandings
 						.filter((c) => c.position === 1)
 						.map((c) => c.year);
 
 					return (
-						<tr data-char={driver.name.charAt(0).toUpperCase()} data-ref={driver.driverRef}>
+						<tr
+							data-char={driver.name.charAt(0).toUpperCase()}
+							data-ref={driver.driverRef}
+						>
 							<td data-value={driver.name}>
-								<a href={`/drivers/${driver.driverRef}`}>{driver.name}</a>
+								<a href={`/drivers/~{driver.driverRef}`}>{driver.name}</a>
 							</td>
 							<td data-value={driver.nationality}>
 								{driver.nationality ? (
@@ -189,7 +195,7 @@ export const prerender = true;
 		}
 
 		nav_links.forEach((link) => {
-			if (link.href.endsWith(`#${hash}`)) {
+			if (link.href.endsWith(`#~{hash}`)) {
 				link.classList.add('nav-link-active');
 			} else {
 				link.classList.remove('nav-link-active');
@@ -206,8 +212,11 @@ export const prerender = true;
 			const current = btn.parentElement.getAttribute('aria-sort');
 			const sortType = btn.dataset.sort;
 			const rows = Array.from(table.tBodies[0].rows);
-			const colIndex = Array.from(table.tHead.rows[0].cells).indexOf(btn.parentElement);
-			const sortOrder = !current || current === 'descending' ? 'ascending' : 'descending';
+			const colIndex = Array.from(table.tHead.rows[0].cells).indexOf(
+				btn.parentElement,
+			);
+			const sortOrder =
+				!current || current === 'descending' ? 'ascending' : 'descending';
 
 			document.querySelectorAll('[aria-sort]').forEach((sort) => {
 				sort.removeAttribute('aria-sort');

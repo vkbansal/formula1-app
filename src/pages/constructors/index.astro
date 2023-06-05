@@ -1,16 +1,20 @@
 ---
-import { constructors } from 'f1db/data';
-import MainLayout from 'layouts/MainLayout.astro';
-import Breadcrumbs from 'components/Breadcrumbs.astro';
-import { currentSeason } from '$/data/metadata.js';
-import Nationality from '$/components/Nationality.astro';
+import { getCollection } from 'astro:content';
 
-const constructorsArr = Object.values(constructors);
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Nationality from '~/components/Nationality.astro';
+import { currentSeason } from '~/data/metadata.js';
+
+const constructorsArr = await getCollection('constructors');
 const currentSeasonConstructors = constructorsArr
-	.filter((con) => !!con.seasons.find((season) => season.year === currentSeason))
-	.map((con) => con.constructorRef);
+	.filter(
+		({ data: con }) =>
+			!!con.seasons.find((season) => season.year === currentSeason),
+	)
+	.map(({ data: con }) => con.constructorRef);
 const enabledChars = constructorsArr.reduce((p, c) => {
-	p.add(c.name.charAt(0).toUpperCase());
+	p.add(c.data.name.charAt(0).toUpperCase());
 	return p;
 }, new Set<string>());
 
@@ -81,13 +85,16 @@ export const prerender = true;
 		</thead>
 		<tbody
 			>{
-				constructorsArr.map((con) => {
+				constructorsArr.map(({ data: con }) => {
 					const championshipsWon = con.championshipStandings
 						.filter((c) => c.position === 1)
 						.map((c) => c.year);
 
 					return (
-						<tr data-char={con.name.charAt(0).toUpperCase()} data-ref={con.constructorRef}>
+						<tr
+							data-char={con.name.charAt(0).toUpperCase()}
+							data-ref={con.constructorRef}
+						>
 							<td data-value={con.name}>
 								<a href={`/constructors/${con.constructorRef}`}>{con.name}</a>
 							</td>
@@ -185,8 +192,11 @@ export const prerender = true;
 			const current = btn.parentElement.getAttribute('aria-sort');
 			const sortType = btn.dataset.sort;
 			const rows = Array.from(table.tBodies[0].rows);
-			const colIndex = Array.from(table.tHead.rows[0].cells).indexOf(btn.parentElement);
-			const sortOrder = !current || current === 'descending' ? 'ascending' : 'descending';
+			const colIndex = Array.from(table.tHead.rows[0].cells).indexOf(
+				btn.parentElement,
+			);
+			const sortOrder =
+				!current || current === 'descending' ? 'ascending' : 'descending';
 
 			document.querySelectorAll('[aria-sort]').forEach((sort) => {
 				sort.removeAttribute('aria-sort');
