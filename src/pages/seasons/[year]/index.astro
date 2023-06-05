@@ -1,25 +1,27 @@
 ---
-import { seasons } from 'f1db/data';
-import MainLayout from 'layouts/MainLayout.astro';
-import Breadcrumbs from 'components/Breadcrumbs.astro';
-import { currentSeason, firstSeason } from '$/data/metadata.js';
-import { constructorColors } from '$/data/colors.js';
-import colors from '$/helpers/colors.js';
-import Nationality from '$/components/Nationality.astro';
+import { getCollection } from 'astro:content';
+import type { InferGetStaticPropsType } from 'astro';
 
-const { year = '' } = Astro.params;
-const seasonData = seasons[year];
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Nationality from '~/components/Nationality.astro';
+import { currentSeason, firstSeason } from '~/data/metadata.js';
+import { constructorColors } from '~/data/colors.js';
+import colors from '~/helpers/colors.js';
 
-if (!seasonData) {
-	return new Response(null, {
-		status: 404,
-		statusText: 'Not found',
+export async function getStaticPaths() {
+	const seasons = await getCollection('seasons');
+
+	return seasons.map(({ data }) => {
+		return { params: { year: data.year }, props: data };
 	});
 }
 
-const season = parseInt(year);
-const hasPrev = season > firstSeason && season <= currentSeason;
-const hasNext = season >= firstSeason && season < currentSeason;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { rounds, teams, year } = Astro.props;
+const hasPrev = year > firstSeason && year <= currentSeason;
+const hasNext = year >= firstSeason && year < currentSeason;
 
 // const DataSchema = z.object({
 // 	year: z.number(),
@@ -65,15 +67,16 @@ type IDataSet = {
 	backgroundColor: string;
 };
 
-const { rounds, teams } = seasonData;
 const roundNames = rounds.map((round) => round.name);
 
 const driversChartDataSets = teams.flatMap((team, i): IDataSet[] => {
-	const color = constructorColors[team.constructorRef] || colors[i];
+	const color = constructorColors[team.constructorRef] || colors[i] || '';
 
 	return team.drivers.map((driver): IDataSet => {
 		const driverData = rounds
-			.map((round) => round.driverStandings.find((c) => c.driverRef === driver.driverRef))
+			.map((round) =>
+				round.driverStandings.find((c) => c.driverRef === driver.driverRef),
+			)
 			.filter(Boolean) as IDataPoint[];
 		return {
 			label: driver.name,
@@ -87,10 +90,12 @@ const driversChartDataSets = teams.flatMap((team, i): IDataSet[] => {
 const constructorsChartDataSets = teams.map((team, i): IDataSet => {
 	const teamData = rounds
 		.map((round) =>
-			round.constructorStandings.find((c) => c.constructorRef === team.constructorRef),
+			round.constructorStandings.find(
+				(c) => c.constructorRef === team.constructorRef,
+			),
 		)
 		.filter(Boolean) as IDataPoint[];
-	const color = constructorColors[team.constructorRef] || colors[i];
+	const color = constructorColors[team.constructorRef] || colors[i] || '';
 
 	return {
 		label: team.name,
@@ -104,21 +109,21 @@ const safeConstructorsChartDataSets = constructorsChartDataSets;
 const safeDriversChartDataSets = driversChartDataSets;
 ---
 
-<MainLayout title={`${season} Season`}>
+<MainLayout title={`${year} Season`}>
 	<div class="seasons-header">
 		<Breadcrumbs
 			links={[
 				{ label: 'Seasons', href: '/seasons/' },
-				{ label: `${season} Season`, href: '' },
+				{ label: `${year} Season`, href: '' },
 			]}
 		/>
 		<nav class="season-pagination">
-			{hasPrev ? <a href={`/seasons/${season - 1}`}>&larr; {season - 1}</a> : null}
-			{hasNext ? <a href={`/seasons/${season + 1}`}>{season + 1} &rarr;</a> : null}
+			{hasPrev ? <a href={`/seasons/${year - 1}`}>&larr; {year - 1}</a> : null}
+			{hasNext ? <a href={`/seasons/${year + 1}`}>{year + 1} &rarr;</a> : null}
 		</nav>
 	</div>
 	<h1>
-		{season} Season {currentSeason === season ? '(Current Season)' : ''}
+		{year} Season {currentSeason === year ? '(Current Season)' : ''}
 	</h1>
 	<div class="tabs">
 		<nav class="tab-list">
@@ -152,7 +157,11 @@ const safeDriversChartDataSets = driversChartDataSets;
 									<tr>
 										<td>{row.round}</td>
 										<td>
-											<a href={`/seasons/${year}/round-${row.round.toString().padStart(2, '0')}`}>
+											<a
+												href={`/seasons/${year}/round-${row.round
+													.toString()
+													.padStart(2, '0')}`}
+											>
 												{row.name}
 											</a>
 										</td>
@@ -168,10 +177,14 @@ const safeDriversChartDataSets = driversChartDataSets;
 												<Nationality nationality={winnerDriver.nationality} />
 											) : null}
 											{winnerDriver ? (
-												<a href={`/drivers/${winnerDriver.driverRef}`}>{winnerDriver.name}</a>
+												<a href={`/drivers/${winnerDriver.driverRef}`}>
+													{winnerDriver.name}
+												</a>
 											) : null}
 
-											{winnerConstructor ? <span>&nbsp;({winnerConstructor.name})</span> : null}
+											{winnerConstructor ? (
+												<span>&nbsp;({winnerConstructor.name})</span>
+											) : null}
 										</td>
 									</tr>
 								);
@@ -195,7 +208,9 @@ const safeDriversChartDataSets = driversChartDataSets;
 							teams.flatMap((team) => {
 								return team.drivers.map((driver, i) => (
 									<tr>
-										{i === 0 ? <td rowspan={team.drivers.length}>{team.name}</td> : null}
+										{i === 0 ? (
+											<td rowspan={team.drivers.length}>{team.name}</td>
+										) : null}
 										{i === 0 ? (
 											<td rowspan={team.drivers.length}>
 												{team.nationality ? (
@@ -231,7 +246,9 @@ const safeDriversChartDataSets = driversChartDataSets;
 					<button type="button" class="btn" id="reset-zoom">Reset Zoom</button>
 					<canvas id="driver-standings-chart"></canvas>
 					<div class="instructions">
-						<div>Use <code>Alt/Option</code> + mouse drag selection to zoom</div>
+						<div>
+							Use <code>Alt/Option</code> + mouse drag selection to zoom
+						</div>
 						<div>Use mouse drag for panning after zoom</div>
 					</div>
 				</div>
@@ -241,7 +258,9 @@ const safeDriversChartDataSets = driversChartDataSets;
 					<button type="button" class="btn" id="reset-zoom">Reset Zoom</button>
 					<canvas id="constructor-standings-chart"></canvas>
 					<div class="instructions">
-						<div>Use <code>Alt/Option</code> + mouse drag selection to zoom</div>
+						<div>
+							Use <code>Alt/Option</code> + mouse drag selection to zoom
+						</div>
 						<div>Use mouse drag for panning after zoom</div>
 					</div>
 				</div>
@@ -278,9 +297,11 @@ const safeDriversChartDataSets = driversChartDataSets;
 <script
 	set:html={`
 window._roundNames = ${JSON.stringify(roundNames)};
-window._constructorsChartDataSets = ${JSON.stringify(safeConstructorsChartDataSets)};
+window._constructorsChartDataSets = ${JSON.stringify(
+		safeConstructorsChartDataSets,
+	)};
 window._driversChartDataSets = ${JSON.stringify(safeDriversChartDataSets)};
 `}
-></script>
+/>
 <script src="./_client/tabs.ts"></script>
 <script src="./_client/standings-chart.ts"></script>

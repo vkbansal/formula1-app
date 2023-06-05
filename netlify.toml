@@ -1,2 +1,6 @@
 [build]
-  base = "packages/site/"
+  command = "pnpm run build"
+  publish = "dist/"
+
+[build.environment]
+  NODE_VERSION="18"
