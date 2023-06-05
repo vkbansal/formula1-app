@@ -7,7 +7,7 @@
 	"constructorRef": "alpine",
 	"name": "Alpine F1 Team",
 	"nationality": "French",
-	"podiums": 2,
+	"podiums": 3,
 	"raceWins": 1,
 	"seasons": [
 		{
@@ -405,11 +405,35 @@
 					],
 					"round": 4,
 					"roundName": "Azerbaijan Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Esteban Ocon", "points": 2, "position": 9 },
+						{ "driver": "Pierre Gasly", "points": 4, "position": 8 }
+					],
+					"round": 5,
+					"roundName": "Miami Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Pierre Gasly", "points": 6, "position": 7 },
+						{ "driver": "Esteban Ocon", "points": 15, "position": 3 }
+					],
+					"round": 6,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Pierre Gasly", "points": 1, "position": 10 },
+						{ "driver": "Esteban Ocon", "points": 4, "position": 8 }
+					],
+					"round": 7,
+					"roundName": "Spanish Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 48,
-	"winPct": 2.08333
+	"totalRaces": 51,
+	"winPct": 1.96078
 }

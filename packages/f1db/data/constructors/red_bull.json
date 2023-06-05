@@ -23,8 +23,8 @@
 	"constructorRef": "red_bull",
 	"name": "Red Bull",
 	"nationality": "Austrian",
-	"podiums": 241,
-	"raceWins": 96,
+	"podiums": 245,
+	"raceWins": 99,
 	"seasons": [
 		{
 			"rounds": [
@@ -2933,11 +2933,35 @@
 					],
 					"round": 4,
 					"roundName": "Azerbaijan Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 18, "position": 2 },
+						{ "driver": "Max Verstappen", "points": 26, "position": 1 }
+					],
+					"round": 5,
+					"roundName": "Miami Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 0, "position": 16 },
+						{ "driver": "Max Verstappen", "points": 25, "position": 1 }
+					],
+					"round": 6,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 12, "position": 4 },
+						{ "driver": "Max Verstappen", "points": 26, "position": 1 }
+					],
+					"round": 7,
+					"roundName": "Spanish Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 352,
-	"winPct": 27.2727
+	"totalRaces": 355,
+	"winPct": 27.8873
 }

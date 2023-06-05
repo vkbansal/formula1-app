@@ -18,7 +18,7 @@
 	"constructorRef": "mercedes",
 	"name": "Mercedes",
 	"nationality": "German",
-	"podiums": 282,
+	"podiums": 284,
 	"raceWins": 125,
 	"seasons": [
 		{
@@ -2315,11 +2315,35 @@
 					],
 					"round": 4,
 					"roundName": "Azerbaijan Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 8, "position": 6 },
+						{ "driver": "George Russell", "points": 12, "position": 4 }
+					],
+					"round": 5,
+					"roundName": "Miami Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 10, "position": 5 },
+						{ "driver": "Lewis Hamilton", "points": 13, "position": 4 }
+					],
+					"round": 6,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 15, "position": 3 },
+						{ "driver": "Lewis Hamilton", "points": 18, "position": 2 }
+					],
+					"round": 7,
+					"roundName": "Spanish Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 275,
-	"winPct": 45.4545
+	"totalRaces": 278,
+	"winPct": 44.964
 }

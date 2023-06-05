@@ -1099,7 +1099,6 @@ import round_19_2023 from "./2023/round_19.json";
 import round_20_2023 from "./2023/round_20.json";
 import round_21_2023 from "./2023/round_21.json";
 import round_22_2023 from "./2023/round_22.json";
-import round_23_2023 from "./2023/round_23.json";
 
 export {
 	round_01_1950,
@@ -2203,5 +2202,4 @@ export {
 	round_20_2023,
 	round_21_2023,
 	round_22_2023,
-	round_23_2023,
 };
