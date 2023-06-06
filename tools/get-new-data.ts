@@ -6,7 +6,7 @@ import meow from 'meow';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 
 const cli = meow(``, {
 	importMeta: import.meta,
@@ -26,12 +26,16 @@ const $$ = cheerio.load(downloadsPageText);
 
 const totalRows = $$('table > tbody > tr').length;
 const csvRowIndex = Array.from({ length: totalRows }).findIndex((_, i) => {
-	const text = $$(`table > tbody > tr:nth-child(${i}) > td:nth-child(2)`).text();
+	const text = $$(
+		`table > tbody > tr:nth-child(${i}) > td:nth-child(2)`,
+	).text();
 
 	return text.trim() === 'f1db.sql.gz';
 });
 
-const lastModified = $$(`table > tbody > tr:nth-child(${csvRowIndex}) > td:nth-child(3)`)
+const lastModified = $$(
+	`table > tbody > tr:nth-child(${csvRowIndex}) > td:nth-child(3)`,
+)
 	.text()
 	.trim();
 
