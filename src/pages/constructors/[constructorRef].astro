@@ -7,6 +7,8 @@ import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import Nationality from '~/components/Nationality.astro';
 import { formatOrdinals } from '~/helpers/utils.js';
 
+export const prerender = false;
+
 export async function getStaticPaths() {
 	const allConstructors = await getCollection('constructors');
 	return allConstructors.map(({ data: con }) => {

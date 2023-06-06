@@ -9,6 +9,8 @@ import CarIcon from '~/components/CarIcon.astro';
 import Nationality from '~/components/Nationality.astro';
 import { constructorColors } from '~/data/colors.js';
 
+export const prerender = false;
+
 export async function getStaticPaths() {
 	const rounds = await getCollection('rounds');
 

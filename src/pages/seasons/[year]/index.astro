@@ -9,6 +9,8 @@ import { currentSeason, firstSeason } from '~/data/metadata.js';
 import { constructorColors } from '~/data/colors.js';
 import colors from '~/helpers/colors.js';
 
+export const prerender = false;
+
 export async function getStaticPaths() {
 	const seasons = await getCollection('seasons');
 
@@ -22,37 +24,6 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { rounds, teams, year } = Astro.props;
 const hasPrev = year > firstSeason && year <= currentSeason;
 const hasNext = year >= firstSeason && year < currentSeason;
-
-// const DataSchema = z.object({
-// 	year: z.number(),
-// 	rounds: z.array(
-// 		z.object({
-// 			round: z.number(),
-// 			name: z.string(),
-// 			date: z.string(),
-// 			circuit: Circuit,
-// 			podium: z.array(Podium),
-// 			driverStandings: z.array(DriverStanding),
-// 			constructorStandings: z.array(ConstructorStanding),
-// 		}),
-// 	),
-// 	teams: z.array(Team),
-// });
-
-// const DataPoint = z.object({
-// 	position: z.number(),
-// 	points: z.number(),
-// 	wins: z.number(),
-// });
-
-// const DataSet = z.object({
-// 	label: z.string(),
-// 	data: z.array(DataPoint),
-// 	borderColor: z.string(),
-// 	backgroundColor: z.string(),
-// });
-
-// type IDataSet = z.infer<typeof DataSet>;
 
 type IDataPoint = {
 	position: number;
