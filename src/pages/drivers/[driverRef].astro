@@ -1,74 +1,99 @@
 ---
-import { drivers, seasons } from 'f1db/data';
+import { getCollection } from 'astro:content';
+import type { InferGetStaticPropsType } from 'astro';
 
-import MainLayout from '$/layouts/MainLayout.astro';
-import Breadcrumbs from '$/components/Breadcrumbs.astro';
-import Nationality from '$/components/Nationality.astro';
-import { formatOrdinals } from '$/helpers/utils.js';
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Nationality from '~/components/Nationality.astro';
+import { formatOrdinals } from '~/helpers/utils.js';
 
-const { driverRef = '' } = Astro.params;
-const driver = drivers[driverRef];
-
-if (!driver) {
-	return new Response(null, {
-		status: 404,
-		statusText: 'Not found',
+export async function getStaticPaths() {
+	const allDrivers = await getCollection('drivers');
+	return allDrivers.map(({ data: con }) => {
+		return {
+			params: { driverRef: con.driverRef },
+			props: con,
+		};
 	});
 }
 
-const totalRoundsInSeasons = driver.seasons.reduce<Record<number, number>>(
-	(p, c) => ({ ...p, [c.year]: seasons[c.year].rounds.length }),
-	{},
-);
+const allSeasonRoundsMap = (await getCollection('seasons')).reduce<
+	Record<string, number>
+>((all, current) => {
+	all[current.data.year] = current.data.rounds.length;
+	return all;
+}, {});
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const {
+	seasons,
+	championshipStandings,
+	totalRaces,
+	raceWins,
+	name,
+	image,
+	nationality,
+	podiums,
+	totalLaps,
+	lapsLead,
+	dob,
+} = Astro.props;
+
+const totalRoundsInSeasons = seasons.reduce<Record<number, number>>((p, c) => {
+	p[c.year] = allSeasonRoundsMap[c.year] || 0;
+
+	return p;
+}, {});
 const maxRounds = Math.max(...Object.values(totalRoundsInSeasons));
 const maxRoundsArr = Array.from({ length: maxRounds });
-// const dob = format(parseISO(driver.dob), 'do MMM yyy');
+
 const winPct = `${
-	driver.totalRaces > 0 ? ((driver.raceWins * 100) / driver.totalRaces).toFixed(2) : '0.00'
+	totalRaces > 0 ? ((raceWins * 100) / totalRaces).toFixed(2) : '0.00'
 }%`;
 const lapsLeadPct = `${
-	typeof driver.totalLaps === 'number' && typeof driver.lapsLead === 'number'
-		? driver.totalLaps > 0
-			? ((driver.lapsLead * 100) / driver.totalLaps).toFixed(2)
+	typeof totalLaps === 'number' && typeof lapsLead === 'number'
+		? totalLaps > 0
+			? ((lapsLead * 100) / totalLaps).toFixed(2)
 			: '0.00'
 		: ''
 }%`;
-const wonChampionships = driver.championshipStandings
+const wonChampionships = championshipStandings
 	.filter((c) => c.position === 1)
 	.map((c) => c.year);
 ---
 
-<MainLayout title={`${driver.name}`}>
+<MainLayout title={`${name}`}>
 	<div class="driver-page">
 		<Breadcrumbs
 			links={[
 				{ label: 'Drivers', href: '/drivers/' },
-				{ label: driver.name, href: '' },
+				{ label: name, href: '' },
 			]}
 		/>
-		<h1>{driver.name}</h1>
+		<h1>{name}</h1>
 		<div class="driver-info">
 			<div>
-				{driver.image ? <img class="profile-pic" src={driver.image} alt={driver.name} /> : null}
+				{image ? <img class="profile-pic" src={image} alt={name} /> : null}
 			</div>
 			<table class="table table-sm">
 				<tbody>
 					<tr>
 						<th>Name</th>
-						<td>{driver.name}</td>
+						<td>{name}</td>
 					</tr>
 					<tr>
 						<th>Date of Birth</th>
-						<td>{driver.dob}</td>
+						<td>{dob}</td>
 					</tr>
 					<tr>
 						<th>Nationality</th>
 						<td>
 							{
-								driver.nationality ? (
+								nationality ? (
 									<>
-										<span>{driver.nationality}</span>
-										<Nationality nationality={driver.nationality} />
+										<span>{nationality}</span>
+										<Nationality nationality={nationality} />
 									</>
 								) : (
 									'-'
@@ -78,31 +103,39 @@ const wonChampionships = driver.championshipStandings
 					</tr>
 					<tr>
 						<th>Total Races</th>
-						<td>{driver.totalRaces}</td>
+						<td>{totalRaces}</td>
 					</tr>
 					<tr>
 						<th>Races Won</th>
-						<td>{driver.raceWins} ({winPct})</td>
+						<td>{raceWins} ({winPct})</td>
 					</tr>
 					<tr>
 						<th>Podiums</th>
-						<td>{driver.podiums}</td>
+						<td>{podiums}</td>
 					</tr>
 					<tr>
 						<th>Total Laps</th>
-						<td>{driver.totalLaps}</td>
+						<td>{totalLaps}</td>
 					</tr>
 					<tr>
 						<th>Laps Lead</th>
 						<td>
-							{typeof driver.lapsLead === 'number' ? `${driver.lapsLead} (${lapsLeadPct})` : 'N/A'}
+							{
+								typeof lapsLead === 'number'
+									? `${lapsLead} (${lapsLeadPct})`
+									: 'N/A'
+							}
 						</td>
 					</tr>
 					<tr>
 						<th>World Championships Won</th>
 						<td>
 							<span>{wonChampionships.length}</span>
-							{wonChampionships.length > 0 ? <span>({wonChampionships.join(', ')})</span> : null}
+							{
+								wonChampionships.length > 0 ? (
+									<span>({wonChampionships.join(', ')})</span>
+								) : null
+							}
 						</td>
 					</tr>
 				</tbody>
@@ -120,16 +153,28 @@ const wonChampionships = driver.championshipStandings
 			</thead>
 			<tbody>
 				{
-					driver.seasons.flatMap((season) => {
-						const wdcStanding = driver.championshipStandings.find((c) => c.year === season.year);
-						const constructorsInSeason = [...new Set(season.results.map((r) => r.constructor))];
+					seasons.flatMap((season) => {
+						const wdcStanding = championshipStandings.find(
+							(c) => c.year === season.year,
+						);
+						const constructorsInSeason = [
+							...new Set(season.results.map((r) => r.constructor)),
+						];
 
 						return constructorsInSeason.map((con, i) => {
-							const results = season.results.filter((r) => r.constructor === con);
+							const results = season.results.filter(
+								(r) => r.constructor === con,
+							);
 
 							return (
-								<tr class:list={{ 'table-divider': i === constructorsInSeason.length - 1 }}>
-									{i === 0 ? <th rowspan={constructorsInSeason.length}>{season.year}</th> : null}
+								<tr
+									class:list={{
+										'table-divider': i === constructorsInSeason.length - 1,
+									}}
+								>
+									{i === 0 ? (
+										<th rowspan={constructorsInSeason.length}>{season.year}</th>
+									) : null}
 									<td class="constructor-name-cell">{con}</td>
 									{maxRoundsArr.map((_, i) => {
 										const round = results.find((r) => r.round === i + 1);
@@ -144,13 +189,22 @@ const wonChampionships = driver.championshipStandings
 
 										return (
 											<td class="text-center">
-												<div>{round.position ? formatOrdinals(round.position) : '-'}</div>
+												<div>
+													{round.position
+														? formatOrdinals(round.position)
+														: '-'}
+												</div>
 											</td>
 										);
 									})}
 									{i === 0 ? (
-										<td class="text-center" rowspan={constructorsInSeason.length}>
-											{wdcStanding?.position ? formatOrdinals(wdcStanding.position) : '-'}
+										<td
+											class="text-center"
+											rowspan={constructorsInSeason.length}
+										>
+											{wdcStanding?.position
+												? formatOrdinals(wdcStanding.position)
+												: '-'}
 										</td>
 									) : null}
 								</tr>

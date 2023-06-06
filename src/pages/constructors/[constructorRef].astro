@@ -1,71 +1,80 @@
 ---
-import { constructors, seasons } from 'f1db/data';
-import MainLayout from '$/layouts/MainLayout.astro';
-import Breadcrumbs from '$/components/Breadcrumbs.astro';
-import Nationality from '$/components/Nationality.astro';
-import { formatOrdinals } from '$/helpers/utils.js';
+import { getCollection } from 'astro:content';
+import type { InferGetStaticPropsType } from 'astro';
 
-// export async function getStaticPaths(): Promise<StaticPathsItem[]> {
-// 	const allConstructors = await loadData('constructors');
-// 	const seasons = await loadData('seasons');
-// 	const seasonsMap = seasons.reduce<Record<string, Season>>((p, c) => ({ ...p, [c.year]: c }), {});
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Nationality from '~/components/Nationality.astro';
+import { formatOrdinals } from '~/helpers/utils.js';
 
-// 	return allConstructors.map((con) => {
-
-// 		return {
-// 			params: { constructorRef: con.constructorRef },
-// 			props: { constructor: con, totalRoundsInSeasons },
-// 		};
-// 	});
-// }
-
-const { constructorRef = '' } = Astro.params;
-const con = constructors[constructorRef];
-
-if (!con) {
-	return new Response(null, {
-		status: 404,
-		statusText: 'Not found',
+export async function getStaticPaths() {
+	const allConstructors = await getCollection('constructors');
+	return allConstructors.map(({ data: con }) => {
+		return {
+			params: { constructorRef: con.constructorRef },
+			props: con,
+		};
 	});
 }
 
-const totalRoundsInSeasons = con.seasons.reduce<Record<number, number>>((p, c) => {
-	return { ...p, [c.year]: seasons[c.year].rounds.length };
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const allSeasonRoundsMap = (await getCollection('seasons')).reduce<
+	Record<string, number>
+>((all, current) => {
+	all[current.data.year] = current.data.rounds.length;
+	return all;
+}, {});
+
+const {
+	seasons,
+	championshipStandings,
+	totalRaces,
+	raceWins,
+	name,
+	nationality,
+	podiums,
+} = Astro.props;
+
+const totalRoundsInSeasons = seasons.reduce<Record<number, number>>((p, c) => {
+	p[c.year] = allSeasonRoundsMap[c.year] || 0;
+
+	return p;
 }, {});
 
 const maxRounds = Math.max(...Object.values(totalRoundsInSeasons));
 const maxRoundsArr = Array.from({ length: maxRounds });
-const wonChampionships = con.championshipStandings
+const wonChampionships = championshipStandings
 	.filter((c) => c.position === 1)
 	.map((c) => c.year);
 const winPct = `${
-	con.totalRaces > 0 ? ((con.raceWins * 100) / con.totalRaces).toFixed(2) : '0.00'
+	totalRaces > 0 ? ((raceWins * 100) / totalRaces).toFixed(2) : '0.00'
 }%`;
 ---
 
-<MainLayout title={con.name}>
+<MainLayout title={name}>
 	<div class="constructor-page">
 		<Breadcrumbs
 			links={[
 				{ label: 'Constructors', href: '/constructors/' },
-				{ label: con.name, href: '' },
+				{ label: name, href: '' },
 			]}
 		/>
-		<h1>{con.name}</h1>
+		<h1>{name}</h1>
 		<table class="table">
 			<tbody>
 				<tr>
 					<th>Name</th>
-					<td>{con.name}</td>
+					<td>{name}</td>
 				</tr>
 				<tr>
 					<th>Nationality</th>
 					<td>
 						{
-							con.nationality ? (
+							nationality ? (
 								<>
-									<span>{con.nationality}</span>
-									<Nationality nationality={con.nationality} />
+									<span>{nationality}</span>
+									<Nationality nationality={nationality} />
 								</>
 							) : (
 								'-'
@@ -75,21 +84,25 @@ const winPct = `${
 				</tr>
 				<tr>
 					<th>Total Races</th>
-					<td>{con.totalRaces}</td>
+					<td>{totalRaces}</td>
 				</tr>
 				<tr>
 					<th>Races Won</th>
-					<td>{con.raceWins} ({winPct})</td>
+					<td>{raceWins} ({winPct})</td>
 				</tr>
 				<tr>
 					<th>Podiums</th>
-					<td>{con.podiums}</td>
+					<td>{podiums}</td>
 				</tr>
 				<tr>
 					<th>World Championships Won</th>
 					<td>
 						<span>{wonChampionships.length}</span>
-						{wonChampionships.length > 0 ? <span>({wonChampionships.join(', ')})</span> : null}
+						{
+							wonChampionships.length > 0 ? (
+								<span>({wonChampionships.join(', ')})</span>
+							) : null
+						}
 					</td>
 				</tr>
 			</tbody>
@@ -108,24 +121,42 @@ const winPct = `${
 			</thead>
 			<tbody>
 				{
-					con.seasons.flatMap((season) => {
-						const wccStanding = con.championshipStandings.find((c) => c.year === season.year);
+					seasons.flatMap((season) => {
+						const wccStanding = championshipStandings.find(
+							(c) => c.year === season.year,
+						);
 						const driversInSeason = [
 							...new Set(
-								season.rounds.flatMap((round) => round.results.map((result) => result.driver)),
+								season.rounds.flatMap((round) =>
+									round.results.map((result) => result.driver),
+								),
 							),
 						];
 
 						return driversInSeason.map((driver, i) => {
 							return (
-								<tr class:list={{ 'table-divider': i === driversInSeason.length - 1 }}>
-									{i === 0 ? <th rowspan={driversInSeason.length}>{season.year}</th> : null}
+								<tr
+									class:list={{
+										'table-divider': i === driversInSeason.length - 1,
+									}}
+								>
+									{i === 0 ? (
+										<th rowspan={driversInSeason.length}>{season.year}</th>
+									) : null}
 									<td class="driver-name-cell">{driver}</td>
 									{maxRoundsArr.map((_, i) => {
-										const round = season.rounds.find((round) => round.round === i + 1);
-										const driverResult = round?.results.find((result) => result.driver === driver);
+										const round = season.rounds.find(
+											(round) => round.round === i + 1,
+										);
+										const driverResult = round?.results.find(
+											(result) => result.driver === driver,
+										);
 
-										if (i + 1 > season.rounds.length || !round || !driverResult?.position) {
+										if (
+											i + 1 > season.rounds.length ||
+											!round ||
+											!driverResult?.position
+										) {
 											return <td class="text-center">-</td>;
 										}
 
@@ -137,7 +168,9 @@ const winPct = `${
 									})}
 									{i === 0 ? (
 										<td class="text-center" rowspan={driversInSeason.length}>
-											{wccStanding?.position ? formatOrdinals(wccStanding.position) : '-'}
+											{wccStanding?.position
+												? formatOrdinals(wccStanding.position)
+												: '-'}
 										</td>
 									) : null}
 								</tr>
@@ -160,6 +193,10 @@ const winPct = `${
 
 		:global(.table-divider, .table-divider td, .table-divider th) {
 			box-shadow: 0px 1px 0px var(--border-darker) !important;
+		}
+
+		:global(.table.table-sm tr td:last-child:not([row-span])) {
+			padding-right: 0.5rem;
 		}
 	}
 </style>
