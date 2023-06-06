@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /* eslint-disable no-console */
 /* global $ */
 import 'zx/globals';
@@ -51,7 +50,7 @@ if (!cli.flags.force && version === lastModified) {
 
 console.log('New data exists');
 console.log('Downloading latest data');
-await $`wget http://ergast.com/downloads/f1db.sql.gz -O initdb.d/f1db.sql.gz`;
+await $`wget http://ergast.com/downloads/f1db.sql.gz -O tools/docker/initdb.d/f1db.sql.gz`;
 
 console.log('writing metadata');
 await fs.promises.writeFile(VERSION_FILE, lastModified, 'utf8');
