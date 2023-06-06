@@ -1,6 +1,6 @@
 ---
-import f1Logo from 'images/f1-logo.svg';
-import github from 'images/github.svg';
+import f1Logo from '~/images/f1-logo.svg';
+import github from '~/images/github.svg';
 
 const url = Astro.url.pathname;
 ---
@@ -10,7 +10,9 @@ const url = Astro.url.pathname;
 		<div class="navbar-brand">
 			<a href="/" class="logo">
 				<img src={f1Logo} alt="Formula 1 Logo" />
-				<span>Statistics <span class="text-scale-50 text-lighter">(Beta)</span></span>
+				<span>
+					Statistics <span class="text-scale-50 text-lighter">(Beta)</span>
+				</span>
 			</a>
 			<div class="navbar-rhs">
 				<label for="theme-toggle" class="theme-toggle" title="Theme">
@@ -33,26 +35,45 @@ const url = Astro.url.pathname;
 		<nav class="nav-menu" id="nav-menu">
 			<a
 				href="/seasons"
-				class:list={['nav-link', { 'nav-link-active': url.startsWith('/seasons/') }]}
+				class:list={[
+					'nav-link',
+					{ 'nav-link-active': url.startsWith('/seasons/') },
+				]}
 			>
 				Seasons
 			</a>
 			<a
 				href="/constructors"
-				class:list={['nav-link', { 'nav-link-active': url.startsWith('/constructors/') }]}
+				class:list={[
+					'nav-link',
+					{ 'nav-link-active': url.startsWith('/constructors/') },
+				]}
 			>
 				Constructors
 			</a>
 			<a
 				href="/drivers"
-				class:list={['nav-link', { 'nav-link-active': url.startsWith('/drivers/') }]}
+				class:list={[
+					'nav-link',
+					{ 'nav-link-active': url.startsWith('/drivers/') },
+				]}
 			>
 				Drivers
 			</a>
-			<a href="/about" class:list={['nav-link', { 'nav-link-active': url.startsWith('/about/') }]}>
+			<a
+				href="/about"
+				class:list={[
+					'nav-link',
+					{ 'nav-link-active': url.startsWith('/about/') },
+				]}
+			>
 				About
 			</a>
-			<a class="github" href="https://github.com/vkbansal/formula1-app/" target="_blank">
+			<a
+				class="github"
+				href="https://github.com/vkbansal/formula1-app/"
+				target="_blank"
+			>
 				<img src={github} alt="GitHub" />
 			</a>
 		</nav>
@@ -199,7 +220,8 @@ const url = Astro.url.pathname;
 
 			& > span {
 				&:nth-child(1) {
-					transform: translateY(-1 * math.div($bar-height, 2)) rotate(45deg) translateX($delta);
+					transform: translateY(-1 * math.div($bar-height, 2)) rotate(45deg)
+						translateX($delta);
 				}
 
 				&:nth-child(2) {
@@ -207,7 +229,8 @@ const url = Astro.url.pathname;
 				}
 
 				&:nth-child(3) {
-					transform: translateY(math.div($bar-height, 2)) rotate(-45deg) translateX($delta);
+					transform: translateY(math.div($bar-height, 2)) rotate(-45deg)
+						translateX($delta);
 				}
 			}
 		}

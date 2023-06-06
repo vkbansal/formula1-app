@@ -34,7 +34,8 @@ Chart.register(
 
 const FONT_FAMILY = '"Roboto Mono", Monaco, "Ubuntu Mono", monospace';
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const COLOR = document.body.parentElement!.dataset.theme === 'dark' ? 'white' : 'black';
+const COLOR =
+	document.body.parentElement!.dataset.theme === 'dark' ? 'white' : 'black';
 
 interface IDataPoint {
 	points: number;
@@ -42,10 +43,17 @@ interface IDataPoint {
 	wins: number;
 }
 
-function renderStandingsChart(ctx: HTMLCanvasElement, datasets: IChartData['datasets']): void {
-	const labelsLength = window._constructorsChartDataSets.map((c: any) => c.label.length);
+function renderStandingsChart(
+	ctx: HTMLCanvasElement,
+	datasets: IChartData['datasets'],
+): void {
+	const labelsLength = window._constructorsChartDataSets.map(
+		(c: any) => c.label.length,
+	);
 	const MAX_LABEL_LENGTH = Math.max(...labelsLength);
-	const points = datasets.flatMap((c: any) => c.data.map((d: any) => d.points || 0));
+	const points = datasets.flatMap((c: any) =>
+		c.data.map((d: any) => d.points || 0),
+	);
 	const MAX_POINTS = Math.max(...points);
 	const BASE = Math.pow(10, Math.ceil(Math.log10(MAX_POINTS)) - 1);
 
@@ -126,7 +134,9 @@ function renderStandingsChart(ctx: HTMLCanvasElement, datasets: IChartData['data
 						label(item): string {
 							const { dataIndex, dataset } = item;
 							const raw = item.raw as IDataPoint;
-							const prevData = dataset.data[dataIndex - 1] as unknown as IDataPoint;
+							const prevData = dataset.data[
+								dataIndex - 1
+							] as unknown as IDataPoint;
 							let updateText = '';
 
 							if (prevData) {
@@ -165,7 +175,9 @@ function renderStandingsChart(ctx: HTMLCanvasElement, datasets: IChartData['data
 		},
 	});
 
-	const themeToggle = document.getElementById('theme-toggle') as HTMLInputElement;
+	const themeToggle = document.getElementById(
+		'theme-toggle',
+	) as HTMLInputElement;
 
 	if (themeToggle) {
 		themeToggle.addEventListener('change', function () {
@@ -186,8 +198,12 @@ function renderStandingsChart(ctx: HTMLCanvasElement, datasets: IChartData['data
 	});
 }
 
-const ctx1 = document.getElementById('driver-standings-chart') as HTMLCanvasElement;
-const ctx2 = document.getElementById('constructor-standings-chart') as HTMLCanvasElement;
+const ctx1 = document.getElementById(
+	'driver-standings-chart',
+) as HTMLCanvasElement;
+const ctx2 = document.getElementById(
+	'constructor-standings-chart',
+) as HTMLCanvasElement;
 
 renderStandingsChart(ctx1, window._driversChartDataSets);
 renderStandingsChart(ctx2, window._constructorsChartDataSets);

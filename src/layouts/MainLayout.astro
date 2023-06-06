@@ -7,9 +7,9 @@ import '../styles/_table.scss';
 import '../styles/_char-nav.scss';
 import '../styles/_seasons.scss';
 
-import Header from 'components/Header.astro';
-import Footer from 'components/Footer.astro';
-import buildTime from 'data/buildTime.js';
+import Header from '~/components/Header.astro';
+import Footer from '~/components/Footer.astro';
+import buildTime from '~/data/buildTime.js';
 
 export interface Props {
 	title: string;
@@ -34,7 +34,10 @@ const { title, class: className } = Astro.props as Props;
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content={`${title} - F1 statistics`} />
 		<meta name="twitter:site" content="@_vkbansal" />
-		<meta name="twitter:description" content="F1 statistics by Vivek Kumar Bansal" />
+		<meta
+			name="twitter:description"
+			content="F1 statistics by Vivek Kumar Bansal"
+		/>
 		<!-- <meta name="twitter:image" content={} /> -->
 	</head>
 	<body>
@@ -74,6 +77,8 @@ const { title, class: className } = Astro.props as Props;
 		}
 
 		// build time handling
-		document.getElementById('last-updated').innerHTML = new Date(buildTime).toLocaleString();
+		document.getElementById('last-updated').innerHTML = new Date(
+			buildTime,
+		).toLocaleString();
 	} catch (e) {}
 </script>

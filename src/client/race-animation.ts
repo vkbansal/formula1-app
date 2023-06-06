@@ -1,4 +1,4 @@
-import type { IRaceData } from 'f1db/types/rounds';
+import type { CollectionEntry } from 'astro:content';
 
 enum Status {
 	RETIRED = 'R',
@@ -11,19 +11,28 @@ enum Status {
 declare global {
 	// eslint-disable-next-line @typescript-eslint/naming-convention
 	interface Window {
-		_raceData: IRaceData;
+		_raceData: CollectionEntry<'rounds'>['data'];
 	}
 }
+
 document.addEventListener('readystatechange', () => {
 	// Animation containers
-	const animationContainer = document.getElementById('animation-container') as HTMLDivElement;
-	const lapsContainer = document.getElementById('laps-container') as HTMLDivElement;
+	const animationContainer = document.getElementById(
+		'animation-container',
+	) as HTMLDivElement;
+	const lapsContainer = document.getElementById(
+		'laps-container',
+	) as HTMLDivElement;
 	const drivers = document.querySelector<HTMLDivElement>('.drivers-container');
 	const lapContainers = document.querySelectorAll('.lap-container');
 
 	// Control Elements
-	const animProgress = document.getElementById('animation-progress') as HTMLInputElement;
-	const playPauseBtn = document.getElementById('play-pause') as HTMLButtonElement;
+	const animProgress = document.getElementById(
+		'animation-progress',
+	) as HTMLInputElement;
+	const playPauseBtn = document.getElementById(
+		'play-pause',
+	) as HTMLButtonElement;
 	const resetBtn = document.getElementById('reset') as HTMLButtonElement;
 	const lapCount = document.getElementById('lap-count') as HTMLSpanElement;
 
@@ -47,7 +56,8 @@ document.addEventListener('readystatechange', () => {
 		// if a lap is 100% visible
 		if (lapContainer) {
 			// get the current lap
-			const currentLap = (lapContainer.target as HTMLDivElement).dataset.lap || '';
+			const currentLap =
+				(lapContainer.target as HTMLDivElement).dataset.lap || '';
 			const parsedLap = parseInt(currentLap);
 
 			// update drivers dataset with current lap
@@ -83,22 +93,24 @@ document.addEventListener('readystatechange', () => {
 				lapCount.innerHTML = (lapContainers.length - 2).toString();
 
 				// update each driver's `y` position with final position
-				window._raceData.driversData.map(({ driverRef, positionOrder, positionText }) => {
-					const driverDiv = document.querySelector<HTMLDivElement>(
-						`[data-driverId="${driverRef}"]`,
-					);
+				window._raceData.driversData.map(
+					({ driverRef, positionOrder, positionText }) => {
+						const driverDiv = document.querySelector<HTMLDivElement>(
+							`[data-driverId="${driverRef}"]`,
+						);
 
-					if (driverDiv) {
-						// update driver's `y` position with final position
-						driverDiv.style.setProperty('--y', positionOrder.toString());
+						if (driverDiv) {
+							// update driver's `y` position with final position
+							driverDiv.style.setProperty('--y', positionOrder.toString());
 
-						// update driver's status with final position
-						driverDiv.dataset.status = positionText;
+							// update driver's status with final position
+							driverDiv.dataset.status = positionText;
 
-						// reset driver pitstop status
-						delete driverDiv.dataset.pitStop;
-					}
-				});
+							// reset driver pitstop status
+							delete driverDiv.dataset.pitStop;
+						}
+					},
+				);
 			} else if (!Number.isNaN(parsedLap)) {
 				// update progress controls
 				animProgress.value = currentLap;
@@ -106,7 +118,13 @@ document.addEventListener('readystatechange', () => {
 
 				// update each driver's `y` position with active lap's position
 				window._raceData.driversData.forEach(
-					({ driverRef, lapPositions, positionText, pitStops, positionOrder }) => {
+					({
+						driverRef,
+						lapPositions,
+						positionText,
+						pitStops,
+						positionOrder,
+					}) => {
 						const driverDiv = document.querySelector<HTMLDivElement>(
 							`[data-driverId="${driverRef}"]`,
 						);
@@ -148,14 +166,15 @@ document.addEventListener('readystatechange', () => {
 		}
 	}
 
-	const lapDiv = lapContainers[0].getBoundingClientRect();
+	const lapDiv = lapContainers[0]?.getBoundingClientRect();
+	const lapDivWidth = lapDiv?.width || 0;
 	const lapsContainerDiv = lapsContainer.getBoundingClientRect();
 	// Animation duration for each lap
 	const LAP_ANIMATION_DURATION = 500;
 	// ratio of individual lap to the container
-	const LAP_WIDTH_RATIO = lapDiv.width / lapsContainerDiv.width;
+	const LAP_WIDTH_RATIO = lapDivWidth / lapsContainerDiv.width;
 	// scroll rate calculated based on lap width and the animation duration
-	const SCROLL_RATE = lapDiv.width / LAP_ANIMATION_DURATION;
+	const SCROLL_RATE = lapDivWidth / LAP_ANIMATION_DURATION;
 
 	// refs used by animation
 	let lastUpdateTime = 0;
@@ -255,7 +274,8 @@ document.addEventListener('readystatechange', () => {
 		if (parsedValue === 0) {
 			lapsContainer.scrollLeft = 0;
 		} else {
-			lapsContainer.scrollLeft = lapDiv.width * LAP_WIDTH_RATIO * (parsedValue - 0.5);
+			lapsContainer.scrollLeft =
+				lapDivWidth * LAP_WIDTH_RATIO * (parsedValue - 0.5);
 		}
 	});
 });
