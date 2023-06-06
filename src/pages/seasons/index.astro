@@ -1,0 +1,125 @@
+---
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { currentSeason } from '~/data/metadata.js';
+import seasons_list from '~/data/seasons-list.json';
+
+export const prerender = true;
+---
+
+<MainLayout title={`Seasons`}>
+	<Breadcrumbs links={[{ label: 'Seasons', href: '/seasons/' }]} />
+	<h1>All Seasons</h1>
+	<p class="text-light">* - Current Season</p>
+	<section id="seasons-grid" class="seasons-grid">
+		{
+			seasons_list.map((season) => (
+				<div class="season-card" data-season={season.year}>
+					<a
+						href={`/seasons/${season.year}/`}
+						class:list={[{ 'current-season': currentSeason === season.year }]}
+					>
+						{season.year}
+					</a>
+				</div>
+			))
+		}
+	</section>
+	<br />
+</MainLayout>
+<script>
+	const grid = document.getElementById('seasons-grid');
+	const CELL_WIDTH = 200;
+
+	if (grid) {
+		const allSeasons = grid.querySelectorAll('[data-season]');
+		const emptyCell = document.createElement('div');
+		emptyCell.classList.add('season-card');
+		emptyCell.dataset.empty = 'true';
+
+		const resizeObsever = new ResizeObserver((entries) => {
+			const entry = entries[0];
+
+			if (entry?.target === grid) {
+				let isBGBlack = true;
+				const width = entry.contentRect.width;
+				const gridSize = Math.floor(width / CELL_WIDTH);
+				const extraBoxes = gridSize - (allSeasons.length % gridSize);
+				const existingEmptyBoxes = grid.querySelectorAll('[data-empty="true"]');
+
+				let diff = Math.abs(existingEmptyBoxes.length - extraBoxes);
+
+				while (diff > 0) {
+					if (existingEmptyBoxes.length > extraBoxes) {
+						existingEmptyBoxes[0]?.remove();
+					} else if (existingEmptyBoxes.length < extraBoxes) {
+						grid.appendChild(emptyCell.cloneNode());
+					}
+					diff--;
+				}
+
+				for (let i = 1; i <= grid.children.length; i++) {
+					const child = grid.children[i - 1];
+					const bg = isBGBlack ? 'var(--black)' : 'var(--white)';
+					const color = isBGBlack ? 'var(--white)' : 'var(--black)';
+
+					child?.setAttribute('style', `background: ${bg}; color: ${color};`);
+
+					if (gridSize % 2 === 1 || i % gridSize !== 0) {
+						isBGBlack = !isBGBlack;
+					}
+				}
+			}
+		});
+		resizeObsever.observe(grid);
+	}
+</script>
+
+<style lang="scss">
+	.seasons-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-auto-rows: minmax(200px, auto);
+		border-radius: 1rem;
+		overflow: hidden;
+		border: 1px solid var(--border);
+		margin-bottom: 2rem;
+	}
+
+	.season-card {
+		margin: 0;
+		overflow: hidden;
+		aspect-ratio: 1 / 1;
+
+		& > a {
+			font-weight: 700;
+			display: flex;
+			text-decoration: none;
+			align-items: center;
+			justify-content: center;
+			transform-origin: center center;
+			transition: transform 0.3s ease-out;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			font-size: 2.5rem;
+			color: inherit;
+
+			&:hover {
+				transform: scale(1.35);
+			}
+
+			&.current-season::after {
+				content: '*';
+			}
+		}
+
+		&:nth-child(2n) {
+			background: var(--white);
+		}
+
+		&:nth-child(2n + 1) {
+			background: var(--black);
+		}
+	}
+</style>

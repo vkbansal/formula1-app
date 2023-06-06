@@ -1,0 +1,202 @@
+---
+import { getCollection } from 'astro:content';
+import type { InferGetStaticPropsType } from 'astro';
+
+import MainLayout from '~/layouts/MainLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Nationality from '~/components/Nationality.astro';
+import { formatOrdinals } from '~/helpers/utils.js';
+
+export async function getStaticPaths() {
+	const allConstructors = await getCollection('constructors');
+	return allConstructors.map(({ data: con }) => {
+		return {
+			params: { constructorRef: con.constructorRef },
+			props: con,
+		};
+	});
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const allSeasonRoundsMap = (await getCollection('seasons')).reduce<
+	Record<string, number>
+>((all, current) => {
+	all[current.data.year] = current.data.rounds.length;
+	return all;
+}, {});
+
+const {
+	seasons,
+	championshipStandings,
+	totalRaces,
+	raceWins,
+	name,
+	nationality,
+	podiums,
+} = Astro.props;
+
+const totalRoundsInSeasons = seasons.reduce<Record<number, number>>((p, c) => {
+	p[c.year] = allSeasonRoundsMap[c.year] || 0;
+
+	return p;
+}, {});
+
+const maxRounds = Math.max(...Object.values(totalRoundsInSeasons));
+const maxRoundsArr = Array.from({ length: maxRounds });
+const wonChampionships = championshipStandings
+	.filter((c) => c.position === 1)
+	.map((c) => c.year);
+const winPct = `${
+	totalRaces > 0 ? ((raceWins * 100) / totalRaces).toFixed(2) : '0.00'
+}%`;
+---
+
+<MainLayout title={name}>
+	<div class="constructor-page">
+		<Breadcrumbs
+			links={[
+				{ label: 'Constructors', href: '/constructors/' },
+				{ label: name, href: '' },
+			]}
+		/>
+		<h1>{name}</h1>
+		<table class="table">
+			<tbody>
+				<tr>
+					<th>Name</th>
+					<td>{name}</td>
+				</tr>
+				<tr>
+					<th>Nationality</th>
+					<td>
+						{
+							nationality ? (
+								<>
+									<span>{nationality}</span>
+									<Nationality nationality={nationality} />
+								</>
+							) : (
+								'-'
+							)
+						}
+					</td>
+				</tr>
+				<tr>
+					<th>Total Races</th>
+					<td>{totalRaces}</td>
+				</tr>
+				<tr>
+					<th>Races Won</th>
+					<td>{raceWins} ({winPct})</td>
+				</tr>
+				<tr>
+					<th>Podiums</th>
+					<td>{podiums}</td>
+				</tr>
+				<tr>
+					<th>World Championships Won</th>
+					<td>
+						<span>{wonChampionships.length}</span>
+						{
+							wonChampionships.length > 0 ? (
+								<span>({wonChampionships.join(', ')})</span>
+							) : null
+						}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<br />
+		<h2>Race Results</h2>
+		<table class="table table-sm constructor-results-table">
+			<thead>
+				<tr class="table-divider">
+					<th>Season</th>
+					<th>Driver</th>
+					{maxRoundsArr.map((_, i) => <th class="text-center">R{i + 1}</th>)}
+					<th class="text-center">WCC</th>
+				</tr>
+			</thead>
+			<tbody>
+				{
+					seasons.flatMap((season) => {
+						const wccStanding = championshipStandings.find(
+							(c) => c.year === season.year,
+						);
+						const driversInSeason = [
+							...new Set(
+								season.rounds.flatMap((round) =>
+									round.results.map((result) => result.driver),
+								),
+							),
+						];
+
+						return driversInSeason.map((driver, i) => {
+							return (
+								<tr
+									class:list={{
+										'table-divider': i === driversInSeason.length - 1,
+									}}
+								>
+									{i === 0 ? (
+										<th rowspan={driversInSeason.length}>{season.year}</th>
+									) : null}
+									<td class="driver-name-cell">{driver}</td>
+									{maxRoundsArr.map((_, i) => {
+										const round = season.rounds.find(
+											(round) => round.round === i + 1,
+										);
+										const driverResult = round?.results.find(
+											(result) => result.driver === driver,
+										);
+
+										if (
+											i + 1 > season.rounds.length ||
+											!round ||
+											!driverResult?.position
+										) {
+											return <td class="text-center">-</td>;
+										}
+
+										return (
+											<td class="text-center">
+												<div>{formatOrdinals(driverResult.position)}</div>
+											</td>
+										);
+									})}
+									{i === 0 ? (
+										<td class="text-center" rowspan={driversInSeason.length}>
+											{wccStanding?.position
+												? formatOrdinals(wccStanding.position)
+												: '-'}
+										</td>
+									) : null}
+								</tr>
+							);
+						});
+					})
+				}
+			</tbody>
+		</table>
+	</div>
+</MainLayout>
+
+<style lang="scss">
+	.constructor-page {
+		margin-bottom: 4rem;
+
+		:global(.driver-name-cell) {
+			padding-left: 0.5rem !important;
+		}
+
+		:global(.table-divider, .table-divider td, .table-divider th) {
+			box-shadow: 0px 1px 0px var(--border-darker) !important;
+		}
+
+		:global(.table.table-sm tr td:last-child:not([row-span])) {
+			padding-right: 0.5rem;
+		}
+	}
+</style>

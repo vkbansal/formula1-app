@@ -1,0 +1,13 @@
+---
+export interface Props {
+	nationality: string;
+}
+
+const { nationality } = Astro.props as Props;
+---
+
+<span
+	class:list={[
+		'nationality',
+		nationality.normalize('NFD').toLowerCase().replace(/\s/g, '_'),
+	]}></span>

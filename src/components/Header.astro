@@ -1,0 +1,336 @@
+---
+import f1Logo from '~/images/f1-logo.svg';
+import github from '~/images/github.svg';
+
+const url = Astro.url.pathname;
+---
+
+<header class="main">
+	<nav class="container navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a href="/" class="logo">
+				<img src={f1Logo} alt="Formula 1 Logo" />
+				<span>
+					Statistics <span class="text-scale-50 text-lighter">(Beta)</span>
+				</span>
+			</a>
+			<div class="navbar-rhs">
+				<label for="theme-toggle" class="theme-toggle" title="Theme">
+					<input id="theme-toggle" type="checkbox" />
+					<span></span>
+				</label>
+				<a
+					role="button"
+					class="navbar-burger"
+					aria-label="menu"
+					aria-expanded="false"
+					id="navbar-burger"
+				>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>
+		<nav class="nav-menu" id="nav-menu">
+			<a
+				href="/seasons"
+				class:list={[
+					'nav-link',
+					{ 'nav-link-active': url.startsWith('/seasons/') },
+				]}
+			>
+				Seasons
+			</a>
+			<a
+				href="/constructors"
+				class:list={[
+					'nav-link',
+					{ 'nav-link-active': url.startsWith('/constructors/') },
+				]}
+			>
+				Constructors
+			</a>
+			<a
+				href="/drivers"
+				class:list={[
+					'nav-link',
+					{ 'nav-link-active': url.startsWith('/drivers/') },
+				]}
+			>
+				Drivers
+			</a>
+			<a
+				href="/about"
+				class:list={[
+					'nav-link',
+					{ 'nav-link-active': url.startsWith('/about/') },
+				]}
+			>
+				About
+			</a>
+			<a
+				class="github"
+				href="https://github.com/vkbansal/formula1-app/"
+				target="_blank"
+			>
+				<img src={github} alt="GitHub" />
+			</a>
+		</nav>
+	</nav>
+</header>
+<script>
+	const burger = document.getElementById('navbar-burger');
+	const menu = document.getElementById('nav-menu');
+	if (burger && menu) {
+		burger.addEventListener('click', () => {
+			burger.classList.toggle('is-active');
+			menu.classList.toggle('is-active');
+			// TODO: handle aria changes
+		});
+	}
+</script>
+<style lang="scss">
+	@use 'sass:math';
+	@use '../styles/breakpoints' as bp;
+
+	.main {
+		border-bottom: 1px solid var(--border);
+
+		@media screen and (min-width: bp.$lg) {
+			// height: var(--header-height);
+		}
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		padding: 1rem;
+		gap: 1rem;
+
+		@media screen and (max-width: bp.$lg) {
+			flex-direction: column;
+		}
+
+		.navbar-brand {
+			display: flex;
+			align-items: center;
+			flex: 1 0 auto;
+			justify-content: space-between;
+
+			@media screen and (max-width: bp.$lg) {
+				width: 100%;
+				justify-content: space-between;
+			}
+		}
+
+		.github {
+			display: inline-block;
+
+			& > :global(img) {
+				display: inline-block;
+				width: 1.25rem;
+				height: 1.25rem;
+			}
+		}
+
+		.logo {
+			display: block;
+			font-size: 2rem;
+			text-decoration: none;
+			font-weight: 400;
+
+			& > img {
+				height: 1em;
+			}
+
+			@media screen and (max-width: bp.$md) {
+				font-size: 1.5rem;
+				& > img {
+					height: 0.75em;
+				}
+			}
+
+			@media screen and (max-width: bp.$sm) {
+				font-size: 1.25rem;
+			}
+
+			@media screen and (max-width: 350px) {
+				& > span {
+					display: none;
+				}
+			}
+		}
+
+		.navbar-rhs {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
+
+	.navbar-burger {
+		$bar-height: 0.25rem;
+		$burger-size: 1.5rem;
+		$delta: ($burger-size * math.div(math.sqrt(2) - 1, 2));
+		display: none;
+		width: $burger-size;
+		height: $burger-size;
+		padding: 0;
+		cursor: pointer;
+		position: relative;
+		margin-right: 0.5rem;
+		transition: transform 0.3s ease-out;
+
+		@media screen and (max-width: bp.$lg) {
+			display: block;
+		}
+
+		& > span {
+			display: block;
+			height: $bar-height;
+			border-radius: $bar-height;
+			width: $burger-size;
+			background: var(--text-light);
+			position: absolute;
+			left: 0;
+			opacity: 1;
+			transform-origin: left center;
+			transition: transform 0.3s ease-out;
+			margin: 0;
+
+			&:nth-child(1) {
+				top: 0;
+			}
+
+			&:nth-child(2) {
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			&:nth-child(3) {
+				bottom: 0;
+			}
+		}
+
+		&.is-active {
+			transform: rotate(180deg);
+
+			& > span {
+				&:nth-child(1) {
+					transform: translateY(-1 * math.div($bar-height, 2)) rotate(45deg)
+						translateX($delta);
+				}
+
+				&:nth-child(2) {
+					opacity: 0;
+				}
+
+				&:nth-child(3) {
+					transform: translateY(math.div($bar-height, 2)) rotate(-45deg)
+						translateX($delta);
+				}
+			}
+		}
+	}
+
+	.nav-menu {
+		display: flex;
+		align-items: center;
+		column-gap: 1.5rem;
+
+		@media screen and (max-width: bp.$lg) {
+			width: 100%;
+			display: none;
+			border-top: 1px solid var(--border);
+			padding-top: 1rem;
+			margin-top: 1rem;
+
+			& > a {
+				text-align: center;
+				padding: 1rem;
+			}
+		}
+
+		&:global(.is-active) {
+			display: flex;
+		}
+	}
+
+	$switch_width: 2.75rem;
+	$switch_height: 1.25rem;
+	$toggle_scale: 0.8;
+	$toggle_size: $switch_height * $toggle_scale;
+	$delta: math.div(($switch_height - $toggle_size), 2);
+	$inner_width: $switch_width - ($delta * 2);
+
+	.theme-toggle {
+		display: inline-flex;
+		align-items: center;
+		height: $switch_height;
+		width: $switch_width;
+		border-radius: $switch_height;
+		background: var(--black);
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0 0 0 1px var(--border);
+		cursor: pointer;
+
+		& > input {
+			opacity: 0;
+			clip-path: circle(0, 0);
+			width: 0;
+			height: 0;
+			margin: 0;
+		}
+
+		& > span {
+			position: absolute;
+			display: inline-block;
+			height: $toggle_size;
+			width: $toggle_size;
+			background: var(--white);
+			border-radius: 50%;
+			left: 0;
+			top: 0;
+			transition: transform 0.3s ease-in-out;
+			transform: translate($delta, $delta);
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				display: inline-flex;
+				align-items: center;
+				height: $toggle_size;
+				width: $inner_width;
+				border-radius: $toggle_size;
+				line-height: 100%;
+			}
+
+			&::after {
+				content: '☀️';
+				text-align: right;
+				font-size: 0.8em;
+				left: 0;
+				justify-content: flex-end;
+				transform: translate(-10%, 0%);
+			}
+
+			&::before {
+				content: '🌙';
+				font-size: 0.7em;
+				right: 0;
+				justify-content: flex-start;
+				transform: translate(10%, 0%);
+			}
+		}
+
+		& input:checked + span {
+			transform: translate(calc($switch_width - $toggle_size - $delta), $delta);
+		}
+	}
+</style>

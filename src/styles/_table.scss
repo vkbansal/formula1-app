@@ -1,0 +1,130 @@
+.table {
+	border-collapse: collapse;
+	width: 100%;
+
+	&.table-fixed {
+		table-layout: fixed;
+	}
+
+	&.table-sticky-header {
+		& thead {
+			position: sticky;
+			top: 0;
+
+			& tr {
+				background-color: var(--body-bg);
+			}
+		}
+	}
+
+	& thead tr th,
+	& thead tr td,
+	& tbody tr th,
+	& tbody tr td {
+		box-shadow: 0px 1px 0px var(--border);
+	}
+
+	& tr th,
+	& tr td {
+		padding: 1rem;
+		text-align: left;
+		vertical-align: middle;
+
+		&:first-child {
+			padding-left: 2rem;
+		}
+
+		&:last-child {
+			padding-right: 2rem;
+		}
+	}
+
+	& thead tr th {
+		text-transform: uppercase;
+		font-size: 0.85rem;
+		color: var(--text-lighter);
+
+		&.sortable-column {
+			padding: 0;
+			text-align: left;
+
+			& .sort-btn {
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				text-transform: uppercase;
+				background: transparent;
+				font-size: 0.85rem;
+				font-weight: 600;
+				border: none;
+				width: 100%;
+				color: currentColor;
+				padding: 1rem;
+				text-align: left;
+
+				& > .sort-indicator {
+					font-size: 0.7rem;
+					display: inline-flex;
+					flex-flow: column;
+
+					&::before {
+						content: '▲';
+						opacity: 0.5;
+					}
+
+					&::after {
+						content: '▼';
+						opacity: 0.5;
+					}
+				}
+			}
+
+			&:first-child > .sort-btn {
+				padding-left: 2rem;
+			}
+
+			&:last-child > .sort-btn {
+				padding-right: 2rem;
+			}
+
+			&[aria-sort='ascending'] {
+				& .sort-indicator::before {
+					opacity: 1;
+				}
+
+				& .sort-indicator::after {
+					opacity: 0;
+				}
+			}
+
+			&[aria-sort='descending'] {
+				& .sort-indicator::before {
+					opacity: 0;
+				}
+
+				& .sort-indicator::after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.table-sm {
+		font-size: 0.875rem;
+
+		& tr th,
+		& tr td {
+			padding: 0.25rem 0.5rem;
+			text-align: left;
+
+			&:first-child {
+				padding-left: 1rem;
+			}
+
+			&:last-child {
+				padding-right: 1rem;
+			}
+		}
+	}
+}

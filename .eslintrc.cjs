@@ -25,7 +25,21 @@ module.exports = {
 		'no-new-object': 2,
 		'no-lonely-if': 2,
 		'no-console': 2,
-		'no-restricted-imports': 0,
+		'no-restricted-imports': [
+			2,
+			{
+				patterns: [
+					'components/*',
+					'content/*',
+					'data/*',
+					'helpers/*',
+					'images/*',
+					'layouts/*',
+					'pages/*',
+					'styles/*',
+				],
+			},
+		],
 		'no-unused-vars': 0,
 		'@typescript-eslint/no-unused-vars': [
 			2,
@@ -72,6 +86,7 @@ module.exports = {
 			},
 			rules: {
 				'@typescript-eslint/naming-convention': 0,
+				'@typescript-eslint/explicit-function-return-type': 0,
 			},
 		},
 	],

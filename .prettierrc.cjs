@@ -1,6 +1,6 @@
 module.exports = {
 	plugins: [require.resolve('prettier-plugin-astro')],
-	printWidth: 100,
+	printWidth: 80,
 	tabWidth: 2,
 	useTabs: true,
 	semi: true,
