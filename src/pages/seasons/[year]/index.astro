@@ -1,6 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
-import type { InferGetStaticPropsType } from 'astro';
+import { getEntry } from 'astro:content';
 
 import MainLayout from '~/layouts/MainLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
@@ -11,17 +10,18 @@ import colors from '~/helpers/colors.js';
 
 export const prerender = false;
 
-export async function getStaticPaths() {
-	const seasons = await getCollection('seasons');
+const { year: yearStr = '' } = Astro.params;
+const year = parseInt(yearStr, 10);
+const season = await getEntry('seasons', yearStr);
 
-	return seasons.map(({ data }) => {
-		return { params: { year: data.year }, props: data };
+if (!season) {
+	return new Response(null, {
+		status: 404,
+		statusText: 'Not found',
 	});
 }
 
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
-
-const { rounds, teams, year } = Astro.props;
+const { rounds, teams } = season.data;
 const hasPrev = year > firstSeason && year <= currentSeason;
 const hasNext = year >= firstSeason && year < currentSeason;
 
@@ -128,13 +128,7 @@ const safeDriversChartDataSets = driversChartDataSets;
 									<tr>
 										<td>{row.round}</td>
 										<td>
-											<a
-												href={`/seasons/${year}/round-${row.round
-													.toString()
-													.padStart(2, '0')}`}
-											>
-												{row.name}
-											</a>
+											<a href={`/seasons/${year}/${row.slug}`}>{row.name}</a>
 										</td>
 										<td>{row.date}</td>
 										<td>

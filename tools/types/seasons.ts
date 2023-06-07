@@ -40,6 +40,7 @@ export const SeasonRound = Race.pick({
 	name: true,
 	date: true,
 }).extend({
+	slug: z.string(),
 	circuit: Circuit.pick({
 		name: true,
 		location: true,

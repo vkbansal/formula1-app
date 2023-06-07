@@ -1,32 +1,23 @@
 ---
-import { getCollection } from 'astro:content';
-import type { InferGetStaticPropsType } from 'astro';
+import { getEntry } from 'astro:content';
 
 import MainLayout from '~/layouts/MainLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import Nationality from '~/components/Nationality.astro';
 import { formatOrdinals } from '~/helpers/utils.js';
+import seasonsList from '~/data/seasons-list.json';
 
 export const prerender = false;
 
-export async function getStaticPaths() {
-	const allDrivers = await getCollection('drivers');
-	return allDrivers.map(({ data: con }) => {
-		return {
-			params: { driverRef: con.driverRef },
-			props: con,
-		};
+const { driverRef = '' } = Astro.params;
+const driver = await getEntry('drivers', driverRef);
+
+if (!driver) {
+	return new Response(null, {
+		status: 404,
+		statusText: 'Not found',
 	});
 }
-
-const allSeasonRoundsMap = (await getCollection('seasons')).reduce<
-	Record<string, number>
->((all, current) => {
-	all[current.data.year] = current.data.rounds.length;
-	return all;
-}, {});
-
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const {
 	seasons,
@@ -40,13 +31,15 @@ const {
 	totalLaps,
 	lapsLead,
 	dob,
-} = Astro.props;
+} = driver.data;
 
-const totalRoundsInSeasons = seasons.reduce<Record<number, number>>((p, c) => {
-	p[c.year] = allSeasonRoundsMap[c.year] || 0;
-
-	return p;
-}, {});
+const totalRoundsInSeasons = seasonsList.reduce<Record<string, number>>(
+	(all, current) => {
+		all[current.year] = current.totalRaces;
+		return all;
+	},
+	{},
+);
 const maxRounds = Math.max(...Object.values(totalRoundsInSeasons));
 const maxRoundsArr = Array.from({ length: maxRounds });
 

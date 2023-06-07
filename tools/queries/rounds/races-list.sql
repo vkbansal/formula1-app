@@ -4,6 +4,7 @@ SELECT
 	`RA`.`round`,
 	`RA`.`name`,
 	`RA`.`date`,
+	'' AS `slug`,
 	JSON_OBJECT(
 		"name", `CI`.`name`,
 		"location", `CI`.`location`,

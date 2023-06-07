@@ -19,7 +19,12 @@ export const DriverData = Result.pick({
 }).extend({
 	driverRef: z.string(),
 	constructorRef: z.string(),
-	qualifying: Qualifying.pick({ position: true, q1: true, q2: true, q3: true }).optional(),
+	qualifying: Qualifying.pick({
+		position: true,
+		q1: true,
+		q2: true,
+		q3: true,
+	}).optional(),
 	lapPositions: z.array(z.number().nullable()).default([]),
 	pitStops: z.array(PitStop.pick({ lap: true, stop: true })).default([]),
 });
@@ -33,6 +38,7 @@ export const RaceData = Race.pick({
 	date: true,
 	name: true,
 }).extend({
+	slug: z.string(),
 	circuit: RaceCircuit,
 	driversData: z.array(DriverData),
 });

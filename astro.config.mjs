@@ -3,8 +3,10 @@ import netlify from '@astrojs/netlify/functions';
 
 export default defineConfig({
 	output: 'hybrid',
-	experimental: {
-		hybridOutput: true,
+	build: {
+		inlineStylesheets: 'auto',
 	},
-	adapter: netlify(),
+	adapter: netlify({
+		builders: true,
+	}),
 });

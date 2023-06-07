@@ -3,6 +3,7 @@ SELECT
 	`T2`.`name`,
 	`T2`.`date`,
 	`T2`.`circuit`,
+	'' AS `slug`,
 	IF(
 		COUNT(`D`.`driverRef`) = 0,
 		JSON_ARRAY(),

@@ -91,6 +91,7 @@ const roundsCollection = defineCollection({
 		year: z.number(),
 		round: z.number(),
 		name: z.string(),
+		slug: z.string(),
 		date: z.string(),
 		circuit: z.object({
 			name: z.string(),
@@ -136,6 +137,7 @@ const seasonsCollection = defineCollection({
 				round: z.number(),
 				name: z.string(),
 				date: z.string(),
+				slug: z.string(),
 				circuit: z.object({
 					name: z.string(),
 					location: z.string().nullable(),
