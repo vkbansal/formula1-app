@@ -18,7 +18,7 @@
 	"constructorRef": "mercedes",
 	"name": "Mercedes",
 	"nationality": "German",
-	"podiums": 285,
+	"podiums": 286,
 	"raceWins": 125,
 	"seasons": [
 		{
@@ -2355,11 +2355,19 @@
 					],
 					"round": 9,
 					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 10, "position": 5 },
+						{ "driver": "Lewis Hamilton", "points": 15, "position": 3 }
+					],
+					"round": 10,
+					"roundName": "British Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 280,
-	"winPct": 44.6429
+	"totalRaces": 281,
+	"winPct": 44.484
 }
