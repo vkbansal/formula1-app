@@ -70,7 +70,7 @@
 	"constructorRef": "ferrari",
 	"name": "Ferrari",
 	"nationality": "Italian",
-	"podiums": 812,
+	"podiums": 813,
 	"raceWins": 243,
 	"seasons": [
 		{
@@ -9182,11 +9182,27 @@
 					],
 					"round": 10,
 					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Carlos Sainz", "points": 4, "position": 8 },
+						{ "driver": "Charles Leclerc", "points": 6, "position": 7 }
+					],
+					"round": 11,
+					"roundName": "Hungarian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Carlos Sainz", "points": 0, "position": null },
+						{ "driver": "Charles Leclerc", "points": 15, "position": 3 }
+					],
+					"round": 12,
+					"roundName": "Belgian Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 1064,
-	"winPct": 22.8383
+	"totalRaces": 1066,
+	"winPct": 22.7955
 }

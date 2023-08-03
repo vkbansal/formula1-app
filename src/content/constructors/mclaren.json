@@ -58,7 +58,7 @@
 	"constructorRef": "mclaren",
 	"name": "McLaren",
 	"nationality": "British",
-	"podiums": 479,
+	"podiums": 480,
 	"raceWins": 179,
 	"seasons": [
 		{
@@ -7534,11 +7534,27 @@
 					],
 					"round": 10,
 					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Oscar Piastri", "points": 10, "position": 5 },
+						{ "driver": "Lando Norris", "points": 18, "position": 2 }
+					],
+					"round": 11,
+					"roundName": "Hungarian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Oscar Piastri", "points": 0, "position": null },
+						{ "driver": "Lando Norris", "points": 6, "position": 7 }
+					],
+					"round": 12,
+					"roundName": "Belgian Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 893,
-	"winPct": 20.0448
+	"totalRaces": 895,
+	"winPct": 20
 }
