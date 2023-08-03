@@ -122,13 +122,14 @@ async function executeQueryFromFile(
 
 async function writeDataFile(filepath: string, data: unknown): Promise<void> {
 	await fs.mkdir(path.dirname(filepath), { recursive: true });
+	const formattedCode = await prettier.format(stringify(data), {
+		useTabs: true,
+		parser: 'json',
+	})
 
 	return fs.writeFile(
 		filepath,
-		prettier.format(stringify(data), {
-			useTabs: true,
-			parser: 'json',
-		}),
+		formattedCode,
 		'utf8',
 	);
 }
