@@ -1,0 +1,212 @@
+.animation-container,
+.animation-controls {
+	width: 100%;
+	max-width: 1280px;
+	margin: 1rem auto;
+}
+
+.animation-container {
+	height: calc(calc(var(--total-drivers) + 4) * var(--car-size));
+	background: slategray;
+	border-radius: 1%;
+	position: relative;
+
+	.laps-container {
+		display: flex;
+		align-items: stretch;
+		width: 100%;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.lap-container {
+		width: 55%;
+		height: 100%;
+		border-right: 2px solid white;
+		flex: 1 0 auto;
+		position: relative;
+
+		&::before {
+			content: 'Lap ' attr(data-lap);
+			display: block;
+			white-space: nowrap;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background: white;
+			color: black;
+			padding: 0.25rem 0.5rem;
+			border-radius: 0 0 4px 0;
+		}
+
+		&:first-of-type,
+		&:last-of-type {
+			&::before {
+				content: attr(data-lap);
+				text-transform: uppercase;
+				background: none;
+				color: white;
+				padding: 0;
+				font-size: 3rem;
+				letter-spacing: 1ch;
+			}
+		}
+
+		&:first-of-type {
+			&::before {
+				top: 50%;
+				right: 0%;
+				left: unset;
+				transform: rotate(90deg) translateY(-150%);
+			}
+		}
+
+		&:last-of-type {
+			border-right: none;
+			&::before {
+				left: 0;
+				top: 50%;
+				transform: rotate(90deg) translateY(200%);
+			}
+		}
+	}
+
+	.drivers-container {
+		position: absolute;
+		top: 0;
+		width: 100px;
+		height: 100%;
+		left: calc(50% - 100px);
+
+		& .driver {
+			position: absolute;
+			top: 30px;
+			transform: translateX(calc(var(--y) * -5px))
+				translateY(calc(var(--y) * var(--car-size)));
+			transition: transform 0.6s ease-in-out;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+
+			.pit-stop {
+				position: absolute;
+				top: 50%;
+				right: 102%;
+				transform: translateY(-50%);
+				background-color: var(--red-500);
+				color: white;
+				display: block;
+				white-space: nowrap;
+				padding: 0 0.5rem;
+				font-size: 0.85rem;
+				border-radius: 0.5em;
+				opacity: 0;
+				transition: opacity 0.4s ease-in-out;
+			}
+
+			&::after {
+				content: attr(data-label);
+				display: block;
+				transform: translateY(10%);
+				color: white;
+				background: rgba(0, 0, 0, 0.75);
+				padding: 0.25rem;
+				border-radius: 0.25rem;
+				white-space: nowrap;
+				line-height: 1;
+				font-size: 0.85rem;
+			}
+
+			&[data-pit-stop] > .pit-stop {
+				opacity: 1;
+			}
+
+			&[data-status]::before {
+				content: attr(data-status);
+				position: absolute;
+				top: 50%;
+				right: 102%;
+				transform: translateY(-50%);
+				background-color: slategray;
+				color: white;
+				display: block;
+				white-space: nowrap;
+				padding: 0 0.5rem;
+				font-size: 0.85rem;
+				border-radius: 0.5em;
+			}
+
+			&[data-status='1']::before {
+				background-color: goldenrod;
+			}
+
+			&[data-status='2']::before {
+				background-color: silver;
+			}
+
+			&[data-status='3']::before {
+				background-color: chocolate;
+			}
+
+			&[data-status='R']::before {
+				content: 'Retired';
+				background-color: var(--red-600);
+			}
+
+			&[data-status='D']::before {
+				content: 'Disqualified';
+				background-color: var(--red-600);
+			}
+
+			&[data-status='W']::before {
+				content: 'Withdrawn';
+				background-color: var(--red-600);
+			}
+
+			&[data-status='F']::before {
+				content: 'Failed to qualify';
+				background-color: var(--red-600);
+			}
+
+			&[data-status='N']::before {
+				content: 'Not Classified';
+				background-color: var(--red-600);
+			}
+		}
+
+		&[data-lap='start'] .driver {
+			transform: translateX(-50px) translateY(calc(var(--y) * var(--car-size)));
+		}
+
+		&[data-lap='finish'] .driver {
+			transform: translateX(150px) translateY(calc(var(--y) * var(--car-size)));
+		}
+	}
+}
+
+.animation-controls {
+	margin-top: 1rem;
+
+	.lap-progress {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.lap-counter {
+		display: flex;
+		align-items: center;
+	}
+
+	#animation-progress {
+		display: inline-block;
+		width: 90%;
+		flex: 0 1 auto;
+	}
+
+	.control-btns {
+		margin-top: 1rem;
+	}
+}
