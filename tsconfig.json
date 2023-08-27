@@ -3,6 +3,9 @@
 	"compilerOptions": {
 		"baseUrl": "./src",
 		"module": "ESNext",
+		"verbatimModuleSyntax": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact",
 		"paths": {
 			"~/*": ["./*"]
 		}
