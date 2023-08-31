@@ -9,7 +9,7 @@ const url = Astro.url.pathname;
 	<nav class="container navbar" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a href="/" class="logo">
-				<img src={f1Logo} alt="Formula 1 Logo" />
+				<img src={f1Logo.src} alt="Formula 1 Logo" />
 				<span>
 					Statistics <span class="text-scale-50 text-lighter">(Beta)</span>
 				</span>
@@ -74,7 +74,7 @@ const url = Astro.url.pathname;
 				href="https://github.com/vkbansal/formula1-app/"
 				target="_blank"
 			>
-				<img src={github} alt="GitHub" />
+				<img src={github.src} alt="GitHub" />
 			</a>
 		</nav>
 	</nav>
@@ -127,7 +127,8 @@ const url = Astro.url.pathname;
 		}
 
 		.github {
-			display: inline-block;
+			display: inline-flex;
+			align-items: center;
 
 			& > :global(img) {
 				display: inline-block;
@@ -331,6 +332,12 @@ const url = Astro.url.pathname;
 
 		& input:checked + span {
 			transform: translate(calc($switch_width - $toggle_size - $delta), $delta);
+		}
+	}
+
+	html[data-theme="dark"] {
+		.github {
+			filter: invert(1);
 		}
 	}
 </style>
