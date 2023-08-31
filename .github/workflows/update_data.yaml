@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup
-        uses: vkbansal/pnpm-setup-action@v1
+        uses: vkbansal/pnpm-setup-action@main
       - name: Update data
         run: |
           set -e

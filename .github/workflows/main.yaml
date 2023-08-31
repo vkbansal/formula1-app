@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup
-        uses: vkbansal/pnpm-setup-action@v1
+        uses: vkbansal/pnpm-setup-action@main
       - name: Lint
         run: pnpm run --if-present lint
   typecheck:
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup
-        uses: vkbansal/pnpm-setup-action@v1
+        uses: vkbansal/pnpm-setup-action@main
       - name: Type Check
         run: pnpm run --if-present typecheck
   prettier:
@@ -30,6 +30,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup
-        uses: vkbansal/pnpm-setup-action@v1
+        uses: vkbansal/pnpm-setup-action@main
       - name: Prettier
         run: pnpm run --if-present fmtc
