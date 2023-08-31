@@ -23,8 +23,8 @@
 	"constructorRef": "red_bull",
 	"name": "Red Bull",
 	"nationality": "Austrian",
-	"podiums": 253,
-	"raceWins": 104,
+	"podiums": 254,
+	"raceWins": 105,
 	"seasons": [
 		{
 			"rounds": [
@@ -2997,11 +2997,19 @@
 					],
 					"round": 12,
 					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 12, "position": 4 },
+						{ "driver": "Max Verstappen", "points": 25, "position": 1 }
+					],
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 360,
-	"winPct": 28.8889
+	"totalRaces": 361,
+	"winPct": 29.0859
 }

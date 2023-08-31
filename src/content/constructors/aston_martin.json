@@ -9,7 +9,7 @@
 	"constructorRef": "aston_martin",
 	"name": "Aston Martin",
 	"nationality": "British",
-	"podiums": 7,
+	"podiums": 8,
 	"raceWins": 0,
 	"seasons": [
 		{
@@ -528,11 +528,19 @@
 					],
 					"round": 12,
 					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lance Stroll", "points": 0, "position": 11 },
+						{ "driver": "Fernando Alonso", "points": 19, "position": 2 }
+					],
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 62,
+	"totalRaces": 63,
 	"winPct": 0
 }

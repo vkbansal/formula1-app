@@ -7,7 +7,7 @@
 	"constructorRef": "alpine",
 	"name": "Alpine F1 Team",
 	"nationality": "French",
-	"podiums": 3,
+	"podiums": 4,
 	"raceWins": 1,
 	"seasons": [
 		{
@@ -469,11 +469,19 @@
 					],
 					"round": 12,
 					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Esteban Ocon", "points": 1, "position": 10 },
+						{ "driver": "Pierre Gasly", "points": 15, "position": 3 }
+					],
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 56,
-	"winPct": 1.78571
+	"totalRaces": 57,
+	"winPct": 1.75439
 }
