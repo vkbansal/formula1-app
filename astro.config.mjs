@@ -4,11 +4,9 @@ import netlify from '@astrojs/netlify/functions';
 
 export default defineConfig({
 	output: 'hybrid',
-	build: {
-		inlineStylesheets: 'auto',
-	},
 	adapter: netlify({
 		builders: true,
+		functionPerRoute: true,
 	}),
 	integrations: [preact()],
 });
