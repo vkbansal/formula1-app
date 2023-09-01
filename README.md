@@ -14,21 +14,18 @@ The data is taken from http://ergast.com/mrd/.
 - [pnpm](https://pnpm.io/)
 - [docker](https://www.docker.com/) - only required for working with data
 
-### Site development
+### Development
 
 - Clone the repository: `git clone git@github.com:vkbansal/formula1-app.git`
 - Change to the project directory and run `pnpm install`.
-- Run `pnpm run dev` to start the local development server. This will start Astro's development server and logs the url in console. It is usually `http://localhost:3000`.
+- Run `pnpm run dev` to start the local development server. This will start Astro's development server and logs the url in console.
 - The source code resides in `src` folder.
-
-### Data development
-
-- Clone the repository: `git clone git@github.com:vkbansal/formula1-app.git`
-- Change to the project directory and run `pnpm install`.
-- Run `pnpm run data`. This is will download the latest data.
-- Run `docker compose up -d`. This will startup MariaDB and populate it with data.
-- Data related code resides in `datagen` folder.
-- All the generated data is stored as `.yaml` files under `src/data` folder.
+- All the data is stored as `.json` files under `src/content` folder to utilize [Astro's content collection API](https://docs.astro.build/en/guides/content-collections/).
+- To download latest data, run `pnpm run data:up`.
+- To update data, once newer data is downloaded:
+  - Run `docker compose up -d` to startup MariaDB and populate it with data.
+  - Run `pnpm run data:gen` to update the data. You might have to wait for about minute before running this command after you have run previous docker command in order for the database to be ready.
+- Data generation related code resides in `tools` folder.
 
 ## License
 
