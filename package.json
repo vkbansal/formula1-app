@@ -13,16 +13,15 @@
     "start": "astro dev",
     "data:gen": "node --loader ts-node/esm ./tools/generate-data.js --allQueries",
     "data:up": "node --loader ts-node/esm ./tools/update-data.ts",
-    "prebuild": "rm -rf dist",
+    "prebuild": "rm -rf dist && rm -rf .netlify",
     "build": "NODE_ENV=production astro build",
-    "postbuild": "sed -i \"s|/seasons/:year/round- |/seasons/:year/round-*|\" dist/_redirects",
     "fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}'",
     "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx,astro}'"
   },
   "dependencies": {
-    "@astrojs/netlify": "^3.0.0",
+    "@astrojs/netlify": "^3.0.1",
     "@astrojs/preact": "^3.0.0",
-    "astro": "^3.0.4",
+    "astro": "^3.0.7",
     "change-case": "^4.1.2",
     "chart.js": "^4.4.0",
     "chartjs-plugin-zoom": "^2.0.1",
@@ -35,7 +34,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.2.0",
     "@types/cli-progress": "^3.11.0",
-    "@types/node": "^20.5.7",
+    "@types/node": "^20.5.8",
     "@types/prompts": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
