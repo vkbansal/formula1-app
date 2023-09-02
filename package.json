@@ -13,8 +13,9 @@
     "start": "astro dev",
     "data:gen": "node --loader ts-node/esm ./tools/generate-data.js --allQueries",
     "data:up": "node --loader ts-node/esm ./tools/update-data.ts",
-    "prebuild": "rm -rf dist && rm -rf .netlify",
+    "prebuild": "rm -rf dist && rm -rf dist",
     "build": "NODE_ENV=production astro build",
+    "postbuild": "sed -i \"s|/.netlify/builders|/.netlify|\" dist/_redirects",
     "fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}'",
     "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx,astro}'"
   },
