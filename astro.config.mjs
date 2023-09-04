@@ -6,7 +6,6 @@ export default defineConfig({
 	output: 'hybrid',
 	adapter: netlify({
 		builders: true,
-		functionPerRoute: true,
 	}),
 	integrations: [preact()],
 });
