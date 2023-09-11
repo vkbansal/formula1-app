@@ -6,6 +6,7 @@ export default defineConfig({
 	output: 'hybrid',
 	adapter: vercel({
 		functionPerRoute: true,
+		analytics: true
 	}),
 	integrations: [preact()],
 });
