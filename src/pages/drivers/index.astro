@@ -39,7 +39,7 @@ export const prerender = true;
 					return (
 						<a
 							class:list={['nav-link', { 'nav-link-disabled': disabled }]}
-							href={disabled ? 'javascript:void(0)' : `#~{char}`}
+							href={disabled ? 'javascript:void(0)' : `#${char}`}
 						>
 							{char}
 						</a>
