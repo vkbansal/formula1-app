@@ -18,7 +18,7 @@
 	"constructorRef": "mercedes",
 	"name": "Mercedes",
 	"nationality": "German",
-	"podiums": 286,
+	"podiums": 287,
 	"raceWins": 125,
 	"seasons": [
 		{
@@ -2269,7 +2269,7 @@
 						{ "driver": "George Russell", "points": 26, "position": 1 }
 					],
 					"round": 21,
-					"roundName": "Brazilian Grand Prix"
+					"roundName": "São Paulo Grand Prix"
 				},
 				{
 					"results": [
@@ -2395,11 +2395,43 @@
 					],
 					"round": 14,
 					"roundName": "Italian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 0, "position": 16 },
+						{ "driver": "Lewis Hamilton", "points": 16, "position": 3 }
+					],
+					"round": 15,
+					"roundName": "Singapore Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 6, "position": 7 },
+						{ "driver": "Lewis Hamilton", "points": 10, "position": 5 }
+					],
+					"round": 16,
+					"roundName": "Japanese Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 0, "position": null },
+						{ "driver": "George Russell", "points": 12, "position": 4 }
+					],
+					"round": 17,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 0, "position": null },
+						{ "driver": "George Russell", "points": 10, "position": 5 }
+					],
+					"round": 18,
+					"roundName": "United States Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 285,
-	"winPct": 43.8596
+	"totalRaces": 289,
+	"winPct": 43.2526
 }

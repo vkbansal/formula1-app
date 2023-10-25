@@ -10,10 +10,10 @@
 	"driverId": 846,
 	"driverRef": "norris",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lando_Norris_Formula_1_Driver_%2849379469418%29_%28cropped%29_%28cropped%29.jpg/220px-Lando_Norris_Formula_1_Driver_%2849379469418%29_%28cropped%29_%28cropped%29.jpg",
-	"lapsLead": 36,
+	"lapsLead": 58,
 	"name": "Lando Norris",
 	"nationality": "British",
-	"podiums": 8,
+	"podiums": 12,
 	"raceWins": 0,
 	"seasons": [
 		{
@@ -598,7 +598,7 @@
 					"points": 0,
 					"position": null,
 					"round": 21,
-					"roundName": "Brazilian Grand Prix"
+					"roundName": "São Paulo Grand Prix"
 				},
 				{
 					"constructor": "McLaren",
@@ -709,11 +709,39 @@
 					"position": 8,
 					"round": 14,
 					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 18,
+					"position": 2,
+					"round": 15,
+					"roundName": "Singapore Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 18,
+					"position": 2,
+					"round": 16,
+					"roundName": "Japanese Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 15,
+					"position": 3,
+					"round": 17,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 18,
+					"position": 2,
+					"round": 18,
+					"roundName": "United States Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalLaps": 5436,
-	"totalRaces": 96
+	"totalLaps": 5664,
+	"totalRaces": 100
 }
