@@ -1,11 +1,9 @@
 import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
-import netlify from '@astrojs/netlify/functions';
+import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
 	output: 'hybrid',
-	adapter: netlify({
-		builders: true,
-	}),
+	adapter: vercel({}),
 	integrations: [preact()],
 });
