@@ -9,7 +9,8 @@ import mariadb from 'mariadb';
 import { SingleBar, Presets } from 'cli-progress';
 import stringify from 'fast-json-stable-stringify';
 import prettier from 'prettier';
-import { paramCase } from 'change-case';
+import { kebabCase } from 'change-case';
+import deburr from 'lodash.deburr';
 
 import driverImages from './driver-images.json' assert { type: 'json' };
 import { HomePageData } from './types/homepage.js';
@@ -172,7 +173,7 @@ const queryFns: Record<string, () => Promise<void>> = {
 			const rounds = z
 				.array(seasonTypes.SeasonRound)
 				.parse(rawRounds)
-				.map((round) => ({ ...round, slug: paramCase(round.name) }));
+				.map((round) => ({ ...round, slug: deburr(kebabCase(round.name)) }));
 			const rawTeams = await executeQueryFromFile('seasons/teams.sql', row);
 			const teams = z.array(seasonTypes.Team).parse(rawTeams);
 			bar.update(++i);
@@ -297,7 +298,7 @@ const queryFns: Record<string, () => Promise<void>> = {
 				Record<string, z.infer<typeof driverRaceData>>
 			>((p, c) => ({ ...p, [c.driverRef]: c }), {});
 
-			race.slug = paramCase(race.name);
+			race.slug = deburr(kebabCase(race.name));
 
 			race.driversData = race.driversData.map((data) => ({
 				...data,
