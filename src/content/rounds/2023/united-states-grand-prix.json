@@ -410,7 +410,7 @@
 		{
 			"constructorRef": "mercedes",
 			"driverRef": "hamilton",
-			"grid": 1,
+			"grid": 3,
 			"lapPositions": [
 				4, 4, 4, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 5, 4, 4, 3,
 				3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 1, 1, 1, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3,
@@ -434,13 +434,23 @@
 		{
 			"constructorRef": "ferrari",
 			"driverRef": "leclerc",
-			"grid": 3,
-			"lapPositions": [],
-			"pitStops": [],
+			"grid": 1,
+			"lapPositions": [
+				2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 3, 2, 2, 2, 1, 1, 1, 6,
+				6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 5, 3, 3, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4,
+				4, 5, 5, 5, 6, 6, 6, 6
+			],
+			"pitStops": [{ "lap": 23, "stop": 1 }],
 			"points": 0,
 			"position": null,
 			"positionOrder": 20,
-			"positionText": "D"
+			"positionText": "D",
+			"qualifying": {
+				"position": 1,
+				"q1": "1:36.061",
+				"q2": "1:35.004",
+				"q3": "1:34.723"
+			}
 		}
 	],
 	"name": "United States Grand Prix",

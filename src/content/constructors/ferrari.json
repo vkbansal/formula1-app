@@ -70,7 +70,7 @@
 	"constructorRef": "ferrari",
 	"name": "Ferrari",
 	"nationality": "Italian",
-	"podiums": 816,
+	"podiums": 817,
 	"raceWins": 244,
 	"seasons": [
 		{
@@ -9246,11 +9246,27 @@
 					],
 					"round": 18,
 					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Carlos Sainz", "points": 12, "position": 4 },
+						{ "driver": "Charles Leclerc", "points": 15, "position": 3 }
+					],
+					"round": 19,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Charles Leclerc", "points": 0, "position": null },
+						{ "driver": "Carlos Sainz", "points": 8, "position": 6 }
+					],
+					"round": 20,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 1072,
-	"winPct": 22.7612
+	"totalRaces": 1074,
+	"winPct": 22.7188
 }

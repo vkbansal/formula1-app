@@ -58,7 +58,7 @@
 	"constructorRef": "mclaren",
 	"name": "McLaren",
 	"nationality": "British",
-	"podiums": 486,
+	"podiums": 487,
 	"raceWins": 179,
 	"seasons": [
 		{
@@ -7598,11 +7598,27 @@
 					],
 					"round": 18,
 					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Oscar Piastri", "points": 4, "position": 8 },
+						{ "driver": "Lando Norris", "points": 10, "position": 5 }
+					],
+					"round": 19,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Oscar Piastri", "points": 0, "position": 14 },
+						{ "driver": "Lando Norris", "points": 19, "position": 2 }
+					],
+					"round": 20,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 901,
-	"winPct": 19.8668
+	"totalRaces": 903,
+	"winPct": 19.8228
 }

@@ -18,7 +18,7 @@
 	"constructorRef": "mercedes",
 	"name": "Mercedes",
 	"nationality": "German",
-	"podiums": 287,
+	"podiums": 288,
 	"raceWins": 125,
 	"seasons": [
 		{
@@ -2427,11 +2427,27 @@
 					],
 					"round": 18,
 					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 8, "position": 6 },
+						{ "driver": "Lewis Hamilton", "points": 19, "position": 2 }
+					],
+					"round": 19,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 0, "position": null },
+						{ "driver": "Lewis Hamilton", "points": 4, "position": 8 }
+					],
+					"round": 20,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 289,
-	"winPct": 43.2526
+	"totalRaces": 291,
+	"winPct": 42.9553
 }

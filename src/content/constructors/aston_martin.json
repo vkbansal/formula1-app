@@ -9,7 +9,7 @@
 	"constructorRef": "aston_martin",
 	"name": "Aston Martin",
 	"nationality": "British",
-	"podiums": 8,
+	"podiums": 9,
 	"raceWins": 0,
 	"seasons": [
 		{
@@ -576,11 +576,27 @@
 					],
 					"round": 18,
 					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Fernando Alonso", "points": 0, "position": null },
+						{ "driver": "Lance Stroll", "points": 0, "position": 17 }
+					],
+					"round": 19,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lance Stroll", "points": 10, "position": 5 },
+						{ "driver": "Fernando Alonso", "points": 15, "position": 3 }
+					],
+					"round": 20,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 68,
+	"totalRaces": 70,
 	"winPct": 0
 }
