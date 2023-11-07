@@ -21,27 +21,27 @@
   "dependencies": {
     "@astrojs/preact": "^3.0.1",
     "@astrojs/vercel": "^5.1.0",
-    "astro": "^3.3.4",
+    "astro": "^3.4.3",
     "change-case": "^5.1.2",
     "chart.js": "^4.4.0",
     "chartjs-plugin-zoom": "^2.0.1",
     "dayjs": "^1.11.10",
     "normalize.css": "^8.0.1",
-    "preact": "^10.18.1",
+    "preact": "^10.18.2",
     "sass": "^1.69.5",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.2.1",
-    "@types/cli-progress": "^3.11.4",
+    "@astrojs/check": "^0.3.1",
+    "@types/cli-progress": "^3.11.5",
     "@types/lodash.deburr": "^4.1.8",
-    "@types/node": "^20.8.9",
+    "@types/node": "^20.8.10",
     "@types/prompts": "^2.4.7",
-    "@typescript-eslint/eslint-plugin": "^6.9.0",
-    "@typescript-eslint/parser": "^6.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
     "cheerio": "1.0.0-rc.12",
     "cli-progress": "^3.12.0",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-astro": "^0.29.1",
     "fast-json-stable-stringify": "^2.1.0",
@@ -55,9 +55,9 @@
     "zod": "^3.22.4",
     "zx": "^7.2.3"
   },
-	"pnpm": {
-		"overrides": {
-			"zod": "3.22.4"
-		}
-	}
+  "pnpm": {
+    "overrides": {
+      "zod": "3.22.4"
+    }
+  }
 }
