@@ -3,7 +3,8 @@
 		{ "position": 11, "year": 2019 },
 		{ "position": 9, "year": 2020 },
 		{ "position": 6, "year": 2021 },
-		{ "position": 7, "year": 2022 }
+		{ "position": 7, "year": 2022 },
+		{ "position": 6, "year": 2023 }
 	],
 	"code": "NOR",
 	"dob": "1999-11-13",
@@ -751,11 +752,25 @@
 					"position": 2,
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": null,
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 10,
+					"position": 5,
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalLaps": 5806,
-	"totalRaces": 102
+	"totalLaps": 5866,
+	"totalRaces": 104
 }

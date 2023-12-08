@@ -12,13 +12,14 @@
 		{ "position": 1, "year": 2019 },
 		{ "position": 1, "year": 2020 },
 		{ "position": 1, "year": 2021 },
-		{ "position": 3, "year": 2022 }
+		{ "position": 3, "year": 2022 },
+		{ "position": 2, "year": 2023 }
 	],
 	"constructorId": 131,
 	"constructorRef": "mercedes",
 	"name": "Mercedes",
 	"nationality": "German",
-	"podiums": 288,
+	"podiums": 289,
 	"raceWins": 125,
 	"seasons": [
 		{
@@ -2443,11 +2444,27 @@
 					],
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 4, "position": 8 },
+						{ "driver": "Lewis Hamilton", "points": 6, "position": 7 }
+					],
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 2, "position": 9 },
+						{ "driver": "George Russell", "points": 15, "position": 3 }
+					],
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 291,
-	"winPct": 42.9553
+	"totalRaces": 293,
+	"winPct": 42.6621
 }

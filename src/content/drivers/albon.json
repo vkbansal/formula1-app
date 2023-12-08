@@ -2,7 +2,8 @@
 	"championshipStandings": [
 		{ "position": 8, "year": 2019 },
 		{ "position": 7, "year": 2020 },
-		{ "position": 19, "year": 2022 }
+		{ "position": 19, "year": 2022 },
+		{ "position": 13, "year": 2023 }
 	],
 	"code": "ALB",
 	"dob": "1996-03-23",
@@ -584,11 +585,25 @@
 					"position": null,
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Williams",
+					"points": 0,
+					"position": 12,
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Williams",
+					"points": 0,
+					"position": 14,
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalLaps": 4380,
-	"totalRaces": 79
+	"totalLaps": 4488,
+	"totalRaces": 81
 }

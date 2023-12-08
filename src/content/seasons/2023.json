@@ -1914,11 +1914,98 @@
 				"location": "Las Vegas",
 				"name": "Las Vegas Strip Street Circuit"
 			},
-			"constructorStandings": [],
+			"constructorStandings": [
+				{
+					"constructorRef": "red_bull",
+					"points": 822,
+					"position": 1,
+					"wins": 20
+				},
+				{
+					"constructorRef": "mercedes",
+					"points": 392,
+					"position": 2,
+					"wins": 0
+				},
+				{
+					"constructorRef": "ferrari",
+					"points": 388,
+					"position": 3,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren",
+					"points": 284,
+					"position": 4,
+					"wins": 0
+				},
+				{
+					"constructorRef": "aston_martin",
+					"points": 273,
+					"position": 5,
+					"wins": 0
+				},
+				{ "constructorRef": "alpine", "points": 120, "position": 6, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 28,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "alphatauri",
+					"points": 21,
+					"position": 8,
+					"wins": 0
+				},
+				{ "constructorRef": "alfa", "points": 16, "position": 9, "wins": 0 },
+				{ "constructorRef": "haas", "points": 12, "position": 10, "wins": 0 }
+			],
 			"date": "19th Nov 2023",
-			"driverStandings": [],
+			"driverStandings": [
+				{
+					"driverRef": "max_verstappen",
+					"points": 549,
+					"position": 1,
+					"wins": 18
+				},
+				{ "driverRef": "perez", "points": 273, "position": 2, "wins": 2 },
+				{ "driverRef": "hamilton", "points": 232, "position": 3, "wins": 0 },
+				{ "driverRef": "sainz", "points": 200, "position": 4, "wins": 1 },
+				{ "driverRef": "alonso", "points": 200, "position": 5, "wins": 0 },
+				{ "driverRef": "norris", "points": 195, "position": 6, "wins": 0 },
+				{ "driverRef": "leclerc", "points": 188, "position": 7, "wins": 0 },
+				{ "driverRef": "russell", "points": 160, "position": 8, "wins": 0 },
+				{ "driverRef": "piastri", "points": 89, "position": 9, "wins": 0 },
+				{ "driverRef": "stroll", "points": 73, "position": 10, "wins": 0 },
+				{ "driverRef": "gasly", "points": 62, "position": 11, "wins": 0 },
+				{ "driverRef": "ocon", "points": 58, "position": 12, "wins": 0 },
+				{ "driverRef": "albon", "points": 27, "position": 13, "wins": 0 },
+				{ "driverRef": "tsunoda", "points": 13, "position": 14, "wins": 0 },
+				{ "driverRef": "bottas", "points": 10, "position": 15, "wins": 0 },
+				{ "driverRef": "hulkenberg", "points": 9, "position": 16, "wins": 0 },
+				{ "driverRef": "ricciardo", "points": 6, "position": 17, "wins": 0 },
+				{ "driverRef": "zhou", "points": 6, "position": 18, "wins": 0 },
+				{
+					"driverRef": "kevin_magnussen",
+					"points": 3,
+					"position": 19,
+					"wins": 0
+				},
+				{ "driverRef": "lawson", "points": 2, "position": 20, "wins": 0 },
+				{ "driverRef": "sargeant", "points": 1, "position": 21, "wins": 0 },
+				{ "driverRef": "de_vries", "points": 0, "position": 22, "wins": 0 }
+			],
 			"name": "Las Vegas Grand Prix",
-			"podium": [],
+			"podium": [
+				{
+					"constructorRef": "red_bull",
+					"driverRef": "max_verstappen",
+					"position": 1
+				},
+				{ "constructorRef": "ferrari", "driverRef": "leclerc", "position": 2 },
+				{ "constructorRef": "red_bull", "driverRef": "perez", "position": 3 }
+			],
 			"round": 21,
 			"slug": "las-vegas-grand-prix"
 		},
@@ -1928,11 +2015,98 @@
 				"location": "Abu Dhabi",
 				"name": "Yas Marina Circuit"
 			},
-			"constructorStandings": [],
+			"constructorStandings": [
+				{
+					"constructorRef": "red_bull",
+					"points": 860,
+					"position": 1,
+					"wins": 21
+				},
+				{
+					"constructorRef": "mercedes",
+					"points": 409,
+					"position": 2,
+					"wins": 0
+				},
+				{
+					"constructorRef": "ferrari",
+					"points": 406,
+					"position": 3,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren",
+					"points": 302,
+					"position": 4,
+					"wins": 0
+				},
+				{
+					"constructorRef": "aston_martin",
+					"points": 280,
+					"position": 5,
+					"wins": 0
+				},
+				{ "constructorRef": "alpine", "points": 120, "position": 6, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 28,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "alphatauri",
+					"points": 25,
+					"position": 8,
+					"wins": 0
+				},
+				{ "constructorRef": "alfa", "points": 16, "position": 9, "wins": 0 },
+				{ "constructorRef": "haas", "points": 12, "position": 10, "wins": 0 }
+			],
 			"date": "26th Nov 2023",
-			"driverStandings": [],
+			"driverStandings": [
+				{
+					"driverRef": "max_verstappen",
+					"points": 575,
+					"position": 1,
+					"wins": 19
+				},
+				{ "driverRef": "perez", "points": 285, "position": 2, "wins": 2 },
+				{ "driverRef": "hamilton", "points": 234, "position": 3, "wins": 0 },
+				{ "driverRef": "alonso", "points": 206, "position": 4, "wins": 0 },
+				{ "driverRef": "leclerc", "points": 206, "position": 5, "wins": 0 },
+				{ "driverRef": "norris", "points": 205, "position": 6, "wins": 0 },
+				{ "driverRef": "sainz", "points": 200, "position": 7, "wins": 1 },
+				{ "driverRef": "russell", "points": 175, "position": 8, "wins": 0 },
+				{ "driverRef": "piastri", "points": 97, "position": 9, "wins": 0 },
+				{ "driverRef": "stroll", "points": 74, "position": 10, "wins": 0 },
+				{ "driverRef": "gasly", "points": 62, "position": 11, "wins": 0 },
+				{ "driverRef": "ocon", "points": 58, "position": 12, "wins": 0 },
+				{ "driverRef": "albon", "points": 27, "position": 13, "wins": 0 },
+				{ "driverRef": "tsunoda", "points": 17, "position": 14, "wins": 0 },
+				{ "driverRef": "bottas", "points": 10, "position": 15, "wins": 0 },
+				{ "driverRef": "hulkenberg", "points": 9, "position": 16, "wins": 0 },
+				{ "driverRef": "ricciardo", "points": 6, "position": 17, "wins": 0 },
+				{ "driverRef": "zhou", "points": 6, "position": 18, "wins": 0 },
+				{
+					"driverRef": "kevin_magnussen",
+					"points": 3,
+					"position": 19,
+					"wins": 0
+				},
+				{ "driverRef": "lawson", "points": 2, "position": 20, "wins": 0 },
+				{ "driverRef": "sargeant", "points": 1, "position": 21, "wins": 0 },
+				{ "driverRef": "de_vries", "points": 0, "position": 22, "wins": 0 }
+			],
 			"name": "Abu Dhabi Grand Prix",
-			"podium": [],
+			"podium": [
+				{
+					"constructorRef": "red_bull",
+					"driverRef": "max_verstappen",
+					"position": 1
+				},
+				{ "constructorRef": "ferrari", "driverRef": "leclerc", "position": 2 },
+				{ "constructorRef": "mercedes", "driverRef": "russell", "position": 3 }
+			],
 			"round": 22,
 			"slug": "abu-dhabi-grand-prix"
 		}

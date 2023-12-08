@@ -3,7 +3,8 @@
 		{ "position": 5, "year": 1959 },
 		{ "position": 10, "year": 1960 },
 		{ "position": 7, "year": 2021 },
-		{ "position": 7, "year": 2022 }
+		{ "position": 7, "year": 2022 },
+		{ "position": 5, "year": 2023 }
 	],
 	"constructorId": 117,
 	"constructorRef": "aston_martin",
@@ -592,11 +593,27 @@
 					],
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Fernando Alonso", "points": 2, "position": 9 },
+						{ "driver": "Lance Stroll", "points": 10, "position": 5 }
+					],
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lance Stroll", "points": 1, "position": 10 },
+						{ "driver": "Fernando Alonso", "points": 6, "position": 7 }
+					],
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 70,
+	"totalRaces": 72,
 	"winPct": 0
 }

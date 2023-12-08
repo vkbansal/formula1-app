@@ -17,14 +17,15 @@
 		{ "position": 3, "year": 2019 },
 		{ "position": 2, "year": 2020 },
 		{ "position": 2, "year": 2021 },
-		{ "position": 1, "year": 2022 }
+		{ "position": 1, "year": 2022 },
+		{ "position": 1, "year": 2023 }
 	],
 	"constructorId": 9,
 	"constructorRef": "red_bull",
 	"name": "Red Bull",
 	"nationality": "Austrian",
-	"podiums": 261,
-	"raceWins": 111,
+	"podiums": 264,
+	"raceWins": 113,
 	"seasons": [
 		{
 			"rounds": [
@@ -3061,11 +3062,27 @@
 					],
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 15, "position": 3 },
+						{ "driver": "Max Verstappen", "points": 25, "position": 1 }
+					],
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 12, "position": 4 },
+						{ "driver": "Max Verstappen", "points": 26, "position": 1 }
+					],
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 368,
-	"winPct": 30.163
+	"totalRaces": 370,
+	"winPct": 30.5405
 }

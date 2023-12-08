@@ -2,7 +2,8 @@
 	"championshipStandings": [
 		{ "position": 7, "year": 2020 },
 		{ "position": 6, "year": 2021 },
-		{ "position": 9, "year": 2022 }
+		{ "position": 9, "year": 2022 },
+		{ "position": 8, "year": 2023 }
 	],
 	"constructorId": 213,
 	"constructorRef": "alphatauri",
@@ -675,11 +676,27 @@
 					],
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Yuki Tsunoda", "points": 0, "position": 18 },
+						{ "driver": "Daniel Ricciardo", "points": 0, "position": 14 }
+					],
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Daniel Ricciardo", "points": 0, "position": 11 },
+						{ "driver": "Yuki Tsunoda", "points": 4, "position": 8 }
+					],
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 81,
-	"winPct": 1.23457
+	"totalRaces": 83,
+	"winPct": 1.20482
 }

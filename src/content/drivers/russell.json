@@ -3,7 +3,8 @@
 		{ "position": 20, "year": 2019 },
 		{ "position": 18, "year": 2020 },
 		{ "position": 15, "year": 2021 },
-		{ "position": 4, "year": 2022 }
+		{ "position": 4, "year": 2022 },
+		{ "position": 8, "year": 2023 }
 	],
 	"code": "RUS",
 	"dob": "1998-02-15",
@@ -13,7 +14,7 @@
 	"lapsLead": 164,
 	"name": "George Russell",
 	"nationality": "British",
-	"podiums": 10,
+	"podiums": 11,
 	"raceWins": 1,
 	"seasons": [
 		{
@@ -751,11 +752,25 @@
 					"position": null,
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 4,
+					"position": 8,
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 15,
+					"position": 3,
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalLaps": 5617,
-	"totalRaces": 102
+	"totalLaps": 5725,
+	"totalRaces": 104
 }

@@ -12,7 +12,8 @@
 		{ "position": 8, "year": 2019 },
 		{ "position": 8, "year": 2020 },
 		{ "position": 9, "year": 2021 },
-		{ "position": 6, "year": 2022 }
+		{ "position": 6, "year": 2022 },
+		{ "position": 9, "year": 2023 }
 	],
 	"constructorId": 51,
 	"constructorRef": "alfa",
@@ -1828,11 +1829,27 @@
 					],
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Valtteri Bottas", "points": 0, "position": 17 },
+						{ "driver": "Guanyu Zhou", "points": 0, "position": 15 }
+					],
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Valtteri Bottas", "points": 0, "position": 19 },
+						{ "driver": "Guanyu Zhou", "points": 0, "position": 17 }
+					],
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalRaces": 214,
-	"winPct": 5.14019
+	"totalRaces": 216,
+	"winPct": 5.09259
 }

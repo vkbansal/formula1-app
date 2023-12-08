@@ -15,7 +15,8 @@
 		{ "position": 1, "year": 2019 },
 		{ "position": 1, "year": 2020 },
 		{ "position": 2, "year": 2021 },
-		{ "position": 6, "year": 2022 }
+		{ "position": 6, "year": 2022 },
+		{ "position": 3, "year": 2023 }
 	],
 	"code": "HAM",
 	"dob": "1985-01-07",
@@ -2419,11 +2420,25 @@
 					"position": 8,
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 6,
+					"position": 7,
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 2,
+					"position": 9,
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalLaps": 18843,
-	"totalRaces": 330
+	"totalLaps": 18951,
+	"totalRaces": 332
 }

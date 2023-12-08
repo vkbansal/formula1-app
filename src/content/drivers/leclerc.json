@@ -4,17 +4,18 @@
 		{ "position": 4, "year": 2019 },
 		{ "position": 8, "year": 2020 },
 		{ "position": 7, "year": 2021 },
-		{ "position": 2, "year": 2022 }
+		{ "position": 2, "year": 2022 },
+		{ "position": 5, "year": 2023 }
 	],
 	"code": "LEC",
 	"dob": "1997-10-16",
 	"driverId": 844,
 	"driverRef": "leclerc",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Charles-Leclerc.jpg/220px-Charles-Leclerc.jpg",
-	"lapsLead": 644,
+	"lapsLead": 658,
 	"name": "Charles Leclerc",
 	"nationality": "Monegasque",
-	"podiums": 28,
+	"podiums": 30,
 	"raceWins": 5,
 	"seasons": [
 		{
@@ -904,11 +905,25 @@
 					"position": null,
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 18,
+					"position": 2,
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 18,
+					"position": 2,
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalLaps": 6409,
-	"totalRaces": 123
+	"totalLaps": 6517,
+	"totalRaces": 125
 }

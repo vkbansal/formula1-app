@@ -1,5 +1,8 @@
 {
-	"championshipStandings": [{ "position": 18, "year": 2022 }],
+	"championshipStandings": [
+		{ "position": 18, "year": 2022 },
+		{ "position": 18, "year": 2023 }
+	],
 	"code": "ZHO",
 	"dob": "1999-05-30",
 	"driverId": 855,
@@ -311,11 +314,25 @@
 					"position": null,
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Alfa Romeo",
+					"points": 0,
+					"position": 15,
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Alfa Romeo",
+					"points": 0,
+					"position": 17,
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalLaps": 2196,
-	"totalRaces": 42
+	"totalLaps": 2304,
+	"totalRaces": 44
 }

@@ -1,5 +1,5 @@
 {
-	"championshipStandings": [],
+	"championshipStandings": [{ "position": 9, "year": 2023 }],
 	"code": "PIA",
 	"dob": "2001-04-06",
 	"driverId": 857,
@@ -151,11 +151,25 @@
 					"position": 14,
 					"round": 20,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 2,
+					"position": 10,
+					"round": 21,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 8,
+					"position": 6,
+					"round": 22,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2023
 		}
 	],
-	"totalLaps": 1077,
-	"totalRaces": 20
+	"totalLaps": 1185,
+	"totalRaces": 22
 }
