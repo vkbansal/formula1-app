@@ -282,9 +282,11 @@ const constructorsChartDataSets = teams.map((team, i) => {
 				type: 'line',
 				backgroundColor: 'transparent',
 				borderColor: 'transparent',
+				spacing: [30, 30, 48, 10],
 				reflow: true,
 				height: "${(9 / 16) * 100}%"
 			},
+			title: {text: ''},
 			xAxis: {
 				categories: ${JSON.stringify(roundNames)},
 				title: { text: 'Round', style: { color: 'white' } },
