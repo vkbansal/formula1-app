@@ -71,7 +71,7 @@
 	"constructorRef": "ferrari",
 	"name": "Ferrari",
 	"nationality": "Italian",
-	"podiums": 819,
+	"podiums": 820,
 	"raceWins": 244,
 	"seasons": [
 		{
@@ -9282,8 +9282,21 @@
 				}
 			],
 			"year": 2023
+		},
+		{
+			"rounds": [
+				{
+					"results": [
+						{ "driver": "Charles Leclerc", "points": 12, "position": 4 },
+						{ "driver": "Carlos Sainz", "points": 15, "position": 3 }
+					],
+					"round": 1,
+					"roundName": "Bahrain Grand Prix"
+				}
+			],
+			"year": 2024
 		}
 	],
-	"totalRaces": 1076,
-	"winPct": 22.6766
+	"totalRaces": 1077,
+	"winPct": 22.6555
 }

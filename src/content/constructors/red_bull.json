@@ -24,8 +24,8 @@
 	"constructorRef": "red_bull",
 	"name": "Red Bull",
 	"nationality": "Austrian",
-	"podiums": 264,
-	"raceWins": 113,
+	"podiums": 266,
+	"raceWins": 114,
 	"seasons": [
 		{
 			"rounds": [
@@ -3081,8 +3081,21 @@
 				}
 			],
 			"year": 2023
+		},
+		{
+			"rounds": [
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 18, "position": 2 },
+						{ "driver": "Max Verstappen", "points": 26, "position": 1 }
+					],
+					"round": 1,
+					"roundName": "Bahrain Grand Prix"
+				}
+			],
+			"year": 2024
 		}
 	],
-	"totalRaces": 370,
-	"winPct": 30.5405
+	"totalRaces": 371,
+	"winPct": 30.7278
 }
