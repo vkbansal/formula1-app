@@ -25,59 +25,80 @@ const { rounds, teams } = season.data;
 const hasPrev = year > firstSeason && year <= currentSeason;
 const hasNext = year >= firstSeason && year < currentSeason;
 
-type IDataPoint = {
-	position: number;
-	points: number;
-	wins: number;
-};
-
-type IDataSet = {
-	label: string;
-	data: IDataPoint[];
-	borderColor: string;
-	backgroundColor: string;
-};
-
 const roundNames = rounds.map((round) => round.name);
 
-const driversChartDataSets = teams.flatMap((team, i): IDataSet[] => {
+const driversChartDataSets = teams.flatMap((team, i) => {
 	const color = constructorColors[team.constructorRef] || colors[i] || '';
 
-	return team.drivers.map((driver): IDataSet => {
-		const driverData = rounds
-			.map((round) =>
-				round.driverStandings.find((c) => c.driverRef === driver.driverRef),
-			)
-			.filter(Boolean) as IDataPoint[];
+	return team.drivers.map((driver) => {
+		const driverData = rounds.map((round, i) => {
+			const roundData = round.driverStandings.find(
+				(c) => c.driverRef === driver.driverRef,
+			);
+
+			const prevRoundData = rounds[i - 1]?.driverStandings.find(
+				(c) => c.driverRef === driver.driverRef,
+			);
+
+			if (roundData) {
+				return {
+					y: roundData.points,
+					custom: {
+						position: roundData.position,
+						wins: roundData.wins,
+						positionDelta:
+							i > 1
+								? (prevRoundData?.position || 0) - (roundData?.position || 0)
+								: 0,
+					},
+				};
+			}
+
+			return;
+		});
+
 		return {
-			label: driver.name,
+			name: driver.name,
 			data: driverData,
-			backgroundColor: color,
-			borderColor: color,
+			color,
 		};
 	});
 });
 
-const constructorsChartDataSets = teams.map((team, i): IDataSet => {
-	const teamData = rounds
-		.map((round) =>
-			round.constructorStandings.find(
-				(c) => c.constructorRef === team.constructorRef,
-			),
-		)
-		.filter(Boolean) as IDataPoint[];
+const constructorsChartDataSets = teams.map((team, i) => {
+	const teamData = rounds.map((round, i) => {
+		const roundData = round.constructorStandings.find(
+			(c) => c.constructorRef === team.constructorRef,
+		);
+
+		const prevRoundData = rounds[i - 1]?.constructorStandings.find(
+			(c) => c.constructorRef === team.constructorRef,
+		);
+
+		if (roundData) {
+			return {
+				y: roundData.points,
+				custom: {
+					position: roundData.position,
+					wins: roundData.wins,
+					positionDelta:
+						i > 0
+							? (prevRoundData?.position || 0) - (roundData?.position || 0)
+							: 0,
+				},
+			};
+		}
+
+		return;
+	});
 	const color = constructorColors[team.constructorRef] || colors[i] || '';
 
 	return {
-		label: team.name,
+		name: team.name,
 		data: teamData,
-		backgroundColor: color,
-		borderColor: color,
+		color,
 	};
 });
-
-const safeConstructorsChartDataSets = constructorsChartDataSets;
-const safeDriversChartDataSets = driversChartDataSets;
 ---
 
 <MainLayout title={`${year} Season`}>
@@ -207,28 +228,10 @@ const safeDriversChartDataSets = driversChartDataSets;
 				</table>
 			</article>
 			<article class="tab-panel" id="driver-standings">
-				<div class="chart-wrapper">
-					<button type="button" class="btn" id="reset-zoom">Reset Zoom</button>
-					<canvas id="driver-standings-chart"></canvas>
-					<div class="instructions">
-						<div>
-							Use <code>Alt/Option</code> + mouse drag selection to zoom
-						</div>
-						<div>Use mouse drag for panning after zoom</div>
-					</div>
-				</div>
+				<div id="driver-standings-chart" class="chart-wrapper"></div>
 			</article>
 			<article class="tab-panel" id="constructor-standings">
-				<div class="chart-wrapper">
-					<button type="button" class="btn" id="reset-zoom">Reset Zoom</button>
-					<canvas id="constructor-standings-chart"></canvas>
-					<div class="instructions">
-						<div>
-							Use <code>Alt/Option</code> + mouse drag selection to zoom
-						</div>
-						<div>Use mouse drag for panning after zoom</div>
-					</div>
-				</div>
+				<div id="constructor-standings-chart" class="chart-wrapper"></div>
 			</article>
 		</section>
 	</div>
@@ -239,34 +242,164 @@ const safeDriversChartDataSets = driversChartDataSets;
 			padding-left: 1rem;
 		}
 	}
+</style>
+<style is:global>
+	.tooltip-table {
+		border-collapse: collapse;
+		font-size: 0.85rem;
 
-	.chart-wrapper {
-		width: 90%;
-		margin: 0 auto;
-
-		& > canvas {
-			block-size: 100%;
-			aspect-ratio: 2 / 1;
+		& tr th,
+		& tr td {
+			padding: 0.1rem 0.4rem;
 		}
 
-		.instructions {
+		& .position-cell {
 			display: flex;
+			justify-content: space-between;
 			align-items: center;
-			justify-content: space-around;
-			margin-top: 2rem;
-			font-size: 0.85em;
-			color: var(--text-lighter);
+		}
+
+		& .name-cell {
+			display: grid;
+			grid-template-columns: 1rem 1fr;
+
+			& > span:first-child {
+				display: block;
+				text-align: center;
+			}
 		}
 	}
 </style>
+<script src="https://code.highcharts.com/11/highcharts.js"></script>
 <script
 	set:html={`
-window._roundNames = ${JSON.stringify(roundNames)};
-window._constructorsChartDataSets = ${JSON.stringify(
-		safeConstructorsChartDataSets,
-	)};
-window._driversChartDataSets = ${JSON.stringify(safeDriversChartDataSets)};
+	document.addEventListener('DOMContentLoaded', function () {
+		const commonChartOptions = {
+			accessibility: { enabled: false },
+			chart: {
+				type: 'line',
+				backgroundColor: 'transparent',
+				borderColor: 'transparent',
+				reflow: true,
+				height: "${(9 / 16) * 100}%"
+			},
+			xAxis: {
+				categories: ${JSON.stringify(roundNames)},
+				title: { text: 'Round', style: { color: 'white' } },
+				crosshair: { snap: true },
+				labels: { style: { color: 'white' }}
+			},
+			yAxis: {
+				title: { text: 'Points', style: { color: 'white' } },
+				labels: { style: { color: 'white' }}
+			},
+			legend: {
+				itemStyle: { color: 'white' },
+				itemHoverStyle: { color: 'white', textDecoration: 'underline' },
+				showCheckbox: true,
+			},
+			tooltip: {
+				shared: true,
+				split: false,
+				useHTML: true,
+				formatter() {
+					const data = this.points.map((point) => {
+						const { x, y, graphic } = point.point;
+						const { name, color } = point.series;
+						let symbol = '';
+						let scale = 1;
+
+						switch (graphic.symbolName) {
+							case 'circle':
+								symbol = '●';
+								scale = 1.35
+								break;
+							case 'diamond':
+								symbol = '♦';
+								scale = 1.35
+								break;
+							case 'square':
+								symbol = '■';
+								scale = 1.35
+								break;
+							case 'triangle':
+								symbol = '▲';
+								scale = 0.9
+								break;
+							case 'triangle-down':
+								symbol = '▼';
+								scale = 0.9
+								break;
+						}
+
+
+						return {
+							name,
+							y,
+							symbol: '<span style="color:' + color + ';transform:scale('+ scale +')">'+ symbol + '</span>',
+							...point.point.custom
+						};
+					}).sort((a, b) => a.position - b.position);
+
+
+					const rows = data.map((row) => {
+						let delta = '';
+
+						if (row.positionDelta < 0) {
+							delta = '<span style="color: red;">▼' + Math.abs(row.positionDelta) + '</span>';
+						} else if (row.positionDelta > 0) {
+							delta = '<span style="color: green;">▲' + Math.abs(row.positionDelta) + '</span>';
+						}
+
+						return [
+							'<tr>',
+								'<td>',
+									'<span class="position-cell">',
+										'<span>', row.position, '</span>' ,
+										delta,
+									'</span>',
+								'</td>',
+								'<td>',
+									'<span class="name-cell">',
+										row.symbol,
+										'<span>', row.name,'</span>',
+									'</span>',
+								'</td>',
+								'<td>', row.y, '</td>',
+								'<td>', row.wins, '</td>',
+							'</tr>',
+						].join('');
+					});
+
+					return [
+						'<table class="tooltip-table">',
+							'<thead>',
+								'<tr>',
+									'<th>Position</th>',
+									'<th>Driver</th>',
+									'<th>Points</th>',
+									'<th>Wins</th>',
+								'</tr>',
+							'</thead>',
+							'<tbody>',
+								...rows,
+							'</tbody>',
+						'</table>'
+					].join('');
+				}
+			}
+		};
+		const driverStandingsChart = Highcharts.chart('driver-standings-chart', {
+			...commonChartOptions,
+			series: ${JSON.stringify(driversChartDataSets)},
+		});
+
+		const constructorStandingsChart = Highcharts.chart('constructor-standings-chart', {
+			...commonChartOptions,
+			series: ${JSON.stringify(constructorsChartDataSets)},
+		});
+	});
+
 `}
 />
 <script src="~/client/tabs.ts"></script>
-<script src="~/client/standings-chart.ts"></script>
