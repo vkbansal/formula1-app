@@ -58,7 +58,7 @@ const { title, class: className } = Astro.props as Props;
 	}
 </style>
 
-<script define:vars={{ buildTime }}>
+<script define:vars={{ buildTime }} is:inline>
 	try {
 		// build time handling
 		document.getElementById('last-updated').innerHTML = new Date(

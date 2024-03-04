@@ -15,7 +15,7 @@ export const prerender = true;
 	</div>
 </MainLayout>
 
-<script define:vars={{ numOfEntities }}>
+<script define:vars={{ numOfEntities }} is:inline>
 	(() => {
 		const facts = document.getElementById('facts');
 		const linesToType = [

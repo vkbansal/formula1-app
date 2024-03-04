@@ -271,7 +271,9 @@ const constructorsChartDataSets = teams.map((team, i) => {
 	}
 </style>
 <script src="https://code.highcharts.com/11/highcharts.js"></script>
+<script src="~/client/tabs.ts"></script>
 <script
+	is:inline
 	set:html={`
 	document.addEventListener('DOMContentLoaded', function () {
 		const commonChartOptions = {
@@ -402,4 +404,3 @@ const constructorsChartDataSets = teams.map((team, i) => {
 
 `}
 />
-<script src="~/client/tabs.ts"></script>

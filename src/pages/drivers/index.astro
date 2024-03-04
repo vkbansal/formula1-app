@@ -164,7 +164,7 @@ export const prerender = true;
 		}
 	}
 </style>
-<script define:vars={{ currentSeasonDrivers }}>
+<script define:vars={{ currentSeasonDrivers }} is:inline>
 	const table = document.getElementById('drivers-table');
 	const nav_links = document.querySelectorAll('.nav-link');
 	const sort_btns = document.querySelectorAll('.sort-btn');
