@@ -47,10 +47,5 @@
 
 :root {
 	@include common-vars;
-	@include theme-light;
-}
-
-[data-theme='dark'] {
-	@include common-vars;
 	@include theme-dark;
 }

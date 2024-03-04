@@ -60,22 +60,6 @@ const { title, class: className } = Astro.props as Props;
 
 <script define:vars={{ buildTime }}>
 	try {
-		// theme handling
-		const mql = window.matchMedia('(prefers-color-scheme: dark)');
-		const themeToggle = document.getElementById('theme-toggle');
-		const themeFromStorage = localStorage.getItem('theme');
-		const appliedTheme = themeFromStorage || (mql.matches ? 'dark' : 'light');
-		document.body.parentElement.dataset.theme = appliedTheme;
-
-		if (themeToggle) {
-			themeToggle.checked = appliedTheme === 'dark';
-			themeToggle.addEventListener('change', function () {
-				const theme = this.checked ? 'dark' : 'light';
-				localStorage.setItem('theme', theme);
-				document.body.parentElement.dataset.theme = theme;
-			});
-		}
-
 		// build time handling
 		document.getElementById('last-updated').innerHTML = new Date(
 			buildTime,

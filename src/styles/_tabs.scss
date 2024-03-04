@@ -17,7 +17,7 @@
 			border-radius: 0.5rem 0.5rem 0 0;
 
 			&.tab-active {
-				background-color: var(--gray-100);
+				background-color: var(--gray-800);
 				color: var(--text-main);
 				font-weight: bold;
 				z-index: 3;
@@ -33,23 +33,11 @@
 			padding: 1rem;
 			display: none;
 			border-radius: 0.5rem;
+			background-color: var(--gray-800);
 
 			&.tab-active {
 				display: block;
 			}
-		}
-	}
-}
-
-html[data-theme='dark'] {
-	.tabs {
-		& .tab {
-			&.tab-active {
-				background-color: var(--gray-800);
-			}
-		}
-		& .tab-panel {
-			background-color: var(--gray-800);
 		}
 	}
 }

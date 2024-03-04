@@ -15,10 +15,6 @@ const url = Astro.url.pathname;
 				</span>
 			</a>
 			<div class="navbar-rhs">
-				<label for="theme-toggle" class="theme-toggle" title="Theme">
-					<input id="theme-toggle" type="checkbox" />
-					<span></span>
-				</label>
 				<a
 					role="button"
 					class="navbar-burger"
@@ -267,77 +263,7 @@ const url = Astro.url.pathname;
 	$delta: math.div(($switch_height - $toggle_size), 2);
 	$inner_width: $switch_width - ($delta * 2);
 
-	.theme-toggle {
-		display: inline-flex;
-		align-items: center;
-		height: $switch_height;
-		width: $switch_width;
-		border-radius: $switch_height;
-		background: var(--black);
-		position: relative;
-		overflow: hidden;
-		box-shadow: 0 0 0 1px var(--border);
-		cursor: pointer;
-
-		& > input {
-			opacity: 0;
-			clip-path: circle(0, 0);
-			width: 0;
-			height: 0;
-			margin: 0;
-		}
-
-		& > span {
-			position: absolute;
-			display: inline-block;
-			height: $toggle_size;
-			width: $toggle_size;
-			background: var(--white);
-			border-radius: 50%;
-			left: 0;
-			top: 0;
-			transition: transform 0.3s ease-in-out;
-			transform: translate($delta, $delta);
-
-			&::before,
-			&::after {
-				content: '';
-				position: absolute;
-				top: 0;
-				display: inline-flex;
-				align-items: center;
-				height: $toggle_size;
-				width: $inner_width;
-				border-radius: $toggle_size;
-				line-height: 100%;
-			}
-
-			&::after {
-				content: '☀️';
-				text-align: right;
-				font-size: 0.8em;
-				left: 0;
-				justify-content: flex-end;
-				transform: translate(-10%, 0%);
-			}
-
-			&::before {
-				content: '🌙';
-				font-size: 0.7em;
-				right: 0;
-				justify-content: flex-start;
-				transform: translate(10%, 0%);
-			}
-		}
-
-		& input:checked + span {
-			transform: translate(calc($switch_width - $toggle_size - $delta), $delta);
-		}
-	}
-
-	html[data-theme='dark'] {
-		.github {
-			filter: invert(1);
-		}
+	.github {
+		filter: invert(1);
 	}
 </style>
