@@ -7,58 +7,25 @@
 	"dob": "1920-07-18",
 	"driverId": 688,
 	"driverRef": "brandon",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Eric Brandon",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": 8,
-					"round": 1,
-					"roundName": "Swiss Grand Prix"
-				},
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": 9,
-					"round": 3,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": 20,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": 13,
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Cooper", "points": 0, "position": 8, "round": 1, "roundName": "Swiss Grand Prix" },
+				{ "constructor": "Cooper", "points": 0, "position": 9, "round": 3, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Cooper", "points": 0, "position": 20, "round": 5, "roundName": "British Grand Prix" },
+				{ "constructor": "Cooper", "points": 0, "position": 13, "round": 8, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1952
 		},
-		{
-			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1954
-		}
+		{ "results": [{ "constructor": "Cooper", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1954 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 5
 }

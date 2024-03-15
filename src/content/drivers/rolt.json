@@ -9,49 +9,17 @@
 	"driverId": 666,
 	"driverRef": "rolt",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Autoraces_te_Zandvoort._Tony_Rolt_met_zijn_Alfa_Romeo_onderaan_de_Hunzerug%2C_Bestanddeelnr_902-9012.jpg/220px-Autoraces_te_Zandvoort._Tony_Rolt_met_zijn_Alfa_Romeo_onderaan_de_Hunzerug%2C_Bestanddeelnr_902-9012.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Tony Rolt",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "ERA",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1950
-		},
-		{
-			"results": [
-				{
-					"constructor": "Connaught",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1953
-		},
-		{
-			"results": [
-				{
-					"constructor": "Connaught",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1955
-		}
+		{ "results": [{ "constructor": "ERA", "points": 0, "position": null, "round": 1, "roundName": "British Grand Prix" }], "year": 1950 },
+		{ "results": [{ "constructor": "Connaught", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" }], "year": 1953 },
+		{ "results": [{ "constructor": "Connaught", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" }], "year": 1955 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 3
 }

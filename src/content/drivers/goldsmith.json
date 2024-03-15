@@ -8,49 +8,18 @@
 	"dob": "1925-10-02",
 	"driverId": 510,
 	"driverRef": "goldsmith",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Paul Goldsmith",
 	"nationality": "American",
 	"podiums": 1,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1958
-		},
-		{
-			"results": [
-				{
-					"constructor": "Epperly",
-					"points": 2,
-					"position": 5,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1959
-		},
-		{
-			"results": [
-				{
-					"constructor": "Epperly",
-					"points": 4,
-					"position": 3,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1960
-		}
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 4, "roundName": "Indianapolis 500" }], "year": 1958 },
+		{ "results": [{ "constructor": "Epperly", "points": 2, "position": 5, "round": 2, "roundName": "Indianapolis 500" }], "year": 1959 },
+		{ "results": [{ "constructor": "Epperly", "points": 4, "position": 3, "round": 3, "roundName": "Indianapolis 500" }], "year": 1960 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 3
 }

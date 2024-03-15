@@ -8,56 +8,24 @@
 	"dob": "1909-12-28",
 	"driverId": 747,
 	"driverRef": "murray",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "David Murray",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 1, "roundName": "British Grand Prix" },
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1950
 		},
-		{
-			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1951
-		},
-		{
-			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1952
-		}
+		{ "results": [{ "constructor": "Maserati", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1951 },
+		{ "results": [{ "constructor": "Cooper", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1952 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 4
 }

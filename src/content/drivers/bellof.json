@@ -7,177 +7,47 @@
 	"dob": "1957-11-20",
 	"driverId": 185,
 	"driverRef": "bellof",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Stefan Bellof",
 	"nationality": "German",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "South African Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "San Marino Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Detroit Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "Dallas Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 12,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Dutch Grand Prix"
-				}
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 1, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 2, "roundName": "South African Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 3, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 4, "roundName": "San Marino Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 5, "roundName": "French Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 7, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 8, "roundName": "Detroit Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 9, "roundName": "Dallas Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 10, "roundName": "British Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 12, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 13, "roundName": "Dutch Grand Prix" }
 			],
 			"year": 1984
 		},
 		{
 			"results": [
-				{
-					"constructor": "Tyrrell",
-					"points": 1,
-					"position": 6,
-					"round": 2,
-					"roundName": "Portuguese Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "San Marino Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 11,
-					"round": 5,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 3,
-					"position": 4,
-					"round": 6,
-					"roundName": "Detroit Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 13,
-					"round": 7,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 11,
-					"round": 8,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 8,
-					"round": 9,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 7,
-					"round": 10,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Dutch Grand Prix"
-				}
+				{ "constructor": "Tyrrell", "points": 1, "position": 6, "round": 2, "roundName": "Portuguese Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 3, "roundName": "San Marino Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 4, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": 11, "round": 5, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 3, "position": 4, "round": 6, "roundName": "Detroit Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": 13, "round": 7, "roundName": "French Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": 11, "round": 8, "roundName": "British Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": 8, "round": 9, "roundName": "German Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": 7, "round": 10, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 11, "roundName": "Dutch Grand Prix" }
 			],
 			"year": 1985
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 22
 }

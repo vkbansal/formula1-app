@@ -7,37 +7,17 @@
 	"dob": "1926-04-13",
 	"driverId": 553,
 	"driverRef": "testut",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "André Testut",
 	"nationality": "Monegasque",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				}
-			],
-			"year": 1958
-		},
-		{
-			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Monaco Grand Prix"
-				}
-			],
-			"year": 1959
-		}
+		{ "results": [{ "constructor": "Maserati", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" }], "year": 1958 },
+		{ "results": [{ "constructor": "Maserati", "points": 0, "position": null, "round": 1, "roundName": "Monaco Grand Prix" }], "year": 1959 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

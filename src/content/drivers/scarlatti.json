@@ -12,148 +12,54 @@
 	"driverId": 483,
 	"driverRef": "scarlatti",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/1957-08-18_Pescara_GP_Maserati_250_Scarlatti.jpg/220px-1957-08-18_Pescara_GP_Maserati_250_Scarlatti.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Giorgio Scarlatti",
 	"nationality": "Italian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "German Grand Prix"
-				}
+				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" }
 			],
 			"year": 1956
 		},
 		{
 			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": 10,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": 6,
-					"round": 7,
-					"roundName": "Pescara Grand Prix"
-				},
-				{
-					"constructor": "Maserati",
-					"points": 1,
-					"position": 5,
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Maserati", "points": 0, "position": 10, "round": 6, "roundName": "German Grand Prix" },
+				{ "constructor": "Maserati", "points": 0, "position": 6, "round": 7, "roundName": "Pescara Grand Prix" },
+				{ "constructor": "Maserati", "points": 1, "position": 5, "round": 8, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1957
 		},
 		{
 			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Dutch Grand Prix"
-				}
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 3, "roundName": "Dutch Grand Prix" }
 			],
 			"year": 1958
 		},
 		{
 			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": 8,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Cooper-Climax",
-					"points": 0,
-					"position": 12,
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 1, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Maserati", "points": 0, "position": 8, "round": 4, "roundName": "French Grand Prix" },
+				{ "constructor": "Cooper-Climax", "points": 0, "position": 12, "round": 8, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1959
 		},
 		{
 			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"constructor": "Cooper-Castellotti",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Cooper-Maserati",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
+				{ "constructor": "Cooper-Castellotti", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 9, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1960
 		},
-		{
-			"results": [
-				{
-					"constructor": "De Tomaso-Osca",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				}
-			],
-			"year": 1961
-		}
+		{ "results": [{ "constructor": "De Tomaso-Osca", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" }], "year": 1961 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 15
 }

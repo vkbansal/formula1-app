@@ -8,51 +8,28 @@
 	"driverId": 717,
 	"driverRef": "hans_stuck",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bundesarchiv_Bild_102-08188%2C_Hans_von_Stuck.jpg/220px-Bundesarchiv_Bild_102-08188%2C_Hans_von_Stuck.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Hans von Stuck",
 	"nationality": "German",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "AFM",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Swiss Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "AFM", "points": 0, "position": null, "round": 1, "roundName": "Swiss Grand Prix" },
+				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 8, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1952
 		},
 		{
 			"results": [
-				{
-					"constructor": "AFM",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "AFM",
-					"points": 0,
-					"position": 14,
-					"round": 9,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "AFM", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" },
+				{ "constructor": "AFM", "points": 0, "position": 14, "round": 9, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1953
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 4
 }

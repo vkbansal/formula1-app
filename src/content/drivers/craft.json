@@ -4,32 +4,22 @@
 	"dob": "1939-11-17",
 	"driverId": 354,
 	"driverRef": "craft",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Chris Craft",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "Brabham", "points": 0, "position": null, "round": 10, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Brabham", "points": 0, "position": null, "round": 11, "roundName": "United States Grand Prix" }
 			],
 			"year": 1971
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

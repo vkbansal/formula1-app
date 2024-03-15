@@ -10,131 +10,38 @@
 	"driverId": 208,
 	"driverRef": "villota",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Emilio_de_Villota_%28cropped%29.jpg/220px-Emilio_de_Villota_%28cropped%29.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Emilio de Villota",
 	"nationality": "Spanish",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
+		{ "results": [{ "constructor": "Brabham-Ford", "points": 0, "position": null, "round": 4, "roundName": "Spanish Grand Prix" }], "year": 1976 },
 		{
 			"results": [
-				{
-					"constructor": "Brabham-Ford",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Spanish Grand Prix"
-				}
-			],
-			"year": 1976
-		},
-		{
-			"results": [
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": 13,
-					"round": 5,
-					"roundName": "Spanish Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Swedish Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": 17,
-					"round": 12,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 14,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "McLaren", "points": 0, "position": 13, "round": 5, "roundName": "Spanish Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": null, "round": 7, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": null, "round": 8, "roundName": "Swedish Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": null, "round": 10, "roundName": "British Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": null, "round": 11, "roundName": "German Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": 17, "round": 12, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": null, "round": 14, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1977
 		},
+		{ "results": [{ "constructor": "McLaren", "points": 0, "position": null, "round": 7, "roundName": "Spanish Grand Prix" }], "year": 1978 },
 		{
 			"results": [
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Spanish Grand Prix"
-				}
-			],
-			"year": 1978
-		},
-		{
-			"results": [
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Detroit Grand Prix"
-				},
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "Dutch Grand Prix"
-				}
+				{ "constructor": "March", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "March", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "March", "points": 0, "position": null, "round": 7, "roundName": "Detroit Grand Prix" },
+				{ "constructor": "March", "points": 0, "position": null, "round": 8, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "March", "points": 0, "position": null, "round": 9, "roundName": "Dutch Grand Prix" }
 			],
 			"year": 1982
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 14
 }

@@ -8,41 +8,27 @@
 	"raceWins": 0,
 	"seasons": [
 		{
-			"rounds": [
-				{
-					"results": [{ "driver": "Franco Rol", "points": 0, "position": 9 }],
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Franco Rol", "points": 0, "position": 9 }], "round": 7, "roundName": "Italian Grand Prix" }],
 			"year": 1951
 		},
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Élie Bayol", "points": 0, "position": null }
-					],
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Élie Bayol", "points": 0, "position": null }], "round": 8, "roundName": "Italian Grand Prix" }],
 			"year": 1952
 		},
 		{
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Élie Bayol", "points": 0, "position": null },
-						{ "driver": "Louis Chiron", "points": 0, "position": 15 }
+						{ "driver": "Louis Chiron", "points": 0, "position": 15 },
+						{ "driver": "Élie Bayol", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Élie Bayol", "points": 0, "position": null },
-						{ "driver": "Louis Chiron", "points": 0, "position": 10 }
+						{ "driver": "Louis Chiron", "points": 0, "position": 10 },
+						{ "driver": "Élie Bayol", "points": 0, "position": null }
 					],
 					"round": 9,
 					"roundName": "Italian Grand Prix"
@@ -54,8 +40,8 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Luigi Piotti", "points": 0, "position": null },
-						{ "driver": "Giulio Cabianca", "points": 0, "position": null }
+						{ "driver": "Giulio Cabianca", "points": 0, "position": null },
+						{ "driver": "Luigi Piotti", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Monaco Grand Prix"

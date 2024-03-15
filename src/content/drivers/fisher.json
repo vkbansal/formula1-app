@@ -4,32 +4,22 @@
 	"dob": "1943-03-13",
 	"driverId": 392,
 	"driverRef": "fisher",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Mike Fisher",
 	"nationality": "American",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Lotus-BRM",
-					"points": 0,
-					"position": 11,
-					"round": 8,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Lotus-BRM",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Mexican Grand Prix"
-				}
+				{ "constructor": "Lotus-BRM", "points": 0, "position": 11, "round": 8, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 11, "roundName": "Mexican Grand Prix" }
 			],
 			"year": 1967
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

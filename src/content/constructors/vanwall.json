@@ -13,59 +13,29 @@
 	"seasons": [
 		{
 			"rounds": [
-				{
-					"results": [
-						{ "driver": "Peter Collins", "points": 0, "position": null }
-					],
-					"round": 5,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Peter Collins", "points": 0, "position": 7 }
-					],
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Peter Collins", "points": 0, "position": null }
-					],
-					"round": 9,
-					"roundName": "Spanish Grand Prix"
-				}
+				{ "results": [{ "driver": "Peter Collins", "points": 0, "position": null }], "round": 5, "roundName": "British Grand Prix" },
+				{ "results": [{ "driver": "Peter Collins", "points": 0, "position": 7 }], "round": 8, "roundName": "Italian Grand Prix" },
+				{ "results": [{ "driver": "Peter Collins", "points": 0, "position": null }], "round": 9, "roundName": "Spanish Grand Prix" }
 			],
 			"year": 1954
 		},
 		{
 			"rounds": [
+				{ "results": [{ "driver": "Mike Hawthorn", "points": 0, "position": null }], "round": 2, "roundName": "Monaco Grand Prix" },
+				{ "results": [{ "driver": "Mike Hawthorn", "points": 0, "position": null }], "round": 4, "roundName": "Belgian Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Mike Hawthorn", "points": 0, "position": null }
-					],
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Mike Hawthorn", "points": 0, "position": null }
-					],
-					"round": 4,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"results": [
+						{ "driver": "Ken Wharton", "points": 0, "position": 9 },
 						{ "driver": "Harry Schell", "points": 0, "position": 9 },
-						{ "driver": "Harry Schell", "points": 0, "position": null },
-						{ "driver": "Ken Wharton", "points": 0, "position": 9 }
+						{ "driver": "Harry Schell", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Ken Wharton", "points": 0, "position": null },
-						{ "driver": "Harry Schell", "points": 0, "position": null }
+						{ "driver": "Harry Schell", "points": 0, "position": null },
+						{ "driver": "Ken Wharton", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "Italian Grand Prix"
@@ -77,48 +47,44 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Harry Schell", "points": 0, "position": null },
-						{ "driver": "Maurice Trintignant", "points": 0, "position": null }
+						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
+						{ "driver": "Harry Schell", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Monaco Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
-						{ "driver": "Harry Schell", "points": 3, "position": 4 }
+						{ "driver": "Harry Schell", "points": 3, "position": 4 },
+						{ "driver": "Maurice Trintignant", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "Belgian Grand Prix"
 				},
 				{
 					"results": [
+						{ "driver": "Mike Hawthorn", "points": 0, "position": 10 },
 						{ "driver": "Harry Schell", "points": 0, "position": 10 },
-						{ "driver": "Colin Chapman", "points": 0, "position": null },
 						{ "driver": "Harry Schell", "points": 0, "position": null },
-						{ "driver": "Mike Hawthorn", "points": 0, "position": 10 }
+						{ "driver": "Colin Chapman", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{
-							"driver": "José Froilán González",
-							"points": 0,
-							"position": null
-						},
+						{ "driver": "Harry Schell", "points": 0, "position": null },
 						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
-						{ "driver": "Harry Schell", "points": 0, "position": null }
+						{ "driver": "José Froilán González", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Piero Taruffi", "points": 0, "position": null },
+						{ "driver": "Harry Schell", "points": 0, "position": null },
 						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
-						{ "driver": "Harry Schell", "points": 0, "position": null }
+						{ "driver": "Piero Taruffi", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "Italian Grand Prix"
@@ -130,54 +96,54 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Stirling Moss", "points": 0, "position": null },
-						{ "driver": "Tony Brooks", "points": 6, "position": 2 }
+						{ "driver": "Tony Brooks", "points": 6, "position": 2 },
+						{ "driver": "Stirling Moss", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Monaco Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Roy Salvadori", "points": 0, "position": null },
-						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null }
+						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null },
+						{ "driver": "Roy Salvadori", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Tony Brooks", "points": 0, "position": null },
+						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": 7 },
+						{ "driver": "Tony Brooks", "points": 4, "position": 1 },
 						{ "driver": "Stirling Moss", "points": 5, "position": 1 },
 						{ "driver": "Stirling Moss", "points": 0, "position": null },
-						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": 7 },
-						{ "driver": "Tony Brooks", "points": 4, "position": 1 }
+						{ "driver": "Tony Brooks", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null },
 						{ "driver": "Tony Brooks", "points": 0, "position": 9 },
-						{ "driver": "Stirling Moss", "points": 2, "position": 5 }
+						{ "driver": "Stirling Moss", "points": 2, "position": 5 },
+						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "German Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Tony Brooks", "points": 0, "position": null },
 						{ "driver": "Stuart Lewis-Evans", "points": 2, "position": 5 },
-						{ "driver": "Stirling Moss", "points": 9, "position": 1 }
+						{ "driver": "Stirling Moss", "points": 9, "position": 1 },
+						{ "driver": "Tony Brooks", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "Pescara Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null },
 						{ "driver": "Tony Brooks", "points": 1, "position": 7 },
-						{ "driver": "Stirling Moss", "points": 8, "position": 1 }
+						{ "driver": "Stirling Moss", "points": 8, "position": 1 },
+						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "Italian Grand Prix"
@@ -189,81 +155,81 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null },
+						{ "driver": "Stirling Moss", "points": 0, "position": null },
 						{ "driver": "Tony Brooks", "points": 0, "position": null },
-						{ "driver": "Stirling Moss", "points": 0, "position": null }
+						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Monaco Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Tony Brooks", "points": 0, "position": null },
+						{ "driver": "Stirling Moss", "points": 9, "position": 1 },
 						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null },
-						{ "driver": "Stirling Moss", "points": 9, "position": 1 }
+						{ "driver": "Tony Brooks", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "Dutch Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Stirling Moss", "points": 0, "position": null },
 						{ "driver": "Stuart Lewis-Evans", "points": 4, "position": 3 },
-						{ "driver": "Tony Brooks", "points": 8, "position": 1 }
+						{ "driver": "Tony Brooks", "points": 8, "position": 1 },
+						{ "driver": "Stirling Moss", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "Belgian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Tony Brooks", "points": 0, "position": null },
-						{ "driver": "Tony Brooks", "points": 0, "position": null },
+						{ "driver": "Stirling Moss", "points": 6, "position": 2 },
 						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null },
-						{ "driver": "Stirling Moss", "points": 6, "position": 2 }
+						{ "driver": "Tony Brooks", "points": 0, "position": null },
+						{ "driver": "Tony Brooks", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Stirling Moss", "points": 0, "position": null },
 						{ "driver": "Tony Brooks", "points": 0, "position": 7 },
-						{ "driver": "Stuart Lewis-Evans", "points": 3, "position": 4 }
+						{ "driver": "Stuart Lewis-Evans", "points": 3, "position": 4 },
+						{ "driver": "Stirling Moss", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Stirling Moss", "points": 1, "position": null },
-						{ "driver": "Tony Brooks", "points": 8, "position": 1 }
+						{ "driver": "Tony Brooks", "points": 8, "position": 1 },
+						{ "driver": "Stirling Moss", "points": 1, "position": null }
 					],
 					"round": 8,
 					"roundName": "German Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Tony Brooks", "points": 0, "position": null },
 						{ "driver": "Stuart Lewis-Evans", "points": 4, "position": 3 },
-						{ "driver": "Stirling Moss", "points": 8, "position": 1 }
+						{ "driver": "Stirling Moss", "points": 8, "position": 1 },
+						{ "driver": "Tony Brooks", "points": 0, "position": null }
 					],
 					"round": 9,
 					"roundName": "Portuguese Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Stirling Moss", "points": 0, "position": null },
+						{ "driver": "Tony Brooks", "points": 8, "position": 1 },
 						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null },
-						{ "driver": "Tony Brooks", "points": 8, "position": 1 }
+						{ "driver": "Stirling Moss", "points": 0, "position": null }
 					],
 					"round": 10,
 					"roundName": "Italian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Tony Brooks", "points": 0, "position": null },
+						{ "driver": "Stirling Moss", "points": 9, "position": 1 },
 						{ "driver": "Stuart Lewis-Evans", "points": 0, "position": null },
-						{ "driver": "Stirling Moss", "points": 9, "position": 1 }
+						{ "driver": "Tony Brooks", "points": 0, "position": null }
 					],
 					"round": 11,
 					"roundName": "Moroccan Grand Prix"
@@ -272,30 +238,14 @@
 			"year": 1958
 		},
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Tony Brooks", "points": 0, "position": null }
-					],
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Tony Brooks", "points": 0, "position": null }], "round": 5, "roundName": "British Grand Prix" }],
 			"year": 1959
 		},
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Tony Brooks", "points": 0, "position": null }
-					],
-					"round": 6,
-					"roundName": "French Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Tony Brooks", "points": 0, "position": null }], "round": 6, "roundName": "French Grand Prix" }],
 			"year": 1960
 		}
 	],
 	"totalRaces": 29,
-	"winPct": 34.4828
+	"winPct": 34.48275862068966
 }

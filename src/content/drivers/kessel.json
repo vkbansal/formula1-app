@@ -8,65 +8,25 @@
 	"driverId": 271,
 	"driverRef": "kessel",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/1976_BRDC_International_Trophy%2C_Loris_Kessel.jpg/220px-1976_BRDC_International_Trophy%2C_Loris_Kessel.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Loris Kessel",
 	"nationality": "Swiss",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Brabham-Ford",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Spanish Grand Prix"
-				},
-				{
-					"constructor": "Brabham-Ford",
-					"points": 0,
-					"position": 12,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Brabham-Ford",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Swedish Grand Prix"
-				},
-				{
-					"constructor": "Brabham-Ford",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Brabham-Ford",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Austrian Grand Prix"
-				}
+				{ "constructor": "Brabham-Ford", "points": 0, "position": null, "round": 4, "roundName": "Spanish Grand Prix" },
+				{ "constructor": "Brabham-Ford", "points": 0, "position": 12, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Brabham-Ford", "points": 0, "position": null, "round": 7, "roundName": "Swedish Grand Prix" },
+				{ "constructor": "Brabham-Ford", "points": 0, "position": null, "round": 8, "roundName": "French Grand Prix" },
+				{ "constructor": "Brabham-Ford", "points": 0, "position": null, "round": 11, "roundName": "Austrian Grand Prix" }
 			],
 			"year": 1976
 		},
-		{
-			"results": [
-				{
-					"constructor": "Apollon",
-					"points": 0,
-					"position": null,
-					"round": 14,
-					"roundName": "Italian Grand Prix"
-				}
-			],
-			"year": 1977
-		}
+		{ "results": [{ "constructor": "Apollon", "points": 0, "position": null, "round": 14, "roundName": "Italian Grand Prix" }], "year": 1977 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 6
 }

@@ -11,157 +11,56 @@
 	"driverId": 482,
 	"driverRef": "gendebien",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/1960s_Gendebien_e_Bizzarrini.jpg/220px-1960s_Gendebien_e_Bizzarrini.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Olivier Gendebien",
 	"nationality": "Belgian",
 	"podiums": 2,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 2,
-					"position": 5,
-					"round": 1,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "French Grand Prix"
-				}
+				{ "constructor": "Ferrari", "points": 2, "position": 5, "round": 1, "roundName": "Argentine Grand Prix" },
+				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 5, "roundName": "French Grand Prix" }
 			],
 			"year": 1956
 		},
 		{
 			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": 6,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Moroccan Grand Prix"
-				}
+				{ "constructor": "Ferrari", "points": 0, "position": 6, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 10, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 11, "roundName": "Moroccan Grand Prix" }
 			],
 			"year": 1958
 		},
 		{
 			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 3,
-					"position": 4,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": 6,
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Ferrari", "points": 3, "position": 4, "round": 4, "roundName": "French Grand Prix" },
+				{ "constructor": "Ferrari", "points": 0, "position": 6, "round": 8, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1959
 		},
 		{
 			"results": [
-				{
-					"constructor": "Cooper-Climax",
-					"points": 4,
-					"position": 3,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Cooper-Climax",
-					"points": 6,
-					"position": 2,
-					"round": 6,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Cooper-Climax",
-					"points": 0,
-					"position": 9,
-					"round": 7,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Cooper-Climax",
-					"points": 0,
-					"position": 7,
-					"round": 8,
-					"roundName": "Portuguese Grand Prix"
-				},
-				{
-					"constructor": "Cooper-Climax",
-					"points": 0,
-					"position": 12,
-					"round": 10,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "Cooper-Climax", "points": 4, "position": 3, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Cooper-Climax", "points": 6, "position": 2, "round": 6, "roundName": "French Grand Prix" },
+				{ "constructor": "Cooper-Climax", "points": 0, "position": 9, "round": 7, "roundName": "British Grand Prix" },
+				{ "constructor": "Cooper-Climax", "points": 0, "position": 7, "round": 8, "roundName": "Portuguese Grand Prix" },
+				{ "constructor": "Cooper-Climax", "points": 0, "position": 12, "round": 10, "roundName": "United States Grand Prix" }
 			],
 			"year": 1960
 		},
 		{
 			"results": [
-				{
-					"constructor": "Emeryson",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 3,
-					"position": 4,
-					"round": 3,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Emeryson",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Emeryson",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": 11,
-					"round": 8,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "Emeryson", "points": 0, "position": null, "round": 1, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Ferrari", "points": 3, "position": 4, "round": 3, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Emeryson", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" },
+				{ "constructor": "Emeryson", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
+				{ "constructor": "Lotus-Climax", "points": 0, "position": 11, "round": 8, "roundName": "United States Grand Prix" }
 			],
 			"year": 1961
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 17
 }

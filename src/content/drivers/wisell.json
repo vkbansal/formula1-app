@@ -11,199 +11,57 @@
 	"driverId": 317,
 	"driverRef": "wisell",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Reine_Wisell_1970_N%C3%BCrburgring.JPG/220px-Reine_Wisell_1970_N%C3%BCrburgring.JPG",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Reine Wisell",
 	"nationality": "Swedish",
 	"podiums": 1,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Team Lotus",
-					"points": 4,
-					"position": 3,
-					"round": 12,
-					"roundName": "United States Grand Prix"
-				},
-				{
-					"constructor": "Team Lotus",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Mexican Grand Prix"
-				}
+				{ "constructor": "Team Lotus", "points": 4, "position": 3, "round": 12, "roundName": "United States Grand Prix" },
+				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 13, "roundName": "Mexican Grand Prix" }
 			],
 			"year": 1970
 		},
 		{
 			"results": [
-				{
-					"constructor": "Lotus-Ford",
-					"points": 3,
-					"position": 4,
-					"round": 1,
-					"roundName": "South African Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Ford",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Spanish Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Ford",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Ford",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Ford",
-					"points": 1,
-					"position": 6,
-					"round": 5,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Pratt &amp; Whitney",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Ford",
-					"points": 0,
-					"position": 8,
-					"round": 7,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Ford",
-					"points": 3,
-					"position": 4,
-					"round": 8,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Ford",
-					"points": 2,
-					"position": 5,
-					"round": 10,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Ford",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "Lotus-Ford", "points": 3, "position": 4, "round": 1, "roundName": "South African Grand Prix" },
+				{ "constructor": "Lotus-Ford", "points": 0, "position": null, "round": 2, "roundName": "Spanish Grand Prix" },
+				{ "constructor": "Lotus-Ford", "points": 0, "position": null, "round": 3, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Lotus-Ford", "points": 0, "position": null, "round": 4, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Lotus-Ford", "points": 1, "position": 6, "round": 5, "roundName": "French Grand Prix" },
+				{ "constructor": "Lotus-Pratt &amp; Whitney", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" },
+				{ "constructor": "Lotus-Ford", "points": 0, "position": 8, "round": 7, "roundName": "German Grand Prix" },
+				{ "constructor": "Lotus-Ford", "points": 3, "position": 4, "round": 8, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Lotus-Ford", "points": 2, "position": 5, "round": 10, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Lotus-Ford", "points": 0, "position": null, "round": 11, "roundName": "United States Grand Prix" }
 			],
 			"year": 1971
 		},
 		{
 			"results": [
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Spanish Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": 12,
-					"round": 10,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Team Lotus",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Team Lotus",
-					"points": 0,
-					"position": 10,
-					"round": 12,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 3, "roundName": "Spanish Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 4, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 6, "roundName": "French Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 8, "roundName": "German Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": 12, "round": 10, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 11, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Team Lotus", "points": 0, "position": 10, "round": 12, "roundName": "United States Grand Prix" }
 			],
 			"year": 1972
 		},
 		{
 			"results": [
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Swedish Grand Prix"
-				},
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "French Grand Prix"
-				}
+				{ "constructor": "March", "points": 0, "position": null, "round": 7, "roundName": "Swedish Grand Prix" },
+				{ "constructor": "March", "points": 0, "position": null, "round": 8, "roundName": "French Grand Prix" }
 			],
 			"year": 1973
 		},
-		{
-			"results": [
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Swedish Grand Prix"
-				}
-			],
-			"year": 1974
-		}
+		{ "results": [{ "constructor": "March", "points": 0, "position": null, "round": 7, "roundName": "Swedish Grand Prix" }], "year": 1974 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 23
 }

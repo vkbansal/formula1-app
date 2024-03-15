@@ -4,46 +4,24 @@
 	"dob": "1942-08-31",
 	"driverId": 284,
 	"driverRef": "pesenti_rossi",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Alessandro Pesenti-Rossi",
 	"nationality": "Italian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 14,
-					"round": 10,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 11,
-					"round": 11,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": null,
-					"round": 12,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 18,
-					"round": 13,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Tyrrell", "points": 0, "position": 14, "round": 10, "roundName": "German Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": 11, "round": 11, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 12, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": 18, "round": 13, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1976
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 4
 }

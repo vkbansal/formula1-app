@@ -8,15 +8,7 @@
 	"raceWins": 2,
 	"seasons": [
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Jim Rathmann", "points": 0, "position": 14 }
-					],
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Jim Rathmann", "points": 0, "position": 14 }], "round": 3, "roundName": "Indianapolis 500" }],
 			"year": 1955
 		},
 		{
@@ -51,10 +43,10 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Jimmy Bryan", "points": 0, "position": null },
 						{ "driver": "Johnny Boyd", "points": 0, "position": 6 },
 						{ "driver": "Paul Goldsmith", "points": 2, "position": 5 },
-						{ "driver": "Tony Bettenhausen", "points": 3, "position": 4 }
+						{ "driver": "Tony Bettenhausen", "points": 3, "position": 4 },
+						{ "driver": "Jimmy Bryan", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Indianapolis 500"

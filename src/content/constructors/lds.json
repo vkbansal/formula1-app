@@ -12,23 +12,15 @@
 	"raceWins": 0,
 	"seasons": [
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Doug Serrurier", "points": 0, "position": null }
-					],
-					"round": 9,
-					"roundName": "South African Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Doug Serrurier", "points": 0, "position": null }], "round": 9, "roundName": "South African Grand Prix" }],
 			"year": 1962
 		},
 		{
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Sam Tingle", "points": 0, "position": null },
-						{ "driver": "Doug Serrurier", "points": 0, "position": 11 }
+						{ "driver": "Doug Serrurier", "points": 0, "position": 11 },
+						{ "driver": "Sam Tingle", "points": 0, "position": null }
 					],
 					"round": 10,
 					"roundName": "South African Grand Prix"
@@ -37,15 +29,7 @@
 			"year": 1963
 		},
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Sam Tingle", "points": 0, "position": null }
-					],
-					"round": 1,
-					"roundName": "South African Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Sam Tingle", "points": 0, "position": null }], "round": 1, "roundName": "South African Grand Prix" }],
 			"year": 1968
 		}
 	],

@@ -327,7 +327,7 @@
 			"position": null,
 			"positionOrder": 16,
 			"positionText": "R",
-			"qualifying": { "position": null, "q1": null, "q2": null, "q3": null }
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "lotus_f1",
@@ -372,7 +372,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 19,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 6,
+				"q1": "1:39.250",
+				"q2": "1:38.727",
+				"q3": "1:38.659"
+			}
 		},
 		{
 			"constructorRef": "sauber",
@@ -383,7 +389,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 20,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "position": 17, "q1": "1:40.660", "q2": null, "q3": null }
 		}
 	],
 	"name": "Russian Grand Prix",

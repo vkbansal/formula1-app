@@ -8,37 +8,16 @@
 	"driverId": 168,
 	"driverRef": "schlesser",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Jean-Louis_Schlesser%2C_2013.JPG/220px-Jean-Louis_Schlesser%2C_2013.JPG",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Jean-Louis Schlesser",
 	"nationality": "French",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "RAM",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "French Grand Prix"
-				}
-			],
-			"year": 1983
-		},
-		{
-			"results": [
-				{
-					"constructor": "Williams",
-					"points": 0,
-					"position": 11,
-					"round": 12,
-					"roundName": "Italian Grand Prix"
-				}
-			],
-			"year": 1988
-		}
+		{ "results": [{ "constructor": "RAM", "points": 0, "position": null, "round": 3, "roundName": "French Grand Prix" }], "year": 1983 },
+		{ "results": [{ "constructor": "Williams", "points": 0, "position": 11, "round": 12, "roundName": "Italian Grand Prix" }], "year": 1988 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

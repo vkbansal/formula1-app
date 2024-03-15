@@ -453,7 +453,7 @@
 			"position": 20,
 			"positionOrder": 20,
 			"positionText": "20",
-			"qualifying": { "position": null, "q1": null, "q2": null, "q3": null }
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "hrt",
@@ -517,7 +517,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 24,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 11,
+				"q1": "1:38.615",
+				"q2": "1:38.441",
+				"q3": null
+			}
 		}
 	],
 	"name": "Korean Grand Prix",

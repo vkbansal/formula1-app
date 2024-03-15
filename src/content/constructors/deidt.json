@@ -11,9 +11,9 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Tony Bettenhausen", "points": 0, "position": null },
 						{ "driver": "Mauri Rose", "points": 4, "position": 3 },
-						{ "driver": "Bill Holland", "points": 6, "position": 2 }
+						{ "driver": "Bill Holland", "points": 6, "position": 2 },
+						{ "driver": "Tony Bettenhausen", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "Indianapolis 500"
@@ -25,10 +25,10 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Mack Hellings", "points": 0, "position": null },
-						{ "driver": "Mauri Rose", "points": 0, "position": null },
+						{ "driver": "Duane Carter", "points": 0, "position": 8 },
 						{ "driver": "Tony Bettenhausen", "points": 0, "position": null },
-						{ "driver": "Duane Carter", "points": 0, "position": 8 }
+						{ "driver": "Mauri Rose", "points": 0, "position": null },
+						{ "driver": "Mack Hellings", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Indianapolis 500"
@@ -37,15 +37,7 @@
 			"year": 1951
 		},
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Tony Bettenhausen", "points": 0, "position": null }
-					],
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Tony Bettenhausen", "points": 0, "position": null }], "round": 2, "roundName": "Indianapolis 500" }],
 			"year": 1952
 		}
 	],

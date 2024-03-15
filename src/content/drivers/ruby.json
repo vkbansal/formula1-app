@@ -7,37 +7,20 @@
 	"dob": "1928-01-12",
 	"driverId": 494,
 	"driverRef": "ruby",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Lloyd Ruby",
 	"nationality": "American",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
+		{ "results": [{ "constructor": "Watson", "points": 0, "position": 7, "round": 3, "roundName": "Indianapolis 500" }], "year": 1960 },
 		{
-			"results": [
-				{
-					"constructor": "Watson",
-					"points": 0,
-					"position": 7,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1960
-		},
-		{
-			"results": [
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "United States Grand Prix"
-				}
-			],
+			"results": [{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 8, "roundName": "United States Grand Prix" }],
 			"year": 1961
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

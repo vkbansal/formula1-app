@@ -161,7 +161,7 @@
 			"position": 7,
 			"positionOrder": 7,
 			"positionText": "7",
-			"qualifying": { "position": null, "q1": null, "q2": null, "q3": null }
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "williams",
@@ -472,7 +472,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 22,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 16,
+				"q1": "1:48.554",
+				"q2": "1:49.320",
+				"q3": null
+			}
 		}
 	],
 	"name": "Belgian Grand Prix",

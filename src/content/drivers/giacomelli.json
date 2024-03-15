@@ -14,627 +14,131 @@
 	"driverId": 152,
 	"driverRef": "giacomelli",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1982_Alfa_Romeo_182.jpg/220px-1982_Alfa_Romeo_182.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Bruno Giacomelli",
 	"nationality": "Italian",
 	"podiums": 1,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
+		{ "results": [{ "constructor": "McLaren", "points": 0, "position": null, "round": 14, "roundName": "Italian Grand Prix" }], "year": 1977 },
 		{
 			"results": [
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 14,
-					"roundName": "Italian Grand Prix"
-				}
-			],
-			"year": 1977
-		},
-		{
-			"results": [
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": 8,
-					"round": 6,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": 7,
-					"round": 10,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": 14,
-					"round": 14,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "McLaren", "points": 0, "position": 8, "round": 6, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": null, "round": 9, "roundName": "French Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": 7, "round": 10, "roundName": "British Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": null, "round": 13, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "McLaren", "points": 0, "position": 14, "round": 14, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1978
 		},
 		{
 			"results": [
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 17,
-					"round": 8,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 15,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 6, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 17, "round": 8, "roundName": "French Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 13, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 15, "roundName": "United States Grand Prix" }
 			],
 			"year": 1979
 		},
 		{
 			"results": [
-				{
-					"constructor": "Alfa Romeo",
-					"points": 2,
-					"position": 5,
-					"round": 1,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 13,
-					"round": 2,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "South African Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "United States Grand Prix West"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 2,
-					"position": 5,
-					"round": 9,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 12,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 14,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "Alfa Romeo", "points": 2, "position": 5, "round": 1, "roundName": "Argentine Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 13, "round": 2, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 3, "roundName": "South African Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 4, "roundName": "United States Grand Prix West" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 7, "roundName": "French Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 8, "roundName": "British Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 2, "position": 5, "round": 9, "roundName": "German Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 10, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 11, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 12, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 13, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 14, "roundName": "United States Grand Prix" }
 			],
 			"year": 1980
 		},
 		{
 			"results": [
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "United States Grand Prix West"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 10,
-					"round": 3,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "San Marino Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 9,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 10,
-					"round": 7,
-					"roundName": "Spanish Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 15,
-					"round": 8,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 15,
-					"round": 10,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 12,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 8,
-					"round": 13,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 3,
-					"position": 4,
-					"round": 14,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 4,
-					"position": 3,
-					"round": 15,
-					"roundName": "Caesars Palace Grand Prix"
-				}
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 1, "roundName": "United States Grand Prix West" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 10, "round": 3, "roundName": "Argentine Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 4, "roundName": "San Marino Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 9, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 10, "round": 7, "roundName": "Spanish Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 15, "round": 8, "roundName": "French Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 9, "roundName": "British Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 15, "round": 10, "roundName": "German Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 11, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 12, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 8, "round": 13, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 3, "position": 4, "round": 14, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 4, "position": 3, "round": 15, "roundName": "Caesars Palace Grand Prix" }
 			],
 			"year": 1981
 		},
 		{
 			"results": [
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 11,
-					"round": 1,
-					"roundName": "South African Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "United States Grand Prix West"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "San Marino Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Detroit Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 11,
-					"round": 9,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 7,
-					"round": 10,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 9,
-					"round": 11,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 2,
-					"position": 5,
-					"round": 12,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 12,
-					"round": 14,
-					"roundName": "Swiss Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 15,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": 10,
-					"round": 16,
-					"roundName": "Caesars Palace Grand Prix"
-				}
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 11, "round": 1, "roundName": "South African Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 3, "roundName": "United States Grand Prix West" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 4, "roundName": "San Marino Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 7, "roundName": "Detroit Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 8, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 11, "round": 9, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 7, "round": 10, "roundName": "British Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 9, "round": 11, "roundName": "French Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 2, "position": 5, "round": 12, "roundName": "German Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 13, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 12, "round": 14, "roundName": "Swiss Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 15, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Alfa Romeo", "points": 0, "position": 10, "round": 16, "roundName": "Caesars Palace Grand Prix" }
 			],
 			"year": 1982
 		},
 		{
 			"results": [
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "United States Grand Prix West"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": 13,
-					"round": 3,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "San Marino Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": 8,
-					"round": 6,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": 9,
-					"round": 7,
-					"roundName": "Detroit Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": 13,
-					"round": 12,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": 7,
-					"round": 13,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 1,
-					"position": 6,
-					"round": 14,
-					"roundName": "European Grand Prix"
-				},
-				{
-					"constructor": "Toleman",
-					"points": 0,
-					"position": null,
-					"round": 15,
-					"roundName": "South African Grand Prix"
-				}
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 1, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 2, "roundName": "United States Grand Prix West" },
+				{ "constructor": "Toleman", "points": 0, "position": 13, "round": 3, "roundName": "French Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 4, "roundName": "San Marino Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 5, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": 8, "round": 6, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": 9, "round": 7, "roundName": "Detroit Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 8, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 9, "roundName": "British Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 10, "roundName": "German Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 11, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": 13, "round": 12, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": 7, "round": 13, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Toleman", "points": 1, "position": 6, "round": 14, "roundName": "European Grand Prix" },
+				{ "constructor": "Toleman", "points": 0, "position": null, "round": 15, "roundName": "South African Grand Prix" }
 			],
 			"year": 1983
 		},
 		{
 			"results": [
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "San Marino Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Mexican Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "Hungarian Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 12,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Portuguese Grand Prix"
-				},
-				{
-					"constructor": "Life",
-					"points": 0,
-					"position": null,
-					"round": 14,
-					"roundName": "Spanish Grand Prix"
-				}
+				{ "constructor": "Life", "points": 0, "position": null, "round": 3, "roundName": "San Marino Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 4, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 5, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 6, "roundName": "Mexican Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 7, "roundName": "French Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 8, "roundName": "British Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 9, "roundName": "German Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 10, "roundName": "Hungarian Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 11, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 12, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 13, "roundName": "Portuguese Grand Prix" },
+				{ "constructor": "Life", "points": 0, "position": null, "round": 14, "roundName": "Spanish Grand Prix" }
 			],
 			"year": 1990
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 82
 }

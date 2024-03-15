@@ -17,8 +17,8 @@
 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 			],
 			"pitStops": [
-				{ "lap": 7, "stop": 1 },
 				{ "lap": 8, "stop": 2 },
+				{ "lap": 7, "stop": 1 },
 				{ "lap": 32, "stop": 3 },
 				{ "lap": 44, "stop": 4 },
 				{ "lap": 45, "stop": 5 }
@@ -44,8 +44,8 @@
 				2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 			],
 			"pitStops": [
-				{ "lap": 7, "stop": 1 },
 				{ "lap": 8, "stop": 2 },
+				{ "lap": 7, "stop": 1 },
 				{ "lap": 31, "stop": 3 },
 				{ "lap": 43, "stop": 4 },
 				{ "lap": 45, "stop": 5 }
@@ -179,8 +179,8 @@
 				7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
 			],
 			"pitStops": [
-				{ "lap": 7, "stop": 1 },
 				{ "lap": 8, "stop": 2 },
+				{ "lap": 7, "stop": 1 },
 				{ "lap": 29, "stop": 3 },
 				{ "lap": 43, "stop": 4 },
 				{ "lap": 45, "stop": 5 }
@@ -206,8 +206,8 @@
 				8, 10, 8, 10, 10, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
 			],
 			"pitStops": [
-				{ "lap": 7, "stop": 1 },
 				{ "lap": 8, "stop": 2 },
+				{ "lap": 7, "stop": 1 },
 				{ "lap": 21, "stop": 3 },
 				{ "lap": 37, "stop": 4 },
 				{ "lap": 45, "stop": 5 }
@@ -234,9 +234,9 @@
 				8, 8
 			],
 			"pitStops": [
-				{ "lap": 1, "stop": 1 },
-				{ "lap": 7, "stop": 2 },
 				{ "lap": 8, "stop": 3 },
+				{ "lap": 7, "stop": 2 },
+				{ "lap": 1, "stop": 1 },
 				{ "lap": 27, "stop": 4 },
 				{ "lap": 42, "stop": 5 },
 				{ "lap": 44, "stop": 6 }
@@ -263,8 +263,8 @@
 				10, 10, 10, 10, 10
 			],
 			"pitStops": [
-				{ "lap": 1, "stop": 1 },
 				{ "lap": 7, "stop": 2 },
+				{ "lap": 1, "stop": 1 },
 				{ "lap": 8, "stop": 3 },
 				{ "lap": 28, "stop": 4 },
 				{ "lap": 43, "stop": 5 },
@@ -292,8 +292,8 @@
 				11
 			],
 			"pitStops": [
-				{ "lap": 7, "stop": 1 },
 				{ "lap": 8, "stop": 2 },
+				{ "lap": 7, "stop": 1 },
 				{ "lap": 29, "stop": 3 },
 				{ "lap": 43, "stop": 4 },
 				{ "lap": 45, "stop": 5 }
@@ -435,7 +435,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 19,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 3,
+				"q1": "1:16.335",
+				"q2": "1:15.471",
+				"q3": "1:15.509"
+			}
 		},
 		{
 			"constructorRef": "alphatauri",
@@ -446,7 +452,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 20,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "position": 16, "q1": "1:17.125", "q2": null, "q3": null }
 		}
 	],
 	"name": "Tuscan Grand Prix",

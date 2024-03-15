@@ -4,25 +4,16 @@
 	"dob": "1914-05-10",
 	"driverId": 779,
 	"driverRef": "john_james",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "John James",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1951
-		}
+		{ "results": [{ "constructor": "Maserati", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1951 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 1
 }

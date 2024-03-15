@@ -9,49 +9,17 @@
 	"driverId": 756,
 	"driverRef": "pietsch",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/1938-05-22_Targa_Florio_Maserati_4CM_Pietsch.jpg/220px-1938-05-22_Targa_Florio_Maserati_4CM_Pietsch.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Paul Pietsch",
 	"nationality": "German",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				}
-			],
-			"year": 1950
-		},
-		{
-			"results": [
-				{
-					"constructor": "Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1951
-		},
-		{
-			"results": [
-				{
-					"constructor": "Veritas",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1952
-		}
+		{ "results": [{ "constructor": "Maserati", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }], "year": 1950 },
+		{ "results": [{ "constructor": "Alfa Romeo", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" }], "year": 1951 },
+		{ "results": [{ "constructor": "Veritas", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" }], "year": 1952 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 3
 }

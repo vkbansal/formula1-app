@@ -7,58 +7,25 @@
 	"dob": "1953-05-24",
 	"driverId": 241,
 	"driverRef": "leoni",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Lamberto Leoni",
 	"nationality": "Italian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
+		{ "results": [{ "constructor": "Surtees", "points": 0, "position": null, "round": 14, "roundName": "Italian Grand Prix" }], "year": 1977 },
 		{
 			"results": [
-				{
-					"constructor": "Surtees",
-					"points": 0,
-					"position": null,
-					"round": 14,
-					"roundName": "Italian Grand Prix"
-				}
-			],
-			"year": 1977
-		},
-		{
-			"results": [
-				{
-					"constructor": "Ensign",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"constructor": "Ensign",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "Ensign",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "South African Grand Prix"
-				},
-				{
-					"constructor": "Ensign",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "United States Grand Prix West"
-				}
+				{ "constructor": "Ensign", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
+				{ "constructor": "Ensign", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "Ensign", "points": 0, "position": null, "round": 3, "roundName": "South African Grand Prix" },
+				{ "constructor": "Ensign", "points": 0, "position": null, "round": 4, "roundName": "United States Grand Prix West" }
 			],
 			"year": 1978
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 5
 }

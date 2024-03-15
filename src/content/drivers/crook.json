@@ -7,37 +7,17 @@
 	"dob": "1920-02-16",
 	"driverId": 705,
 	"driverRef": "crook",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Tony Crook",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Frazer Nash",
-					"points": 0,
-					"position": 21,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1952
-		},
-		{
-			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1953
-		}
+		{ "results": [{ "constructor": "Frazer Nash", "points": 0, "position": 21, "round": 5, "roundName": "British Grand Prix" }], "year": 1952 },
+		{ "results": [{ "constructor": "Cooper", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" }], "year": 1953 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

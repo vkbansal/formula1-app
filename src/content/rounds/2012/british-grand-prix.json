@@ -17,8 +17,8 @@
 				1, 1, 1, 1
 			],
 			"pitStops": [
-				{ "lap": 14, "stop": 1 },
-				{ "lap": 33, "stop": 2 }
+				{ "lap": 33, "stop": 2 },
+				{ "lap": 14, "stop": 1 }
 			],
 			"points": 25,
 			"position": 1,
@@ -65,8 +65,8 @@
 				3, 3, 3, 3, 3
 			],
 			"pitStops": [
-				{ "lap": 10, "stop": 1 },
-				{ "lap": 31, "stop": 2 }
+				{ "lap": 31, "stop": 2 },
+				{ "lap": 10, "stop": 1 }
 			],
 			"points": 15,
 			"position": 3,
@@ -137,8 +137,8 @@
 				6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
 			],
 			"pitStops": [
-				{ "lap": 2, "stop": 1 },
-				{ "lap": 26, "stop": 2 }
+				{ "lap": 26, "stop": 2 },
+				{ "lap": 2, "stop": 1 }
 			],
 			"points": 8,
 			"position": 6,
@@ -372,8 +372,8 @@
 				16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16
 			],
 			"pitStops": [
-				{ "lap": 11, "stop": 1 },
-				{ "lap": 12, "stop": 2 }
+				{ "lap": 12, "stop": 2 },
+				{ "lap": 11, "stop": 1 }
 			],
 			"points": 0,
 			"position": 16,
@@ -396,8 +396,8 @@
 				17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17
 			],
 			"pitStops": [
-				{ "lap": 12, "stop": 1 },
-				{ "lap": 29, "stop": 2 }
+				{ "lap": 29, "stop": 2 },
+				{ "lap": 12, "stop": 1 }
 			],
 			"points": 0,
 			"position": 17,
@@ -434,8 +434,8 @@
 				19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19
 			],
 			"pitStops": [
-				{ "lap": 13, "stop": 1 },
-				{ "lap": 32, "stop": 2 }
+				{ "lap": 32, "stop": 2 },
+				{ "lap": 13, "stop": 1 }
 			],
 			"points": 0,
 			"position": 19,
@@ -521,7 +521,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 24,
-			"positionText": "W"
+			"positionText": "W",
+			"qualifying": { "position": 19, "q1": "1:49.027", "q2": null, "q3": null }
 		}
 	],
 	"name": "British Grand Prix",

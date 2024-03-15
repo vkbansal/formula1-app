@@ -8,49 +8,18 @@
 	"dob": "1925-08-09",
 	"driverId": 536,
 	"driverRef": "sutton",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Len Sutton",
 	"nationality": "American",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1958
-		},
-		{
-			"results": [
-				{
-					"constructor": "Lesovsky",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1959
-		},
-		{
-			"results": [
-				{
-					"constructor": "Watson",
-					"points": 0,
-					"position": 30,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1960
-		}
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 4, "roundName": "Indianapolis 500" }], "year": 1958 },
+		{ "results": [{ "constructor": "Lesovsky", "points": 0, "position": null, "round": 2, "roundName": "Indianapolis 500" }], "year": 1959 },
+		{ "results": [{ "constructor": "Watson", "points": 0, "position": 30, "round": 3, "roundName": "Indianapolis 500" }], "year": 1960 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 3
 }

@@ -7,37 +7,17 @@
 	"dob": "1918-04-16",
 	"driverId": 601,
 	"driverRef": "gibson",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Dick Gibson",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1957
-		},
-		{
-			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1958
-		}
+		{ "results": [{ "constructor": "Cooper", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" }], "year": 1957 },
+		{ "results": [{ "constructor": "Cooper", "points": 0, "position": null, "round": 8, "roundName": "German Grand Prix" }], "year": 1958 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

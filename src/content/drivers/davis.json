@@ -7,44 +7,23 @@
 	"dob": "1933-07-29",
 	"driverId": 462,
 	"driverRef": "davis",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Colin Davis",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Cooper-Maserati",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Cooper-Maserati",
-					"points": 0,
-					"position": 11,
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" },
+				{ "constructor": "Cooper-Maserati", "points": 0, "position": 11, "round": 8, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1959
 		},
-		{
-			"results": [
-				{
-					"constructor": "Porsche",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				}
-			],
-			"year": 1962
-		}
+		{ "results": [{ "constructor": "Porsche", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" }], "year": 1962 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 3
 }

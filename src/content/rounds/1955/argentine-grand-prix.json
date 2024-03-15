@@ -16,29 +16,8 @@
 			"points": 9,
 			"position": 1,
 			"positionOrder": 1,
-			"positionText": "1"
-		},
-		{
-			"constructorRef": "ferrari",
-			"driverRef": "trintignant",
-			"grid": 1,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 2,
-			"position": 2,
-			"positionOrder": 2,
-			"positionText": "2"
-		},
-		{
-			"constructorRef": "ferrari",
-			"driverRef": "farina",
-			"grid": 1,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 2,
-			"position": 2,
-			"positionOrder": 2,
-			"positionText": "2"
+			"positionText": "1",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "ferrari",
@@ -49,7 +28,56 @@
 			"points": 2,
 			"position": 2,
 			"positionOrder": 2,
-			"positionText": "2"
+			"positionText": "2",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "farina",
+			"grid": 1,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 2,
+			"position": 2,
+			"positionOrder": 2,
+			"positionText": "2",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "trintignant",
+			"grid": 1,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 2,
+			"position": 2,
+			"positionOrder": 2,
+			"positionText": "2",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "farina",
+			"grid": 1,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 2,
+			"position": 2,
+			"positionOrder": 2,
+			"positionText": "2",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "trintignant",
+			"grid": 1,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 2,
+			"position": 2,
+			"positionOrder": 2,
+			"positionText": "2",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "ferrari",
@@ -60,51 +88,8 @@
 			"points": 1.33,
 			"position": 3,
 			"positionOrder": 3,
-			"positionText": "3"
-		},
-		{
-			"constructorRef": "ferrari",
-			"driverRef": "trintignant",
-			"grid": 5,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 1.33,
-			"position": 3,
-			"positionOrder": 3,
-			"positionText": "3"
-		},
-		{
-			"constructorRef": "ferrari",
-			"driverRef": "farina",
-			"grid": 5,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 1.33,
-			"position": 3,
-			"positionOrder": 3,
-			"positionText": "3"
-		},
-		{
-			"constructorRef": "mercedes",
-			"driverRef": "moss",
-			"grid": 10,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 1,
-			"position": 4,
-			"positionOrder": 4,
-			"positionText": "4"
-		},
-		{
-			"constructorRef": "mercedes",
-			"driverRef": "kling",
-			"grid": 10,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 1,
-			"position": 4,
-			"positionOrder": 4,
-			"positionText": "4"
+			"positionText": "3",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "mercedes",
@@ -115,7 +100,32 @@
 			"points": 1,
 			"position": 4,
 			"positionOrder": 4,
-			"positionText": "4"
+			"positionText": "4",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "mercedes",
+			"driverRef": "kling",
+			"grid": 10,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 1,
+			"position": 4,
+			"positionOrder": 4,
+			"positionText": "4",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "mercedes",
+			"driverRef": "moss",
+			"grid": 10,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 1,
+			"position": 4,
+			"positionOrder": 4,
+			"positionText": "4",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -126,18 +136,8 @@
 			"points": 2,
 			"position": 5,
 			"positionOrder": 5,
-			"positionText": "5"
-		},
-		{
-			"constructorRef": "maserati",
-			"driverRef": "behra",
-			"grid": 7,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": 6,
-			"positionOrder": 6,
-			"positionText": "6"
+			"positionText": "5",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -148,95 +148,92 @@
 			"points": 0,
 			"position": 6,
 			"positionOrder": 6,
-			"positionText": "6"
-		},
-		{
-			"constructorRef": "maserati",
-			"driverRef": "schell",
-			"grid": 18,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": 7,
-			"positionOrder": 7,
-			"positionText": "7"
-		},
-		{
-			"constructorRef": "maserati",
-			"driverRef": "mantovani",
-			"grid": 18,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": 7,
-			"positionOrder": 7,
-			"positionText": "7"
-		},
-		{
-			"constructorRef": "maserati",
-			"driverRef": "musso",
-			"grid": 18,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": 7,
-			"positionOrder": 7,
-			"positionText": "7"
-		},
-		{
-			"constructorRef": "maserati",
-			"driverRef": "musso",
-			"grid": 19,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": null,
-			"positionOrder": 8,
-			"positionText": "R"
+			"positionText": "6",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
 			"driverRef": "behra",
-			"grid": 19,
+			"grid": 7,
 			"lapPositions": [],
 			"pitStops": [],
 			"points": 0,
-			"position": null,
-			"positionOrder": 8,
-			"positionText": "R"
+			"position": 6,
+			"positionOrder": 6,
+			"positionText": "6",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "maserati",
+			"driverRef": "musso",
+			"grid": 18,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": 7,
+			"positionOrder": 7,
+			"positionText": "7",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
 			"driverRef": "mantovani",
-			"grid": 19,
+			"grid": 18,
 			"lapPositions": [],
 			"pitStops": [],
 			"points": 0,
-			"position": null,
-			"positionOrder": 8,
-			"positionText": "R"
-		},
-		{
-			"constructorRef": "maserati",
-			"driverRef": "menditeguy",
-			"grid": 20,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": null,
-			"positionOrder": 9,
-			"positionText": "R"
+			"position": 7,
+			"positionOrder": 7,
+			"positionText": "7",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
 			"driverRef": "schell",
-			"grid": 20,
+			"grid": 7,
 			"lapPositions": [],
 			"pitStops": [],
 			"points": 0,
-			"position": null,
-			"positionOrder": 9,
-			"positionText": "R"
+			"position": 6,
+			"positionOrder": 6,
+			"positionText": "6",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "maserati",
+			"driverRef": "mantovani",
+			"grid": 18,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": 7,
+			"positionOrder": 7,
+			"positionText": "7",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "maserati",
+			"driverRef": "behra",
+			"grid": 7,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": 6,
+			"positionOrder": 6,
+			"positionText": "6",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "maserati",
+			"driverRef": "musso",
+			"grid": 18,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": 7,
+			"positionOrder": 7,
+			"positionText": "7",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -247,7 +244,32 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 9,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "maserati",
+			"driverRef": "schell",
+			"grid": 7,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": 6,
+			"positionOrder": 6,
+			"positionText": "6",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "maserati",
+			"driverRef": "menditeguy",
+			"grid": 20,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": null,
+			"positionOrder": 9,
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "gordini",
@@ -258,29 +280,20 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 10,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "ferrari",
 			"driverRef": "trintignant",
-			"grid": 14,
+			"grid": 1,
 			"lapPositions": [],
 			"pitStops": [],
-			"points": 0,
-			"position": null,
-			"positionOrder": 11,
-			"positionText": "R"
-		},
-		{
-			"constructorRef": "lancia",
-			"driverRef": "villoresi",
-			"grid": 12,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": null,
-			"positionOrder": 12,
-			"positionText": "R"
+			"points": 2,
+			"position": 2,
+			"positionOrder": 2,
+			"positionText": "2",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "lancia",
@@ -291,18 +304,32 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 12,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
-			"constructorRef": "mercedes",
-			"driverRef": "moss",
-			"grid": 8,
+			"constructorRef": "lancia",
+			"driverRef": "villoresi",
+			"grid": 12,
 			"lapPositions": [],
 			"pitStops": [],
 			"points": 0,
 			"position": null,
-			"positionOrder": 13,
-			"positionText": "R"
+			"positionOrder": 12,
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "mercedes",
+			"driverRef": "moss",
+			"grid": 10,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 1,
+			"position": 4,
+			"positionOrder": 4,
+			"positionText": "4",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -313,7 +340,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 14,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "lancia",
@@ -324,7 +352,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 15,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "gordini",
@@ -335,40 +364,44 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 16,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
 			"driverRef": "behra",
-			"grid": 4,
+			"grid": 7,
 			"lapPositions": [],
 			"pitStops": [],
 			"points": 0,
-			"position": null,
-			"positionOrder": 17,
-			"positionText": "R"
+			"position": 6,
+			"positionOrder": 6,
+			"positionText": "6",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "mercedes",
 			"driverRef": "kling",
-			"grid": 6,
+			"grid": 10,
 			"lapPositions": [],
 			"pitStops": [],
-			"points": 0,
-			"position": null,
-			"positionOrder": 18,
-			"positionText": "R"
+			"points": 1,
+			"position": 4,
+			"positionOrder": 4,
+			"positionText": "4",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "lancia",
 			"driverRef": "villoresi",
-			"grid": 11,
+			"grid": 12,
 			"lapPositions": [],
 			"pitStops": [],
 			"points": 0,
 			"position": null,
-			"positionOrder": 19,
-			"positionText": "R"
+			"positionOrder": 12,
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "gordini",
@@ -379,18 +412,20 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 20,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
 			"driverRef": "menditeguy",
-			"grid": 13,
+			"grid": 20,
 			"lapPositions": [],
 			"pitStops": [],
 			"points": 0,
 			"position": null,
-			"positionOrder": 21,
-			"positionText": "R"
+			"positionOrder": 9,
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		}
 	],
 	"name": "Argentine Grand Prix",

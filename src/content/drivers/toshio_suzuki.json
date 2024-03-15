@@ -4,32 +4,22 @@
 	"dob": "1955-03-10",
 	"driverId": 126,
 	"driverRef": "toshio_suzuki",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Toshio Suzuki",
 	"nationality": "Japanese",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Larrousse",
-					"points": 0,
-					"position": 12,
-					"round": 15,
-					"roundName": "Japanese Grand Prix"
-				},
-				{
-					"constructor": "Larrousse",
-					"points": 0,
-					"position": 14,
-					"round": 16,
-					"roundName": "Australian Grand Prix"
-				}
+				{ "constructor": "Larrousse", "points": 0, "position": 12, "round": 15, "roundName": "Japanese Grand Prix" },
+				{ "constructor": "Larrousse", "points": 0, "position": 14, "round": 16, "roundName": "Australian Grand Prix" }
 			],
 			"year": 1993
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

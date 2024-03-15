@@ -9,96 +9,34 @@
 	"dob": "1931-07-20",
 	"driverId": 459,
 	"driverRef": "marsh",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Tony Marsh",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
+		{ "results": [{ "constructor": "Cooper", "points": 0, "position": 15, "round": 6, "roundName": "German Grand Prix" }], "year": 1957 },
+		{ "results": [{ "constructor": "Cooper", "points": 0, "position": 8, "round": 8, "roundName": "German Grand Prix" }], "year": 1958 },
 		{
 			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": 15,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1957
-		},
-		{
-			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": 8,
-					"round": 8,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1958
-		},
-		{
-			"results": [
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": 15,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				}
+				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 3, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
+				{ "constructor": "Lotus-Climax", "points": 0, "position": 15, "round": 6, "roundName": "German Grand Prix" }
 			],
 			"year": 1961
 		},
 		{
 			"results": [
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				}
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 3, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" }
 			],
 			"year": 1962
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 9
 }

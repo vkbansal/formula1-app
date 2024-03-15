@@ -5,25 +5,15 @@
 	"driverId": 587,
 	"driverRef": "ecclestone",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bernie_Ecclestone_2012_Bahrain_%28cropped%29.jpg/220px-Bernie_Ecclestone_2012_Bahrain_%28cropped%29.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Bernie Ecclestone",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Connaught",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				}
-			],
-			"year": 1958
-		}
+		{ "results": [{ "constructor": "Connaught", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" }], "year": 1958 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 1
 }

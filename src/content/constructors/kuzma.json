@@ -8,38 +8,24 @@
 	"raceWins": 1,
 	"seasons": [
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Walt Faulkner", "points": 0, "position": null }
-					],
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Walt Faulkner", "points": 0, "position": null }], "round": 2, "roundName": "Indianapolis 500" }],
 			"year": 1951
 		},
 		{
-			"rounds": [
-				{
-					"results": [{ "driver": "Troy Ruttman", "points": 8, "position": 1 }],
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Troy Ruttman", "points": 8, "position": 1 }], "round": 2, "roundName": "Indianapolis 500" }],
 			"year": 1952
 		},
 		{
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Gene Hartley", "points": 0, "position": 9 },
-						{ "driver": "Chuck Stevenson", "points": 0, "position": 9 },
-						{ "driver": "Chuck Stevenson", "points": 0, "position": null },
-						{ "driver": "Pat Flaherty", "points": 0, "position": null },
-						{ "driver": "Bob Sweikert", "points": 0, "position": null },
 						{ "driver": "Manny Ayulo", "points": 0, "position": 13 },
-						{ "driver": "Tony Bettenhausen", "points": 0, "position": 9 }
+						{ "driver": "Tony Bettenhausen", "points": 0, "position": 9 },
+						{ "driver": "Chuck Stevenson", "points": 0, "position": 9 },
+						{ "driver": "Gene Hartley", "points": 0, "position": 9 },
+						{ "driver": "Bob Sweikert", "points": 0, "position": null },
+						{ "driver": "Pat Flaherty", "points": 0, "position": null },
+						{ "driver": "Chuck Stevenson", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Indianapolis 500"
@@ -51,9 +37,9 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Walt Faulkner", "points": 0, "position": 12 },
 						{ "driver": "Manny Ayulo", "points": 0, "position": 13 },
 						{ "driver": "Chuck Stevenson", "points": 0, "position": 12 },
+						{ "driver": "Walt Faulkner", "points": 0, "position": 12 },
 						{ "driver": "Jimmy Bryan", "points": 6, "position": 2 }
 					],
 					"round": 2,
@@ -66,10 +52,10 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Rodger Ward", "points": 0, "position": null },
-						{ "driver": "Jimmy Bryan", "points": 0, "position": null },
 						{ "driver": "Duane Carter", "points": 0, "position": 11 },
-						{ "driver": "Johnny Thomson", "points": 3, "position": 4 }
+						{ "driver": "Johnny Thomson", "points": 3, "position": 4 },
+						{ "driver": "Jimmy Bryan", "points": 0, "position": null },
+						{ "driver": "Rodger Ward", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "Indianapolis 500"
@@ -81,12 +67,12 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Johnny Thomson", "points": 0, "position": null },
 						{ "driver": "Jimmy Bryan", "points": 0, "position": 19 },
 						{ "driver": "Billy Garrett", "points": 0, "position": 16 },
 						{ "driver": "Eddie Johnson", "points": 0, "position": 15 },
 						{ "driver": "Gene Hartley", "points": 0, "position": 11 },
-						{ "driver": "Bob Sweikert", "points": 0, "position": 6 }
+						{ "driver": "Bob Sweikert", "points": 0, "position": 6 },
+						{ "driver": "Johnny Thomson", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "Indianapolis 500"
@@ -98,10 +84,10 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Eddie Sachs", "points": 0, "position": null },
 						{ "driver": "Chuck Weyant", "points": 0, "position": 14 },
 						{ "driver": "Johnny Thomson", "points": 0, "position": 12 },
-						{ "driver": "Jimmy Bryan", "points": 4, "position": 3 }
+						{ "driver": "Jimmy Bryan", "points": 4, "position": 3 },
+						{ "driver": "Eddie Sachs", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "Indianapolis 500"
@@ -113,11 +99,11 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Art Bisch", "points": 0, "position": null },
-						{ "driver": "Eddie Sachs", "points": 0, "position": null },
-						{ "driver": "Anthony Foyt", "points": 0, "position": null },
+						{ "driver": "Johnnie Tolan", "points": 0, "position": 13 },
 						{ "driver": "Dempsey Wilson", "points": 0, "position": null },
-						{ "driver": "Johnnie Tolan", "points": 0, "position": 13 }
+						{ "driver": "Anthony Foyt", "points": 0, "position": null },
+						{ "driver": "Eddie Sachs", "points": 0, "position": null },
+						{ "driver": "Art Bisch", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "Indianapolis 500"
@@ -129,11 +115,11 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Bill Cheesbourg", "points": 0, "position": null },
-						{ "driver": "Al Keller", "points": 0, "position": null },
-						{ "driver": "Eddie Sachs", "points": 0, "position": null },
 						{ "driver": "Gene Hartley", "points": 0, "position": 11 },
-						{ "driver": "Anthony Foyt", "points": 0, "position": 10 }
+						{ "driver": "Anthony Foyt", "points": 0, "position": 10 },
+						{ "driver": "Eddie Sachs", "points": 0, "position": null },
+						{ "driver": "Al Keller", "points": 0, "position": null },
+						{ "driver": "Bill Cheesbourg", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Indianapolis 500"

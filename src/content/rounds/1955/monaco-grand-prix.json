@@ -16,7 +16,8 @@
 			"points": 8,
 			"position": 1,
 			"positionOrder": 1,
-			"positionText": "1"
+			"positionText": "1",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "lancia",
@@ -27,18 +28,8 @@
 			"points": 6,
 			"position": 2,
 			"positionOrder": 2,
-			"positionText": "2"
-		},
-		{
-			"constructorRef": "maserati",
-			"driverRef": "perdisa",
-			"grid": 5,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 2,
-			"position": 3,
-			"positionOrder": 3,
-			"positionText": "3"
+			"positionText": "2",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -49,7 +40,20 @@
 			"points": 2,
 			"position": 3,
 			"positionOrder": 3,
-			"positionText": "3"
+			"positionText": "3",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "maserati",
+			"driverRef": "perdisa",
+			"grid": 5,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 2,
+			"position": 3,
+			"positionOrder": 3,
+			"positionText": "3",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "ferrari",
@@ -60,7 +64,8 @@
 			"points": 3,
 			"position": 4,
 			"positionOrder": 4,
-			"positionText": "4"
+			"positionText": "4",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "lancia",
@@ -71,7 +76,8 @@
 			"points": 2,
 			"position": 5,
 			"positionOrder": 5,
-			"positionText": "5"
+			"positionText": "5",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "lancia",
@@ -82,7 +88,8 @@
 			"points": 0,
 			"position": 6,
 			"positionOrder": 6,
-			"positionText": "6"
+			"positionText": "6",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "gordini",
@@ -93,18 +100,8 @@
 			"points": 0,
 			"position": 7,
 			"positionOrder": 7,
-			"positionText": "7"
-		},
-		{
-			"constructorRef": "ferrari",
-			"driverRef": "frere",
-			"grid": 15,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": 8,
-			"positionOrder": 8,
-			"positionText": "8"
+			"positionText": "7",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "ferrari",
@@ -115,7 +112,20 @@
 			"points": 0,
 			"position": 8,
 			"positionOrder": 8,
-			"positionText": "8"
+			"positionText": "8",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "frere",
+			"grid": 15,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 0,
+			"position": 8,
+			"positionOrder": 8,
+			"positionText": "8",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "mercedes",
@@ -126,29 +136,32 @@
 			"points": 0,
 			"position": 9,
 			"positionOrder": 9,
-			"positionText": "9"
-		},
-		{
-			"constructorRef": "maserati",
-			"driverRef": "behra",
-			"grid": 11,
-			"lapPositions": [],
-			"pitStops": [],
-			"points": 0,
-			"position": null,
-			"positionOrder": 10,
-			"positionText": "R"
+			"positionText": "9",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
 			"driverRef": "perdisa",
-			"grid": 11,
+			"grid": 5,
 			"lapPositions": [],
 			"pitStops": [],
-			"points": 0,
-			"position": null,
-			"positionOrder": 10,
-			"positionText": "R"
+			"points": 2,
+			"position": 3,
+			"positionOrder": 3,
+			"positionText": "3",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "maserati",
+			"driverRef": "behra",
+			"grid": 5,
+			"lapPositions": [],
+			"pitStops": [],
+			"points": 2,
+			"position": 3,
+			"positionOrder": 3,
+			"positionText": "3",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "lancia",
@@ -159,7 +172,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 11,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "ferrari",
@@ -170,7 +184,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 12,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -181,7 +196,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 13,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "gordini",
@@ -192,7 +208,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 14,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "mercedes",
@@ -203,7 +220,8 @@
 			"points": 1,
 			"position": null,
 			"positionOrder": 15,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "gordini",
@@ -214,7 +232,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 16,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "mercedes",
@@ -225,7 +244,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 17,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "vanwall",
@@ -236,7 +256,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 18,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -247,7 +268,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 19,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -258,7 +280,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 20,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "maserati",
@@ -269,7 +292,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 21,
-			"positionText": "F"
+			"positionText": "F",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "hwm",
@@ -280,7 +304,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 22,
-			"positionText": "F"
+			"positionText": "F",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "mercedes",
@@ -291,7 +316,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 23,
-			"positionText": "F"
+			"positionText": "F",
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		}
 	],
 	"name": "Monaco Grand Prix",

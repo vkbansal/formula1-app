@@ -1,32 +1,13 @@
 {
 	"rounds": [
 		{
-			"circuit": {
-				"country": "Monaco",
-				"location": "Monte-Carlo",
-				"name": "Circuit de Monaco"
-			},
+			"circuit": { "country": "Monaco", "location": "Monte-Carlo", "name": "Circuit de Monaco" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 8,
-					"position": 1,
-					"wins": 1
-				},
+				{ "constructorRef": "cooper_climax", "points": 8, "position": 1, "wins": 1 },
 				{ "constructorRef": "ferrari", "points": 6, "position": 2, "wins": 0 },
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 3,
-					"wins": 0
-				},
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 3, "wins": 0 },
 				{ "constructorRef": "brm", "points": 0, "position": 4, "wins": 0 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 0, "position": 5, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 6, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 7, "wins": 0 }
 			],
@@ -50,7 +31,7 @@
 				{ "driverRef": "halford", "points": 0, "position": 16, "wins": 0 },
 				{ "driverRef": "bueb", "points": 0, "position": 17, "wins": 0 },
 				{ "driverRef": "scarlatti", "points": 0, "position": 18, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 19, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 19, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 20, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 21, "wins": 0 },
 				{ "driverRef": "lovely", "points": 0, "position": 22, "wins": 0 },
@@ -59,48 +40,21 @@
 			],
 			"name": "Monaco Grand Prix",
 			"podium": [
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "jack_brabham",
-					"position": 1
-				},
+				{ "constructorRef": "cooper_climax", "driverRef": "jack_brabham", "position": 1 },
 				{ "constructorRef": "ferrari", "driverRef": "brooks", "position": 2 },
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "trintignant",
-					"position": 3
-				}
+				{ "constructorRef": "cooper_climax", "driverRef": "trintignant", "position": 3 }
 			],
 			"round": 1,
 			"slug": "monaco-grand-prix"
 		},
 		{
-			"circuit": {
-				"country": "USA",
-				"location": "Indianapolis",
-				"name": "Indianapolis Motor Speedway"
-			},
+			"circuit": { "country": "USA", "location": "Indianapolis", "name": "Indianapolis Motor Speedway" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 8,
-					"position": 1,
-					"wins": 1
-				},
+				{ "constructorRef": "cooper_climax", "points": 8, "position": 1, "wins": 1 },
 				{ "constructorRef": "ferrari", "points": 6, "position": 2, "wins": 0 },
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 3,
-					"wins": 0
-				},
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 3, "wins": 0 },
 				{ "constructorRef": "brm", "points": 0, "position": 4, "wins": 0 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 0, "position": 5, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 6, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 7, "wins": 0 }
 			],
@@ -142,15 +96,10 @@
 				{ "driverRef": "sachs", "points": 0, "position": 34, "wins": 0 },
 				{ "driverRef": "keller", "points": 0, "position": 35, "wins": 0 },
 				{ "driverRef": "scarlatti", "points": 0, "position": 36, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 37, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 37, "wins": 0 },
 				{ "driverRef": "flaherty", "points": 0, "position": 38, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 39, "wins": 0 },
-				{
-					"driverRef": "dick_rathmann",
-					"points": 0,
-					"position": 40,
-					"wins": 0
-				},
+				{ "driverRef": "dick_rathmann", "points": 0, "position": 40, "wins": 0 },
 				{ "driverRef": "cheesbourg", "points": 0, "position": 41, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 42, "wins": 0 },
 				{ "driverRef": "freeland", "points": 0, "position": 43, "wins": 0 },
@@ -179,39 +128,15 @@
 			"slug": "indianapolis-500"
 		},
 		{
-			"circuit": {
-				"country": "Netherlands",
-				"location": "Zandvoort",
-				"name": "Circuit Park Zandvoort"
-			},
+			"circuit": { "country": "Netherlands", "location": "Zandvoort", "name": "Circuit Park Zandvoort" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 14,
-					"position": 1,
-					"wins": 1
-				},
+				{ "constructorRef": "cooper_climax", "points": 14, "position": 1, "wins": 1 },
 				{ "constructorRef": "brm", "points": 8, "position": 2, "wins": 1 },
 				{ "constructorRef": "ferrari", "points": 8, "position": 3, "wins": 0 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 3,
-					"position": 4,
-					"wins": 0
-				},
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 3, "position": 4, "wins": 0 },
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 5, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 6, "wins": 0 },
-				{
-					"constructorRef": "aston_martin",
-					"points": 0,
-					"position": 7,
-					"wins": 0
-				},
+				{ "constructorRef": "aston_martin", "points": 0, "position": 7, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 8, "wins": 0 }
 			],
 			"date": "31st May 1959",
@@ -255,15 +180,10 @@
 				{ "driverRef": "sachs", "points": 0, "position": 37, "wins": 0 },
 				{ "driverRef": "keller", "points": 0, "position": 38, "wins": 0 },
 				{ "driverRef": "scarlatti", "points": 0, "position": 39, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 40, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 40, "wins": 0 },
 				{ "driverRef": "flaherty", "points": 0, "position": 41, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 42, "wins": 0 },
-				{
-					"driverRef": "dick_rathmann",
-					"points": 0,
-					"position": 43,
-					"wins": 0
-				},
+				{ "driverRef": "dick_rathmann", "points": 0, "position": 43, "wins": 0 },
 				{ "driverRef": "cheesbourg", "points": 0, "position": 44, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 45, "wins": 0 },
 				{ "driverRef": "freeland", "points": 0, "position": 46, "wins": 0 },
@@ -285,55 +205,23 @@
 			"name": "Dutch Grand Prix",
 			"podium": [
 				{ "constructorRef": "brm", "driverRef": "bonnier", "position": 1 },
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "jack_brabham",
-					"position": 2
-				},
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "gregory",
-					"position": 3
-				}
+				{ "constructorRef": "cooper_climax", "driverRef": "jack_brabham", "position": 2 },
+				{ "constructorRef": "cooper_climax", "driverRef": "gregory", "position": 3 }
 			],
 			"round": 3,
 			"slug": "dutch-grand-prix"
 		},
 		{
-			"circuit": {
-				"country": "France",
-				"location": "Reims",
-				"name": "Reims-Gueux"
-			},
+			"circuit": { "country": "France", "location": "Reims", "name": "Reims-Gueux" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 18,
-					"position": 1,
-					"wins": 1
-				},
+				{ "constructorRef": "cooper_climax", "points": 18, "position": 1, "wins": 1 },
 				{ "constructorRef": "ferrari", "points": 16, "position": 2, "wins": 1 },
 				{ "constructorRef": "brm", "points": 8, "position": 3, "wins": 1 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 3,
-					"position": 4,
-					"wins": 0
-				},
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 3, "position": 4, "wins": 0 },
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 5, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 6, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 7, "wins": 0 },
-				{
-					"constructorRef": "aston_martin",
-					"points": 0,
-					"position": 8,
-					"wins": 0
-				}
+				{ "constructorRef": "aston_martin", "points": 0, "position": 8, "wins": 0 }
 			],
 			"date": "5th Jul 1959",
 			"driverStandings": [
@@ -380,16 +268,11 @@
 				{ "driverRef": "burgess", "points": 0, "position": 41, "wins": 0 },
 				{ "driverRef": "sachs", "points": 0, "position": 42, "wins": 0 },
 				{ "driverRef": "keller", "points": 0, "position": 43, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 44, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 44, "wins": 0 },
 				{ "driverRef": "flaherty", "points": 0, "position": 45, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 46, "wins": 0 },
 				{ "driverRef": "davis", "points": 0, "position": 47, "wins": 0 },
-				{
-					"driverRef": "dick_rathmann",
-					"points": 0,
-					"position": 48,
-					"wins": 0
-				},
+				{ "driverRef": "dick_rathmann", "points": 0, "position": 48, "wins": 0 },
 				{ "driverRef": "cheesbourg", "points": 0, "position": 49, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 50, "wins": 0 },
 				{ "driverRef": "fontes", "points": 0, "position": 51, "wins": 0 },
@@ -412,60 +295,23 @@
 			"name": "French Grand Prix",
 			"podium": [
 				{ "constructorRef": "ferrari", "driverRef": "brooks", "position": 1 },
-				{
-					"constructorRef": "ferrari",
-					"driverRef": "phil_hill",
-					"position": 2
-				},
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "jack_brabham",
-					"position": 3
-				}
+				{ "constructorRef": "ferrari", "driverRef": "phil_hill", "position": 2 },
+				{ "constructorRef": "cooper_climax", "driverRef": "jack_brabham", "position": 3 }
 			],
 			"round": 4,
 			"slug": "french-grand-prix"
 		},
 		{
-			"circuit": {
-				"country": "UK",
-				"location": "Liverpool",
-				"name": "Aintree"
-			},
+			"circuit": { "country": "UK", "location": "Liverpool", "name": "Aintree" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 26,
-					"position": 1,
-					"wins": 2
-				},
+				{ "constructorRef": "cooper_climax", "points": 26, "position": 1, "wins": 2 },
 				{ "constructorRef": "ferrari", "points": 16, "position": 2, "wins": 1 },
 				{ "constructorRef": "brm", "points": 14, "position": 3, "wins": 1 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 3,
-					"position": 4,
-					"wins": 0
-				},
-				{
-					"constructorRef": "aston_martin",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 6,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 3, "position": 4, "wins": 0 },
+				{ "constructorRef": "aston_martin", "points": 0, "position": 5, "wins": 0 },
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 6, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 7, "wins": 0 },
-				{
-					"constructorRef": "cooper_borgward",
-					"points": 0,
-					"position": 8,
-					"wins": 0
-				},
+				{ "constructorRef": "cooper_borgward", "points": 0, "position": 8, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 9, "wins": 0 },
 				{ "constructorRef": "jbw", "points": 0, "position": 10, "wins": 0 },
 				{ "constructorRef": "vanwall", "points": 0, "position": 11, "wins": 0 },
@@ -521,17 +367,12 @@
 				{ "driverRef": "fairman", "points": 0, "position": 46, "wins": 0 },
 				{ "driverRef": "sachs", "points": 0, "position": 47, "wins": 0 },
 				{ "driverRef": "keller", "points": 0, "position": 48, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 49, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 49, "wins": 0 },
 				{ "driverRef": "flaherty", "points": 0, "position": 50, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 51, "wins": 0 },
 				{ "driverRef": "davis", "points": 0, "position": 52, "wins": 0 },
 				{ "driverRef": "herrmann", "points": 0, "position": 53, "wins": 0 },
-				{
-					"driverRef": "dick_rathmann",
-					"points": 0,
-					"position": 54,
-					"wins": 0
-				},
+				{ "driverRef": "dick_rathmann", "points": 0, "position": 54, "wins": 0 },
 				{ "driverRef": "cheesbourg", "points": 0, "position": 55, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 56, "wins": 0 },
 				{ "driverRef": "piper", "points": 0, "position": 57, "wins": 0 },
@@ -550,20 +391,10 @@
 				{ "driverRef": "bill_moss", "points": 0, "position": 70, "wins": 0 },
 				{ "driverRef": "parkes", "points": 0, "position": 71, "wins": 0 },
 				{ "driverRef": "turner", "points": 0, "position": 72, "wins": 0 },
-				{
-					"driverRef": "dennis_taylor",
-					"points": 0,
-					"position": 73,
-					"wins": 0
-				},
+				{ "driverRef": "dennis_taylor", "points": 0, "position": 73, "wins": 0 },
 				{ "driverRef": "weyant", "points": 0, "position": 74, "wins": 0 },
 				{ "driverRef": "larson", "points": 0, "position": 75, "wins": 0 },
-				{
-					"driverRef": "trevor_taylor",
-					"points": 0,
-					"position": 76,
-					"wins": 0
-				},
+				{ "driverRef": "trevor_taylor", "points": 0, "position": 76, "wins": 0 },
 				{ "driverRef": "magill", "points": 0, "position": 77, "wins": 0 },
 				{ "driverRef": "parnell", "points": 0, "position": 78, "wins": 0 },
 				{ "driverRef": "amick", "points": 0, "position": 79, "wins": 0 },
@@ -572,17 +403,9 @@
 			],
 			"name": "British Grand Prix",
 			"podium": [
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "jack_brabham",
-					"position": 1
-				},
+				{ "constructorRef": "cooper_climax", "driverRef": "jack_brabham", "position": 1 },
 				{ "constructorRef": "brm", "driverRef": "moss", "position": 2 },
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "mclaren",
-					"position": 3
-				}
+				{ "constructorRef": "cooper_climax", "driverRef": "mclaren", "position": 3 }
 			],
 			"round": 5,
 			"slug": "british-grand-prix"
@@ -590,39 +413,14 @@
 		{
 			"circuit": { "country": "Germany", "location": "Berlin", "name": "AVUS" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 29,
-					"position": 1,
-					"wins": 2
-				},
+				{ "constructorRef": "cooper_climax", "points": 29, "position": 1, "wins": 2 },
 				{ "constructorRef": "ferrari", "points": 24, "position": 2, "wins": 2 },
 				{ "constructorRef": "brm", "points": 16, "position": 3, "wins": 1 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 3,
-					"position": 4,
-					"wins": 0
-				},
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
-				{
-					"constructorRef": "aston_martin",
-					"points": 0,
-					"position": 6,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 3, "position": 4, "wins": 0 },
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 5, "wins": 0 },
+				{ "constructorRef": "aston_martin", "points": 0, "position": 6, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 7, "wins": 0 },
-				{
-					"constructorRef": "cooper_borgward",
-					"points": 0,
-					"position": 8,
-					"wins": 0
-				},
+				{ "constructorRef": "cooper_borgward", "points": 0, "position": 8, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 9, "wins": 0 },
 				{ "constructorRef": "jbw", "points": 0, "position": 10, "wins": 0 },
 				{ "constructorRef": "vanwall", "points": 0, "position": 11, "wins": 0 },
@@ -679,16 +477,11 @@
 				{ "driverRef": "fairman", "points": 0, "position": 47, "wins": 0 },
 				{ "driverRef": "sachs", "points": 0, "position": 48, "wins": 0 },
 				{ "driverRef": "keller", "points": 0, "position": 49, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 50, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 50, "wins": 0 },
 				{ "driverRef": "flaherty", "points": 0, "position": 51, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 52, "wins": 0 },
 				{ "driverRef": "davis", "points": 0, "position": 53, "wins": 0 },
-				{
-					"driverRef": "dick_rathmann",
-					"points": 0,
-					"position": 54,
-					"wins": 0
-				},
+				{ "driverRef": "dick_rathmann", "points": 0, "position": 54, "wins": 0 },
 				{ "driverRef": "cheesbourg", "points": 0, "position": 55, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 56, "wins": 0 },
 				{ "driverRef": "piper", "points": 0, "position": 57, "wins": 0 },
@@ -707,20 +500,10 @@
 				{ "driverRef": "bill_moss", "points": 0, "position": 70, "wins": 0 },
 				{ "driverRef": "parkes", "points": 0, "position": 71, "wins": 0 },
 				{ "driverRef": "turner", "points": 0, "position": 72, "wins": 0 },
-				{
-					"driverRef": "dennis_taylor",
-					"points": 0,
-					"position": 73,
-					"wins": 0
-				},
+				{ "driverRef": "dennis_taylor", "points": 0, "position": 73, "wins": 0 },
 				{ "driverRef": "weyant", "points": 0, "position": 74, "wins": 0 },
 				{ "driverRef": "larson", "points": 0, "position": 75, "wins": 0 },
-				{
-					"driverRef": "trevor_taylor",
-					"points": 0,
-					"position": 76,
-					"wins": 0
-				},
+				{ "driverRef": "trevor_taylor", "points": 0, "position": 76, "wins": 0 },
 				{ "driverRef": "magill", "points": 0, "position": 77, "wins": 0 },
 				{ "driverRef": "parnell", "points": 0, "position": 78, "wins": 0 },
 				{ "driverRef": "amick", "points": 0, "position": 79, "wins": 0 },
@@ -737,45 +520,16 @@
 			"slug": "german-grand-prix"
 		},
 		{
-			"circuit": {
-				"country": "Portugal",
-				"location": "Lisbon",
-				"name": "Monsanto Park Circuit"
-			},
+			"circuit": { "country": "Portugal", "location": "Lisbon", "name": "Monsanto Park Circuit" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 34,
-					"position": 1,
-					"wins": 3
-				},
+				{ "constructorRef": "cooper_climax", "points": 34, "position": 1, "wins": 3 },
 				{ "constructorRef": "ferrari", "points": 28, "position": 2, "wins": 2 },
 				{ "constructorRef": "brm", "points": 18, "position": 3, "wins": 1 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 3,
-					"position": 4,
-					"wins": 0
-				},
-				{
-					"constructorRef": "aston_martin",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 6,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 3, "position": 4, "wins": 0 },
+				{ "constructorRef": "aston_martin", "points": 0, "position": 5, "wins": 0 },
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 6, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 7, "wins": 0 },
-				{
-					"constructorRef": "cooper_borgward",
-					"points": 0,
-					"position": 8,
-					"wins": 0
-				},
+				{ "constructorRef": "cooper_borgward", "points": 0, "position": 8, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 9, "wins": 0 },
 				{ "constructorRef": "jbw", "points": 0, "position": 10, "wins": 0 },
 				{ "constructorRef": "vanwall", "points": 0, "position": 11, "wins": 0 },
@@ -833,16 +587,11 @@
 				{ "driverRef": "fairman", "points": 0, "position": 48, "wins": 0 },
 				{ "driverRef": "sachs", "points": 0, "position": 49, "wins": 0 },
 				{ "driverRef": "keller", "points": 0, "position": 50, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 51, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 51, "wins": 0 },
 				{ "driverRef": "flaherty", "points": 0, "position": 52, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 53, "wins": 0 },
 				{ "driverRef": "davis", "points": 0, "position": 54, "wins": 0 },
-				{
-					"driverRef": "dick_rathmann",
-					"points": 0,
-					"position": 55,
-					"wins": 0
-				},
+				{ "driverRef": "dick_rathmann", "points": 0, "position": 55, "wins": 0 },
 				{ "driverRef": "cheesbourg", "points": 0, "position": 56, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 57, "wins": 0 },
 				{ "driverRef": "piper", "points": 0, "position": 58, "wins": 0 },
@@ -861,20 +610,10 @@
 				{ "driverRef": "bill_moss", "points": 0, "position": 71, "wins": 0 },
 				{ "driverRef": "parkes", "points": 0, "position": 72, "wins": 0 },
 				{ "driverRef": "turner", "points": 0, "position": 73, "wins": 0 },
-				{
-					"driverRef": "dennis_taylor",
-					"points": 0,
-					"position": 74,
-					"wins": 0
-				},
+				{ "driverRef": "dennis_taylor", "points": 0, "position": 74, "wins": 0 },
 				{ "driverRef": "weyant", "points": 0, "position": 75, "wins": 0 },
 				{ "driverRef": "larson", "points": 0, "position": 76, "wins": 0 },
-				{
-					"driverRef": "trevor_taylor",
-					"points": 0,
-					"position": 77,
-					"wins": 0
-				},
+				{ "driverRef": "trevor_taylor", "points": 0, "position": 77, "wins": 0 },
 				{ "driverRef": "magill", "points": 0, "position": 78, "wins": 0 },
 				{ "driverRef": "parnell", "points": 0, "position": 79, "wins": 0 },
 				{ "driverRef": "amick", "points": 0, "position": 80, "wins": 0 },
@@ -883,61 +622,24 @@
 			],
 			"name": "Portuguese Grand Prix",
 			"podium": [
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "moss",
-					"position": 1
-				},
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "gregory",
-					"position": 2
-				},
+				{ "constructorRef": "cooper_climax", "driverRef": "moss", "position": 1 },
+				{ "constructorRef": "cooper_climax", "driverRef": "gregory", "position": 2 },
 				{ "constructorRef": "ferrari", "driverRef": "gurney", "position": 3 }
 			],
 			"round": 7,
 			"slug": "portuguese-grand-prix"
 		},
 		{
-			"circuit": {
-				"country": "Italy",
-				"location": "Monza",
-				"name": "Autodromo Nazionale di Monza"
-			},
+			"circuit": { "country": "Italy", "location": "Monza", "name": "Autodromo Nazionale di Monza" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 38,
-					"position": 1,
-					"wins": 4
-				},
+				{ "constructorRef": "cooper_climax", "points": 38, "position": 1, "wins": 4 },
 				{ "constructorRef": "ferrari", "points": 32, "position": 2, "wins": 2 },
 				{ "constructorRef": "brm", "points": 18, "position": 3, "wins": 1 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 3,
-					"position": 4,
-					"wins": 0
-				},
-				{
-					"constructorRef": "aston_martin",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 6,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 3, "position": 4, "wins": 0 },
+				{ "constructorRef": "aston_martin", "points": 0, "position": 5, "wins": 0 },
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 6, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 7, "wins": 0 },
-				{
-					"constructorRef": "cooper_borgward",
-					"points": 0,
-					"position": 8,
-					"wins": 0
-				},
+				{ "constructorRef": "cooper_borgward", "points": 0, "position": 8, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 9, "wins": 0 },
 				{ "constructorRef": "jbw", "points": 0, "position": 10, "wins": 0 },
 				{ "constructorRef": "vanwall", "points": 0, "position": 11, "wins": 0 },
@@ -997,15 +699,10 @@
 				{ "driverRef": "fairman", "points": 0, "position": 50, "wins": 0 },
 				{ "driverRef": "sachs", "points": 0, "position": 51, "wins": 0 },
 				{ "driverRef": "keller", "points": 0, "position": 52, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 53, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 53, "wins": 0 },
 				{ "driverRef": "flaherty", "points": 0, "position": 54, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 55, "wins": 0 },
-				{
-					"driverRef": "dick_rathmann",
-					"points": 0,
-					"position": 56,
-					"wins": 0
-				},
+				{ "driverRef": "dick_rathmann", "points": 0, "position": 56, "wins": 0 },
 				{ "driverRef": "cheesbourg", "points": 0, "position": 57, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 58, "wins": 0 },
 				{ "driverRef": "piper", "points": 0, "position": 59, "wins": 0 },
@@ -1024,20 +721,10 @@
 				{ "driverRef": "bill_moss", "points": 0, "position": 72, "wins": 0 },
 				{ "driverRef": "parkes", "points": 0, "position": 73, "wins": 0 },
 				{ "driverRef": "turner", "points": 0, "position": 74, "wins": 0 },
-				{
-					"driverRef": "dennis_taylor",
-					"points": 0,
-					"position": 75,
-					"wins": 0
-				},
+				{ "driverRef": "dennis_taylor", "points": 0, "position": 75, "wins": 0 },
 				{ "driverRef": "weyant", "points": 0, "position": 76, "wins": 0 },
 				{ "driverRef": "larson", "points": 0, "position": 77, "wins": 0 },
-				{
-					"driverRef": "trevor_taylor",
-					"points": 0,
-					"position": 78,
-					"wins": 0
-				},
+				{ "driverRef": "trevor_taylor", "points": 0, "position": 78, "wins": 0 },
 				{ "driverRef": "magill", "points": 0, "position": 79, "wins": 0 },
 				{ "driverRef": "parnell", "points": 0, "position": 80, "wins": 0 },
 				{ "driverRef": "amick", "points": 0, "position": 81, "wins": 0 },
@@ -1046,85 +733,29 @@
 			],
 			"name": "Italian Grand Prix",
 			"podium": [
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "moss",
-					"position": 1
-				},
-				{
-					"constructorRef": "ferrari",
-					"driverRef": "phil_hill",
-					"position": 2
-				},
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "jack_brabham",
-					"position": 3
-				}
+				{ "constructorRef": "cooper_climax", "driverRef": "moss", "position": 1 },
+				{ "constructorRef": "ferrari", "driverRef": "phil_hill", "position": 2 },
+				{ "constructorRef": "cooper_climax", "driverRef": "jack_brabham", "position": 3 }
 			],
 			"round": 8,
 			"slug": "italian-grand-prix"
 		},
 		{
-			"circuit": {
-				"country": "USA",
-				"location": "Florida",
-				"name": "Sebring International Raceway"
-			},
+			"circuit": { "country": "USA", "location": "Florida", "name": "Sebring International Raceway" },
 			"constructorStandings": [
-				{
-					"constructorRef": "cooper_climax",
-					"points": 40,
-					"position": 1,
-					"wins": 5
-				},
+				{ "constructorRef": "cooper_climax", "points": 40, "position": 1, "wins": 5 },
 				{ "constructorRef": "ferrari", "points": 32, "position": 2, "wins": 2 },
 				{ "constructorRef": "brm", "points": 18, "position": 3, "wins": 1 },
-				{
-					"constructorRef": "team_lotus",
-					"points": 5,
-					"position": 4,
-					"wins": 0
-				},
-				{
-					"constructorRef": "aston_martin",
-					"points": 0,
-					"position": 5,
-					"wins": 0
-				},
-				{
-					"constructorRef": "cooper_maserati",
-					"points": 0,
-					"position": 6,
-					"wins": 0
-				},
-				{
-					"constructorRef": "kurtis_kraft",
-					"points": 0,
-					"position": 7,
-					"wins": 0
-				},
+				{ "constructorRef": "team_lotus", "points": 5, "position": 4, "wins": 0 },
+				{ "constructorRef": "aston_martin", "points": 0, "position": 5, "wins": 0 },
+				{ "constructorRef": "cooper_maserati", "points": 0, "position": 6, "wins": 0 },
+				{ "constructorRef": "kurtis_kraft", "points": 0, "position": 7, "wins": 0 },
 				{ "constructorRef": "porsche", "points": 0, "position": 8, "wins": 0 },
 				{ "constructorRef": "maserati", "points": 0, "position": 9, "wins": 0 },
-				{
-					"constructorRef": "cooper_borgward",
-					"points": 0,
-					"position": 10,
-					"wins": 0
-				},
-				{
-					"constructorRef": "cooper_osca",
-					"points": 0,
-					"position": 11,
-					"wins": 0
-				},
+				{ "constructorRef": "cooper_borgward", "points": 0, "position": 10, "wins": 0 },
+				{ "constructorRef": "cooper_osca", "points": 0, "position": 11, "wins": 0 },
 				{ "constructorRef": "tec_mec", "points": 0, "position": 12, "wins": 0 },
-				{
-					"constructorRef": "connaught",
-					"points": 0,
-					"position": 13,
-					"wins": 0
-				},
+				{ "constructorRef": "connaught", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "jbw", "points": 0, "position": 14, "wins": 0 },
 				{ "constructorRef": "vanwall", "points": 0, "position": 15, "wins": 0 },
 				{ "constructorRef": "fry", "points": 0, "position": 16, "wins": 0 }
@@ -1188,15 +819,10 @@
 				{ "driverRef": "keller", "points": 0, "position": 55, "wins": 0 },
 				{ "driverRef": "said", "points": 0, "position": 56, "wins": 0 },
 				{ "driverRef": "cade", "points": 0, "position": 57, "wins": 0 },
-				{ "driverRef": "Changy", "points": 0, "position": 58, "wins": 0 },
+				{ "driverRef": "changy", "points": 0, "position": 58, "wins": 0 },
 				{ "driverRef": "flaherty", "points": 0, "position": 59, "wins": 0 },
 				{ "driverRef": "bianchi", "points": 0, "position": 60, "wins": 0 },
-				{
-					"driverRef": "dick_rathmann",
-					"points": 0,
-					"position": 61,
-					"wins": 0
-				},
+				{ "driverRef": "dick_rathmann", "points": 0, "position": 61, "wins": 0 },
 				{ "driverRef": "cheesbourg", "points": 0, "position": 62, "wins": 0 },
 				{ "driverRef": "filippis", "points": 0, "position": 63, "wins": 0 },
 				{ "driverRef": "piper", "points": 0, "position": 64, "wins": 0 },
@@ -1215,20 +841,10 @@
 				{ "driverRef": "bill_moss", "points": 0, "position": 77, "wins": 0 },
 				{ "driverRef": "parkes", "points": 0, "position": 78, "wins": 0 },
 				{ "driverRef": "turner", "points": 0, "position": 79, "wins": 0 },
-				{
-					"driverRef": "dennis_taylor",
-					"points": 0,
-					"position": 80,
-					"wins": 0
-				},
+				{ "driverRef": "dennis_taylor", "points": 0, "position": 80, "wins": 0 },
 				{ "driverRef": "weyant", "points": 0, "position": 81, "wins": 0 },
 				{ "driverRef": "larson", "points": 0, "position": 82, "wins": 0 },
-				{
-					"driverRef": "trevor_taylor",
-					"points": 0,
-					"position": 83,
-					"wins": 0
-				},
+				{ "driverRef": "trevor_taylor", "points": 0, "position": 83, "wins": 0 },
 				{ "driverRef": "magill", "points": 0, "position": 84, "wins": 0 },
 				{ "driverRef": "parnell", "points": 0, "position": 85, "wins": 0 },
 				{ "driverRef": "amick", "points": 0, "position": 86, "wins": 0 },
@@ -1237,16 +853,8 @@
 			],
 			"name": "United States Grand Prix",
 			"podium": [
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "mclaren",
-					"position": 1
-				},
-				{
-					"constructorRef": "cooper_climax",
-					"driverRef": "trintignant",
-					"position": 2
-				},
+				{ "constructorRef": "cooper_climax", "driverRef": "mclaren", "position": 1 },
+				{ "constructorRef": "cooper_climax", "driverRef": "trintignant", "position": 2 },
 				{ "constructorRef": "ferrari", "driverRef": "brooks", "position": 3 }
 			],
 			"round": 9,
@@ -1257,16 +865,8 @@
 		{
 			"constructorRef": "aston_martin",
 			"drivers": [
-				{
-					"driverRef": "shelby",
-					"name": "Carroll Shelby",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "salvadori",
-					"name": "Roy Salvadori",
-					"nationality": "British"
-				}
+				{ "driverRef": "shelby", "name": "Carroll Shelby", "nationality": "American" },
+				{ "driverRef": "salvadori", "name": "Roy Salvadori", "nationality": "British" }
 			],
 			"name": "Aston Martin",
 			"nationality": "British"
@@ -1274,69 +874,27 @@
 		{
 			"constructorRef": "brm",
 			"drivers": [
-				{
-					"driverRef": "herrmann",
-					"name": "Hans Herrmann",
-					"nationality": "German"
-				},
-				{
-					"driverRef": "schell",
-					"name": "Harry Schell",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "bonnier",
-					"name": "Jo Bonnier",
-					"nationality": "Swedish"
-				},
-				{
-					"driverRef": "flockhart",
-					"name": "Ron Flockhart",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "moss",
-					"name": "Stirling Moss",
-					"nationality": "British"
-				}
+				{ "driverRef": "flockhart", "name": "Ron Flockhart", "nationality": "British" },
+				{ "driverRef": "schell", "name": "Harry Schell", "nationality": "American" },
+				{ "driverRef": "bonnier", "name": "Jo Bonnier", "nationality": "Swedish" },
+				{ "driverRef": "moss", "name": "Stirling Moss", "nationality": "British" },
+				{ "driverRef": "herrmann", "name": "Hans Herrmann", "nationality": "German" }
 			],
 			"name": "BRM",
 			"nationality": "British"
 		},
 		{
-			"constructorRef": "vhristensen",
-			"drivers": [
-				{
-					"driverRef": "turner",
-					"name": "Jack Turner",
-					"nationality": "American"
-				}
-			],
-			"name": "Christensen",
-			"nationality": "American"
-		},
-		{
 			"constructorRef": "connaught",
-			"drivers": [
-				{ "driverRef": "said", "name": "Bob Said", "nationality": "American" }
-			],
+			"drivers": [{ "driverRef": "said", "name": "Bob Said", "nationality": "American" }],
 			"name": "Connaught",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "cooper_borgward",
 			"drivers": [
-				{
-					"driverRef": "bristow",
-					"name": "Chris Bristow",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "constantine",
-					"name": "George Constantine",
-					"nationality": "American"
-				},
-				{ "driverRef": "bueb", "name": "Ivor Bueb", "nationality": "British" }
+				{ "driverRef": "bristow", "name": "Chris Bristow", "nationality": "British" },
+				{ "driverRef": "bueb", "name": "Ivor Bueb", "nationality": "British" },
+				{ "driverRef": "constantine", "name": "George Constantine", "nationality": "American" }
 			],
 			"name": "Cooper-Borgward",
 			"nationality": "British"
@@ -1344,97 +902,25 @@
 		{
 			"constructorRef": "cooper_climax",
 			"drivers": [
-				{
-					"driverRef": "Changy",
-					"name": "Alain de Changy",
-					"nationality": "Belgian"
-				},
-				{
-					"driverRef": "bill_moss",
-					"name": "Bill Moss",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "mclaren",
-					"name": "Bruce McLaren",
-					"nationality": "New Zealander"
-				},
-				{
-					"driverRef": "scarlatti",
-					"name": "Giorgio Scarlatti",
-					"nationality": "Italian"
-				},
-				{
-					"driverRef": "schell",
-					"name": "Harry Schell",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "henry_taylor",
-					"name": "Henry Taylor",
-					"nationality": "British"
-				},
+				{ "driverRef": "jack_brabham", "name": "Jack Brabham", "nationality": "Australian" },
+				{ "driverRef": "trintignant", "name": "Maurice Trintignant", "nationality": "French" },
+				{ "driverRef": "mclaren", "name": "Bruce McLaren", "nationality": "New Zealander" },
+				{ "driverRef": "moss", "name": "Stirling Moss", "nationality": "British" },
+				{ "driverRef": "gregory", "name": "Masten Gregory", "nationality": "American" },
 				{ "driverRef": "bueb", "name": "Ivor Bueb", "nationality": "British" },
-				{
-					"driverRef": "jack_brabham",
-					"name": "Jack Brabham",
-					"nationality": "Australian"
-				},
-				{
-					"driverRef": "fairman",
-					"name": "Jack Fairman",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "lucienbonnet",
-					"name": "Jean Lucienbonnet",
-					"nationality": "French"
-				},
-				{
-					"driverRef": "greene",
-					"name": "Keith Greene",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "bianchi",
-					"name": "Lucien Bianchi",
-					"nationality": "Belgian"
-				},
-				{
-					"driverRef": "gregory",
-					"name": "Masten Gregory",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "trintignant",
-					"name": "Maurice Trintignant",
-					"nationality": "French"
-				},
-				{
-					"driverRef": "mike_taylor",
-					"name": "Mike Taylor",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "ashdown",
-					"name": "Peter Ashdown",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "moss",
-					"name": "Stirling Moss",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "parnell",
-					"name": "Tim Parnell",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "trevor_taylor",
-					"name": "Trevor Taylor",
-					"nationality": "British"
-				}
+				{ "driverRef": "changy", "name": "Alain de Changy", "nationality": "Belgian" },
+				{ "driverRef": "bianchi", "name": "Lucien Bianchi", "nationality": "Belgian" },
+				{ "driverRef": "lucienbonnet", "name": "Jean Lucienbonnet", "nationality": "French" },
+				{ "driverRef": "henry_taylor", "name": "Henry Taylor", "nationality": "British" },
+				{ "driverRef": "ashdown", "name": "Peter Ashdown", "nationality": "British" },
+				{ "driverRef": "fairman", "name": "Jack Fairman", "nationality": "British" },
+				{ "driverRef": "mike_taylor", "name": "Mike Taylor", "nationality": "British" },
+				{ "driverRef": "greene", "name": "Keith Greene", "nationality": "British" },
+				{ "driverRef": "bill_moss", "name": "Bill Moss", "nationality": "British" },
+				{ "driverRef": "trevor_taylor", "name": "Trevor Taylor", "nationality": "British" },
+				{ "driverRef": "parnell", "name": "Tim Parnell", "nationality": "British" },
+				{ "driverRef": "scarlatti", "name": "Giorgio Scarlatti", "nationality": "Italian" },
+				{ "driverRef": "schell", "name": "Harry Schell", "nationality": "American" }
 			],
 			"name": "Cooper-Climax",
 			"nationality": "British"
@@ -1442,99 +928,41 @@
 		{
 			"constructorRef": "cooper_maserati",
 			"drivers": [
-				{
-					"driverRef": "davis",
-					"name": "Colin Davis",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "herrmann",
-					"name": "Hans Herrmann",
-					"nationality": "German"
-				},
-				{
-					"driverRef": "burgess",
-					"name": "Ian Burgess",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "fairman",
-					"name": "Jack Fairman",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "cabral",
-					"name": "Mário de Araújo Cabral",
-					"nationality": "Portuguese"
-				},
-				{
-					"driverRef": "salvadori",
-					"name": "Roy Salvadori",
-					"nationality": "British"
-				}
+				{ "driverRef": "salvadori", "name": "Roy Salvadori", "nationality": "British" },
+				{ "driverRef": "burgess", "name": "Ian Burgess", "nationality": "British" },
+				{ "driverRef": "davis", "name": "Colin Davis", "nationality": "British" },
+				{ "driverRef": "herrmann", "name": "Hans Herrmann", "nationality": "German" },
+				{ "driverRef": "cabral", "name": "Mário de Araújo Cabral", "nationality": "Portuguese" },
+				{ "driverRef": "fairman", "name": "Jack Fairman", "nationality": "British" }
 			],
 			"name": "Cooper-Maserati",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "cooper_osca",
-			"drivers": [
-				{
-					"driverRef": "tomaso",
-					"name": "Alessandro de Tomaso",
-					"nationality": "Argentine-Italian"
-				}
-			],
+			"drivers": [{ "driverRef": "tomaso", "name": "Alessandro de Tomaso", "nationality": "Argentine-Italian" }],
 			"name": "Cooper-OSCA",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "dunn",
-			"drivers": [
-				{
-					"driverRef": "herman",
-					"name": "Al Herman",
-					"nationality": "American"
-				}
-			],
+			"drivers": [{ "driverRef": "herman", "name": "Al Herman", "nationality": "American" }],
 			"name": "Dunn",
 			"nationality": "American"
 		},
 		{
 			"constructorRef": "elder",
-			"drivers": [
-				{
-					"driverRef": "ray_crawford",
-					"name": "Ray Crawford",
-					"nationality": "American"
-				}
-			],
+			"drivers": [{ "driverRef": "ray_crawford", "name": "Ray Crawford", "nationality": "American" }],
 			"name": "Elder",
 			"nationality": "American"
 		},
 		{
 			"constructorRef": "epperly",
 			"drivers": [
-				{
-					"driverRef": "bryan",
-					"name": "Jimmy Bryan",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "boyd",
-					"name": "Johnny Boyd",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "goldsmith",
-					"name": "Paul Goldsmith",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "bettenhausen",
-					"name": "Tony Bettenhausen",
-					"nationality": "American"
-				}
+				{ "driverRef": "bettenhausen", "name": "Tony Bettenhausen", "nationality": "American" },
+				{ "driverRef": "goldsmith", "name": "Paul Goldsmith", "nationality": "American" },
+				{ "driverRef": "boyd", "name": "Johnny Boyd", "nationality": "American" },
+				{ "driverRef": "bryan", "name": "Jimmy Bryan", "nationality": "American" }
 			],
 			"name": "Epperly",
 			"nationality": "American"
@@ -1542,133 +970,45 @@
 		{
 			"constructorRef": "ferrari",
 			"drivers": [
-				{
-					"driverRef": "allison",
-					"name": "Cliff Allison",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "gurney",
-					"name": "Dan Gurney",
-					"nationality": "American"
-				},
+				{ "driverRef": "brooks", "name": "Tony Brooks", "nationality": "British" },
+				{ "driverRef": "phil_hill", "name": "Phil Hill", "nationality": "American" },
 				{ "driverRef": "behra", "name": "Jean Behra", "nationality": "French" },
-				{
-					"driverRef": "gendebien",
-					"name": "Olivier Gendebien",
-					"nationality": "Belgian"
-				},
-				{
-					"driverRef": "phil_hill",
-					"name": "Phil Hill",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "brooks",
-					"name": "Tony Brooks",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "trips",
-					"name": "Wolfgang von Trips",
-					"nationality": "German"
-				}
+				{ "driverRef": "allison", "name": "Cliff Allison", "nationality": "British" },
+				{ "driverRef": "gendebien", "name": "Olivier Gendebien", "nationality": "Belgian" },
+				{ "driverRef": "gurney", "name": "Dan Gurney", "nationality": "American" },
+				{ "driverRef": "trips", "name": "Wolfgang von Trips", "nationality": "German" }
 			],
 			"name": "Ferrari",
 			"nationality": "Italian"
 		},
 		{
 			"constructorRef": "fry",
-			"drivers": [
-				{
-					"driverRef": "parkes",
-					"name": "Mike Parkes",
-					"nationality": "British"
-				}
-			],
+			"drivers": [{ "driverRef": "parkes", "name": "Mike Parkes", "nationality": "British" }],
 			"name": "Fry",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "jbw",
-			"drivers": [
-				{
-					"driverRef": "naylor",
-					"name": "Brian Naylor",
-					"nationality": "British"
-				}
-			],
+			"drivers": [{ "driverRef": "naylor", "name": "Brian Naylor", "nationality": "British" }],
 			"name": "JBW",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "kurtis_kraft",
 			"drivers": [
-				{
-					"driverRef": "christie",
-					"name": "Bob Christie",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "grim",
-					"name": "Bobby Grim",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "arnold",
-					"name": "Chuck Arnold",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "weyant",
-					"name": "Chuck Weyant",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "freeland",
-					"name": "Don Freeland",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "darter",
-					"name": "Duane Carter",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "johnson",
-					"name": "Eddie Johnson",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "mcwithey",
-					"name": "Jim McWithey",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "daywalt",
-					"name": "Jimmy Daywalt",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "larson",
-					"name": "Jud Larson",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "paul_russo",
-					"name": "Paul Russo",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "amick",
-					"name": "Red Amick",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "ward",
-					"name": "Rodger Ward",
-					"nationality": "American"
-				}
+				{ "driverRef": "darter", "name": "Duane Carter", "nationality": "American" },
+				{ "driverRef": "johnson", "name": "Eddie Johnson", "nationality": "American" },
+				{ "driverRef": "paul_russo", "name": "Paul Russo", "nationality": "American" },
+				{ "driverRef": "daywalt", "name": "Jimmy Daywalt", "nationality": "American" },
+				{ "driverRef": "arnold", "name": "Chuck Arnold", "nationality": "American" },
+				{ "driverRef": "mcwithey", "name": "Jim McWithey", "nationality": "American" },
+				{ "driverRef": "freeland", "name": "Don Freeland", "nationality": "American" },
+				{ "driverRef": "christie", "name": "Bob Christie", "nationality": "American" },
+				{ "driverRef": "grim", "name": "Bobby Grim", "nationality": "American" },
+				{ "driverRef": "weyant", "name": "Chuck Weyant", "nationality": "American" },
+				{ "driverRef": "larson", "name": "Jud Larson", "nationality": "American" },
+				{ "driverRef": "amick", "name": "Red Amick", "nationality": "American" },
+				{ "driverRef": "ward", "name": "Rodger Ward", "nationality": "American" }
 			],
 			"name": "Kurtis Kraft",
 			"nationality": "American"
@@ -1676,31 +1016,11 @@
 		{
 			"constructorRef": "kuzma",
 			"drivers": [
-				{
-					"driverRef": "keller",
-					"name": "Al Keller",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "foyt",
-					"name": "Anthony Foyt",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "cheesbourg",
-					"name": "Bill Cheesbourg",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "sachs",
-					"name": "Eddie Sachs",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "hartley",
-					"name": "Gene Hartley",
-					"nationality": "American"
-				}
+				{ "driverRef": "foyt", "name": "Anthony Foyt", "nationality": "American" },
+				{ "driverRef": "hartley", "name": "Gene Hartley", "nationality": "American" },
+				{ "driverRef": "sachs", "name": "Eddie Sachs", "nationality": "American" },
+				{ "driverRef": "keller", "name": "Al Keller", "nationality": "American" },
+				{ "driverRef": "cheesbourg", "name": "Bill Cheesbourg", "nationality": "American" }
 			],
 			"name": "Kuzma",
 			"nationality": "American"
@@ -1708,16 +1028,8 @@
 		{
 			"constructorRef": "lesovsky",
 			"drivers": [
-				{
-					"driverRef": "thomson",
-					"name": "Johnny Thomson",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "sutton",
-					"name": "Len Sutton",
-					"nationality": "American"
-				}
+				{ "driverRef": "thomson", "name": "Johnny Thomson", "nationality": "American" },
+				{ "driverRef": "sutton", "name": "Len Sutton", "nationality": "American" }
 			],
 			"name": "Lesovsky",
 			"nationality": "American"
@@ -1725,36 +1037,12 @@
 		{
 			"constructorRef": "maserati",
 			"drivers": [
-				{
-					"driverRef": "testut",
-					"name": "André Testut",
-					"nationality": "Monegasque"
-				},
-				{
-					"driverRef": "fontes",
-					"name": "Azdrubal Fontes",
-					"nationality": "Uruguayan"
-				},
-				{
-					"driverRef": "beaufort",
-					"name": "Carel Godin de Beaufort",
-					"nationality": "Dutch"
-				},
-				{
-					"driverRef": "orey",
-					"name": "Fritz d'Orey",
-					"nationality": "Brazilian"
-				},
-				{
-					"driverRef": "scarlatti",
-					"name": "Giorgio Scarlatti",
-					"nationality": "Italian"
-				},
-				{
-					"driverRef": "cabianca",
-					"name": "Giulio Cabianca",
-					"nationality": "Italian"
-				},
+				{ "driverRef": "scarlatti", "name": "Giorgio Scarlatti", "nationality": "Italian" },
+				{ "driverRef": "testut", "name": "André Testut", "nationality": "Monegasque" },
+				{ "driverRef": "beaufort", "name": "Carel Godin de Beaufort", "nationality": "Dutch" },
+				{ "driverRef": "orey", "name": "Fritz d'Orey", "nationality": "Brazilian" },
+				{ "driverRef": "fontes", "name": "Azdrubal Fontes", "nationality": "Uruguayan" },
+				{ "driverRef": "cabianca", "name": "Giulio Cabianca", "nationality": "Italian" },
 				{ "driverRef": "cade", "name": "Phil Cade", "nationality": "American" }
 			],
 			"name": "Maserati",
@@ -1762,152 +1050,72 @@
 		},
 		{
 			"constructorRef": "moore",
-			"drivers": [
-				{ "driverRef": "veith", "name": "Bob Veith", "nationality": "American" }
-			],
+			"drivers": [{ "driverRef": "veith", "name": "Bob Veith", "nationality": "American" }],
 			"name": "Moore",
 			"nationality": "American"
 		},
 		{
 			"constructorRef": "phillips",
-			"drivers": [
-				{
-					"driverRef": "branson",
-					"name": "Don Branson",
-					"nationality": "American"
-				}
-			],
+			"drivers": [{ "driverRef": "branson", "name": "Don Branson", "nationality": "American" }],
 			"name": "Phillips",
 			"nationality": "American"
 		},
 		{
 			"constructorRef": "porsche",
 			"drivers": [
-				{
-					"driverRef": "beaufort",
-					"name": "Carel Godin de Beaufort",
-					"nationality": "Dutch"
-				},
-				{
-					"driverRef": "blanchard",
-					"name": "Harry Blanchard",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "filippis",
-					"name": "Maria de Filippis",
-					"nationality": "Italian"
-				},
-				{
-					"driverRef": "trips",
-					"name": "Wolfgang von Trips",
-					"nationality": "German"
-				}
+				{ "driverRef": "trips", "name": "Wolfgang von Trips", "nationality": "German" },
+				{ "driverRef": "filippis", "name": "Maria de Filippis", "nationality": "Italian" },
+				{ "driverRef": "beaufort", "name": "Carel Godin de Beaufort", "nationality": "Dutch" },
+				{ "driverRef": "blanchard", "name": "Harry Blanchard", "nationality": "American" }
 			],
 			"name": "Porsche",
 			"nationality": "German"
 		},
 		{
 			"constructorRef": "sutton",
-			"drivers": [
-				{
-					"driverRef": "magill",
-					"name": "Mike Magill",
-					"nationality": "American"
-				}
-			],
+			"drivers": [{ "driverRef": "magill", "name": "Mike Magill", "nationality": "American" }],
 			"name": "Sutton",
 			"nationality": "American"
 		},
 		{
 			"constructorRef": "team_lotus",
 			"drivers": [
-				{
-					"driverRef": "stacey",
-					"name": "Alan Stacey",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "halford",
-					"name": "Bruce Halford",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "piper",
-					"name": "David Piper",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "dennis_taylor",
-					"name": "Dennis Taylor",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "hill",
-					"name": "Graham Hill",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "ireland",
-					"name": "Innes Ireland",
-					"nationality": "British"
-				},
-				{
-					"driverRef": "lovely",
-					"name": "Pete Lovely",
-					"nationality": "American"
-				}
+				{ "driverRef": "hill", "name": "Graham Hill", "nationality": "British" },
+				{ "driverRef": "halford", "name": "Bruce Halford", "nationality": "British" },
+				{ "driverRef": "lovely", "name": "Pete Lovely", "nationality": "American" },
+				{ "driverRef": "ireland", "name": "Innes Ireland", "nationality": "British" },
+				{ "driverRef": "stacey", "name": "Alan Stacey", "nationality": "British" },
+				{ "driverRef": "piper", "name": "David Piper", "nationality": "British" },
+				{ "driverRef": "dennis_taylor", "name": "Dennis Taylor", "nationality": "British" }
 			],
 			"name": "Team Lotus",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "tec_mec",
-			"drivers": [
-				{
-					"driverRef": "orey",
-					"name": "Fritz d'Orey",
-					"nationality": "Brazilian"
-				}
-			],
+			"drivers": [{ "driverRef": "orey", "name": "Fritz d'Orey", "nationality": "Brazilian" }],
 			"name": "Tec-Mec",
 			"nationality": "Italian"
 		},
 		{
 			"constructorRef": "vanwall",
-			"drivers": [
-				{
-					"driverRef": "brooks",
-					"name": "Tony Brooks",
-					"nationality": "British"
-				}
-			],
+			"drivers": [{ "driverRef": "brooks", "name": "Tony Brooks", "nationality": "British" }],
 			"name": "Vanwall",
 			"nationality": "British"
 		},
 		{
+			"constructorRef": "vhristensen",
+			"drivers": [{ "driverRef": "turner", "name": "Jack Turner", "nationality": "American" }],
+			"name": "Christensen",
+			"nationality": "American"
+		},
+		{
 			"constructorRef": "watson",
 			"drivers": [
-				{
-					"driverRef": "dick_rathmann",
-					"name": "Dick Rathmann",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "rathmann",
-					"name": "Jim Rathmann",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "flaherty",
-					"name": "Pat Flaherty",
-					"nationality": "American"
-				},
-				{
-					"driverRef": "ward",
-					"name": "Rodger Ward",
-					"nationality": "American"
-				}
+				{ "driverRef": "ward", "name": "Rodger Ward", "nationality": "American" },
+				{ "driverRef": "rathmann", "name": "Jim Rathmann", "nationality": "American" },
+				{ "driverRef": "flaherty", "name": "Pat Flaherty", "nationality": "American" },
+				{ "driverRef": "dick_rathmann", "name": "Dick Rathmann", "nationality": "American" }
 			],
 			"name": "Watson",
 			"nationality": "American"

@@ -11,15 +11,7 @@
 	"raceWins": 2,
 	"seasons": [
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Harry Schell", "points": 0, "position": null }
-					],
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Harry Schell", "points": 0, "position": null }], "round": 2, "roundName": "Monaco Grand Prix" }],
 			"year": 1950
 		},
 		{
@@ -41,37 +33,25 @@
 					"round": 3,
 					"roundName": "Belgian Grand Prix"
 				},
+				{ "results": [{ "driver": "Mike Hawthorn", "points": 0, "position": null }], "round": 4, "roundName": "French Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Mike Hawthorn", "points": 0, "position": null }
-					],
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "David Murray", "points": 0, "position": null },
 						{ "driver": "Alan Brown", "points": 0, "position": 22 },
 						{ "driver": "Eric Brandon", "points": 0, "position": 20 },
 						{ "driver": "Reg Parnell", "points": 0, "position": 7 },
-						{ "driver": "Mike Hawthorn", "points": 4, "position": 3 }
+						{ "driver": "Mike Hawthorn", "points": 4, "position": 3 },
+						{ "driver": "David Murray", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "British Grand Prix"
 				},
+				{ "results": [{ "driver": "Mike Hawthorn", "points": 3, "position": 4 }], "round": 7, "roundName": "Dutch Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Mike Hawthorn", "points": 3, "position": 4 }
-					],
-					"round": 7,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Mike Hawthorn", "points": 0, "position": null },
 						{ "driver": "Alan Brown", "points": 0, "position": 15 },
 						{ "driver": "Eric Brandon", "points": 0, "position": 13 },
-						{ "driver": "Ken Wharton", "points": 0, "position": 9 }
+						{ "driver": "Ken Wharton", "points": 0, "position": 9 },
+						{ "driver": "Mike Hawthorn", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "Italian Grand Prix"
@@ -83,59 +63,49 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Adolfo Cruz", "points": 0, "position": null },
 						{ "driver": "Alan Brown", "points": 0, "position": 9 },
-						{ "driver": "John Barber", "points": 0, "position": 8 }
+						{ "driver": "John Barber", "points": 0, "position": 8 },
+						{ "driver": "Adolfo Cruz", "points": 0, "position": null }
 					],
 					"round": 1,
 					"roundName": "Argentine Grand Prix"
 				},
+				{ "results": [{ "driver": "Ken Wharton", "points": 0, "position": null }], "round": 3, "roundName": "Dutch Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Ken Wharton", "points": 0, "position": null }
-					],
-					"round": 3,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Ken Wharton", "points": 0, "position": null },
+						{ "driver": "Bob Gerard", "points": 0, "position": 11 },
 						{ "driver": "Stirling Moss", "points": 0, "position": null },
-						{ "driver": "Bob Gerard", "points": 0, "position": 11 }
+						{ "driver": "Ken Wharton", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Tony Crook", "points": 0, "position": null },
-						{ "driver": "Alan Brown", "points": 0, "position": null },
-						{ "driver": "Jimmy Stewart", "points": 0, "position": null },
 						{ "driver": "Peter Whitehead", "points": 0, "position": 9 },
-						{ "driver": "Ken Wharton", "points": 0, "position": 8 }
+						{ "driver": "Ken Wharton", "points": 0, "position": 8 },
+						{ "driver": "Jimmy Stewart", "points": 0, "position": null },
+						{ "driver": "Alan Brown", "points": 0, "position": null },
+						{ "driver": "Tony Crook", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Alan Brown", "points": 0, "position": null },
 						{ "driver": "Rodney Nuckey", "points": 0, "position": 11 },
-						{ "driver": "Stirling Moss", "points": 0, "position": 6 }
+						{ "driver": "Stirling Moss", "points": 0, "position": 6 },
+						{ "driver": "Alan Brown", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "German Grand Prix"
 				},
-				{
-					"results": [{ "driver": "Ken Wharton", "points": 0, "position": 7 }],
-					"round": 8,
-					"roundName": "Swiss Grand Prix"
-				},
+				{ "results": [{ "driver": "Ken Wharton", "points": 0, "position": 7 }], "round": 8, "roundName": "Swiss Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Ken Wharton", "points": 0, "position": null },
 						{ "driver": "Stirling Moss", "points": 0, "position": 13 },
-						{ "driver": "Alan Brown", "points": 0, "position": 12 }
+						{ "driver": "Alan Brown", "points": 0, "position": 12 },
+						{ "driver": "Ken Wharton", "points": 0, "position": null }
 					],
 					"round": 9,
 					"roundName": "Italian Grand Prix"
@@ -147,12 +117,12 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Rodney Nuckey", "points": 0, "position": null },
-						{ "driver": "Alan Brown", "points": 0, "position": null },
-						{ "driver": "Eric Brandon", "points": 0, "position": null },
-						{ "driver": "Peter Whitehead", "points": 0, "position": null },
 						{ "driver": "Horace Gould", "points": 0, "position": 15 },
-						{ "driver": "Bob Gerard", "points": 0, "position": 10 }
+						{ "driver": "Bob Gerard", "points": 0, "position": 10 },
+						{ "driver": "Peter Whitehead", "points": 0, "position": null },
+						{ "driver": "Eric Brandon", "points": 0, "position": null },
+						{ "driver": "Alan Brown", "points": 0, "position": null },
+						{ "driver": "Rodney Nuckey", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "British Grand Prix"
@@ -161,71 +131,57 @@
 			"year": 1954
 		},
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Jack Brabham", "points": 0, "position": null }
-					],
-					"round": 6,
-					"roundName": "British Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Jack Brabham", "points": 0, "position": null }], "round": 6, "roundName": "British Grand Prix" }],
 			"year": 1955
 		},
 		{
-			"rounds": [
-				{
-					"results": [{ "driver": "Bob Gerard", "points": 0, "position": 11 }],
-					"round": 6,
-					"roundName": "British Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Bob Gerard", "points": 0, "position": 11 }], "round": 6, "roundName": "British Grand Prix" }],
 			"year": 1956
 		},
 		{
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Les Leston", "points": 0, "position": null },
-						{ "driver": "Jack Brabham", "points": 0, "position": 6 }
+						{ "driver": "Jack Brabham", "points": 0, "position": 6 },
+						{ "driver": "Les Leston", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Monaco Grand Prix"
 				},
 				{
 					"results": [
+						{ "driver": "Mike MacDowel", "points": 0, "position": 7 },
 						{ "driver": "Jack Brabham", "points": 0, "position": 7 },
-						{ "driver": "Jack Brabham", "points": 0, "position": null },
-						{ "driver": "Mike MacDowel", "points": 0, "position": 7 }
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jack Brabham", "points": 0, "position": null },
 						{ "driver": "Bob Gerard", "points": 0, "position": 6 },
-						{ "driver": "Roy Salvadori", "points": 2, "position": 5 }
+						{ "driver": "Roy Salvadori", "points": 2, "position": 5 },
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Dick Gibson", "points": 0, "position": null },
-						{ "driver": "Paul England", "points": 0, "position": null },
-						{ "driver": "Jack Brabham", "points": 0, "position": null },
-						{ "driver": "Roy Salvadori", "points": 0, "position": null },
 						{ "driver": "Tony Marsh", "points": 0, "position": 15 },
-						{ "driver": "Brian Naylor", "points": 0, "position": 13 }
+						{ "driver": "Brian Naylor", "points": 0, "position": 13 },
+						{ "driver": "Roy Salvadori", "points": 0, "position": null },
+						{ "driver": "Jack Brabham", "points": 0, "position": null },
+						{ "driver": "Paul England", "points": 0, "position": null },
+						{ "driver": "Dick Gibson", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "German Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Roy Salvadori", "points": 0, "position": null },
-						{ "driver": "Jack Brabham", "points": 0, "position": 7 }
+						{ "driver": "Jack Brabham", "points": 0, "position": 7 },
+						{ "driver": "Roy Salvadori", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "Pescara Grand Prix"
@@ -235,19 +191,13 @@
 		},
 		{
 			"rounds": [
+				{ "results": [{ "driver": "Stirling Moss", "points": 8, "position": 1 }], "round": 1, "roundName": "Argentine Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Stirling Moss", "points": 8, "position": 1 }
-					],
-					"round": 1,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Ron Flockhart", "points": 0, "position": null },
-						{ "driver": "Roy Salvadori", "points": 0, "position": null },
 						{ "driver": "Jack Brabham", "points": 3, "position": 4 },
-						{ "driver": "Maurice Trintignant", "points": 8, "position": 1 }
+						{ "driver": "Maurice Trintignant", "points": 8, "position": 1 },
+						{ "driver": "Roy Salvadori", "points": 0, "position": null },
+						{ "driver": "Ron Flockhart", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Monaco Grand Prix"
@@ -263,8 +213,8 @@
 				},
 				{
 					"results": [
-						{ "driver": "Jack Brabham", "points": 0, "position": null },
-						{ "driver": "Roy Salvadori", "points": 0, "position": 8 }
+						{ "driver": "Roy Salvadori", "points": 0, "position": 8 },
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "Belgian Grand Prix"
@@ -279,26 +229,26 @@
 				},
 				{
 					"results": [
-						{ "driver": "Ian Burgess", "points": 0, "position": null },
 						{ "driver": "Maurice Trintignant", "points": 0, "position": 8 },
 						{ "driver": "Jack Brabham", "points": 0, "position": 6 },
-						{ "driver": "Roy Salvadori", "points": 4, "position": 3 }
+						{ "driver": "Roy Salvadori", "points": 4, "position": 3 },
+						{ "driver": "Ian Burgess", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jack Brabham", "points": 0, "position": null },
-						{ "driver": "Brian Naylor", "points": 0, "position": null },
-						{ "driver": "Dick Gibson", "points": 0, "position": null },
-						{ "driver": "Christian Goethals", "points": 0, "position": null },
-						{ "driver": "Wolfgang Seidel", "points": 0, "position": null },
 						{ "driver": "Tony Marsh", "points": 0, "position": 8 },
 						{ "driver": "Ian Burgess", "points": 0, "position": 7 },
 						{ "driver": "Bruce McLaren", "points": 0, "position": 5 },
 						{ "driver": "Maurice Trintignant", "points": 4, "position": 3 },
-						{ "driver": "Roy Salvadori", "points": 6, "position": 2 }
+						{ "driver": "Roy Salvadori", "points": 6, "position": 2 },
+						{ "driver": "Wolfgang Seidel", "points": 0, "position": null },
+						{ "driver": "Christian Goethals", "points": 0, "position": null },
+						{ "driver": "Dick Gibson", "points": 0, "position": null },
+						{ "driver": "Brian Naylor", "points": 0, "position": null },
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "German Grand Prix"
@@ -314,25 +264,25 @@
 				},
 				{
 					"results": [
-						{ "driver": "Jack Brabham", "points": 0, "position": null },
+						{ "driver": "Roy Salvadori", "points": 2, "position": 5 },
 						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
-						{ "driver": "Roy Salvadori", "points": 2, "position": 5 }
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
 					],
 					"round": 10,
 					"roundName": "Italian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
-						{ "driver": "Wolfgang Seidel", "points": 0, "position": null },
-						{ "driver": "Tom Bridger", "points": 0, "position": null },
-						{ "driver": "François Picard", "points": 0, "position": null },
 						{ "driver": "André Guelfi", "points": 0, "position": 15 },
 						{ "driver": "Robert La Caze", "points": 0, "position": 14 },
 						{ "driver": "Bruce McLaren", "points": 0, "position": 13 },
 						{ "driver": "Jack Brabham", "points": 0, "position": 11 },
 						{ "driver": "Jack Fairman", "points": 0, "position": 8 },
-						{ "driver": "Roy Salvadori", "points": 0, "position": 7 }
+						{ "driver": "Roy Salvadori", "points": 0, "position": 7 },
+						{ "driver": "François Picard", "points": 0, "position": null },
+						{ "driver": "Tom Bridger", "points": 0, "position": null },
+						{ "driver": "Wolfgang Seidel", "points": 0, "position": null },
+						{ "driver": "Maurice Trintignant", "points": 0, "position": null }
 					],
 					"round": 11,
 					"roundName": "Moroccan Grand Prix"
@@ -341,18 +291,10 @@
 			"year": 1958
 		},
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Jackie Lewis", "points": 0, "position": null }
-					],
-					"round": 4,
-					"roundName": "French Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Jackie Lewis", "points": 0, "position": null }], "round": 4, "roundName": "French Grand Prix" }],
 			"year": 1962
 		}
 	],
 	"totalRaces": 33,
-	"winPct": 6.06061
+	"winPct": 6.0606060606060606
 }

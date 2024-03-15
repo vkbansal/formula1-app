@@ -9,63 +9,24 @@
 	"driverId": 423,
 	"driverRef": "mitter",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/MitterGerhard1968.jpg/220px-MitterGerhard1968.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Gerhard Mitter",
 	"nationality": "German",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Porsche",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Porsche",
-					"points": 3,
-					"position": 4,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Porsche",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Porsche", "points": 0, "position": null, "round": 3, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Porsche", "points": 3, "position": 4, "round": 6, "roundName": "German Grand Prix" },
+				{ "constructor": "Porsche", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1963
 		},
-		{
-			"results": [
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": 9,
-					"round": 6,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1964
-		},
-		{
-			"results": [
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1965
-		}
+		{ "results": [{ "constructor": "Lotus-Climax", "points": 0, "position": 9, "round": 6, "roundName": "German Grand Prix" }], "year": 1964 },
+		{ "results": [{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" }], "year": 1965 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 5
 }

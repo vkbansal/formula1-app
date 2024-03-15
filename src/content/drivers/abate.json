@@ -8,37 +8,16 @@
 	"driverId": 446,
 	"driverRef": "abate",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/1963-05-19_Ferrari_250_TRI_von_Abate_u._Maglioli%2C_N%C3%BCrburgring.jpg/220px-1963-05-19_Ferrari_250_TRI_von_Abate_u._Maglioli%2C_N%C3%BCrburgring.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Carlo Abate",
 	"nationality": "Italian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				}
-			],
-			"year": 1962
-		},
-		{
-			"results": [
-				{
-					"constructor": "Porsche",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				}
-			],
-			"year": 1963
-		}
+		{ "results": [{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" }], "year": 1962 },
+		{ "results": [{ "constructor": "Porsche", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }], "year": 1963 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

@@ -310,7 +310,7 @@
 			"position": 14,
 			"positionOrder": 14,
 			"positionText": "14",
-			"qualifying": { "position": null, "q1": null, "q2": null, "q3": null }
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "sauber",
@@ -462,7 +462,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 22,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 16,
+				"q1": "1:21.363",
+				"q2": "1:21.785",
+				"q3": null
+			}
 		}
 	],
 	"name": "Mexican Grand Prix",

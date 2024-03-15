@@ -120,7 +120,7 @@
 			"position": 5,
 			"positionOrder": 5,
 			"positionText": "5",
-			"qualifying": { "position": null, "q1": null, "q2": null, "q3": null }
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "mercedes",
@@ -514,7 +514,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 24,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 6,
+				"q1": "2:05.419",
+				"q2": "2:04.561",
+				"q3": "1:50.773"
+			}
 		}
 	],
 	"name": "Belgian Grand Prix",

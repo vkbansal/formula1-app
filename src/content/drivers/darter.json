@@ -13,123 +13,35 @@
 	"dob": "1913-05-05",
 	"driverId": 518,
 	"driverRef": "darter",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Duane Carter",
 	"nationality": "American",
 	"podiums": 1,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
+		{ "results": [{ "constructor": "Stevens", "points": 0, "position": 12, "round": 3, "roundName": "Indianapolis 500" }], "year": 1950 },
+		{ "results": [{ "constructor": "Deidt", "points": 0, "position": 8, "round": 2, "roundName": "Indianapolis 500" }], "year": 1951 },
+		{ "results": [{ "constructor": "Lesovsky", "points": 3, "position": 4, "round": 2, "roundName": "Indianapolis 500" }], "year": 1952 },
 		{
 			"results": [
-				{
-					"constructor": "Stevens",
-					"points": 0,
-					"position": 12,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1950
-		},
-		{
-			"results": [
-				{
-					"constructor": "Deidt",
-					"points": 0,
-					"position": 8,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1951
-		},
-		{
-			"results": [
-				{
-					"constructor": "Lesovsky",
-					"points": 3,
-					"position": 4,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1952
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 2,
-					"position": 3,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				},
-				{
-					"constructor": "Lesovsky",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
+				{ "constructor": "Lesovsky", "points": 0, "position": null, "round": 2, "roundName": "Indianapolis 500" },
+				{ "constructor": "Kurtis Kraft", "points": 2, "position": 3, "round": 2, "roundName": "Indianapolis 500" }
 			],
 			"year": 1953
 		},
 		{
 			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 1.5,
-					"position": 4,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				},
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": 15,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
+				{ "constructor": "Kurtis Kraft", "points": 0, "position": 15, "round": 2, "roundName": "Indianapolis 500" },
+				{ "constructor": "Kurtis Kraft", "points": 1.5, "position": 4, "round": 2, "roundName": "Indianapolis 500" }
 			],
 			"year": 1954
 		},
-		{
-			"results": [
-				{
-					"constructor": "Kuzma",
-					"points": 0,
-					"position": 11,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1955
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": 7,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1959
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kuzma",
-					"points": 0,
-					"position": 12,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1960
-		}
+		{ "results": [{ "constructor": "Kuzma", "points": 0, "position": 11, "round": 3, "roundName": "Indianapolis 500" }], "year": 1955 },
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": 7, "round": 2, "roundName": "Indianapolis 500" }], "year": 1959 },
+		{ "results": [{ "constructor": "Kuzma", "points": 0, "position": 12, "round": 3, "roundName": "Indianapolis 500" }], "year": 1960 }
 	],
-	"totalLaps": null,
-	"totalRaces": 8
+	"totalLaps": 0,
+	"totalRaces": 10
 }

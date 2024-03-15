@@ -9,105 +9,40 @@
 	"driverId": 217,
 	"driverRef": "zunino",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/1980_Argentine_Grand_Prix_Zunino.jpg/220px-1980_Argentine_Grand_Prix_Zunino.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Ricardo Zunino",
 	"nationality": "Argentine",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Brabham-Ford",
-					"points": 0,
-					"position": 7,
-					"round": 14,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Brabham-Ford",
-					"points": 0,
-					"position": null,
-					"round": 15,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "Brabham-Ford", "points": 0, "position": 7, "round": 14, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Brabham-Ford", "points": 0, "position": null, "round": 15, "roundName": "United States Grand Prix" }
 			],
 			"year": 1979
 		},
 		{
 			"results": [
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": 7,
-					"round": 1,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": 8,
-					"round": 2,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": 10,
-					"round": 3,
-					"roundName": "South African Grand Prix"
-				},
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "United States Grand Prix West"
-				},
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "French Grand Prix"
-				}
+				{ "constructor": "Brabham", "points": 0, "position": 7, "round": 1, "roundName": "Argentine Grand Prix" },
+				{ "constructor": "Brabham", "points": 0, "position": 8, "round": 2, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "Brabham", "points": 0, "position": 10, "round": 3, "roundName": "South African Grand Prix" },
+				{ "constructor": "Brabham", "points": 0, "position": null, "round": 4, "roundName": "United States Grand Prix West" },
+				{ "constructor": "Brabham", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Brabham", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Brabham", "points": 0, "position": null, "round": 7, "roundName": "French Grand Prix" }
 			],
 			"year": 1980
 		},
 		{
 			"results": [
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 13,
-					"round": 2,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "Tyrrell",
-					"points": 0,
-					"position": 13,
-					"round": 3,
-					"roundName": "Argentine Grand Prix"
-				}
+				{ "constructor": "Tyrrell", "points": 0, "position": 13, "round": 2, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "Tyrrell", "points": 0, "position": 13, "round": 3, "roundName": "Argentine Grand Prix" }
 			],
 			"year": 1981
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 11
 }

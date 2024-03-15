@@ -19,58 +19,36 @@
 	"seasons": [
 		{
 			"rounds": [
+				{ "results": [{ "driver": "Roy Salvadori", "points": 0, "position": 6 }], "round": 1, "roundName": "Monaco Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Roy Salvadori", "points": 0, "position": 6 }
-					],
-					"round": 1,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Colin Davis", "points": 0, "position": null },
+						{ "driver": "Roy Salvadori", "points": 0, "position": null },
 						{ "driver": "Ian Burgess", "points": 0, "position": null },
-						{ "driver": "Roy Salvadori", "points": 0, "position": null }
+						{ "driver": "Colin Davis", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Hans Herrmann", "points": 0, "position": null },
-						{ "driver": "Ian Burgess", "points": 0, "position": null }
+						{ "driver": "Ian Burgess", "points": 0, "position": null },
+						{ "driver": "Hans Herrmann", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "British Grand Prix"
 				},
-				{
-					"results": [{ "driver": "Ian Burgess", "points": 0, "position": 6 }],
-					"round": 6,
-					"roundName": "German Grand Prix"
-				},
+				{ "results": [{ "driver": "Ian Burgess", "points": 0, "position": 6 }], "round": 6, "roundName": "German Grand Prix" },
+				{ "results": [{ "driver": "Mário de Araújo Cabral", "points": 0, "position": 10 }], "round": 7, "roundName": "Portuguese Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Mário de Araújo Cabral", "points": 0, "position": 10 }
-					],
-					"round": 7,
-					"roundName": "Portuguese Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Jack Fairman", "points": 0, "position": null },
 						{ "driver": "Ian Burgess", "points": 0, "position": 14 },
-						{ "driver": "Colin Davis", "points": 0, "position": 11 }
+						{ "driver": "Colin Davis", "points": 0, "position": 11 },
+						{ "driver": "Jack Fairman", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "Italian Grand Prix"
 				},
-				{
-					"results": [
-						{ "driver": "Roy Salvadori", "points": 0, "position": null }
-					],
-					"round": 9,
-					"roundName": "United States Grand Prix"
-				}
+				{ "results": [{ "driver": "Roy Salvadori", "points": 0, "position": null }], "round": 9, "roundName": "United States Grand Prix" }
 			],
 			"year": 1959
 		},
@@ -86,65 +64,61 @@
 				},
 				{
 					"results": [
-						{ "driver": "Ian Burgess", "points": 0, "position": null },
+						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
 						{ "driver": "Masten Gregory", "points": 0, "position": null },
-						{ "driver": "Maurice Trintignant", "points": 0, "position": null }
+						{ "driver": "Ian Burgess", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Monaco Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Masten Gregory", "points": 0, "position": null },
-						{ "driver": "Maurice Trintignant", "points": 0, "position": null }
+						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
+						{ "driver": "Masten Gregory", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "Dutch Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
 						{ "driver": "Ian Burgess", "points": 0, "position": 10 },
-						{ "driver": "Masten Gregory", "points": 0, "position": 9 }
+						{ "driver": "Masten Gregory", "points": 0, "position": 9 },
+						{ "driver": "Maurice Trintignant", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Keith Greene", "points": 0, "position": null },
+						{ "driver": "Masten Gregory", "points": 0, "position": 14 },
 						{ "driver": "Ian Burgess", "points": 0, "position": null },
-						{ "driver": "Masten Gregory", "points": 0, "position": 14 }
+						{ "driver": "Keith Greene", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Masten Gregory", "points": 0, "position": null },
-						{
-							"driver": "Mário de Araújo Cabral",
-							"points": 0,
-							"position": null
-						}
+						{ "driver": "Mário de Araújo Cabral", "points": 0, "position": null },
+						{ "driver": "Masten Gregory", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "Portuguese Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Giorgio Scarlatti", "points": 0, "position": null },
-						{ "driver": "Alfonso Thiele", "points": 0, "position": null }
+						{ "driver": "Alfonso Thiele", "points": 0, "position": null },
+						{ "driver": "Giorgio Scarlatti", "points": 0, "position": null }
 					],
 					"round": 9,
 					"roundName": "Italian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Brian Naylor", "points": 0, "position": null },
-						{ "driver": "Ian Burgess", "points": 0, "position": null },
 						{ "driver": "Maurice Trintignant", "points": 0, "position": 15 },
-						{ "driver": "Wolfgang von Trips", "points": 0, "position": 9 }
+						{ "driver": "Wolfgang von Trips", "points": 0, "position": 9 },
+						{ "driver": "Ian Burgess", "points": 0, "position": null },
+						{ "driver": "Brian Naylor", "points": 0, "position": null }
 					],
 					"round": 10,
 					"roundName": "United States Grand Prix"
@@ -154,50 +128,38 @@
 		},
 		{
 			"rounds": [
+				{ "results": [{ "driver": "Maurice Trintignant", "points": 0, "position": 7 }], "round": 1, "roundName": "Monaco Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Maurice Trintignant", "points": 0, "position": 7 }
-					],
-					"round": 1,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Lorenzo Bandini", "points": 0, "position": null },
-						{ "driver": "Maurice Trintignant", "points": 0, "position": null }
+						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
+						{ "driver": "Lorenzo Bandini", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "Belgian Grand Prix"
 				},
+				{ "results": [{ "driver": "Maurice Trintignant", "points": 0, "position": 13 }], "round": 4, "roundName": "French Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Maurice Trintignant", "points": 0, "position": 13 }
-					],
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Massimo Natili", "points": 0, "position": null },
-						{ "driver": "Lorenzo Bandini", "points": 0, "position": 12 }
+						{ "driver": "Lorenzo Bandini", "points": 0, "position": 12 },
+						{ "driver": "Massimo Natili", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Lorenzo Bandini", "points": 0, "position": null },
-						{ "driver": "Maurice Trintignant", "points": 0, "position": null }
+						{ "driver": "Maurice Trintignant", "points": 0, "position": null },
+						{ "driver": "Lorenzo Bandini", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "German Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Massimo Natili", "points": 0, "position": null },
 						{ "driver": "Renato Pirocchi", "points": 0, "position": 12 },
 						{ "driver": "Maurice Trintignant", "points": 0, "position": 9 },
-						{ "driver": "Lorenzo Bandini", "points": 0, "position": 8 }
+						{ "driver": "Lorenzo Bandini", "points": 0, "position": 8 },
+						{ "driver": "Massimo Natili", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "Italian Grand Prix"
@@ -207,127 +169,107 @@
 		},
 		{
 			"rounds": [
-				{
-					"results": [
-						{ "driver": "Ernesto Brambilla", "points": 0, "position": null }
-					],
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Trevor Blokdyk", "points": 0, "position": 12 }
-					],
-					"round": 10,
-					"roundName": "South African Grand Prix"
-				}
+				{ "results": [{ "driver": "Ernesto Brambilla", "points": 0, "position": null }], "round": 7, "roundName": "Italian Grand Prix" },
+				{ "results": [{ "driver": "Trevor Blokdyk", "points": 0, "position": 12 }], "round": 10, "roundName": "South African Grand Prix" }
 			],
 			"year": 1963
 		},
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "David Clapham", "points": 0, "position": null }
-					],
-					"round": 1,
-					"roundName": "South African Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "David Clapham", "points": 0, "position": null }], "round": 1, "roundName": "South African Grand Prix" }],
 			"year": 1965
 		},
 		{
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
+						{ "driver": "Richie Ginther", "points": 0, "position": null },
 						{ "driver": "Guy Ligier", "points": 0, "position": null },
-						{ "driver": "Richie Ginther", "points": 0, "position": null }
+						{ "driver": "Jo Bonnier", "points": 0, "position": null },
+						{ "driver": "Jochen Rindt", "points": 0, "position": null }
 					],
 					"round": 1,
 					"roundName": "Monaco Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jo Siffert", "points": 0, "position": null },
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
-						{ "driver": "Guy Ligier", "points": 0, "position": null },
 						{ "driver": "Richie Ginther", "points": 2, "position": 5 },
-						{ "driver": "Jochen Rindt", "points": 6, "position": 2 }
+						{ "driver": "Jochen Rindt", "points": 6, "position": 2 },
+						{ "driver": "Guy Ligier", "points": 0, "position": null },
+						{ "driver": "Jo Bonnier", "points": 0, "position": null },
+						{ "driver": "Jo Siffert", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Belgian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "John Surtees", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": null },
-						{ "driver": "Guy Ligier", "points": 0, "position": null },
 						{ "driver": "Chris Amon", "points": 0, "position": 8 },
-						{ "driver": "Jochen Rindt", "points": 3, "position": 4 }
+						{ "driver": "Jochen Rindt", "points": 3, "position": 4 },
+						{ "driver": "Guy Ligier", "points": 0, "position": null },
+						{ "driver": "Jo Siffert", "points": 0, "position": null },
+						{ "driver": "John Surtees", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "John Surtees", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": null },
 						{ "driver": "Guy Ligier", "points": 0, "position": 10 },
-						{ "driver": "Jochen Rindt", "points": 2, "position": 5 }
+						{ "driver": "Jochen Rindt", "points": 2, "position": 5 },
+						{ "driver": "Jo Siffert", "points": 0, "position": null },
+						{ "driver": "John Surtees", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
-						{ "driver": "John Surtees", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": null },
 						{ "driver": "Guy Ligier", "points": 0, "position": 9 },
-						{ "driver": "Jo Bonnier", "points": 0, "position": 7 }
+						{ "driver": "Jo Bonnier", "points": 0, "position": 7 },
+						{ "driver": "Jo Siffert", "points": 0, "position": null },
+						{ "driver": "John Surtees", "points": 0, "position": null },
+						{ "driver": "Jochen Rindt", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "Dutch Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Guy Ligier", "points": 0, "position": null },
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
 						{ "driver": "Jochen Rindt", "points": 4, "position": 3 },
-						{ "driver": "John Surtees", "points": 6, "position": 2 }
+						{ "driver": "John Surtees", "points": 6, "position": 2 },
+						{ "driver": "Jo Bonnier", "points": 0, "position": null },
+						{ "driver": "Guy Ligier", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "German Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
-						{ "driver": "John Surtees", "points": 0, "position": null },
+						{ "driver": "Jochen Rindt", "points": 3, "position": 4 },
 						{ "driver": "Jo Siffert", "points": 0, "position": null },
-						{ "driver": "Jochen Rindt", "points": 3, "position": 4 }
+						{ "driver": "John Surtees", "points": 0, "position": null },
+						{ "driver": "Jo Bonnier", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "Italian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
 						{ "driver": "Jo Siffert", "points": 3, "position": 4 },
 						{ "driver": "John Surtees", "points": 4, "position": 3 },
-						{ "driver": "Jochen Rindt", "points": 6, "position": 2 }
+						{ "driver": "Jochen Rindt", "points": 6, "position": 2 },
+						{ "driver": "Jo Bonnier", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "United States Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Moisés Solana", "points": 0, "position": null },
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": null },
 						{ "driver": "Jo Bonnier", "points": 1, "position": 6 },
-						{ "driver": "John Surtees", "points": 9, "position": 1 }
+						{ "driver": "John Surtees", "points": 9, "position": 1 },
+						{ "driver": "Jo Siffert", "points": 0, "position": null },
+						{ "driver": "Jochen Rindt", "points": 0, "position": null },
+						{ "driver": "Moisés Solana", "points": 0, "position": null }
 					],
 					"round": 9,
 					"roundName": "Mexican Grand Prix"
@@ -339,99 +281,99 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
+						{ "driver": "Pedro Rodríguez", "points": 9, "position": 1 },
 						{ "driver": "Jo Siffert", "points": 0, "position": null },
-						{ "driver": "Pedro Rodríguez", "points": 9, "position": 1 }
+						{ "driver": "Jochen Rindt", "points": 0, "position": null },
+						{ "driver": "Jo Bonnier", "points": 0, "position": null }
 					],
 					"round": 1,
 					"roundName": "South African Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
+						{ "driver": "Pedro Rodríguez", "points": 2, "position": 5 },
 						{ "driver": "Jo Siffert", "points": 0, "position": null },
-						{ "driver": "Pedro Rodríguez", "points": 2, "position": 5 }
+						{ "driver": "Jochen Rindt", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Monaco Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Pedro Rodríguez", "points": 0, "position": null },
+						{ "driver": "Jo Siffert", "points": 0, "position": 10 },
 						{ "driver": "Jochen Rindt", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": 10 }
+						{ "driver": "Pedro Rodríguez", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "Dutch Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
 						{ "driver": "Guy Ligier", "points": 0, "position": 10 },
 						{ "driver": "Pedro Rodríguez", "points": 0, "position": 9 },
 						{ "driver": "Jo Siffert", "points": 0, "position": 7 },
-						{ "driver": "Jochen Rindt", "points": 3, "position": 4 }
+						{ "driver": "Jochen Rindt", "points": 3, "position": 4 },
+						{ "driver": "Jo Bonnier", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "Belgian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
-						{ "driver": "Guy Ligier", "points": 0, "position": null },
 						{ "driver": "Pedro Rodríguez", "points": 1, "position": 6 },
-						{ "driver": "Jo Siffert", "points": 3, "position": 4 }
+						{ "driver": "Jo Siffert", "points": 3, "position": 4 },
+						{ "driver": "Guy Ligier", "points": 0, "position": null },
+						{ "driver": "Jochen Rindt", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": null },
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
 						{ "driver": "Alan Rees", "points": 0, "position": 9 },
-						{ "driver": "Pedro Rodríguez", "points": 2, "position": 5 }
+						{ "driver": "Pedro Rodríguez", "points": 2, "position": 5 },
+						{ "driver": "Jochen Rindt", "points": 0, "position": null },
+						{ "driver": "Jo Siffert", "points": 0, "position": null },
+						{ "driver": "Jo Bonnier", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "British Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": null },
 						{ "driver": "Pedro Rodríguez", "points": 0, "position": 11 },
-						{ "driver": "Jo Bonnier", "points": 2, "position": 6 }
+						{ "driver": "Jo Bonnier", "points": 2, "position": 6 },
+						{ "driver": "Jo Siffert", "points": 0, "position": null },
+						{ "driver": "Jochen Rindt", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "German Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
 						{ "driver": "Richard Attwood", "points": 0, "position": 10 },
-						{ "driver": "Jo Bonnier", "points": 0, "position": 8 }
+						{ "driver": "Jo Bonnier", "points": 0, "position": 8 },
+						{ "driver": "Jochen Rindt", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "Canadian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jo Bonnier", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": null },
 						{ "driver": "Jacky Ickx", "points": 1, "position": 6 },
-						{ "driver": "Jochen Rindt", "points": 3, "position": 4 }
+						{ "driver": "Jochen Rindt", "points": 3, "position": 4 },
+						{ "driver": "Jo Siffert", "points": 0, "position": null },
+						{ "driver": "Jo Bonnier", "points": 0, "position": null }
 					],
 					"round": 9,
 					"roundName": "Italian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jochen Rindt", "points": 0, "position": null },
-						{ "driver": "Jacky Ickx", "points": 0, "position": null },
 						{ "driver": "Jo Bonnier", "points": 1, "position": 6 },
-						{ "driver": "Jo Siffert", "points": 3, "position": 4 }
+						{ "driver": "Jo Siffert", "points": 3, "position": 4 },
+						{ "driver": "Jacky Ickx", "points": 0, "position": null },
+						{ "driver": "Jochen Rindt", "points": 0, "position": null }
 					],
 					"round": 10,
 					"roundName": "United States Grand Prix"
@@ -452,9 +394,9 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Brian Redman", "points": 0, "position": null },
+						{ "driver": "Jo Siffert", "points": 0, "position": 7 },
 						{ "driver": "Jo Bonnier", "points": 0, "position": null },
-						{ "driver": "Jo Siffert", "points": 0, "position": 7 }
+						{ "driver": "Brian Redman", "points": 0, "position": null }
 					],
 					"round": 1,
 					"roundName": "South African Grand Prix"
@@ -463,16 +405,10 @@
 			"year": 1968
 		},
 		{
-			"rounds": [
-				{
-					"results": [{ "driver": "Vic Elford", "points": 0, "position": 7 }],
-					"round": 3,
-					"roundName": "Monaco Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Vic Elford", "points": 0, "position": 7 }], "round": 3, "roundName": "Monaco Grand Prix" }],
 			"year": 1969
 		}
 	],
 	"totalRaces": 46,
-	"winPct": 4.34783
+	"winPct": 4.3478260869565215
 }

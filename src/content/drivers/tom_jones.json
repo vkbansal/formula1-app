@@ -4,25 +4,16 @@
 	"dob": "1943-04-26",
 	"driverId": 393,
 	"driverRef": "tom_jones",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Tom Jones",
 	"nationality": "American",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Cooper-Climax",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Canadian Grand Prix"
-				}
-			],
-			"year": 1967
-		}
+		{ "results": [{ "constructor": "Cooper-Climax", "points": 0, "position": null, "round": 8, "roundName": "Canadian Grand Prix" }], "year": 1967 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 1
 }

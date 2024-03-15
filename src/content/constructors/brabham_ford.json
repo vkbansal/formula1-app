@@ -15,15 +15,7 @@
 	"raceWins": 2,
 	"seasons": [
 		{
-			"rounds": [
-				{
-					"results": [
-						{ "driver": "Frank Gardner", "points": 0, "position": null }
-					],
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Frank Gardner", "points": 0, "position": null }], "round": 5, "roundName": "British Grand Prix" }],
 			"year": 1964
 		},
 		{
@@ -40,59 +32,53 @@
 			"year": 1965
 		},
 		{
-			"rounds": [
-				{
-					"results": [{ "driver": "Alan Rees", "points": 0, "position": 7 }],
-					"round": 7,
-					"roundName": "German Grand Prix"
-				}
-			],
+			"rounds": [{ "results": [{ "driver": "Alan Rees", "points": 0, "position": 7 }], "round": 7, "roundName": "German Grand Prix" }],
 			"year": 1967
 		},
 		{
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Jacky Ickx", "points": 0, "position": null },
-						{ "driver": "Jack Brabham", "points": 0, "position": null }
+						{ "driver": "Jack Brabham", "points": 0, "position": null },
+						{ "driver": "Jacky Ickx", "points": 0, "position": null }
 					],
 					"round": 1,
 					"roundName": "South African Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Piers Courage", "points": 0, "position": null },
+						{ "driver": "Jacky Ickx", "points": 1, "position": 6 },
 						{ "driver": "Jack Brabham", "points": 0, "position": null },
-						{ "driver": "Jacky Ickx", "points": 1, "position": 6 }
+						{ "driver": "Piers Courage", "points": 0, "position": null }
 					],
 					"round": 2,
 					"roundName": "Spanish Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jack Brabham", "points": 0, "position": null },
-						{ "driver": "Silvio Moser", "points": 0, "position": null },
+						{ "driver": "Piers Courage", "points": 6, "position": 2 },
 						{ "driver": "Jacky Ickx", "points": 0, "position": null },
-						{ "driver": "Piers Courage", "points": 6, "position": 2 }
+						{ "driver": "Silvio Moser", "points": 0, "position": null },
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
 					],
 					"round": 3,
 					"roundName": "Monaco Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Piers Courage", "points": 0, "position": null },
-						{ "driver": "Silvio Moser", "points": 0, "position": null },
 						{ "driver": "Jack Brabham", "points": 1, "position": 6 },
-						{ "driver": "Jacky Ickx", "points": 2, "position": 5 }
+						{ "driver": "Jacky Ickx", "points": 2, "position": 5 },
+						{ "driver": "Silvio Moser", "points": 0, "position": null },
+						{ "driver": "Piers Courage", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "Dutch Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Piers Courage", "points": 0, "position": null },
 						{ "driver": "Silvio Moser", "points": 0, "position": 7 },
-						{ "driver": "Jacky Ickx", "points": 4, "position": 3 }
+						{ "driver": "Jacky Ickx", "points": 4, "position": 3 },
+						{ "driver": "Piers Courage", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "French Grand Prix"
@@ -107,38 +93,38 @@
 				},
 				{
 					"results": [
-						{ "driver": "Piers Courage", "points": 0, "position": null },
-						{ "driver": "Jacky Ickx", "points": 9, "position": 1 }
+						{ "driver": "Jacky Ickx", "points": 9, "position": 1 },
+						{ "driver": "Piers Courage", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "German Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jack Brabham", "points": 0, "position": null },
-						{ "driver": "Silvio Moser", "points": 0, "position": null },
 						{ "driver": "Jacky Ickx", "points": 0, "position": 10 },
-						{ "driver": "Piers Courage", "points": 2, "position": 5 }
+						{ "driver": "Piers Courage", "points": 2, "position": 5 },
+						{ "driver": "Silvio Moser", "points": 0, "position": null },
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "Italian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Silvio Moser", "points": 0, "position": null },
-						{ "driver": "Piers Courage", "points": 0, "position": null },
 						{ "driver": "Jack Brabham", "points": 6, "position": 2 },
-						{ "driver": "Jacky Ickx", "points": 9, "position": 1 }
+						{ "driver": "Jacky Ickx", "points": 9, "position": 1 },
+						{ "driver": "Piers Courage", "points": 0, "position": null },
+						{ "driver": "Silvio Moser", "points": 0, "position": null }
 					],
 					"round": 9,
 					"roundName": "Canadian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jacky Ickx", "points": 0, "position": null },
 						{ "driver": "Silvio Moser", "points": 1, "position": 6 },
 						{ "driver": "Jack Brabham", "points": 3, "position": 4 },
-						{ "driver": "Piers Courage", "points": 6, "position": 2 }
+						{ "driver": "Piers Courage", "points": 6, "position": 2 },
+						{ "driver": "Jacky Ickx", "points": 0, "position": null }
 					],
 					"round": 10,
 					"roundName": "United States Grand Prix"
@@ -160,55 +146,49 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Emilio de Villota", "points": 0, "position": null },
-						{ "driver": "Loris Kessel", "points": 0, "position": null }
+						{ "driver": "Loris Kessel", "points": 0, "position": null },
+						{ "driver": "Emilio de Villota", "points": 0, "position": null }
 					],
 					"round": 4,
 					"roundName": "Spanish Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Patrick Nève", "points": 0, "position": null },
-						{ "driver": "Loris Kessel", "points": 0, "position": 12 }
+						{ "driver": "Loris Kessel", "points": 0, "position": 12 },
+						{ "driver": "Patrick Nève", "points": 0, "position": null }
 					],
 					"round": 5,
 					"roundName": "Belgian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Jac Nelleman", "points": 0, "position": null },
-						{ "driver": "Loris Kessel", "points": 0, "position": null }
+						{ "driver": "Loris Kessel", "points": 0, "position": null },
+						{ "driver": "Jac Nelleman", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "Swedish Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Loris Kessel", "points": 0, "position": null },
-						{ "driver": "Damien Magee", "points": 0, "position": null }
+						{ "driver": "Damien Magee", "points": 0, "position": null },
+						{ "driver": "Loris Kessel", "points": 0, "position": null }
 					],
 					"round": 8,
 					"roundName": "French Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Lella Lombardi", "points": 0, "position": null },
-						{ "driver": "Bob Evans", "points": 0, "position": null }
+						{ "driver": "Bob Evans", "points": 0, "position": null },
+						{ "driver": "Lella Lombardi", "points": 0, "position": null }
 					],
 					"round": 9,
 					"roundName": "British Grand Prix"
 				},
+				{ "results": [{ "driver": "Lella Lombardi", "points": 0, "position": null }], "round": 10, "roundName": "German Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Lella Lombardi", "points": 0, "position": null }
-					],
-					"round": 10,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Loris Kessel", "points": 0, "position": null },
-						{ "driver": "Lella Lombardi", "points": 0, "position": 12 }
+						{ "driver": "Lella Lombardi", "points": 0, "position": 12 },
+						{ "driver": "Loris Kessel", "points": 0, "position": null }
 					],
 					"round": 11,
 					"roundName": "Austrian Grand Prix"
@@ -220,17 +200,17 @@
 			"rounds": [
 				{
 					"results": [
-						{ "driver": "Niki Lauda", "points": 0, "position": null },
+						{ "driver": "Ricardo Zunino", "points": 0, "position": 7 },
 						{ "driver": "Nelson Piquet", "points": 0, "position": null },
-						{ "driver": "Ricardo Zunino", "points": 0, "position": 7 }
+						{ "driver": "Niki Lauda", "points": 0, "position": null }
 					],
 					"round": 14,
 					"roundName": "Canadian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Ricardo Zunino", "points": 0, "position": null },
-						{ "driver": "Nelson Piquet", "points": 0, "position": null }
+						{ "driver": "Nelson Piquet", "points": 0, "position": null },
+						{ "driver": "Ricardo Zunino", "points": 0, "position": null }
 					],
 					"round": 15,
 					"roundName": "United States Grand Prix"
@@ -240,5 +220,5 @@
 		}
 	],
 	"totalRaces": 23,
-	"winPct": 8.69565
+	"winPct": 8.695652173913043
 }

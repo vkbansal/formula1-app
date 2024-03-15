@@ -8,37 +8,16 @@
 	"driverId": 377,
 	"driverRef": "jo_schlesser",
 	"image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Joschlesserportrait.jpg/220px-Joschlesserportrait.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Jo Schlesser",
 	"nationality": "French",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Matra",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1967
-		},
-		{
-			"results": [
-				{
-					"constructor": "Honda",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "French Grand Prix"
-				}
-			],
-			"year": 1968
-		}
+		{ "results": [{ "constructor": "Matra", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" }], "year": 1967 },
+		{ "results": [{ "constructor": "Honda", "points": 0, "position": null, "round": 6, "roundName": "French Grand Prix" }], "year": 1968 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

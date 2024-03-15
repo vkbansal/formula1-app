@@ -478,7 +478,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 22,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 9,
+				"q1": "1:27.464",
+				"q2": "1:26.314",
+				"q3": "1:26.451"
+			}
 		},
 		{
 			"constructorRef": "hrt",
@@ -489,7 +495,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 23,
-			"positionText": "F"
+			"positionText": "F",
+			"qualifying": { "position": 23, "q1": "1:33.495", "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "hrt",
@@ -500,7 +507,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 24,
-			"positionText": "F"
+			"positionText": "F",
+			"qualifying": { "position": 24, "q1": "1:33.643", "q2": null, "q3": null }
 		}
 	],
 	"name": "Australian Grand Prix",

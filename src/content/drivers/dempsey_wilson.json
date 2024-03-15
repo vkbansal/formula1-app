@@ -7,37 +7,17 @@
 	"dob": "1927-03-11",
 	"driverId": 539,
 	"driverRef": "dempsey_wilson",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Dempsey Wilson",
 	"nationality": "American",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Kuzma",
-					"points": 0,
-					"position": null,
-					"round": 4,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1958
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": 33,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1960
-		}
+		{ "results": [{ "constructor": "Kuzma", "points": 0, "position": null, "round": 4, "roundName": "Indianapolis 500" }], "year": 1958 },
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": 33, "round": 3, "roundName": "Indianapolis 500" }], "year": 1960 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

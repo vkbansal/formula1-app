@@ -9,84 +9,32 @@
 	"driverId": 283,
 	"driverRef": "wilds",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Racing_driver_Mike_Wilds.jpg/220px-Racing_driver_Mike_Wilds.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Mike Wilds",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "March",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Ensign",
-					"points": 0,
-					"position": null,
-					"round": 12,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Ensign",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Ensign",
-					"points": 0,
-					"position": null,
-					"round": 14,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Ensign",
-					"points": 0,
-					"position": null,
-					"round": 15,
-					"roundName": "United States Grand Prix"
-				}
+				{ "constructor": "March", "points": 0, "position": null, "round": 10, "roundName": "British Grand Prix" },
+				{ "constructor": "Ensign", "points": 0, "position": null, "round": 12, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Ensign", "points": 0, "position": null, "round": 13, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Ensign", "points": 0, "position": null, "round": 14, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Ensign", "points": 0, "position": null, "round": 15, "roundName": "United States Grand Prix" }
 			],
 			"year": 1974
 		},
 		{
 			"results": [
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Argentine Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Brazilian Grand Prix"
-				}
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" }
 			],
 			"year": 1975
 		},
-		{
-			"results": [
-				{
-					"constructor": "Shadow",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1976
-		}
+		{ "results": [{ "constructor": "Shadow", "points": 0, "position": null, "round": 9, "roundName": "British Grand Prix" }], "year": 1976 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 8
 }

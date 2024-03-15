@@ -10,75 +10,25 @@
 	"driverId": 245,
 	"driverRef": "trimmer",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tony_Trimmer_1975_RoC.jpg/220px-Tony_Trimmer_1975_RoC.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Tony Trimmer",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Maki",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "German Grand Prix"
-				},
-				{
-					"constructor": "Maki",
-					"points": 0,
-					"position": null,
-					"round": 12,
-					"roundName": "Austrian Grand Prix"
-				},
-				{
-					"constructor": "Maki",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Maki", "points": 0, "position": null, "round": 11, "roundName": "German Grand Prix" },
+				{ "constructor": "Maki", "points": 0, "position": null, "round": 12, "roundName": "Austrian Grand Prix" },
+				{ "constructor": "Maki", "points": 0, "position": null, "round": 13, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1975
 		},
-		{
-			"results": [
-				{
-					"constructor": "Maki",
-					"points": 0,
-					"position": null,
-					"round": 16,
-					"roundName": "Japanese Grand Prix"
-				}
-			],
-			"year": 1976
-		},
-		{
-			"results": [
-				{
-					"constructor": "Surtees",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1977
-		},
-		{
-			"results": [
-				{
-					"constructor": "McLaren",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1978
-		}
+		{ "results": [{ "constructor": "Maki", "points": 0, "position": null, "round": 16, "roundName": "Japanese Grand Prix" }], "year": 1976 },
+		{ "results": [{ "constructor": "Surtees", "points": 0, "position": null, "round": 10, "roundName": "British Grand Prix" }], "year": 1977 },
+		{ "results": [{ "constructor": "McLaren", "points": 0, "position": null, "round": 10, "roundName": "British Grand Prix" }], "year": 1978 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 6
 }

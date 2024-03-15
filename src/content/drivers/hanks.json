@@ -13,116 +13,29 @@
 	"dob": "1914-07-13",
 	"driverId": 611,
 	"driverRef": "hanks",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Sam Hanks",
 	"nationality": "American",
 	"podiums": 4,
+	"poles": 0,
 	"raceWins": 1,
 	"seasons": [
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 3, "roundName": "Indianapolis 500" }], "year": 1950 },
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 2, "roundName": "Indianapolis 500" }], "year": 1951 },
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 4, "position": 3, "round": 2, "roundName": "Indianapolis 500" }], "year": 1952 },
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 2, "position": 3, "round": 2, "roundName": "Indianapolis 500" }], "year": 1953 },
 		{
 			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1950
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1951
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 4,
-					"position": 3,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1952
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 2,
-					"position": 3,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1953
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": 11,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				},
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Indianapolis 500"
-				}
+				{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 2, "roundName": "Indianapolis 500" },
+				{ "constructor": "Kurtis Kraft", "points": 0, "position": 11, "round": 2, "roundName": "Indianapolis 500" }
 			],
 			"year": 1954
 		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1955
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 6,
-					"position": 2,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1956
-		},
-		{
-			"results": [
-				{
-					"constructor": "Epperly",
-					"points": 8,
-					"position": 1,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1957
-		}
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 3, "roundName": "Indianapolis 500" }], "year": 1955 },
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 6, "position": 2, "round": 3, "roundName": "Indianapolis 500" }], "year": 1956 },
+		{ "results": [{ "constructor": "Epperly", "points": 8, "position": 1, "round": 3, "roundName": "Indianapolis 500" }], "year": 1957 }
 	],
-	"totalLaps": null,
-	"totalRaces": 8
+	"totalLaps": 0,
+	"totalRaces": 9
 }

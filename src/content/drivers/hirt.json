@@ -8,63 +8,25 @@
 	"dob": "1910-03-30",
 	"driverId": 721,
 	"driverRef": "hirt",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Peter Hirt",
 	"nationality": "Swiss",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
+		{ "results": [{ "constructor": "Veritas", "points": 0, "position": null, "round": 1, "roundName": "Swiss Grand Prix" }], "year": 1951 },
 		{
 			"results": [
-				{
-					"constructor": "Veritas",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "Swiss Grand Prix"
-				}
-			],
-			"year": 1951
-		},
-		{
-			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": 7,
-					"round": 1,
-					"roundName": "Swiss Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": 11,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
+				{ "constructor": "Ferrari", "points": 0, "position": 7, "round": 1, "roundName": "Swiss Grand Prix" },
+				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
+				{ "constructor": "Ferrari", "points": 0, "position": 11, "round": 4, "roundName": "French Grand Prix" }
 			],
 			"year": 1952
 		},
-		{
-			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Swiss Grand Prix"
-				}
-			],
-			"year": 1953
-		}
+		{ "results": [{ "constructor": "Ferrari", "points": 0, "position": null, "round": 8, "roundName": "Swiss Grand Prix" }], "year": 1953 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 5
 }

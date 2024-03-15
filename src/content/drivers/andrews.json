@@ -7,37 +7,17 @@
 	"dob": "1920-06-15",
 	"driverId": 631,
 	"driverRef": "andrews",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Keith Andrews",
 	"nationality": "American",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Schroeder",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1955
-		},
-		{
-			"results": [
-				{
-					"constructor": "Kurtis Kraft",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "Indianapolis 500"
-				}
-			],
-			"year": 1956
-		}
+		{ "results": [{ "constructor": "Schroeder", "points": 0, "position": null, "round": 3, "roundName": "Indianapolis 500" }], "year": 1955 },
+		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 3, "roundName": "Indianapolis 500" }], "year": 1956 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

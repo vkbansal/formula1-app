@@ -8,37 +8,16 @@
 	"driverId": 740,
 	"driverRef": "comotti",
 	"image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Franco_Comotti.jpg/220px-Franco_Comotti.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Franco Comotti",
 	"nationality": "Italian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{
-			"results": [
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				}
-			],
-			"year": 1950
-		},
-		{
-			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": 12,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				}
-			],
-			"year": 1952
-		}
+		{ "results": [{ "constructor": "Maserati", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }], "year": 1950 },
+		{ "results": [{ "constructor": "Ferrari", "points": 0, "position": 12, "round": 4, "roundName": "French Grand Prix" }], "year": 1952 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

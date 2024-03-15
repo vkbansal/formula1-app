@@ -2,26 +2,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { z, ZodError } from 'zod';
 import prompts from 'prompts';
 import meow from 'meow';
-import mariadb from 'mariadb';
 import { SingleBar, Presets } from 'cli-progress';
 import stringify from 'fast-json-stable-stringify';
 import prettier from 'prettier';
-import { kebabCase } from 'change-case';
-import deburr from 'lodash.deburr';
 
-import driverImages from './driver-images.json' assert { type: 'json' };
-import { HomePageData } from './types/homepage.js';
-import { SeasonsList } from './types/seasons-list.js';
-import * as driverTypes from './types/drivers.js';
-import * as contructorTypes from './types/constructors.js';
-import * as seasonTypes from './types/seasons.js';
-import * as raceTypes from './types/rounds.js';
+import { DataGenerator, sluggify } from './DataGenerator';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const queries_dir = path.resolve(__dirname, './queries');
 
 /** CLI INIT ******************************************************************/
 
@@ -29,137 +18,49 @@ const cli = meow('', {
 	importMeta: import.meta,
 	flags: {
 		query: { type: 'string', isMultiple: true },
-		allQueries: { type: 'boolean' },
-		debug: { type: 'boolean' },
 	},
 });
 
-const { query: queries = [], allQueries, debug } = cli.flags;
-
-/** DB INIT *******************************************************************/
-const db = await mariadb.createConnection({
-	host: 'localhost',
-	user: 'root',
-	database: 'f1db',
-	bigIntAsNumber: true,
-	dateStrings: true,
-});
+const { query: queries = [], allQueries } = cli.flags;
 
 /** Common Functions **********************************************************/
-function debugLog(msg: string): void {
-	if (debug) {
-		// eslint-disable-next-line no-console
-		console.log(msg);
-	}
-}
-
-function formatZodError(e: z.ZodIssue): string {
-	switch (e.code) {
-		case 'invalid_arguments':
-			return `${e.path.join('.')} =>`;
-		case 'invalid_date':
-			return `${e.path.join('.')} =>`;
-		case 'invalid_enum_value':
-			return `${e.path.join('.')} =>`;
-		case 'invalid_intersection_types':
-			return `${e.path.join('.')} =>`;
-		case 'invalid_literal':
-			return `${e.path.join('.')} =>`;
-		case 'invalid_return_type':
-			return `${e.path.join('.')} =>`;
-		case 'invalid_string':
-			return `${e.path.join('.')} =>`;
-		case 'invalid_type':
-			return `${e.path.join('.')} => Expected: ${e.expected}; received: ${
-				e.received
-			};`;
-		case 'invalid_union':
-			return `${e.path.join('.')} =>`;
-		case 'invalid_union_discriminator':
-			return `${e.path.join('.')} =>`;
-		case 'not_finite':
-			return `${e.path.join('.')} =>`;
-		case 'not_multiple_of':
-			return `${e.path.join('.')} =>`;
-		case 'too_big':
-			return `${e.path.join('.')} =>`;
-		case 'too_small':
-			return `${e.path.join('.')} =>`;
-		case 'unrecognized_keys':
-			return `${e.path.join('.')} =>`;
-		default:
-			return stringify(e);
-	}
-}
-
-const queryCache: Record<string, string> = {};
-
 async function cleanDataDir(fileOrFolder: string): Promise<void> {
 	return fs.rm(fileOrFolder, { recursive: true, force: true });
-}
-
-async function executeQueryFromFile(
-	filepath: string,
-	params = {},
-): Promise<unknown[]> {
-	const sql =
-		queryCache[filepath] ||
-		(await fs.readFile(path.resolve(queries_dir, filepath), 'utf8'));
-	debugLog(
-		`executing query from ${filepath} with params => ${JSON.stringify(params)}`,
-	);
-
-	if (!queryCache[filepath]) {
-		queryCache[filepath] = sql;
-	}
-
-	const data = await db.query(
-		{ sql, namedPlaceholders: true, bigIntAsNumber: true },
-		params,
-	);
-
-	return data;
 }
 
 async function writeDataFile(filepath: string, data: unknown): Promise<void> {
 	await fs.mkdir(path.dirname(filepath), { recursive: true });
 	const formattedCode = await prettier.format(stringify(data), {
+		printWidth: 80,
 		useTabs: true,
 		parser: 'json',
-	})
+	});
 
-	return fs.writeFile(
-		filepath,
-		formattedCode,
-		'utf8',
-	);
+	return fs.writeFile(filepath, formattedCode, 'utf8');
 }
 
 /** Query Functions ***********************************************************/
 const bar = new SingleBar({}, Presets.shades_classic);
 
+const dataGenerator = new DataGenerator();
+
 const queryFns: Record<string, () => Promise<void>> = {
 	async homepage() {
-		const [data] = await executeQueryFromFile('home-page.sql');
-
 		return writeDataFile(
 			path.resolve(__dirname, '../src/data/homepage.json'),
-			HomePageData.parse(data),
+			dataGenerator.getHomePageData(),
 		);
 	},
 
 	async seasons_list() {
-		const data = await executeQueryFromFile('seasons-list.sql');
-
 		return writeDataFile(
 			path.resolve(__dirname, '../src/data/seasons-list.json'),
-			SeasonsList.parse(data),
+			dataGenerator.getSeasonsList(),
 		);
 	},
 
 	async seasons() {
-		const rawData = await executeQueryFromFile('seasons-list.sql');
-		const data = SeasonsList.parse(rawData);
+		const data = dataGenerator.getSeasonsInstance().getData();
 		const dataDir = path.resolve(__dirname, `../src/content/seasons`);
 
 		bar.start(data.length, 0);
@@ -169,38 +70,18 @@ const queryFns: Record<string, () => Promise<void>> = {
 		await cleanDataDir(dataDir);
 
 		for (const row of data) {
-			const rawRounds = await executeQueryFromFile('seasons/rounds.sql', row);
-			const rounds = z
-				.array(seasonTypes.SeasonRound)
-				.parse(rawRounds)
-				.map((round) => ({ ...round, slug: deburr(kebabCase(round.name)) }));
-			const rawTeams = await executeQueryFromFile('seasons/teams.sql', row);
-			const teams = z.array(seasonTypes.Team).parse(rawTeams);
 			bar.update(++i);
-
 			await writeDataFile(
 				path.resolve(dataDir, `${row.year}.json`),
-				seasonTypes.SeasonData.parse({
-					...row,
-					rounds,
-					teams,
-				}),
+				dataGenerator.getSeasonData(row.year),
 			);
 		}
 
 		bar.stop();
 	},
 	async drivers(): Promise<void> {
-		const rawData = await executeQueryFromFile('drivers/drivers.sql');
+		const data = dataGenerator.getDriversInstance().getData();
 		const dataDir = path.resolve(__dirname, `../src/content/drivers`);
-
-		const data = z
-			.array(
-				driverTypes.DriverData.partial({ seasons: true }).extend({
-					hasImage: z.preprocess((arg) => !!arg, z.boolean()),
-				}),
-			)
-			.parse(rawData);
 
 		bar.start(data.length, 0);
 
@@ -209,30 +90,19 @@ const queryFns: Record<string, () => Promise<void>> = {
 		await cleanDataDir(dataDir);
 
 		for (const driver of data) {
-			driver.image = (driverImages as Record<string, string>)[driver.driverRef];
-
-			const rawSeasonData = await executeQueryFromFile(
-				'drivers/driver-seasons.sql',
-				driver,
-			);
-			const seasonData = z.array(driverTypes.DriverSeaon).parse(rawSeasonData);
-			driver.seasons = seasonData.filter((row) => typeof row.year === 'number');
 			bar.update(++i);
 
 			await writeDataFile(
 				path.resolve(dataDir, `${driver.driverRef}.json`),
-				driverTypes.DriverData.parse(driver),
+				dataGenerator.getDriverData(driver),
 			);
 		}
 
 		bar.stop();
 	},
 	async constructors() {
-		const rawData = await executeQueryFromFile('constructors/constructors.sql');
+		const data = dataGenerator.getConstructorsInstance().getData();
 		const dataDir = path.resolve(__dirname, `../src/content/constructors`);
-		const data = z
-			.array(contructorTypes.ConstructorData.partial({ seasons: true }))
-			.parse(rawData);
 
 		bar.start(data.length, 0);
 		let i = 0;
@@ -240,76 +110,33 @@ const queryFns: Record<string, () => Promise<void>> = {
 		await cleanDataDir(dataDir);
 
 		for (const row of data) {
-			const rawSeasonData = await executeQueryFromFile(
-				'constructors/constructor-seasons.sql',
-				row,
-			);
-			const seasonData = z
-				.array(contructorTypes.ConstructorSeaon)
-				.parse(rawSeasonData);
-			row.seasons = seasonData.filter((row) => typeof row.year === 'number');
 			bar.update(++i);
 
 			await writeDataFile(
 				path.resolve(dataDir, `${row.constructorRef}.json`),
-				contructorTypes.ConstructorData.parse(row),
+				dataGenerator.getConstructorData(row),
 			);
 		}
 
 		bar.stop();
 	},
 	async races() {
-		const rawData = await executeQueryFromFile('rounds/races-list.sql');
+		const data = dataGenerator.getRacesInstance().getData();
 		const dataDir = path.resolve(__dirname, `../src/content/rounds`);
-		const data = z
-			.array(
-				raceTypes.RaceData.extend({
-					driversData: z.array(
-						raceTypes.DriverData.partial({
-							qualifying: true,
-							pitStops: true,
-							lapPositions: true,
-						}),
-					),
-				}),
-			)
-			.parse(rawData);
 
 		bar.start(data.length, 0);
 		let i = 0;
 
 		await cleanDataDir(dataDir);
 
-		const driverRaceData = raceTypes.DriverData.pick({
-			driverRef: true,
-			qualifying: true,
-			pitStops: true,
-			lapPositions: true,
-		});
-
 		for (const race of data) {
-			const rawDriversData = await executeQueryFromFile(
-				`rounds/drivers-data.sql`,
-				race,
-			);
-			const driversData = z.array(driverRaceData).parse(rawDriversData);
-
-			const driversDataMap = driversData.reduce<
-				Record<string, z.infer<typeof driverRaceData>>
-			>((p, c) => ({ ...p, [c.driverRef]: c }), {});
-
-			race.slug = deburr(kebabCase(race.name));
-
-			race.driversData = race.driversData.map((data) => ({
-				...data,
-				...driversDataMap[data.driverRef],
-			}));
-
 			bar.update(++i);
 
+			const slug = sluggify(race.name);
+
 			await writeDataFile(
-				path.resolve(dataDir, `${race.year}/${race.slug}.json`),
-				raceTypes.RaceData.parse(race),
+				path.resolve(dataDir, `${race.year}/${slug}.json`),
+				dataGenerator.getRoundData(race, slug),
 			);
 		}
 
@@ -347,15 +174,9 @@ for (const query of queries) {
 		console.log(`Executing ${query} query...`);
 		await queryFns[query]?.();
 	} catch (e) {
-		if (e instanceof ZodError) {
-			// eslint-disable-next-line no-console
-			console.log(e.errors.map(formatZodError).join('\n'));
-			process.exit(1);
-		} else {
-			// eslint-disable-next-line no-console
-			console.log(e);
-			process.exit(1);
-		}
+		// eslint-disable-next-line no-console
+		console.log(e);
+		process.exit(1);
 	}
 }
 

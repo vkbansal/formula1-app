@@ -370,7 +370,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 18,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 10,
+				"q1": "1:18.305",
+				"q2": "1:17.699",
+				"q3": "1:17.835"
+			}
 		},
 		{
 			"constructorRef": "toro_rosso",
@@ -381,7 +387,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 19,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 12,
+				"q1": "1:18.550",
+				"q2": "1:18.463",
+				"q3": null
+			}
 		},
 		{
 			"constructorRef": "renault",
@@ -392,7 +404,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 20,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "position": 16, "q1": "1:18.923", "q2": null, "q3": null }
 		}
 	],
 	"name": "Spanish Grand Prix",

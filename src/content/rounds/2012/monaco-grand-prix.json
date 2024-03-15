@@ -247,7 +247,7 @@
 			"position": 11,
 			"positionOrder": 11,
 			"positionText": "11",
-			"qualifying": { "position": null, "q1": null, "q2": null, "q3": null }
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "toro_rosso",
@@ -459,7 +459,8 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 22,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": { "position": 21, "q1": "1:18.096", "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "williams",
@@ -470,7 +471,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 23,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 9,
+				"q1": "1:16.017",
+				"q2": "1:15.026",
+				"q3": "1:15.245"
+			}
 		},
 		{
 			"constructorRef": "lotus_f1",
@@ -481,7 +488,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 24,
-			"positionText": "R"
+			"positionText": "R",
+			"qualifying": {
+				"position": 5,
+				"q1": "1:15.718",
+				"q2": "1:15.219",
+				"q3": "1:14.639"
+			}
 		}
 	],
 	"name": "Monaco Grand Prix",

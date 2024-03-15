@@ -7,37 +7,20 @@
 	"dob": "1934-05-13",
 	"driverId": 310,
 	"driverRef": "driver",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Paddy Driver",
 	"nationality": "South African",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
-			"results": [
-				{
-					"constructor": "Lotus-BRM",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "South African Grand Prix"
-				}
-			],
+			"results": [{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 10, "roundName": "South African Grand Prix" }],
 			"year": 1963
 		},
-		{
-			"results": [
-				{
-					"constructor": "Team Lotus",
-					"points": 0,
-					"position": null,
-					"round": 3,
-					"roundName": "South African Grand Prix"
-				}
-			],
-			"year": 1974
-		}
+		{ "results": [{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 3, "roundName": "South African Grand Prix" }], "year": 1974 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

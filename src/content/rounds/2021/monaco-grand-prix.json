@@ -387,7 +387,7 @@
 			"position": 18,
 			"positionOrder": 18,
 			"positionText": "18",
-			"qualifying": { "position": null, "q1": null, "q2": null, "q3": null }
+			"qualifying": { "q1": null, "q2": null, "q3": null }
 		},
 		{
 			"constructorRef": "mercedes",
@@ -418,7 +418,13 @@
 			"points": 0,
 			"position": null,
 			"positionOrder": 20,
-			"positionText": "W"
+			"positionText": "W",
+			"qualifying": {
+				"position": 1,
+				"q1": "1:11.113",
+				"q2": "1:10.597",
+				"q3": "1:10.346"
+			}
 		}
 	],
 	"name": "Monaco Grand Prix",

@@ -4,39 +4,23 @@
 	"dob": "1950-01-18",
 	"driverId": 234,
 	"driverRef": "brancatelli",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Gianfranco Brancatelli",
 	"nationality": "Italian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Kauhsen",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "Spanish Grand Prix"
-				},
-				{
-					"constructor": "Kauhsen",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Merzario",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Monaco Grand Prix"
-				}
+				{ "constructor": "Kauhsen", "points": 0, "position": null, "round": 5, "roundName": "Spanish Grand Prix" },
+				{ "constructor": "Kauhsen", "points": 0, "position": null, "round": 6, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Merzario", "points": 0, "position": null, "round": 7, "roundName": "Monaco Grand Prix" }
 			],
 			"year": 1979
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 3
 }

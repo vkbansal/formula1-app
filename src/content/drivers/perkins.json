@@ -9,133 +9,39 @@
 	"driverId": 256,
 	"driverRef": "perkins",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/1995_Holden_VR_Commodore_Bathurst_winner_%2828249502800%29.jpg/220px-1995_Holden_VR_Commodore_Bathurst_winner_%2828249502800%29.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Larry Perkins",
 	"nationality": "Australian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
+		{ "results": [{ "constructor": "Amon", "points": 0, "position": null, "round": 11, "roundName": "German Grand Prix" }], "year": 1974 },
 		{
 			"results": [
-				{
-					"constructor": "Amon",
-					"points": 0,
-					"position": null,
-					"round": 11,
-					"roundName": "German Grand Prix"
-				}
-			],
-			"year": 1974
-		},
-		{
-			"results": [
-				{
-					"constructor": "Boro",
-					"points": 0,
-					"position": 13,
-					"round": 4,
-					"roundName": "Spanish Grand Prix"
-				},
-				{
-					"constructor": "Boro",
-					"points": 0,
-					"position": 8,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Boro",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Boro",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Swedish Grand Prix"
-				},
-				{
-					"constructor": "Boro",
-					"points": 0,
-					"position": null,
-					"round": 12,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Boro",
-					"points": 0,
-					"position": null,
-					"round": 13,
-					"roundName": "Italian Grand Prix"
-				},
-				{
-					"constructor": "Brabham-Alfa Romeo",
-					"points": 0,
-					"position": 17,
-					"round": 14,
-					"roundName": "Canadian Grand Prix"
-				},
-				{
-					"constructor": "Brabham-Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 15,
-					"roundName": "United States Grand Prix"
-				},
-				{
-					"constructor": "Brabham-Alfa Romeo",
-					"points": 0,
-					"position": null,
-					"round": 16,
-					"roundName": "Japanese Grand Prix"
-				}
+				{ "constructor": "Boro", "points": 0, "position": 13, "round": 4, "roundName": "Spanish Grand Prix" },
+				{ "constructor": "Boro", "points": 0, "position": 8, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Boro", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Boro", "points": 0, "position": null, "round": 7, "roundName": "Swedish Grand Prix" },
+				{ "constructor": "Boro", "points": 0, "position": null, "round": 12, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Boro", "points": 0, "position": null, "round": 13, "roundName": "Italian Grand Prix" },
+				{ "constructor": "Brabham-Alfa Romeo", "points": 0, "position": 17, "round": 14, "roundName": "Canadian Grand Prix" },
+				{ "constructor": "Brabham-Alfa Romeo", "points": 0, "position": null, "round": 15, "roundName": "United States Grand Prix" },
+				{ "constructor": "Brabham-Alfa Romeo", "points": 0, "position": null, "round": 16, "roundName": "Japanese Grand Prix" }
 			],
 			"year": 1976
 		},
 		{
 			"results": [
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 2,
-					"roundName": "Brazilian Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": 15,
-					"round": 3,
-					"roundName": "South African Grand Prix"
-				},
-				{
-					"constructor": "Surtees",
-					"points": 0,
-					"position": 12,
-					"round": 7,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Surtees",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Swedish Grand Prix"
-				},
-				{
-					"constructor": "Surtees",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "French Grand Prix"
-				}
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": 15, "round": 3, "roundName": "South African Grand Prix" },
+				{ "constructor": "Surtees", "points": 0, "position": 12, "round": 7, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Surtees", "points": 0, "position": null, "round": 8, "roundName": "Swedish Grand Prix" },
+				{ "constructor": "Surtees", "points": 0, "position": null, "round": 9, "roundName": "French Grand Prix" }
 			],
 			"year": 1977
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 15
 }

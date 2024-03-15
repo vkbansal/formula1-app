@@ -12,85 +12,29 @@
 	"driverId": 368,
 	"driverRef": "tingle",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/1965_Sam_Tingle_Formula_1_LDS_Race_Car-1_%2829891690293%29.jpg/220px-1965_Sam_Tingle_Formula_1_LDS_Race_Car-1_%2829891690293%29.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Sam Tingle",
 	"nationality": "Rhodesian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
-			"results": [
-				{
-					"constructor": "Lotus-Climax",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "South African Grand Prix"
-				}
-			],
+			"results": [{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 9, "roundName": "South African Grand Prix" }],
 			"year": 1962
 		},
+		{ "results": [{ "constructor": "LDS", "points": 0, "position": null, "round": 10, "roundName": "South African Grand Prix" }], "year": 1963 },
 		{
-			"results": [
-				{
-					"constructor": "LDS",
-					"points": 0,
-					"position": null,
-					"round": 10,
-					"roundName": "South African Grand Prix"
-				}
-			],
-			"year": 1963
-		},
-		{
-			"results": [
-				{
-					"constructor": "LDS-Alfa Romeo",
-					"points": 0,
-					"position": 13,
-					"round": 1,
-					"roundName": "South African Grand Prix"
-				}
-			],
+			"results": [{ "constructor": "LDS-Alfa Romeo", "points": 0, "position": 13, "round": 1, "roundName": "South African Grand Prix" }],
 			"year": 1965
 		},
 		{
-			"results": [
-				{
-					"constructor": "LDS-Climax",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "South African Grand Prix"
-				}
-			],
+			"results": [{ "constructor": "LDS-Climax", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" }],
 			"year": 1967
 		},
-		{
-			"results": [
-				{
-					"constructor": "LDS",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "South African Grand Prix"
-				}
-			],
-			"year": 1968
-		},
-		{
-			"results": [
-				{
-					"constructor": "Brabham-Repco",
-					"points": 0,
-					"position": 8,
-					"round": 1,
-					"roundName": "South African Grand Prix"
-				}
-			],
-			"year": 1969
-		}
+		{ "results": [{ "constructor": "LDS", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" }], "year": 1968 },
+		{ "results": [{ "constructor": "Brabham-Repco", "points": 0, "position": 8, "round": 1, "roundName": "South African Grand Prix" }], "year": 1969 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 6
 }

@@ -5,32 +5,21 @@
 	"driverId": 315,
 	"driverRef": "larrousse",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/GerardLarrousse1975.jpg/220px-GerardLarrousse1975.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Gérard Larrousse",
 	"nationality": "French",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				},
-				{
-					"constructor": "Brabham",
-					"points": 0,
-					"position": null,
-					"round": 9,
-					"roundName": "French Grand Prix"
-				}
+				{ "constructor": "Brabham", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
+				{ "constructor": "Brabham", "points": 0, "position": null, "round": 9, "roundName": "French Grand Prix" }
 			],
 			"year": 1974
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

@@ -4,32 +4,22 @@
 	"dob": "1921-05-11",
 	"driverId": 785,
 	"driverRef": "crossley",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Geoff Crossley",
 	"nationality": "British",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Alta",
-					"points": 0,
-					"position": null,
-					"round": 1,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Alta",
-					"points": 0,
-					"position": 9,
-					"round": 5,
-					"roundName": "Belgian Grand Prix"
-				}
+				{ "constructor": "Alta", "points": 0, "position": null, "round": 1, "roundName": "British Grand Prix" },
+				{ "constructor": "Alta", "points": 0, "position": 9, "round": 5, "roundName": "Belgian Grand Prix" }
 			],
 			"year": 1950
 		}
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 2
 }

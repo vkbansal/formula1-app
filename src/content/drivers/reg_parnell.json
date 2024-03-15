@@ -10,82 +10,31 @@
 	"driverId": 686,
 	"driverRef": "reg_parnell",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Autoraces_te_Zandvoort%2C_Bestanddeelnr_902-9002.jpg/220px-Autoraces_te_Zandvoort%2C_Bestanddeelnr_902-9002.jpg",
-	"lapsLead": null,
+	"lapsLead": 0,
 	"name": "Reg Parnell",
 	"nationality": "British",
 	"podiums": 1,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Alfa Romeo",
-					"points": 4,
-					"position": 3,
-					"round": 1,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "French Grand Prix"
-				}
+				{ "constructor": "Alfa Romeo", "points": 4, "position": 3, "round": 1, "roundName": "British Grand Prix" },
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 6, "roundName": "French Grand Prix" }
 			],
 			"year": 1950
 		},
 		{
 			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 3,
-					"position": 4,
-					"round": 4,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 2,
-					"position": 5,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "BRM",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Ferrari", "points": 3, "position": 4, "round": 4, "roundName": "French Grand Prix" },
+				{ "constructor": "BRM", "points": 2, "position": 5, "round": 5, "roundName": "British Grand Prix" },
+				{ "constructor": "BRM", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1951
 		},
-		{
-			"results": [
-				{
-					"constructor": "Cooper",
-					"points": 0,
-					"position": 7,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1952
-		},
-		{
-			"results": [
-				{
-					"constructor": "Ferrari",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "British Grand Prix"
-				}
-			],
-			"year": 1954
-		}
+		{ "results": [{ "constructor": "Cooper", "points": 0, "position": 7, "round": 5, "roundName": "British Grand Prix" }], "year": 1952 },
+		{ "results": [{ "constructor": "Ferrari", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1954 }
 	],
-	"totalLaps": null,
+	"totalLaps": 0,
 	"totalRaces": 7
 }

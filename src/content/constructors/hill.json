@@ -9,32 +9,20 @@
 	"seasons": [
 		{
 			"rounds": [
+				{ "results": [{ "driver": "Rolf Stommelen", "points": 0, "position": 7 }], "round": 3, "roundName": "South African Grand Prix" },
+				{ "results": [{ "driver": "Graham Hill", "points": 0, "position": null }], "round": 5, "roundName": "Monaco Grand Prix" },
 				{
 					"results": [
-						{ "driver": "Rolf Stommelen", "points": 0, "position": 7 }
-					],
-					"round": 3,
-					"roundName": "South African Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Graham Hill", "points": 0, "position": null }
-					],
-					"round": 5,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"results": [
-						{ "driver": "Tony Brise", "points": 0, "position": null },
-						{ "driver": "François Migault", "points": 0, "position": null }
+						{ "driver": "François Migault", "points": 0, "position": null },
+						{ "driver": "Tony Brise", "points": 0, "position": null }
 					],
 					"round": 6,
 					"roundName": "Belgian Grand Prix"
 				},
 				{
 					"results": [
-						{ "driver": "Vern Schuppan", "points": 0, "position": null },
-						{ "driver": "Tony Brise", "points": 1, "position": 6 }
+						{ "driver": "Tony Brise", "points": 1, "position": 6 },
+						{ "driver": "Vern Schuppan", "points": 0, "position": null }
 					],
 					"round": 7,
 					"roundName": "Swedish Grand Prix"
@@ -65,8 +53,8 @@
 				},
 				{
 					"results": [
-						{ "driver": "Tony Brise", "points": 0, "position": null },
-						{ "driver": "Alan Jones", "points": 2, "position": 5 }
+						{ "driver": "Alan Jones", "points": 2, "position": 5 },
+						{ "driver": "Tony Brise", "points": 0, "position": null }
 					],
 					"round": 11,
 					"roundName": "German Grand Prix"
@@ -81,19 +69,13 @@
 				},
 				{
 					"results": [
-						{ "driver": "Tony Brise", "points": 0, "position": null },
-						{ "driver": "Rolf Stommelen", "points": 0, "position": null }
+						{ "driver": "Rolf Stommelen", "points": 0, "position": null },
+						{ "driver": "Tony Brise", "points": 0, "position": null }
 					],
 					"round": 13,
 					"roundName": "Italian Grand Prix"
 				},
-				{
-					"results": [
-						{ "driver": "Tony Brise", "points": 0, "position": null }
-					],
-					"round": 14,
-					"roundName": "United States Grand Prix"
-				}
+				{ "results": [{ "driver": "Tony Brise", "points": 0, "position": null }], "round": 14, "roundName": "United States Grand Prix" }
 			],
 			"year": 1975
 		}

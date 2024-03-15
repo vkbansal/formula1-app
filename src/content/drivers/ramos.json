@@ -7,79 +7,33 @@
 	"dob": "1925-12-07",
 	"driverId": 624,
 	"driverRef": "ramos",
-	"lapsLead": null,
+	"image": null,
+	"lapsLead": 0,
 	"name": "Hernando da Silva Ramos",
 	"nationality": "Brazilian",
 	"podiums": 0,
+	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
 		{
 			"results": [
-				{
-					"constructor": "Gordini",
-					"points": 0,
-					"position": 8,
-					"round": 5,
-					"roundName": "Dutch Grand Prix"
-				},
-				{
-					"constructor": "Gordini",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Gordini",
-					"points": 0,
-					"position": null,
-					"round": 7,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Gordini", "points": 0, "position": 8, "round": 5, "roundName": "Dutch Grand Prix" },
+				{ "constructor": "Gordini", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" },
+				{ "constructor": "Gordini", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1955
 		},
 		{
 			"results": [
-				{
-					"constructor": "Gordini",
-					"points": 2,
-					"position": 5,
-					"round": 2,
-					"roundName": "Monaco Grand Prix"
-				},
-				{
-					"constructor": "Maserati",
-					"points": 0,
-					"position": null,
-					"round": 5,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Gordini",
-					"points": 0,
-					"position": 8,
-					"round": 5,
-					"roundName": "French Grand Prix"
-				},
-				{
-					"constructor": "Gordini",
-					"points": 0,
-					"position": null,
-					"round": 6,
-					"roundName": "British Grand Prix"
-				},
-				{
-					"constructor": "Gordini",
-					"points": 0,
-					"position": null,
-					"round": 8,
-					"roundName": "Italian Grand Prix"
-				}
+				{ "constructor": "Gordini", "points": 2, "position": 5, "round": 2, "roundName": "Monaco Grand Prix" },
+				{ "constructor": "Gordini", "points": 0, "position": 8, "round": 5, "roundName": "French Grand Prix" },
+				{ "constructor": "Maserati", "points": 0, "position": null, "round": 5, "roundName": "French Grand Prix" },
+				{ "constructor": "Gordini", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" },
+				{ "constructor": "Gordini", "points": 0, "position": null, "round": 8, "roundName": "Italian Grand Prix" }
 			],
 			"year": 1956
 		}
 	],
-	"totalLaps": null,
-	"totalRaces": 7
+	"totalLaps": 0,
+	"totalRaces": 8
 }
