@@ -1,13 +1,22 @@
 {
 	"rounds": [
 		{
-			"circuit": { "country": "Brazil", "location": "Rio de Janeiro", "name": "Autódromo Internacional Nelson Piquet" },
+			"circuit": {
+				"country": "Brazil",
+				"location": "Rio de Janeiro",
+				"name": "Autódromo Internacional Nelson Piquet"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "mclaren", "points": 13, "position": 1, "wins": 1 },
 				{ "constructorRef": "williams", "points": 7, "position": 2, "wins": 0 },
 				{ "constructorRef": "ferrari", "points": 3, "position": 3, "wins": 0 },
 				{ "constructorRef": "benetton", "points": 2, "position": 4, "wins": 0 },
-				{ "constructorRef": "team_lotus", "points": 0, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 0,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "zakspeed", "points": 0, "position": 6, "wins": 0 },
 				{ "constructorRef": "tyrrell", "points": 0, "position": 7, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 8, "wins": 0 },
@@ -25,7 +34,12 @@
 				{ "driverRef": "berger", "points": 3, "position": 4, "wins": 0 },
 				{ "driverRef": "boutsen", "points": 2, "position": 5, "wins": 0 },
 				{ "driverRef": "mansell", "points": 1, "position": 6, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 0, "position": 7, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
 				{ "driverRef": "alboreto", "points": 0, "position": 8, "wins": 0 },
 				{ "driverRef": "danner", "points": 0, "position": 9, "wins": 0 },
 				{ "driverRef": "palmer", "points": 0, "position": 10, "wins": 0 },
@@ -52,17 +66,36 @@
 			"slug": "brazilian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Italy", "location": "Imola", "name": "Autodromo Enzo e Dino Ferrari" },
+			"circuit": {
+				"country": "Italy",
+				"location": "Imola",
+				"name": "Autodromo Enzo e Dino Ferrari"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 16, "position": 1, "wins": 1 },
+				{
+					"constructorRef": "williams",
+					"points": 16,
+					"position": 1,
+					"wins": 1
+				},
 				{ "constructorRef": "mclaren", "points": 16, "position": 2, "wins": 1 },
-				{ "constructorRef": "team_lotus", "points": 7, "position": 3, "wins": 0 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 7,
+					"position": 3,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 7, "position": 4, "wins": 0 },
 				{ "constructorRef": "zakspeed", "points": 2, "position": 5, "wins": 0 },
 				{ "constructorRef": "benetton", "points": 2, "position": 6, "wins": 0 },
 				{ "constructorRef": "tyrrell", "points": 0, "position": 7, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 0, "position": 8, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 0, "position": 9, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 0,
+					"position": 9,
+					"wins": 0
+				},
 				{ "constructorRef": "arrows", "points": 0, "position": 10, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 11, "wins": 0 },
 				{ "constructorRef": "osella", "points": 0, "position": 12, "wins": 0 },
@@ -81,7 +114,12 @@
 				{ "driverRef": "berger", "points": 3, "position": 7, "wins": 0 },
 				{ "driverRef": "boutsen", "points": 2, "position": 8, "wins": 0 },
 				{ "driverRef": "brundle", "points": 2, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 1, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 1,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "danner", "points": 0, "position": 11, "wins": 0 },
 				{ "driverRef": "streiff", "points": 0, "position": 12, "wins": 0 },
 				{ "driverRef": "patrese", "points": 0, "position": 13, "wins": 0 },
@@ -110,11 +148,25 @@
 			"slug": "san-marino-grand-prix"
 		},
 		{
-			"circuit": { "country": "Belgium", "location": "Spa", "name": "Circuit de Spa-Francorchamps" },
+			"circuit": {
+				"country": "Belgium",
+				"location": "Spa",
+				"name": "Circuit de Spa-Francorchamps"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "mclaren", "points": 31, "position": 1, "wins": 2 },
-				{ "constructorRef": "williams", "points": 16, "position": 2, "wins": 1 },
-				{ "constructorRef": "team_lotus", "points": 9, "position": 3, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 16,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "team_lotus",
+					"points": 9,
+					"position": 3,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 7, "position": 4, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 3, "position": 6, "wins": 0 },
@@ -122,7 +174,12 @@
 				{ "constructorRef": "benetton", "points": 2, "position": 8, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 9, "wins": 0 },
 				{ "constructorRef": "tyrrell", "points": 0, "position": 10, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 0, "position": 11, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 0,
+					"position": 11,
+					"wins": 0
+				},
 				{ "constructorRef": "ags", "points": 0, "position": 12, "wins": 0 },
 				{ "constructorRef": "osella", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "march", "points": 0, "position": 14, "wins": 0 },
@@ -139,7 +196,12 @@
 				{ "driverRef": "cesaris", "points": 4, "position": 7, "wins": 0 },
 				{ "driverRef": "cheever", "points": 3, "position": 8, "wins": 0 },
 				{ "driverRef": "berger", "points": 3, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 3, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "brundle", "points": 2, "position": 11, "wins": 0 },
 				{ "driverRef": "boutsen", "points": 2, "position": 12, "wins": 0 },
 				{ "driverRef": "arnoux", "points": 1, "position": 13, "wins": 0 },
@@ -161,18 +223,36 @@
 			"name": "Belgian Grand Prix",
 			"podium": [
 				{ "constructorRef": "mclaren", "driverRef": "prost", "position": 1 },
-				{ "constructorRef": "mclaren", "driverRef": "johansson", "position": 2 },
+				{
+					"constructorRef": "mclaren",
+					"driverRef": "johansson",
+					"position": 2
+				},
 				{ "constructorRef": "brabham", "driverRef": "cesaris", "position": 3 }
 			],
 			"round": 3,
 			"slug": "belgian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Monaco", "location": "Monte-Carlo", "name": "Circuit de Monaco" },
+			"circuit": {
+				"country": "Monaco",
+				"location": "Monte-Carlo",
+				"name": "Circuit de Monaco"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "mclaren", "points": 31, "position": 1, "wins": 2 },
-				{ "constructorRef": "williams", "points": 22, "position": 2, "wins": 1 },
-				{ "constructorRef": "team_lotus", "points": 18, "position": 3, "wins": 1 },
+				{
+					"constructorRef": "williams",
+					"points": 22,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "team_lotus",
+					"points": 18,
+					"position": 3,
+					"wins": 1
+				},
 				{ "constructorRef": "ferrari", "points": 14, "position": 4, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 3, "position": 6, "wins": 0 },
@@ -181,7 +261,12 @@
 				{ "constructorRef": "benetton", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
 				{ "constructorRef": "march", "points": 1, "position": 11, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 0, "position": 12, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "osella", "points": 0, "position": 14, "wins": 0 },
 				{ "constructorRef": "minardi", "points": 0, "position": 15, "wins": 0 }
@@ -197,7 +282,12 @@
 				{ "driverRef": "berger", "points": 6, "position": 7, "wins": 0 },
 				{ "driverRef": "cesaris", "points": 4, "position": 8, "wins": 0 },
 				{ "driverRef": "cheever", "points": 3, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 3, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "brundle", "points": 2, "position": 11, "wins": 0 },
 				{ "driverRef": "palmer", "points": 2, "position": 12, "wins": 0 },
 				{ "driverRef": "boutsen", "points": 2, "position": 13, "wins": 0 },
@@ -226,11 +316,25 @@
 			"slug": "monaco-grand-prix"
 		},
 		{
-			"circuit": { "country": "USA", "location": "Detroit", "name": "Detroit Street Circuit" },
+			"circuit": {
+				"country": "USA",
+				"location": "Detroit",
+				"name": "Detroit Street Circuit"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "mclaren", "points": 35, "position": 1, "wins": 2 },
-				{ "constructorRef": "williams", "points": 30, "position": 2, "wins": 1 },
-				{ "constructorRef": "team_lotus", "points": 27, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "williams",
+					"points": 30,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "team_lotus",
+					"points": 27,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 17, "position": 4, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 4, "position": 6, "wins": 0 },
@@ -239,7 +343,12 @@
 				{ "constructorRef": "benetton", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
 				{ "constructorRef": "march", "points": 1, "position": 11, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 0, "position": 12, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "osella", "points": 0, "position": 14, "wins": 0 },
 				{ "constructorRef": "minardi", "points": 0, "position": 15, "wins": 0 }
@@ -255,7 +364,12 @@
 				{ "driverRef": "alboreto", "points": 8, "position": 7, "wins": 0 },
 				{ "driverRef": "cesaris", "points": 4, "position": 8, "wins": 0 },
 				{ "driverRef": "cheever", "points": 4, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 3, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "brundle", "points": 2, "position": 11, "wins": 0 },
 				{ "driverRef": "palmer", "points": 2, "position": 12, "wins": 0 },
 				{ "driverRef": "boutsen", "points": 2, "position": 13, "wins": 0 },
@@ -284,11 +398,25 @@
 			"slug": "detroit-grand-prix"
 		},
 		{
-			"circuit": { "country": "France", "location": "Le Castellet", "name": "Circuit Paul Ricard" },
+			"circuit": {
+				"country": "France",
+				"location": "Le Castellet",
+				"name": "Circuit Paul Ricard"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 45, "position": 1, "wins": 2 },
+				{
+					"constructorRef": "williams",
+					"points": 45,
+					"position": 1,
+					"wins": 2
+				},
 				{ "constructorRef": "mclaren", "points": 39, "position": 2, "wins": 2 },
-				{ "constructorRef": "team_lotus", "points": 30, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 30,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 17, "position": 4, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 4, "position": 6, "wins": 0 },
@@ -297,7 +425,12 @@
 				{ "constructorRef": "zakspeed", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
 				{ "constructorRef": "march", "points": 1, "position": 11, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 0, "position": 12, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "osella", "points": 0, "position": 14, "wins": 0 },
 				{ "constructorRef": "minardi", "points": 0, "position": 15, "wins": 0 }
@@ -313,7 +446,12 @@
 				{ "driverRef": "alboreto", "points": 8, "position": 7, "wins": 0 },
 				{ "driverRef": "cesaris", "points": 4, "position": 8, "wins": 0 },
 				{ "driverRef": "cheever", "points": 4, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 3, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "palmer", "points": 2, "position": 11, "wins": 0 },
 				{ "driverRef": "brundle", "points": 2, "position": 12, "wins": 0 },
 				{ "driverRef": "fabi", "points": 2, "position": 13, "wins": 0 },
@@ -342,11 +480,25 @@
 			"slug": "french-grand-prix"
 		},
 		{
-			"circuit": { "country": "UK", "location": "Silverstone", "name": "Silverstone Circuit" },
+			"circuit": {
+				"country": "UK",
+				"location": "Silverstone",
+				"name": "Silverstone Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 60, "position": 1, "wins": 3 },
+				{
+					"constructorRef": "williams",
+					"points": 60,
+					"position": 1,
+					"wins": 3
+				},
 				{ "constructorRef": "mclaren", "points": 39, "position": 2, "wins": 2 },
-				{ "constructorRef": "team_lotus", "points": 37, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 37,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 17, "position": 4, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 6, "position": 5, "wins": 0 },
 				{ "constructorRef": "benetton", "points": 5, "position": 6, "wins": 0 },
@@ -355,7 +507,12 @@
 				{ "constructorRef": "zakspeed", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
 				{ "constructorRef": "march", "points": 1, "position": 11, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 0, "position": 12, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "osella", "points": 0, "position": 14, "wins": 0 },
 				{ "constructorRef": "minardi", "points": 0, "position": 15, "wins": 0 }
@@ -369,7 +526,12 @@
 				{ "driverRef": "johansson", "points": 13, "position": 5, "wins": 0 },
 				{ "driverRef": "berger", "points": 9, "position": 6, "wins": 0 },
 				{ "driverRef": "alboreto", "points": 8, "position": 7, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 6, "position": 8, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
 				{ "driverRef": "cesaris", "points": 4, "position": 9, "wins": 0 },
 				{ "driverRef": "cheever", "points": 4, "position": 10, "wins": 0 },
 				{ "driverRef": "fabi", "points": 3, "position": 11, "wins": 0 },
@@ -400,11 +562,25 @@
 			"slug": "british-grand-prix"
 		},
 		{
-			"circuit": { "country": "Germany", "location": "Hockenheim", "name": "Hockenheimring" },
+			"circuit": {
+				"country": "Germany",
+				"location": "Hockenheim",
+				"name": "Hockenheimring"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 69, "position": 1, "wins": 4 },
+				{
+					"constructorRef": "williams",
+					"points": 69,
+					"position": 1,
+					"wins": 4
+				},
 				{ "constructorRef": "mclaren", "points": 45, "position": 2, "wins": 2 },
-				{ "constructorRef": "team_lotus", "points": 41, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 41,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 17, "position": 4, "wins": 0 },
 				{ "constructorRef": "tyrrell", "points": 8, "position": 5, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 6, "position": 6, "wins": 0 },
@@ -412,7 +588,12 @@
 				{ "constructorRef": "brabham", "points": 4, "position": 8, "wins": 0 },
 				{ "constructorRef": "zakspeed", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 1, "position": 11, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 1,
+					"position": 11,
+					"wins": 0
+				},
 				{ "constructorRef": "march", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "osella", "points": 0, "position": 14, "wins": 0 },
@@ -427,7 +608,12 @@
 				{ "driverRef": "johansson", "points": 19, "position": 5, "wins": 0 },
 				{ "driverRef": "berger", "points": 9, "position": 6, "wins": 0 },
 				{ "driverRef": "alboreto", "points": 8, "position": 7, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 6, "position": 8, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
 				{ "driverRef": "cesaris", "points": 4, "position": 9, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 10, "wins": 0 },
 				{ "driverRef": "cheever", "points": 4, "position": 11, "wins": 0 },
@@ -451,18 +637,36 @@
 			"name": "German Grand Prix",
 			"podium": [
 				{ "constructorRef": "williams", "driverRef": "piquet", "position": 1 },
-				{ "constructorRef": "mclaren", "driverRef": "johansson", "position": 2 },
+				{
+					"constructorRef": "mclaren",
+					"driverRef": "johansson",
+					"position": 2
+				},
 				{ "constructorRef": "team_lotus", "driverRef": "senna", "position": 3 }
 			],
 			"round": 8,
 			"slug": "german-grand-prix"
 		},
 		{
-			"circuit": { "country": "Hungary", "location": "Budapest", "name": "Hungaroring" },
+			"circuit": {
+				"country": "Hungary",
+				"location": "Budapest",
+				"name": "Hungaroring"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 78, "position": 1, "wins": 5 },
+				{
+					"constructorRef": "williams",
+					"points": 78,
+					"position": 1,
+					"wins": 5
+				},
 				{ "constructorRef": "mclaren", "points": 49, "position": 2, "wins": 2 },
-				{ "constructorRef": "team_lotus", "points": 47, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 47,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 17, "position": 4, "wins": 0 },
 				{ "constructorRef": "tyrrell", "points": 8, "position": 5, "wins": 0 },
 				{ "constructorRef": "benetton", "points": 8, "position": 6, "wins": 0 },
@@ -470,7 +674,12 @@
 				{ "constructorRef": "brabham", "points": 6, "position": 8, "wins": 0 },
 				{ "constructorRef": "zakspeed", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 1, "position": 11, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 1,
+					"position": 11,
+					"wins": 0
+				},
 				{ "constructorRef": "march", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "minardi", "points": 0, "position": 14, "wins": 0 },
@@ -485,7 +694,12 @@
 				{ "driverRef": "johansson", "points": 19, "position": 5, "wins": 0 },
 				{ "driverRef": "berger", "points": 9, "position": 6, "wins": 0 },
 				{ "driverRef": "alboreto", "points": 8, "position": 7, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 6, "position": 8, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
 				{ "driverRef": "boutsen", "points": 5, "position": 9, "wins": 0 },
 				{ "driverRef": "cesaris", "points": 4, "position": 10, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 11, "wins": 0 },
@@ -516,19 +730,43 @@
 			"slug": "hungarian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Austria", "location": "Spielberg", "name": "Red Bull Ring" },
+			"circuit": {
+				"country": "Austria",
+				"location": "Spielberg",
+				"name": "Red Bull Ring"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 93, "position": 1, "wins": 6 },
+				{
+					"constructorRef": "williams",
+					"points": 93,
+					"position": 1,
+					"wins": 6
+				},
 				{ "constructorRef": "mclaren", "points": 50, "position": 2, "wins": 2 },
-				{ "constructorRef": "team_lotus", "points": 49, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 49,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 17, "position": 4, "wins": 0 },
-				{ "constructorRef": "benetton", "points": 15, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "benetton",
+					"points": 15,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "tyrrell", "points": 8, "position": 6, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 7, "position": 7, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 6, "position": 8, "wins": 0 },
 				{ "constructorRef": "zakspeed", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 1, "position": 11, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 1,
+					"position": 11,
+					"wins": 0
+				},
 				{ "constructorRef": "march", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "minardi", "points": 0, "position": 14, "wins": 0 },
@@ -545,7 +783,12 @@
 				{ "driverRef": "alboreto", "points": 8, "position": 7, "wins": 0 },
 				{ "driverRef": "boutsen", "points": 8, "position": 8, "wins": 0 },
 				{ "driverRef": "fabi", "points": 7, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 6, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 6,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "cesaris", "points": 4, "position": 11, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 12, "wins": 0 },
 				{ "driverRef": "cheever", "points": 4, "position": 13, "wins": 0 },
@@ -574,19 +817,43 @@
 			"slug": "austrian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Italy", "location": "Monza", "name": "Autodromo Nazionale di Monza" },
+			"circuit": {
+				"country": "Italy",
+				"location": "Monza",
+				"name": "Autodromo Nazionale di Monza"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 106, "position": 1, "wins": 7 },
-				{ "constructorRef": "team_lotus", "points": 55, "position": 2, "wins": 2 },
+				{
+					"constructorRef": "williams",
+					"points": 106,
+					"position": 1,
+					"wins": 7
+				},
+				{
+					"constructorRef": "team_lotus",
+					"points": 55,
+					"position": 2,
+					"wins": 2
+				},
 				{ "constructorRef": "mclaren", "points": 51, "position": 3, "wins": 2 },
 				{ "constructorRef": "ferrari", "points": 20, "position": 4, "wins": 0 },
-				{ "constructorRef": "benetton", "points": 17, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "benetton",
+					"points": 17,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "tyrrell", "points": 8, "position": 6, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 7, "position": 7, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 6, "position": 8, "wins": 0 },
 				{ "constructorRef": "zakspeed", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 1, "position": 11, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 1,
+					"position": 11,
+					"wins": 0
+				},
 				{ "constructorRef": "march", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "minardi", "points": 0, "position": 14, "wins": 0 },
@@ -604,7 +871,12 @@
 				{ "driverRef": "boutsen", "points": 10, "position": 7, "wins": 0 },
 				{ "driverRef": "alboreto", "points": 8, "position": 8, "wins": 0 },
 				{ "driverRef": "fabi", "points": 7, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 6, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 6,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "cesaris", "points": 4, "position": 11, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 12, "wins": 0 },
 				{ "driverRef": "cheever", "points": 4, "position": 13, "wins": 0 },
@@ -635,19 +907,43 @@
 			"slug": "italian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Portugal", "location": "Estoril", "name": "Autódromo do Estoril" },
+			"circuit": {
+				"country": "Portugal",
+				"location": "Estoril",
+				"name": "Autódromo do Estoril"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 110, "position": 1, "wins": 7 },
+				{
+					"constructorRef": "williams",
+					"points": 110,
+					"position": 1,
+					"wins": 7
+				},
 				{ "constructorRef": "mclaren", "points": 62, "position": 2, "wins": 3 },
-				{ "constructorRef": "team_lotus", "points": 55, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 55,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 26, "position": 4, "wins": 0 },
-				{ "constructorRef": "benetton", "points": 20, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "benetton",
+					"points": 20,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "tyrrell", "points": 8, "position": 6, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 8, "position": 7, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 6, "position": 8, "wins": 0 },
 				{ "constructorRef": "zakspeed", "points": 2, "position": 9, "wins": 0 },
 				{ "constructorRef": "ligier", "points": 1, "position": 10, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 1, "position": 11, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 1,
+					"position": 11,
+					"wins": 0
+				},
 				{ "constructorRef": "march", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
 				{ "constructorRef": "minardi", "points": 0, "position": 14, "wins": 0 },
@@ -665,7 +961,12 @@
 				{ "driverRef": "fabi", "points": 10, "position": 7, "wins": 0 },
 				{ "driverRef": "boutsen", "points": 10, "position": 8, "wins": 0 },
 				{ "driverRef": "alboreto", "points": 8, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 6, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 6,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "cheever", "points": 5, "position": 11, "wins": 0 },
 				{ "driverRef": "cesaris", "points": 4, "position": 12, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 13, "wins": 0 },
@@ -696,18 +997,42 @@
 			"slug": "portuguese-grand-prix"
 		},
 		{
-			"circuit": { "country": "Spain", "location": "Jerez de la Frontera", "name": "Circuito de Jerez" },
+			"circuit": {
+				"country": "Spain",
+				"location": "Jerez de la Frontera",
+				"name": "Circuito de Jerez"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 122, "position": 1, "wins": 8 },
+				{
+					"constructorRef": "williams",
+					"points": 122,
+					"position": 1,
+					"wins": 8
+				},
 				{ "constructorRef": "mclaren", "points": 72, "position": 2, "wins": 3 },
-				{ "constructorRef": "team_lotus", "points": 57, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 57,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 26, "position": 4, "wins": 0 },
-				{ "constructorRef": "benetton", "points": 20, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "benetton",
+					"points": 20,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "tyrrell", "points": 8, "position": 6, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 8, "position": 7, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 6, "position": 8, "wins": 0 },
 				{ "constructorRef": "zakspeed", "points": 2, "position": 9, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 2, "position": 10, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 2,
+					"position": 10,
+					"wins": 0
+				},
 				{ "constructorRef": "ligier", "points": 1, "position": 11, "wins": 0 },
 				{ "constructorRef": "march", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
@@ -726,7 +1051,12 @@
 				{ "driverRef": "fabi", "points": 10, "position": 7, "wins": 0 },
 				{ "driverRef": "boutsen", "points": 10, "position": 8, "wins": 0 },
 				{ "driverRef": "alboreto", "points": 8, "position": 9, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 6, "position": 10, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 6,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "cheever", "points": 5, "position": 11, "wins": 0 },
 				{ "driverRef": "cesaris", "points": 4, "position": 12, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 13, "wins": 0 },
@@ -757,18 +1087,47 @@
 			"slug": "spanish-grand-prix"
 		},
 		{
-			"circuit": { "country": "Mexico", "location": "Mexico City", "name": "Autódromo Hermanos Rodríguez" },
+			"circuit": {
+				"country": "Mexico",
+				"location": "Mexico City",
+				"name": "Autódromo Hermanos Rodríguez"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 137, "position": 1, "wins": 9 },
+				{
+					"constructorRef": "williams",
+					"points": 137,
+					"position": 1,
+					"wins": 9
+				},
 				{ "constructorRef": "mclaren", "points": 72, "position": 2, "wins": 3 },
-				{ "constructorRef": "team_lotus", "points": 57, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 57,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 26, "position": 4, "wins": 0 },
-				{ "constructorRef": "benetton", "points": 22, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "benetton",
+					"points": 22,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "arrows", "points": 11, "position": 6, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 10, "position": 7, "wins": 0 },
 				{ "constructorRef": "tyrrell", "points": 8, "position": 8, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 3, "position": 9, "wins": 0 },
-				{ "constructorRef": "zakspeed", "points": 2, "position": 10, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 3,
+					"position": 9,
+					"wins": 0
+				},
+				{
+					"constructorRef": "zakspeed",
+					"points": 2,
+					"position": 10,
+					"wins": 0
+				},
 				{ "constructorRef": "ligier", "points": 1, "position": 11, "wins": 0 },
 				{ "constructorRef": "march", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
@@ -789,7 +1148,12 @@
 				{ "driverRef": "alboreto", "points": 8, "position": 9, "wins": 0 },
 				{ "driverRef": "cheever", "points": 8, "position": 10, "wins": 0 },
 				{ "driverRef": "patrese", "points": 6, "position": 11, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 6, "position": 12, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 6,
+					"position": 12,
+					"wins": 0
+				},
 				{ "driverRef": "cesaris", "points": 4, "position": 13, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 14, "wins": 0 },
 				{ "driverRef": "palmer", "points": 4, "position": 15, "wins": 0 },
@@ -819,18 +1183,47 @@
 			"slug": "mexican-grand-prix"
 		},
 		{
-			"circuit": { "country": "Japan", "location": "Suzuka", "name": "Suzuka Circuit" },
+			"circuit": {
+				"country": "Japan",
+				"location": "Suzuka",
+				"name": "Suzuka Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 137, "position": 1, "wins": 9 },
+				{
+					"constructorRef": "williams",
+					"points": 137,
+					"position": 1,
+					"wins": 9
+				},
 				{ "constructorRef": "mclaren", "points": 76, "position": 2, "wins": 3 },
-				{ "constructorRef": "team_lotus", "points": 64, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 64,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 38, "position": 4, "wins": 1 },
-				{ "constructorRef": "benetton", "points": 24, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "benetton",
+					"points": 24,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "arrows", "points": 11, "position": 6, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 10, "position": 7, "wins": 0 },
 				{ "constructorRef": "tyrrell", "points": 8, "position": 8, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 3, "position": 9, "wins": 0 },
-				{ "constructorRef": "zakspeed", "points": 2, "position": 10, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 3,
+					"position": 9,
+					"wins": 0
+				},
+				{
+					"constructorRef": "zakspeed",
+					"points": 2,
+					"position": 10,
+					"wins": 0
+				},
 				{ "constructorRef": "ligier", "points": 1, "position": 11, "wins": 0 },
 				{ "constructorRef": "march", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "ags", "points": 0, "position": 13, "wins": 0 },
@@ -850,7 +1243,12 @@
 				{ "driverRef": "boutsen", "points": 12, "position": 8, "wins": 0 },
 				{ "driverRef": "alboreto", "points": 11, "position": 9, "wins": 0 },
 				{ "driverRef": "cheever", "points": 8, "position": 10, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 7, "position": 11, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 7,
+					"position": 11,
+					"wins": 0
+				},
 				{ "driverRef": "patrese", "points": 6, "position": 12, "wins": 0 },
 				{ "driverRef": "cesaris", "points": 4, "position": 13, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 14, "wins": 0 },
@@ -882,18 +1280,47 @@
 			"slug": "japanese-grand-prix"
 		},
 		{
-			"circuit": { "country": "Australia", "location": "Adelaide", "name": "Adelaide Street Circuit" },
+			"circuit": {
+				"country": "Australia",
+				"location": "Adelaide",
+				"name": "Adelaide Street Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "williams", "points": 137, "position": 1, "wins": 9 },
+				{
+					"constructorRef": "williams",
+					"points": 137,
+					"position": 1,
+					"wins": 9
+				},
 				{ "constructorRef": "mclaren", "points": 76, "position": 2, "wins": 3 },
-				{ "constructorRef": "team_lotus", "points": 64, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "team_lotus",
+					"points": 64,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 53, "position": 4, "wins": 2 },
-				{ "constructorRef": "benetton", "points": 28, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "benetton",
+					"points": 28,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "tyrrell", "points": 11, "position": 6, "wins": 0 },
 				{ "constructorRef": "arrows", "points": 11, "position": 7, "wins": 0 },
 				{ "constructorRef": "brabham", "points": 10, "position": 8, "wins": 0 },
-				{ "constructorRef": "larrousse", "points": 3, "position": 9, "wins": 0 },
-				{ "constructorRef": "zakspeed", "points": 2, "position": 10, "wins": 0 },
+				{
+					"constructorRef": "larrousse",
+					"points": 3,
+					"position": 9,
+					"wins": 0
+				},
+				{
+					"constructorRef": "zakspeed",
+					"points": 2,
+					"position": 10,
+					"wins": 0
+				},
 				{ "constructorRef": "ligier", "points": 1, "position": 11, "wins": 0 },
 				{ "constructorRef": "ags", "points": 1, "position": 12, "wins": 0 },
 				{ "constructorRef": "march", "points": 1, "position": 13, "wins": 0 },
@@ -914,7 +1341,12 @@
 				{ "driverRef": "fabi", "points": 12, "position": 9, "wins": 0 },
 				{ "driverRef": "cheever", "points": 8, "position": 10, "wins": 0 },
 				{ "driverRef": "palmer", "points": 7, "position": 11, "wins": 0 },
-				{ "driverRef": "satoru_nakajima", "points": 7, "position": 12, "wins": 0 },
+				{
+					"driverRef": "satoru_nakajima",
+					"points": 7,
+					"position": 12,
+					"wins": 0
+				},
 				{ "driverRef": "patrese", "points": 6, "position": 13, "wins": 0 },
 				{ "driverRef": "cesaris", "points": 4, "position": 14, "wins": 0 },
 				{ "driverRef": "streiff", "points": 4, "position": 15, "wins": 0 },
@@ -950,8 +1382,16 @@
 		{
 			"constructorRef": "ags",
 			"drivers": [
-				{ "driverRef": "fabre", "name": "Pascal Fabre", "nationality": "French" },
-				{ "driverRef": "moreno", "name": "Roberto Moreno", "nationality": "Brazilian" }
+				{
+					"driverRef": "fabre",
+					"name": "Pascal Fabre",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "moreno",
+					"name": "Roberto Moreno",
+					"nationality": "Brazilian"
+				}
 			],
 			"name": "AGS",
 			"nationality": "French"
@@ -959,8 +1399,16 @@
 		{
 			"constructorRef": "arrows",
 			"drivers": [
-				{ "driverRef": "cheever", "name": "Eddie Cheever", "nationality": "American" },
-				{ "driverRef": "warwick", "name": "Derek Warwick", "nationality": "British" }
+				{
+					"driverRef": "cheever",
+					"name": "Eddie Cheever",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "warwick",
+					"name": "Derek Warwick",
+					"nationality": "British"
+				}
 			],
 			"name": "Arrows",
 			"nationality": "British"
@@ -968,7 +1416,11 @@
 		{
 			"constructorRef": "benetton",
 			"drivers": [
-				{ "driverRef": "boutsen", "name": "Thierry Boutsen", "nationality": "Belgian" },
+				{
+					"driverRef": "boutsen",
+					"name": "Thierry Boutsen",
+					"nationality": "Belgian"
+				},
 				{ "driverRef": "fabi", "name": "Teo Fabi", "nationality": "Italian" }
 			],
 			"name": "Benetton",
@@ -977,24 +1429,50 @@
 		{
 			"constructorRef": "brabham",
 			"drivers": [
-				{ "driverRef": "patrese", "name": "Riccardo Patrese", "nationality": "Italian" },
-				{ "driverRef": "cesaris", "name": "Andrea de Cesaris", "nationality": "Italian" },
-				{ "driverRef": "modena", "name": "Stefano Modena", "nationality": "Italian" }
+				{
+					"driverRef": "patrese",
+					"name": "Riccardo Patrese",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "cesaris",
+					"name": "Andrea de Cesaris",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "modena",
+					"name": "Stefano Modena",
+					"nationality": "Italian"
+				}
 			],
 			"name": "Brabham",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "coloni",
-			"drivers": [{ "driverRef": "larini", "name": "Nicola Larini", "nationality": "Italian" }],
+			"drivers": [
+				{
+					"driverRef": "larini",
+					"name": "Nicola Larini",
+					"nationality": "Italian"
+				}
+			],
 			"name": "Coloni",
 			"nationality": "Italian"
 		},
 		{
 			"constructorRef": "ferrari",
 			"drivers": [
-				{ "driverRef": "berger", "name": "Gerhard Berger", "nationality": "Austrian" },
-				{ "driverRef": "alboreto", "name": "Michele Alboreto", "nationality": "Italian" }
+				{
+					"driverRef": "berger",
+					"name": "Gerhard Berger",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "alboreto",
+					"name": "Michele Alboreto",
+					"nationality": "Italian"
+				}
 			],
 			"name": "Ferrari",
 			"nationality": "Italian"
@@ -1002,8 +1480,16 @@
 		{
 			"constructorRef": "larrousse",
 			"drivers": [
-				{ "driverRef": "alliot", "name": "Philippe Alliot", "nationality": "French" },
-				{ "driverRef": "dalmas", "name": "Yannick Dalmas", "nationality": "French" }
+				{
+					"driverRef": "alliot",
+					"name": "Philippe Alliot",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "dalmas",
+					"name": "Yannick Dalmas",
+					"nationality": "French"
+				}
 			],
 			"name": "Larrousse",
 			"nationality": "French"
@@ -1011,23 +1497,45 @@
 		{
 			"constructorRef": "ligier",
 			"drivers": [
-				{ "driverRef": "ghinzani", "name": "Piercarlo Ghinzani", "nationality": "Italian" },
-				{ "driverRef": "arnoux", "name": "René Arnoux", "nationality": "French" }
+				{
+					"driverRef": "ghinzani",
+					"name": "Piercarlo Ghinzani",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "arnoux",
+					"name": "René Arnoux",
+					"nationality": "French"
+				}
 			],
 			"name": "Ligier",
 			"nationality": "French"
 		},
 		{
 			"constructorRef": "march",
-			"drivers": [{ "driverRef": "capelli", "name": "Ivan Capelli", "nationality": "Italian" }],
+			"drivers": [
+				{
+					"driverRef": "capelli",
+					"name": "Ivan Capelli",
+					"nationality": "Italian"
+				}
+			],
 			"name": "March",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "mclaren",
 			"drivers": [
-				{ "driverRef": "prost", "name": "Alain Prost", "nationality": "French" },
-				{ "driverRef": "johansson", "name": "Stefan Johansson", "nationality": "Swedish" }
+				{
+					"driverRef": "prost",
+					"name": "Alain Prost",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "johansson",
+					"name": "Stefan Johansson",
+					"nationality": "Swedish"
+				}
 			],
 			"name": "McLaren",
 			"nationality": "British"
@@ -1035,8 +1543,16 @@
 		{
 			"constructorRef": "minardi",
 			"drivers": [
-				{ "driverRef": "nannini", "name": "Alessandro Nannini", "nationality": "Italian" },
-				{ "driverRef": "campos", "name": "Adrián Campos", "nationality": "Spanish" }
+				{
+					"driverRef": "nannini",
+					"name": "Alessandro Nannini",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "campos",
+					"name": "Adrián Campos",
+					"nationality": "Spanish"
+				}
 			],
 			"name": "Minardi",
 			"nationality": "Italian"
@@ -1044,9 +1560,21 @@
 		{
 			"constructorRef": "osella",
 			"drivers": [
-				{ "driverRef": "caffi", "name": "Alex Caffi", "nationality": "Italian" },
-				{ "driverRef": "tarquini", "name": "Gabriele Tarquini", "nationality": "Italian" },
-				{ "driverRef": "forini", "name": "Franco Forini", "nationality": "Swiss" }
+				{
+					"driverRef": "caffi",
+					"name": "Alex Caffi",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "tarquini",
+					"name": "Gabriele Tarquini",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "forini",
+					"name": "Franco Forini",
+					"nationality": "Swiss"
+				}
 			],
 			"name": "Osella",
 			"nationality": "Italian"
@@ -1054,8 +1582,16 @@
 		{
 			"constructorRef": "team_lotus",
 			"drivers": [
-				{ "driverRef": "satoru_nakajima", "name": "Satoru Nakajima", "nationality": "Japanese" },
-				{ "driverRef": "senna", "name": "Ayrton Senna", "nationality": "Brazilian" }
+				{
+					"driverRef": "satoru_nakajima",
+					"name": "Satoru Nakajima",
+					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "senna",
+					"name": "Ayrton Senna",
+					"nationality": "Brazilian"
+				}
 			],
 			"name": "Team Lotus",
 			"nationality": "British"
@@ -1063,8 +1599,16 @@
 		{
 			"constructorRef": "tyrrell",
 			"drivers": [
-				{ "driverRef": "palmer", "name": "Jonathan Palmer", "nationality": "British" },
-				{ "driverRef": "streiff", "name": "Philippe Streiff", "nationality": "French" }
+				{
+					"driverRef": "palmer",
+					"name": "Jonathan Palmer",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "streiff",
+					"name": "Philippe Streiff",
+					"nationality": "French"
+				}
 			],
 			"name": "Tyrrell",
 			"nationality": "British"
@@ -1072,9 +1616,21 @@
 		{
 			"constructorRef": "williams",
 			"drivers": [
-				{ "driverRef": "piquet", "name": "Nelson Piquet", "nationality": "Brazilian" },
-				{ "driverRef": "mansell", "name": "Nigel Mansell", "nationality": "British" },
-				{ "driverRef": "patrese", "name": "Riccardo Patrese", "nationality": "Italian" }
+				{
+					"driverRef": "piquet",
+					"name": "Nelson Piquet",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "mansell",
+					"name": "Nigel Mansell",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "patrese",
+					"name": "Riccardo Patrese",
+					"nationality": "Italian"
+				}
 			],
 			"name": "Williams",
 			"nationality": "British"
@@ -1082,8 +1638,16 @@
 		{
 			"constructorRef": "zakspeed",
 			"drivers": [
-				{ "driverRef": "danner", "name": "Christian Danner", "nationality": "German" },
-				{ "driverRef": "brundle", "name": "Martin Brundle", "nationality": "British" }
+				{
+					"driverRef": "danner",
+					"name": "Christian Danner",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "brundle",
+					"name": "Martin Brundle",
+					"nationality": "British"
+				}
 			],
 			"name": "Zakspeed",
 			"nationality": "German"

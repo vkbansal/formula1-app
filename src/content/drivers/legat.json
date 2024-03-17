@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Veritas", "points": 0, "position": 13, "round": 3, "roundName": "Belgian Grand Prix" }], "year": 1952 },
-		{ "results": [{ "constructor": "Veritas", "points": 0, "position": null, "round": 4, "roundName": "Belgian Grand Prix" }], "year": 1953 }
+		{
+			"results": [
+				{
+					"constructor": "Veritas",
+					"points": 0,
+					"position": 13,
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				}
+			],
+			"year": 1952
+		},
+		{
+			"results": [
+				{
+					"constructor": "Veritas",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "Belgian Grand Prix"
+				}
+			],
+			"year": 1953
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

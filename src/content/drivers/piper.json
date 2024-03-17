@@ -15,11 +15,34 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1959 },
 		{
 			"results": [
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 6, "roundName": "French Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": 12, "round": 7, "roundName": "British Grand Prix" }
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1959
+		},
+		{
+			"results": [
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": 12,
+					"round": 7,
+					"roundName": "British Grand Prix"
+				}
 			],
 			"year": 1960
 		}

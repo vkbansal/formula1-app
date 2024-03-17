@@ -20,52 +20,243 @@
 	"seasons": [
 		{
 			"results": [
-				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 0, "position": 14, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 0, "position": 13, "round": 8, "roundName": "Italian Grand Prix" }
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": 14,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": 13,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1964
 		},
-		{ "results": [{ "constructor": "Tyrrell", "points": 0, "position": null, "round": 11, "roundName": "United States Grand Prix" }], "year": 1971 },
 		{
 			"results": [
-				{ "constructor": "McLaren", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "McLaren", "points": 4, "position": 3, "round": 2, "roundName": "South African Grand Prix" },
-				{ "constructor": "McLaren", "points": 2, "position": 5, "round": 3, "roundName": "Spanish Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": 7, "round": 5, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "McLaren", "points": 4, "position": 3, "round": 7, "roundName": "British Grand Prix" },
-				{ "constructor": "McLaren", "points": 4, "position": 3, "round": 9, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "McLaren", "points": 3, "position": 4, "round": 10, "roundName": "Italian Grand Prix" },
-				{ "constructor": "McLaren", "points": 6, "position": 2, "round": 11, "roundName": "Canadian Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": 18, "round": 12, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "Tyrrell",
+					"points": 0,
+					"position": null,
+					"round": 11,
+					"roundName": "United States Grand Prix"
+				}
+			],
+			"year": 1971
+		},
+		{
+			"results": [
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 4,
+					"position": 3,
+					"round": 2,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 2,
+					"position": 5,
+					"round": 3,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": 7,
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 4,
+					"position": 3,
+					"round": 7,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 4,
+					"position": 3,
+					"round": 9,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 3,
+					"position": 4,
+					"round": 10,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 6,
+					"position": 2,
+					"round": 11,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": 18,
+					"round": 12,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1972
 		},
 		{
 			"results": [
-				{ "constructor": "McLaren", "points": 0, "position": 8, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
-				{ "constructor": "McLaren", "points": 6, "position": 2, "round": 3, "roundName": "South African Grand Prix" },
-				{ "constructor": "McLaren", "points": 3, "position": 4, "round": 4, "roundName": "Spanish Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "McLaren", "points": 2, "position": 5, "round": 6, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": 7, "round": 7, "roundName": "Swedish Grand Prix" },
-				{ "constructor": "McLaren", "points": 9, "position": 1, "round": 9, "roundName": "British Grand Prix" },
-				{ "constructor": "McLaren", "points": 3, "position": 4, "round": 10, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": 9, "round": 11, "roundName": "German Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": null, "round": 12, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "McLaren", "points": 4, "position": 3, "round": 13, "roundName": "Italian Grand Prix" },
-				{ "constructor": "McLaren", "points": 9, "position": 1, "round": 14, "roundName": "Canadian Grand Prix" },
-				{ "constructor": "McLaren", "points": 2, "position": 5, "round": 15, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": 8,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 6,
+					"position": 2,
+					"round": 3,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 3,
+					"position": 4,
+					"round": 4,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 2,
+					"position": 5,
+					"round": 6,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": 7,
+					"round": 7,
+					"roundName": "Swedish Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 9,
+					"position": 1,
+					"round": 9,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 3,
+					"position": 4,
+					"round": 10,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": 9,
+					"round": 11,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": null,
+					"round": 12,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 4,
+					"position": 3,
+					"round": 13,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 9,
+					"position": 1,
+					"round": 14,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 2,
+					"position": 5,
+					"round": 15,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1973
 		},
 		{
 			"results": [
-				{ "constructor": "Shadow", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Shadow", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" }
+				{
+					"constructor": "Shadow",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Shadow",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				}
 			],
 			"year": 1974
 		}

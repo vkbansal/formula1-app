@@ -16,13 +16,53 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Maserati", "points": 0, "position": 14, "round": 1, "roundName": "Argentine Grand Prix" }], "year": 1960 },
-		{ "results": [{ "constructor": "De Tomaso", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }], "year": 1962 },
 		{
 			"results": [
-				{ "constructor": "De Tomaso", "points": 0, "position": null, "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "De Tomaso", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" },
-				{ "constructor": "De Tomaso", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 14,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				}
+			],
+			"year": 1960
+		},
+		{
+			"results": [
+				{
+					"constructor": "De Tomaso",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				}
+			],
+			"year": 1962
+		},
+		{
+			"results": [
+				{
+					"constructor": "De Tomaso",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "De Tomaso",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "De Tomaso",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
 			],
 			"year": 1963
 		}

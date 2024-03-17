@@ -16,12 +16,46 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "ERA", "points": 0, "position": null, "round": 1, "roundName": "British Grand Prix" }], "year": 1950 },
-		{ "results": [{ "constructor": "BRM", "points": 0, "position": 7, "round": 5, "roundName": "British Grand Prix" }], "year": 1951 },
 		{
 			"results": [
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 5, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Connaught", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" }
+				{
+					"constructor": "ERA",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1950
+		},
+		{
+			"results": [
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": 7,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1951
+		},
+		{
+			"results": [
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Connaught",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "British Grand Prix"
+				}
 			],
 			"year": 1955
 		}

@@ -20,29 +20,122 @@
 	"seasons": [
 		{
 			"results": [
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" },
-				{ "constructor": "Cooper-BRM", "points": 4, "position": 3, "round": 2, "roundName": "Spanish Grand Prix" },
-				{ "constructor": "Cooper-BRM", "points": 0, "position": null, "round": 4, "roundName": "Belgian Grand Prix" }
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "Cooper-BRM",
+					"points": 4,
+					"position": 3,
+					"round": 2,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"constructor": "Cooper-BRM",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "Belgian Grand Prix"
+				}
 			],
 			"year": 1968
 		},
-		{ "results": [{ "constructor": "De Tomaso", "points": 0, "position": null, "round": 8, "roundName": "German Grand Prix" }], "year": 1970 },
-		{ "results": [{ "constructor": "Surtees", "points": 0, "position": 7, "round": 1, "roundName": "South African Grand Prix" }], "year": 1971 },
 		{
 			"results": [
-				{ "constructor": "McLaren", "points": 2, "position": 5, "round": 4, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": 9, "round": 6, "roundName": "French Grand Prix" },
-				{ "constructor": "McLaren", "points": 2, "position": 5, "round": 8, "roundName": "German Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 12, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "De Tomaso",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "German Grand Prix"
+				}
+			],
+			"year": 1970
+		},
+		{
+			"results": [
+				{
+					"constructor": "Surtees",
+					"points": 0,
+					"position": 7,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				}
+			],
+			"year": 1971
+		},
+		{
+			"results": [
+				{
+					"constructor": "McLaren",
+					"points": 2,
+					"position": 5,
+					"round": 4,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": 9,
+					"round": 6,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 2,
+					"position": 5,
+					"round": 8,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 12,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1972
 		},
-		{ "results": [{ "constructor": "Shadow", "points": 0, "position": null, "round": 15, "roundName": "United States Grand Prix" }], "year": 1973 },
 		{
 			"results": [
-				{ "constructor": "Shadow", "points": 0, "position": 7, "round": 4, "roundName": "Spanish Grand Prix" },
-				{ "constructor": "Shadow", "points": 0, "position": 18, "round": 5, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Shadow", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" }
+				{
+					"constructor": "Shadow",
+					"points": 0,
+					"position": null,
+					"round": 15,
+					"roundName": "United States Grand Prix"
+				}
+			],
+			"year": 1973
+		},
+		{
+			"results": [
+				{
+					"constructor": "Shadow",
+					"points": 0,
+					"position": 7,
+					"round": 4,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"constructor": "Shadow",
+					"points": 0,
+					"position": 18,
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Shadow",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "Monaco Grand Prix"
+				}
 			],
 			"year": 1974
 		}

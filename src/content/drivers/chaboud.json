@@ -17,12 +17,35 @@
 	"seasons": [
 		{
 			"results": [
-				{ "constructor": "Talbot-Lago", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Talbot-Lago", "points": 1, "position": 5, "round": 6, "roundName": "French Grand Prix" }
+				{
+					"constructor": "Talbot-Lago",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Talbot-Lago",
+					"points": 1,
+					"position": 5,
+					"round": 6,
+					"roundName": "French Grand Prix"
+				}
 			],
 			"year": 1950
 		},
-		{ "results": [{ "constructor": "Talbot-Lago", "points": 0, "position": 8, "round": 4, "roundName": "French Grand Prix" }], "year": 1951 }
+		{
+			"results": [
+				{
+					"constructor": "Talbot-Lago",
+					"points": 0,
+					"position": 8,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				}
+			],
+			"year": 1951
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 3

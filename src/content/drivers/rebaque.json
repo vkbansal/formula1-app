@@ -20,84 +20,432 @@
 	"seasons": [
 		{
 			"results": [
-				{ "constructor": "Hesketh", "points": 0, "position": null, "round": 7, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Hesketh", "points": 0, "position": null, "round": 8, "roundName": "Swedish Grand Prix" },
-				{ "constructor": "Hesketh", "points": 0, "position": null, "round": 9, "roundName": "French Grand Prix" },
-				{ "constructor": "Hesketh", "points": 0, "position": null, "round": 11, "roundName": "German Grand Prix" },
-				{ "constructor": "Hesketh", "points": 0, "position": null, "round": 12, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "Hesketh", "points": 0, "position": null, "round": 13, "roundName": "Dutch Grand Prix" }
+				{
+					"constructor": "Hesketh",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Hesketh",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "Swedish Grand Prix"
+				},
+				{
+					"constructor": "Hesketh",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Hesketh",
+					"points": 0,
+					"position": null,
+					"round": 11,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Hesketh",
+					"points": 0,
+					"position": null,
+					"round": 12,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "Hesketh",
+					"points": 0,
+					"position": null,
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
+				}
 			],
 			"year": 1977
 		},
 		{
 			"results": [
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": 10, "round": 3, "roundName": "South African Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 4, "roundName": "United States Grand Prix West" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 5, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 6, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 7, "roundName": "Spanish Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": 12, "round": 8, "roundName": "Swedish Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 9, "roundName": "French Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 10, "roundName": "British Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 1, "position": 6, "round": 11, "roundName": "German Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 12, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": 11, "round": 13, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 14, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 15, "roundName": "United States Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 16, "roundName": "Canadian Grand Prix" }
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": 10,
+					"round": 3,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "United States Grand Prix West"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": 12,
+					"round": 8,
+					"roundName": "Swedish Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 1,
+					"position": 6,
+					"round": 11,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 12,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": 11,
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 14,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 15,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 16,
+					"roundName": "Canadian Grand Prix"
+				}
 			],
 			"year": 1978
 		},
 		{
 			"results": [
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 3, "roundName": "South African Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 4, "roundName": "United States Grand Prix West" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 5, "roundName": "Spanish Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 6, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": 12, "round": 8, "roundName": "French Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": 9, "round": 9, "roundName": "British Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 10, "roundName": "German Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": null, "round": 11, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "Team Lotus", "points": 0, "position": 7, "round": 12, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Rebaque", "points": 0, "position": null, "round": 13, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Rebaque", "points": 0, "position": null, "round": 14, "roundName": "Canadian Grand Prix" },
-				{ "constructor": "Rebaque", "points": 0, "position": null, "round": 15, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "United States Grand Prix West"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": 12,
+					"round": 8,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": 9,
+					"round": 9,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": null,
+					"round": 11,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "Team Lotus",
+					"points": 0,
+					"position": 7,
+					"round": 12,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Rebaque",
+					"points": 0,
+					"position": null,
+					"round": 13,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Rebaque",
+					"points": 0,
+					"position": null,
+					"round": 14,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"constructor": "Rebaque",
+					"points": 0,
+					"position": null,
+					"round": 15,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1979
 		},
 		{
 			"results": [
-				{ "constructor": "Brabham", "points": 0, "position": 7, "round": 8, "roundName": "British Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 9, "roundName": "German Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": 10, "round": 10, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 11, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 12, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Brabham", "points": 1, "position": 6, "round": 13, "roundName": "Canadian Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 14, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": 7,
+					"round": 8,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": 10,
+					"round": 10,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 11,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 12,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 1,
+					"position": 6,
+					"round": 13,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 14,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1980
 		},
 		{
 			"results": [
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 1, "roundName": "United States Grand Prix West" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 3, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Brabham", "points": 3, "position": 4, "round": 4, "roundName": "San Marino Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 7, "roundName": "Spanish Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": 9, "round": 8, "roundName": "French Grand Prix" },
-				{ "constructor": "Brabham", "points": 2, "position": 5, "round": 9, "roundName": "British Grand Prix" },
-				{ "constructor": "Brabham", "points": 3, "position": 4, "round": 10, "roundName": "German Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 11, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "Brabham", "points": 3, "position": 4, "round": 12, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 13, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 14, "roundName": "Canadian Grand Prix" },
-				{ "constructor": "Brabham", "points": 0, "position": null, "round": 15, "roundName": "Caesars Palace Grand Prix" }
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "United States Grand Prix West"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 3,
+					"position": 4,
+					"round": 4,
+					"roundName": "San Marino Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": 9,
+					"round": 8,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 2,
+					"position": 5,
+					"round": 9,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 3,
+					"position": 4,
+					"round": 10,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 11,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 3,
+					"position": 4,
+					"round": 12,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 13,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 14,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"constructor": "Brabham",
+					"points": 0,
+					"position": null,
+					"round": 15,
+					"roundName": "Caesars Palace Grand Prix"
+				}
 			],
 			"year": 1981
 		}

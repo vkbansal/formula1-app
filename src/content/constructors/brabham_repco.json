@@ -14,8 +14,18 @@
 	"seasons": [
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Jack Brabham", "points": 0, "position": null }], "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "results": [{ "driver": "Jack Brabham", "points": 3, "position": 4 }], "round": 2, "roundName": "Belgian Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Jack Brabham", "points": 3, "position": 4 }],
+					"round": 2,
+					"roundName": "Belgian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Denny Hulme", "points": 4, "position": 3 },

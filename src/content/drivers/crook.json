@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Frazer Nash", "points": 0, "position": 21, "round": 5, "roundName": "British Grand Prix" }], "year": 1952 },
-		{ "results": [{ "constructor": "Cooper", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" }], "year": 1953 }
+		{
+			"results": [
+				{
+					"constructor": "Frazer Nash",
+					"points": 0,
+					"position": 21,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1952
+		},
+		{
+			"results": [
+				{
+					"constructor": "Cooper",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1953
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

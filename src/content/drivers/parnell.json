@@ -16,15 +16,49 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Cooper-Climax", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1959 },
 		{
 			"results": [
-				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": 10, "round": 7, "roundName": "Italian Grand Prix" }
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1959
+		},
+		{
+			"results": [
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": 10,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1961
 		},
-		{ "results": [{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" }], "year": 1963 }
+		{
+			"results": [
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				}
+			],
+			"year": 1963
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 4

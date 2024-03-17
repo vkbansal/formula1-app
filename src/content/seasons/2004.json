@@ -1,7 +1,11 @@
 {
 	"rounds": [
 		{
-			"circuit": { "country": "Australia", "location": "Melbourne", "name": "Albert Park Grand Prix Circuit" },
+			"circuit": {
+				"country": "Australia",
+				"location": "Melbourne",
+				"name": "Albert Park Grand Prix Circuit"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "ferrari", "points": 18, "position": 1, "wins": 1 },
 				{ "constructorRef": "williams", "points": 9, "position": 2, "wins": 0 },
@@ -15,10 +19,20 @@
 			],
 			"date": "7th Mar 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 10, "position": 1, "wins": 1 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 10,
+					"position": 1,
+					"wins": 1
+				},
 				{ "driverRef": "barrichello", "points": 8, "position": 2, "wins": 0 },
 				{ "driverRef": "alonso", "points": 6, "position": 3, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 5, "position": 4, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 5,
+					"position": 4,
+					"wins": 0
+				},
 				{ "driverRef": "montoya", "points": 4, "position": 5, "wins": 0 },
 				{ "driverRef": "button", "points": 3, "position": 6, "wins": 0 },
 				{ "driverRef": "trulli", "points": 2, "position": 7, "wins": 0 },
@@ -32,18 +46,35 @@
 			],
 			"name": "Australian Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 2
+				},
 				{ "constructorRef": "renault", "driverRef": "alonso", "position": 3 }
 			],
 			"round": 1,
 			"slug": "australian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Malaysia", "location": "Kuala Lumpur", "name": "Sepang International Circuit" },
+			"circuit": {
+				"country": "Malaysia",
+				"location": "Kuala Lumpur",
+				"name": "Sepang International Circuit"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "ferrari", "points": 33, "position": 1, "wins": 2 },
-				{ "constructorRef": "williams", "points": 17, "position": 2, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 17,
+					"position": 2,
+					"wins": 0
+				},
 				{ "constructorRef": "renault", "points": 14, "position": 3, "wins": 0 },
 				{ "constructorRef": "bar", "points": 9, "position": 4, "wins": 0 },
 				{ "constructorRef": "mclaren", "points": 4, "position": 5, "wins": 0 },
@@ -55,13 +86,23 @@
 			],
 			"date": "21st Mar 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 20, "position": 1, "wins": 2 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 20,
+					"position": 1,
+					"wins": 2
+				},
 				{ "driverRef": "barrichello", "points": 13, "position": 2, "wins": 0 },
 				{ "driverRef": "montoya", "points": 12, "position": 3, "wins": 0 },
 				{ "driverRef": "button", "points": 9, "position": 4, "wins": 0 },
 				{ "driverRef": "alonso", "points": 8, "position": 5, "wins": 0 },
 				{ "driverRef": "trulli", "points": 6, "position": 6, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 5, "position": 7, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 5,
+					"position": 7,
+					"wins": 0
+				},
 				{ "driverRef": "coulthard", "points": 4, "position": 8, "wins": 0 },
 				{ "driverRef": "massa", "points": 1, "position": 9, "wins": 0 },
 				{ "driverRef": "matta", "points": 0, "position": 10, "wins": 0 },
@@ -75,7 +116,11 @@
 			],
 			"name": "Malaysian Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
 				{ "constructorRef": "williams", "driverRef": "montoya", "position": 2 },
 				{ "constructorRef": "bar", "driverRef": "button", "position": 3 }
 			],
@@ -83,11 +128,20 @@
 			"slug": "malaysian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Bahrain", "location": "Sakhir", "name": "Bahrain International Circuit" },
+			"circuit": {
+				"country": "Bahrain",
+				"location": "Sakhir",
+				"name": "Bahrain International Circuit"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "ferrari", "points": 51, "position": 1, "wins": 3 },
 				{ "constructorRef": "renault", "points": 22, "position": 2, "wins": 0 },
-				{ "constructorRef": "williams", "points": 19, "position": 3, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 19,
+					"position": 3,
+					"wins": 0
+				},
 				{ "constructorRef": "bar", "points": 19, "position": 4, "wins": 0 },
 				{ "constructorRef": "mclaren", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "sauber", "points": 1, "position": 6, "wins": 0 },
@@ -98,13 +152,23 @@
 			],
 			"date": "4th Apr 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 30, "position": 1, "wins": 3 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 30,
+					"position": 1,
+					"wins": 3
+				},
 				{ "driverRef": "barrichello", "points": 21, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 15, "position": 3, "wins": 0 },
 				{ "driverRef": "montoya", "points": 12, "position": 4, "wins": 0 },
 				{ "driverRef": "alonso", "points": 11, "position": 5, "wins": 0 },
 				{ "driverRef": "trulli", "points": 11, "position": 6, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 7, "position": 7, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 7,
+					"position": 7,
+					"wins": 0
+				},
 				{ "driverRef": "sato", "points": 4, "position": 8, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 4, "position": 9, "wins": 0 },
 				{ "driverRef": "massa", "points": 1, "position": 10, "wins": 0 },
@@ -120,20 +184,37 @@
 			],
 			"name": "Bahrain Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 2
+				},
 				{ "constructorRef": "bar", "driverRef": "button", "position": 3 }
 			],
 			"round": 3,
 			"slug": "bahrain-grand-prix"
 		},
 		{
-			"circuit": { "country": "Italy", "location": "Imola", "name": "Autodromo Enzo e Dino Ferrari" },
+			"circuit": {
+				"country": "Italy",
+				"location": "Imola",
+				"name": "Autodromo Enzo e Dino Ferrari"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "ferrari", "points": 64, "position": 1, "wins": 4 },
 				{ "constructorRef": "renault", "points": 31, "position": 2, "wins": 0 },
 				{ "constructorRef": "bar", "points": 27, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 27, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 27,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 5, "position": 5, "wins": 0 },
 				{ "constructorRef": "sauber", "points": 1, "position": 6, "wins": 0 },
 				{ "constructorRef": "jaguar", "points": 1, "position": 7, "wins": 0 },
@@ -143,13 +224,23 @@
 			],
 			"date": "25th Apr 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 40, "position": 1, "wins": 4 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 40,
+					"position": 1,
+					"wins": 4
+				},
 				{ "driverRef": "barrichello", "points": 24, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 23, "position": 3, "wins": 0 },
 				{ "driverRef": "montoya", "points": 18, "position": 4, "wins": 0 },
 				{ "driverRef": "alonso", "points": 16, "position": 5, "wins": 0 },
 				{ "driverRef": "trulli", "points": 15, "position": 6, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 9, "position": 7, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 9,
+					"position": 7,
+					"wins": 0
+				},
 				{ "driverRef": "sato", "points": 4, "position": 8, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 4, "position": 9, "wins": 0 },
 				{ "driverRef": "massa", "points": 1, "position": 10, "wins": 0 },
@@ -166,7 +257,11 @@
 			],
 			"name": "San Marino Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
 				{ "constructorRef": "bar", "driverRef": "button", "position": 2 },
 				{ "constructorRef": "williams", "driverRef": "montoya", "position": 3 }
 			],
@@ -174,12 +269,21 @@
 			"slug": "san-marino-grand-prix"
 		},
 		{
-			"circuit": { "country": "Spain", "location": "Montmeló", "name": "Circuit de Barcelona-Catalunya" },
+			"circuit": {
+				"country": "Spain",
+				"location": "Montmeló",
+				"name": "Circuit de Barcelona-Catalunya"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "ferrari", "points": 82, "position": 1, "wins": 5 },
 				{ "constructorRef": "renault", "points": 42, "position": 2, "wins": 0 },
 				{ "constructorRef": "bar", "points": 32, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 30, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 30,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 5, "position": 5, "wins": 0 },
 				{ "constructorRef": "sauber", "points": 3, "position": 6, "wins": 0 },
 				{ "constructorRef": "jaguar", "points": 1, "position": 7, "wins": 0 },
@@ -189,13 +293,23 @@
 			],
 			"date": "9th May 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 50, "position": 1, "wins": 5 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 50,
+					"position": 1,
+					"wins": 5
+				},
 				{ "driverRef": "barrichello", "points": 32, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 24, "position": 3, "wins": 0 },
 				{ "driverRef": "alonso", "points": 21, "position": 4, "wins": 0 },
 				{ "driverRef": "trulli", "points": 21, "position": 5, "wins": 0 },
 				{ "driverRef": "montoya", "points": 18, "position": 6, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 7, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 7,
+					"wins": 0
+				},
 				{ "driverRef": "sato", "points": 8, "position": 8, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 4, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 2, "position": 10, "wins": 0 },
@@ -212,20 +326,37 @@
 			],
 			"name": "Spanish Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 2
+				},
 				{ "constructorRef": "renault", "driverRef": "trulli", "position": 3 }
 			],
 			"round": 5,
 			"slug": "spanish-grand-prix"
 		},
 		{
-			"circuit": { "country": "Monaco", "location": "Monte-Carlo", "name": "Circuit de Monaco" },
+			"circuit": {
+				"country": "Monaco",
+				"location": "Monte-Carlo",
+				"name": "Circuit de Monaco"
+			},
 			"constructorStandings": [
 				{ "constructorRef": "ferrari", "points": 88, "position": 1, "wins": 5 },
 				{ "constructorRef": "renault", "points": 52, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 40, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 35, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 35,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "sauber", "points": 7, "position": 5, "wins": 0 },
 				{ "constructorRef": "mclaren", "points": 5, "position": 6, "wins": 0 },
 				{ "constructorRef": "toyota", "points": 4, "position": 7, "wins": 0 },
@@ -235,13 +366,23 @@
 			],
 			"date": "23rd May 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 50, "position": 1, "wins": 5 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 50,
+					"position": 1,
+					"wins": 5
+				},
 				{ "driverRef": "barrichello", "points": 38, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 32, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 31, "position": 4, "wins": 1 },
 				{ "driverRef": "montoya", "points": 23, "position": 5, "wins": 0 },
 				{ "driverRef": "alonso", "points": 21, "position": 6, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 7, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 7,
+					"wins": 0
+				},
 				{ "driverRef": "sato", "points": 8, "position": 8, "wins": 0 },
 				{ "driverRef": "massa", "points": 5, "position": 9, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 4, "position": 10, "wins": 0 },
@@ -260,18 +401,36 @@
 			"podium": [
 				{ "constructorRef": "renault", "driverRef": "trulli", "position": 1 },
 				{ "constructorRef": "bar", "driverRef": "button", "position": 2 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 3 }
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 3
+				}
 			],
 			"round": 6,
 			"slug": "monaco-grand-prix"
 		},
 		{
-			"circuit": { "country": "Germany", "location": "Nürburg", "name": "Nürburgring" },
+			"circuit": {
+				"country": "Germany",
+				"location": "Nürburg",
+				"name": "Nürburgring"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 106, "position": 1, "wins": 6 },
+				{
+					"constructorRef": "ferrari",
+					"points": 106,
+					"position": 1,
+					"wins": 6
+				},
 				{ "constructorRef": "renault", "points": 61, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 46, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 36, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 36,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "sauber", "points": 10, "position": 5, "wins": 0 },
 				{ "constructorRef": "mclaren", "points": 5, "position": 6, "wins": 0 },
 				{ "constructorRef": "toyota", "points": 4, "position": 7, "wins": 0 },
@@ -281,13 +440,23 @@
 			],
 			"date": "30th May 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 60, "position": 1, "wins": 6 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 60,
+					"position": 1,
+					"wins": 6
+				},
 				{ "driverRef": "barrichello", "points": 46, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 38, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 36, "position": 4, "wins": 1 },
 				{ "driverRef": "alonso", "points": 25, "position": 5, "wins": 0 },
 				{ "driverRef": "montoya", "points": 24, "position": 6, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 7, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 7,
+					"wins": 0
+				},
 				{ "driverRef": "sato", "points": 8, "position": 8, "wins": 0 },
 				{ "driverRef": "massa", "points": 5, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 5, "position": 10, "wins": 0 },
@@ -304,20 +473,42 @@
 			],
 			"name": "European Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 2
+				},
 				{ "constructorRef": "bar", "driverRef": "button", "position": 3 }
 			],
 			"round": 7,
 			"slug": "european-grand-prix"
 		},
 		{
-			"circuit": { "country": "Canada", "location": "Montreal", "name": "Circuit Gilles Villeneuve" },
+			"circuit": {
+				"country": "Canada",
+				"location": "Montreal",
+				"name": "Circuit Gilles Villeneuve"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 124, "position": 1, "wins": 7 },
+				{
+					"constructorRef": "ferrari",
+					"points": 124,
+					"position": 1,
+					"wins": 7
+				},
 				{ "constructorRef": "renault", "points": 61, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 52, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 36, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 36,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "sauber", "points": 15, "position": 5, "wins": 0 },
 				{ "constructorRef": "mclaren", "points": 12, "position": 6, "wins": 0 },
 				{ "constructorRef": "jordan", "points": 5, "position": 7, "wins": 0 },
@@ -327,13 +518,23 @@
 			],
 			"date": "13th Jun 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 70, "position": 1, "wins": 7 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 70,
+					"position": 1,
+					"wins": 7
+				},
 				{ "driverRef": "barrichello", "points": 54, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 44, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 36, "position": 4, "wins": 1 },
 				{ "driverRef": "alonso", "points": 25, "position": 5, "wins": 0 },
 				{ "driverRef": "montoya", "points": 24, "position": 6, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 7, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 7,
+					"wins": 0
+				},
 				{ "driverRef": "fisichella", "points": 10, "position": 8, "wins": 0 },
 				{ "driverRef": "sato", "points": 8, "position": 9, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 7, "position": 10, "wins": 0 },
@@ -351,20 +552,42 @@
 			],
 			"name": "Canadian Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 2
+				},
 				{ "constructorRef": "bar", "driverRef": "button", "position": 3 }
 			],
 			"round": 8,
 			"slug": "canadian-grand-prix"
 		},
 		{
-			"circuit": { "country": "USA", "location": "Indianapolis", "name": "Indianapolis Motor Speedway" },
+			"circuit": {
+				"country": "USA",
+				"location": "Indianapolis",
+				"name": "Indianapolis Motor Speedway"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 142, "position": 1, "wins": 8 },
+				{
+					"constructorRef": "ferrari",
+					"points": 142,
+					"position": 1,
+					"wins": 8
+				},
 				{ "constructorRef": "renault", "points": 66, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 58, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 36, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 36,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 17, "position": 5, "wins": 0 },
 				{ "constructorRef": "sauber", "points": 15, "position": 6, "wins": 0 },
 				{ "constructorRef": "toyota", "points": 8, "position": 7, "wins": 0 },
@@ -374,14 +597,24 @@
 			],
 			"date": "20th Jun 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 80, "position": 1, "wins": 8 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 80,
+					"position": 1,
+					"wins": 8
+				},
 				{ "driverRef": "barrichello", "points": 62, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 44, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 41, "position": 4, "wins": 1 },
 				{ "driverRef": "alonso", "points": 25, "position": 5, "wins": 0 },
 				{ "driverRef": "montoya", "points": 24, "position": 6, "wins": 0 },
 				{ "driverRef": "sato", "points": 14, "position": 7, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 8, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 8,
+					"wins": 0
+				},
 				{ "driverRef": "fisichella", "points": 10, "position": 9, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 9, "position": 10, "wins": 0 },
 				{ "driverRef": "raikkonen", "points": 8, "position": 11, "wins": 0 },
@@ -398,20 +631,42 @@
 			],
 			"name": "United States Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 2
+				},
 				{ "constructorRef": "bar", "driverRef": "sato", "position": 3 }
 			],
 			"round": 9,
 			"slug": "united-states-grand-prix"
 		},
 		{
-			"circuit": { "country": "France", "location": "Magny Cours", "name": "Circuit de Nevers Magny-Cours" },
+			"circuit": {
+				"country": "France",
+				"location": "Magny Cours",
+				"name": "Circuit de Nevers Magny-Cours"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 158, "position": 1, "wins": 9 },
+				{
+					"constructorRef": "ferrari",
+					"points": 158,
+					"position": 1,
+					"wins": 9
+				},
 				{ "constructorRef": "renault", "points": 79, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 62, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 37, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 37,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 22, "position": 5, "wins": 0 },
 				{ "constructorRef": "sauber", "points": 15, "position": 6, "wins": 0 },
 				{ "constructorRef": "toyota", "points": 8, "position": 7, "wins": 0 },
@@ -421,14 +676,24 @@
 			],
 			"date": "4th Jul 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 90, "position": 1, "wins": 9 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 90,
+					"position": 1,
+					"wins": 9
+				},
 				{ "driverRef": "barrichello", "points": 68, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 48, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 46, "position": 4, "wins": 1 },
 				{ "driverRef": "alonso", "points": 33, "position": 5, "wins": 0 },
 				{ "driverRef": "montoya", "points": 25, "position": 6, "wins": 0 },
 				{ "driverRef": "sato", "points": 14, "position": 7, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 8, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 8,
+					"wins": 0
+				},
 				{ "driverRef": "coulthard", "points": 12, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 10, "position": 10, "wins": 0 },
 				{ "driverRef": "raikkonen", "points": 10, "position": 11, "wins": 0 },
@@ -446,20 +711,42 @@
 			],
 			"name": "French Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
 				{ "constructorRef": "renault", "driverRef": "alonso", "position": 2 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 3 }
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 3
+				}
 			],
 			"round": 10,
 			"slug": "french-grand-prix"
 		},
 		{
-			"circuit": { "country": "UK", "location": "Silverstone", "name": "Silverstone Circuit" },
+			"circuit": {
+				"country": "UK",
+				"location": "Silverstone",
+				"name": "Silverstone Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 174, "position": 1, "wins": 10 },
+				{
+					"constructorRef": "ferrari",
+					"points": 174,
+					"position": 1,
+					"wins": 10
+				},
 				{ "constructorRef": "renault", "points": 79, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 67, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 41, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 41,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 32, "position": 5, "wins": 0 },
 				{ "constructorRef": "sauber", "points": 18, "position": 6, "wins": 0 },
 				{ "constructorRef": "toyota", "points": 8, "position": 7, "wins": 0 },
@@ -469,7 +756,12 @@
 			],
 			"date": "11th Jul 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 100, "position": 1, "wins": 10 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 100,
+					"position": 1,
+					"wins": 10
+				},
 				{ "driverRef": "barrichello", "points": 74, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 53, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 46, "position": 4, "wins": 1 },
@@ -479,7 +771,12 @@
 				{ "driverRef": "sato", "points": 14, "position": 8, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 14, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 13, "position": 10, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 11, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 11,
+					"wins": 0
+				},
 				{ "driverRef": "massa", "points": 5, "position": 12, "wins": 0 },
 				{ "driverRef": "panis", "points": 5, "position": 13, "wins": 0 },
 				{ "driverRef": "webber", "points": 4, "position": 14, "wins": 0 },
@@ -494,20 +791,46 @@
 			],
 			"name": "British Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "mclaren", "driverRef": "raikkonen", "position": 2 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 3 }
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "mclaren",
+					"driverRef": "raikkonen",
+					"position": 2
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 3
+				}
 			],
 			"round": 11,
 			"slug": "british-grand-prix"
 		},
 		{
-			"circuit": { "country": "Germany", "location": "Hockenheim", "name": "Hockenheimring" },
+			"circuit": {
+				"country": "Germany",
+				"location": "Hockenheim",
+				"name": "Hockenheimring"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 184, "position": 1, "wins": 11 },
+				{
+					"constructorRef": "ferrari",
+					"points": 184,
+					"position": 1,
+					"wins": 11
+				},
 				{ "constructorRef": "renault", "points": 85, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 76, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 47, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 47,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 37, "position": 5, "wins": 0 },
 				{ "constructorRef": "sauber", "points": 18, "position": 6, "wins": 0 },
 				{ "constructorRef": "toyota", "points": 8, "position": 7, "wins": 0 },
@@ -517,7 +840,12 @@
 			],
 			"date": "25th Jul 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 110, "position": 1, "wins": 11 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 110,
+					"position": 1,
+					"wins": 11
+				},
 				{ "driverRef": "barrichello", "points": 74, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 61, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 46, "position": 4, "wins": 1 },
@@ -527,7 +855,12 @@
 				{ "driverRef": "raikkonen", "points": 18, "position": 8, "wins": 0 },
 				{ "driverRef": "sato", "points": 15, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 13, "position": 10, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 11, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 11,
+					"wins": 0
+				},
 				{ "driverRef": "webber", "points": 7, "position": 12, "wins": 0 },
 				{ "driverRef": "massa", "points": 5, "position": 13, "wins": 0 },
 				{ "driverRef": "panis", "points": 5, "position": 14, "wins": 0 },
@@ -543,7 +876,11 @@
 			],
 			"name": "German Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
 				{ "constructorRef": "bar", "driverRef": "button", "position": 2 },
 				{ "constructorRef": "renault", "driverRef": "alonso", "position": 3 }
 			],
@@ -551,12 +888,26 @@
 			"slug": "german-grand-prix"
 		},
 		{
-			"circuit": { "country": "Hungary", "location": "Budapest", "name": "Hungaroring" },
+			"circuit": {
+				"country": "Hungary",
+				"location": "Budapest",
+				"name": "Hungaroring"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 202, "position": 1, "wins": 12 },
+				{
+					"constructorRef": "ferrari",
+					"points": 202,
+					"position": 1,
+					"wins": 12
+				},
 				{ "constructorRef": "renault", "points": 91, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 83, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 54, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 54,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 37, "position": 5, "wins": 0 },
 				{ "constructorRef": "sauber", "points": 19, "position": 6, "wins": 0 },
 				{ "constructorRef": "toyota", "points": 8, "position": 7, "wins": 0 },
@@ -566,7 +917,12 @@
 			],
 			"date": "15th Aug 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 120, "position": 1, "wins": 12 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 120,
+					"position": 1,
+					"wins": 12
+				},
 				{ "driverRef": "barrichello", "points": 82, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 65, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 46, "position": 4, "wins": 1 },
@@ -576,7 +932,12 @@
 				{ "driverRef": "raikkonen", "points": 18, "position": 8, "wins": 0 },
 				{ "driverRef": "sato", "points": 18, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 14, "position": 10, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 11, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 11,
+					"wins": 0
+				},
 				{ "driverRef": "webber", "points": 7, "position": 12, "wins": 0 },
 				{ "driverRef": "massa", "points": 5, "position": 13, "wins": 0 },
 				{ "driverRef": "panis", "points": 5, "position": 14, "wins": 0 },
@@ -592,20 +953,42 @@
 			],
 			"name": "Hungarian Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 2
+				},
 				{ "constructorRef": "renault", "driverRef": "alonso", "position": 3 }
 			],
 			"round": 13,
 			"slug": "hungarian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Belgium", "location": "Spa", "name": "Circuit de Spa-Francorchamps" },
+			"circuit": {
+				"country": "Belgium",
+				"location": "Spa",
+				"name": "Circuit de Spa-Francorchamps"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 216, "position": 1, "wins": 12 },
+				{
+					"constructorRef": "ferrari",
+					"points": 216,
+					"position": 1,
+					"wins": 12
+				},
 				{ "constructorRef": "renault", "points": 91, "position": 2, "wins": 1 },
 				{ "constructorRef": "bar", "points": 83, "position": 3, "wins": 0 },
-				{ "constructorRef": "williams", "points": 54, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 54,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 49, "position": 5, "wins": 1 },
 				{ "constructorRef": "sauber", "points": 28, "position": 6, "wins": 0 },
 				{ "constructorRef": "jaguar", "points": 10, "position": 7, "wins": 0 },
@@ -615,7 +998,12 @@
 			],
 			"date": "29th Aug 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 128, "position": 1, "wins": 12 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 128,
+					"position": 1,
+					"wins": 12
+				},
 				{ "driverRef": "barrichello", "points": 88, "position": 2, "wins": 0 },
 				{ "driverRef": "button", "points": 65, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 46, "position": 4, "wins": 1 },
@@ -625,7 +1013,12 @@
 				{ "driverRef": "coulthard", "points": 21, "position": 8, "wins": 0 },
 				{ "driverRef": "sato", "points": 18, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 18, "position": 10, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 11, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 11,
+					"wins": 0
+				},
 				{ "driverRef": "massa", "points": 10, "position": 12, "wins": 0 },
 				{ "driverRef": "webber", "points": 7, "position": 13, "wins": 0 },
 				{ "driverRef": "panis", "points": 6, "position": 14, "wins": 0 },
@@ -642,20 +1035,46 @@
 			],
 			"name": "Belgian Grand Prix",
 			"podium": [
-				{ "constructorRef": "mclaren", "driverRef": "raikkonen", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 2 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 3 }
+				{
+					"constructorRef": "mclaren",
+					"driverRef": "raikkonen",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 2
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 3
+				}
 			],
 			"round": 14,
 			"slug": "belgian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Italy", "location": "Monza", "name": "Autodromo Nazionale di Monza" },
+			"circuit": {
+				"country": "Italy",
+				"location": "Monza",
+				"name": "Autodromo Nazionale di Monza"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 234, "position": 1, "wins": 13 },
+				{
+					"constructorRef": "ferrari",
+					"points": 234,
+					"position": 1,
+					"wins": 13
+				},
 				{ "constructorRef": "bar", "points": 94, "position": 2, "wins": 0 },
 				{ "constructorRef": "renault", "points": 91, "position": 3, "wins": 1 },
-				{ "constructorRef": "williams", "points": 60, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 60,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 52, "position": 5, "wins": 1 },
 				{ "constructorRef": "sauber", "points": 29, "position": 6, "wins": 0 },
 				{ "constructorRef": "jaguar", "points": 10, "position": 7, "wins": 0 },
@@ -665,7 +1084,12 @@
 			],
 			"date": "12th Sep 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 136, "position": 1, "wins": 12 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 136,
+					"position": 1,
+					"wins": 12
+				},
 				{ "driverRef": "barrichello", "points": 98, "position": 2, "wins": 1 },
 				{ "driverRef": "button", "points": 71, "position": 3, "wins": 0 },
 				{ "driverRef": "trulli", "points": 46, "position": 4, "wins": 1 },
@@ -675,7 +1099,12 @@
 				{ "driverRef": "coulthard", "points": 24, "position": 8, "wins": 0 },
 				{ "driverRef": "sato", "points": 23, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 19, "position": 10, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 11, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 11,
+					"wins": 0
+				},
 				{ "driverRef": "massa", "points": 10, "position": 12, "wins": 0 },
 				{ "driverRef": "webber", "points": 7, "position": 13, "wins": 0 },
 				{ "driverRef": "panis", "points": 6, "position": 14, "wins": 0 },
@@ -692,20 +1121,42 @@
 			],
 			"name": "Italian Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 1 },
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 1
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 2
+				},
 				{ "constructorRef": "bar", "driverRef": "button", "position": 3 }
 			],
 			"round": 15,
 			"slug": "italian-grand-prix"
 		},
 		{
-			"circuit": { "country": "China", "location": "Shanghai", "name": "Shanghai International Circuit" },
+			"circuit": {
+				"country": "China",
+				"location": "Shanghai",
+				"name": "Shanghai International Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 244, "position": 1, "wins": 14 },
+				{
+					"constructorRef": "ferrari",
+					"points": 244,
+					"position": 1,
+					"wins": 14
+				},
 				{ "constructorRef": "bar", "points": 105, "position": 2, "wins": 0 },
 				{ "constructorRef": "renault", "points": 96, "position": 3, "wins": 1 },
-				{ "constructorRef": "williams", "points": 64, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 64,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 58, "position": 5, "wins": 1 },
 				{ "constructorRef": "sauber", "points": 32, "position": 6, "wins": 0 },
 				{ "constructorRef": "jaguar", "points": 10, "position": 7, "wins": 0 },
@@ -715,7 +1166,12 @@
 			],
 			"date": "26th Sep 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 136, "position": 1, "wins": 12 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 136,
+					"position": 1,
+					"wins": 12
+				},
 				{ "driverRef": "barrichello", "points": 108, "position": 2, "wins": 2 },
 				{ "driverRef": "button", "points": 79, "position": 3, "wins": 0 },
 				{ "driverRef": "alonso", "points": 50, "position": 4, "wins": 0 },
@@ -725,7 +1181,12 @@
 				{ "driverRef": "sato", "points": 26, "position": 8, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 24, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 21, "position": 10, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 12, "position": 11, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 12,
+					"position": 11,
+					"wins": 0
+				},
 				{ "driverRef": "massa", "points": 11, "position": 12, "wins": 0 },
 				{ "driverRef": "webber", "points": 7, "position": 13, "wins": 0 },
 				{ "driverRef": "panis", "points": 6, "position": 14, "wins": 0 },
@@ -743,7 +1204,11 @@
 			],
 			"name": "Chinese Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 1 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 1
+				},
 				{ "constructorRef": "bar", "driverRef": "button", "position": 2 },
 				{ "constructorRef": "mclaren", "driverRef": "raikkonen", "position": 3 }
 			],
@@ -751,12 +1216,31 @@
 			"slug": "chinese-grand-prix"
 		},
 		{
-			"circuit": { "country": "Japan", "location": "Suzuka", "name": "Suzuka Circuit" },
+			"circuit": {
+				"country": "Japan",
+				"location": "Suzuka",
+				"name": "Suzuka Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 254, "position": 1, "wins": 15 },
+				{
+					"constructorRef": "ferrari",
+					"points": 254,
+					"position": 1,
+					"wins": 15
+				},
 				{ "constructorRef": "bar", "points": 116, "position": 2, "wins": 0 },
-				{ "constructorRef": "renault", "points": 100, "position": 3, "wins": 1 },
-				{ "constructorRef": "williams", "points": 74, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "renault",
+					"points": 100,
+					"position": 3,
+					"wins": 1
+				},
+				{
+					"constructorRef": "williams",
+					"points": 74,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "mclaren", "points": 61, "position": 5, "wins": 1 },
 				{ "constructorRef": "sauber", "points": 33, "position": 6, "wins": 0 },
 				{ "constructorRef": "jaguar", "points": 10, "position": 7, "wins": 0 },
@@ -766,7 +1250,12 @@
 			],
 			"date": "10th Oct 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 146, "position": 1, "wins": 13 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 146,
+					"position": 1,
+					"wins": 13
+				},
 				{ "driverRef": "barrichello", "points": 108, "position": 2, "wins": 2 },
 				{ "driverRef": "button", "points": 85, "position": 3, "wins": 0 },
 				{ "driverRef": "alonso", "points": 54, "position": 4, "wins": 0 },
@@ -776,7 +1265,12 @@
 				{ "driverRef": "sato", "points": 31, "position": 8, "wins": 0 },
 				{ "driverRef": "coulthard", "points": 24, "position": 9, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 22, "position": 10, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 20, "position": 11, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 20,
+					"position": 11,
+					"wins": 0
+				},
 				{ "driverRef": "massa", "points": 11, "position": 12, "wins": 0 },
 				{ "driverRef": "webber", "points": 7, "position": 13, "wins": 0 },
 				{ "driverRef": "panis", "points": 6, "position": 14, "wins": 0 },
@@ -794,20 +1288,47 @@
 			],
 			"name": "Japanese Grand Prix",
 			"podium": [
-				{ "constructorRef": "ferrari", "driverRef": "michael_schumacher", "position": 1 },
-				{ "constructorRef": "williams", "driverRef": "ralf_schumacher", "position": 2 },
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "michael_schumacher",
+					"position": 1
+				},
+				{
+					"constructorRef": "williams",
+					"driverRef": "ralf_schumacher",
+					"position": 2
+				},
 				{ "constructorRef": "bar", "driverRef": "button", "position": 3 }
 			],
 			"round": 17,
 			"slug": "japanese-grand-prix"
 		},
 		{
-			"circuit": { "country": "Brazil", "location": "São Paulo", "name": "Autódromo José Carlos Pace" },
+			"circuit": {
+				"country": "Brazil",
+				"location": "São Paulo",
+				"name": "Autódromo José Carlos Pace"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "ferrari", "points": 262, "position": 1, "wins": 15 },
+				{
+					"constructorRef": "ferrari",
+					"points": 262,
+					"position": 1,
+					"wins": 15
+				},
 				{ "constructorRef": "bar", "points": 119, "position": 2, "wins": 0 },
-				{ "constructorRef": "renault", "points": 105, "position": 3, "wins": 1 },
-				{ "constructorRef": "williams", "points": 88, "position": 4, "wins": 1 },
+				{
+					"constructorRef": "renault",
+					"points": 105,
+					"position": 3,
+					"wins": 1
+				},
+				{
+					"constructorRef": "williams",
+					"points": 88,
+					"position": 4,
+					"wins": 1
+				},
 				{ "constructorRef": "mclaren", "points": 69, "position": 5, "wins": 1 },
 				{ "constructorRef": "sauber", "points": 34, "position": 6, "wins": 0 },
 				{ "constructorRef": "jaguar", "points": 10, "position": 7, "wins": 0 },
@@ -817,7 +1338,12 @@
 			],
 			"date": "24th Oct 2004",
 			"driverStandings": [
-				{ "driverRef": "michael_schumacher", "points": 148, "position": 1, "wins": 13 },
+				{
+					"driverRef": "michael_schumacher",
+					"points": 148,
+					"position": 1,
+					"wins": 13
+				},
 				{ "driverRef": "barrichello", "points": 114, "position": 2, "wins": 2 },
 				{ "driverRef": "button", "points": 85, "position": 3, "wins": 0 },
 				{ "driverRef": "alonso", "points": 59, "position": 4, "wins": 0 },
@@ -825,7 +1351,12 @@
 				{ "driverRef": "trulli", "points": 46, "position": 6, "wins": 1 },
 				{ "driverRef": "raikkonen", "points": 45, "position": 7, "wins": 1 },
 				{ "driverRef": "sato", "points": 34, "position": 8, "wins": 0 },
-				{ "driverRef": "ralf_schumacher", "points": 24, "position": 9, "wins": 0 },
+				{
+					"driverRef": "ralf_schumacher",
+					"points": 24,
+					"position": 9,
+					"wins": 0
+				},
 				{ "driverRef": "coulthard", "points": 24, "position": 10, "wins": 0 },
 				{ "driverRef": "fisichella", "points": 22, "position": 11, "wins": 0 },
 				{ "driverRef": "massa", "points": 12, "position": 12, "wins": 0 },
@@ -846,8 +1377,16 @@
 			"name": "Brazilian Grand Prix",
 			"podium": [
 				{ "constructorRef": "williams", "driverRef": "montoya", "position": 1 },
-				{ "constructorRef": "mclaren", "driverRef": "raikkonen", "position": 2 },
-				{ "constructorRef": "ferrari", "driverRef": "barrichello", "position": 3 }
+				{
+					"constructorRef": "mclaren",
+					"driverRef": "raikkonen",
+					"position": 2
+				},
+				{
+					"constructorRef": "ferrari",
+					"driverRef": "barrichello",
+					"position": 3
+				}
 			],
 			"round": 18,
 			"slug": "brazilian-grand-prix"
@@ -857,8 +1396,16 @@
 		{
 			"constructorRef": "bar",
 			"drivers": [
-				{ "driverRef": "button", "name": "Jenson Button", "nationality": "British" },
-				{ "driverRef": "sato", "name": "Takuma Sato", "nationality": "Japanese" }
+				{
+					"driverRef": "button",
+					"name": "Jenson Button",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "sato",
+					"name": "Takuma Sato",
+					"nationality": "Japanese"
+				}
 			],
 			"name": "BAR",
 			"nationality": "British"
@@ -866,8 +1413,16 @@
 		{
 			"constructorRef": "ferrari",
 			"drivers": [
-				{ "driverRef": "michael_schumacher", "name": "Michael Schumacher", "nationality": "German" },
-				{ "driverRef": "barrichello", "name": "Rubens Barrichello", "nationality": "Brazilian" }
+				{
+					"driverRef": "michael_schumacher",
+					"name": "Michael Schumacher",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "barrichello",
+					"name": "Rubens Barrichello",
+					"nationality": "Brazilian"
+				}
 			],
 			"name": "Ferrari",
 			"nationality": "Italian"
@@ -875,8 +1430,16 @@
 		{
 			"constructorRef": "jaguar",
 			"drivers": [
-				{ "driverRef": "klien", "name": "Christian Klien", "nationality": "Austrian" },
-				{ "driverRef": "webber", "name": "Mark Webber", "nationality": "Australian" }
+				{
+					"driverRef": "klien",
+					"name": "Christian Klien",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "webber",
+					"name": "Mark Webber",
+					"nationality": "Australian"
+				}
 			],
 			"name": "Jaguar",
 			"nationality": "British"
@@ -884,8 +1447,16 @@
 		{
 			"constructorRef": "jordan",
 			"drivers": [
-				{ "driverRef": "pantano", "name": "Giorgio Pantano", "nationality": "Italian" },
-				{ "driverRef": "heidfeld", "name": "Nick Heidfeld", "nationality": "German" },
+				{
+					"driverRef": "pantano",
+					"name": "Giorgio Pantano",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "heidfeld",
+					"name": "Nick Heidfeld",
+					"nationality": "German"
+				},
 				{ "driverRef": "glock", "name": "Timo Glock", "nationality": "German" }
 			],
 			"name": "Jordan",
@@ -894,8 +1465,16 @@
 		{
 			"constructorRef": "mclaren",
 			"drivers": [
-				{ "driverRef": "coulthard", "name": "David Coulthard", "nationality": "British" },
-				{ "driverRef": "raikkonen", "name": "Kimi Räikkönen", "nationality": "Finnish" }
+				{
+					"driverRef": "coulthard",
+					"name": "David Coulthard",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "raikkonen",
+					"name": "Kimi Räikkönen",
+					"nationality": "Finnish"
+				}
 			],
 			"name": "McLaren",
 			"nationality": "British"
@@ -903,8 +1482,16 @@
 		{
 			"constructorRef": "minardi",
 			"drivers": [
-				{ "driverRef": "bruni", "name": "Gianmaria Bruni", "nationality": "Italian" },
-				{ "driverRef": "baumgartner", "name": "Zsolt Baumgartner", "nationality": "Hungarian" }
+				{
+					"driverRef": "bruni",
+					"name": "Gianmaria Bruni",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "baumgartner",
+					"name": "Zsolt Baumgartner",
+					"nationality": "Hungarian"
+				}
 			],
 			"name": "Minardi",
 			"nationality": "Italian"
@@ -912,9 +1499,21 @@
 		{
 			"constructorRef": "renault",
 			"drivers": [
-				{ "driverRef": "alonso", "name": "Fernando Alonso", "nationality": "Spanish" },
-				{ "driverRef": "trulli", "name": "Jarno Trulli", "nationality": "Italian" },
-				{ "driverRef": "villeneuve", "name": "Jacques Villeneuve", "nationality": "Canadian" }
+				{
+					"driverRef": "alonso",
+					"name": "Fernando Alonso",
+					"nationality": "Spanish"
+				},
+				{
+					"driverRef": "trulli",
+					"name": "Jarno Trulli",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "villeneuve",
+					"name": "Jacques Villeneuve",
+					"nationality": "Canadian"
+				}
 			],
 			"name": "Renault",
 			"nationality": "French"
@@ -922,8 +1521,16 @@
 		{
 			"constructorRef": "sauber",
 			"drivers": [
-				{ "driverRef": "fisichella", "name": "Giancarlo Fisichella", "nationality": "Italian" },
-				{ "driverRef": "massa", "name": "Felipe Massa", "nationality": "Brazilian" }
+				{
+					"driverRef": "fisichella",
+					"name": "Giancarlo Fisichella",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "massa",
+					"name": "Felipe Massa",
+					"nationality": "Brazilian"
+				}
 			],
 			"name": "Sauber",
 			"nationality": "Swiss"
@@ -931,10 +1538,26 @@
 		{
 			"constructorRef": "toyota",
 			"drivers": [
-				{ "driverRef": "matta", "name": "Cristiano da Matta", "nationality": "Brazilian" },
-				{ "driverRef": "panis", "name": "Olivier Panis", "nationality": "French" },
-				{ "driverRef": "zonta", "name": "Ricardo Zonta", "nationality": "Brazilian" },
-				{ "driverRef": "trulli", "name": "Jarno Trulli", "nationality": "Italian" }
+				{
+					"driverRef": "matta",
+					"name": "Cristiano da Matta",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "panis",
+					"name": "Olivier Panis",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "zonta",
+					"name": "Ricardo Zonta",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "trulli",
+					"name": "Jarno Trulli",
+					"nationality": "Italian"
+				}
 			],
 			"name": "Toyota",
 			"nationality": "Japanese"
@@ -942,10 +1565,22 @@
 		{
 			"constructorRef": "williams",
 			"drivers": [
-				{ "driverRef": "ralf_schumacher", "name": "Ralf Schumacher", "nationality": "German" },
-				{ "driverRef": "montoya", "name": "Juan Pablo Montoya", "nationality": "Colombian" },
+				{
+					"driverRef": "ralf_schumacher",
+					"name": "Ralf Schumacher",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "montoya",
+					"name": "Juan Pablo Montoya",
+					"nationality": "Colombian"
+				},
 				{ "driverRef": "gene", "name": "Marc Gené", "nationality": "Spanish" },
-				{ "driverRef": "pizzonia", "name": "Antônio Pizzonia", "nationality": "Brazilian" }
+				{
+					"driverRef": "pizzonia",
+					"name": "Antônio Pizzonia",
+					"nationality": "Brazilian"
+				}
 			],
 			"name": "Williams",
 			"nationality": "British"

@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Cooper", "points": 0, "position": 11, "round": 7, "roundName": "German Grand Prix" }], "year": 1953 },
-		{ "results": [{ "constructor": "Cooper", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1954 }
+		{
+			"results": [
+				{
+					"constructor": "Cooper",
+					"points": 0,
+					"position": 11,
+					"round": 7,
+					"roundName": "German Grand Prix"
+				}
+			],
+			"year": 1953
+		},
+		{
+			"results": [
+				{
+					"constructor": "Cooper",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1954
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

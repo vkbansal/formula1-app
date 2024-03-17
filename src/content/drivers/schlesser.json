@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "RAM", "points": 0, "position": null, "round": 3, "roundName": "French Grand Prix" }], "year": 1983 },
-		{ "results": [{ "constructor": "Williams", "points": 0, "position": 11, "round": 12, "roundName": "Italian Grand Prix" }], "year": 1988 }
+		{
+			"results": [
+				{
+					"constructor": "RAM",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "French Grand Prix"
+				}
+			],
+			"year": 1983
+		},
+		{
+			"results": [
+				{
+					"constructor": "Williams",
+					"points": 0,
+					"position": 11,
+					"round": 12,
+					"roundName": "Italian Grand Prix"
+				}
+			],
+			"year": 1988
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

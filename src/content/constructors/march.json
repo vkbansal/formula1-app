@@ -473,7 +473,13 @@
 					"round": 3,
 					"roundName": "South African Grand Prix"
 				},
-				{ "results": [{ "driver": "Hans-Joachim Stuck", "points": 3, "position": 4 }], "round": 4, "roundName": "Spanish Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Hans-Joachim Stuck", "points": 3, "position": 4 }
+					],
+					"round": 4,
+					"roundName": "Spanish Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Vittorio Brambilla", "points": 0, "position": 9 },
@@ -568,8 +574,20 @@
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Vittorio Brambilla", "points": 0, "position": 9 }], "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "results": [{ "driver": "Vittorio Brambilla", "points": 0, "position": null }], "round": 2, "roundName": "Brazilian Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Vittorio Brambilla", "points": 0, "position": 9 }
+					],
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Vittorio Brambilla", "points": 0, "position": null }
+					],
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Lella Lombardi", "points": 0, "position": null },
@@ -997,7 +1015,13 @@
 					"round": 16,
 					"roundName": "Canadian Grand Prix"
 				},
-				{ "results": [{ "driver": "Alex Ribeiro", "points": 0, "position": 12 }], "round": 17, "roundName": "Japanese Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Alex Ribeiro", "points": 0, "position": 12 }
+					],
+					"round": 17,
+					"roundName": "Japanese Grand Prix"
+				}
 			],
 			"year": 1977
 		},
@@ -1011,7 +1035,13 @@
 					"round": 1,
 					"roundName": "United States Grand Prix West"
 				},
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": null }], "round": 2, "roundName": "Brazilian Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Derek Daly", "points": 0, "position": null }
+					],
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Derek Daly", "points": 0, "position": null },
@@ -1044,15 +1074,61 @@
 					"round": 6,
 					"roundName": "Monaco Grand Prix"
 				},
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": 16 }], "round": 7, "roundName": "Spanish Grand Prix" },
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": null }], "round": 8, "roundName": "French Grand Prix" },
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": 7 }], "round": 9, "roundName": "British Grand Prix" },
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": null }], "round": 10, "roundName": "German Grand Prix" },
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": 11 }], "round": 11, "roundName": "Austrian Grand Prix" },
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": null }], "round": 12, "roundName": "Dutch Grand Prix" },
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": null }], "round": 13, "roundName": "Italian Grand Prix" },
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": 8 }], "round": 14, "roundName": "Canadian Grand Prix" },
-				{ "results": [{ "driver": "Derek Daly", "points": 0, "position": null }], "round": 15, "roundName": "Caesars Palace Grand Prix" }
+				{
+					"results": [{ "driver": "Derek Daly", "points": 0, "position": 16 }],
+					"round": 7,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Derek Daly", "points": 0, "position": null }
+					],
+					"round": 8,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Derek Daly", "points": 0, "position": 7 }],
+					"round": 9,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Derek Daly", "points": 0, "position": null }
+					],
+					"round": 10,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Derek Daly", "points": 0, "position": 11 }],
+					"round": 11,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Derek Daly", "points": 0, "position": null }
+					],
+					"round": 12,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Derek Daly", "points": 0, "position": null }
+					],
+					"round": 13,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Derek Daly", "points": 0, "position": 8 }],
+					"round": 14,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Derek Daly", "points": 0, "position": null }
+					],
+					"round": 15,
+					"roundName": "Caesars Palace Grand Prix"
+				}
 			],
 			"year": 1981
 		},
@@ -1188,22 +1264,114 @@
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 1, "roundName": "Brazilian Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 2, "roundName": "San Marino Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 1, "position": 6 }], "round": 4, "roundName": "Monaco Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 5, "roundName": "Detroit Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 6, "roundName": "French Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 7, "roundName": "British Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 8, "roundName": "German Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": 10 }], "round": 9, "roundName": "Hungarian Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": 11 }], "round": 10, "roundName": "Austrian Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": 13 }], "round": 11, "roundName": "Italian Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": 9 }], "round": 12, "roundName": "Portuguese Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": 12 }], "round": 13, "roundName": "Spanish Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 14, "roundName": "Mexican Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 15, "roundName": "Japanese Grand Prix" },
-				{ "results": [{ "driver": "Ivan Capelli", "points": 0, "position": null }], "round": 16, "roundName": "Australian Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 2,
+					"roundName": "San Marino Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Ivan Capelli", "points": 1, "position": 6 }],
+					"round": 4,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 5,
+					"roundName": "Detroit Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 6,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 7,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 8,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": 10 }
+					],
+					"round": 9,
+					"roundName": "Hungarian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": 11 }
+					],
+					"round": 10,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": 13 }
+					],
+					"round": 11,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Ivan Capelli", "points": 0, "position": 9 }],
+					"round": 12,
+					"roundName": "Portuguese Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": 12 }
+					],
+					"round": 13,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 14,
+					"roundName": "Mexican Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 15,
+					"roundName": "Japanese Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Ivan Capelli", "points": 0, "position": null }
+					],
+					"round": 16,
+					"roundName": "Australian Grand Prix"
+				}
 			],
 			"year": 1987
 		},

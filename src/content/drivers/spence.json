@@ -19,62 +19,288 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Lotus-Climax", "points": 0, "position": 13, "round": 7, "roundName": "Italian Grand Prix" }], "year": 1963 },
 		{
 			"results": [
-				{ "constructor": "Lotus-Climax", "points": 0, "position": 9, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": 8, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 7, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 1, "position": 6, "round": 8, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 9, "roundName": "United States Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 3, "position": 4, "round": 10, "roundName": "Mexican Grand Prix" }
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": 13,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				}
+			],
+			"year": 1963
+		},
+		{
+			"results": [
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": 9,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": 8,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 1,
+					"position": 6,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 3,
+					"position": 4,
+					"round": 10,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1964
 		},
 		{
 			"results": [
-				{ "constructor": "Lotus-Climax", "points": 3, "position": 4, "round": 1, "roundName": "South African Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": 7, "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": 7, "round": 4, "roundName": "French Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 3, "position": 4, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": 8, "round": 6, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": 11, "round": 8, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 9, "roundName": "United States Grand Prix" },
-				{ "constructor": "Lotus-Climax", "points": 4, "position": 3, "round": 10, "roundName": "Mexican Grand Prix" }
+				{
+					"constructor": "Lotus-Climax",
+					"points": 3,
+					"position": 4,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": 7,
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": 7,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 3,
+					"position": 4,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": 8,
+					"round": 6,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": 11,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Climax",
+					"points": 4,
+					"position": 3,
+					"round": 10,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1965
 		},
 		{
 			"results": [
-				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 2, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 3, "roundName": "French Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 4, "roundName": "British Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 2, "position": 5, "round": 5, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 2, "position": 5, "round": 7, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Lotus-BRM", "points": 0, "position": null, "round": 8, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 2,
+					"position": 5,
+					"round": 5,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 2,
+					"position": 5,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Lotus-BRM",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1966
 		},
 		{
 			"results": [
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" },
-				{ "constructor": "BRM", "points": 1, "position": 6, "round": 2, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": 8, "round": 3, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "BRM", "points": 2, "position": 5, "round": 4, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 5, "roundName": "French Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" },
-				{ "constructor": "BRM", "points": 2, "position": 5, "round": 8, "roundName": "Canadian Grand Prix" },
-				{ "constructor": "BRM", "points": 2, "position": 5, "round": 9, "roundName": "Italian Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 10, "roundName": "United States Grand Prix" },
-				{ "constructor": "BRM", "points": 2, "position": 5, "round": 11, "roundName": "Mexican Grand Prix" }
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 1,
+					"position": 6,
+					"round": 2,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": 8,
+					"round": 3,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 2,
+					"position": 5,
+					"round": 4,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 2,
+					"position": 5,
+					"round": 8,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 2,
+					"position": 5,
+					"round": 9,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 2,
+					"position": 5,
+					"round": 11,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1967
 		},
-		{ "results": [{ "constructor": "BRM", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" }], "year": 1968 }
+		{
+			"results": [
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				}
+			],
+			"year": 1968
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 36

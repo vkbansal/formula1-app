@@ -28,7 +28,13 @@
 					"round": 2,
 					"roundName": "Monaco Grand Prix"
 				},
-				{ "results": [{ "driver": "Cuth Harrison", "points": 0, "position": null }], "round": 7, "roundName": "Italian Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Cuth Harrison", "points": 0, "position": null }
+					],
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1950
 		},
@@ -47,9 +53,27 @@
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Stirling Moss", "points": 0, "position": null }], "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "results": [{ "driver": "Stirling Moss", "points": 0, "position": null }], "round": 5, "roundName": "British Grand Prix" },
-				{ "results": [{ "driver": "Stirling Moss", "points": 0, "position": null }], "round": 7, "roundName": "Dutch Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Stirling Moss", "points": 0, "position": null }
+					],
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Stirling Moss", "points": 0, "position": null }
+					],
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Stirling Moss", "points": 0, "position": null }
+					],
+					"round": 7,
+					"roundName": "Dutch Grand Prix"
+				}
 			],
 			"year": 1952
 		}

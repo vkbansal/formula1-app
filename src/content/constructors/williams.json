@@ -130,7 +130,13 @@
 					"round": 9,
 					"roundName": "French Grand Prix"
 				},
-				{ "results": [{ "driver": "Jacques Laffite", "points": 0, "position": null }], "round": 10, "roundName": "British Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Jacques Laffite", "points": 0, "position": null }
+					],
+					"round": 10,
+					"roundName": "British Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Jacques Laffite", "points": 6, "position": 2 },
@@ -168,29 +174,117 @@
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Renzo Zorzi", "points": 0, "position": 9 }], "round": 1, "roundName": "Brazilian Grand Prix" },
-				{ "results": [{ "driver": "Emilio Zapico", "points": 0, "position": null }], "round": 4, "roundName": "Spanish Grand Prix" }
+				{
+					"results": [{ "driver": "Renzo Zorzi", "points": 0, "position": 9 }],
+					"round": 1,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Emilio Zapico", "points": 0, "position": null }
+					],
+					"round": 4,
+					"roundName": "Spanish Grand Prix"
+				}
 			],
 			"year": 1976
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": null }], "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": 11 }], "round": 2, "roundName": "Brazilian Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 3, "position": 4 }], "round": 3, "roundName": "South African Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": 7 }], "round": 4, "roundName": "United States Grand Prix West" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": null }], "round": 5, "roundName": "Monaco Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": 10 }], "round": 6, "roundName": "Belgian Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": 8 }], "round": 7, "roundName": "Spanish Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": null }], "round": 8, "roundName": "Swedish Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 2, "position": 5 }], "round": 9, "roundName": "French Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": null }], "round": 10, "roundName": "British Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": null }], "round": 11, "roundName": "German Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": null }], "round": 12, "roundName": "Austrian Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": null }], "round": 13, "roundName": "Dutch Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": 13 }], "round": 14, "roundName": "Italian Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 6, "position": 2 }], "round": 15, "roundName": "United States Grand Prix" },
-				{ "results": [{ "driver": "Alan Jones", "points": 0, "position": 9 }], "round": 16, "roundName": "Canadian Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Alan Jones", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 0, "position": 11 }],
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 3, "position": 4 }],
+					"round": 3,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 0, "position": 7 }],
+					"round": 4,
+					"roundName": "United States Grand Prix West"
+				},
+				{
+					"results": [
+						{ "driver": "Alan Jones", "points": 0, "position": null }
+					],
+					"round": 5,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 0, "position": 10 }],
+					"round": 6,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 0, "position": 8 }],
+					"round": 7,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Alan Jones", "points": 0, "position": null }
+					],
+					"round": 8,
+					"roundName": "Swedish Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 2, "position": 5 }],
+					"round": 9,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Alan Jones", "points": 0, "position": null }
+					],
+					"round": 10,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Alan Jones", "points": 0, "position": null }
+					],
+					"round": 11,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Alan Jones", "points": 0, "position": null }
+					],
+					"round": 12,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Alan Jones", "points": 0, "position": null }
+					],
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 0, "position": 13 }],
+					"round": 14,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 6, "position": 2 }],
+					"round": 15,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Alan Jones", "points": 0, "position": 9 }],
+					"round": 16,
+					"roundName": "Canadian Grand Prix"
+				}
 			],
 			"year": 1978
 		},
@@ -2178,7 +2272,13 @@
 					"round": 3,
 					"roundName": "San Marino Grand Prix"
 				},
-				{ "results": [{ "driver": "Damon Hill", "points": 0, "position": null }], "round": 4, "roundName": "Monaco Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Damon Hill", "points": 0, "position": null }
+					],
+					"round": 4,
+					"roundName": "Monaco Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Damon Hill", "points": 10, "position": 1 },
@@ -2588,7 +2688,11 @@
 				},
 				{
 					"results": [
-						{ "driver": "Heinz-Harald Frentzen", "points": 0, "position": null },
+						{
+							"driver": "Heinz-Harald Frentzen",
+							"points": 0,
+							"position": null
+						},
 						{ "driver": "Jacques Villeneuve", "points": 0, "position": null }
 					],
 					"round": 5,

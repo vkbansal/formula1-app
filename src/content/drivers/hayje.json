@@ -15,15 +15,62 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Penske", "points": 0, "position": null, "round": 12, "roundName": "Dutch Grand Prix" }], "year": 1976 },
 		{
 			"results": [
-				{ "constructor": "March", "points": 0, "position": null, "round": 3, "roundName": "South African Grand Prix" },
-				{ "constructor": "March", "points": 0, "position": null, "round": 5, "roundName": "Spanish Grand Prix" },
-				{ "constructor": "March", "points": 0, "position": null, "round": 6, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "March", "points": 0, "position": null, "round": 7, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "March", "points": 0, "position": null, "round": 8, "roundName": "Swedish Grand Prix" },
-				{ "constructor": "March", "points": 0, "position": null, "round": 13, "roundName": "Dutch Grand Prix" }
+				{
+					"constructor": "Penske",
+					"points": 0,
+					"position": null,
+					"round": 12,
+					"roundName": "Dutch Grand Prix"
+				}
+			],
+			"year": 1976
+		},
+		{
+			"results": [
+				{
+					"constructor": "March",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "March",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"constructor": "March",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "March",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "March",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "Swedish Grand Prix"
+				},
+				{
+					"constructor": "March",
+					"points": 0,
+					"position": null,
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
+				}
 			],
 			"year": 1977
 		}

@@ -1,16 +1,55 @@
 {
 	"rounds": [
 		{
-			"circuit": { "country": "South Africa", "location": "Midrand", "name": "Kyalami" },
+			"circuit": {
+				"country": "South Africa",
+				"location": "Midrand",
+				"name": "Kyalami"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "cooper_maserati", "points": 9, "position": 1, "wins": 1 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 2, "wins": 0 },
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 9,
+					"position": 1,
+					"wins": 1
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 2,
+					"wins": 0
+				},
 				{ "constructorRef": "honda", "points": 4, "position": 3, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 3, "position": 4, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 5, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 6, "wins": 0 },
-				{ "constructorRef": "lotus_brm", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 3,
+					"position": 4,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 5,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 6,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_brm",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "brm", "points": 0, "position": 9, "wins": 0 }
 			],
 			"date": "2nd Jan 1967",
@@ -36,29 +75,91 @@
 			],
 			"name": "South African Grand Prix",
 			"podium": [
-				{ "constructorRef": "cooper_maserati", "driverRef": "rodriguez", "position": 1 },
-				{ "constructorRef": "cooper_climax", "driverRef": "love", "position": 2 },
+				{
+					"constructorRef": "cooper_maserati",
+					"driverRef": "rodriguez",
+					"position": 1
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"driverRef": "love",
+					"position": 2
+				},
 				{ "constructorRef": "honda", "driverRef": "surtees", "position": 3 }
 			],
 			"round": 1,
 			"slug": "south-african-grand-prix"
 		},
 		{
-			"circuit": { "country": "Monaco", "location": "Monte-Carlo", "name": "Circuit de Monaco" },
+			"circuit": {
+				"country": "Monaco",
+				"location": "Monte-Carlo",
+				"name": "Circuit de Monaco"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 12, "position": 1, "wins": 1 },
-				{ "constructorRef": "cooper_maserati", "points": 11, "position": 2, "wins": 1 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 3, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 12,
+					"position": 1,
+					"wins": 1
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 11,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 3,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "honda", "points": 4, "position": 6, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "brm", "points": 1, "position": 9, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 10, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 11, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 12, "wins": 0 },
-				{ "constructorRef": "eagle_weslake", "points": 0, "position": 13, "wins": 0 },
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 0,
+					"position": 13,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 14, "wins": 0 }
 			],
 			"date": "7th May 1967",
@@ -90,7 +191,11 @@
 			],
 			"name": "Monaco Grand Prix",
 			"podium": [
-				{ "constructorRef": "brabham_repco", "driverRef": "hulme", "position": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "hulme",
+					"position": 1
+				},
 				{ "constructorRef": "lotus_brm", "driverRef": "hill", "position": 2 },
 				{ "constructorRef": "ferrari", "driverRef": "amon", "position": 3 }
 			],
@@ -98,22 +203,81 @@
 			"slug": "monaco-grand-prix"
 		},
 		{
-			"circuit": { "country": "Netherlands", "location": "Zandvoort", "name": "Circuit Park Zandvoort" },
+			"circuit": {
+				"country": "Netherlands",
+				"location": "Zandvoort",
+				"name": "Circuit Park Zandvoort"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 18, "position": 1, "wins": 1 },
-				{ "constructorRef": "cooper_maserati", "points": 11, "position": 2, "wins": 1 },
-				{ "constructorRef": "lotus_ford", "points": 9, "position": 3, "wins": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 18,
+					"position": 1,
+					"wins": 1
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 11,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 9,
+					"position": 3,
+					"wins": 1
+				},
 				{ "constructorRef": "ferrari", "points": 7, "position": 4, "wins": 0 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 5, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 6, "wins": 0 },
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 5,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 6,
+					"wins": 0
+				},
 				{ "constructorRef": "honda", "points": 4, "position": 7, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 8, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 9, "wins": 0 },
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 8,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 9,
+					"wins": 0
+				},
 				{ "constructorRef": "brm", "points": 1, "position": 10, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 11, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 12, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 13, "wins": 0 },
-				{ "constructorRef": "eagle_weslake", "points": 0, "position": 14, "wins": 0 },
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 13,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 0,
+					"position": 14,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 15, "wins": 0 }
 			],
 			"date": "4th Jun 1967",
@@ -149,29 +313,96 @@
 			"name": "Dutch Grand Prix",
 			"podium": [
 				{ "constructorRef": "lotus_ford", "driverRef": "clark", "position": 1 },
-				{ "constructorRef": "brabham_repco", "driverRef": "jack_brabham", "position": 2 },
-				{ "constructorRef": "brabham_repco", "driverRef": "hulme", "position": 3 }
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "jack_brabham",
+					"position": 2
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "hulme",
+					"position": 3
+				}
 			],
 			"round": 3,
 			"slug": "dutch-grand-prix"
 		},
 		{
-			"circuit": { "country": "Belgium", "location": "Spa", "name": "Circuit de Spa-Francorchamps" },
+			"circuit": {
+				"country": "Belgium",
+				"location": "Spa",
+				"name": "Circuit de Spa-Francorchamps"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 18, "position": 1, "wins": 1 },
-				{ "constructorRef": "cooper_maserati", "points": 14, "position": 2, "wins": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 18,
+					"position": 1,
+					"wins": 1
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 14,
+					"position": 2,
+					"wins": 1
+				},
 				{ "constructorRef": "ferrari", "points": 11, "position": 3, "wins": 0 },
-				{ "constructorRef": "lotus_ford", "points": 10, "position": 4, "wins": 1 },
-				{ "constructorRef": "eagle_weslake", "points": 9, "position": 5, "wins": 1 },
+				{
+					"constructorRef": "lotus_ford",
+					"points": 10,
+					"position": 4,
+					"wins": 1
+				},
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 9,
+					"position": 5,
+					"wins": 1
+				},
 				{ "constructorRef": "brm", "points": 7, "position": 6, "wins": 0 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 7, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "honda", "points": 4, "position": 9, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 10, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 11, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 12, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 13, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 14, "wins": 0 },
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 13,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 14,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 15, "wins": 0 }
 			],
 			"date": "18th Jun 1967",
@@ -207,7 +438,11 @@
 			],
 			"name": "Belgian Grand Prix",
 			"podium": [
-				{ "constructorRef": "eagle_weslake", "driverRef": "gurney", "position": 1 },
+				{
+					"constructorRef": "eagle_weslake",
+					"driverRef": "gurney",
+					"position": 1
+				},
 				{ "constructorRef": "brm", "driverRef": "stewart", "position": 2 },
 				{ "constructorRef": "ferrari", "driverRef": "amon", "position": 3 }
 			],
@@ -215,22 +450,81 @@
 			"slug": "belgian-grand-prix"
 		},
 		{
-			"circuit": { "country": "France", "location": "Le Mans", "name": "Le Mans" },
+			"circuit": {
+				"country": "France",
+				"location": "Le Mans",
+				"name": "Le Mans"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 27, "position": 1, "wins": 2 },
-				{ "constructorRef": "cooper_maserati", "points": 17, "position": 2, "wins": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 27,
+					"position": 1,
+					"wins": 2
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 17,
+					"position": 2,
+					"wins": 1
+				},
 				{ "constructorRef": "brm", "points": 11, "position": 3, "wins": 0 },
 				{ "constructorRef": "ferrari", "points": 11, "position": 4, "wins": 0 },
-				{ "constructorRef": "lotus_ford", "points": 10, "position": 5, "wins": 1 },
-				{ "constructorRef": "eagle_weslake", "points": 9, "position": 6, "wins": 1 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 7, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "lotus_ford",
+					"points": 10,
+					"position": 5,
+					"wins": 1
+				},
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 9,
+					"position": 6,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "honda", "points": 4, "position": 9, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 10, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 11, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 12, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 13, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 14, "wins": 0 },
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 13,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 14,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 15, "wins": 0 }
 			],
 			"date": "2nd Jul 1967",
@@ -266,32 +560,104 @@
 			],
 			"name": "French Grand Prix",
 			"podium": [
-				{ "constructorRef": "brabham_repco", "driverRef": "jack_brabham", "position": 1 },
-				{ "constructorRef": "brabham_repco", "driverRef": "hulme", "position": 2 },
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "jack_brabham",
+					"position": 1
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "hulme",
+					"position": 2
+				},
 				{ "constructorRef": "brm", "driverRef": "stewart", "position": 3 }
 			],
 			"round": 5,
 			"slug": "french-grand-prix"
 		},
 		{
-			"circuit": { "country": "UK", "location": "Silverstone", "name": "Silverstone Circuit" },
+			"circuit": {
+				"country": "UK",
+				"location": "Silverstone",
+				"name": "Silverstone Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 33, "position": 1, "wins": 2 },
-				{ "constructorRef": "lotus_ford", "points": 19, "position": 2, "wins": 2 },
-				{ "constructorRef": "cooper_maserati", "points": 19, "position": 3, "wins": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 33,
+					"position": 1,
+					"wins": 2
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 19,
+					"position": 2,
+					"wins": 2
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 19,
+					"position": 3,
+					"wins": 1
+				},
 				{ "constructorRef": "ferrari", "points": 15, "position": 4, "wins": 0 },
 				{ "constructorRef": "brm", "points": 11, "position": 5, "wins": 0 },
-				{ "constructorRef": "eagle_weslake", "points": 9, "position": 6, "wins": 1 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 7, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 9,
+					"position": 6,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "honda", "points": 5, "position": 9, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 10, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 11, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 12, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 13, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 14, "wins": 0 },
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 13,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 14,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 15, "wins": 0 },
-				{ "constructorRef": "cooper_ats", "points": 0, "position": 16, "wins": 0 }
+				{
+					"constructorRef": "cooper_ats",
+					"points": 0,
+					"position": 16,
+					"wins": 0
+				}
 			],
 			"date": "15th Jul 1967",
 			"driverStandings": [
@@ -330,34 +696,107 @@
 			"name": "British Grand Prix",
 			"podium": [
 				{ "constructorRef": "lotus_ford", "driverRef": "clark", "position": 1 },
-				{ "constructorRef": "brabham_repco", "driverRef": "hulme", "position": 2 },
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "hulme",
+					"position": 2
+				},
 				{ "constructorRef": "ferrari", "driverRef": "amon", "position": 3 }
 			],
 			"round": 6,
 			"slug": "british-grand-prix"
 		},
 		{
-			"circuit": { "country": "Germany", "location": "Nürburg", "name": "Nürburgring" },
+			"circuit": {
+				"country": "Germany",
+				"location": "Nürburg",
+				"name": "Nürburgring"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 42, "position": 1, "wins": 3 },
-				{ "constructorRef": "cooper_maserati", "points": 21, "position": 2, "wins": 1 },
-				{ "constructorRef": "lotus_ford", "points": 19, "position": 3, "wins": 2 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 42,
+					"position": 1,
+					"wins": 3
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 21,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 19,
+					"position": 3,
+					"wins": 2
+				},
 				{ "constructorRef": "ferrari", "points": 19, "position": 4, "wins": 0 },
 				{ "constructorRef": "brm", "points": 11, "position": 5, "wins": 0 },
-				{ "constructorRef": "eagle_weslake", "points": 9, "position": 6, "wins": 1 },
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 9,
+					"position": 6,
+					"wins": 1
+				},
 				{ "constructorRef": "honda", "points": 8, "position": 7, "wins": 0 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 8, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 9, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 10, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 11, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 0, "position": 12, "wins": 0 },
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 9,
+					"wins": 0
+				},
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
 				{ "constructorRef": "lola", "points": 0, "position": 13, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 14, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 15, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 16, "wins": 0 },
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 14,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 15,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 16,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 17, "wins": 0 },
 				{ "constructorRef": "protos", "points": 0, "position": 18, "wins": 0 },
-				{ "constructorRef": "cooper_ats", "points": 0, "position": 19, "wins": 0 }
+				{
+					"constructorRef": "cooper_ats",
+					"points": 0,
+					"position": 19,
+					"wins": 0
+				}
 			],
 			"date": "6th Aug 1967",
 			"driverStandings": [
@@ -401,35 +840,112 @@
 			],
 			"name": "German Grand Prix",
 			"podium": [
-				{ "constructorRef": "brabham_repco", "driverRef": "hulme", "position": 1 },
-				{ "constructorRef": "brabham_repco", "driverRef": "jack_brabham", "position": 2 },
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "hulme",
+					"position": 1
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "jack_brabham",
+					"position": 2
+				},
 				{ "constructorRef": "ferrari", "driverRef": "amon", "position": 3 }
 			],
 			"round": 7,
 			"slug": "german-grand-prix"
 		},
 		{
-			"circuit": { "country": "Canada", "location": "Ontario", "name": "Mosport International Raceway" },
+			"circuit": {
+				"country": "Canada",
+				"location": "Ontario",
+				"name": "Mosport International Raceway"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 51, "position": 1, "wins": 4 },
-				{ "constructorRef": "lotus_ford", "points": 22, "position": 2, "wins": 2 },
-				{ "constructorRef": "cooper_maserati", "points": 21, "position": 3, "wins": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 51,
+					"position": 1,
+					"wins": 4
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 22,
+					"position": 2,
+					"wins": 2
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 21,
+					"position": 3,
+					"wins": 1
+				},
 				{ "constructorRef": "ferrari", "points": 20, "position": 4, "wins": 0 },
-				{ "constructorRef": "eagle_weslake", "points": 13, "position": 5, "wins": 1 },
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 13,
+					"position": 5,
+					"wins": 1
+				},
 				{ "constructorRef": "brm", "points": 13, "position": 6, "wins": 0 },
 				{ "constructorRef": "honda", "points": 8, "position": 7, "wins": 0 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 8, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 9, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 10, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 11, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 0, "position": 12, "wins": 0 },
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 9,
+					"wins": 0
+				},
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
 				{ "constructorRef": "lola", "points": 0, "position": 13, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 14, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 15, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 16, "wins": 0 },
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 14,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 15,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 16,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 17, "wins": 0 },
 				{ "constructorRef": "protos", "points": 0, "position": 18, "wins": 0 },
-				{ "constructorRef": "cooper_ats", "points": 0, "position": 19, "wins": 0 }
+				{
+					"constructorRef": "cooper_ats",
+					"points": 0,
+					"position": 19,
+					"wins": 0
+				}
 			],
 			"date": "27th Aug 1967",
 			"driverStandings": [
@@ -477,35 +993,116 @@
 			],
 			"name": "Canadian Grand Prix",
 			"podium": [
-				{ "constructorRef": "brabham_repco", "driverRef": "jack_brabham", "position": 1 },
-				{ "constructorRef": "brabham_repco", "driverRef": "hulme", "position": 2 },
-				{ "constructorRef": "eagle_weslake", "driverRef": "gurney", "position": 3 }
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "jack_brabham",
+					"position": 1
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "hulme",
+					"position": 2
+				},
+				{
+					"constructorRef": "eagle_weslake",
+					"driverRef": "gurney",
+					"position": 3
+				}
 			],
 			"round": 8,
 			"slug": "canadian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Italy", "location": "Monza", "name": "Autodromo Nazionale di Monza" },
+			"circuit": {
+				"country": "Italy",
+				"location": "Monza",
+				"name": "Autodromo Nazionale di Monza"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 57, "position": 1, "wins": 4 },
-				{ "constructorRef": "lotus_ford", "points": 26, "position": 2, "wins": 2 },
-				{ "constructorRef": "cooper_maserati", "points": 24, "position": 3, "wins": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 57,
+					"position": 1,
+					"wins": 4
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 26,
+					"position": 2,
+					"wins": 2
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 24,
+					"position": 3,
+					"wins": 1
+				},
 				{ "constructorRef": "ferrari", "points": 20, "position": 4, "wins": 0 },
 				{ "constructorRef": "honda", "points": 17, "position": 5, "wins": 1 },
 				{ "constructorRef": "brm", "points": 15, "position": 6, "wins": 0 },
-				{ "constructorRef": "eagle_weslake", "points": 13, "position": 7, "wins": 1 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 8, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 9, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 10, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 11, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 0, "position": 12, "wins": 0 },
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 13,
+					"position": 7,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 9,
+					"wins": 0
+				},
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
 				{ "constructorRef": "lola", "points": 0, "position": 13, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 14, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 15, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 16, "wins": 0 },
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 14,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 15,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 16,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 17, "wins": 0 },
 				{ "constructorRef": "protos", "points": 0, "position": 18, "wins": 0 },
-				{ "constructorRef": "cooper_ats", "points": 0, "position": 19, "wins": 0 }
+				{
+					"constructorRef": "cooper_ats",
+					"points": 0,
+					"position": 19,
+					"wins": 0
+				}
 			],
 			"date": "10th Sep 1967",
 			"driverStandings": [
@@ -555,35 +1152,113 @@
 			"name": "Italian Grand Prix",
 			"podium": [
 				{ "constructorRef": "honda", "driverRef": "surtees", "position": 1 },
-				{ "constructorRef": "brabham_repco", "driverRef": "jack_brabham", "position": 2 },
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "jack_brabham",
+					"position": 2
+				},
 				{ "constructorRef": "lotus_ford", "driverRef": "clark", "position": 3 }
 			],
 			"round": 9,
 			"slug": "italian-grand-prix"
 		},
 		{
-			"circuit": { "country": "USA", "location": "New York State", "name": "Watkins Glen" },
+			"circuit": {
+				"country": "USA",
+				"location": "New York State",
+				"name": "Watkins Glen"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 61, "position": 1, "wins": 4 },
-				{ "constructorRef": "lotus_ford", "points": 35, "position": 2, "wins": 3 },
-				{ "constructorRef": "cooper_maserati", "points": 27, "position": 3, "wins": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 61,
+					"position": 1,
+					"wins": 4
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 35,
+					"position": 2,
+					"wins": 3
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 27,
+					"position": 3,
+					"wins": 1
+				},
 				{ "constructorRef": "ferrari", "points": 20, "position": 4, "wins": 0 },
 				{ "constructorRef": "honda", "points": 17, "position": 5, "wins": 1 },
 				{ "constructorRef": "brm", "points": 15, "position": 6, "wins": 0 },
-				{ "constructorRef": "eagle_weslake", "points": 13, "position": 7, "wins": 1 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 8, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 9, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 10, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 11, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 0, "position": 12, "wins": 0 },
-				{ "constructorRef": "mclaren_ford", "points": 0, "position": 13, "wins": 0 },
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 13,
+					"position": 7,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 9,
+					"wins": 0
+				},
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 0,
+					"position": 13,
+					"wins": 0
+				},
 				{ "constructorRef": "lola", "points": 0, "position": 14, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 15, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 16, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 17, "wins": 0 },
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 15,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 16,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 17,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 18, "wins": 0 },
 				{ "constructorRef": "protos", "points": 0, "position": 19, "wins": 0 },
-				{ "constructorRef": "cooper_ats", "points": 0, "position": 20, "wins": 0 }
+				{
+					"constructorRef": "cooper_ats",
+					"points": 0,
+					"position": 20,
+					"wins": 0
+				}
 			],
 			"date": "1st Oct 1967",
 			"driverStandings": [
@@ -635,34 +1310,112 @@
 			"podium": [
 				{ "constructorRef": "lotus_ford", "driverRef": "clark", "position": 1 },
 				{ "constructorRef": "lotus_ford", "driverRef": "hill", "position": 2 },
-				{ "constructorRef": "brabham_repco", "driverRef": "hulme", "position": 3 }
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "hulme",
+					"position": 3
+				}
 			],
 			"round": 10,
 			"slug": "united-states-grand-prix"
 		},
 		{
-			"circuit": { "country": "Mexico", "location": "Mexico City", "name": "Autódromo Hermanos Rodríguez" },
+			"circuit": {
+				"country": "Mexico",
+				"location": "Mexico City",
+				"name": "Autódromo Hermanos Rodríguez"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "brabham_repco", "points": 63, "position": 1, "wins": 4 },
-				{ "constructorRef": "lotus_ford", "points": 44, "position": 2, "wins": 4 },
-				{ "constructorRef": "cooper_maserati", "points": 28, "position": 3, "wins": 1 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 63,
+					"position": 1,
+					"wins": 4
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 44,
+					"position": 2,
+					"wins": 4
+				},
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 28,
+					"position": 3,
+					"wins": 1
+				},
 				{ "constructorRef": "honda", "points": 20, "position": 4, "wins": 1 },
 				{ "constructorRef": "ferrari", "points": 20, "position": 5, "wins": 0 },
 				{ "constructorRef": "brm", "points": 17, "position": 6, "wins": 0 },
-				{ "constructorRef": "eagle_weslake", "points": 13, "position": 7, "wins": 1 },
-				{ "constructorRef": "lotus_brm", "points": 6, "position": 8, "wins": 0 },
-				{ "constructorRef": "cooper_climax", "points": 6, "position": 9, "wins": 0 },
-				{ "constructorRef": "mclaren_brm", "points": 3, "position": 10, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 2, "position": 11, "wins": 0 },
-				{ "constructorRef": "mclaren_ford", "points": 0, "position": 12, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 0, "position": 13, "wins": 0 },
+				{
+					"constructorRef": "eagle_weslake",
+					"points": 13,
+					"position": 7,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_brm",
+					"points": 6,
+					"position": 8,
+					"wins": 0
+				},
+				{
+					"constructorRef": "cooper_climax",
+					"points": 6,
+					"position": 9,
+					"wins": 0
+				},
+				{
+					"constructorRef": "mclaren_brm",
+					"points": 3,
+					"position": 10,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_climax",
+					"points": 2,
+					"position": 11,
+					"wins": 0
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 0,
+					"position": 12,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 0,
+					"position": 13,
+					"wins": 0
+				},
 				{ "constructorRef": "lola", "points": 0, "position": 14, "wins": 0 },
-				{ "constructorRef": "lds_climax", "points": 0, "position": 15, "wins": 0 },
-				{ "constructorRef": "lotus_climax", "points": 0, "position": 16, "wins": 0 },
-				{ "constructorRef": "eagle_climax", "points": 0, "position": 17, "wins": 0 },
+				{
+					"constructorRef": "lds_climax",
+					"points": 0,
+					"position": 15,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_climax",
+					"points": 0,
+					"position": 16,
+					"wins": 0
+				},
+				{
+					"constructorRef": "eagle_climax",
+					"points": 0,
+					"position": 17,
+					"wins": 0
+				},
 				{ "constructorRef": "matra", "points": 0, "position": 18, "wins": 0 },
 				{ "constructorRef": "protos", "points": 0, "position": 19, "wins": 0 },
-				{ "constructorRef": "cooper_ats", "points": 0, "position": 20, "wins": 0 }
+				{
+					"constructorRef": "cooper_ats",
+					"points": 0,
+					"position": 20,
+					"wins": 0
+				}
 			],
 			"date": "22nd Oct 1967",
 			"driverStandings": [
@@ -714,8 +1467,16 @@
 			"name": "Mexican Grand Prix",
 			"podium": [
 				{ "constructorRef": "lotus_ford", "driverRef": "clark", "position": 1 },
-				{ "constructorRef": "brabham_repco", "driverRef": "jack_brabham", "position": 2 },
-				{ "constructorRef": "brabham_repco", "driverRef": "hulme", "position": 3 }
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "jack_brabham",
+					"position": 2
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"driverRef": "hulme",
+					"position": 3
+				}
 			],
 			"round": 11,
 			"slug": "mexican-grand-prix"
@@ -725,24 +1486,46 @@
 		{
 			"constructorRef": "brabham_climax",
 			"drivers": [
-				{ "driverRef": "anderson", "name": "Bob Anderson", "nationality": "British" },
-				{ "driverRef": "charlton", "name": "Dave Charlton", "nationality": "South African" },
-				{ "driverRef": "botha", "name": "Luki Botha", "nationality": "South African" }
+				{
+					"driverRef": "anderson",
+					"name": "Bob Anderson",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "charlton",
+					"name": "Dave Charlton",
+					"nationality": "South African"
+				},
+				{
+					"driverRef": "botha",
+					"name": "Luki Botha",
+					"nationality": "South African"
+				}
 			],
 			"name": "Brabham-Climax",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "brabham_ford",
-			"drivers": [{ "driverRef": "rees", "name": "Alan Rees", "nationality": "British" }],
+			"drivers": [
+				{ "driverRef": "rees", "name": "Alan Rees", "nationality": "British" }
+			],
 			"name": "Brabham-Ford",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "brabham_repco",
 			"drivers": [
-				{ "driverRef": "hulme", "name": "Denny Hulme", "nationality": "New Zealander" },
-				{ "driverRef": "jack_brabham", "name": "Jack Brabham", "nationality": "Australian" },
+				{
+					"driverRef": "hulme",
+					"name": "Denny Hulme",
+					"nationality": "New Zealander"
+				},
+				{
+					"driverRef": "jack_brabham",
+					"name": "Jack Brabham",
+					"nationality": "Australian"
+				},
 				{ "driverRef": "ligier", "name": "Guy Ligier", "nationality": "French" }
 			],
 			"name": "Brabham-Repco",
@@ -751,26 +1534,56 @@
 		{
 			"constructorRef": "brm",
 			"drivers": [
-				{ "driverRef": "spence", "name": "Mike Spence", "nationality": "British" },
-				{ "driverRef": "stewart", "name": "Jackie Stewart", "nationality": "British" },
-				{ "driverRef": "courage", "name": "Piers Courage", "nationality": "British" },
-				{ "driverRef": "irwin", "name": "Chris Irwin", "nationality": "British" },
-				{ "driverRef": "hobbs", "name": "David Hobbs", "nationality": "British" }
+				{
+					"driverRef": "spence",
+					"name": "Mike Spence",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "stewart",
+					"name": "Jackie Stewart",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "courage",
+					"name": "Piers Courage",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "irwin",
+					"name": "Chris Irwin",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "hobbs",
+					"name": "David Hobbs",
+					"nationality": "British"
+				}
 			],
 			"name": "BRM",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "cooper_ats",
-			"drivers": [{ "driverRef": "moser", "name": "Silvio Moser", "nationality": "Swiss" }],
+			"drivers": [
+				{ "driverRef": "moser", "name": "Silvio Moser", "nationality": "Swiss" }
+			],
 			"name": "Cooper-ATS",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "cooper_climax",
 			"drivers": [
-				{ "driverRef": "love", "name": "John Love", "nationality": "Rhodesian" },
-				{ "driverRef": "tom_jones", "name": "Tom Jones", "nationality": "American" }
+				{
+					"driverRef": "love",
+					"name": "John Love",
+					"nationality": "Rhodesian"
+				},
+				{
+					"driverRef": "tom_jones",
+					"name": "Tom Jones",
+					"nationality": "American"
+				}
 			],
 			"name": "Cooper-Climax",
 			"nationality": "British"
@@ -778,13 +1591,37 @@
 		{
 			"constructorRef": "cooper_maserati",
 			"drivers": [
-				{ "driverRef": "rodriguez", "name": "Pedro Rodríguez", "nationality": "Mexican" },
-				{ "driverRef": "siffert", "name": "Jo Siffert", "nationality": "Swiss" },
-				{ "driverRef": "rindt", "name": "Jochen Rindt", "nationality": "Austrian" },
-				{ "driverRef": "bonnier", "name": "Jo Bonnier", "nationality": "Swedish" },
-				{ "driverRef": "ligier", "name": "Guy Ligier", "nationality": "French" },
+				{
+					"driverRef": "rodriguez",
+					"name": "Pedro Rodríguez",
+					"nationality": "Mexican"
+				},
+				{
+					"driverRef": "siffert",
+					"name": "Jo Siffert",
+					"nationality": "Swiss"
+				},
+				{
+					"driverRef": "rindt",
+					"name": "Jochen Rindt",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "bonnier",
+					"name": "Jo Bonnier",
+					"nationality": "Swedish"
+				},
+				{
+					"driverRef": "ligier",
+					"name": "Guy Ligier",
+					"nationality": "French"
+				},
 				{ "driverRef": "rees", "name": "Alan Rees", "nationality": "British" },
-				{ "driverRef": "attwood", "name": "Richard Attwood", "nationality": "British" },
+				{
+					"driverRef": "attwood",
+					"name": "Richard Attwood",
+					"nationality": "British"
+				},
 				{ "driverRef": "ickx", "name": "Jacky Ickx", "nationality": "Belgian" }
 			],
 			"name": "Cooper-Maserati",
@@ -793,8 +1630,16 @@
 		{
 			"constructorRef": "eagle_climax",
 			"drivers": [
-				{ "driverRef": "gurney", "name": "Dan Gurney", "nationality": "American" },
-				{ "driverRef": "ginther", "name": "Richie Ginther", "nationality": "American" },
+				{
+					"driverRef": "gurney",
+					"name": "Dan Gurney",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "ginther",
+					"name": "Richie Ginther",
+					"nationality": "American"
+				},
 				{ "driverRef": "pease", "name": "Al Pease", "nationality": "Canadian" }
 			],
 			"name": "Eagle-Climax",
@@ -803,9 +1648,21 @@
 		{
 			"constructorRef": "eagle_weslake",
 			"drivers": [
-				{ "driverRef": "gurney", "name": "Dan Gurney", "nationality": "American" },
-				{ "driverRef": "mclaren", "name": "Bruce McLaren", "nationality": "New Zealander" },
-				{ "driverRef": "scarfiotti", "name": "Ludovico Scarfiotti", "nationality": "Italian" }
+				{
+					"driverRef": "gurney",
+					"name": "Dan Gurney",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "mclaren",
+					"name": "Bruce McLaren",
+					"nationality": "New Zealander"
+				},
+				{
+					"driverRef": "scarfiotti",
+					"name": "Ludovico Scarfiotti",
+					"nationality": "Italian"
+				}
 			],
 			"name": "Eagle-Weslake",
 			"nationality": "American"
@@ -813,32 +1670,72 @@
 		{
 			"constructorRef": "ferrari",
 			"drivers": [
-				{ "driverRef": "amon", "name": "Chris Amon", "nationality": "New Zealander" },
-				{ "driverRef": "bandini", "name": "Lorenzo Bandini", "nationality": "Italian" },
-				{ "driverRef": "parkes", "name": "Mike Parkes", "nationality": "British" },
-				{ "driverRef": "scarfiotti", "name": "Ludovico Scarfiotti", "nationality": "Italian" },
-				{ "driverRef": "williams", "name": "Jonathan Williams", "nationality": "British" }
+				{
+					"driverRef": "amon",
+					"name": "Chris Amon",
+					"nationality": "New Zealander"
+				},
+				{
+					"driverRef": "bandini",
+					"name": "Lorenzo Bandini",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "parkes",
+					"name": "Mike Parkes",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "scarfiotti",
+					"name": "Ludovico Scarfiotti",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "williams",
+					"name": "Jonathan Williams",
+					"nationality": "British"
+				}
 			],
 			"name": "Ferrari",
 			"nationality": "Italian"
 		},
 		{
 			"constructorRef": "honda",
-			"drivers": [{ "driverRef": "surtees", "name": "John Surtees", "nationality": "British" }],
+			"drivers": [
+				{
+					"driverRef": "surtees",
+					"name": "John Surtees",
+					"nationality": "British"
+				}
+			],
 			"name": "Honda",
 			"nationality": "Japanese"
 		},
 		{
 			"constructorRef": "lds_climax",
-			"drivers": [{ "driverRef": "tingle", "name": "Sam Tingle", "nationality": "Rhodesian" }],
+			"drivers": [
+				{
+					"driverRef": "tingle",
+					"name": "Sam Tingle",
+					"nationality": "Rhodesian"
+				}
+			],
 			"name": "LDS-Climax",
 			"nationality": "South African"
 		},
 		{
 			"constructorRef": "lola",
 			"drivers": [
-				{ "driverRef": "hobbs", "name": "David Hobbs", "nationality": "British" },
-				{ "driverRef": "hahne", "name": "Hubert Hahne", "nationality": "German" }
+				{
+					"driverRef": "hobbs",
+					"name": "David Hobbs",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "hahne",
+					"name": "Hubert Hahne",
+					"nationality": "German"
+				}
 			],
 			"name": "Lola",
 			"nationality": "British"
@@ -846,19 +1743,41 @@
 		{
 			"constructorRef": "lotus_brm",
 			"drivers": [
-				{ "driverRef": "courage", "name": "Piers Courage", "nationality": "British" },
+				{
+					"driverRef": "courage",
+					"name": "Piers Courage",
+					"nationality": "British"
+				},
 				{ "driverRef": "clark", "name": "Jim Clark", "nationality": "British" },
-				{ "driverRef": "hill", "name": "Graham Hill", "nationality": "British" },
-				{ "driverRef": "irwin", "name": "Chris Irwin", "nationality": "British" },
-				{ "driverRef": "fisher", "name": "Mike Fisher", "nationality": "American" },
-				{ "driverRef": "solana", "name": "Moisés Solana", "nationality": "Mexican" }
+				{
+					"driverRef": "hill",
+					"name": "Graham Hill",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "irwin",
+					"name": "Chris Irwin",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "fisher",
+					"name": "Mike Fisher",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "solana",
+					"name": "Moisés Solana",
+					"nationality": "Mexican"
+				}
 			],
 			"name": "Lotus-BRM",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "lotus_climax",
-			"drivers": [{ "driverRef": "clark", "name": "Jim Clark", "nationality": "British" }],
+			"drivers": [
+				{ "driverRef": "clark", "name": "Jim Clark", "nationality": "British" }
+			],
 			"name": "Lotus-Climax",
 			"nationality": "British"
 		},
@@ -866,11 +1785,31 @@
 			"constructorRef": "lotus_ford",
 			"drivers": [
 				{ "driverRef": "clark", "name": "Jim Clark", "nationality": "British" },
-				{ "driverRef": "hill", "name": "Graham Hill", "nationality": "British" },
-				{ "driverRef": "oliver", "name": "Jackie Oliver", "nationality": "British" },
-				{ "driverRef": "wietzes", "name": "Eppie Wietzes", "nationality": "Canadian" },
-				{ "driverRef": "baghetti", "name": "Giancarlo Baghetti", "nationality": "Italian" },
-				{ "driverRef": "solana", "name": "Moisés Solana", "nationality": "Mexican" }
+				{
+					"driverRef": "hill",
+					"name": "Graham Hill",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "oliver",
+					"name": "Jackie Oliver",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "wietzes",
+					"name": "Eppie Wietzes",
+					"nationality": "Canadian"
+				},
+				{
+					"driverRef": "baghetti",
+					"name": "Giancarlo Baghetti",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "solana",
+					"name": "Moisés Solana",
+					"nationality": "Mexican"
+				}
 			],
 			"name": "Lotus-Ford",
 			"nationality": "British"
@@ -878,23 +1817,47 @@
 		{
 			"constructorRef": "matra",
 			"drivers": [
-				{ "driverRef": "gavin", "name": "Johnny Servoz-Gavin", "nationality": "French" },
-				{ "driverRef": "beltoise", "name": "Jean-Pierre Beltoise", "nationality": "French" },
+				{
+					"driverRef": "gavin",
+					"name": "Johnny Servoz-Gavin",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "beltoise",
+					"name": "Jean-Pierre Beltoise",
+					"nationality": "French"
+				},
 				{ "driverRef": "ickx", "name": "Jacky Ickx", "nationality": "Belgian" },
-				{ "driverRef": "jo_schlesser", "name": "Jo Schlesser", "nationality": "French" }
+				{
+					"driverRef": "jo_schlesser",
+					"name": "Jo Schlesser",
+					"nationality": "French"
+				}
 			],
 			"name": "Matra",
 			"nationality": "French"
 		},
 		{
 			"constructorRef": "mclaren_brm",
-			"drivers": [{ "driverRef": "mclaren", "name": "Bruce McLaren", "nationality": "New Zealander" }],
+			"drivers": [
+				{
+					"driverRef": "mclaren",
+					"name": "Bruce McLaren",
+					"nationality": "New Zealander"
+				}
+			],
 			"name": "McLaren-BRM",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "mclaren_ford",
-			"drivers": [{ "driverRef": "beltoise", "name": "Jean-Pierre Beltoise", "nationality": "French" }],
+			"drivers": [
+				{
+					"driverRef": "beltoise",
+					"name": "Jean-Pierre Beltoise",
+					"nationality": "French"
+				}
+			],
 			"name": "McLaren-Ford",
 			"nationality": "British"
 		},
@@ -902,7 +1865,11 @@
 			"constructorRef": "protos",
 			"drivers": [
 				{ "driverRef": "hart", "name": "Brian Hart", "nationality": "British" },
-				{ "driverRef": "ahrens", "name": "Kurt Ahrens", "nationality": "German" }
+				{
+					"driverRef": "ahrens",
+					"name": "Kurt Ahrens",
+					"nationality": "German"
+				}
 			],
 			"name": "Protos",
 			"nationality": "British"

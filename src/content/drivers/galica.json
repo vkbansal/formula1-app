@@ -15,11 +15,34 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Surtees", "points": 0, "position": null, "round": 9, "roundName": "British Grand Prix" }], "year": 1976 },
 		{
 			"results": [
-				{ "constructor": "Hesketh", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Hesketh", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" }
+				{
+					"constructor": "Surtees",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1976
+		},
+		{
+			"results": [
+				{
+					"constructor": "Hesketh",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Hesketh",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				}
 			],
 			"year": 1978
 		}

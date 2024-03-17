@@ -477,7 +477,11 @@
 					"results": [
 						{ "driver": "Jo Bonnier", "points": 1, "position": 6 },
 						{ "driver": "Tony Maggs", "points": 0, "position": null },
-						{ "driver": "Mário de Araújo Cabral", "points": 0, "position": null },
+						{
+							"driver": "Mário de Araújo Cabral",
+							"points": 0,
+							"position": null
+						},
 						{ "driver": "Bruce McLaren", "points": 0, "position": null }
 					],
 					"round": 6,
@@ -488,7 +492,11 @@
 						{ "driver": "Jo Bonnier", "points": 0, "position": 7 },
 						{ "driver": "Tony Maggs", "points": 1, "position": 6 },
 						{ "driver": "Bruce McLaren", "points": 4, "position": 3 },
-						{ "driver": "Mário de Araújo Cabral", "points": 0, "position": null }
+						{
+							"driver": "Mário de Araújo Cabral",
+							"points": 0,
+							"position": null
+						}
 					],
 					"round": 7,
 					"roundName": "Italian Grand Prix"
@@ -703,14 +711,28 @@
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "John Love", "points": 6, "position": 2 }], "round": 1, "roundName": "South African Grand Prix" },
-				{ "results": [{ "driver": "Tom Jones", "points": 0, "position": null }], "round": 8, "roundName": "Canadian Grand Prix" }
+				{
+					"results": [{ "driver": "John Love", "points": 6, "position": 2 }],
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Tom Jones", "points": 0, "position": null }],
+					"round": 8,
+					"roundName": "Canadian Grand Prix"
+				}
 			],
 			"year": 1967
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Basil van Rooyen", "points": 0, "position": null }], "round": 1, "roundName": "South African Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Basil van Rooyen", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				}
 			],
 			"year": 1968
 		}

@@ -21,20 +21,109 @@
 	"poles": 0,
 	"raceWins": 1,
 	"seasons": [
-		{ "results": [{ "constructor": "Lesovsky", "points": 0, "position": 15, "round": 3, "roundName": "Indianapolis 500" }], "year": 1950 },
-		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 2, "roundName": "Indianapolis 500" }], "year": 1951 },
-		{ "results": [{ "constructor": "Kuzma", "points": 8, "position": 1, "round": 2, "roundName": "Indianapolis 500" }], "year": 1952 },
-		{ "results": [{ "constructor": "Kurtis Kraft", "points": 1.5, "position": 4, "round": 2, "roundName": "Indianapolis 500" }], "year": 1954 },
-		{ "results": [{ "constructor": "Kurtis Kraft", "points": 0, "position": null, "round": 3, "roundName": "Indianapolis 500" }], "year": 1956 },
-		{ "results": [{ "constructor": "Watson", "points": 0, "position": null, "round": 3, "roundName": "Indianapolis 500" }], "year": 1957 },
 		{
 			"results": [
-				{ "constructor": "Maserati", "points": 0, "position": 10, "round": 6, "roundName": "French Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 8, "roundName": "German Grand Prix" }
+				{
+					"constructor": "Lesovsky",
+					"points": 0,
+					"position": 15,
+					"round": 3,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1950
+		},
+		{
+			"results": [
+				{
+					"constructor": "Kurtis Kraft",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1951
+		},
+		{
+			"results": [
+				{
+					"constructor": "Kuzma",
+					"points": 8,
+					"position": 1,
+					"round": 2,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1952
+		},
+		{
+			"results": [
+				{
+					"constructor": "Kurtis Kraft",
+					"points": 1.5,
+					"position": 4,
+					"round": 2,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1954
+		},
+		{
+			"results": [
+				{
+					"constructor": "Kurtis Kraft",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1956
+		},
+		{
+			"results": [
+				{
+					"constructor": "Watson",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1957
+		},
+		{
+			"results": [
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 10,
+					"round": 6,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "German Grand Prix"
+				}
 			],
 			"year": 1958
 		},
-		{ "results": [{ "constructor": "Watson", "points": 0, "position": 20, "round": 3, "roundName": "Indianapolis 500" }], "year": 1960 }
+		{
+			"results": [
+				{
+					"constructor": "Watson",
+					"points": 0,
+					"position": 20,
+					"round": 3,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1960
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 9

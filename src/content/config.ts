@@ -52,7 +52,7 @@ const driversCollection = defineCollection({
 		nationality: z.string().nullable(),
 		code: z.string().nullable(),
 		name: z.string(),
-		image: z.string().optional(),
+		image: z.string().nullable(),
 		raceWins: z.number(),
 		podiums: z.number(),
 		totalLaps: z.number().nullable(),

@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Surtees", "points": 0, "position": null, "round": 11, "roundName": "United States Grand Prix" }], "year": 1971 },
-		{ "results": [{ "constructor": "Surtees", "points": 0, "position": 12, "round": 12, "roundName": "United States Grand Prix" }], "year": 1972 }
+		{
+			"results": [
+				{
+					"constructor": "Surtees",
+					"points": 0,
+					"position": null,
+					"round": 11,
+					"roundName": "United States Grand Prix"
+				}
+			],
+			"year": 1971
+		},
+		{
+			"results": [
+				{
+					"constructor": "Surtees",
+					"points": 0,
+					"position": 12,
+					"round": 12,
+					"roundName": "United States Grand Prix"
+				}
+			],
+			"year": 1972
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

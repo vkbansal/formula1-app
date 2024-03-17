@@ -9,8 +9,20 @@
 	"seasons": [
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Rolf Stommelen", "points": 0, "position": 7 }], "round": 3, "roundName": "South African Grand Prix" },
-				{ "results": [{ "driver": "Graham Hill", "points": 0, "position": null }], "round": 5, "roundName": "Monaco Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Rolf Stommelen", "points": 0, "position": 7 }
+					],
+					"round": 3,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Graham Hill", "points": 0, "position": null }
+					],
+					"round": 5,
+					"roundName": "Monaco Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "François Migault", "points": 0, "position": null },
@@ -75,7 +87,13 @@
 					"round": 13,
 					"roundName": "Italian Grand Prix"
 				},
-				{ "results": [{ "driver": "Tony Brise", "points": 0, "position": null }], "round": 14, "roundName": "United States Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Tony Brise", "points": 0, "position": null }
+					],
+					"round": 14,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1975
 		}

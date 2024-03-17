@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Maserati", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }], "year": 1950 },
-		{ "results": [{ "constructor": "Ferrari", "points": 0, "position": 12, "round": 4, "roundName": "French Grand Prix" }], "year": 1952 }
+		{
+			"results": [
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				}
+			],
+			"year": 1950
+		},
+		{
+			"results": [
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": 12,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				}
+			],
+			"year": 1952
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

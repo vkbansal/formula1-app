@@ -15,7 +15,15 @@
 	"raceWins": 11,
 	"seasons": [
 		{
-			"rounds": [{ "results": [{ "driver": "Brausch Niemann", "points": 0, "position": 14 }], "round": 10, "roundName": "South African Grand Prix" }],
+			"rounds": [
+				{
+					"results": [
+						{ "driver": "Brausch Niemann", "points": 0, "position": 14 }
+					],
+					"round": 10,
+					"roundName": "South African Grand Prix"
+				}
+			],
 			"year": 1963
 		},
 		{
@@ -368,7 +376,13 @@
 					"round": 3,
 					"roundName": "Monaco Grand Prix"
 				},
-				{ "results": [{ "driver": "Reine Wisell", "points": 0, "position": null }], "round": 4, "roundName": "Dutch Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Reine Wisell", "points": 0, "position": null }
+					],
+					"round": 4,
+					"roundName": "Dutch Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Reine Wisell", "points": 1, "position": 6 },

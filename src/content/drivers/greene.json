@@ -17,15 +17,72 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Cooper-Climax", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" }], "year": 1959 },
-		{ "results": [{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 7, "roundName": "British Grand Prix" }], "year": 1960 },
-		{ "results": [{ "constructor": "Gilby", "points": 0, "position": 15, "round": 5, "roundName": "British Grand Prix" }], "year": 1961 },
 		{
 			"results": [
-				{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Gilby", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Gilby", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Gilby", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" }
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1959
+		},
+		{
+			"results": [
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1960
+		},
+		{
+			"results": [
+				{
+					"constructor": "Gilby",
+					"points": 0,
+					"position": 15,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
+			],
+			"year": 1961
+		},
+		{
+			"results": [
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Gilby",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Gilby",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Gilby",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1962
 		}

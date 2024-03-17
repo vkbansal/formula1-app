@@ -19,54 +19,215 @@
 	"poles": 0,
 	"raceWins": 1,
 	"seasons": [
-		{ "results": [{ "constructor": "Maserati", "points": 0, "position": 7, "round": 9, "roundName": "Italian Grand Prix" }], "year": 1953 },
 		{
 			"results": [
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 8, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Maserati", "points": 6, "position": 2, "round": 9, "roundName": "Spanish Grand Prix" }
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 7,
+					"round": 9,
+					"roundName": "Italian Grand Prix"
+				}
+			],
+			"year": 1953
+		},
+		{
+			"results": [
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 6,
+					"position": 2,
+					"round": 9,
+					"roundName": "Spanish Grand Prix"
+				}
 			],
 			"year": 1954
 		},
 		{
 			"results": [
-				{ "constructor": "Maserati", "points": 0, "position": 7, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": 7, "round": 4, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Maserati", "points": 4, "position": 3, "round": 5, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Maserati", "points": 2, "position": 5, "round": 6, "roundName": "British Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" }
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 7,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 7,
+					"round": 4,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 4,
+					"position": 3,
+					"round": 5,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 2,
+					"position": 5,
+					"round": 6,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				}
 			],
 			"year": 1955
 		},
 		{
 			"results": [
-				{ "constructor": "Ferrari", "points": 4, "position": 1, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" },
-				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 8, "roundName": "Italian Grand Prix" }
+				{
+					"constructor": "Ferrari",
+					"points": 4,
+					"position": 1,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1956
 		},
 		{
 			"results": [
-				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Ferrari", "points": 7, "position": 2, "round": 4, "roundName": "French Grand Prix" },
-				{ "constructor": "Ferrari", "points": 6, "position": 2, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Ferrari", "points": 3, "position": 4, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 7, "roundName": "Pescara Grand Prix" },
-				{ "constructor": "Ferrari", "points": 0, "position": 8, "round": 8, "roundName": "Italian Grand Prix" }
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 7,
+					"position": 2,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 6,
+					"position": 2,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 3,
+					"position": 4,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Pescara Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": 8,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1957
 		},
 		{
 			"results": [
-				{ "constructor": "Ferrari", "points": 6, "position": 2, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Ferrari", "points": 6, "position": 2, "round": 2, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Ferrari", "points": 0, "position": 7, "round": 3, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Ferrari", "points": 0, "position": null, "round": 6, "roundName": "French Grand Prix" }
+				{
+					"constructor": "Ferrari",
+					"points": 6,
+					"position": 2,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 6,
+					"position": 2,
+					"round": 2,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": 7,
+					"round": 3,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "French Grand Prix"
+				}
 			],
 			"year": 1958
 		}

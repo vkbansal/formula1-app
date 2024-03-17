@@ -15,9 +15,28 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Watson", "points": 0, "position": 7, "round": 3, "roundName": "Indianapolis 500" }], "year": 1960 },
 		{
-			"results": [{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 8, "roundName": "United States Grand Prix" }],
+			"results": [
+				{
+					"constructor": "Watson",
+					"points": 0,
+					"position": 7,
+					"round": 3,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1960
+		},
+		{
+			"results": [
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "United States Grand Prix"
+				}
+			],
 			"year": 1961
 		}
 	],

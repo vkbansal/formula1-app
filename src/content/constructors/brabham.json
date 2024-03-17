@@ -32,15 +32,35 @@
 	"seasons": [
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Jack Brabham", "points": 0, "position": null }], "round": 6, "roundName": "German Grand Prix" },
-				{ "results": [{ "driver": "Jack Brabham", "points": 3, "position": 4 }], "round": 8, "roundName": "United States Grand Prix" },
-				{ "results": [{ "driver": "Jack Brabham", "points": 3, "position": 4 }], "round": 9, "roundName": "South African Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Jack Brabham", "points": 0, "position": null }
+					],
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Jack Brabham", "points": 3, "position": 4 }],
+					"round": 8,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Jack Brabham", "points": 3, "position": 4 }],
+					"round": 9,
+					"roundName": "South African Grand Prix"
+				}
 			],
 			"year": 1962
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Dan Gurney", "points": 0, "position": null }], "round": 1, "roundName": "Monaco Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Dan Gurney", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Dan Gurney", "points": 4, "position": 3 },
@@ -169,7 +189,11 @@
 					"round": 6,
 					"roundName": "French Grand Prix"
 				},
-				{ "results": [{ "driver": "Jack Brabham", "points": 6, "position": 2 }], "round": 7, "roundName": "British Grand Prix" },
+				{
+					"results": [{ "driver": "Jack Brabham", "points": 6, "position": 2 }],
+					"round": 7,
+					"roundName": "British Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Rolf Stommelen", "points": 2, "position": 5 },
@@ -1898,7 +1922,13 @@
 					"round": 4,
 					"roundName": "Monaco Grand Prix"
 				},
-				{ "results": [{ "driver": "Riccardo Patrese", "points": 0, "position": 8 }], "round": 5, "roundName": "Belgian Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Riccardo Patrese", "points": 0, "position": 8 }
+					],
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Riccardo Patrese", "points": 0, "position": null },
@@ -2604,7 +2634,11 @@
 					"round": 10,
 					"roundName": "German Grand Prix"
 				},
-				{ "results": [{ "driver": "Damon Hill", "points": 0, "position": 11 }], "round": 11, "roundName": "Hungarian Grand Prix" }
+				{
+					"results": [{ "driver": "Damon Hill", "points": 0, "position": 11 }],
+					"round": 11,
+					"roundName": "Hungarian Grand Prix"
+				}
 			],
 			"year": 1992
 		}

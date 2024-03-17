@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 1,
 	"seasons": [
-		{ "results": [{ "constructor": "Moore", "points": 0, "position": 6, "round": 3, "roundName": "Indianapolis 500" }], "year": 1950 },
-		{ "results": [{ "constructor": "Kurtis Kraft", "points": 9, "position": 1, "round": 2, "roundName": "Indianapolis 500" }], "year": 1951 }
+		{
+			"results": [
+				{
+					"constructor": "Moore",
+					"points": 0,
+					"position": 6,
+					"round": 3,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1950
+		},
+		{
+			"results": [
+				{
+					"constructor": "Kurtis Kraft",
+					"points": 9,
+					"position": 1,
+					"round": 2,
+					"roundName": "Indianapolis 500"
+				}
+			],
+			"year": 1951
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

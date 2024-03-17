@@ -1,15 +1,44 @@
 {
 	"rounds": [
 		{
-			"circuit": { "country": "South Africa", "location": "Midrand", "name": "Kyalami" },
+			"circuit": {
+				"country": "South Africa",
+				"location": "Midrand",
+				"name": "Kyalami"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 9, "position": 1, "wins": 1 },
-				{ "constructorRef": "lotus_ford", "points": 6, "position": 2, "wins": 0 },
-				{ "constructorRef": "mclaren_ford", "points": 4, "position": 3, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 9,
+					"position": 1,
+					"wins": 1
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 6,
+					"position": 2,
+					"wins": 0
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 4,
+					"position": 3,
+					"wins": 0
+				},
 				{ "constructorRef": "brm", "points": 0, "position": 4, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 5, "wins": 0 },
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 5,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 0, "position": 6, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 0, "position": 7, "wins": 0 }
+				{
+					"constructorRef": "brabham_ford",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				}
 			],
 			"date": "1st Mar 1969",
 			"driverStandings": [
@@ -27,29 +56,71 @@
 				{ "driverRef": "rodriguez", "points": 0, "position": 12, "wins": 0 },
 				{ "driverRef": "amon", "points": 0, "position": 13, "wins": 0 },
 				{ "driverRef": "jack_brabham", "points": 0, "position": 14, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 15, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 15,
+					"wins": 0
+				},
 				{ "driverRef": "love", "points": 0, "position": 16, "wins": 0 },
 				{ "driverRef": "ickx", "points": 0, "position": 17, "wins": 0 },
 				{ "driverRef": "rooyen", "points": 0, "position": 18, "wins": 0 }
 			],
 			"name": "South African Grand Prix",
 			"podium": [
-				{ "constructorRef": "matra_ford", "driverRef": "stewart", "position": 1 },
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "stewart",
+					"position": 1
+				},
 				{ "constructorRef": "lotus_ford", "driverRef": "hill", "position": 2 },
-				{ "constructorRef": "mclaren_ford", "driverRef": "hulme", "position": 3 }
+				{
+					"constructorRef": "mclaren_ford",
+					"driverRef": "hulme",
+					"position": 3
+				}
 			],
 			"round": 1,
 			"slug": "south-african-grand-prix"
 		},
 		{
-			"circuit": { "country": "Spain", "location": "Barcelona", "name": "Montjuïc" },
+			"circuit": {
+				"country": "Spain",
+				"location": "Barcelona",
+				"name": "Montjuïc"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 18, "position": 1, "wins": 2 },
-				{ "constructorRef": "mclaren_ford", "points": 10, "position": 2, "wins": 0 },
-				{ "constructorRef": "lotus_ford", "points": 6, "position": 3, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 18,
+					"position": 1,
+					"wins": 2
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 10,
+					"position": 2,
+					"wins": 0
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 6,
+					"position": 3,
+					"wins": 0
+				},
 				{ "constructorRef": "brm", "points": 2, "position": 4, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 1, "position": 5, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 6, "wins": 0 },
+				{
+					"constructorRef": "brabham_ford",
+					"points": 1,
+					"position": 5,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 6,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 0, "position": 7, "wins": 0 }
 			],
 			"date": "4th May 1969",
@@ -70,29 +141,80 @@
 				{ "driverRef": "klerk", "points": 0, "position": 14, "wins": 0 },
 				{ "driverRef": "rindt", "points": 0, "position": 15, "wins": 0 },
 				{ "driverRef": "courage", "points": 0, "position": 16, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 17, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 17,
+					"wins": 0
+				},
 				{ "driverRef": "love", "points": 0, "position": 18, "wins": 0 },
 				{ "driverRef": "rooyen", "points": 0, "position": 19, "wins": 0 }
 			],
 			"name": "Spanish Grand Prix",
 			"podium": [
-				{ "constructorRef": "matra_ford", "driverRef": "stewart", "position": 1 },
-				{ "constructorRef": "mclaren_ford", "driverRef": "mclaren", "position": 2 },
-				{ "constructorRef": "matra_ford", "driverRef": "beltoise", "position": 3 }
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "stewart",
+					"position": 1
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"driverRef": "mclaren",
+					"position": 2
+				},
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "beltoise",
+					"position": 3
+				}
 			],
 			"round": 2,
 			"slug": "spanish-grand-prix"
 		},
 		{
-			"circuit": { "country": "Monaco", "location": "Monte-Carlo", "name": "Circuit de Monaco" },
+			"circuit": {
+				"country": "Monaco",
+				"location": "Monte-Carlo",
+				"name": "Circuit de Monaco"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 18, "position": 1, "wins": 2 },
-				{ "constructorRef": "lotus_ford", "points": 15, "position": 2, "wins": 1 },
-				{ "constructorRef": "mclaren_ford", "points": 12, "position": 3, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 7, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 18,
+					"position": 1,
+					"wins": 2
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 15,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 12,
+					"position": 3,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 7,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "brm", "points": 2, "position": 5, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 6, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 7, "wins": 0 },
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 6,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 0, "position": 8, "wins": 0 }
 			],
 			"date": "18th May 1969",
@@ -116,30 +238,77 @@
 				{ "driverRef": "klerk", "points": 0, "position": 17, "wins": 0 },
 				{ "driverRef": "rindt", "points": 0, "position": 18, "wins": 0 },
 				{ "driverRef": "moser", "points": 0, "position": 19, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 20, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 20,
+					"wins": 0
+				},
 				{ "driverRef": "love", "points": 0, "position": 21, "wins": 0 },
 				{ "driverRef": "rooyen", "points": 0, "position": 22, "wins": 0 }
 			],
 			"name": "Monaco Grand Prix",
 			"podium": [
 				{ "constructorRef": "lotus_ford", "driverRef": "hill", "position": 1 },
-				{ "constructorRef": "brabham_ford", "driverRef": "courage", "position": 2 },
-				{ "constructorRef": "lotus_ford", "driverRef": "siffert", "position": 3 }
+				{
+					"constructorRef": "brabham_ford",
+					"driverRef": "courage",
+					"position": 2
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"driverRef": "siffert",
+					"position": 3
+				}
 			],
 			"round": 3,
 			"slug": "monaco-grand-prix"
 		},
 		{
-			"circuit": { "country": "Netherlands", "location": "Zandvoort", "name": "Circuit Park Zandvoort" },
+			"circuit": {
+				"country": "Netherlands",
+				"location": "Zandvoort",
+				"name": "Circuit Park Zandvoort"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 27, "position": 1, "wins": 3 },
-				{ "constructorRef": "lotus_ford", "points": 21, "position": 2, "wins": 1 },
-				{ "constructorRef": "mclaren_ford", "points": 15, "position": 3, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 9, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 27,
+					"position": 1,
+					"wins": 3
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 21,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 15,
+					"position": 3,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 9,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "brm", "points": 2, "position": 6, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 8, "wins": 0 }
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				}
 			],
 			"date": "21st Jun 1969",
 			"driverStandings": [
@@ -162,30 +331,77 @@
 				{ "driverRef": "klerk", "points": 0, "position": 17, "wins": 0 },
 				{ "driverRef": "rindt", "points": 0, "position": 18, "wins": 0 },
 				{ "driverRef": "moser", "points": 0, "position": 19, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 20, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 20,
+					"wins": 0
+				},
 				{ "driverRef": "love", "points": 0, "position": 21, "wins": 0 },
 				{ "driverRef": "rooyen", "points": 0, "position": 22, "wins": 0 }
 			],
 			"name": "Dutch Grand Prix",
 			"podium": [
-				{ "constructorRef": "matra_ford", "driverRef": "stewart", "position": 1 },
-				{ "constructorRef": "lotus_ford", "driverRef": "siffert", "position": 2 },
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "stewart",
+					"position": 1
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"driverRef": "siffert",
+					"position": 2
+				},
 				{ "constructorRef": "ferrari", "driverRef": "amon", "position": 3 }
 			],
 			"round": 4,
 			"slug": "dutch-grand-prix"
 		},
 		{
-			"circuit": { "country": "France", "location": "Clermont-Ferrand", "name": "Charade Circuit" },
+			"circuit": {
+				"country": "France",
+				"location": "Clermont-Ferrand",
+				"name": "Charade Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 36, "position": 1, "wins": 4 },
-				{ "constructorRef": "lotus_ford", "points": 22, "position": 2, "wins": 1 },
-				{ "constructorRef": "mclaren_ford", "points": 18, "position": 3, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 13, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 36,
+					"position": 1,
+					"wins": 4
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 22,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 18,
+					"position": 3,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 13,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "brm", "points": 2, "position": 6, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 8, "wins": 0 }
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				}
 			],
 			"date": "6th Jul 1969",
 			"driverStandings": [
@@ -209,30 +425,77 @@
 				{ "driverRef": "klerk", "points": 0, "position": 18, "wins": 0 },
 				{ "driverRef": "rindt", "points": 0, "position": 19, "wins": 0 },
 				{ "driverRef": "miles", "points": 0, "position": 20, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 21, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 21,
+					"wins": 0
+				},
 				{ "driverRef": "love", "points": 0, "position": 22, "wins": 0 },
 				{ "driverRef": "rooyen", "points": 0, "position": 23, "wins": 0 }
 			],
 			"name": "French Grand Prix",
 			"podium": [
-				{ "constructorRef": "matra_ford", "driverRef": "stewart", "position": 1 },
-				{ "constructorRef": "matra_ford", "driverRef": "beltoise", "position": 2 },
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "stewart",
+					"position": 1
+				},
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "beltoise",
+					"position": 2
+				},
 				{ "constructorRef": "brabham_ford", "driverRef": "ickx", "position": 3 }
 			],
 			"round": 5,
 			"slug": "french-grand-prix"
 		},
 		{
-			"circuit": { "country": "UK", "location": "Silverstone", "name": "Silverstone Circuit" },
+			"circuit": {
+				"country": "UK",
+				"location": "Silverstone",
+				"name": "Silverstone Circuit"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 45, "position": 1, "wins": 5 },
-				{ "constructorRef": "lotus_ford", "points": 25, "position": 2, "wins": 1 },
-				{ "constructorRef": "mclaren_ford", "points": 20, "position": 3, "wins": 0 },
-				{ "constructorRef": "brabham_ford", "points": 19, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 45,
+					"position": 1,
+					"wins": 5
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 25,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 20,
+					"position": 3,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 19,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "brm", "points": 2, "position": 6, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 8, "wins": 0 }
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				}
 			],
 			"date": "19th Jul 1969",
 			"driverStandings": [
@@ -256,7 +519,12 @@
 				{ "driverRef": "miles", "points": 0, "position": 18, "wins": 0 },
 				{ "driverRef": "rodriguez", "points": 0, "position": 19, "wins": 0 },
 				{ "driverRef": "klerk", "points": 0, "position": 20, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 21, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 21,
+					"wins": 0
+				},
 				{ "driverRef": "bonnier", "points": 0, "position": 22, "wins": 0 },
 				{ "driverRef": "bell", "points": 0, "position": 23, "wins": 0 },
 				{ "driverRef": "love", "points": 0, "position": 24, "wins": 0 },
@@ -264,24 +532,70 @@
 			],
 			"name": "British Grand Prix",
 			"podium": [
-				{ "constructorRef": "matra_ford", "driverRef": "stewart", "position": 1 },
-				{ "constructorRef": "brabham_ford", "driverRef": "ickx", "position": 2 },
-				{ "constructorRef": "mclaren_ford", "driverRef": "mclaren", "position": 3 }
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "stewart",
+					"position": 1
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"driverRef": "ickx",
+					"position": 2
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"driverRef": "mclaren",
+					"position": 3
+				}
 			],
 			"round": 6,
 			"slug": "british-grand-prix"
 		},
 		{
-			"circuit": { "country": "Germany", "location": "Nürburg", "name": "Nürburgring" },
+			"circuit": {
+				"country": "Germany",
+				"location": "Nürburg",
+				"name": "Nürburgring"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 51, "position": 1, "wins": 5 },
-				{ "constructorRef": "lotus_ford", "points": 28, "position": 2, "wins": 1 },
-				{ "constructorRef": "brabham_ford", "points": 28, "position": 3, "wins": 1 },
-				{ "constructorRef": "mclaren_ford", "points": 24, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 51,
+					"position": 1,
+					"wins": 5
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 28,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 28,
+					"position": 3,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 24,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 4, "position": 5, "wins": 0 },
 				{ "constructorRef": "brm", "points": 2, "position": 6, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "brm_ford", "points": 0, "position": 9, "wins": 0 }
 			],
 			"date": "3rd Aug 1969",
@@ -307,31 +621,82 @@
 				{ "driverRef": "rodriguez", "points": 0, "position": 19, "wins": 0 },
 				{ "driverRef": "klerk", "points": 0, "position": 20, "wins": 0 },
 				{ "driverRef": "bonnier", "points": 0, "position": 21, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 22, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 22,
+					"wins": 0
+				},
 				{ "driverRef": "bell", "points": 0, "position": 23, "wins": 0 },
 				{ "driverRef": "love", "points": 0, "position": 24, "wins": 0 },
 				{ "driverRef": "rooyen", "points": 0, "position": 25, "wins": 0 }
 			],
 			"name": "German Grand Prix",
 			"podium": [
-				{ "constructorRef": "brabham_ford", "driverRef": "ickx", "position": 1 },
-				{ "constructorRef": "matra_ford", "driverRef": "stewart", "position": 2 },
-				{ "constructorRef": "mclaren_ford", "driverRef": "mclaren", "position": 3 }
+				{
+					"constructorRef": "brabham_ford",
+					"driverRef": "ickx",
+					"position": 1
+				},
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "stewart",
+					"position": 2
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"driverRef": "mclaren",
+					"position": 3
+				}
 			],
 			"round": 7,
 			"slug": "german-grand-prix"
 		},
 		{
-			"circuit": { "country": "Italy", "location": "Monza", "name": "Autodromo Nazionale di Monza" },
+			"circuit": {
+				"country": "Italy",
+				"location": "Monza",
+				"name": "Autodromo Nazionale di Monza"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 60, "position": 1, "wins": 6 },
-				{ "constructorRef": "lotus_ford", "points": 34, "position": 2, "wins": 1 },
-				{ "constructorRef": "brabham_ford", "points": 30, "position": 3, "wins": 1 },
-				{ "constructorRef": "mclaren_ford", "points": 27, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 60,
+					"position": 1,
+					"wins": 6
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 34,
+					"position": 2,
+					"wins": 1
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 30,
+					"position": 3,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 27,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 5, "position": 5, "wins": 0 },
 				{ "constructorRef": "brm", "points": 2, "position": 6, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "brm_ford", "points": 0, "position": 9, "wins": 0 }
 			],
 			"date": "7th Sep 1969",
@@ -357,33 +722,85 @@
 				{ "driverRef": "miles", "points": 0, "position": 19, "wins": 0 },
 				{ "driverRef": "klerk", "points": 0, "position": 20, "wins": 0 },
 				{ "driverRef": "bonnier", "points": 0, "position": 21, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 22, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 22,
+					"wins": 0
+				},
 				{ "driverRef": "bell", "points": 0, "position": 23, "wins": 0 },
 				{ "driverRef": "love", "points": 0, "position": 24, "wins": 0 },
 				{ "driverRef": "rooyen", "points": 0, "position": 25, "wins": 0 }
 			],
 			"name": "Italian Grand Prix",
 			"podium": [
-				{ "constructorRef": "matra_ford", "driverRef": "stewart", "position": 1 },
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "stewart",
+					"position": 1
+				},
 				{ "constructorRef": "lotus_ford", "driverRef": "rindt", "position": 2 },
-				{ "constructorRef": "matra_ford", "driverRef": "beltoise", "position": 3 }
+				{
+					"constructorRef": "matra_ford",
+					"driverRef": "beltoise",
+					"position": 3
+				}
 			],
 			"round": 8,
 			"slug": "italian-grand-prix"
 		},
 		{
-			"circuit": { "country": "Canada", "location": "Ontario", "name": "Mosport International Raceway" },
+			"circuit": {
+				"country": "Canada",
+				"location": "Ontario",
+				"name": "Mosport International Raceway"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 63, "position": 1, "wins": 6 },
-				{ "constructorRef": "brabham_ford", "points": 39, "position": 2, "wins": 2 },
-				{ "constructorRef": "lotus_ford", "points": 38, "position": 3, "wins": 1 },
-				{ "constructorRef": "mclaren_ford", "points": 29, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 63,
+					"position": 1,
+					"wins": 6
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 39,
+					"position": 2,
+					"wins": 2
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 38,
+					"position": 3,
+					"wins": 1
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 29,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 5, "position": 5, "wins": 0 },
 				{ "constructorRef": "brm", "points": 2, "position": 6, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "brm_ford", "points": 0, "position": 9, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 0, "position": 10, "wins": 0 }
+				{
+					"constructorRef": "brabham_climax",
+					"points": 0,
+					"position": 10,
+					"wins": 0
+				}
 			],
 			"date": "20th Sep 1969",
 			"driverStandings": [
@@ -411,7 +828,12 @@
 				{ "driverRef": "brack", "points": 0, "position": 22, "wins": 0 },
 				{ "driverRef": "klerk", "points": 0, "position": 23, "wins": 0 },
 				{ "driverRef": "bonnier", "points": 0, "position": 24, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 25, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 25,
+					"wins": 0
+				},
 				{ "driverRef": "bell", "points": 0, "position": 26, "wins": 0 },
 				{ "driverRef": "love", "points": 0, "position": 27, "wins": 0 },
 				{ "driverRef": "cordts", "points": 0, "position": 28, "wins": 0 },
@@ -419,26 +841,73 @@
 			],
 			"name": "Canadian Grand Prix",
 			"podium": [
-				{ "constructorRef": "brabham_ford", "driverRef": "ickx", "position": 1 },
-				{ "constructorRef": "brabham_ford", "driverRef": "jack_brabham", "position": 2 },
+				{
+					"constructorRef": "brabham_ford",
+					"driverRef": "ickx",
+					"position": 1
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"driverRef": "jack_brabham",
+					"position": 2
+				},
 				{ "constructorRef": "lotus_ford", "driverRef": "rindt", "position": 3 }
 			],
 			"round": 9,
 			"slug": "canadian-grand-prix"
 		},
 		{
-			"circuit": { "country": "USA", "location": "New York State", "name": "Watkins Glen" },
+			"circuit": {
+				"country": "USA",
+				"location": "New York State",
+				"name": "Watkins Glen"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 63, "position": 1, "wins": 6 },
-				{ "constructorRef": "lotus_ford", "points": 47, "position": 2, "wins": 2 },
-				{ "constructorRef": "brabham_ford", "points": 45, "position": 3, "wins": 2 },
-				{ "constructorRef": "mclaren_ford", "points": 29, "position": 4, "wins": 0 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 63,
+					"position": 1,
+					"wins": 6
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 47,
+					"position": 2,
+					"wins": 2
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 45,
+					"position": 3,
+					"wins": 2
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 29,
+					"position": 4,
+					"wins": 0
+				},
 				{ "constructorRef": "ferrari", "points": 7, "position": 5, "wins": 0 },
 				{ "constructorRef": "brm", "points": 6, "position": 6, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "brm_ford", "points": 0, "position": 9, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 0, "position": 10, "wins": 0 }
+				{
+					"constructorRef": "brabham_climax",
+					"points": 0,
+					"position": 10,
+					"wins": 0
+				}
 			],
 			"date": "5th Oct 1969",
 			"driverStandings": [
@@ -451,7 +920,12 @@
 				{ "driverRef": "courage", "points": 16, "position": 7, "wins": 0 },
 				{ "driverRef": "siffert", "points": 15, "position": 8, "wins": 0 },
 				{ "driverRef": "hulme", "points": 11, "position": 9, "wins": 0 },
-				{ "driverRef": "jack_brabham", "points": 10, "position": 10, "wins": 0 },
+				{
+					"driverRef": "jack_brabham",
+					"points": 10,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "surtees", "points": 6, "position": 11, "wins": 0 },
 				{ "driverRef": "amon", "points": 4, "position": 12, "wins": 0 },
 				{ "driverRef": "attwood", "points": 3, "position": 13, "wins": 0 },
@@ -467,7 +941,12 @@
 				{ "driverRef": "klerk", "points": 0, "position": 23, "wins": 0 },
 				{ "driverRef": "bonnier", "points": 0, "position": 24, "wins": 0 },
 				{ "driverRef": "eaton", "points": 0, "position": 25, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 26, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 26,
+					"wins": 0
+				},
 				{ "driverRef": "bell", "points": 0, "position": 27, "wins": 0 },
 				{ "driverRef": "love", "points": 0, "position": 28, "wins": 0 },
 				{ "driverRef": "cordts", "points": 0, "position": 29, "wins": 0 },
@@ -476,25 +955,68 @@
 			"name": "United States Grand Prix",
 			"podium": [
 				{ "constructorRef": "lotus_ford", "driverRef": "rindt", "position": 1 },
-				{ "constructorRef": "brabham_ford", "driverRef": "courage", "position": 2 },
+				{
+					"constructorRef": "brabham_ford",
+					"driverRef": "courage",
+					"position": 2
+				},
 				{ "constructorRef": "brm", "driverRef": "surtees", "position": 3 }
 			],
 			"round": 10,
 			"slug": "united-states-grand-prix"
 		},
 		{
-			"circuit": { "country": "Mexico", "location": "Mexico City", "name": "Autódromo Hermanos Rodríguez" },
+			"circuit": {
+				"country": "Mexico",
+				"location": "Mexico City",
+				"name": "Autódromo Hermanos Rodríguez"
+			},
 			"constructorStandings": [
-				{ "constructorRef": "matra_ford", "points": 66, "position": 1, "wins": 6 },
-				{ "constructorRef": "brabham_ford", "points": 49, "position": 2, "wins": 2 },
-				{ "constructorRef": "lotus_ford", "points": 47, "position": 3, "wins": 2 },
-				{ "constructorRef": "mclaren_ford", "points": 38, "position": 4, "wins": 1 },
+				{
+					"constructorRef": "matra_ford",
+					"points": 66,
+					"position": 1,
+					"wins": 6
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"points": 49,
+					"position": 2,
+					"wins": 2
+				},
+				{
+					"constructorRef": "lotus_ford",
+					"points": 47,
+					"position": 3,
+					"wins": 2
+				},
+				{
+					"constructorRef": "mclaren_ford",
+					"points": 38,
+					"position": 4,
+					"wins": 1
+				},
 				{ "constructorRef": "brm", "points": 7, "position": 5, "wins": 0 },
 				{ "constructorRef": "ferrari", "points": 7, "position": 6, "wins": 0 },
-				{ "constructorRef": "cooper_maserati", "points": 0, "position": 7, "wins": 0 },
-				{ "constructorRef": "brabham_repco", "points": 0, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "cooper_maserati",
+					"points": 0,
+					"position": 7,
+					"wins": 0
+				},
+				{
+					"constructorRef": "brabham_repco",
+					"points": 0,
+					"position": 8,
+					"wins": 0
+				},
 				{ "constructorRef": "brm_ford", "points": 0, "position": 9, "wins": 0 },
-				{ "constructorRef": "brabham_climax", "points": 0, "position": 10, "wins": 0 }
+				{
+					"constructorRef": "brabham_climax",
+					"points": 0,
+					"position": 10,
+					"wins": 0
+				}
 			],
 			"date": "19th Oct 1969",
 			"driverStandings": [
@@ -507,7 +1029,12 @@
 				{ "driverRef": "hill", "points": 19, "position": 7, "wins": 1 },
 				{ "driverRef": "courage", "points": 16, "position": 8, "wins": 0 },
 				{ "driverRef": "siffert", "points": 15, "position": 9, "wins": 0 },
-				{ "driverRef": "jack_brabham", "points": 14, "position": 10, "wins": 0 },
+				{
+					"driverRef": "jack_brabham",
+					"points": 14,
+					"position": 10,
+					"wins": 0
+				},
 				{ "driverRef": "surtees", "points": 6, "position": 11, "wins": 0 },
 				{ "driverRef": "amon", "points": 4, "position": 12, "wins": 0 },
 				{ "driverRef": "attwood", "points": 3, "position": 13, "wins": 0 },
@@ -523,7 +1050,12 @@
 				{ "driverRef": "klerk", "points": 0, "position": 23, "wins": 0 },
 				{ "driverRef": "eaton", "points": 0, "position": 24, "wins": 0 },
 				{ "driverRef": "bonnier", "points": 0, "position": 25, "wins": 0 },
-				{ "driverRef": "mario_andretti", "points": 0, "position": 26, "wins": 0 },
+				{
+					"driverRef": "mario_andretti",
+					"points": 0,
+					"position": 26,
+					"wins": 0
+				},
 				{ "driverRef": "bell", "points": 0, "position": 27, "wins": 0 },
 				{ "driverRef": "love", "points": 0, "position": 28, "wins": 0 },
 				{ "driverRef": "cordts", "points": 0, "position": 29, "wins": 0 },
@@ -531,9 +1063,21 @@
 			],
 			"name": "Mexican Grand Prix",
 			"podium": [
-				{ "constructorRef": "mclaren_ford", "driverRef": "hulme", "position": 1 },
-				{ "constructorRef": "brabham_ford", "driverRef": "ickx", "position": 2 },
-				{ "constructorRef": "brabham_ford", "driverRef": "jack_brabham", "position": 3 }
+				{
+					"constructorRef": "mclaren_ford",
+					"driverRef": "hulme",
+					"position": 1
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"driverRef": "ickx",
+					"position": 2
+				},
+				{
+					"constructorRef": "brabham_ford",
+					"driverRef": "jack_brabham",
+					"position": 3
+				}
 			],
 			"round": 11,
 			"slug": "mexican-grand-prix"
@@ -542,16 +1086,30 @@
 	"teams": [
 		{
 			"constructorRef": "brabham_climax",
-			"drivers": [{ "driverRef": "cordts", "name": "John Cordts", "nationality": "Canadian" }],
+			"drivers": [
+				{
+					"driverRef": "cordts",
+					"name": "John Cordts",
+					"nationality": "Canadian"
+				}
+			],
 			"name": "Brabham-Climax",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "brabham_ford",
 			"drivers": [
-				{ "driverRef": "jack_brabham", "name": "Jack Brabham", "nationality": "Australian" },
+				{
+					"driverRef": "jack_brabham",
+					"name": "Jack Brabham",
+					"nationality": "Australian"
+				},
 				{ "driverRef": "ickx", "name": "Jacky Ickx", "nationality": "Belgian" },
-				{ "driverRef": "courage", "name": "Piers Courage", "nationality": "British" },
+				{
+					"driverRef": "courage",
+					"name": "Piers Courage",
+					"nationality": "British"
+				},
 				{ "driverRef": "moser", "name": "Silvio Moser", "nationality": "Swiss" }
 			],
 			"name": "Brabham-Ford",
@@ -560,8 +1118,16 @@
 		{
 			"constructorRef": "brabham_repco",
 			"drivers": [
-				{ "driverRef": "tingle", "name": "Sam Tingle", "nationality": "Rhodesian" },
-				{ "driverRef": "klerk", "name": "Peter de Klerk", "nationality": "South African" }
+				{
+					"driverRef": "tingle",
+					"name": "Sam Tingle",
+					"nationality": "Rhodesian"
+				},
+				{
+					"driverRef": "klerk",
+					"name": "Peter de Klerk",
+					"nationality": "South African"
+				}
 			],
 			"name": "Brabham-Repco",
 			"nationality": "British"
@@ -569,38 +1135,80 @@
 		{
 			"constructorRef": "brm",
 			"drivers": [
-				{ "driverRef": "oliver", "name": "Jackie Oliver", "nationality": "British" },
-				{ "driverRef": "surtees", "name": "John Surtees", "nationality": "British" },
-				{ "driverRef": "rodriguez", "name": "Pedro Rodríguez", "nationality": "Mexican" },
-				{ "driverRef": "brack", "name": "Bill Brack", "nationality": "Canadian" },
-				{ "driverRef": "eaton", "name": "George Eaton", "nationality": "Canadian" }
+				{
+					"driverRef": "oliver",
+					"name": "Jackie Oliver",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "surtees",
+					"name": "John Surtees",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "rodriguez",
+					"name": "Pedro Rodríguez",
+					"nationality": "Mexican"
+				},
+				{
+					"driverRef": "brack",
+					"name": "Bill Brack",
+					"nationality": "Canadian"
+				},
+				{
+					"driverRef": "eaton",
+					"name": "George Eaton",
+					"nationality": "Canadian"
+				}
 			],
 			"name": "BRM",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "brm_ford",
-			"drivers": [{ "driverRef": "oliver", "name": "Jackie Oliver", "nationality": "British" }],
+			"drivers": [
+				{
+					"driverRef": "oliver",
+					"name": "Jackie Oliver",
+					"nationality": "British"
+				}
+			],
 			"name": "BRM-Ford",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "cooper_maserati",
-			"drivers": [{ "driverRef": "elford", "name": "Vic Elford", "nationality": "British" }],
+			"drivers": [
+				{
+					"driverRef": "elford",
+					"name": "Vic Elford",
+					"nationality": "British"
+				}
+			],
 			"name": "Cooper-Maserati",
 			"nationality": "British"
 		},
 		{
 			"constructorRef": "eagle_climax",
-			"drivers": [{ "driverRef": "pease", "name": "Al Pease", "nationality": "Canadian" }],
+			"drivers": [
+				{ "driverRef": "pease", "name": "Al Pease", "nationality": "Canadian" }
+			],
 			"name": "Eagle-Climax",
 			"nationality": "American"
 		},
 		{
 			"constructorRef": "ferrari",
 			"drivers": [
-				{ "driverRef": "amon", "name": "Chris Amon", "nationality": "New Zealander" },
-				{ "driverRef": "rodriguez", "name": "Pedro Rodríguez", "nationality": "Mexican" }
+				{
+					"driverRef": "amon",
+					"name": "Chris Amon",
+					"nationality": "New Zealander"
+				},
+				{
+					"driverRef": "rodriguez",
+					"name": "Pedro Rodríguez",
+					"nationality": "Mexican"
+				}
 			],
 			"name": "Ferrari",
 			"nationality": "Italian"
@@ -608,15 +1216,51 @@
 		{
 			"constructorRef": "lotus_ford",
 			"drivers": [
-				{ "driverRef": "hill", "name": "Graham Hill", "nationality": "British" },
-				{ "driverRef": "siffert", "name": "Jo Siffert", "nationality": "Swiss" },
-				{ "driverRef": "rindt", "name": "Jochen Rindt", "nationality": "Austrian" },
-				{ "driverRef": "mario_andretti", "name": "Mario Andretti", "nationality": "American" },
-				{ "driverRef": "love", "name": "John Love", "nationality": "Rhodesian" },
-				{ "driverRef": "attwood", "name": "Richard Attwood", "nationality": "British" },
-				{ "driverRef": "miles", "name": "John Miles", "nationality": "British" },
-				{ "driverRef": "bonnier", "name": "Jo Bonnier", "nationality": "Swedish" },
-				{ "driverRef": "lovely", "name": "Pete Lovely", "nationality": "American" }
+				{
+					"driverRef": "hill",
+					"name": "Graham Hill",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "siffert",
+					"name": "Jo Siffert",
+					"nationality": "Swiss"
+				},
+				{
+					"driverRef": "rindt",
+					"name": "Jochen Rindt",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "mario_andretti",
+					"name": "Mario Andretti",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "love",
+					"name": "John Love",
+					"nationality": "Rhodesian"
+				},
+				{
+					"driverRef": "attwood",
+					"name": "Richard Attwood",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "miles",
+					"name": "John Miles",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "bonnier",
+					"name": "Jo Bonnier",
+					"nationality": "Swedish"
+				},
+				{
+					"driverRef": "lovely",
+					"name": "Pete Lovely",
+					"nationality": "American"
+				}
 			],
 			"name": "Lotus-Ford",
 			"nationality": "British"
@@ -624,9 +1268,21 @@
 		{
 			"constructorRef": "matra_ford",
 			"drivers": [
-				{ "driverRef": "stewart", "name": "Jackie Stewart", "nationality": "British" },
-				{ "driverRef": "beltoise", "name": "Jean-Pierre Beltoise", "nationality": "French" },
-				{ "driverRef": "gavin", "name": "Johnny Servoz-Gavin", "nationality": "French" }
+				{
+					"driverRef": "stewart",
+					"name": "Jackie Stewart",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "beltoise",
+					"name": "Jean-Pierre Beltoise",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "gavin",
+					"name": "Johnny Servoz-Gavin",
+					"nationality": "French"
+				}
 			],
 			"name": "Matra-Ford",
 			"nationality": "French"
@@ -634,11 +1290,31 @@
 		{
 			"constructorRef": "mclaren_ford",
 			"drivers": [
-				{ "driverRef": "hulme", "name": "Denny Hulme", "nationality": "New Zealander" },
-				{ "driverRef": "mclaren", "name": "Bruce McLaren", "nationality": "New Zealander" },
-				{ "driverRef": "rooyen", "name": "Basil van Rooyen", "nationality": "South African" },
-				{ "driverRef": "beltoise", "name": "Jean-Pierre Beltoise", "nationality": "French" },
-				{ "driverRef": "elford", "name": "Vic Elford", "nationality": "British" },
+				{
+					"driverRef": "hulme",
+					"name": "Denny Hulme",
+					"nationality": "New Zealander"
+				},
+				{
+					"driverRef": "mclaren",
+					"name": "Bruce McLaren",
+					"nationality": "New Zealander"
+				},
+				{
+					"driverRef": "rooyen",
+					"name": "Basil van Rooyen",
+					"nationality": "South African"
+				},
+				{
+					"driverRef": "beltoise",
+					"name": "Jean-Pierre Beltoise",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "elford",
+					"name": "Vic Elford",
+					"nationality": "British"
+				},
 				{ "driverRef": "bell", "name": "Derek Bell", "nationality": "British" }
 			],
 			"name": "McLaren-Ford",

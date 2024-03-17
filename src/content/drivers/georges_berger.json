@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Simca", "points": 0, "position": null, "round": 4, "roundName": "Belgian Grand Prix" }], "year": 1953 },
-		{ "results": [{ "constructor": "Gordini", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" }], "year": 1954 }
+		{
+			"results": [
+				{
+					"constructor": "Simca",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "Belgian Grand Prix"
+				}
+			],
+			"year": 1953
+		},
+		{
+			"results": [
+				{
+					"constructor": "Gordini",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				}
+			],
+			"year": 1954
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

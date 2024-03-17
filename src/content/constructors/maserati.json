@@ -30,7 +30,11 @@
 					"results": [
 						{ "driver": "Prince Bira", "points": 2, "position": 5 },
 						{ "driver": "Louis Chiron", "points": 4, "position": 3 },
-						{ "driver": "José Froilán González", "points": 0, "position": null },
+						{
+							"driver": "José Froilán González",
+							"points": 0,
+							"position": null
+						},
 						{ "driver": "Toulo de Graffenried", "points": 0, "position": null },
 						{ "driver": "Franco Rol", "points": 0, "position": null },
 						{ "driver": "Alfredo Pián", "points": 0, "position": null }
@@ -58,7 +62,11 @@
 					"round": 4,
 					"roundName": "Swiss Grand Prix"
 				},
-				{ "results": [{ "driver": "Toni Branca", "points": 0, "position": 10 }], "round": 5, "roundName": "Belgian Grand Prix" },
+				{
+					"results": [{ "driver": "Toni Branca", "points": 0, "position": 10 }],
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Felice Bonetto", "points": 0, "position": null },
@@ -97,7 +105,13 @@
 					"round": 1,
 					"roundName": "Swiss Grand Prix"
 				},
-				{ "results": [{ "driver": "Johnny McDowell", "points": 0, "position": null }], "round": 2, "roundName": "Indianapolis 500" },
+				{
+					"results": [
+						{ "driver": "Johnny McDowell", "points": 0, "position": null }
+					],
+					"round": 2,
+					"roundName": "Indianapolis 500"
+				},
 				{
 					"results": [
 						{ "driver": "Harry Schell", "points": 0, "position": null },
@@ -109,7 +123,11 @@
 				},
 				{
 					"results": [
-						{ "driver": "Philip Fotheringham-Parker", "points": 0, "position": null },
+						{
+							"driver": "Philip Fotheringham-Parker",
+							"points": 0,
+							"position": null
+						},
 						{ "driver": "David Murray", "points": 0, "position": null },
 						{ "driver": "John James", "points": 0, "position": null }
 					],
@@ -231,7 +249,11 @@
 						{ "driver": "Onofre Marimón", "points": 4, "position": 3 },
 						{ "driver": "Johnny Claes", "points": 0, "position": null },
 						{ "driver": "Juan Fangio", "points": 0, "position": null },
-						{ "driver": "José Froilán González", "points": 1, "position": null },
+						{
+							"driver": "José Froilán González",
+							"points": 1,
+							"position": null
+						},
 						{ "driver": "Juan Fangio", "points": 0, "position": null }
 					],
 					"round": 4,
@@ -564,7 +586,11 @@
 						{ "driver": "Stirling Moss", "points": 1, "position": 5 },
 						{ "driver": "Jean Behra", "points": 4, "position": 3 },
 						{ "driver": "André Simon", "points": 0, "position": null },
-						{ "driver": "Hernando da Silva Ramos", "points": 0, "position": null },
+						{
+							"driver": "Hernando da Silva Ramos",
+							"points": 0,
+							"position": null
+						},
 						{ "driver": "Luigi Villoresi", "points": 0, "position": null },
 						{ "driver": "Stirling Moss", "points": 0, "position": null }
 					],
@@ -874,9 +900,25 @@
 					"round": 4,
 					"roundName": "French Grand Prix"
 				},
-				{ "results": [{ "driver": "Fritz d'Orey", "points": 0, "position": null }], "round": 5, "roundName": "British Grand Prix" },
-				{ "results": [{ "driver": "Giulio Cabianca", "points": 0, "position": 15 }], "round": 8, "roundName": "Italian Grand Prix" },
-				{ "results": [{ "driver": "Phil Cade", "points": 0, "position": null }], "round": 9, "roundName": "United States Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Fritz d'Orey", "points": 0, "position": null }
+					],
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Giulio Cabianca", "points": 0, "position": 15 }
+					],
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Phil Cade", "points": 0, "position": null }],
+					"round": 9,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1959
 		},
@@ -893,8 +935,18 @@
 					"round": 1,
 					"roundName": "Argentine Grand Prix"
 				},
-				{ "results": [{ "driver": "Horace Gould", "points": 0, "position": null }], "round": 9, "roundName": "Italian Grand Prix" },
-				{ "results": [{ "driver": "Bob Drake", "points": 0, "position": 13 }], "round": 10, "roundName": "United States Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Horace Gould", "points": 0, "position": null }
+					],
+					"round": 9,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "Bob Drake", "points": 0, "position": 13 }],
+					"round": 10,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1960
 		}

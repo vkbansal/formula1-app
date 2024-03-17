@@ -29,187 +29,846 @@
 	"poles": 0,
 	"raceWins": 1,
 	"seasons": [
-		{ "results": [{ "constructor": "Maserati", "points": 0, "position": null, "round": 8, "roundName": "Italian Grand Prix" }], "year": 1956 },
 		{
 			"results": [
-				{ "constructor": "Maserati", "points": 0, "position": 7, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 7, "roundName": "Pescara Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 8, "roundName": "Italian Grand Prix" }
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				}
+			],
+			"year": 1956
+		},
+		{
+			"results": [
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 7,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Pescara Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1957
 		},
 		{
 			"results": [
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 2, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": 10, "round": 3, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": 9, "round": 5, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": 8, "round": 6, "roundName": "French Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 7, "roundName": "British Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 8, "roundName": "German Grand Prix" },
-				{ "constructor": "Maserati", "points": 0, "position": null, "round": 9, "roundName": "Portuguese Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 10, "roundName": "Italian Grand Prix" },
-				{ "constructor": "BRM", "points": 3, "position": 4, "round": 11, "roundName": "Moroccan Grand Prix" }
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 10,
+					"round": 3,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 9,
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": 8,
+					"round": 6,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Maserati",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "Portuguese Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 3,
+					"position": 4,
+					"round": 11,
+					"roundName": "Moroccan Grand Prix"
+				}
 			],
 			"year": 1958
 		},
 		{
 			"results": [
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "BRM", "points": 8, "position": 1, "round": 3, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "BRM", "points": 2, "position": 5, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 7, "roundName": "Portuguese Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": 8, "round": 8, "roundName": "Italian Grand Prix" }
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 8,
+					"position": 1,
+					"round": 3,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 2,
+					"position": 5,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Portuguese Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": 8,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1959
 		},
 		{
 			"results": [
-				{ "constructor": "BRM", "points": 0, "position": 7, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "BRM", "points": 2, "position": 5, "round": 2, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 4, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 5, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 6, "roundName": "French Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 7, "roundName": "British Grand Prix" },
-				{ "constructor": "BRM", "points": 0, "position": null, "round": 8, "roundName": "Portuguese Grand Prix" },
-				{ "constructor": "BRM", "points": 2, "position": 5, "round": 10, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": 7,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 2,
+					"position": 5,
+					"round": 2,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "Portuguese Grand Prix"
+				},
+				{
+					"constructor": "BRM",
+					"points": 2,
+					"position": 5,
+					"round": 10,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1960
 		},
 		{
 			"results": [
-				{ "constructor": "Porsche", "points": 0, "position": 12, "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": 11, "round": 2, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": 7, "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": 7, "round": 4, "roundName": "French Grand Prix" },
-				{ "constructor": "Porsche", "points": 2, "position": 5, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Porsche", "points": 1, "position": 6, "round": 8, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": 12,
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": 11,
+					"round": 2,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": 7,
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": 7,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 2,
+					"position": 5,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 1,
+					"position": 6,
+					"round": 8,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1961
 		},
 		{
 			"results": [
-				{ "constructor": "Porsche", "points": 0, "position": 7, "round": 1, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Porsche", "points": 2, "position": 5, "round": 2, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": null, "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": 7, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Porsche", "points": 1, "position": 6, "round": 7, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Porsche", "points": 0, "position": 13, "round": 8, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": 7,
+					"round": 1,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 2,
+					"position": 5,
+					"round": 2,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": 7,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 1,
+					"position": 6,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Porsche",
+					"points": 0,
+					"position": 13,
+					"round": 8,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1962
 		},
 		{
 			"results": [
-				{ "constructor": "Cooper-Climax", "points": 0, "position": 7, "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 2, "position": 5, "round": 2, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 0, "position": 11, "round": 3, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 1, "position": 6, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 0, "position": 7, "round": 7, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 0, "position": 8, "round": 8, "roundName": "United States Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 2, "position": 5, "round": 9, "roundName": "Mexican Grand Prix" },
-				{ "constructor": "Cooper-Climax", "points": 1, "position": 6, "round": 10, "roundName": "South African Grand Prix" }
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": 7,
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 2,
+					"position": 5,
+					"round": 2,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": 11,
+					"round": 3,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 1,
+					"position": 6,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": 7,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": 8,
+					"round": 8,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 2,
+					"position": 5,
+					"round": 9,
+					"roundName": "Mexican Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Climax",
+					"points": 1,
+					"position": 6,
+					"round": 10,
+					"roundName": "South African Grand Prix"
+				}
 			],
 			"year": 1963
 		},
 		{
 			"results": [
-				{ "constructor": "Cooper-Climax", "points": 2, "position": 5, "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Brabham-BRM", "points": 0, "position": 9, "round": 2, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Brabham-BRM", "points": 0, "position": null, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Brabham-BRM", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 1, "position": 6, "round": 7, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": 12, "round": 8, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 9, "roundName": "United States Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 10, "roundName": "Mexican Grand Prix" }
+				{
+					"constructor": "Cooper-Climax",
+					"points": 2,
+					"position": 5,
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Brabham-BRM",
+					"points": 0,
+					"position": 9,
+					"round": 2,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Brabham-BRM",
+					"points": 0,
+					"position": null,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Brabham-BRM",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 1,
+					"position": 6,
+					"round": 7,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": 12,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1964
 		},
 		{
 			"results": [
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": 7, "round": 2, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 4, "roundName": "French Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": 7, "round": 5, "roundName": "British Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 6, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": 7, "round": 7, "roundName": "German Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": 7, "round": 8, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": 8, "round": 9, "roundName": "United States Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 10, "roundName": "Mexican Grand Prix" }
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": 7,
+					"round": 2,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": 7,
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": 7,
+					"round": 7,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": 7,
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": 8,
+					"round": 9,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1965
 		},
 		{
 			"results": [
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 2, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 3, "roundName": "French Grand Prix" },
-				{ "constructor": "Brabham-Climax", "points": 0, "position": null, "round": 4, "roundName": "British Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": 7, "round": 5, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 6, "roundName": "German Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 7, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 8, "roundName": "United States Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 1, "position": 6, "round": 9, "roundName": "Mexican Grand Prix" }
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "French Grand Prix"
+				},
+				{
+					"constructor": "Brabham-Climax",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": 7,
+					"round": 5,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 1,
+					"position": 6,
+					"round": 9,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1966
 		},
 		{
 			"results": [
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 4, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 2, "position": 6, "round": 7, "roundName": "German Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": 8, "round": 8, "roundName": "Canadian Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 9, "roundName": "Italian Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 1, "position": 6, "round": 10, "roundName": "United States Grand Prix" },
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": 10, "round": 11, "roundName": "Mexican Grand Prix" }
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 2,
+					"position": 6,
+					"round": 7,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": 8,
+					"round": 8,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 1,
+					"position": 6,
+					"round": 10,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": 10,
+					"round": 11,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1967
 		},
 		{
 			"results": [
-				{ "constructor": "Cooper-Maserati", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" },
-				{ "constructor": "McLaren-BRM", "points": 0, "position": null, "round": 3, "roundName": "Monaco Grand Prix" },
-				{ "constructor": "McLaren-BRM", "points": 0, "position": null, "round": 4, "roundName": "Belgian Grand Prix" },
-				{ "constructor": "McLaren-BRM", "points": 0, "position": 8, "round": 5, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "McLaren-BRM", "points": 0, "position": null, "round": 7, "roundName": "British Grand Prix" },
-				{ "constructor": "McLaren-BRM", "points": 1, "position": 6, "round": 9, "roundName": "Italian Grand Prix" },
-				{ "constructor": "McLaren-BRM", "points": 0, "position": null, "round": 10, "roundName": "Canadian Grand Prix" },
-				{ "constructor": "McLaren-BRM", "points": 0, "position": null, "round": 11, "roundName": "United States Grand Prix" },
-				{ "constructor": "Honda", "points": 2, "position": 5, "round": 12, "roundName": "Mexican Grand Prix" }
+				{
+					"constructor": "Cooper-Maserati",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "McLaren-BRM",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"constructor": "McLaren-BRM",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"constructor": "McLaren-BRM",
+					"points": 0,
+					"position": 8,
+					"round": 5,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "McLaren-BRM",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "McLaren-BRM",
+					"points": 1,
+					"position": 6,
+					"round": 9,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "McLaren-BRM",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"constructor": "McLaren-BRM",
+					"points": 0,
+					"position": null,
+					"round": 11,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Honda",
+					"points": 2,
+					"position": 5,
+					"round": 12,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1968
 		},
 		{
 			"results": [
-				{ "constructor": "Lotus-Ford", "points": 0, "position": null, "round": 6, "roundName": "British Grand Prix" },
-				{ "constructor": "Lotus-Ford", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" }
+				{
+					"constructor": "Lotus-Ford",
+					"points": 0,
+					"position": null,
+					"round": 6,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"constructor": "Lotus-Ford",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "German Grand Prix"
+				}
 			],
 			"year": 1969
 		},
 		{
 			"results": [
-				{ "constructor": "McLaren-Ford", "points": 0, "position": null, "round": 10, "roundName": "Italian Grand Prix" },
-				{ "constructor": "McLaren-Ford", "points": 0, "position": null, "round": 12, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "McLaren-Ford",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "McLaren-Ford",
+					"points": 0,
+					"position": null,
+					"round": 12,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1970
 		},
 		{
 			"results": [
-				{ "constructor": "McLaren", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": null, "round": 7, "roundName": "German Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": null, "round": 8, "roundName": "Austrian Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": 10, "round": 9, "roundName": "Italian Grand Prix" },
-				{ "constructor": "McLaren", "points": 0, "position": 16, "round": 11, "roundName": "United States Grand Prix" }
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": null,
+					"round": 7,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": null,
+					"round": 8,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": 10,
+					"round": 9,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 0,
+					"position": 16,
+					"round": 11,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1971
 		}

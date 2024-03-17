@@ -15,13 +15,48 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Surtees", "points": 0, "position": null, "round": 14, "roundName": "Italian Grand Prix" }], "year": 1977 },
 		{
 			"results": [
-				{ "constructor": "Ensign", "points": 0, "position": null, "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "constructor": "Ensign", "points": 0, "position": null, "round": 2, "roundName": "Brazilian Grand Prix" },
-				{ "constructor": "Ensign", "points": 0, "position": null, "round": 3, "roundName": "South African Grand Prix" },
-				{ "constructor": "Ensign", "points": 0, "position": null, "round": 4, "roundName": "United States Grand Prix West" }
+				{
+					"constructor": "Surtees",
+					"points": 0,
+					"position": null,
+					"round": 14,
+					"roundName": "Italian Grand Prix"
+				}
+			],
+			"year": 1977
+		},
+		{
+			"results": [
+				{
+					"constructor": "Ensign",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"constructor": "Ensign",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"constructor": "Ensign",
+					"points": 0,
+					"position": null,
+					"round": 3,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"constructor": "Ensign",
+					"points": 0,
+					"position": null,
+					"round": 4,
+					"roundName": "United States Grand Prix West"
+				}
 			],
 			"year": 1978
 		}

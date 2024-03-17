@@ -462,7 +462,11 @@
 					"round": 5,
 					"roundName": "Spanish Grand Prix"
 				},
-				{ "results": [{ "driver": "Jean Alesi", "points": 0, "position": 9 }], "round": 6, "roundName": "European Grand Prix" },
+				{
+					"results": [{ "driver": "Jean Alesi", "points": 0, "position": 9 }],
+					"round": 6,
+					"roundName": "European Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Nick Heidfeld", "points": 0, "position": 8 },
@@ -654,7 +658,11 @@
 				},
 				{
 					"results": [
-						{ "driver": "Heinz-Harald Frentzen", "points": 0, "position": null },
+						{
+							"driver": "Heinz-Harald Frentzen",
+							"points": 0,
+							"position": null
+						},
 						{ "driver": "Luciano Burti", "points": 0, "position": null }
 					],
 					"round": 13,

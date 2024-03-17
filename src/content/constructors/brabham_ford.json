@@ -15,7 +15,15 @@
 	"raceWins": 2,
 	"seasons": [
 		{
-			"rounds": [{ "results": [{ "driver": "Frank Gardner", "points": 0, "position": null }], "round": 5, "roundName": "British Grand Prix" }],
+			"rounds": [
+				{
+					"results": [
+						{ "driver": "Frank Gardner", "points": 0, "position": null }
+					],
+					"round": 5,
+					"roundName": "British Grand Prix"
+				}
+			],
 			"year": 1964
 		},
 		{
@@ -32,7 +40,13 @@
 			"year": 1965
 		},
 		{
-			"rounds": [{ "results": [{ "driver": "Alan Rees", "points": 0, "position": 7 }], "round": 7, "roundName": "German Grand Prix" }],
+			"rounds": [
+				{
+					"results": [{ "driver": "Alan Rees", "points": 0, "position": 7 }],
+					"round": 7,
+					"roundName": "German Grand Prix"
+				}
+			],
 			"year": 1967
 		},
 		{
@@ -184,7 +198,13 @@
 					"round": 9,
 					"roundName": "British Grand Prix"
 				},
-				{ "results": [{ "driver": "Lella Lombardi", "points": 0, "position": null }], "round": 10, "roundName": "German Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Lella Lombardi", "points": 0, "position": null }
+					],
+					"round": 10,
+					"roundName": "German Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Lella Lombardi", "points": 0, "position": 12 },

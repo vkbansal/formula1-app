@@ -8,13 +8,33 @@
 	"raceWins": 0,
 	"seasons": [
 		{
-			"rounds": [{ "results": [{ "driver": "Peter Hirt", "points": 0, "position": null }], "round": 1, "roundName": "Swiss Grand Prix" }],
+			"rounds": [
+				{
+					"results": [
+						{ "driver": "Peter Hirt", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "Swiss Grand Prix"
+				}
+			],
 			"year": 1951
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Toni Ulmen", "points": 0, "position": null }], "round": 1, "roundName": "Swiss Grand Prix" },
-				{ "results": [{ "driver": "Arthur Legat", "points": 0, "position": 13 }], "round": 3, "roundName": "Belgian Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Toni Ulmen", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "Swiss Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Arthur Legat", "points": 0, "position": 13 }
+					],
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Hans Klenk", "points": 0, "position": 11 },
@@ -33,7 +53,13 @@
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Arthur Legat", "points": 0, "position": null }], "round": 4, "roundName": "Belgian Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Arthur Legat", "points": 0, "position": null }
+					],
+					"round": 4,
+					"roundName": "Belgian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Wolfgang Seidel", "points": 0, "position": 16 },

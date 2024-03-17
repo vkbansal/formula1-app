@@ -15,16 +15,46 @@
 	"seasons": [
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Bruce McLaren", "points": 0, "position": null }], "round": 1, "roundName": "Monaco Grand Prix" },
-				{ "results": [{ "driver": "Bruce McLaren", "points": 2, "position": 5 }], "round": 8, "roundName": "United States Grand Prix" },
-				{ "results": [{ "driver": "Bruce McLaren", "points": 0, "position": null }], "round": 9, "roundName": "Mexican Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Bruce McLaren", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Bruce McLaren", "points": 2, "position": 5 }
+					],
+					"round": 8,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Bruce McLaren", "points": 0, "position": null }
+					],
+					"round": 9,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1966
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Jean-Pierre Beltoise", "points": 0, "position": 7 }], "round": 10, "roundName": "United States Grand Prix" },
-				{ "results": [{ "driver": "Jean-Pierre Beltoise", "points": 0, "position": 7 }], "round": 11, "roundName": "Mexican Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Jean-Pierre Beltoise", "points": 0, "position": 7 }
+					],
+					"round": 10,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Jean-Pierre Beltoise", "points": 0, "position": 7 }
+					],
+					"round": 11,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1967
 		},
@@ -78,7 +108,11 @@
 					"round": 7,
 					"roundName": "British Grand Prix"
 				},
-				{ "results": [{ "driver": "Denny Hulme", "points": 0, "position": 7 }], "round": 8, "roundName": "German Grand Prix" },
+				{
+					"results": [{ "driver": "Denny Hulme", "points": 0, "position": 7 }],
+					"round": 8,
+					"roundName": "German Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Denny Hulme", "points": 9, "position": 1 },

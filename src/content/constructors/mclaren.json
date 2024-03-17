@@ -64,8 +64,20 @@
 	"seasons": [
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Bruce McLaren", "points": 0, "position": 13 }], "round": 8, "roundName": "German Grand Prix" },
-				{ "results": [{ "driver": "Denny Hulme", "points": 0, "position": null }], "round": 11, "roundName": "United States Grand Prix" }
+				{
+					"results": [
+						{ "driver": "Bruce McLaren", "points": 0, "position": 13 }
+					],
+					"round": 8,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Denny Hulme", "points": 0, "position": null }
+					],
+					"round": 11,
+					"roundName": "United States Grand Prix"
+				}
 			],
 			"year": 1968
 		},
@@ -1555,7 +1567,13 @@
 					"round": 11,
 					"roundName": "French Grand Prix"
 				},
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": null }], "round": 12, "roundName": "German Grand Prix" },
+				{
+					"results": [
+						{ "driver": "John Watson", "points": 0, "position": null }
+					],
+					"round": 12,
+					"roundName": "German Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "John Watson", "points": 0, "position": 9 },
@@ -1947,7 +1965,11 @@
 					"round": 12,
 					"roundName": "Italian Grand Prix"
 				},
-				{ "results": [{ "driver": "Alain Prost", "points": 4, "position": 3 }], "round": 13, "roundName": "Belgian Grand Prix" },
+				{
+					"results": [{ "driver": "Alain Prost", "points": 4, "position": 3 }],
+					"round": 13,
+					"roundName": "Belgian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "John Watson", "points": 0, "position": 7 },

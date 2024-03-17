@@ -9,10 +9,38 @@
 	"seasons": [
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Robin Montgomerie-Charrington", "points": 0, "position": null }], "round": 3, "roundName": "Belgian Grand Prix" },
-				{ "results": [{ "driver": "Bill Aston", "points": 0, "position": null }], "round": 5, "roundName": "British Grand Prix" },
-				{ "results": [{ "driver": "Bill Aston", "points": 0, "position": null }], "round": 6, "roundName": "German Grand Prix" },
-				{ "results": [{ "driver": "Bill Aston", "points": 0, "position": null }], "round": 8, "roundName": "Italian Grand Prix" }
+				{
+					"results": [
+						{
+							"driver": "Robin Montgomerie-Charrington",
+							"points": 0,
+							"position": null
+						}
+					],
+					"round": 3,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Bill Aston", "points": 0, "position": null }
+					],
+					"round": 5,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Bill Aston", "points": 0, "position": null }
+					],
+					"round": 6,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Bill Aston", "points": 0, "position": null }
+					],
+					"round": 8,
+					"roundName": "Italian Grand Prix"
+				}
 			],
 			"year": 1952
 		}

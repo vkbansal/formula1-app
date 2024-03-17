@@ -15,8 +15,30 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Cooper-Climax", "points": 0, "position": null, "round": 9, "roundName": "Italian Grand Prix" }], "year": 1960 },
-		{ "results": [{ "constructor": "BRM", "points": 0, "position": null, "round": 2, "roundName": "Belgian Grand Prix" }], "year": 1966 }
+		{
+			"results": [
+				{
+					"constructor": "Cooper-Climax",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "Italian Grand Prix"
+				}
+			],
+			"year": 1960
+		},
+		{
+			"results": [
+				{
+					"constructor": "BRM",
+					"points": 0,
+					"position": null,
+					"round": 2,
+					"roundName": "Belgian Grand Prix"
+				}
+			],
+			"year": 1966
+		}
 	],
 	"totalLaps": 0,
 	"totalRaces": 2

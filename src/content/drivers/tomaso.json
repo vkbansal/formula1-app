@@ -15,9 +15,28 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Ferrari", "points": 0, "position": 9, "round": 1, "roundName": "Argentine Grand Prix" }], "year": 1957 },
 		{
-			"results": [{ "constructor": "Cooper-OSCA", "points": 0, "position": null, "round": 9, "roundName": "United States Grand Prix" }],
+			"results": [
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": 9,
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				}
+			],
+			"year": 1957
+		},
+		{
+			"results": [
+				{
+					"constructor": "Cooper-OSCA",
+					"points": 0,
+					"position": null,
+					"round": 9,
+					"roundName": "United States Grand Prix"
+				}
+			],
 			"year": 1959
 		}
 	],

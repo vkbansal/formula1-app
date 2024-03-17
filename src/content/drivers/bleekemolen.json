@@ -15,13 +15,48 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "March", "points": 0, "position": null, "round": 13, "roundName": "Dutch Grand Prix" }], "year": 1977 },
 		{
 			"results": [
-				{ "constructor": "ATS", "points": 0, "position": null, "round": 13, "roundName": "Dutch Grand Prix" },
-				{ "constructor": "ATS", "points": 0, "position": null, "round": 14, "roundName": "Italian Grand Prix" },
-				{ "constructor": "ATS", "points": 0, "position": null, "round": 15, "roundName": "United States Grand Prix" },
-				{ "constructor": "ATS", "points": 0, "position": null, "round": 16, "roundName": "Canadian Grand Prix" }
+				{
+					"constructor": "March",
+					"points": 0,
+					"position": null,
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
+				}
+			],
+			"year": 1977
+		},
+		{
+			"results": [
+				{
+					"constructor": "ATS",
+					"points": 0,
+					"position": null,
+					"round": 13,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"constructor": "ATS",
+					"points": 0,
+					"position": null,
+					"round": 14,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"constructor": "ATS",
+					"points": 0,
+					"position": null,
+					"round": 15,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "ATS",
+					"points": 0,
+					"position": null,
+					"round": 16,
+					"roundName": "Canadian Grand Prix"
+				}
 			],
 			"year": 1978
 		}

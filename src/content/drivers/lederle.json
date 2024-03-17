@@ -16,13 +16,40 @@
 	"poles": 0,
 	"raceWins": 0,
 	"seasons": [
-		{ "results": [{ "constructor": "Lotus-Climax", "points": 1, "position": 6, "round": 9, "roundName": "South African Grand Prix" }], "year": 1962 },
 		{
-			"results": [{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 10, "roundName": "South African Grand Prix" }],
+			"results": [
+				{
+					"constructor": "Lotus-Climax",
+					"points": 1,
+					"position": 6,
+					"round": 9,
+					"roundName": "South African Grand Prix"
+				}
+			],
+			"year": 1962
+		},
+		{
+			"results": [
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 10,
+					"roundName": "South African Grand Prix"
+				}
+			],
 			"year": 1963
 		},
 		{
-			"results": [{ "constructor": "Lotus-Climax", "points": 0, "position": null, "round": 1, "roundName": "South African Grand Prix" }],
+			"results": [
+				{
+					"constructor": "Lotus-Climax",
+					"points": 0,
+					"position": null,
+					"round": 1,
+					"roundName": "South African Grand Prix"
+				}
+			],
 			"year": 1965
 		}
 	],

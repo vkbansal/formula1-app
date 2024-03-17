@@ -19,11 +19,37 @@
 	"seasons": [
 		{
 			"rounds": [
-				{ "results": [{ "driver": "John Surtees", "points": 0, "position": null }], "round": 7, "roundName": "British Grand Prix" },
-				{ "results": [{ "driver": "John Surtees", "points": 0, "position": 9 }], "round": 8, "roundName": "German Grand Prix" },
-				{ "results": [{ "driver": "John Surtees", "points": 0, "position": null }], "round": 9, "roundName": "Austrian Grand Prix" },
-				{ "results": [{ "driver": "John Surtees", "points": 0, "position": null }], "round": 10, "roundName": "Italian Grand Prix" },
-				{ "results": [{ "driver": "John Surtees", "points": 2, "position": 5 }], "round": 11, "roundName": "Canadian Grand Prix" },
+				{
+					"results": [
+						{ "driver": "John Surtees", "points": 0, "position": null }
+					],
+					"round": 7,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [{ "driver": "John Surtees", "points": 0, "position": 9 }],
+					"round": 8,
+					"roundName": "German Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "John Surtees", "points": 0, "position": null }
+					],
+					"round": 9,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "John Surtees", "points": 0, "position": null }
+					],
+					"round": 10,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "John Surtees", "points": 2, "position": 5 }],
+					"round": 11,
+					"roundName": "Canadian Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Derek Bell", "points": 1, "position": 6 },
@@ -32,7 +58,11 @@
 					"round": 12,
 					"roundName": "United States Grand Prix"
 				},
-				{ "results": [{ "driver": "John Surtees", "points": 0, "position": 8 }], "round": 13, "roundName": "Mexican Grand Prix" }
+				{
+					"results": [{ "driver": "John Surtees", "points": 0, "position": 8 }],
+					"round": 13,
+					"roundName": "Mexican Grand Prix"
+				}
 			],
 			"year": 1970
 		},
@@ -438,7 +468,13 @@
 					"round": 7,
 					"roundName": "Swedish Grand Prix"
 				},
-				{ "results": [{ "driver": "Jochen Mass", "points": 0, "position": null }], "round": 8, "roundName": "Dutch Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Jochen Mass", "points": 0, "position": null }
+					],
+					"round": 8,
+					"roundName": "Dutch Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Jochen Mass", "points": 0, "position": null },
@@ -505,15 +541,59 @@
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": null }], "round": 1, "roundName": "Argentine Grand Prix" },
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": 10 }], "round": 2, "roundName": "Brazilian Grand Prix" },
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": null }], "round": 3, "roundName": "South African Grand Prix" },
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": 8 }], "round": 4, "roundName": "Spanish Grand Prix" },
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": null }], "round": 5, "roundName": "Monaco Grand Prix" },
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": 10 }], "round": 6, "roundName": "Belgian Grand Prix" },
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": 16 }], "round": 7, "roundName": "Swedish Grand Prix" },
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": null }], "round": 8, "roundName": "Dutch Grand Prix" },
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": 13 }], "round": 9, "roundName": "French Grand Prix" },
+				{
+					"results": [
+						{ "driver": "John Watson", "points": 0, "position": null }
+					],
+					"round": 1,
+					"roundName": "Argentine Grand Prix"
+				},
+				{
+					"results": [{ "driver": "John Watson", "points": 0, "position": 10 }],
+					"round": 2,
+					"roundName": "Brazilian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "John Watson", "points": 0, "position": null }
+					],
+					"round": 3,
+					"roundName": "South African Grand Prix"
+				},
+				{
+					"results": [{ "driver": "John Watson", "points": 0, "position": 8 }],
+					"round": 4,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "John Watson", "points": 0, "position": null }
+					],
+					"round": 5,
+					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [{ "driver": "John Watson", "points": 0, "position": 10 }],
+					"round": 6,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [{ "driver": "John Watson", "points": 0, "position": 16 }],
+					"round": 7,
+					"roundName": "Swedish Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "John Watson", "points": 0, "position": null }
+					],
+					"round": 8,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"results": [{ "driver": "John Watson", "points": 0, "position": 13 }],
+					"round": 9,
+					"roundName": "French Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Dave Morgan", "points": 0, "position": 18 },
@@ -522,13 +602,23 @@
 					"round": 10,
 					"roundName": "British Grand Prix"
 				},
-				{ "results": [{ "driver": "John Watson", "points": 0, "position": 10 }], "round": 12, "roundName": "Austrian Grand Prix" }
+				{
+					"results": [{ "driver": "John Watson", "points": 0, "position": 10 }],
+					"round": 12,
+					"roundName": "Austrian Grand Prix"
+				}
 			],
 			"year": 1975
 		},
 		{
 			"rounds": [
-				{ "results": [{ "driver": "Brett Lunger", "points": 0, "position": 11 }], "round": 2, "roundName": "South African Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Brett Lunger", "points": 0, "position": 11 }
+					],
+					"round": 2,
+					"roundName": "South African Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "Alan Jones", "points": 0, "position": null },
@@ -910,7 +1000,13 @@
 					"round": 14,
 					"roundName": "Italian Grand Prix"
 				},
-				{ "results": [{ "driver": "Beppe Gabbiani", "points": 0, "position": null }], "round": 15, "roundName": "United States Grand Prix" },
+				{
+					"results": [
+						{ "driver": "Beppe Gabbiani", "points": 0, "position": null }
+					],
+					"round": 15,
+					"roundName": "United States Grand Prix"
+				},
 				{
 					"results": [
 						{ "driver": "René Arnoux", "points": 0, "position": null },
