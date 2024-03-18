@@ -6,7 +6,7 @@ import omit from 'just-omit';
 import driverImages from './driver-images.json' assert { type: 'json' };
 import { kebabCase } from 'change-case';
 import { Circuits } from './DataGenerator/Circuits';
-import { ConstructorResults } from './DataGenerator/ConstructorResults';
+// import { ConstructorResults } from './DataGenerator/ConstructorResults';
 import { ConstructorStandings } from './DataGenerator/ConstructorStandings';
 import { Constructors, type IConstructor } from './DataGenerator/Constructors';
 import { DriverStandings } from './DataGenerator/DriverStandings';
@@ -17,8 +17,8 @@ import { Qualifying } from './DataGenerator/Qualifying';
 import { Races, type IRace } from './DataGenerator/Races';
 import { Results } from './DataGenerator/Results';
 import { Seasons } from './DataGenerator/Seasons';
-import { SprintResults } from './DataGenerator/SprintResults';
-import { Status } from './DataGenerator/Status';
+// import { SprintResults } from './DataGenerator/SprintResults';
+// import { Status } from './DataGenerator/Status';
 import { DriverChampionships } from './DataGenerator/DriverChampionships';
 import { ConstructorChampionships } from './DataGenerator/ConstructorChampionships';
 import { Teams } from './DataGenerator/Teams';
@@ -34,7 +34,7 @@ export function sluggify(str: string): string {
 
 export class DataGenerator {
 	private circuits: Circuits;
-	private constructorResults: ConstructorResults;
+	// private constructorResults: ConstructorResults;
 	private constructorStandings: ConstructorStandings;
 	private constructors: Constructors;
 	private driverStandings: DriverStandings;
@@ -45,8 +45,8 @@ export class DataGenerator {
 	private races: Races;
 	private results: Results;
 	private seasons: Seasons;
-	private sprintResults: SprintResults;
-	private status: Status;
+	// private sprintResults: SprintResults;
+	// private status: Status;
 
 	private driverChampionships: DriverChampionships;
 	private constructorChampionships: ConstructorChampionships;
@@ -54,7 +54,7 @@ export class DataGenerator {
 
 	constructor() {
 		this.circuits = new Circuits();
-		this.constructorResults = new ConstructorResults();
+		// this.constructorResults = new ConstructorResults();
 		this.constructorStandings = new ConstructorStandings();
 		this.constructors = new Constructors();
 		this.driverStandings = new DriverStandings();
@@ -65,8 +65,8 @@ export class DataGenerator {
 		this.races = new Races();
 		this.results = new Results();
 		this.seasons = new Seasons();
-		this.sprintResults = new SprintResults();
-		this.status = new Status();
+		// this.sprintResults = new SprintResults();
+		// this.status = new Status();
 		this.driverChampionships = new DriverChampionships(
 			this.races,
 			this.driverStandings,
@@ -345,7 +345,7 @@ export class DataGenerator {
 			podiums: podiums.length,
 			raceWins: raceWins.length,
 			totalRaces: totalRaces,
-			winPct: (raceWins.length / totalRaces) * 100,
+			winPct: totalRaces > 0 ? (raceWins.length / totalRaces) * 100 : 0,
 			seasons,
 		};
 	}
@@ -388,7 +388,7 @@ export class DataGenerator {
 					lapPositions,
 					pitStops: driverPitStops,
 					qualifying: {
-						position: driverQualifying?.position,
+						position: driverQualifying?.position || null,
 						q1: driverQualifying?.q1 || null,
 						q2: driverQualifying?.q2 || null,
 						q3: driverQualifying?.q3 || null,
