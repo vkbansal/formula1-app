@@ -71,8 +71,8 @@
 	"constructorRef": "ferrari",
 	"name": "Ferrari",
 	"nationality": "Italian",
-	"podiums": 821,
-	"raceWins": 244,
+	"podiums": 823,
+	"raceWins": 245,
 	"seasons": [
 		{
 			"rounds": [
@@ -9304,11 +9304,19 @@
 					],
 					"round": 2,
 					"roundName": "Saudi Arabian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Charles Leclerc", "points": 19, "position": 2 },
+						{ "driver": "Carlos Sainz", "points": 25, "position": 1 }
+					],
+					"round": 3,
+					"roundName": "Australian Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 1078,
-	"winPct": 22.634508348794064
+	"totalRaces": 1079,
+	"winPct": 22.706209453197403
 }
