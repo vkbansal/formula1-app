@@ -24,8 +24,8 @@
 	"constructorRef": "red_bull",
 	"name": "Red Bull",
 	"nationality": "Austrian",
-	"podiums": 268,
-	"raceWins": 115,
+	"podiums": 270,
+	"raceWins": 116,
 	"seasons": [
 		{
 			"rounds": [
@@ -3107,11 +3107,19 @@
 					],
 					"round": 3,
 					"roundName": "Australian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 18, "position": 2 },
+						{ "driver": "Max Verstappen", "points": 26, "position": 1 }
+					],
+					"round": 4,
+					"roundName": "Japanese Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 373,
-	"winPct": 30.831099195710454
+	"totalRaces": 374,
+	"winPct": 31.016042780748666
 }
