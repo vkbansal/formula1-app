@@ -12,7 +12,7 @@ import { Constructors, type IConstructor } from './DataGenerator/Constructors';
 import { DriverStandings } from './DataGenerator/DriverStandings';
 import { Drivers, type IDriver } from './DataGenerator/Drivers';
 import { LapTimes } from './DataGenerator/LapTimes';
-import { PitStops } from './DataGenerator/PitStops';
+// import { PitStops } from './DataGenerator/PitStops';
 import { Qualifying } from './DataGenerator/Qualifying';
 import { Races, type IRace } from './DataGenerator/Races';
 import { Results } from './DataGenerator/Results';
@@ -40,7 +40,7 @@ export class DataGenerator {
 	private driverStandings: DriverStandings;
 	private drivers: Drivers;
 	private lapTimes: LapTimes;
-	private pitStops: PitStops;
+	// private pitStops: PitStops;
 	private qualifying: Qualifying;
 	private races: Races;
 	private results: Results;
@@ -60,7 +60,7 @@ export class DataGenerator {
 		this.driverStandings = new DriverStandings();
 		this.drivers = new Drivers();
 		this.lapTimes = new LapTimes();
-		this.pitStops = new PitStops();
+		// this.pitStops = new PitStops();
 		this.qualifying = new Qualifying();
 		this.races = new Races();
 		this.results = new Results();
@@ -354,8 +354,6 @@ export class DataGenerator {
 		const circuit = this.circuits.getCircuitByCircuitId(race.circuitId)!;
 		const qualifying = this.qualifying.getQualifyingByRaceId(race.raceId);
 		const results = this.results.getResultsByRaceId(race.raceId);
-		const laps = this.lapTimes.getLapTimesByRaceId(race.raceId);
-		const pitStops = this.pitStops.getPitStopsByRaceId(race.raceId);
 
 		const driversData = this.results
 			.getResultsByRaceId(race.raceId)
@@ -366,14 +364,6 @@ export class DataGenerator {
 				const driverResult = results.find(
 					(r) => r.driverId === result.driverId,
 				);
-				const lapPositions = laps
-					.filter((lap) => lap.driverId === result.driverId)
-					.toSorted((a, b) => a.lap - b.lap)
-					.map((lap) => lap.position);
-
-				const driverPitStops = pitStops
-					.filter((pitStop) => pitStop.driverId === result.driverId)
-					.map((pitStop) => ({ lap: pitStop.lap, stop: pitStop.stop }));
 
 				return {
 					constructorRef: this.constructors.getConstructorRefByConstructorId(
@@ -385,8 +375,6 @@ export class DataGenerator {
 					position: driverResult?.position,
 					positionText: String(driverResult?.positionText),
 					positionOrder: driverResult?.positionOrder,
-					lapPositions,
-					pitStops: driverPitStops,
 					qualifying: {
 						position: driverQualifying?.position || null,
 						q1: driverQualifying?.q1 || null,

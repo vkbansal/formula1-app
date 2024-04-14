@@ -9,12 +9,17 @@
 
 		& > a.tab {
 			cursor: pointer;
-			display: inline-flex;
+			display: flex;
 			align-items: center;
 			white-space: nowrap;
 			padding: 1rem 2rem;
 			text-decoration: none;
 			border-radius: 0.5rem 0.5rem 0 0;
+			transition: background-color 0.3s ease-in-out;
+
+			&:not(.tab-active):hover {
+				background-color: var(--gray-700);
+			}
 
 			&.tab-active {
 				background-color: var(--gray-800);
@@ -22,6 +27,14 @@
 				font-weight: bold;
 				z-index: 3;
 				border-color: var(--border) var(--border) transparent var(--border);
+			}
+		}
+
+		&.tab-list--spread {
+			& > a.tab {
+				flex: 1 0 auto;
+				text-align: center;
+				justify-content: center;
 			}
 		}
 	}

@@ -116,10 +116,6 @@ const roundsCollection = defineCollection({
 						q3: z.string().nullable(),
 					})
 					.optional(),
-				lapPositions: z.array(z.number().nullable()).default([]),
-				pitStops: z
-					.array(z.object({ stop: z.number(), lap: z.number() }))
-					.default([]),
 			}),
 		),
 	}),
