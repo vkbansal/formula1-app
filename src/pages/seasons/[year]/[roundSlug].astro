@@ -108,24 +108,36 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 					</thead>
 					<tbody>
 						{
-							sort(round.driversData, (a, b) => a.grid - b.grid).map(
-								(result) => {
-									const driver = drivers[result.driverRef];
+							sort(round.driversData, (a, b) => {
+								if (a.grid === 0 && b.grid === 0) {
+									return 0;
+								}
 
-									return (
-										<tr>
-											<td>{result.grid}</td>
-											<td>
-												{driver?.nationality ? (
-													<Nationality nationality={driver.nationality} />
-												) : null}
-												<span>{driver?.name}</span>
-											</td>
-											<td>{constructors[result.constructorRef]?.name}</td>
-										</tr>
-									);
-								},
-							)
+								if (a.grid === 0 && b.grid !== 0) {
+									return 1;
+								}
+
+								if (a.grid !== 0 && b.grid === 0) {
+									return -1;
+								}
+
+								return a.grid - b.grid;
+							}).map((result) => {
+								const driver = drivers[result.driverRef];
+
+								return (
+									<tr>
+										<td>{result.grid || 'PL'}</td>
+										<td>
+											{driver?.nationality ? (
+												<Nationality nationality={driver.nationality} />
+											) : null}
+											<span>{driver?.name}</span>
+										</td>
+										<td>{constructors[result.constructorRef]?.name}</td>
+									</tr>
+								);
+							})
 						}
 					</tbody>
 				</table>
