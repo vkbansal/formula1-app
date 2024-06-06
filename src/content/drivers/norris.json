@@ -11,12 +11,12 @@
 	"driverId": 846,
 	"driverRef": "norris",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lando_Norris_Formula_1_Driver_%2849379469418%29_%28cropped%29_%28cropped%29.jpg/220px-Lando_Norris_Formula_1_Driver_%2849379469418%29_%28cropped%29_%28cropped%29.jpg",
-	"lapsLead": 66,
+	"lapsLead": 102,
 	"name": "Lando Norris",
 	"nationality": "British",
-	"podiums": 14,
+	"podiums": 17,
 	"poles": 1,
-	"raceWins": 0,
+	"raceWins": 1,
 	"seasons": [
 		{
 			"results": [
@@ -800,11 +800,39 @@
 					"position": 5,
 					"round": 4,
 					"roundName": "Japanese Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 18,
+					"position": 2,
+					"round": 5,
+					"roundName": "Chinese Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 25,
+					"position": 1,
+					"round": 6,
+					"roundName": "Miami Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 18,
+					"position": 2,
+					"round": 7,
+					"roundName": "Emilia Romagna Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 12,
+					"position": 4,
+					"round": 8,
+					"roundName": "Monaco Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 6084,
-	"totalRaces": 108
+	"totalLaps": 6338,
+	"totalRaces": 112
 }

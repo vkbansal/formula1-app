@@ -59,8 +59,8 @@
 	"constructorRef": "mclaren",
 	"name": "McLaren",
 	"nationality": "British",
-	"podiums": 488,
-	"raceWins": 179,
+	"podiums": 492,
+	"raceWins": 180,
 	"seasons": [
 		{
 			"rounds": [
@@ -7668,11 +7668,43 @@
 					],
 					"round": 4,
 					"roundName": "Japanese Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Oscar Piastri", "points": 4, "position": 8 },
+						{ "driver": "Lando Norris", "points": 18, "position": 2 }
+					],
+					"round": 5,
+					"roundName": "Chinese Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Oscar Piastri", "points": 0, "position": 13 },
+						{ "driver": "Lando Norris", "points": 25, "position": 1 }
+					],
+					"round": 6,
+					"roundName": "Miami Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Oscar Piastri", "points": 12, "position": 4 },
+						{ "driver": "Lando Norris", "points": 18, "position": 2 }
+					],
+					"round": 7,
+					"roundName": "Emilia Romagna Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lando Norris", "points": 12, "position": 4 },
+						{ "driver": "Oscar Piastri", "points": 18, "position": 2 }
+					],
+					"round": 8,
+					"roundName": "Monaco Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 909,
-	"winPct": 19.691969196919693
+	"totalRaces": 913,
+	"winPct": 19.715224534501644
 }
