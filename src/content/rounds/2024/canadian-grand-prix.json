@@ -6,7 +6,283 @@
 		"name": "Circuit Gilles Villeneuve"
 	},
 	"date": "2024-06-09",
-	"driversData": [],
+	"driversData": [
+		{
+			"constructorRef": "red_bull",
+			"driverRef": "max_verstappen",
+			"grid": 2,
+			"points": 25,
+			"position": 1,
+			"positionOrder": 1,
+			"positionText": "1",
+			"qualifying": {
+				"position": 2,
+				"q1": "1:12.360",
+				"q2": "1:12.549",
+				"q3": "1:12.000"
+			}
+		},
+		{
+			"constructorRef": "mclaren",
+			"driverRef": "norris",
+			"grid": 3,
+			"points": 18,
+			"position": 2,
+			"positionOrder": 2,
+			"positionText": "2",
+			"qualifying": {
+				"position": 3,
+				"q1": "1:12.959",
+				"q2": "1:12.201",
+				"q3": "1:12.021"
+			}
+		},
+		{
+			"constructorRef": "mercedes",
+			"driverRef": "russell",
+			"grid": 1,
+			"points": 15,
+			"position": 3,
+			"positionOrder": 3,
+			"positionText": "3",
+			"qualifying": {
+				"position": 1,
+				"q1": "1:13.013",
+				"q2": "1:11.742",
+				"q3": "1:12.000"
+			}
+		},
+		{
+			"constructorRef": "mercedes",
+			"driverRef": "hamilton",
+			"grid": 7,
+			"points": 13,
+			"position": 4,
+			"positionOrder": 4,
+			"positionText": "4",
+			"qualifying": {
+				"position": 7,
+				"q1": "1:12.851",
+				"q2": "1:11.979",
+				"q3": "1:12.280"
+			}
+		},
+		{
+			"constructorRef": "mclaren",
+			"driverRef": "piastri",
+			"grid": 4,
+			"points": 10,
+			"position": 5,
+			"positionOrder": 5,
+			"positionText": "5",
+			"qualifying": {
+				"position": 4,
+				"q1": "1:12.907",
+				"q2": "1:12.462",
+				"q3": "1:12.103"
+			}
+		},
+		{
+			"constructorRef": "aston_martin",
+			"driverRef": "alonso",
+			"grid": 6,
+			"points": 8,
+			"position": 6,
+			"positionOrder": 6,
+			"positionText": "6",
+			"qualifying": {
+				"position": 6,
+				"q1": "1:13.117",
+				"q2": "1:12.635",
+				"q3": "1:12.228"
+			}
+		},
+		{
+			"constructorRef": "aston_martin",
+			"driverRef": "stroll",
+			"grid": 9,
+			"points": 6,
+			"position": 7,
+			"positionOrder": 7,
+			"positionText": "7",
+			"qualifying": {
+				"position": 9,
+				"q1": "1:13.088",
+				"q2": "1:12.659",
+				"q3": "1:12.701"
+			}
+		},
+		{
+			"constructorRef": "rb",
+			"driverRef": "ricciardo",
+			"grid": 5,
+			"points": 4,
+			"position": 8,
+			"positionOrder": 8,
+			"positionText": "8",
+			"qualifying": {
+				"position": 5,
+				"q1": "1:13.240",
+				"q2": "1:12.572",
+				"q3": "1:12.178"
+			}
+		},
+		{
+			"constructorRef": "alpine",
+			"driverRef": "gasly",
+			"grid": 15,
+			"points": 2,
+			"position": 9,
+			"positionOrder": 9,
+			"positionText": "9",
+			"qualifying": {
+				"position": 15,
+				"q1": "1:13.289",
+				"q2": "1:12.940",
+				"q3": null
+			}
+		},
+		{
+			"constructorRef": "alpine",
+			"driverRef": "ocon",
+			"grid": 18,
+			"points": 1,
+			"position": 10,
+			"positionOrder": 10,
+			"positionText": "10",
+			"qualifying": { "position": 18, "q1": "1:13.435", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "haas",
+			"driverRef": "hulkenberg",
+			"grid": 17,
+			"points": 0,
+			"position": 11,
+			"positionOrder": 11,
+			"positionText": "11",
+			"qualifying": { "position": 19, "q1": "1:13.978", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "haas",
+			"driverRef": "kevin_magnussen",
+			"grid": 14,
+			"points": 0,
+			"position": 12,
+			"positionOrder": 12,
+			"positionText": "12",
+			"qualifying": {
+				"position": 14,
+				"q1": "1:13.217",
+				"q2": "1:12.916",
+				"q3": null
+			}
+		},
+		{
+			"constructorRef": "sauber",
+			"driverRef": "bottas",
+			"grid": 0,
+			"points": 0,
+			"position": 13,
+			"positionOrder": 13,
+			"positionText": "13",
+			"qualifying": { "position": 17, "q1": "1:13.366", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "rb",
+			"driverRef": "tsunoda",
+			"grid": 8,
+			"points": 0,
+			"position": 14,
+			"positionOrder": 14,
+			"positionText": "14",
+			"qualifying": {
+				"position": 8,
+				"q1": "1:12.748",
+				"q2": "1:12.303",
+				"q3": "1:12.414"
+			}
+		},
+		{
+			"constructorRef": "sauber",
+			"driverRef": "zhou",
+			"grid": 0,
+			"points": 0,
+			"position": 15,
+			"positionOrder": 15,
+			"positionText": "15",
+			"qualifying": { "position": 20, "q1": "1:14.292", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "sainz",
+			"grid": 12,
+			"points": 0,
+			"position": null,
+			"positionOrder": 16,
+			"positionText": "R",
+			"qualifying": {
+				"position": 12,
+				"q1": "1:13.038",
+				"q2": "1:12.728",
+				"q3": null
+			}
+		},
+		{
+			"constructorRef": "williams",
+			"driverRef": "albon",
+			"grid": 10,
+			"points": 0,
+			"position": null,
+			"positionOrder": 17,
+			"positionText": "R",
+			"qualifying": {
+				"position": 10,
+				"q1": "1:12.896",
+				"q2": "1:12.485",
+				"q3": "1:12.796"
+			}
+		},
+		{
+			"constructorRef": "red_bull",
+			"driverRef": "perez",
+			"grid": 16,
+			"points": 0,
+			"position": null,
+			"positionOrder": 18,
+			"positionText": "R",
+			"qualifying": { "position": 16, "q1": "1:13.326", "q2": null, "q3": null }
+		},
+		{
+			"constructorRef": "ferrari",
+			"driverRef": "leclerc",
+			"grid": 11,
+			"points": 0,
+			"position": null,
+			"positionOrder": 19,
+			"positionText": "R",
+			"qualifying": {
+				"position": 11,
+				"q1": "1:13.107",
+				"q2": "1:12.691",
+				"q3": null
+			}
+		},
+		{
+			"constructorRef": "williams",
+			"driverRef": "sargeant",
+			"grid": 13,
+			"points": 0,
+			"position": null,
+			"positionOrder": 20,
+			"positionText": "R",
+			"qualifying": {
+				"position": 13,
+				"q1": "1:13.063",
+				"q2": "1:12.736",
+				"q3": null
+			}
+		}
+	],
 	"name": "Canadian Grand Prix",
 	"raceId": 1129,
 	"round": 9,

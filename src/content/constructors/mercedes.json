@@ -19,8 +19,8 @@
 	"constructorRef": "mercedes",
 	"name": "Mercedes",
 	"nationality": "German",
-	"podiums": 289,
-	"raceWins": 125,
+	"podiums": 296,
+	"raceWins": 128,
 	"seasons": [
 		{
 			"rounds": [
@@ -2529,11 +2529,91 @@
 					],
 					"round": 8,
 					"roundName": "Monaco Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 13, "position": 4 },
+						{ "driver": "George Russell", "points": 15, "position": 3 }
+					],
+					"round": 9,
+					"roundName": "Canadian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 12, "position": 4 },
+						{ "driver": "Lewis Hamilton", "points": 15, "position": 3 }
+					],
+					"round": 10,
+					"roundName": "Spanish Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 12, "position": 4 },
+						{ "driver": "George Russell", "points": 25, "position": 1 }
+					],
+					"round": 11,
+					"roundName": "Austrian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 25, "position": 1 },
+						{ "driver": "George Russell", "points": 0, "position": null }
+					],
+					"round": 12,
+					"roundName": "British Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 5, "position": 8 },
+						{ "driver": "Lewis Hamilton", "points": 15, "position": 3 }
+					],
+					"round": 13,
+					"roundName": "Hungarian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 25, "position": 1 },
+						{ "driver": "George Russell", "points": 0, "position": null }
+					],
+					"round": 14,
+					"roundName": "Belgian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 4, "position": 8 },
+						{ "driver": "George Russell", "points": 6, "position": 7 }
+					],
+					"round": 15,
+					"roundName": "Dutch Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 6, "position": 7 },
+						{ "driver": "Lewis Hamilton", "points": 10, "position": 5 }
+					],
+					"round": 16,
+					"roundName": "Italian Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 2, "position": 9 },
+						{ "driver": "George Russell", "points": 15, "position": 3 }
+					],
+					"round": 17,
+					"roundName": "Azerbaijan Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 8, "position": 6 },
+						{ "driver": "George Russell", "points": 12, "position": 4 }
+					],
+					"round": 18,
+					"roundName": "Singapore Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 301,
-	"winPct": 41.52823920265781
+	"totalRaces": 311,
+	"winPct": 41.157556270096464
 }
