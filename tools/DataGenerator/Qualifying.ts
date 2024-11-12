@@ -1,7 +1,7 @@
 import { groupByAndMapValues } from '../utils';
 import { BaseData } from './BaseData';
 
-export interface IQualifying {
+export interface F1Qualifying {
 	readonly qualifyId: number;
 	readonly raceId: number;
 	readonly driverId: number;
@@ -13,7 +13,7 @@ export interface IQualifying {
 	readonly q3: string | null;
 }
 
-export class Qualifying extends BaseData<IQualifying> {
+export class Qualifying extends BaseData<F1Qualifying> {
 	override filename = 'qualifying.csv';
 
 	private qualifyingIndexesGroupedByDriverId: Record<number, number[]> = {};
@@ -37,7 +37,7 @@ export class Qualifying extends BaseData<IQualifying> {
 		);
 	}
 
-	getQualifyingByDriverId(driverId: number): ReadonlyArray<IQualifying> {
+	getQualifyingByDriverId(driverId: number): ReadonlyArray<F1Qualifying> {
 		const qualifyingIndexes =
 			this.qualifyingIndexesGroupedByDriverId[driverId] || [];
 
@@ -46,7 +46,7 @@ export class Qualifying extends BaseData<IQualifying> {
 		);
 	}
 
-	getQualifyingByRaceId(raceId: number): ReadonlyArray<IQualifying> {
+	getQualifyingByRaceId(raceId: number): ReadonlyArray<F1Qualifying> {
 		const qualifyingIndexes =
 			this.qualifyingIndexesGroupedByRaceId[raceId] || [];
 

@@ -1,9 +1,9 @@
 import get from 'just-safe-get';
 
-import { BaseData } from './BaseData';
 import { createIndexMap } from '../utils';
+import { BaseData } from './BaseData';
 
-export interface IDriver {
+export interface Driver {
 	readonly driverId: number;
 	readonly driverRef: string;
 	readonly number: number | null;
@@ -15,7 +15,7 @@ export interface IDriver {
 	readonly url: string;
 }
 
-export class Drivers extends BaseData<IDriver> {
+export class Drivers extends BaseData<Driver> {
 	override filename = 'drivers.csv';
 
 	private driverIdToIndexMap: Record<number, number>;
@@ -26,7 +26,7 @@ export class Drivers extends BaseData<IDriver> {
 		this.driverIdToIndexMap = createIndexMap(this.data, 'driverId');
 	}
 
-	getDriverByDriverId(driverId: number): IDriver | undefined {
+	getDriverByDriverId(driverId: number): Driver | undefined {
 		return get(
 			this.data,
 			String(get(this.driverIdToIndexMap, String(driverId))),
@@ -37,7 +37,7 @@ export class Drivers extends BaseData<IDriver> {
 		return get(this.getDriverByDriverId(driverId)!, 'driverRef', '');
 	}
 
-	getDriverNameFromDriver(driver: IDriver): string {
+	getDriverNameFromDriver(driver: Driver): string {
 		return `${driver.forename} ${driver.surname}`;
 	}
 

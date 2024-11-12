@@ -1,9 +1,9 @@
 import get from 'just-safe-get';
 
-import { BaseData } from './BaseData';
 import { createIndexMap } from '../utils';
+import { BaseData } from './BaseData';
 
-export interface IConstructor {
+export interface F1Constructor {
 	readonly constructorId: number;
 	readonly constructorRef: string;
 	readonly name: string;
@@ -11,7 +11,7 @@ export interface IConstructor {
 	readonly url: string;
 }
 
-export class Constructors extends BaseData<IConstructor> {
+export class Constructors extends BaseData<F1Constructor> {
 	override filename = 'constructors.csv';
 
 	private constructorIdToIndexMap: Record<number, number>;
@@ -24,7 +24,7 @@ export class Constructors extends BaseData<IConstructor> {
 
 	getConstructorByConstructorId(
 		constructorId: number,
-	): IConstructor | undefined {
+	): F1Constructor | undefined {
 		return get(
 			this.data,
 			String(get(this.constructorIdToIndexMap, String(constructorId))),

@@ -1,32 +1,32 @@
+import { kebabCase } from 'change-case';
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
-import get from 'just-safe-get';
 import omit from 'just-omit';
+import get from 'just-safe-get';
 
-import driverImages from './driver-images.json' assert { type: 'json' };
-import { kebabCase } from 'change-case';
 import { Circuits } from './DataGenerator/Circuits';
+import { ConstructorChampionships } from './DataGenerator/ConstructorChampionships';
+import { Constructors, type F1Constructor } from './DataGenerator/Constructors';
 // import { ConstructorResults } from './DataGenerator/ConstructorResults';
 import { ConstructorStandings } from './DataGenerator/ConstructorStandings';
-import { Constructors, type IConstructor } from './DataGenerator/Constructors';
-import { DriverStandings } from './DataGenerator/DriverStandings';
-import { Drivers, type IDriver } from './DataGenerator/Drivers';
-import { LapTimes } from './DataGenerator/LapTimes';
-// import { PitStops } from './DataGenerator/PitStops';
-import { Qualifying } from './DataGenerator/Qualifying';
-import { Races, type IRace } from './DataGenerator/Races';
-import { Results } from './DataGenerator/Results';
-import { Seasons } from './DataGenerator/Seasons';
 // import { SprintResults } from './DataGenerator/SprintResults';
 // import { Status } from './DataGenerator/Status';
 import { DriverChampionships } from './DataGenerator/DriverChampionships';
-import { ConstructorChampionships } from './DataGenerator/ConstructorChampionships';
+import { type Driver, Drivers } from './DataGenerator/Drivers';
+import { DriverStandings } from './DataGenerator/DriverStandings';
+import { LapTimes } from './DataGenerator/LapTimes';
+// import { PitStops } from './DataGenerator/PitStops';
+import { Qualifying } from './DataGenerator/Qualifying';
+import { type Race, Races } from './DataGenerator/Races';
+import { Results } from './DataGenerator/Results';
+import { Seasons } from './DataGenerator/Seasons';
 import { Teams } from './DataGenerator/Teams';
+import driverImages from './driver-images.json' assert { type: 'json' };
 import { groupByAndMapValues, uniqWith } from './utils';
 
 dayjs.extend(advancedFormat);
 
-export function sluggify(str: string): string {
+export function slugify(str: string): string {
 	return kebabCase(str)
 		.normalize('NFD')
 		.replace(/[\u0300-\u036f]/g, '');
@@ -176,7 +176,7 @@ export class DataGenerator {
 				date: dayjs(race.date).format('Do MMM YYYY'),
 				name: race.name,
 				round: race.round,
-				slug: sluggify(race.name),
+				slug: slugify(race.name),
 				driverStandings,
 				constructorStandings,
 				podium,
@@ -219,7 +219,7 @@ export class DataGenerator {
 		};
 	}
 
-	getDriverData(d: IDriver): unknown {
+	getDriverData(d: Driver): unknown {
 		const championshipStandings = this.driverChampionships
 			.getDriverChampionshipByDriverId(d.driverId)
 			.map((standing) => ({
@@ -285,7 +285,7 @@ export class DataGenerator {
 		};
 	}
 
-	getConstructorData(c: IConstructor): unknown {
+	getConstructorData(c: F1Constructor): unknown {
 		const championshipStandings = this.constructorChampionships
 			.getConstructorChampionshipByConstructorId(c.constructorId)
 			.map((standing) => ({
@@ -350,7 +350,7 @@ export class DataGenerator {
 		};
 	}
 
-	getRoundData(race: IRace, slug: string): unknown {
+	getRoundData(race: Race, slug: string): unknown {
 		const circuit = this.circuits.getCircuitByCircuitId(race.circuitId)!;
 		const qualifying = this.qualifying.getQualifyingByRaceId(race.raceId);
 		const results = this.results.getResultsByRaceId(race.raceId);

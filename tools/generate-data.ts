@@ -2,13 +2,13 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import prompts from 'prompts';
-import meow from 'meow';
-import { SingleBar, Presets } from 'cli-progress';
+import { Presets, SingleBar } from 'cli-progress';
 import stringify from 'fast-json-stable-stringify';
+import meow from 'meow';
 import prettier from 'prettier';
+import prompts from 'prompts';
 
-import { DataGenerator, sluggify } from './DataGenerator';
+import { DataGenerator, slugify } from './DataGenerator';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -132,7 +132,7 @@ const queryFns: Record<string, () => Promise<void>> = {
 		for (const race of data) {
 			bar.update(++i);
 
-			const slug = sluggify(race.name);
+			const slug = slugify(race.name);
 
 			await writeDataFile(
 				path.resolve(dataDir, `${race.year}/${slug}.json`),
@@ -164,7 +164,7 @@ if (queries.length === 0 && !allQueries) {
 
 if (queries.length === 0) {
 	// eslint-disable-next-line no-console
-	console.log('No query selceted. Exiting!');
+	console.log('No query selected. Exiting!');
 	process.exit(0);
 }
 

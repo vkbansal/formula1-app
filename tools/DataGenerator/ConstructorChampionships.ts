@@ -1,10 +1,10 @@
 import get from 'just-safe-get';
 
+import { createIndexMap, groupByAndMapValues } from '../utils';
 import type { ConstructorStandings } from './ConstructorStandings';
 import type { Races } from './Races';
-import { createIndexMap, groupByAndMapValues } from '../utils';
 
-export interface IConstructorChampionship {
+export interface ConstructorChampionship {
 	readonly constructorChampionshipId: number;
 	readonly year: number;
 	readonly raceId: number;
@@ -13,7 +13,7 @@ export interface IConstructorChampionship {
 }
 
 export class ConstructorChampionships {
-	protected data: ReadonlyArray<IConstructorChampionship> = [];
+	protected data: ReadonlyArray<ConstructorChampionship> = [];
 
 	protected constructorChampionshipIdsToIndexMap: Record<number, number> = {};
 
@@ -27,14 +27,14 @@ export class ConstructorChampionships {
 
 		this.data = Object.entries(
 			races.getRaceIdsForAllSeasons(),
-		).flatMap<IConstructorChampionship>(([season, raceIds]) => {
+		).flatMap<ConstructorChampionship>(([season, raceIds]) => {
 			// find the last race of the season
 			const lastRaceId = raceIds.at(-1)!;
 			const year = parseInt(season, 10);
 			const constructorStandingsForLastRace =
 				constructorStandings.getConstructorStandingsByRaceId(lastRaceId);
 
-			return constructorStandingsForLastRace.map<IConstructorChampionship>(
+			return constructorStandingsForLastRace.map<ConstructorChampionship>(
 				(standing) => {
 					return {
 						constructorChampionshipId: constructorChampionshipId++,
@@ -59,13 +59,13 @@ export class ConstructorChampionships {
 		);
 	}
 
-	public getData(): ReadonlyArray<IConstructorChampionship> {
+	public getData(): ReadonlyArray<ConstructorChampionship> {
 		return this.data;
 	}
 
 	public getConstructorChampionshipByConstructorId(
 		constructorId: number,
-	): ReadonlyArray<IConstructorChampionship> {
+	): ReadonlyArray<ConstructorChampionship> {
 		const championshipIds =
 			this.constructorChampionshipIdsGroupedByConstructorId[constructorId] ||
 			[];

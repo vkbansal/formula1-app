@@ -1,9 +1,9 @@
 import get from 'just-safe-get';
 
-import { BaseData } from './BaseData';
 import { groupByAndMapValues } from '../utils';
+import { BaseData } from './BaseData';
 
-export interface IRace {
+export interface Race {
 	readonly raceId: number;
 	readonly year: number;
 	readonly round: number;
@@ -24,7 +24,7 @@ export interface IRace {
 	readonly sprint_time: string | null;
 }
 
-export class Races extends BaseData<IRace> {
+export class Races extends BaseData<Race> {
 	override filename = 'races.csv';
 
 	private raceIdToRaceIndexMap: Record<number, number> = {};
@@ -57,14 +57,14 @@ export class Races extends BaseData<IRace> {
 		);
 	}
 
-	getRaceByRaceId(raceId: number): IRace | undefined {
+	getRaceByRaceId(raceId: number): Race | undefined {
 		return get(
 			this.data,
 			String(get(this.raceIdToRaceIndexMap, String(raceId))),
 		);
 	}
 
-	getRacesBySeason(season: number): ReadonlyArray<IRace> {
+	getRacesBySeason(season: number): ReadonlyArray<Race> {
 		const raceIds = this.raceIdsBySeason[season] || [];
 
 		return raceIds.map((raceId) =>

@@ -1,10 +1,10 @@
 import get from 'just-safe-get';
 
+import { createIndexMap, groupByAndMapValues } from '../utils';
 import type { DriverStandings } from './DriverStandings';
 import type { Races } from './Races';
-import { createIndexMap, groupByAndMapValues } from '../utils';
 
-export interface IDriverChampionship {
+export interface DriverChampionship {
 	readonly driverChampionshipId: number;
 	readonly year: number;
 	readonly raceId: number;
@@ -13,7 +13,7 @@ export interface IDriverChampionship {
 }
 
 export class DriverChampionships {
-	protected data: ReadonlyArray<IDriverChampionship> = [];
+	protected data: ReadonlyArray<DriverChampionship> = [];
 
 	protected driverChampionshipIdsToIndexMap: Record<number, number> = {};
 
@@ -27,14 +27,14 @@ export class DriverChampionships {
 
 		this.data = Object.entries(
 			races.getRaceIdsForAllSeasons(),
-		).flatMap<IDriverChampionship>(([_season, raceIds]) => {
+		).flatMap<DriverChampionship>(([_season, raceIds]) => {
 			// find the last race of the season
 			const lastRaceId = raceIds.at(-1)!;
 			const race = races.getRaceByRaceId(lastRaceId)!;
 			const driverStandingsForLastRace =
 				driverStandings.getDriverStandingsByRaceId(lastRaceId);
 
-			return driverStandingsForLastRace.map<IDriverChampionship>((standing) => {
+			return driverStandingsForLastRace.map<DriverChampionship>((standing) => {
 				return {
 					driverChampionshipId: driverChampionshipId++,
 					driverId: standing.driverId,
@@ -57,13 +57,13 @@ export class DriverChampionships {
 		);
 	}
 
-	public getData(): ReadonlyArray<IDriverChampionship> {
+	public getData(): ReadonlyArray<DriverChampionship> {
 		return this.data;
 	}
 
 	public getDriverChampionshipByDriverId(
 		driverId: number,
-	): ReadonlyArray<IDriverChampionship> {
+	): ReadonlyArray<DriverChampionship> {
 		const championshipIds =
 			this.driverChampionshipIdsGroupedByDriverId[driverId] || [];
 		return championshipIds.map((championshipId) =>

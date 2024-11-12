@@ -1,6 +1,6 @@
 import { BaseData } from './BaseData';
 
-export interface IConstructorResult {
+export interface ConstructorResult {
 	readonly constructorResultsId: number;
 	readonly raceId: number;
 	readonly constructorId: number;
@@ -8,7 +8,7 @@ export interface IConstructorResult {
 	readonly status: string | null;
 }
 
-export class ConstructorResults extends BaseData<IConstructorResult> {
+export class ConstructorResults extends BaseData<ConstructorResult> {
 	override filename = 'constructor_results.csv';
 
 	constructor() {

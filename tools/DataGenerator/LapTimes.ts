@@ -1,9 +1,9 @@
 import get from 'just-safe-get';
 
-import { BaseData } from './BaseData';
 import { groupByAndMapValues } from '../utils';
+import { BaseData } from './BaseData';
 
-export interface ILapTime {
+export interface LapTime {
 	readonly raceId: number;
 	readonly driverId: number;
 	readonly lap: number;
@@ -12,7 +12,7 @@ export interface ILapTime {
 	readonly milliseconds: number;
 }
 
-export class LapTimes extends BaseData<ILapTime> {
+export class LapTimes extends BaseData<LapTime> {
 	override filename = 'lap_times.csv';
 
 	private lapTimeIndexesGroupedByDriverId: Record<number, number[]>;
@@ -36,7 +36,7 @@ export class LapTimes extends BaseData<ILapTime> {
 		);
 	}
 
-	getLapTimesByDriverId(driverId: number): ReadonlyArray<ILapTime> {
+	getLapTimesByDriverId(driverId: number): ReadonlyArray<LapTime> {
 		const lapTimeIndexes = this.lapTimeIndexesGroupedByDriverId[driverId] || [];
 
 		return lapTimeIndexes.map((lapTimeIndex) =>
@@ -44,7 +44,7 @@ export class LapTimes extends BaseData<ILapTime> {
 		);
 	}
 
-	getLapTimesByRaceId(raceId: number): ReadonlyArray<ILapTime> {
+	getLapTimesByRaceId(raceId: number): ReadonlyArray<LapTime> {
 		const lapTimeIndexes = this.lapTimeIndexesGroupedByRaceId[raceId] || [];
 
 		return lapTimeIndexes.map((lapTimeIndex) =>

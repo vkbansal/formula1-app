@@ -2,12 +2,12 @@
 /* global $ */
 import 'zx/globals';
 
-import * as cheerio from 'cheerio';
-
-import { fileURLToPath } from 'node:url';
 import fs from 'node:fs';
-import meow from 'meow';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import * as cheerio from 'cheerio';
+import meow from 'meow';
 
 const BASE_URL = 'http://ergast.com/downloads/';
 const FILE_TO_DOWNLOAD = 'f1db_csv.zip';

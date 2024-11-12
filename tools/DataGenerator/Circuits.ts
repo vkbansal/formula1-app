@@ -1,8 +1,9 @@
 import get from 'just-safe-get';
-import { BaseData } from './BaseData';
-import { createIndexMap } from '../utils';
 
-export interface ICircuit {
+import { createIndexMap } from '../utils';
+import { BaseData } from './BaseData';
+
+export interface Circuit {
 	readonly circuitId: number;
 	readonly circuitRef: string;
 	readonly name: string;
@@ -14,7 +15,7 @@ export interface ICircuit {
 	readonly url: string;
 }
 
-export class Circuits extends BaseData<ICircuit> {
+export class Circuits extends BaseData<Circuit> {
 	protected override filename = 'circuits.csv';
 
 	private circuitIdToCircuitIndexMap: Record<number, number> = {};
@@ -27,7 +28,7 @@ export class Circuits extends BaseData<ICircuit> {
 		this.circuitIdToCircuitIndexMap = createIndexMap(this.data, 'circuitId');
 	}
 
-	getCircuitByCircuitId(circuitId: number): ICircuit | undefined {
+	getCircuitByCircuitId(circuitId: number): Circuit | undefined {
 		return get(
 			this.data,
 			String(get(this.circuitIdToCircuitIndexMap, String(circuitId))),

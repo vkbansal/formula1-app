@@ -1,20 +1,20 @@
+import { groupByAndMapValues, uniqWith } from '../utils';
 import type { Races } from './Races';
 import type { Results } from './Results';
-import { groupByAndMapValues, uniqWith } from '../utils';
 
-export interface ITeam {
+export interface Team {
 	constructorId: number;
 	driverId: number;
 	year: number;
 }
 
 export class Teams {
-	private data: ReadonlyArray<ITeam> = [];
+	private data: ReadonlyArray<Team> = [];
 
-	private teamsBySeason: Readonly<Record<number, ReadonlyArray<ITeam>>> = {};
+	private teamsBySeason: Readonly<Record<number, ReadonlyArray<Team>>> = {};
 
 	constructor(results: Results, races: Races) {
-		const allData = results.getData().map<ITeam>((result) => {
+		const allData = results.getData().map<Team>((result) => {
 			const race = races.getRaceByRaceId(result.raceId)!;
 
 			return {
@@ -35,11 +35,11 @@ export class Teams {
 		this.teamsBySeason = groupByAndMapValues(this.data, 'year', (val) => val);
 	}
 
-	getData(): ReadonlyArray<ITeam> {
+	getData(): ReadonlyArray<Team> {
 		return this.data;
 	}
 
-	getTeamsBySeason(season: number): ReadonlyArray<ITeam> {
+	getTeamsBySeason(season: number): ReadonlyArray<Team> {
 		return this.teamsBySeason[season] || [];
 	}
 }

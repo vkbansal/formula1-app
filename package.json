@@ -7,7 +7,7 @@
   "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint 'src/**/*.{ts,tsx,astro}'",
+    "lint": "eslint '{src,tools}/**/*.{ts,tsx,astro}'",
     "typecheck": "astro check && tsc --noEmit",
     "dev": "astro dev",
     "start": "astro dev",

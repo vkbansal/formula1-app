@@ -1,9 +1,9 @@
 import get from 'just-safe-get';
 
-import { BaseData } from './BaseData';
 import { groupByAndMapValues } from '../utils';
+import { BaseData } from './BaseData';
 
-export interface IResult {
+export interface Result {
 	readonly resultId: number;
 	readonly raceId: number;
 	readonly driverId: number;
@@ -24,7 +24,7 @@ export interface IResult {
 	readonly statusId: number;
 }
 
-export class Results extends BaseData<IResult> {
+export class Results extends BaseData<Result> {
 	override filename = 'results.csv';
 
 	private resultIdsToResultIndexMap: Record<number, number> = {};
@@ -72,7 +72,7 @@ export class Results extends BaseData<IResult> {
 		);
 	}
 
-	getResultsByRaceId(raceId: number): IResult[] {
+	getResultsByRaceId(raceId: number): Result[] {
 		const resultIds = this.resultIdsGroupedByRaceId[raceId] || [];
 
 		return resultIds
@@ -85,11 +85,11 @@ export class Results extends BaseData<IResult> {
 			.toSorted((a, b) => a.positionOrder - b.positionOrder);
 	}
 
-	getPodiumsByRaceId(raceId: number): IResult[] {
+	getPodiumsByRaceId(raceId: number): Result[] {
 		return this.getResultsByRaceId(raceId).slice(0, 3);
 	}
 
-	getResultsByDriverId(driverId: number): IResult[] {
+	getResultsByDriverId(driverId: number): Result[] {
 		const resultIds = this.resultIdsGroupedByDriverId[driverId] || [];
 
 		return resultIds.map((resultId) =>
@@ -100,7 +100,7 @@ export class Results extends BaseData<IResult> {
 		);
 	}
 
-	getResultsByConstructorId(constructorId: number): IResult[] {
+	getResultsByConstructorId(constructorId: number): Result[] {
 		const resultIds = this.resultIdsGroupedByConstructorId[constructorId] || [];
 
 		return resultIds.map((resultId) =>

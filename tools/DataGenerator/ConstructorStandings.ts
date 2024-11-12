@@ -1,9 +1,9 @@
 import get from 'just-safe-get';
 
-import { BaseData } from './BaseData';
 import { createIndexMap, groupByAndMapValues } from '../utils';
+import { BaseData } from './BaseData';
 
-export interface IConstructorStanding {
+export interface ConstructorStanding {
 	readonly constructorStandingsId: number;
 	readonly raceId: number;
 	readonly constructorId: number;
@@ -13,7 +13,7 @@ export interface IConstructorStanding {
 	readonly wins: number;
 }
 
-export class ConstructorStandings extends BaseData<IConstructorStanding> {
+export class ConstructorStandings extends BaseData<ConstructorStanding> {
 	override filename = 'constructor_standings.csv';
 
 	private constructorStandingIdsGroupedByRaceId: Record<number, number[]>;
@@ -38,7 +38,7 @@ export class ConstructorStandings extends BaseData<IConstructorStanding> {
 
 	getConstructorStandingsByRaceId(
 		raceId: number,
-	): ReadonlyArray<IConstructorStanding> {
+	): ReadonlyArray<ConstructorStanding> {
 		const standingIds =
 			this.constructorStandingIdsGroupedByRaceId[raceId] || [];
 		return standingIds

@@ -1,11 +1,11 @@
 import { BaseData } from './BaseData';
 
-export interface ISeason {
+export interface Season {
 	readonly year: number;
 	readonly url: string;
 }
 
-export class Seasons extends BaseData<ISeason> {
+export class Seasons extends BaseData<Season> {
 	override filename = 'seasons.csv';
 
 	constructor() {

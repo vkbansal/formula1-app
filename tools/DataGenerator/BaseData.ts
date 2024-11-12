@@ -1,9 +1,9 @@
-import { fileURLToPath } from 'node:url';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-import { parse } from 'papaparse';
 import { snakeCase } from 'change-case';
+import { parse } from 'papaparse';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.resolve(__dirname, '../../_data');

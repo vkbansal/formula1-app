@@ -1,6 +1,6 @@
 import { BaseData } from './BaseData';
 
-export interface ISprintResult {
+export interface SprintResult {
 	readonly resultId: number;
 	readonly raceId: number;
 	readonly driverId: number;
@@ -21,7 +21,7 @@ export interface ISprintResult {
 	readonly statusId: number;
 }
 
-export class SprintResults extends BaseData<ISprintResult> {
+export class SprintResults extends BaseData<SprintResult> {
 	override filename = 'sprint_results.csv';
 
 	constructor() {

@@ -1,8 +1,9 @@
 import get from 'just-safe-get';
+
 import { groupByAndMapValues } from '../utils';
 import { BaseData } from './BaseData';
 
-export interface IPitStop {
+export interface PitStop {
 	readonly raceId: number;
 	readonly driverId: number;
 	readonly stop: number;
@@ -12,7 +13,7 @@ export interface IPitStop {
 	readonly milliseconds: number;
 }
 
-export class PitStops extends BaseData<IPitStop> {
+export class PitStops extends BaseData<PitStop> {
 	override filename = 'pit_stops.csv';
 
 	private pitStopIndexesGroupedByRaceId: Record<number, number[]>;
@@ -28,7 +29,7 @@ export class PitStops extends BaseData<IPitStop> {
 		);
 	}
 
-	getPitStopsByRaceId(raceId: number): ReadonlyArray<IPitStop> {
+	getPitStopsByRaceId(raceId: number): ReadonlyArray<PitStop> {
 		const pitStopIndexes = this.pitStopIndexesGroupedByRaceId[raceId] || [];
 
 		return pitStopIndexes.map((pitStopIndex) =>
