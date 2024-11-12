@@ -1,7 +1,7 @@
-import { z, defineCollection } from 'astro:content';
+import { defineCollection, z } from 'astro:content';
 
 /*******************************************************************************
- * Constrcutors Collection
+ * Constructors Collection
  ******************************************************************************/
 const constructorsCollection = defineCollection({
 	type: 'data',

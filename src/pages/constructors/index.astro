@@ -1,10 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
 
-import MainLayout from '~/layouts/MainLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import Nationality from '~/components/Nationality.astro';
 import { currentSeason } from '~/data/metadata.js';
+import MainLayout from '~/layouts/MainLayout.astro';
 
 const constructorsArr = await getCollection('constructors');
 const currentSeasonConstructors = constructorsArr
@@ -149,7 +149,7 @@ export const prerender = true;
 	const nav_links = document.querySelectorAll('.nav-link');
 	const sort_btns = document.querySelectorAll('.sort-btn');
 
-	function filterBySelection() {
+	function filterBySelection(): void {
 		const hash = window.location.hash.slice(1);
 
 		for (const row of table.tBodies[0].rows) {
@@ -188,7 +188,7 @@ export const prerender = true;
 	filterBySelection();
 
 	sort_btns.forEach((btn) => {
-		btn.addEventListener('click', (e) => {
+		btn.addEventListener('click', () => {
 			const current = btn.parentElement.getAttribute('aria-sort');
 			const sortType = btn.dataset.sort;
 			const rows = Array.from(table.tBodies[0].rows);

@@ -1,4 +1,4 @@
-/* genrated from http://jnnnnn.github.io/category-colors-2L-inplace.html */
+/* generated from http://jnnnnn.github.io/category-colors-2L-inplace.html */
 const colors = [
 	'#3957ff',
 	'#d3fe14',

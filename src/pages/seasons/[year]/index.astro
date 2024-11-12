@@ -1,12 +1,12 @@
 ---
 import { getEntry } from 'astro:content';
 
-import MainLayout from '~/layouts/MainLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import Nationality from '~/components/Nationality.astro';
-import { currentSeason, firstSeason } from '~/data/metadata.js';
 import { constructorColors } from '~/data/colors.js';
+import { currentSeason, firstSeason } from '~/data/metadata.js';
 import colors from '~/helpers/colors.js';
+import MainLayout from '~/layouts/MainLayout.astro';
 
 export const prerender = false;
 

@@ -1,7 +1,7 @@
 ---
-import MainLayout from '~/layouts/MainLayout.astro';
-import f1Logo from '~/images/f1-logo.svg';
 import numOfEntities from '~/data/homepage.json';
+import f1Logo from '~/images/f1-logo.svg';
+import MainLayout from '~/layouts/MainLayout.astro';
 
 export const prerender = true;
 ---
@@ -31,7 +31,7 @@ export const prerender = true;
 		let eraseLine = false;
 		facts.innerHTML = '';
 
-		function type() {
+		function type(): void {
 			if (!facts) return;
 
 			const lineToType = linesToType[currentLine];
@@ -49,7 +49,7 @@ export const prerender = true;
 					eraseLine = false;
 				}
 			} else {
-				let charToType = linesToType[currentLine].charAt(typedLine.length);
+				const charToType = linesToType[currentLine].charAt(typedLine.length);
 				update = typedLine + charToType;
 
 				// if the line is complete, increase the delay before start erasing

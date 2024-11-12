@@ -1,4 +1,8 @@
 ---
+import Footer from '~/components/Footer.astro';
+import Header from '~/components/Header.astro';
+import buildTime from '~/data/buildTime.js';
+
 import '../styles/_variables.scss';
 import '../styles/_bootstrap.scss';
 import '../styles/_tabs.scss';
@@ -6,10 +10,6 @@ import '../styles/_nationality.scss';
 import '../styles/_table.scss';
 import '../styles/_char-nav.scss';
 import '../styles/_seasons.scss';
-
-import Header from '~/components/Header.astro';
-import Footer from '~/components/Footer.astro';
-import buildTime from '~/data/buildTime.js';
 
 export interface Props {
 	title: string;
@@ -64,5 +64,7 @@ const { title, class: className } = Astro.props as Props;
 		document.getElementById('last-updated').innerHTML = new Date(
 			buildTime,
 		).toLocaleString();
-	} catch (e) {}
+	} catch {
+		// do nothing
+	}
 </script>

@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+/* eslint-disable @cspell/spellchecker */
 export const constructorColors: Record<string, string> = {
 	bmw: '',
 	pawl: '',

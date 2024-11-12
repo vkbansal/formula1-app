@@ -1,11 +1,11 @@
 ---
 import { getEntry } from 'astro:content';
 
-import MainLayout from '~/layouts/MainLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import Nationality from '~/components/Nationality.astro';
-import { formatOrdinals } from '~/helpers/utils.js';
 import seasonsList from '~/data/seasons-list.json';
+import { formatOrdinals } from '~/helpers/utils.js';
+import MainLayout from '~/layouts/MainLayout.astro';
 
 export const prerender = false;
 const { constructorRef = '' } = Astro.params;
