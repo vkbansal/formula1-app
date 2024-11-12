@@ -1578,11 +1578,94 @@
 				"location": "Austin",
 				"name": "Circuit of the Americas"
 			},
-			"constructorStandings": [],
+			"constructorStandings": [
+				{
+					"constructorRef": "mclaren",
+					"points": 544,
+					"position": 1,
+					"wins": 5
+				},
+				{
+					"constructorRef": "red_bull",
+					"points": 504,
+					"position": 2,
+					"wins": 7
+				},
+				{
+					"constructorRef": "ferrari",
+					"points": 496,
+					"position": 3,
+					"wins": 4
+				},
+				{
+					"constructorRef": "mercedes",
+					"points": 344,
+					"position": 4,
+					"wins": 3
+				},
+				{
+					"constructorRef": "aston_martin",
+					"points": 86,
+					"position": 5,
+					"wins": 0
+				},
+				{ "constructorRef": "haas", "points": 38, "position": 6, "wins": 0 },
+				{ "constructorRef": "rb", "points": 36, "position": 7, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 17,
+					"position": 8,
+					"wins": 0
+				},
+				{ "constructorRef": "alpine", "points": 13, "position": 9, "wins": 0 },
+				{ "constructorRef": "sauber", "points": 0, "position": 10, "wins": 0 }
+			],
 			"date": "20th Oct 2024",
-			"driverStandings": [],
+			"driverStandings": [
+				{
+					"driverRef": "max_verstappen",
+					"points": 354,
+					"position": 1,
+					"wins": 7
+				},
+				{ "driverRef": "norris", "points": 297, "position": 2, "wins": 3 },
+				{ "driverRef": "leclerc", "points": 275, "position": 3, "wins": 3 },
+				{ "driverRef": "piastri", "points": 247, "position": 4, "wins": 2 },
+				{ "driverRef": "sainz", "points": 215, "position": 5, "wins": 1 },
+				{ "driverRef": "hamilton", "points": 177, "position": 6, "wins": 2 },
+				{ "driverRef": "russell", "points": 167, "position": 7, "wins": 1 },
+				{ "driverRef": "perez", "points": 150, "position": 8, "wins": 0 },
+				{ "driverRef": "alonso", "points": 62, "position": 9, "wins": 0 },
+				{ "driverRef": "hulkenberg", "points": 29, "position": 10, "wins": 0 },
+				{ "driverRef": "stroll", "points": 24, "position": 11, "wins": 0 },
+				{ "driverRef": "tsunoda", "points": 22, "position": 12, "wins": 0 },
+				{ "driverRef": "albon", "points": 12, "position": 13, "wins": 0 },
+				{ "driverRef": "ricciardo", "points": 12, "position": 14, "wins": 0 },
+				{
+					"driverRef": "kevin_magnussen",
+					"points": 8,
+					"position": 15,
+					"wins": 0
+				},
+				{ "driverRef": "gasly", "points": 8, "position": 16, "wins": 0 },
+				{ "driverRef": "bearman", "points": 7, "position": 17, "wins": 0 },
+				{ "driverRef": "colapinto", "points": 5, "position": 18, "wins": 0 },
+				{ "driverRef": "ocon", "points": 5, "position": 19, "wins": 0 },
+				{ "driverRef": "lawson", "points": 2, "position": 20, "wins": 0 },
+				{ "driverRef": "zhou", "points": 0, "position": 21, "wins": 0 },
+				{ "driverRef": "sargeant", "points": 0, "position": 22, "wins": 0 },
+				{ "driverRef": "bottas", "points": 0, "position": 23, "wins": 0 }
+			],
 			"name": "United States Grand Prix",
-			"podium": [],
+			"podium": [
+				{ "constructorRef": "ferrari", "driverRef": "leclerc", "position": 1 },
+				{ "constructorRef": "ferrari", "driverRef": "sainz", "position": 2 },
+				{
+					"constructorRef": "red_bull",
+					"driverRef": "max_verstappen",
+					"position": 3
+				}
+			],
 			"round": 19,
 			"slug": "united-states-grand-prix"
 		},
@@ -1592,11 +1675,90 @@
 				"location": "Mexico City",
 				"name": "Autódromo Hermanos Rodríguez"
 			},
-			"constructorStandings": [],
+			"constructorStandings": [
+				{
+					"constructorRef": "mclaren",
+					"points": 566,
+					"position": 1,
+					"wins": 5
+				},
+				{
+					"constructorRef": "ferrari",
+					"points": 537,
+					"position": 2,
+					"wins": 5
+				},
+				{
+					"constructorRef": "red_bull",
+					"points": 512,
+					"position": 3,
+					"wins": 7
+				},
+				{
+					"constructorRef": "mercedes",
+					"points": 366,
+					"position": 4,
+					"wins": 3
+				},
+				{
+					"constructorRef": "aston_martin",
+					"points": 86,
+					"position": 5,
+					"wins": 0
+				},
+				{ "constructorRef": "haas", "points": 46, "position": 6, "wins": 0 },
+				{ "constructorRef": "rb", "points": 36, "position": 7, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 17,
+					"position": 8,
+					"wins": 0
+				},
+				{ "constructorRef": "alpine", "points": 14, "position": 9, "wins": 0 },
+				{ "constructorRef": "sauber", "points": 0, "position": 10, "wins": 0 }
+			],
 			"date": "27th Oct 2024",
-			"driverStandings": [],
+			"driverStandings": [
+				{
+					"driverRef": "max_verstappen",
+					"points": 362,
+					"position": 1,
+					"wins": 7
+				},
+				{ "driverRef": "norris", "points": 315, "position": 2, "wins": 3 },
+				{ "driverRef": "leclerc", "points": 291, "position": 3, "wins": 3 },
+				{ "driverRef": "piastri", "points": 251, "position": 4, "wins": 2 },
+				{ "driverRef": "sainz", "points": 240, "position": 5, "wins": 2 },
+				{ "driverRef": "hamilton", "points": 189, "position": 6, "wins": 2 },
+				{ "driverRef": "russell", "points": 177, "position": 7, "wins": 1 },
+				{ "driverRef": "perez", "points": 150, "position": 8, "wins": 0 },
+				{ "driverRef": "alonso", "points": 62, "position": 9, "wins": 0 },
+				{ "driverRef": "hulkenberg", "points": 31, "position": 10, "wins": 0 },
+				{ "driverRef": "stroll", "points": 24, "position": 11, "wins": 0 },
+				{ "driverRef": "tsunoda", "points": 22, "position": 12, "wins": 0 },
+				{
+					"driverRef": "kevin_magnussen",
+					"points": 14,
+					"position": 13,
+					"wins": 0
+				},
+				{ "driverRef": "albon", "points": 12, "position": 14, "wins": 0 },
+				{ "driverRef": "ricciardo", "points": 12, "position": 15, "wins": 0 },
+				{ "driverRef": "gasly", "points": 9, "position": 16, "wins": 0 },
+				{ "driverRef": "bearman", "points": 7, "position": 17, "wins": 0 },
+				{ "driverRef": "colapinto", "points": 5, "position": 18, "wins": 0 },
+				{ "driverRef": "ocon", "points": 5, "position": 19, "wins": 0 },
+				{ "driverRef": "lawson", "points": 2, "position": 20, "wins": 0 },
+				{ "driverRef": "zhou", "points": 0, "position": 21, "wins": 0 },
+				{ "driverRef": "sargeant", "points": 0, "position": 22, "wins": 0 },
+				{ "driverRef": "bottas", "points": 0, "position": 23, "wins": 0 }
+			],
 			"name": "Mexico City Grand Prix",
-			"podium": [],
+			"podium": [
+				{ "constructorRef": "ferrari", "driverRef": "sainz", "position": 1 },
+				{ "constructorRef": "mclaren", "driverRef": "norris", "position": 2 },
+				{ "constructorRef": "ferrari", "driverRef": "leclerc", "position": 3 }
+			],
 			"round": 20,
 			"slug": "mexico-city-grand-prix"
 		},
@@ -1606,11 +1768,94 @@
 				"location": "São Paulo",
 				"name": "Autódromo José Carlos Pace"
 			},
-			"constructorStandings": [],
+			"constructorStandings": [
+				{
+					"constructorRef": "mclaren",
+					"points": 593,
+					"position": 1,
+					"wins": 5
+				},
+				{
+					"constructorRef": "ferrari",
+					"points": 557,
+					"position": 2,
+					"wins": 5
+				},
+				{
+					"constructorRef": "red_bull",
+					"points": 544,
+					"position": 3,
+					"wins": 8
+				},
+				{
+					"constructorRef": "mercedes",
+					"points": 382,
+					"position": 4,
+					"wins": 3
+				},
+				{
+					"constructorRef": "aston_martin",
+					"points": 86,
+					"position": 5,
+					"wins": 0
+				},
+				{ "constructorRef": "alpine", "points": 49, "position": 6, "wins": 0 },
+				{ "constructorRef": "haas", "points": 46, "position": 7, "wins": 0 },
+				{ "constructorRef": "rb", "points": 44, "position": 8, "wins": 0 },
+				{
+					"constructorRef": "williams",
+					"points": 17,
+					"position": 9,
+					"wins": 0
+				},
+				{ "constructorRef": "sauber", "points": 0, "position": 10, "wins": 0 }
+			],
 			"date": "3rd Nov 2024",
-			"driverStandings": [],
+			"driverStandings": [
+				{
+					"driverRef": "max_verstappen",
+					"points": 393,
+					"position": 1,
+					"wins": 8
+				},
+				{ "driverRef": "norris", "points": 331, "position": 2, "wins": 3 },
+				{ "driverRef": "leclerc", "points": 307, "position": 3, "wins": 3 },
+				{ "driverRef": "piastri", "points": 262, "position": 4, "wins": 2 },
+				{ "driverRef": "sainz", "points": 244, "position": 5, "wins": 2 },
+				{ "driverRef": "russell", "points": 192, "position": 6, "wins": 1 },
+				{ "driverRef": "hamilton", "points": 190, "position": 7, "wins": 2 },
+				{ "driverRef": "perez", "points": 151, "position": 8, "wins": 0 },
+				{ "driverRef": "alonso", "points": 62, "position": 9, "wins": 0 },
+				{ "driverRef": "hulkenberg", "points": 31, "position": 10, "wins": 0 },
+				{ "driverRef": "tsunoda", "points": 28, "position": 11, "wins": 0 },
+				{ "driverRef": "gasly", "points": 26, "position": 12, "wins": 0 },
+				{ "driverRef": "stroll", "points": 24, "position": 13, "wins": 0 },
+				{ "driverRef": "ocon", "points": 23, "position": 14, "wins": 0 },
+				{
+					"driverRef": "kevin_magnussen",
+					"points": 14,
+					"position": 15,
+					"wins": 0
+				},
+				{ "driverRef": "albon", "points": 12, "position": 16, "wins": 0 },
+				{ "driverRef": "ricciardo", "points": 12, "position": 17, "wins": 0 },
+				{ "driverRef": "bearman", "points": 7, "position": 18, "wins": 0 },
+				{ "driverRef": "colapinto", "points": 5, "position": 19, "wins": 0 },
+				{ "driverRef": "lawson", "points": 4, "position": 20, "wins": 0 },
+				{ "driverRef": "zhou", "points": 0, "position": 21, "wins": 0 },
+				{ "driverRef": "sargeant", "points": 0, "position": 22, "wins": 0 },
+				{ "driverRef": "bottas", "points": 0, "position": 23, "wins": 0 }
+			],
 			"name": "São Paulo Grand Prix",
-			"podium": [],
+			"podium": [
+				{
+					"constructorRef": "red_bull",
+					"driverRef": "max_verstappen",
+					"position": 1
+				},
+				{ "constructorRef": "alpine", "driverRef": "ocon", "position": 2 },
+				{ "constructorRef": "alpine", "driverRef": "gasly", "position": 3 }
+			],
 			"round": 21,
 			"slug": "sao-paulo-grand-prix"
 		},
@@ -1782,6 +2027,11 @@
 					"driverRef": "tsunoda",
 					"name": "Yuki Tsunoda",
 					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "lawson",
+					"name": "Liam Lawson",
+					"nationality": "New Zealander"
 				}
 			],
 			"name": "RB F1 Team",
@@ -1836,7 +2086,7 @@
 				},
 				{
 					"driverRef": "colapinto",
-					"name": "Franco Colapinto ",
+					"name": "Franco Colapinto",
 					"nationality": "Argentinian "
 				}
 			],

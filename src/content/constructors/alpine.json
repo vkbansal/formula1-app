@@ -8,7 +8,7 @@
 	"constructorRef": "alpine",
 	"name": "Alpine F1 Team",
 	"nationality": "French",
-	"podiums": 4,
+	"podiums": 6,
 	"raceWins": 1,
 	"seasons": [
 		{
@@ -699,11 +699,35 @@
 					],
 					"round": 18,
 					"roundName": "Singapore Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Esteban Ocon", "points": 0, "position": 18 },
+						{ "driver": "Pierre Gasly", "points": 0, "position": 12 }
+					],
+					"round": 19,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Esteban Ocon", "points": 0, "position": 13 },
+						{ "driver": "Pierre Gasly", "points": 1, "position": 10 }
+					],
+					"round": 20,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Pierre Gasly", "points": 15, "position": 3 },
+						{ "driver": "Esteban Ocon", "points": 18, "position": 2 }
+					],
+					"round": 21,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 84,
-	"winPct": 1.1904761904761905
+	"totalRaces": 87,
+	"winPct": 1.1494252873563218
 }

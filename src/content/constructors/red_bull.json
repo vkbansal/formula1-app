@@ -24,8 +24,8 @@
 	"constructorRef": "red_bull",
 	"name": "Red Bull",
 	"nationality": "Austrian",
-	"podiums": 279,
-	"raceWins": 120,
+	"podiums": 281,
+	"raceWins": 121,
 	"seasons": [
 		{
 			"rounds": [
@@ -3227,11 +3227,35 @@
 					],
 					"round": 18,
 					"roundName": "Singapore Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 6, "position": 7 },
+						{ "driver": "Max Verstappen", "points": 15, "position": 3 }
+					],
+					"round": 19,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 0, "position": 17 },
+						{ "driver": "Max Verstappen", "points": 8, "position": 6 }
+					],
+					"round": 20,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 0, "position": 11 },
+						{ "driver": "Max Verstappen", "points": 26, "position": 1 }
+					],
+					"round": 21,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 388,
-	"winPct": 30.927835051546392
+	"totalRaces": 391,
+	"winPct": 30.946291560102303
 }

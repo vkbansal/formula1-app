@@ -71,8 +71,8 @@
 	"constructorRef": "ferrari",
 	"name": "Ferrari",
 	"nationality": "Italian",
-	"podiums": 833,
-	"raceWins": 247,
+	"podiums": 837,
+	"raceWins": 249,
 	"seasons": [
 		{
 			"rounds": [
@@ -9432,11 +9432,35 @@
 					],
 					"round": 18,
 					"roundName": "Singapore Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Carlos Sainz", "points": 18, "position": 2 },
+						{ "driver": "Charles Leclerc", "points": 25, "position": 1 }
+					],
+					"round": 19,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Charles Leclerc", "points": 16, "position": 3 },
+						{ "driver": "Carlos Sainz", "points": 25, "position": 1 }
+					],
+					"round": 20,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Charles Leclerc", "points": 10, "position": 5 },
+						{ "driver": "Carlos Sainz", "points": 0, "position": null }
+					],
+					"round": 21,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 1094,
-	"winPct": 22.577696526508227
+	"totalRaces": 1097,
+	"winPct": 22.69826800364631
 }

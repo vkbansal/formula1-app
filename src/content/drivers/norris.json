@@ -11,11 +11,11 @@
 	"driverId": 846,
 	"driverRef": "norris",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lando_Norris_Formula_1_Driver_%2849379469418%29_%28cropped%29_%28cropped%29.jpg/220px-Lando_Norris_Formula_1_Driver_%2849379469418%29_%28cropped%29_%28cropped%29.jpg",
-	"lapsLead": 269,
+	"lapsLead": 274,
 	"name": "Lando Norris",
 	"nationality": "British",
-	"podiums": 24,
-	"poles": 6,
+	"podiums": 25,
+	"poles": 8,
 	"raceWins": 3,
 	"seasons": [
 		{
@@ -898,11 +898,32 @@
 					"position": 1,
 					"round": 18,
 					"roundName": "Singapore Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 12,
+					"position": 4,
+					"round": 19,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 18,
+					"position": 2,
+					"round": 20,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 8,
+					"position": 6,
+					"round": 21,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 6942,
-	"totalRaces": 122
+	"totalLaps": 7138,
+	"totalRaces": 125
 }

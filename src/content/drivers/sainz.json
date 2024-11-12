@@ -15,12 +15,12 @@
 	"driverId": 832,
 	"driverRef": "sainz",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Formel12021-SchlossGabelhofen%2815%29_%28cropped%29.jpg/250px-Formel12021-SchlossGabelhofen%2815%29_%28cropped%29.jpg",
-	"lapsLead": 237,
+	"lapsLead": 300,
 	"name": "Carlos Sainz",
 	"nationality": "Spanish",
-	"podiums": 23,
-	"poles": 4,
-	"raceWins": 3,
+	"podiums": 25,
+	"poles": 5,
+	"raceWins": 4,
 	"seasons": [
 		{
 			"results": [
@@ -1482,11 +1482,32 @@
 					"position": 7,
 					"round": 18,
 					"roundName": "Singapore Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 18,
+					"position": 2,
+					"round": 19,
+					"roundName": "United States Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 25,
+					"position": 1,
+					"round": 20,
+					"roundName": "Mexico City Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 0,
+					"position": null,
+					"round": 21,
+					"roundName": "São Paulo Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 10789,
-	"totalRaces": 202
+	"totalLaps": 10954,
+	"totalRaces": 205
 }
