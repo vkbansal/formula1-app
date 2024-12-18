@@ -1,10 +1,11 @@
 import { defineCollection, z } from 'astro:content';
 
+import { glob } from 'astro/loaders';
 /*******************************************************************************
  * Constructors Collection
  ******************************************************************************/
 const constructorsCollection = defineCollection({
-	type: 'data',
+	loader: glob({ pattern: '**/*.json', base: './src/content/constructors' }),
 	schema: z.object({
 		constructorRef: z.string(),
 		name: z.string(),
@@ -44,7 +45,7 @@ const constructorsCollection = defineCollection({
  * Drivers Collection
  ******************************************************************************/
 const driversCollection = defineCollection({
-	type: 'data',
+	loader: glob({ pattern: '**/*.json', base: './src/content/drivers' }),
 	schema: z.object({
 		driverId: z.number(),
 		driverRef: z.string(),
@@ -85,7 +86,7 @@ const driversCollection = defineCollection({
  * Rounds Collection
  ******************************************************************************/
 const roundsCollection = defineCollection({
-	type: 'data',
+	loader: glob({ pattern: '**/*.json', base: './src/content/rounds' }),
 	schema: z.object({
 		raceId: z.number(),
 		year: z.number(),
@@ -125,7 +126,7 @@ const roundsCollection = defineCollection({
  * Seasons Collection
  ******************************************************************************/
 const seasonsCollection = defineCollection({
-	type: 'data',
+	loader: glob({ pattern: '**/*.json', base: './src/content/seasons' }),
 	schema: z.object({
 		year: z.number(),
 		rounds: z.array(

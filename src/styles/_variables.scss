@@ -1,12 +1,12 @@
+@use 'sass:map';
 @use './colors';
-
 :root {
 	--font-family: 'Work Sans', sans-serif;
 }
 
 @mixin common-vars {
-	--white: #{map-get(colors.$neutral, '100')};
-	--black: #{map-get(colors.$neutral, '900')};
+	--white: #{map.get(colors.$neutral, '100')};
+	--black: #{map.get(colors.$neutral, '900')};
 	--header-height: 4.5rem;
 	--footer-height: 4rem;
 
