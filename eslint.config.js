@@ -119,4 +119,10 @@ export default tsESLint.config(
 			'@typescript-eslint/triple-slash-reference': 'off',
 		},
 	},
+	{
+		files: ['src/**/*.astro/*.ts'],
+		rules: {
+			'@typescript-eslint/explicit-function-return-type': 'off',
+		},
+	},
 );

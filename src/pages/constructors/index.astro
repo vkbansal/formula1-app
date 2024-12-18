@@ -149,7 +149,7 @@ export const prerender = true;
 	const nav_links = document.querySelectorAll('.nav-link');
 	const sort_btns = document.querySelectorAll('.sort-btn');
 
-	function filterBySelection(): void {
+	function filterBySelection() {
 		const hash = window.location.hash.slice(1);
 
 		for (const row of table.tBodies[0].rows) {
