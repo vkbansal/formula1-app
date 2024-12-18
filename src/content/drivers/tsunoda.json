@@ -2,7 +2,8 @@
 	"championshipStandings": [
 		{ "position": 14, "year": 2021 },
 		{ "position": 17, "year": 2022 },
-		{ "position": 14, "year": 2023 }
+		{ "position": 14, "year": 2023 },
+		{ "position": 12, "year": 2024 }
 	],
 	"code": "TSU",
 	"dob": "2000-05-11",
@@ -641,11 +642,32 @@
 					"position": 7,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "RB F1 Team",
+					"points": 2,
+					"position": 9,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "RB F1 Team",
+					"points": 0,
+					"position": 13,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "RB F1 Team",
+					"points": 0,
+					"position": 12,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 4466,
-	"totalRaces": 87
+	"totalLaps": 4630,
+	"totalRaces": 90
 }

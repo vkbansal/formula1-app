@@ -4,19 +4,20 @@
 		{ "position": 18, "year": 2020 },
 		{ "position": 15, "year": 2021 },
 		{ "position": 4, "year": 2022 },
-		{ "position": 8, "year": 2023 }
+		{ "position": 8, "year": 2023 },
+		{ "position": 6, "year": 2024 }
 	],
 	"code": "RUS",
 	"dob": "1998-02-15",
 	"driverId": 847,
 	"driverRef": "russell",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/George_Russell%2C_Silverstone_2021_%2851350033659%29_%28cropped%29.jpg/235px-George_Russell%2C_Silverstone_2021_%2851350033659%29_%28cropped%29.jpg",
-	"lapsLead": 253,
+	"lapsLead": 302,
 	"name": "George Russell",
 	"nationality": "British",
-	"podiums": 14,
-	"poles": 3,
-	"raceWins": 2,
+	"podiums": 15,
+	"poles": 4,
+	"raceWins": 3,
 	"seasons": [
 		{
 			"results": [
@@ -919,11 +920,32 @@
 					"position": 4,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 25,
+					"position": 1,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 12,
+					"position": 4,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 10,
+					"position": 5,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 6983,
-	"totalRaces": 125
+	"totalLaps": 7148,
+	"totalRaces": 128
 }

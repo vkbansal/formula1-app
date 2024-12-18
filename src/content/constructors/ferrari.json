@@ -65,13 +65,14 @@
 		{ "position": 6, "year": 2020 },
 		{ "position": 3, "year": 2021 },
 		{ "position": 2, "year": 2022 },
-		{ "position": 3, "year": 2023 }
+		{ "position": 3, "year": 2023 },
+		{ "position": 2, "year": 2024 }
 	],
 	"constructorId": 6,
 	"constructorRef": "ferrari",
 	"name": "Ferrari",
 	"nationality": "Italian",
-	"podiums": 837,
+	"podiums": 841,
 	"raceWins": 249,
 	"seasons": [
 		{
@@ -9456,11 +9457,35 @@
 					],
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Charles Leclerc", "points": 12, "position": 4 },
+						{ "driver": "Carlos Sainz", "points": 15, "position": 3 }
+					],
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Carlos Sainz", "points": 8, "position": 6 },
+						{ "driver": "Charles Leclerc", "points": 18, "position": 2 }
+					],
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Charles Leclerc", "points": 15, "position": 3 },
+						{ "driver": "Carlos Sainz", "points": 18, "position": 2 }
+					],
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 1097,
-	"winPct": 22.69826800364631
+	"totalRaces": 1100,
+	"winPct": 22.636363636363637
 }

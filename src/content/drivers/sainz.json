@@ -8,7 +8,8 @@
 		{ "position": 6, "year": 2020 },
 		{ "position": 5, "year": 2021 },
 		{ "position": 5, "year": 2022 },
-		{ "position": 7, "year": 2023 }
+		{ "position": 7, "year": 2023 },
+		{ "position": 5, "year": 2024 }
 	],
 	"code": "SAI",
 	"dob": "1994-09-01",
@@ -18,7 +19,7 @@
 	"lapsLead": 300,
 	"name": "Carlos Sainz",
 	"nationality": "Spanish",
-	"podiums": 25,
+	"podiums": 27,
 	"poles": 5,
 	"raceWins": 4,
 	"seasons": [
@@ -1503,11 +1504,32 @@
 					"position": null,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 15,
+					"position": 3,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 8,
+					"position": 6,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 18,
+					"position": 2,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 10954,
-	"totalRaces": 205
+	"totalLaps": 11119,
+	"totalRaces": 208
 }

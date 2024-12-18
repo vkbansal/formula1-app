@@ -2,7 +2,8 @@
 	"championshipStandings": [
 		{ "position": 5, "year": 2021 },
 		{ "position": 4, "year": 2022 },
-		{ "position": 6, "year": 2023 }
+		{ "position": 6, "year": 2023 },
+		{ "position": 6, "year": 2024 }
 	],
 	"constructorId": 214,
 	"constructorRef": "alpine",
@@ -723,11 +724,35 @@
 					],
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Esteban Ocon", "points": 0, "position": 17 },
+						{ "driver": "Pierre Gasly", "points": 0, "position": null }
+					],
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Pierre Gasly", "points": 10, "position": 5 },
+						{ "driver": "Esteban Ocon", "points": 0, "position": null }
+					],
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Jack Doohan", "points": 0, "position": 15 },
+						{ "driver": "Pierre Gasly", "points": 6, "position": 7 }
+					],
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 87,
-	"winPct": 1.1494252873563218
+	"totalRaces": 90,
+	"winPct": 1.1111111111111112
 }

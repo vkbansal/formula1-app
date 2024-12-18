@@ -13,14 +13,15 @@
 		{ "position": 1, "year": 2020 },
 		{ "position": 1, "year": 2021 },
 		{ "position": 3, "year": 2022 },
-		{ "position": 2, "year": 2023 }
+		{ "position": 2, "year": 2023 },
+		{ "position": 4, "year": 2024 }
 	],
 	"constructorId": 131,
 	"constructorRef": "mercedes",
 	"name": "Mercedes",
 	"nationality": "German",
-	"podiums": 296,
-	"raceWins": 128,
+	"podiums": 298,
+	"raceWins": 129,
 	"seasons": [
 		{
 			"rounds": [
@@ -2633,11 +2634,35 @@
 					],
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 18, "position": 2 },
+						{ "driver": "George Russell", "points": 25, "position": 1 }
+					],
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Lewis Hamilton", "points": 0, "position": 12 },
+						{ "driver": "George Russell", "points": 12, "position": 4 }
+					],
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "George Russell", "points": 10, "position": 5 },
+						{ "driver": "Lewis Hamilton", "points": 12, "position": 4 }
+					],
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 314,
-	"winPct": 40.76433121019109
+	"totalRaces": 317,
+	"winPct": 40.694006309148264
 }

@@ -1,5 +1,8 @@
 {
-	"championshipStandings": [{ "position": 9, "year": 2023 }],
+	"championshipStandings": [
+		{ "position": 9, "year": 2023 },
+		{ "position": 4, "year": 2024 }
+	],
 	"code": "PIA",
 	"dob": "2001-04-06",
 	"driverId": 857,
@@ -8,7 +11,7 @@
 	"lapsLead": 124,
 	"name": "Oscar Piastri",
 	"nationality": "Australian",
-	"podiums": 9,
+	"podiums": 10,
 	"poles": 0,
 	"raceWins": 2,
 	"seasons": [
@@ -319,11 +322,32 @@
 					"position": 8,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 6,
+					"position": 7,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 15,
+					"position": 3,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 1,
+					"position": 10,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 2464,
-	"totalRaces": 43
+	"totalLaps": 2629,
+	"totalRaces": 46
 }

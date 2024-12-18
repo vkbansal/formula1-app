@@ -4,19 +4,20 @@
 		{ "position": 9, "year": 2020 },
 		{ "position": 6, "year": 2021 },
 		{ "position": 7, "year": 2022 },
-		{ "position": 6, "year": 2023 }
+		{ "position": 6, "year": 2023 },
+		{ "position": 2, "year": 2024 }
 	],
 	"code": "NOR",
 	"dob": "1999-11-13",
 	"driverId": 846,
 	"driverRef": "norris",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lando_Norris_Formula_1_Driver_%2849379469418%29_%28cropped%29_%28cropped%29.jpg/220px-Lando_Norris_Formula_1_Driver_%2849379469418%29_%28cropped%29_%28cropped%29.jpg",
-	"lapsLead": 274,
+	"lapsLead": 332,
 	"name": "Lando Norris",
 	"nationality": "British",
-	"podiums": 25,
-	"poles": 8,
-	"raceWins": 3,
+	"podiums": 26,
+	"poles": 9,
+	"raceWins": 4,
 	"seasons": [
 		{
 			"results": [
@@ -919,11 +920,32 @@
 					"position": 6,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 9,
+					"position": 6,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 2,
+					"position": 10,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "McLaren",
+					"points": 25,
+					"position": 1,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 7138,
-	"totalRaces": 125
+	"totalLaps": 7303,
+	"totalRaces": 128
 }

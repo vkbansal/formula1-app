@@ -8,19 +8,20 @@
 		{ "position": 3, "year": 2020 },
 		{ "position": 1, "year": 2021 },
 		{ "position": 1, "year": 2022 },
-		{ "position": 1, "year": 2023 }
+		{ "position": 1, "year": 2023 },
+		{ "position": 1, "year": 2024 }
 	],
 	"code": "VER",
 	"dob": "1997-09-30",
 	"driverId": 830,
 	"driverRef": "max_verstappen",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Max_Verstappen_2017_Malaysia_3.jpg/220px-Max_Verstappen_2017_Malaysia_3.jpg",
-	"lapsLead": 3361,
+	"lapsLead": 3418,
 	"name": "Max Verstappen",
 	"nationality": "Dutch",
-	"podiums": 111,
-	"poles": 42,
-	"raceWins": 62,
+	"podiums": 112,
+	"poles": 43,
+	"raceWins": 63,
 	"seasons": [
 		{
 			"results": [
@@ -1510,11 +1511,32 @@
 					"position": 1,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Red Bull",
+					"points": 10,
+					"position": 5,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Red Bull",
+					"points": 25,
+					"position": 1,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "Red Bull",
+					"points": 8,
+					"position": 6,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 11153,
-	"totalRaces": 206
+	"totalLaps": 11318,
+	"totalRaces": 209
 }

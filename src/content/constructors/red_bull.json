@@ -18,14 +18,15 @@
 		{ "position": 2, "year": 2020 },
 		{ "position": 2, "year": 2021 },
 		{ "position": 1, "year": 2022 },
-		{ "position": 1, "year": 2023 }
+		{ "position": 1, "year": 2023 },
+		{ "position": 3, "year": 2024 }
 	],
 	"constructorId": 9,
 	"constructorRef": "red_bull",
 	"name": "Red Bull",
 	"nationality": "Austrian",
-	"podiums": 281,
-	"raceWins": 121,
+	"podiums": 282,
+	"raceWins": 122,
 	"seasons": [
 		{
 			"rounds": [
@@ -3251,11 +3252,35 @@
 					],
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Sergio Pérez", "points": 1, "position": 10 },
+						{ "driver": "Max Verstappen", "points": 10, "position": 5 }
+					],
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Max Verstappen", "points": 25, "position": 1 },
+						{ "driver": "Sergio Pérez", "points": 0, "position": null }
+					],
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"results": [
+						{ "driver": "Max Verstappen", "points": 8, "position": 6 },
+						{ "driver": "Sergio Pérez", "points": 0, "position": null }
+					],
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalRaces": 391,
-	"winPct": 30.946291560102303
+	"totalRaces": 394,
+	"winPct": 30.96446700507614
 }

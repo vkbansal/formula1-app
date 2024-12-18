@@ -5,7 +5,8 @@
 		{ "position": 8, "year": 2020 },
 		{ "position": 7, "year": 2021 },
 		{ "position": 2, "year": 2022 },
-		{ "position": 5, "year": 2023 }
+		{ "position": 5, "year": 2023 },
+		{ "position": 3, "year": 2024 }
 	],
 	"code": "LEC",
 	"dob": "1997-10-16",
@@ -15,7 +16,7 @@
 	"lapsLead": 830,
 	"name": "Charles Leclerc",
 	"nationality": "Monegasque",
-	"podiums": 41,
+	"podiums": 43,
 	"poles": 23,
 	"raceWins": 8,
 	"seasons": [
@@ -1072,11 +1073,32 @@
 					"position": 5,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 12,
+					"position": 4,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 18,
+					"position": 2,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "Ferrari",
+					"points": 15,
+					"position": 3,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 7765,
-	"totalRaces": 146
+	"totalLaps": 7930,
+	"totalRaces": 149
 }

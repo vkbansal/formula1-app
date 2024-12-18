@@ -1,5 +1,5 @@
 {
-	"championshipStandings": [],
+	"championshipStandings": [{ "position": 19, "year": 2024 }],
 	"code": "COL",
 	"dob": "2003-05-27",
 	"driverId": 861,
@@ -55,11 +55,32 @@
 					"position": null,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Williams",
+					"points": 0,
+					"position": 14,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Williams",
+					"points": 0,
+					"position": null,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "Williams",
+					"points": 0,
+					"position": null,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 321,
-	"totalRaces": 6
+	"totalLaps": 397,
+	"totalRaces": 9
 }

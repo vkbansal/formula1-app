@@ -16,17 +16,18 @@
 		{ "position": 1, "year": 2020 },
 		{ "position": 2, "year": 2021 },
 		{ "position": 6, "year": 2022 },
-		{ "position": 3, "year": 2023 }
+		{ "position": 3, "year": 2023 },
+		{ "position": 7, "year": 2024 }
 	],
 	"code": "HAM",
 	"dob": "1985-01-07",
 	"driverId": 1,
 	"driverRef": "hamilton",
 	"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg/220px-Lewis_Hamilton_2016_Malaysia_2.jpg",
-	"lapsLead": 5486,
+	"lapsLead": 5487,
 	"name": "Lewis Hamilton",
 	"nationality": "British",
-	"podiums": 201,
+	"podiums": 202,
 	"poles": 107,
 	"raceWins": 105,
 	"seasons": [
@@ -2587,11 +2588,32 @@
 					"position": 10,
 					"round": 21,
 					"roundName": "São Paulo Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 18,
+					"position": 2,
+					"round": 22,
+					"roundName": "Las Vegas Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 0,
+					"position": 12,
+					"round": 23,
+					"roundName": "Qatar Grand Prix"
+				},
+				{
+					"constructor": "Mercedes",
+					"points": 12,
+					"position": 4,
+					"round": 24,
+					"roundName": "Abu Dhabi Grand Prix"
 				}
 			],
 			"year": 2024
 		}
 	],
-	"totalLaps": 20132,
-	"totalRaces": 353
+	"totalLaps": 20297,
+	"totalRaces": 356
 }
