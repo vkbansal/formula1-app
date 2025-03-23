@@ -61,7 +61,8 @@
   },
   "pnpm": {
     "overrides": {
-      "zod": "3.22.4"
+      "zod": "3.24.2",
+			"path-to-regexp": "6.3.0"
     },
     "onlyBuiltDependencies": [
       "@parcel/watcher",
