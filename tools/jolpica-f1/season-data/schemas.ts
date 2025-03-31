@@ -73,3 +73,15 @@ export const ConstructorStandingsSchema = z.object({
 	wins: z.coerce.number(),
 	Constructor: ConstructorSchema,
 });
+
+export const ResultSchema = z.object({
+	// number: z.string(),
+	position: z.coerce.number(),
+	positionText: z.string(),
+	points: z.coerce.number(),
+	Driver: DriverSchema,
+	Constructor: ConstructorSchema.optional(),
+	// grid: z.coerce.number().optional(),
+	// laps: z.coerce.number().optional(),
+	// status: z.string().optional(),
+});

@@ -1,12 +1,15 @@
+import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import cacache from 'cacache';
 import { kebabCase } from 'change-case';
+import stringify from 'fast-json-stable-stringify';
 import ogKy from 'ky';
+import prettier from 'prettier';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
+const DATA_DIR = path.resolve(__dirname, `../../src/content`);
 const CACHE_DIR = path.resolve(__dirname, '.cache');
 
 export function slugify(str: string): string {
@@ -48,6 +51,17 @@ export const ky = ogKy.create({
 	},
 });
 
-export function sleep(ms: number): Promise<void> {
-	return new Promise((resolve) => setTimeout(resolve, ms));
+export async function writeFileToDataDir(
+	filepath: string,
+	data: unknown,
+): Promise<void> {
+	const fullPath = path.resolve(DATA_DIR, filepath);
+	await fs.mkdir(path.dirname(fullPath), { recursive: true });
+	const formattedCode = await prettier.format(stringify(data), {
+		printWidth: 80,
+		useTabs: true,
+		parser: 'json',
+	});
+
+	return fs.writeFile(fullPath, formattedCode, 'utf8');
 }
