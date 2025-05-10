@@ -1,0 +1,332 @@
+{
+	"rounds": [
+		{ "id": "argentine-grand-prix", "round": 1 },
+		{ "id": "brazilian-grand-prix", "round": 2 },
+		{ "id": "south-african-grand-prix", "round": 3 },
+		{ "id": "united-states-grand-prix-west", "round": 4 },
+		{ "id": "spanish-grand-prix", "round": 5 },
+		{ "id": "belgian-grand-prix", "round": 6 },
+		{ "id": "monaco-grand-prix", "round": 7 },
+		{ "id": "french-grand-prix", "round": 8 },
+		{ "id": "british-grand-prix", "round": 9 },
+		{ "id": "german-grand-prix", "round": 10 },
+		{ "id": "austrian-grand-prix", "round": 11 },
+		{ "id": "dutch-grand-prix", "round": 12 },
+		{ "id": "italian-grand-prix", "round": 13 },
+		{ "id": "canadian-grand-prix", "round": 14 },
+		{ "id": "united-states-grand-prix", "round": 15 }
+	],
+	"teams": [
+		{
+			"constructorRef": "alfa",
+			"drivers": [
+				{
+					"driverRef": "giacomelli",
+					"name": "Bruno Giacomelli",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "brambilla",
+					"name": "Vittorio Brambilla",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Alfa Romeo",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "arrows",
+			"drivers": [
+				{ "driverRef": "mass", "name": "Jochen Mass", "nationality": "German" },
+				{
+					"driverRef": "patrese",
+					"name": "Riccardo Patrese",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Arrows",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ats",
+			"drivers": [
+				{
+					"driverRef": "stuck",
+					"name": "Hans-Joachim Stuck",
+					"nationality": "German"
+				}
+			],
+			"name": "ATS",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "brabham_alfa_romeo",
+			"drivers": [
+				{
+					"driverRef": "lauda",
+					"name": "Niki Lauda",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "piquet",
+					"name": "Nelson Piquet",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Brabham-Alfa Romeo",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "brabham_ford",
+			"drivers": [
+				{
+					"driverRef": "zunino",
+					"name": "Ricardo Zunino",
+					"nationality": "Argentine"
+				},
+				{
+					"driverRef": "piquet",
+					"name": "Nelson Piquet",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "lauda",
+					"name": "Niki Lauda",
+					"nationality": "Austrian"
+				}
+			],
+			"name": "Brabham-Ford",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ensign",
+			"drivers": [
+				{ "driverRef": "daly", "name": "Derek Daly", "nationality": "Irish" },
+				{
+					"driverRef": "gaillard",
+					"name": "Patrick Gaillard",
+					"nationality": "French"
+				},
+				{ "driverRef": "surer", "name": "Marc Surer", "nationality": "Swiss" }
+			],
+			"name": "Ensign",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "gilles_villeneuve",
+					"name": "Gilles Villeneuve",
+					"nationality": "Canadian"
+				},
+				{
+					"driverRef": "scheckter",
+					"name": "Jody Scheckter",
+					"nationality": "South African"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "fittipaldi",
+			"drivers": [
+				{
+					"driverRef": "emerson_fittipaldi",
+					"name": "Emerson Fittipaldi",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "ribeiro",
+					"name": "Alex Ribeiro",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Fittipaldi",
+			"nationality": "Brazilian"
+		},
+		{
+			"constructorRef": "kauhsen",
+			"drivers": [
+				{
+					"driverRef": "brancatelli",
+					"name": "Gianfranco Brancatelli",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Kauhsen",
+			"nationality": "German"
+		},
+		{
+			"constructorRef": "ligier",
+			"drivers": [
+				{
+					"driverRef": "laffite",
+					"name": "Jacques Laffite",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "depailler",
+					"name": "Patrick Depailler",
+					"nationality": "French"
+				},
+				{ "driverRef": "ickx", "name": "Jacky Ickx", "nationality": "Belgian" }
+			],
+			"name": "Ligier",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "watson",
+					"name": "John Watson",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "tambay",
+					"name": "Patrick Tambay",
+					"nationality": "French"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "merzario",
+			"drivers": [
+				{
+					"driverRef": "merzario",
+					"name": "Arturo Merzario",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "brancatelli",
+					"name": "Gianfranco Brancatelli",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Merzario",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "rebaque",
+			"drivers": [
+				{
+					"driverRef": "rebaque",
+					"name": "Hector Rebaque",
+					"nationality": "Mexican"
+				}
+			],
+			"name": "Rebaque",
+			"nationality": "Mexican"
+		},
+		{
+			"constructorRef": "renault",
+			"drivers": [
+				{
+					"driverRef": "jabouille",
+					"name": "Jean-Pierre Jabouille",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "arnoux",
+					"name": "René Arnoux",
+					"nationality": "French"
+				}
+			],
+			"name": "Renault",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "shadow",
+			"drivers": [
+				{
+					"driverRef": "angelis",
+					"name": "Elio de Angelis",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "lammers",
+					"name": "Jan Lammers",
+					"nationality": "Dutch"
+				}
+			],
+			"name": "Shadow",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "team_lotus",
+			"drivers": [
+				{
+					"driverRef": "reutemann",
+					"name": "Carlos Reutemann",
+					"nationality": "Argentine"
+				},
+				{
+					"driverRef": "mario_andretti",
+					"name": "Mario Andretti",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "rebaque",
+					"name": "Hector Rebaque",
+					"nationality": "Mexican"
+				}
+			],
+			"name": "Team Lotus",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "tyrrell",
+			"drivers": [
+				{
+					"driverRef": "jarier",
+					"name": "Jean-Pierre Jarier",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "pironi",
+					"name": "Didier Pironi",
+					"nationality": "French"
+				},
+				{ "driverRef": "lees", "name": "Geoff Lees", "nationality": "British" },
+				{ "driverRef": "daly", "name": "Derek Daly", "nationality": "Irish" }
+			],
+			"name": "Tyrrell",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "jones",
+					"name": "Alan Jones",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "regazzoni",
+					"name": "Clay Regazzoni",
+					"nationality": "Swiss"
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "wolf",
+			"drivers": [
+				{ "driverRef": "hunt", "name": "James Hunt", "nationality": "British" },
+				{
+					"driverRef": "keke_rosberg",
+					"name": "Keke Rosberg",
+					"nationality": "Finnish"
+				}
+			],
+			"name": "Wolf",
+			"nationality": "Canadian"
+		}
+	],
+	"year": 1979
+}

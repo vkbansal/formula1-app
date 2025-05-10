@@ -9,7 +9,8 @@ import MainLayout from '~/layouts/MainLayout.astro';
 export const prerender = false;
 const { year: yearStr = '', roundSlug = '' } = Astro.params;
 const year = parseInt(yearStr, 10);
-const round = (await getEntry('rounds', `${yearStr}/${roundSlug}`))?.data;
+const season = await getEntry('seasons', yearStr);
+const round = season?.data.rounds.find((r) => r.id === roundSlug);
 
 if (!round) {
 	return new Response(null, {
@@ -24,6 +25,7 @@ const drivers = (await getCollection('drivers')).reduce<
 	driversMap[data.driverRef] = data;
 	return driversMap;
 }, {});
+
 const constructors = (await getCollection('constructors')).reduce<
 	Record<string, CollectionEntry<'constructors'>['data']>
 >((constructorsMap, { data }) => {
@@ -70,7 +72,7 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 					<tbody>
 						{
 							sort(
-								round.driversData,
+								round.results,
 								(a, b) => a.positionOrder - b.positionOrder,
 							).map((result) => {
 								const driver = drivers[result.driverRef];
@@ -108,7 +110,7 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 					</thead>
 					<tbody>
 						{
-							sort(round.driversData, (a, b) => {
+							sort(round.results, (a, b) => {
 								if (a.grid === 0 && b.grid === 0) {
 									return 0;
 								}
@@ -157,7 +159,7 @@ function sort<T>(arr: T[], sorter: (a: T, b: T) => number): T[] {
 					<tbody>
 						{
 							sort(
-								round.driversData,
+								round.results,
 								(a, b) =>
 									(a.qualifying?.position || 0) - (b.qualifying?.position || 0),
 							).map((result) => {

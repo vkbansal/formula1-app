@@ -1,0 +1,282 @@
+{
+	"rounds": [
+		{ "id": "brazilian-grand-prix", "round": 1 },
+		{ "id": "argentine-grand-prix", "round": 2 },
+		{ "id": "san-marino-grand-prix", "round": 3 },
+		{ "id": "spanish-grand-prix", "round": 4 },
+		{ "id": "monaco-grand-prix", "round": 5 },
+		{ "id": "canadian-grand-prix", "round": 6 },
+		{ "id": "french-grand-prix", "round": 7 },
+		{ "id": "british-grand-prix", "round": 8 },
+		{ "id": "german-grand-prix", "round": 9 },
+		{ "id": "hungarian-grand-prix", "round": 10 },
+		{ "id": "belgian-grand-prix", "round": 11 },
+		{ "id": "italian-grand-prix", "round": 12 },
+		{ "id": "portuguese-grand-prix", "round": 13 },
+		{ "id": "european-grand-prix", "round": 14 },
+		{ "id": "pacific-grand-prix", "round": 15 },
+		{ "id": "japanese-grand-prix", "round": 16 },
+		{ "id": "australian-grand-prix", "round": 17 }
+	],
+	"teams": [
+		{
+			"constructorRef": "benetton",
+			"drivers": [
+				{
+					"driverRef": "michael_schumacher",
+					"name": "Michael Schumacher",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "herbert",
+					"name": "Johnny Herbert",
+					"nationality": "British"
+				}
+			],
+			"name": "Benetton",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "berger",
+					"name": "Gerhard Berger",
+					"nationality": "Austrian"
+				},
+				{ "driverRef": "alesi", "name": "Jean Alesi", "nationality": "French" }
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "footwork",
+			"drivers": [
+				{
+					"driverRef": "morbidelli",
+					"name": "Gianni Morbidelli",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "inoue",
+					"name": "Taki Inoue",
+					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "papis",
+					"name": "Massimiliano Papis",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Footwork",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "forti",
+			"drivers": [
+				{
+					"driverRef": "diniz",
+					"name": "Pedro Diniz",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "moreno",
+					"name": "Roberto Moreno",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Forti",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "jordan",
+			"drivers": [
+				{
+					"driverRef": "barrichello",
+					"name": "Rubens Barrichello",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "irvine",
+					"name": "Eddie Irvine",
+					"nationality": "British"
+				}
+			],
+			"name": "Jordan",
+			"nationality": "Irish"
+		},
+		{
+			"constructorRef": "ligier",
+			"drivers": [
+				{
+					"driverRef": "suzuki",
+					"name": "Aguri Suzuki",
+					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "panis",
+					"name": "Olivier Panis",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "brundle",
+					"name": "Martin Brundle",
+					"nationality": "British"
+				}
+			],
+			"name": "Ligier",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "hakkinen",
+					"name": "Mika Häkkinen",
+					"nationality": "Finnish"
+				},
+				{
+					"driverRef": "blundell",
+					"name": "Mark Blundell",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "mansell",
+					"name": "Nigel Mansell",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "magnussen",
+					"name": "Jan Magnussen",
+					"nationality": "Danish"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "minardi",
+			"drivers": [
+				{
+					"driverRef": "badoer",
+					"name": "Luca Badoer",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "martini",
+					"name": "Pierluigi Martini",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "lamy",
+					"name": "Pedro Lamy",
+					"nationality": "Portuguese"
+				}
+			],
+			"name": "Minardi",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "pacific",
+			"drivers": [
+				{
+					"driverRef": "montermini",
+					"name": "Andrea Montermini",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "gachot",
+					"name": "Bertrand Gachot",
+					"nationality": "Belgian"
+				},
+				{
+					"driverRef": "lavaggi",
+					"name": "Giovanni Lavaggi",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "deletraz",
+					"name": "Jean-Denis Délétraz",
+					"nationality": "Swiss"
+				}
+			],
+			"name": "Pacific",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "sauber",
+			"drivers": [
+				{
+					"driverRef": "wendlinger",
+					"name": "Karl Wendlinger",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "frentzen",
+					"name": "Heinz-Harald Frentzen",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "boullion",
+					"name": "Jean-Christophe Boullion",
+					"nationality": "French"
+				}
+			],
+			"name": "Sauber",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "simtek",
+			"drivers": [
+				{
+					"driverRef": "verstappen",
+					"name": "Jos Verstappen",
+					"nationality": "Dutch"
+				},
+				{
+					"driverRef": "schiattarella",
+					"name": "Domenico Schiattarella",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Simtek",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "tyrrell",
+			"drivers": [
+				{ "driverRef": "salo", "name": "Mika Salo", "nationality": "Finnish" },
+				{
+					"driverRef": "katayama",
+					"name": "Ukyo Katayama",
+					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "tarquini",
+					"name": "Gabriele Tarquini",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Tyrrell",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "coulthard",
+					"name": "David Coulthard",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "damon_hill",
+					"name": "Damon Hill",
+					"nationality": "British"
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		}
+	],
+	"year": 1995
+}

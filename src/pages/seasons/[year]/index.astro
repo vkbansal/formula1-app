@@ -137,7 +137,7 @@ const constructorsChartDataSets = teams.map((team, i) => {
 					<tbody>
 						{
 							rounds.map((row) => {
-								const winner = row.podium[0];
+								const winner = row.results.find((r) => r.position === 1);
 								const winnerConstructor = teams.find(
 									(team) => team.constructorRef === winner?.constructorRef,
 								);
@@ -149,7 +149,7 @@ const constructorsChartDataSets = teams.map((team, i) => {
 									<tr>
 										<td>{row.round}</td>
 										<td>
-											<a href={`/seasons/${year}/${row.slug}`}>{row.name}</a>
+											<a href={`/seasons/${year}/${row.id}`}>{row.name}</a>
 										</td>
 										<td>{row.date}</td>
 										<td>

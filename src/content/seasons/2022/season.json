@@ -1,0 +1,205 @@
+{
+	"rounds": [
+		{ "id": "bahrain-grand-prix", "round": 1 },
+		{ "id": "saudi-arabian-grand-prix", "round": 2 },
+		{ "id": "australian-grand-prix", "round": 3 },
+		{ "id": "emilia-romagna-grand-prix", "round": 4 },
+		{ "id": "miami-grand-prix", "round": 5 },
+		{ "id": "spanish-grand-prix", "round": 6 },
+		{ "id": "monaco-grand-prix", "round": 7 },
+		{ "id": "azerbaijan-grand-prix", "round": 8 },
+		{ "id": "canadian-grand-prix", "round": 9 },
+		{ "id": "british-grand-prix", "round": 10 },
+		{ "id": "austrian-grand-prix", "round": 11 },
+		{ "id": "french-grand-prix", "round": 12 },
+		{ "id": "hungarian-grand-prix", "round": 13 },
+		{ "id": "belgian-grand-prix", "round": 14 },
+		{ "id": "dutch-grand-prix", "round": 15 },
+		{ "id": "italian-grand-prix", "round": 16 },
+		{ "id": "singapore-grand-prix", "round": 17 },
+		{ "id": "japanese-grand-prix", "round": 18 },
+		{ "id": "united-states-grand-prix", "round": 19 },
+		{ "id": "mexico-city-grand-prix", "round": 20 },
+		{ "id": "sao-paulo-grand-prix", "round": 21 },
+		{ "id": "abu-dhabi-grand-prix", "round": 22 }
+	],
+	"teams": [
+		{
+			"constructorRef": "alfa",
+			"drivers": [
+				{
+					"driverRef": "bottas",
+					"name": "Valtteri Bottas",
+					"nationality": "Finnish"
+				},
+				{ "driverRef": "zhou", "name": "Guanyu Zhou", "nationality": "Chinese" }
+			],
+			"name": "Alfa Romeo",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "alphatauri",
+			"drivers": [
+				{
+					"driverRef": "tsunoda",
+					"name": "Yuki Tsunoda",
+					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "gasly",
+					"name": "Pierre Gasly",
+					"nationality": "French"
+				}
+			],
+			"name": "AlphaTauri",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "alpine",
+			"drivers": [
+				{
+					"driverRef": "ocon",
+					"name": "Esteban Ocon",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "alonso",
+					"name": "Fernando Alonso",
+					"nationality": "Spanish"
+				}
+			],
+			"name": "Alpine F1 Team",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "aston_martin",
+			"drivers": [
+				{
+					"driverRef": "stroll",
+					"name": "Lance Stroll",
+					"nationality": "Canadian"
+				},
+				{
+					"driverRef": "hulkenberg",
+					"name": "Nico Hülkenberg",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "vettel",
+					"name": "Sebastian Vettel",
+					"nationality": "German"
+				}
+			],
+			"name": "Aston Martin",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "leclerc",
+					"name": "Charles Leclerc",
+					"nationality": "Monegasque"
+				},
+				{
+					"driverRef": "sainz",
+					"name": "Carlos Sainz",
+					"nationality": "Spanish"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "haas",
+			"drivers": [
+				{
+					"driverRef": "kevin_magnussen",
+					"name": "Kevin Magnussen",
+					"nationality": "Danish"
+				},
+				{
+					"driverRef": "mick_schumacher",
+					"name": "Mick Schumacher",
+					"nationality": "German"
+				}
+			],
+			"name": "Haas F1 Team",
+			"nationality": "American"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "ricciardo",
+					"name": "Daniel Ricciardo",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "norris",
+					"name": "Lando Norris",
+					"nationality": "British"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "mercedes",
+			"drivers": [
+				{
+					"driverRef": "hamilton",
+					"name": "Lewis Hamilton",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "russell",
+					"name": "George Russell",
+					"nationality": "British"
+				}
+			],
+			"name": "Mercedes",
+			"nationality": "German"
+		},
+		{
+			"constructorRef": "red_bull",
+			"drivers": [
+				{
+					"driverRef": "perez",
+					"name": "Sergio Pérez",
+					"nationality": "Mexican"
+				},
+				{
+					"driverRef": "max_verstappen",
+					"name": "Max Verstappen",
+					"nationality": "Dutch"
+				}
+			],
+			"name": "Red Bull",
+			"nationality": "Austrian"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "albon",
+					"name": "Alexander Albon",
+					"nationality": "Thai"
+				},
+				{
+					"driverRef": "latifi",
+					"name": "Nicholas Latifi",
+					"nationality": "Canadian"
+				},
+				{
+					"driverRef": "de_vries",
+					"name": "Nyck de Vries",
+					"nationality": "Dutch"
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		}
+	],
+	"year": 2022
+}

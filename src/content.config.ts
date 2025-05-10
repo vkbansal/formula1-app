@@ -2,7 +2,6 @@ import { readFile } from 'node:fs/promises';
 import { basename } from 'node:path';
 import { defineCollection, z } from 'astro:content';
 
-import { glob } from 'astro/loaders';
 import { globby } from 'globby';
 /*******************************************************************************
  * Constructors Collection
@@ -158,70 +157,55 @@ const driversCollection = defineCollection({
 });
 
 /*******************************************************************************
- * Rounds Collection
- ******************************************************************************/
-const roundsCollection = defineCollection({
-	loader: glob({ pattern: '**/*.json', base: './src/content/rounds' }),
-	schema: z.object({
-		raceId: z.number(),
-		year: z.number(),
-		round: z.number(),
-		name: z.string(),
-		slug: z.string(),
-		date: z.string(),
-		circuit: z.object({
-			name: z.string(),
-			location: z.string().nullable(),
-			country: z.string().nullable(),
-			circuitRef: z.string(),
-		}),
-		driversData: z.array(
-			z.object({
-				grid: z.number(),
-				position: z.number().nullable(),
-				points: z.number(),
-				positionText: z.string(),
-				positionOrder: z.number(),
-				driverRef: z.string(),
-				constructorRef: z.string(),
-				qualifying: z
-					.object({
-						position: z.number().nullable(),
-						q1: z.string().nullable(),
-						q2: z.string().nullable(),
-						q3: z.string().nullable(),
-					})
-					.optional(),
-			}),
-		),
-	}),
-});
-
-/*******************************************************************************
  * Seasons Collection
  ******************************************************************************/
 const seasonsCollection = defineCollection({
-	loader: glob({ pattern: '**/*.json', base: './src/content/seasons' }),
+	loader: async () => {
+		const seasonFiles = await globby('./src/content/seasons/*/season.json');
+
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		const data: any[] = [];
+
+		for (const seasonFile of seasonFiles) {
+			const id = seasonFile.split('/').at(-2);
+
+			if (!id) {
+				throw new Error(`Unable to determine the season from ${seasonFile}`);
+			}
+
+			const seasonContent = await readFile(seasonFile, 'utf8');
+			const seasonData = JSON.parse(seasonContent);
+
+			seasonData.id = id;
+
+			for (const round of seasonData.rounds) {
+				const roundContent = await readFile(
+					`./src/content/seasons/${id}/${round.id}.json`,
+					'utf8',
+				);
+				const roundData = JSON.parse(roundContent);
+
+				Object.assign(round, roundData);
+			}
+
+			data.push(seasonData);
+		}
+
+		return data;
+	},
 	schema: z.object({
 		year: z.number(),
 		rounds: z.array(
 			z.object({
 				round: z.number(),
 				name: z.string(),
-				date: z.string(),
-				slug: z.string(),
+				date: z.string().date(),
+				id: z.string(),
 				circuit: z.object({
 					name: z.string(),
 					location: z.string().nullable(),
 					country: z.string().nullable(),
 				}),
-				podium: z.array(
-					z.object({
-						driverRef: z.string(),
-						constructorRef: z.string(),
-						position: z.number(),
-					}),
-				),
 				driverStandings: z.array(
 					z.object({
 						points: z.number(),
@@ -236,6 +220,25 @@ const seasonsCollection = defineCollection({
 						points: z.number(),
 						position: z.number().nullable(),
 						wins: z.number(),
+					}),
+				),
+				results: z.array(
+					z.object({
+						grid: z.number(),
+						position: z.number().nullable(),
+						points: z.number(),
+						positionText: z.string(),
+						positionOrder: z.number(),
+						driverRef: z.string(),
+						constructorRef: z.string(),
+						qualifying: z
+							.object({
+								position: z.number().nullable(),
+								q1: z.string().nullable(),
+								q2: z.string().nullable(),
+								q3: z.string().nullable(),
+							})
+							.optional(),
 					}),
 				),
 			}),
@@ -264,6 +267,5 @@ const seasonsCollection = defineCollection({
 export const collections = {
 	constructors: constructorsCollection,
 	drivers: driversCollection,
-	rounds: roundsCollection,
 	seasons: seasonsCollection,
 };

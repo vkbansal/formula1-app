@@ -1,0 +1,223 @@
+{
+	"rounds": [
+		{ "id": "australian-grand-prix", "round": 1 },
+		{ "id": "malaysian-grand-prix", "round": 2 },
+		{ "id": "bahrain-grand-prix", "round": 3 },
+		{ "id": "chinese-grand-prix", "round": 4 },
+		{ "id": "spanish-grand-prix", "round": 5 },
+		{ "id": "monaco-grand-prix", "round": 6 },
+		{ "id": "canadian-grand-prix", "round": 7 },
+		{ "id": "austrian-grand-prix", "round": 8 },
+		{ "id": "british-grand-prix", "round": 9 },
+		{ "id": "german-grand-prix", "round": 10 },
+		{ "id": "hungarian-grand-prix", "round": 11 },
+		{ "id": "belgian-grand-prix", "round": 12 },
+		{ "id": "italian-grand-prix", "round": 13 },
+		{ "id": "singapore-grand-prix", "round": 14 },
+		{ "id": "japanese-grand-prix", "round": 15 },
+		{ "id": "russian-grand-prix", "round": 16 },
+		{ "id": "united-states-grand-prix", "round": 17 },
+		{ "id": "brazilian-grand-prix", "round": 18 },
+		{ "id": "abu-dhabi-grand-prix", "round": 19 }
+	],
+	"teams": [
+		{
+			"constructorRef": "caterham",
+			"drivers": [
+				{
+					"driverRef": "ericsson",
+					"name": "Marcus Ericsson",
+					"nationality": "Swedish"
+				},
+				{
+					"driverRef": "kobayashi",
+					"name": "Kamui Kobayashi",
+					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "lotterer",
+					"name": "André Lotterer",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "stevens",
+					"name": "Will Stevens",
+					"nationality": "British"
+				}
+			],
+			"name": "Caterham",
+			"nationality": "Malaysian"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "alonso",
+					"name": "Fernando Alonso",
+					"nationality": "Spanish"
+				},
+				{
+					"driverRef": "raikkonen",
+					"name": "Kimi Räikkönen",
+					"nationality": "Finnish"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "force_india",
+			"drivers": [
+				{
+					"driverRef": "hulkenberg",
+					"name": "Nico Hülkenberg",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "perez",
+					"name": "Sergio Pérez",
+					"nationality": "Mexican"
+				}
+			],
+			"name": "Force India",
+			"nationality": "Indian"
+		},
+		{
+			"constructorRef": "lotus_f1",
+			"drivers": [
+				{
+					"driverRef": "grosjean",
+					"name": "Romain Grosjean",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "maldonado",
+					"name": "Pastor Maldonado",
+					"nationality": "Venezuelan"
+				}
+			],
+			"name": "Lotus F1",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "marussia",
+			"drivers": [
+				{
+					"driverRef": "chilton",
+					"name": "Max Chilton",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "jules_bianchi",
+					"name": "Jules Bianchi",
+					"nationality": "French"
+				}
+			],
+			"name": "Marussia",
+			"nationality": "Russian"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "kevin_magnussen",
+					"name": "Kevin Magnussen",
+					"nationality": "Danish"
+				},
+				{
+					"driverRef": "button",
+					"name": "Jenson Button",
+					"nationality": "British"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "mercedes",
+			"drivers": [
+				{
+					"driverRef": "rosberg",
+					"name": "Nico Rosberg",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "hamilton",
+					"name": "Lewis Hamilton",
+					"nationality": "British"
+				}
+			],
+			"name": "Mercedes",
+			"nationality": "German"
+		},
+		{
+			"constructorRef": "red_bull",
+			"drivers": [
+				{
+					"driverRef": "vettel",
+					"name": "Sebastian Vettel",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "ricciardo",
+					"name": "Daniel Ricciardo",
+					"nationality": "Australian"
+				}
+			],
+			"name": "Red Bull",
+			"nationality": "Austrian"
+		},
+		{
+			"constructorRef": "sauber",
+			"drivers": [
+				{
+					"driverRef": "sutil",
+					"name": "Adrian Sutil",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "gutierrez",
+					"name": "Esteban Gutiérrez",
+					"nationality": "Mexican"
+				}
+			],
+			"name": "Sauber",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "toro_rosso",
+			"drivers": [
+				{
+					"driverRef": "vergne",
+					"name": "Jean-Éric Vergne",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "kvyat",
+					"name": "Daniil Kvyat",
+					"nationality": "Russian"
+				}
+			],
+			"name": "Toro Rosso",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "bottas",
+					"name": "Valtteri Bottas",
+					"nationality": "Finnish"
+				},
+				{
+					"driverRef": "massa",
+					"name": "Felipe Massa",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		}
+	],
+	"year": 2014
+}

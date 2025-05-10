@@ -1,0 +1,305 @@
+{
+	"rounds": [
+		{ "id": "brazilian-grand-prix", "round": 1 },
+		{ "id": "united-states-grand-prix-west", "round": 2 },
+		{ "id": "french-grand-prix", "round": 3 },
+		{ "id": "san-marino-grand-prix", "round": 4 },
+		{ "id": "monaco-grand-prix", "round": 5 },
+		{ "id": "belgian-grand-prix", "round": 6 },
+		{ "id": "detroit-grand-prix", "round": 7 },
+		{ "id": "canadian-grand-prix", "round": 8 },
+		{ "id": "british-grand-prix", "round": 9 },
+		{ "id": "german-grand-prix", "round": 10 },
+		{ "id": "austrian-grand-prix", "round": 11 },
+		{ "id": "dutch-grand-prix", "round": 12 },
+		{ "id": "italian-grand-prix", "round": 13 },
+		{ "id": "european-grand-prix", "round": 14 },
+		{ "id": "south-african-grand-prix", "round": 15 }
+	],
+	"teams": [
+		{
+			"constructorRef": "alfa",
+			"drivers": [
+				{
+					"driverRef": "baldi",
+					"name": "Mauro Baldi",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "cesaris",
+					"name": "Andrea de Cesaris",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Alfa Romeo",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "arrows",
+			"drivers": [
+				{ "driverRef": "surer", "name": "Marc Surer", "nationality": "Swiss" },
+				{
+					"driverRef": "serra",
+					"name": "Chico Serra",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "jones",
+					"name": "Alan Jones",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "boutsen",
+					"name": "Thierry Boutsen",
+					"nationality": "Belgian"
+				}
+			],
+			"name": "Arrows",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ats",
+			"drivers": [
+				{
+					"driverRef": "manfred_winkelhock",
+					"name": "Manfred Winkelhock",
+					"nationality": "German"
+				}
+			],
+			"name": "ATS",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "brabham",
+			"drivers": [
+				{
+					"driverRef": "piquet",
+					"name": "Nelson Piquet",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "patrese",
+					"name": "Riccardo Patrese",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Brabham",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "tambay",
+					"name": "Patrick Tambay",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "arnoux",
+					"name": "René Arnoux",
+					"nationality": "French"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "ligier",
+			"drivers": [
+				{
+					"driverRef": "boesel",
+					"name": "Raul Boesel",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "jarier",
+					"name": "Jean-Pierre Jarier",
+					"nationality": "French"
+				}
+			],
+			"name": "Ligier",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "lauda",
+					"name": "Niki Lauda",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "watson",
+					"name": "John Watson",
+					"nationality": "British"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "osella",
+			"drivers": [
+				{
+					"driverRef": "corrado_fabi",
+					"name": "Corrado Fabi",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "ghinzani",
+					"name": "Piercarlo Ghinzani",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Osella",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "ram",
+			"drivers": [
+				{
+					"driverRef": "salazar",
+					"name": "Eliseo Salazar",
+					"nationality": "Chilean"
+				},
+				{
+					"driverRef": "schlesser",
+					"name": "Jean-Louis Schlesser",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "villeneuve_sr",
+					"name": "Jacques Villeneuve Sr.",
+					"nationality": "Canadian"
+				},
+				{
+					"driverRef": "acheson",
+					"name": "Kenny Acheson",
+					"nationality": "British"
+				}
+			],
+			"name": "RAM",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "renault",
+			"drivers": [
+				{
+					"driverRef": "prost",
+					"name": "Alain Prost",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "cheever",
+					"name": "Eddie Cheever",
+					"nationality": "American"
+				}
+			],
+			"name": "Renault",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "spirit",
+			"drivers": [
+				{
+					"driverRef": "johansson",
+					"name": "Stefan Johansson",
+					"nationality": "Swedish"
+				}
+			],
+			"name": "Spirit",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "team_lotus",
+			"drivers": [
+				{
+					"driverRef": "mansell",
+					"name": "Nigel Mansell",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "angelis",
+					"name": "Elio de Angelis",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Team Lotus",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "theodore",
+			"drivers": [
+				{
+					"driverRef": "cecotto",
+					"name": "Johnny Cecotto",
+					"nationality": "Venezuelan"
+				},
+				{
+					"driverRef": "guerrero",
+					"name": "Roberto Guerrero",
+					"nationality": "Colombian"
+				}
+			],
+			"name": "Theodore",
+			"nationality": "Hong Kong"
+		},
+		{
+			"constructorRef": "toleman",
+			"drivers": [
+				{
+					"driverRef": "warwick",
+					"name": "Derek Warwick",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "giacomelli",
+					"name": "Bruno Giacomelli",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Toleman",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "tyrrell",
+			"drivers": [
+				{
+					"driverRef": "sullivan",
+					"name": "Danny Sullivan",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "alboreto",
+					"name": "Michele Alboreto",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Tyrrell",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "laffite",
+					"name": "Jacques Laffite",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "keke_rosberg",
+					"name": "Keke Rosberg",
+					"nationality": "Finnish"
+				},
+				{
+					"driverRef": "palmer",
+					"name": "Jonathan Palmer",
+					"nationality": "British"
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		}
+	],
+	"year": 1983
+}

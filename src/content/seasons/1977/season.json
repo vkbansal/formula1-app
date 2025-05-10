@@ -1,0 +1,502 @@
+{
+	"rounds": [
+		{ "id": "argentine-grand-prix", "round": 1 },
+		{ "id": "brazilian-grand-prix", "round": 2 },
+		{ "id": "south-african-grand-prix", "round": 3 },
+		{ "id": "united-states-grand-prix-west", "round": 4 },
+		{ "id": "spanish-grand-prix", "round": 5 },
+		{ "id": "monaco-grand-prix", "round": 6 },
+		{ "id": "belgian-grand-prix", "round": 7 },
+		{ "id": "swedish-grand-prix", "round": 8 },
+		{ "id": "french-grand-prix", "round": 9 },
+		{ "id": "british-grand-prix", "round": 10 },
+		{ "id": "german-grand-prix", "round": 11 },
+		{ "id": "austrian-grand-prix", "round": 12 },
+		{ "id": "dutch-grand-prix", "round": 13 },
+		{ "id": "italian-grand-prix", "round": 14 },
+		{ "id": "united-states-grand-prix", "round": 15 },
+		{ "id": "canadian-grand-prix", "round": 16 },
+		{ "id": "japanese-grand-prix", "round": 17 }
+	],
+	"teams": [
+		{
+			"constructorRef": "apollon",
+			"drivers": [
+				{
+					"driverRef": "kessel",
+					"name": "Loris Kessel",
+					"nationality": "Swiss"
+				}
+			],
+			"name": "Apollon",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "boro",
+			"drivers": [
+				{
+					"driverRef": "henton",
+					"name": "Brian Henton",
+					"nationality": "British"
+				}
+			],
+			"name": "Boro",
+			"nationality": "Dutch"
+		},
+		{
+			"constructorRef": "brabham",
+			"drivers": [
+				{
+					"driverRef": "pace",
+					"name": "Carlos Pace",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "watson",
+					"name": "John Watson",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "stuck",
+					"name": "Hans-Joachim Stuck",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "francia",
+					"name": "Giorgio Francia",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Brabham",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "brm",
+			"drivers": [
+				{
+					"driverRef": "perkins",
+					"name": "Larry Perkins",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "andersson",
+					"name": "Conny Andersson",
+					"nationality": "Swedish"
+				},
+				{
+					"driverRef": "edwards",
+					"name": "Guy Edwards",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "pilette",
+					"name": "Teddy Pilette",
+					"nationality": "Belgian"
+				}
+			],
+			"name": "BRM",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ensign",
+			"drivers": [
+				{
+					"driverRef": "regazzoni",
+					"name": "Clay Regazzoni",
+					"nationality": "Swiss"
+				},
+				{ "driverRef": "ickx", "name": "Jacky Ickx", "nationality": "Belgian" },
+				{
+					"driverRef": "tambay",
+					"name": "Patrick Tambay",
+					"nationality": "French"
+				}
+			],
+			"name": "Ensign",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "reutemann",
+					"name": "Carlos Reutemann",
+					"nationality": "Argentine"
+				},
+				{
+					"driverRef": "lauda",
+					"name": "Niki Lauda",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "gilles_villeneuve",
+					"name": "Gilles Villeneuve",
+					"nationality": "Canadian"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "fittipaldi",
+			"drivers": [
+				{
+					"driverRef": "emerson_fittipaldi",
+					"name": "Emerson Fittipaldi",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "hoffmann",
+					"name": "Ingo Hoffmann",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Fittipaldi",
+			"nationality": "Brazilian"
+		},
+		{
+			"constructorRef": "hesketh",
+			"drivers": [
+				{
+					"driverRef": "keegan",
+					"name": "Rupert Keegan",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "ertl",
+					"name": "Harald Ertl",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "rebaque",
+					"name": "Hector Rebaque",
+					"nationality": "Mexican"
+				},
+				{
+					"driverRef": "ashley",
+					"name": "Ian Ashley",
+					"nationality": "British"
+				}
+			],
+			"name": "Hesketh",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "kojima",
+			"drivers": [
+				{
+					"driverRef": "hoshino",
+					"name": "Kazuyoshi Hoshino",
+					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "takahara",
+					"name": "Noritake Takahara",
+					"nationality": "Japanese"
+				}
+			],
+			"name": "Kojima",
+			"nationality": "Japanese"
+		},
+		{
+			"constructorRef": "lec",
+			"drivers": [
+				{
+					"driverRef": "purley",
+					"name": "David Purley",
+					"nationality": "British"
+				}
+			],
+			"name": "LEC",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ligier",
+			"drivers": [
+				{
+					"driverRef": "laffite",
+					"name": "Jacques Laffite",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "jarier",
+					"name": "Jean-Pierre Jarier",
+					"nationality": "French"
+				}
+			],
+			"name": "Ligier",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "march",
+			"drivers": [
+				{
+					"driverRef": "ian_scheckter",
+					"name": "Ian Scheckter",
+					"nationality": "South African"
+				},
+				{
+					"driverRef": "ribeiro",
+					"name": "Alex Ribeiro",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "lunger",
+					"name": "Brett Lunger",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "stuck",
+					"name": "Hans-Joachim Stuck",
+					"nationality": "German"
+				},
+				{ "driverRef": "hayje", "name": "Boy Lunger", "nationality": "Dutch" },
+				{
+					"driverRef": "henton",
+					"name": "Brian Henton",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "neve",
+					"name": "Patrick Nève",
+					"nationality": "Belgian"
+				},
+				{
+					"driverRef": "merzario",
+					"name": "Arturo Merzario",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "dryver",
+					"name": "Bernard de Dryver",
+					"nationality": "Belgian"
+				},
+				{
+					"driverRef": "kozarowitzky",
+					"name": "Mikko Kozarowitzky",
+					"nationality": "Finnish"
+				},
+				{
+					"driverRef": "sutcliffe",
+					"name": "Andy Sutcliffe",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "bleekemolen",
+					"name": "Michael Bleekemolen",
+					"nationality": "Dutch"
+				}
+			],
+			"name": "March",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "mcguire",
+			"drivers": [
+				{
+					"driverRef": "mcguire",
+					"name": "Brian McGuire",
+					"nationality": "Australian"
+				}
+			],
+			"name": "McGuire",
+			"nationality": "Australian"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{ "driverRef": "hunt", "name": "James Hunt", "nationality": "British" },
+				{ "driverRef": "mass", "name": "Jochen Mass", "nationality": "German" },
+				{
+					"driverRef": "villota",
+					"name": "Emilio de Villota",
+					"nationality": "Spanish"
+				},
+				{
+					"driverRef": "lunger",
+					"name": "Brett Lunger",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "gilles_villeneuve",
+					"name": "Gilles Villeneuve",
+					"nationality": "Canadian"
+				},
+				{
+					"driverRef": "giacomelli",
+					"name": "Bruno Giacomelli",
+					"nationality": "Italian"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "penske",
+			"drivers": [
+				{
+					"driverRef": "jarier",
+					"name": "Jean-Pierre Jarier",
+					"nationality": "French"
+				},
+				{ "driverRef": "heyer", "name": "Hans Heyer", "nationality": "German" },
+				{
+					"driverRef": "binder",
+					"name": "Hans Binder",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "ongais",
+					"name": "Danny Ongais",
+					"nationality": "American"
+				}
+			],
+			"name": "Penske",
+			"nationality": "American"
+		},
+		{
+			"constructorRef": "renault",
+			"drivers": [
+				{
+					"driverRef": "jabouille",
+					"name": "Jean-Pierre Jabouille",
+					"nationality": "French"
+				}
+			],
+			"name": "Renault",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "shadow",
+			"drivers": [
+				{ "driverRef": "pryce", "name": "Tom Pryce", "nationality": "British" },
+				{
+					"driverRef": "zorzi",
+					"name": "Renzo Zorzi",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "jones",
+					"name": "Alan Jones",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "patrese",
+					"name": "Riccardo Patrese",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "oliver",
+					"name": "Jackie Oliver",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "merzario",
+					"name": "Arturo Merzario",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "jarier",
+					"name": "Jean-Pierre Jarier",
+					"nationality": "French"
+				}
+			],
+			"name": "Shadow",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "surtees",
+			"drivers": [
+				{
+					"driverRef": "brambilla",
+					"name": "Vittorio Brambilla",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "binder",
+					"name": "Hans Binder",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "perkins",
+					"name": "Larry Perkins",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "tambay",
+					"name": "Patrick Tambay",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "schuppan",
+					"name": "Vern Schuppan",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "trimmer",
+					"name": "Tony Trimmer",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "leoni",
+					"name": "Lamberto Leoni",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Surtees",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "team_lotus",
+			"drivers": [
+				{
+					"driverRef": "mario_andretti",
+					"name": "Mario Andretti",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "nilsson",
+					"name": "Gunnar Nilsson",
+					"nationality": "Swedish"
+				}
+			],
+			"name": "Team Lotus",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "tyrrell",
+			"drivers": [
+				{
+					"driverRef": "depailler",
+					"name": "Patrick Depailler",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "peterson",
+					"name": "Ronnie Peterson",
+					"nationality": "Swedish"
+				},
+				{
+					"driverRef": "takahashi",
+					"name": "Kunimitsu Takahashi",
+					"nationality": "Japanese"
+				}
+			],
+			"name": "Tyrrell",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "wolf",
+			"drivers": [
+				{
+					"driverRef": "scheckter",
+					"name": "Jody Scheckter",
+					"nationality": "South African"
+				}
+			],
+			"name": "Wolf",
+			"nationality": "Canadian"
+		}
+	],
+	"year": 1977
+}

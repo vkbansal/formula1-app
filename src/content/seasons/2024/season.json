@@ -1,0 +1,226 @@
+{
+	"rounds": [
+		{ "id": "bahrain-grand-prix", "round": 1 },
+		{ "id": "saudi-arabian-grand-prix", "round": 2 },
+		{ "id": "australian-grand-prix", "round": 3 },
+		{ "id": "japanese-grand-prix", "round": 4 },
+		{ "id": "chinese-grand-prix", "round": 5 },
+		{ "id": "miami-grand-prix", "round": 6 },
+		{ "id": "emilia-romagna-grand-prix", "round": 7 },
+		{ "id": "monaco-grand-prix", "round": 8 },
+		{ "id": "canadian-grand-prix", "round": 9 },
+		{ "id": "spanish-grand-prix", "round": 10 },
+		{ "id": "austrian-grand-prix", "round": 11 },
+		{ "id": "british-grand-prix", "round": 12 },
+		{ "id": "hungarian-grand-prix", "round": 13 },
+		{ "id": "belgian-grand-prix", "round": 14 },
+		{ "id": "dutch-grand-prix", "round": 15 },
+		{ "id": "italian-grand-prix", "round": 16 },
+		{ "id": "azerbaijan-grand-prix", "round": 17 },
+		{ "id": "singapore-grand-prix", "round": 18 },
+		{ "id": "united-states-grand-prix", "round": 19 },
+		{ "id": "mexico-city-grand-prix", "round": 20 },
+		{ "id": "sao-paulo-grand-prix", "round": 21 },
+		{ "id": "las-vegas-grand-prix", "round": 22 },
+		{ "id": "qatar-grand-prix", "round": 23 },
+		{ "id": "abu-dhabi-grand-prix", "round": 24 }
+	],
+	"teams": [
+		{
+			"constructorRef": "alpine",
+			"drivers": [
+				{
+					"driverRef": "ocon",
+					"name": "Esteban Ocon",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "gasly",
+					"name": "Pierre Gasly",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "doohan",
+					"name": "Jack Doohan",
+					"nationality": "Australian"
+				}
+			],
+			"name": "Alpine F1 Team",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "aston_martin",
+			"drivers": [
+				{
+					"driverRef": "alonso",
+					"name": "Fernando Alonso",
+					"nationality": "Spanish"
+				},
+				{
+					"driverRef": "stroll",
+					"name": "Lance Stroll",
+					"nationality": "Canadian"
+				}
+			],
+			"name": "Aston Martin",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "sainz",
+					"name": "Carlos Sainz",
+					"nationality": "Spanish"
+				},
+				{
+					"driverRef": "leclerc",
+					"name": "Charles Leclerc",
+					"nationality": "Monegasque"
+				},
+				{
+					"driverRef": "bearman",
+					"name": "Oliver Bearman",
+					"nationality": "British"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "haas",
+			"drivers": [
+				{
+					"driverRef": "kevin_magnussen",
+					"name": "Kevin Magnussen",
+					"nationality": "Danish"
+				},
+				{
+					"driverRef": "hulkenberg",
+					"name": "Nico Hülkenberg",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "bearman",
+					"name": "Oliver Bearman",
+					"nationality": "British"
+				}
+			],
+			"name": "Haas F1 Team",
+			"nationality": "American"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "norris",
+					"name": "Lando Norris",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "piastri",
+					"name": "Oscar Piastri",
+					"nationality": "Australian"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "mercedes",
+			"drivers": [
+				{
+					"driverRef": "russell",
+					"name": "George Russell",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "hamilton",
+					"name": "Lewis Hamilton",
+					"nationality": "British"
+				}
+			],
+			"name": "Mercedes",
+			"nationality": "German"
+		},
+		{
+			"constructorRef": "rb",
+			"drivers": [
+				{
+					"driverRef": "ricciardo",
+					"name": "Daniel Ricciardo",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "tsunoda",
+					"name": "Yuki Tsunoda",
+					"nationality": "Japanese"
+				},
+				{
+					"driverRef": "lawson",
+					"name": "Liam Lawson",
+					"nationality": "New Zealander"
+				}
+			],
+			"name": "RB F1 Team",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "red_bull",
+			"drivers": [
+				{
+					"driverRef": "max_verstappen",
+					"name": "Max Verstappen",
+					"nationality": "Dutch"
+				},
+				{
+					"driverRef": "perez",
+					"name": "Sergio Pérez",
+					"nationality": "Mexican"
+				}
+			],
+			"name": "Red Bull",
+			"nationality": "Austrian"
+		},
+		{
+			"constructorRef": "sauber",
+			"drivers": [
+				{
+					"driverRef": "zhou",
+					"name": "Guanyu Zhou",
+					"nationality": "Chinese"
+				},
+				{
+					"driverRef": "bottas",
+					"name": "Valtteri Bottas",
+					"nationality": "Finnish"
+				}
+			],
+			"name": "Sauber",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "albon",
+					"name": "Alexander Albon",
+					"nationality": "Thai"
+				},
+				{
+					"driverRef": "sargeant",
+					"name": "Logan Sargeant",
+					"nationality": "American"
+				},
+				{
+					"driverRef": "colapinto",
+					"name": "Franco Colapinto",
+					"nationality": "Argentinian "
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		}
+	],
+	"year": 2024
+}

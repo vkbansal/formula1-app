@@ -1,0 +1,250 @@
+{
+	"rounds": [
+		{ "id": "bahrain-grand-prix", "round": 1 },
+		{ "id": "malaysian-grand-prix", "round": 2 },
+		{ "id": "australian-grand-prix", "round": 3 },
+		{ "id": "san-marino-grand-prix", "round": 4 },
+		{ "id": "european-grand-prix", "round": 5 },
+		{ "id": "spanish-grand-prix", "round": 6 },
+		{ "id": "monaco-grand-prix", "round": 7 },
+		{ "id": "british-grand-prix", "round": 8 },
+		{ "id": "canadian-grand-prix", "round": 9 },
+		{ "id": "united-states-grand-prix", "round": 10 },
+		{ "id": "french-grand-prix", "round": 11 },
+		{ "id": "german-grand-prix", "round": 12 },
+		{ "id": "hungarian-grand-prix", "round": 13 },
+		{ "id": "turkish-grand-prix", "round": 14 },
+		{ "id": "italian-grand-prix", "round": 15 },
+		{ "id": "chinese-grand-prix", "round": 16 },
+		{ "id": "japanese-grand-prix", "round": 17 },
+		{ "id": "brazilian-grand-prix", "round": 18 }
+	],
+	"teams": [
+		{
+			"constructorRef": "bmw_sauber",
+			"drivers": [
+				{
+					"driverRef": "heidfeld",
+					"name": "Nick Heidfeld",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "villeneuve",
+					"name": "Jacques Villeneuve",
+					"nationality": "Canadian"
+				},
+				{
+					"driverRef": "kubica",
+					"name": "Robert Kubica",
+					"nationality": "Polish"
+				}
+			],
+			"name": "BMW Sauber",
+			"nationality": "German"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "michael_schumacher",
+					"name": "Michael Schumacher",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "massa",
+					"name": "Felipe Massa",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "honda",
+			"drivers": [
+				{
+					"driverRef": "button",
+					"name": "Jenson Button",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "barrichello",
+					"name": "Rubens Barrichello",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Honda",
+			"nationality": "Japanese"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "raikkonen",
+					"name": "Kimi Räikkönen",
+					"nationality": "Finnish"
+				},
+				{
+					"driverRef": "montoya",
+					"name": "Juan Pablo Montoya",
+					"nationality": "Colombian"
+				},
+				{
+					"driverRef": "rosa",
+					"name": "Pedro de la Rosa",
+					"nationality": "Spanish"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "mf1",
+			"drivers": [
+				{
+					"driverRef": "monteiro",
+					"name": "Tiago Monteiro",
+					"nationality": "Portuguese"
+				},
+				{
+					"driverRef": "albers",
+					"name": "Christijan Albers",
+					"nationality": "Dutch"
+				}
+			],
+			"name": "MF1",
+			"nationality": "Russian"
+		},
+		{
+			"constructorRef": "red_bull",
+			"drivers": [
+				{
+					"driverRef": "klien",
+					"name": "Christian Klien",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "coulthard",
+					"name": "David Coulthard",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "doornbos",
+					"name": "Robert Doornbos",
+					"nationality": "Dutch"
+				}
+			],
+			"name": "Red Bull",
+			"nationality": "Austrian"
+		},
+		{
+			"constructorRef": "renault",
+			"drivers": [
+				{
+					"driverRef": "alonso",
+					"name": "Fernando Alonso",
+					"nationality": "Spanish"
+				},
+				{
+					"driverRef": "fisichella",
+					"name": "Giancarlo Fisichella",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Renault",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "spyker_mf1",
+			"drivers": [
+				{
+					"driverRef": "albers",
+					"name": "Christijan Albers",
+					"nationality": "Dutch"
+				},
+				{
+					"driverRef": "monteiro",
+					"name": "Tiago Monteiro",
+					"nationality": "Portuguese"
+				}
+			],
+			"name": "Spyker MF1",
+			"nationality": "Dutch"
+		},
+		{
+			"constructorRef": "super_aguri",
+			"drivers": [
+				{
+					"driverRef": "sato",
+					"name": "Takuma Sato",
+					"nationality": "Japanese"
+				},
+				{ "driverRef": "ide", "name": "Yuji Ide", "nationality": "Japanese" },
+				{
+					"driverRef": "montagny",
+					"name": "Franck Montagny",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "yamamoto",
+					"name": "Sakon Yamamoto",
+					"nationality": "Japanese"
+				}
+			],
+			"name": "Super Aguri",
+			"nationality": "Japanese"
+		},
+		{
+			"constructorRef": "toro_rosso",
+			"drivers": [
+				{
+					"driverRef": "liuzzi",
+					"name": "Vitantonio Liuzzi",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "speed",
+					"name": "Scott Speed",
+					"nationality": "American"
+				}
+			],
+			"name": "Toro Rosso",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "toyota",
+			"drivers": [
+				{
+					"driverRef": "ralf_schumacher",
+					"name": "Ralf Schumacher",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "trulli",
+					"name": "Jarno Trulli",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Toyota",
+			"nationality": "Japanese"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "webber",
+					"name": "Mark Webber",
+					"nationality": "Australian"
+				},
+				{
+					"driverRef": "rosberg",
+					"name": "Nico Rosberg",
+					"nationality": "German"
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		}
+	],
+	"year": 2006
+}
