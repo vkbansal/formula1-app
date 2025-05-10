@@ -21,7 +21,6 @@ if (!driver) {
 
 const {
 	seasons,
-	championshipStandings,
 	totalRaces,
 	raceWins,
 	name,
@@ -53,8 +52,8 @@ const lapsLeadPct = `${
 			: '0.00'
 		: ''
 }%`;
-const wonChampionships = championshipStandings
-	.filter((c) => c.position === 1)
+const wonChampionships = seasons
+	.filter((c) => c.championshipStanding === 1)
 	.map((c) => c.year);
 ---
 
@@ -149,9 +148,6 @@ const wonChampionships = championshipStandings
 			<tbody>
 				{
 					seasons.flatMap((season) => {
-						const wdcStanding = championshipStandings.find(
-							(c) => c.year === season.year,
-						);
 						const constructorsInSeason = [
 							...new Set(season.results.map((r) => r.constructor)),
 						];
@@ -197,8 +193,8 @@ const wonChampionships = championshipStandings
 											class="text-center"
 											rowspan={constructorsInSeason.length}
 										>
-											{wdcStanding?.position
-												? formatOrdinals(wdcStanding.position)
+											{season.championshipStanding
+												? formatOrdinals(season.championshipStanding)
 												: '-'}
 										</td>
 									) : null}

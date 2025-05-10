@@ -99,8 +99,8 @@ export const prerender = true;
 		<tbody
 			>{
 				driversArr.map(({ data: driver }) => {
-					const championshipsWon = driver.championshipStandings
-						.filter((c) => c.position === 1)
+					const championshipsWon = driver.seasons
+						.filter((c) => c.championshipStanding === 1)
 						.map((c) => c.year);
 
 					return (

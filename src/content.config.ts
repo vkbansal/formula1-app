@@ -86,7 +86,46 @@ const constructorsCollection = defineCollection({
  * Drivers Collection
  ******************************************************************************/
 const driversCollection = defineCollection({
-	loader: glob({ pattern: '**/*.json', base: './src/content/drivers' }),
+	loader: async () => {
+		const driverFiles = await globby('./src/content/drivers/*/driver.json');
+
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		const data: any[] = [];
+
+		for (const driverFile of driverFiles) {
+			const id = driverFile.split('/').at(-2);
+
+			if (!id) {
+				throw new Error(`Unable to determine the driver from ${driverFile}`);
+			}
+
+			const driverContent = await readFile(driverFile, 'utf8');
+			const driverData = JSON.parse(driverContent);
+
+			driverData.id = id;
+			driverData.seasons = [];
+
+			const seasonFiles = await globby([
+				`./src/content/drivers/${id}/*.json`,
+				`!./src/content/drivers/${id}/driver.json`,
+			]);
+
+			for (const seasonFile of seasonFiles) {
+				const year = basename(seasonFile, '.json');
+				const seasonContent = await readFile(seasonFile, 'utf8');
+				const seasonData = JSON.parse(seasonContent);
+
+				driverData.seasons.push({
+					...seasonData,
+					year: parseInt(year, 10),
+				});
+			}
+
+			data.push(driverData);
+		}
+
+		return data;
+	},
 	schema: z.object({
 		driverId: z.number(),
 		driverRef: z.string(),
@@ -100,15 +139,10 @@ const driversCollection = defineCollection({
 		totalLaps: z.number().nullable(),
 		totalRaces: z.number(),
 		lapsLead: z.number().nullable(),
-		championshipStandings: z.array(
-			z.object({
-				year: z.number(),
-				position: z.number().nullable(),
-			}),
-		),
 		seasons: z.array(
 			z.object({
 				year: z.number(),
+				championshipStanding: z.number().nullable(),
 				results: z.array(
 					z.object({
 						round: z.number(),
