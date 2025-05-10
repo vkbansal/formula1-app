@@ -1,0 +1,217 @@
+{
+	"rounds": [
+		{ "id": "australian-grand-prix", "round": 1 },
+		{ "id": "malaysian-grand-prix", "round": 2 },
+		{ "id": "bahrain-grand-prix", "round": 3 },
+		{ "id": "san-marino-grand-prix", "round": 4 },
+		{ "id": "spanish-grand-prix", "round": 5 },
+		{ "id": "monaco-grand-prix", "round": 6 },
+		{ "id": "european-grand-prix", "round": 7 },
+		{ "id": "canadian-grand-prix", "round": 8 },
+		{ "id": "united-states-grand-prix", "round": 9 },
+		{ "id": "french-grand-prix", "round": 10 },
+		{ "id": "british-grand-prix", "round": 11 },
+		{ "id": "german-grand-prix", "round": 12 },
+		{ "id": "hungarian-grand-prix", "round": 13 },
+		{ "id": "belgian-grand-prix", "round": 14 },
+		{ "id": "italian-grand-prix", "round": 15 },
+		{ "id": "chinese-grand-prix", "round": 16 },
+		{ "id": "japanese-grand-prix", "round": 17 },
+		{ "id": "brazilian-grand-prix", "round": 18 }
+	],
+	"teams": [
+		{
+			"constructorRef": "bar",
+			"drivers": [
+				{
+					"driverRef": "button",
+					"name": "Jenson Button",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "sato",
+					"name": "Takuma Sato",
+					"nationality": "Japanese"
+				}
+			],
+			"name": "BAR",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "michael_schumacher",
+					"name": "Michael Schumacher",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "barrichello",
+					"name": "Rubens Barrichello",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "jaguar",
+			"drivers": [
+				{
+					"driverRef": "klien",
+					"name": "Christian Klien",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "webber",
+					"name": "Mark Webber",
+					"nationality": "Australian"
+				}
+			],
+			"name": "Jaguar",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "jordan",
+			"drivers": [
+				{
+					"driverRef": "pantano",
+					"name": "Giorgio Pantano",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "heidfeld",
+					"name": "Nick Heidfeld",
+					"nationality": "German"
+				},
+				{ "driverRef": "glock", "name": "Timo Glock", "nationality": "German" }
+			],
+			"name": "Jordan",
+			"nationality": "Irish"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "coulthard",
+					"name": "David Coulthard",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "raikkonen",
+					"name": "Kimi Räikkönen",
+					"nationality": "Finnish"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "minardi",
+			"drivers": [
+				{
+					"driverRef": "bruni",
+					"name": "Gianmaria Bruni",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "baumgartner",
+					"name": "Zsolt Baumgartner",
+					"nationality": "Hungarian"
+				}
+			],
+			"name": "Minardi",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "renault",
+			"drivers": [
+				{
+					"driverRef": "alonso",
+					"name": "Fernando Alonso",
+					"nationality": "Spanish"
+				},
+				{
+					"driverRef": "trulli",
+					"name": "Jarno Trulli",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "villeneuve",
+					"name": "Jacques Villeneuve",
+					"nationality": "Canadian"
+				}
+			],
+			"name": "Renault",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "sauber",
+			"drivers": [
+				{
+					"driverRef": "fisichella",
+					"name": "Giancarlo Fisichella",
+					"nationality": "Italian"
+				},
+				{
+					"driverRef": "massa",
+					"name": "Felipe Massa",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Sauber",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "toyota",
+			"drivers": [
+				{
+					"driverRef": "matta",
+					"name": "Cristiano da Matta",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "panis",
+					"name": "Olivier Panis",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "zonta",
+					"name": "Ricardo Zonta",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "trulli",
+					"name": "Jarno Trulli",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Toyota",
+			"nationality": "Japanese"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "ralf_schumacher",
+					"name": "Ralf Schumacher",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "montoya",
+					"name": "Juan Pablo Montoya",
+					"nationality": "Colombian"
+				},
+				{ "driverRef": "gene", "name": "Marc Gené", "nationality": "Spanish" },
+				{
+					"driverRef": "pizzonia",
+					"name": "Antônio Pizzonia",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		}
+	],
+	"year": 2004
+}

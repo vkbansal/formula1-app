@@ -1,0 +1,207 @@
+{
+	"rounds": [
+		{ "id": "australian-grand-prix", "round": 1 },
+		{ "id": "brazilian-grand-prix", "round": 2 },
+		{ "id": "argentine-grand-prix", "round": 3 },
+		{ "id": "san-marino-grand-prix", "round": 4 },
+		{ "id": "spanish-grand-prix", "round": 5 },
+		{ "id": "monaco-grand-prix", "round": 6 },
+		{ "id": "canadian-grand-prix", "round": 7 },
+		{ "id": "french-grand-prix", "round": 8 },
+		{ "id": "british-grand-prix", "round": 9 },
+		{ "id": "austrian-grand-prix", "round": 10 },
+		{ "id": "german-grand-prix", "round": 11 },
+		{ "id": "hungarian-grand-prix", "round": 12 },
+		{ "id": "belgian-grand-prix", "round": 13 },
+		{ "id": "italian-grand-prix", "round": 14 },
+		{ "id": "luxembourg-grand-prix", "round": 15 },
+		{ "id": "japanese-grand-prix", "round": 16 }
+	],
+	"teams": [
+		{
+			"constructorRef": "arrows",
+			"drivers": [
+				{ "driverRef": "salo", "name": "Mika Salo", "nationality": "Finnish" },
+				{
+					"driverRef": "diniz",
+					"name": "Pedro Diniz",
+					"nationality": "Brazilian"
+				}
+			],
+			"name": "Arrows",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "benetton",
+			"drivers": [
+				{
+					"driverRef": "wurz",
+					"name": "Alexander Wurz",
+					"nationality": "Austrian"
+				},
+				{
+					"driverRef": "fisichella",
+					"name": "Giancarlo Fisichella",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Benetton",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "ferrari",
+			"drivers": [
+				{
+					"driverRef": "irvine",
+					"name": "Eddie Irvine",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "michael_schumacher",
+					"name": "Michael Schumacher",
+					"nationality": "German"
+				}
+			],
+			"name": "Ferrari",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "jordan",
+			"drivers": [
+				{
+					"driverRef": "damon_hill",
+					"name": "Damon Hill",
+					"nationality": "British"
+				},
+				{
+					"driverRef": "ralf_schumacher",
+					"name": "Ralf Schumacher",
+					"nationality": "German"
+				}
+			],
+			"name": "Jordan",
+			"nationality": "Irish"
+		},
+		{
+			"constructorRef": "mclaren",
+			"drivers": [
+				{
+					"driverRef": "hakkinen",
+					"name": "Mika Häkkinen",
+					"nationality": "Finnish"
+				},
+				{
+					"driverRef": "coulthard",
+					"name": "David Coulthard",
+					"nationality": "British"
+				}
+			],
+			"name": "McLaren",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "minardi",
+			"drivers": [
+				{
+					"driverRef": "tuero",
+					"name": "Esteban Tuero",
+					"nationality": "Argentine"
+				},
+				{
+					"driverRef": "nakano",
+					"name": "Shinji Nakano",
+					"nationality": "Japanese"
+				}
+			],
+			"name": "Minardi",
+			"nationality": "Italian"
+		},
+		{
+			"constructorRef": "prost",
+			"drivers": [
+				{
+					"driverRef": "panis",
+					"name": "Olivier Panis",
+					"nationality": "French"
+				},
+				{
+					"driverRef": "trulli",
+					"name": "Jarno Trulli",
+					"nationality": "Italian"
+				}
+			],
+			"name": "Prost",
+			"nationality": "French"
+		},
+		{
+			"constructorRef": "sauber",
+			"drivers": [
+				{
+					"driverRef": "herbert",
+					"name": "Johnny Herbert",
+					"nationality": "British"
+				},
+				{ "driverRef": "alesi", "name": "Jean Alesi", "nationality": "French" }
+			],
+			"name": "Sauber",
+			"nationality": "Swiss"
+		},
+		{
+			"constructorRef": "stewart",
+			"drivers": [
+				{
+					"driverRef": "magnussen",
+					"name": "Jan Magnussen",
+					"nationality": "Danish"
+				},
+				{
+					"driverRef": "barrichello",
+					"name": "Rubens Barrichello",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "verstappen",
+					"name": "Jos Verstappen",
+					"nationality": "Dutch"
+				}
+			],
+			"name": "Stewart",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "tyrrell",
+			"drivers": [
+				{
+					"driverRef": "rosset",
+					"name": "Ricardo Rosset",
+					"nationality": "Brazilian"
+				},
+				{
+					"driverRef": "takagi",
+					"name": "Toranosuke Takagi",
+					"nationality": "Japanese"
+				}
+			],
+			"name": "Tyrrell",
+			"nationality": "British"
+		},
+		{
+			"constructorRef": "williams",
+			"drivers": [
+				{
+					"driverRef": "frentzen",
+					"name": "Heinz-Harald Frentzen",
+					"nationality": "German"
+				},
+				{
+					"driverRef": "villeneuve",
+					"name": "Jacques Villeneuve",
+					"nationality": "Canadian"
+				}
+			],
+			"name": "Williams",
+			"nationality": "British"
+		}
+	],
+	"year": 1998
+}
