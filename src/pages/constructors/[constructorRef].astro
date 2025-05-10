@@ -18,15 +18,7 @@ if (!con) {
 	});
 }
 
-const {
-	seasons,
-	championshipStandings,
-	totalRaces,
-	raceWins,
-	name,
-	nationality,
-	podiums,
-} = con.data;
+const { seasons, totalRaces, raceWins, name, nationality, podiums } = con.data;
 
 const totalRoundsInSeasons = seasonsList.reduce<Record<string, number>>(
 	(all, current) => {
@@ -38,8 +30,8 @@ const totalRoundsInSeasons = seasonsList.reduce<Record<string, number>>(
 
 const maxRounds = Math.max(...Object.values(totalRoundsInSeasons));
 const maxRoundsArr = Array.from({ length: maxRounds });
-const wonChampionships = championshipStandings
-	.filter((c) => c.position === 1)
+const wonChampionships = seasons
+	.filter((c) => c.championshipStanding === 1)
 	.map((c) => c.year);
 const winPct = `${
 	totalRaces > 0 ? ((raceWins * 100) / totalRaces).toFixed(2) : '0.00'
@@ -116,9 +108,6 @@ const winPct = `${
 			<tbody>
 				{
 					seasons.flatMap((season) => {
-						const wccStanding = championshipStandings.find(
-							(c) => c.year === season.year,
-						);
 						const driversInSeason = [
 							...new Set(
 								season.rounds.flatMap((round) =>
@@ -162,8 +151,8 @@ const winPct = `${
 									})}
 									{i === 0 ? (
 										<td class="text-center" rowspan={driversInSeason.length}>
-											{wccStanding?.position
-												? formatOrdinals(wccStanding.position)
+											{season.championshipStanding
+												? formatOrdinals(season.championshipStanding)
 												: '-'}
 										</td>
 									) : null}

@@ -86,8 +86,8 @@ export const prerender = true;
 		<tbody
 			>{
 				constructorsArr.map(({ data: con }) => {
-					const championshipsWon = con.championshipStandings
-						.filter((c) => c.position === 1)
+					const championshipsWon = con.seasons
+						.filter((c) => c.championshipStanding === 1)
 						.map((c) => c.year);
 
 					return (

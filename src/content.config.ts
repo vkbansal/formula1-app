@@ -1,11 +1,57 @@
+import { readFile } from 'node:fs/promises';
+import { basename } from 'node:path';
 import { defineCollection, z } from 'astro:content';
 
 import { glob } from 'astro/loaders';
+import { globby } from 'globby';
 /*******************************************************************************
  * Constructors Collection
  ******************************************************************************/
 const constructorsCollection = defineCollection({
-	loader: glob({ pattern: '**/*.json', base: './src/content/constructors' }),
+	loader: async () => {
+		const constructorFiles = await globby(
+			'./src/content/constructors/*/constructor.json',
+		);
+
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		const data: any[] = [];
+
+		for (const constructorFile of constructorFiles) {
+			const id = constructorFile.split('/').at(-2);
+
+			if (!id) {
+				throw new Error(
+					`Unable to determine the constructor from ${constructorFile}`,
+				);
+			}
+
+			const constructorContent = await readFile(constructorFile, 'utf8');
+			const constructorData = JSON.parse(constructorContent);
+
+			constructorData.id = id;
+			constructorData.seasons = [];
+
+			const seasonFiles = await globby([
+				`./src/content/constructors/${id}/*.json`,
+				`!./src/content/constructors/${id}/constructor.json`,
+			]);
+
+			for (const seasonFile of seasonFiles) {
+				const year = basename(seasonFile, '.json');
+				const seasonContent = await readFile(seasonFile, 'utf8');
+				const seasonData = JSON.parse(seasonContent);
+
+				constructorData.seasons.push({
+					...seasonData,
+					year: parseInt(year, 10),
+				});
+			}
+
+			data.push(constructorData);
+		}
+
+		return data;
+	},
 	schema: z.object({
 		constructorRef: z.string(),
 		name: z.string(),
@@ -14,14 +60,9 @@ const constructorsCollection = defineCollection({
 		podiums: z.number(),
 		totalRaces: z.number(),
 		winPct: z.number(),
-		championshipStandings: z.array(
-			z.object({
-				year: z.number(),
-				position: z.number().nullable(),
-			}),
-		),
 		seasons: z.array(
 			z.object({
+				championshipStanding: z.number().nullable(),
 				year: z.number(),
 				rounds: z.array(
 					z.object({

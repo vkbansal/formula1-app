@@ -15,8 +15,8 @@
     "data:up": "bun ./tools/update-data.ts",
     "prebuild": "rm -rf dist && rm -rf .netlify",
     "build": "NODE_ENV=production astro build",
-    "fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro}'",
-    "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx,astro}'"
+    "fmt": "prettier --plugin-search-dir=. --write 'src/**/*.{ts,tsx,astro,json}'",
+    "fmtc": "prettier --plugin-search-dir=. --check 'src/**/*.{ts,tsx,astro,json}'"
   },
   "dependencies": {
     "@astrojs/preact": "^4.0.11",
@@ -24,6 +24,7 @@
     "astro": "^5.7.10",
     "change-case": "^5.4.4",
     "dayjs": "^1.11.13",
+    "globby": "^14.1.0",
     "normalize.css": "^8.0.1",
     "preact": "^10.26.5",
     "sass": "^1.87.0",
