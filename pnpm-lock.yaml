@@ -70,6 +70,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^8.31.1
         version: 8.31.1(eslint@9.26.0)(typescript@5.8.3)
+      chalk:
+        specifier: ^5.4.1
+        version: 5.4.1
       cheerio:
         specifier: 1.0.0
         version: 1.0.0
